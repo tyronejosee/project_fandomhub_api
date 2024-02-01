@@ -14,10 +14,11 @@ class UserAdmin(admin.ModelAdmin):
     list_filter = ('is_staff', 'is_superuser', 'is_active')
     list_per_page = 25
     #list_editable = ('is_staff', 'is_superuser')
+    readonly_fields = ('pk',)
     ordering = ('username',)
 
     fieldsets = (
-        (_('Account info'), {'fields': ('username', 'email', 'password')}),
+        (_('Account info'), {'fields': ('username', 'email', 'password', 'pk')}),
         (_('Personal info'), {'fields': ('first_name', 'last_name', 'image')}),
         (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
         (_('Records'), {'fields': ('last_login', 'date_joined')}),

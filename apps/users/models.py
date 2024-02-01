@@ -1,9 +1,10 @@
 """Models for Users App."""
 
+import uuid
 from django.db import models
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser, PermissionsMixin
-from django.utils import timezone
 from django.utils.translation import gettext as _
+from django.utils import timezone
 
 
 class UserManager(BaseUserManager):
@@ -34,13 +35,14 @@ class UserManager(BaseUserManager):
 
 class User(AbstractBaseUser, PermissionsMixin):
     """Entity type model for User."""
-    username = models.CharField(_('Username'), max_length = 255, unique = True)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    username = models.CharField(_('Username'), max_length=255, unique=True)
     email = models.EmailField(_('Email'),max_length=255, unique=True,)
-    first_name = models.CharField(_('First Name'), max_length = 255, blank = True, null=True)
-    last_name = models.CharField(_('Last Name'), max_length = 255, blank = True, null=True)
+    first_name = models.CharField(_('First Name'), max_length=255, blank=True, null=True)
+    last_name = models.CharField(_('Last Name'), max_length=255, blank=True, null=True)
     image = models.ImageField(_('Image'), upload_to='users/', max_length=255, null=True, blank=True)
-    is_active = models.BooleanField(_('Is Active'), default = True)
-    is_staff = models.BooleanField(_('Is Staff'), default = False)
+    is_active = models.BooleanField(_('Is Active'), default=True)
+    is_staff = models.BooleanField(_('Is Staff'), default=False)
     date_joined = models.DateTimeField(_('Date Joined'), default=timezone.now)
 
     objects = UserManager()
