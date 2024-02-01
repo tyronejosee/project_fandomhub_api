@@ -1,3 +1,4 @@
+"""Views for Users App."""
+
 from django.shortcuts import render
 
-# Create your views here.
