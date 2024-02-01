@@ -13,7 +13,6 @@ class UserAdmin(admin.ModelAdmin):
     search_fields = ('username', 'email', 'first_name', 'last_name')
     list_filter = ('is_staff', 'is_superuser', 'is_active')
     list_per_page = 25
-    #list_editable = ('is_staff', 'is_superuser')
     readonly_fields = ('pk',)
     ordering = ('username',)
 
