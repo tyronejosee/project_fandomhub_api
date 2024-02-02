@@ -26,8 +26,8 @@ class UrlAdmin(admin.ModelAdmin):
 @admin.register(Studio)
 class StudioAdmin(admin.ModelAdmin):
     """Admin config for Studio model."""
-    search_fields = ('name_eng', 'name_jpn')
-    list_display = ('name_eng', 'available')
+    search_fields = ('name', 'name_jpn')
+    list_display = ('name', 'available')
     list_filter = ('available',)
     list_per_page = 25
     readonly_fields = ('pk', 'created_at', 'updated_at',)
@@ -70,8 +70,8 @@ class RatingAdmin(admin.ModelAdmin):
 @admin.register(Content)
 class UserAdmin(admin.ModelAdmin):
     """Admin config for Content model."""
-    search_fields = ('title_eng', 'title_jpn')
-    list_display = ('title_eng', 'available')
+    search_fields = ('name', 'name_jpn')
+    list_display = ('name', 'available')
     list_filter = ('status', 'genre_id', 'studio_id')
     list_editable = ('available',)
     list_per_page = 25

@@ -4,59 +4,69 @@ from django.db import models
 from django.core.validators import MinValueValidator
 from django.utils.translation import gettext as _
 from apps.utils.models import BaseModel
+from apps.utils.mixins import SlugMixin
 
-# TODO: Add slugs fields
 
 class Url(BaseModel):
     """Model definition for Url (Association)."""
-    tag = models.CharField(max_length=100, unique=True)
-    url = models.URLField()
-    # SVGs, Imgs
+    tag = models.CharField(_('Tag'), max_length=100, unique=True)
+    url = models.URLField(_('URL'))
+    image = models.ImageField(_('Image'), upload_to='urls/')
 
     class Meta:
         """Meta definition for Url."""
         verbose_name = _('Url')
         verbose_name_plural = _('Urls')
 
+    def __str__(self):
+        return str(self.tag)
 
-class Studio(BaseModel):
+
+class Studio(BaseModel, SlugMixin):
     """Model definition for Studio (Catalog)."""
-    name_eng = models.CharField(max_length=255, unique=True, help_text=_('Example: MAPPA'))
-    name_jpn = models.CharField(max_length=255, unique=True)
+    name = models.CharField(_('Name (ENG)'), max_length=255, unique=True)
+    name_jpn = models.CharField(_('Name (JPN)'), max_length=255, unique=True)
+    established = models.CharField(_('Established'), max_length=255, blank=True, null=True)
     image = models.ImageField(_('Image'), upload_to='studios/')
-    established = models.DateField()
 
     class Meta:
         """Meta definition for Studio."""
         verbose_name = _('Studio')
         verbose_name_plural = _('Studios')
 
+    def __str__(self):
+        return str(self.name)
 
-class Genre(BaseModel):
+
+class Genre(BaseModel, SlugMixin):
     """Model definition for Genre (Catalog)."""
-    name = models.CharField(max_length=255, unique=True, help_text=_('Example: Comedy'))
+    name = models.CharField(_('Name'), max_length=255, unique=True)
 
     class Meta:
         """Meta definition for Genre."""
         verbose_name = _('Genre')
         verbose_name_plural = _('Genres')
 
+    def __str__(self):
+        return str(self.name)
 
-class Premiered(BaseModel):
+
+class Premiered(BaseModel, SlugMixin):
     """Model definition for Premiered (Catalog)."""
-    name = models.CharField(max_length=25, unique=True, help_text=_('Example: Winter 2024'))
+    name = models.CharField(_('Name'), max_length=25, unique=True)
 
     class Meta:
         """Meta definition for Premiered."""
         verbose_name = _('Premiered')
         verbose_name_plural = _('Premiered')
 
+    def __str__(self):
+        return str(self.name)
+
 
 class Rating(BaseModel):
     """Model definition for Rating (Catalog)."""
-    name = models.CharField(
-        max_length=50, unique=True, help_text=_('Example: PG-13 - Teens 13 or older')
-    )
+    name = models.CharField(_('Name'), max_length=50, unique=True)
 
     class Meta:
         """Meta definition for Rating."""
@@ -67,7 +77,7 @@ class Rating(BaseModel):
         return str(self.name)
 
 
-class Content(BaseModel):
+class Content(BaseModel, SlugMixin):
     """Model definition for Content (Entity)."""
     STATUS_CHOICES = [
         ('P', _('Pending')),
@@ -81,8 +91,8 @@ class Content(BaseModel):
         ('S', _('Series')),
         ('M', _('Movies'))
     ]
-    title_eng = models.CharField(_('Title - English'), max_length=255, unique=True)
-    title_jpn = models.CharField(_('Title - Japanese'), max_length=255, unique=True)
+    name = models.CharField(_('Name (ENG)'), max_length=255, unique=True)
+    name_jpn = models.CharField(_('Name (JPN)'), max_length=255, unique=True)
     image = models.ImageField(_('Image'), upload_to='contents/')
     synopsis = models.TextField(_('Synopsis'))
     episodes = models.IntegerField(_('Episodes'), validators=[MinValueValidator(0)])
@@ -102,4 +112,4 @@ class Content(BaseModel):
         verbose_name_plural = _('Contents')
 
     def __str__(self):
-        return f'{self.title_eng}'
+        return str(self.name)
