@@ -2,12 +2,7 @@
 
 from rest_framework import serializers
 from apps.contents.models import (
-    Url,
-    Studio,
-    Genre,
-    Premiered,
-    Rating,
-    Content,
+    Url, Studio, Genre, Premiered, Rating, Content,
 )
 
 
