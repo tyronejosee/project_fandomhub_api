@@ -19,7 +19,7 @@ class UrlViewSet(viewsets.ModelViewSet):
 
 
 class StudioViewSet(viewsets.ModelViewSet):
-    """Viewset for managing Url instances."""
+    """Viewset for managing Studio instances."""
     serializer_class = StudioSerializer
 
     def get_queryset(self):
@@ -27,7 +27,7 @@ class StudioViewSet(viewsets.ModelViewSet):
 
 
 class GenreViewSet(viewsets.ModelViewSet):
-    """Viewset for managing Url instances."""
+    """Viewset for managing Genre instances."""
     serializer_class = GenreSerializer
 
     def get_queryset(self):
@@ -35,7 +35,7 @@ class GenreViewSet(viewsets.ModelViewSet):
 
 
 class PremieredViewSet(viewsets.ModelViewSet):
-    """Viewset for managing Url instances."""
+    """Viewset for managing Premiered instances."""
     serializer_class = PremieredSerializer
 
     def get_queryset(self):
