@@ -1,0 +1,114 @@
+// Database Structure
+
+// Utils App
+
+Table Base {
+  id uuid [pk]
+  available bool
+  updated_at datetime
+  created_at datetime
+}
+
+
+// Users App
+Ref: Playlist.user_id < User.id
+Ref: Playlist.Content_id < Content.id
+
+Table User {
+  id uuid [pk]
+  username varchar
+  email varchar [unique]
+  role varchar
+}
+
+Table Playlist {
+  id uuid [pk]
+  user_id uuid
+  Content_id uuid
+  watched bool
+}
+
+Table Score {
+  // 8.711 (scored by 1,308,475 users)
+  id uuid [pk]
+  name varchar(255)
+}
+
+
+// Contents App
+Ref: Content.studio_id - Studio.id
+Ref: Content.genre_id < Genre.id
+Ref: Content.premiered_id < Premiered.id
+Ref: Content.rating_id < Rating.id
+Ref: Content.url_id < Url.id
+
+Table Url {
+  id uuid [pk]
+  tag varchar(100) [unique]
+  url url
+  image image
+  // Add
+}
+
+Table Studio {
+  id uuid [pk]
+  name_eng varchar(255)
+  name_jpn varchar(255)
+  established varchar
+}
+
+Table Genre {
+  id uuid [pk]
+  name varchar(255)
+  description text
+}
+
+Table Premiered {
+  id uuid [pk]
+  name varchar(25) [unique]
+}
+
+Table Rating {
+  id uuid [pk]
+  name varchar(50) [unique]
+}
+
+Table Content {
+  id uuid [pk]
+  title_eng varchar(255) [unique]
+  title_jpn varchar(255) [unique]
+  image image
+  synopsis text
+  episodes int
+  duration varchar(20)
+  release date
+  category varchar(1)
+  status varchar(1)
+  studio_id FK
+  genre_id FK
+  premiered_id FK
+  rating_id FK
+  url_id FK
+}
+
+
+// Reviews App
+Ref: Review.user_id < User.id
+Ref: Review.Content_id < Content.id
+Ref: Article.Content_id - Content.id
+
+Table Review {
+  // Example: @tyronejose - Comments
+  id uuid [pk]
+  user_id FK
+  Content_id FK
+  rating set [null]
+  comment text
+}
+
+Table Article {
+  id uuid [pk]
+  Content_id FK
+  title varchar(255)
+  content text
+}
