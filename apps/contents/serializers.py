@@ -21,7 +21,11 @@ class StudioSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for StudioSerializer."""
         model = Studio
-        fields = '__all__'
+        fields = (
+            'id', 'slug', 'name', 'name_jpn', 'established', 'image',
+            'created_at', 'updated_at'
+        )
+        read_only_fields = ('slug', 'created_at', 'updated_at')
 
 
 class GenreSerializer(serializers.ModelSerializer):

@@ -11,7 +11,7 @@ class Url(BaseModel):
     """Model definition for Url (Association)."""
     tag = models.CharField(_('Tag'), max_length=100, unique=True)
     url = models.URLField(_('URL'))
-    image = models.ImageField(_('Image'), upload_to='urls/')
+    image = models.ImageField(_('Image'), upload_to='urls/', blank=True, null=True)
 
     class Meta:
         """Meta definition for Url."""

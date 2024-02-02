@@ -16,5 +16,5 @@ router.register(r'contents', ContentViewSet, basename='content')
 
 
 urlpatterns = [
-    path('', include(router.urls))
+    path('api/v1/', include(router.urls))
 ]
