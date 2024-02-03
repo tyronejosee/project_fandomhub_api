@@ -1,5 +1,6 @@
 # Folder Structure
 
+```txt
 project_beehive/
 │
 ├── config/
@@ -50,3 +51,4 @@ project_beehive/
 ├── tests/
 │
 └── manage.py
+```

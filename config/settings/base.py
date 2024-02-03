@@ -33,6 +33,7 @@ LOCAL_APPS = [
 
 THIRD_APPS = [
     'rest_framework',
+    'drf_yasg',
 ]
 
 INSTALLED_APPS = BASE_APPS + LOCAL_APPS + THIRD_APPS
@@ -45,6 +46,10 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
     ],
+}
+
+SWAGGER_SETTINGS = {
+    'DOC_EXPANSION': 'none'
 }
 
 MIDDLEWARE = [
