@@ -34,7 +34,7 @@ class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for GenreSerializer."""
         model = Genre
-        fields = '__all__'
+        fields = ('id', 'name', 'slug',)
 
 
 class PremieredSerializer(serializers.ModelSerializer):
@@ -43,7 +43,7 @@ class PremieredSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for PremieredSerializer."""
         model = Premiered
-        fields = '__all__'
+        fields = ('id', 'name', 'slug',)
 
 
 class RatingSerializer(serializers.ModelSerializer):
@@ -57,8 +57,19 @@ class RatingSerializer(serializers.ModelSerializer):
 
 class ContentSerializer(serializers.ModelSerializer):
     """Serializer for Content model."""
+    status = serializers.CharField(source='get_status_display')
+    category = serializers.CharField(source='get_category_display')
+    studio_id = StudioSerializer()
+    genre_id = GenreSerializer()
+    premiered_id = PremieredSerializer()
+    rating_id = RatingSerializer()
+    url_id = UrlSerializer()
 
     class Meta:
         """Meta definition for ContentSerializer."""
         model = Content
-        fields = '__all__'
+        fields = [
+            'name', 'name_jpn', 'image', 'synopsis', 'episodes',
+            'duration', 'release', 'category', 'status', 'studio_id',
+            'genre_id', 'premiered_id', 'rating_id', 'url_id',
+        ]
