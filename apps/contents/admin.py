@@ -6,7 +6,7 @@ from apps.contents.models import (
     Content,
     Studio,
     Genre,
-    Premiered,
+    Season,
     Rating,
     Url
 )
@@ -15,8 +15,8 @@ from apps.contents.models import (
 @admin.register(Url)
 class UrlAdmin(admin.ModelAdmin):
     """Admin config for Url model."""
-    search_fields = ('tag',)
-    list_display = ('tag', 'url', 'available')
+    search_fields = ('tag', 'url')
+    list_display = ('url', 'tag', 'available')
     list_filter = ('available',)
     list_per_page = 25
     readonly_fields = ('pk', 'created_at', 'updated_at',)
@@ -45,9 +45,9 @@ class GenreAdmin(admin.ModelAdmin):
     ordering = ('pk',)
 
 
-@admin.register(Premiered)
-class PremieredAdmin(admin.ModelAdmin):
-    """Admin config for Premiered model."""
+@admin.register(Season)
+class SeasonAdmin(admin.ModelAdmin):
+    """Admin config for Season model."""
     search_fields = ('name',)
     list_display = ('name', 'available')
     list_filter = ('available',)

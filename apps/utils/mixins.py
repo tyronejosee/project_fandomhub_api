@@ -14,7 +14,7 @@ class SlugMixin(models.Model):
         self.slug = slugify(content)
 
     def save(self, *args, **kwargs):
-        if not self.slug:
+        if not self.slug or self.slug != self.name:
             self.generate_slug()
         super().save(*args, **kwargs)
 

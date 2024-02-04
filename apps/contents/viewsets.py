@@ -4,13 +4,14 @@ from django.http import Http404
 from django.utils.translation import gettext as _
 from rest_framework import viewsets
 from rest_framework import status
+from rest_framework.permissions import IsAdminUser
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from apps.contents.models import (
-    Url, Studio, Genre, Premiered, Rating, Content
+    Url, Studio, Genre, Season, Rating, Content
 )
 from apps.contents.serializers import (
-    UrlSerializer, StudioSerializer, GenreSerializer, PremieredSerializer,
+    UrlSerializer, StudioSerializer, GenreSerializer, SeasonSerializer,
     RatingSerializer, ContentSerializer
 )
 
@@ -18,6 +19,7 @@ from apps.contents.serializers import (
 class UrlViewSet(viewsets.ModelViewSet):
     """Viewset for managing Url instances."""
     serializer_class = UrlSerializer
+    permission_classes = [IsAdminUser]
 
     def get_queryset(self):
         return Url.objects.filter(available=True)
@@ -26,6 +28,7 @@ class UrlViewSet(viewsets.ModelViewSet):
 class StudioViewSet(viewsets.ModelViewSet):
     """Viewset for managing Studio instances."""
     serializer_class = StudioSerializer
+    permission_classes = [IsAdminUser]
 
     def get_queryset(self):
         return Studio.objects.filter(available=True)
@@ -55,6 +58,7 @@ class GenreViewSet(viewsets.ModelViewSet):
     Pending.
     """
     serializer_class = GenreSerializer
+    permission_classes = [IsAdminUser]
 
     def get_queryset(self):
         return Genre.objects.filter(available=True)
@@ -120,17 +124,19 @@ class GenreViewSet(viewsets.ModelViewSet):
             )
 
 
-class PremieredViewSet(viewsets.ModelViewSet):
-    """Viewset for managing Premiered instances."""
-    serializer_class = PremieredSerializer
+class SeasonViewSet(viewsets.ModelViewSet):
+    """Viewset for managing Season instances."""
+    serializer_class = SeasonSerializer
+    permission_classes = [IsAdminUser]
 
     def get_queryset(self):
-        return Premiered.objects.filter(available=True)
+        return Season.objects.filter(available=True)
 
 
 class RatingViewSet(viewsets.ModelViewSet):
     """Viewset for managing Rating instances."""
     serializer_class = RatingSerializer
+    permission_classes = [IsAdminUser]
 
     def get_queryset(self):
         return Rating.objects.filter(available=True)
@@ -139,6 +145,7 @@ class RatingViewSet(viewsets.ModelViewSet):
 class ContentViewSet(viewsets.ModelViewSet):
     """Viewset for managing Content instances."""
     serializer_class = ContentSerializer
+    permission_classes = [IsAdminUser]
 
     def get_queryset(self):
         return Content.objects.filter(available=True)

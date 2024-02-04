@@ -9,9 +9,16 @@ from apps.utils.mixins import SlugMixin
 
 class Url(BaseModel):
     """Model definition for Url (Association)."""
-    tag = models.CharField(_('Tag'), max_length=100, unique=True)
+    TAG_CHOICES = [
+        ('P', _('Pending')),
+        ('S', _('Official Site')),
+        ('C', _('Crunchyroll')),
+        ('N', _('Netflix')),
+        ('Y', _('Youtube Acccount')),
+        ('X', _('X Account')),
+    ]
     url = models.URLField(_('URL'))
-    image = models.ImageField(_('Image'), upload_to='urls/', blank=True, null=True)
+    tag = models.CharField(_('Tag'), max_length=1, choices=TAG_CHOICES, default='P')
 
     class Meta:
         """Meta definition for Url."""
@@ -19,7 +26,7 @@ class Url(BaseModel):
         verbose_name_plural = _('Urls')
 
     def __str__(self):
-        return str(self.tag)
+        return str(self.url)
 
 
 class Studio(BaseModel, SlugMixin):
@@ -51,14 +58,14 @@ class Genre(BaseModel, SlugMixin):
         return str(self.name)
 
 
-class Premiered(BaseModel, SlugMixin):
-    """Model definition for Premiered (Catalog)."""
+class Season(BaseModel, SlugMixin):
+    """Model definition for Season (Catalog)."""
     name = models.CharField(_('Name'), max_length=25, unique=True)
 
     class Meta:
-        """Meta definition for Premiered."""
-        verbose_name = _('Premiered')
-        verbose_name_plural = _('Premiered')
+        """Meta definition for Season."""
+        verbose_name = _('Season')
+        verbose_name_plural = _('Season')
 
     def __str__(self):
         return str(self.name)
@@ -102,9 +109,9 @@ class Content(BaseModel, SlugMixin):
     status = models.CharField(_('Status'), max_length=1, choices=STATUS_CHOICES, default='P')
     studio_id = models.ForeignKey(Studio, on_delete=models.CASCADE)
     genre_id = models.ForeignKey(Genre, on_delete=models.CASCADE)
-    premiered_id = models.ForeignKey(Premiered, on_delete=models.CASCADE)
+    season_id = models.ForeignKey(Season, on_delete=models.CASCADE)
     rating_id = models.ForeignKey(Rating, on_delete=models.CASCADE)
-    url_id = models.ForeignKey(Url, on_delete=models.CASCADE)
+    url_id = models.ManyToManyField(Url)
 
     class Meta:
         """Meta definition for Content."""
