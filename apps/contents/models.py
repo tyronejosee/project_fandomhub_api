@@ -7,6 +7,8 @@ from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 
 
+# Association models
+
 class Url(BaseModel):
     """Model definition for Url (Association)."""
     TAG_CHOICES = [
@@ -28,6 +30,8 @@ class Url(BaseModel):
     def __str__(self):
         return str(self.url)
 
+
+# Catalog models
 
 class Studio(BaseModel, SlugMixin):
     """Model definition for Studio (Catalog)."""
@@ -84,8 +88,36 @@ class Rating(BaseModel):
         return str(self.name)
 
 
-class Content(BaseModel, SlugMixin):
-    """Model definition for Content (Entity)."""
+class Demographic(BaseModel):
+    """Model definition for Demographic (Catalog)."""
+    name = models.CharField(_('Name'), max_length=50, unique=True)
+
+    class Meta:
+        """Meta definition for Demographic."""
+        verbose_name = _('Demographic')
+        verbose_name_plural = _('Demographics')
+
+    def __str__(self):
+        return str(self.name)
+
+
+class Author(BaseModel):
+    """Model definition for Author (Catalog)."""
+    name = models.CharField(_('Name'), max_length=50, unique=True)
+
+    class Meta:
+        """Meta definition for Author."""
+        verbose_name = _('Author')
+        verbose_name_plural = _('Authors')
+
+    def __str__(self):
+        return str(self.name)
+
+
+# Entity models
+
+class Anime(BaseModel, SlugMixin):
+    """Model definition for Anime (Entity)."""
     STATUS_CHOICES = [
         ('P', _('Pending')),
         ('A', _('Airing')),
@@ -100,7 +132,7 @@ class Content(BaseModel, SlugMixin):
     ]
     name = models.CharField(_('Name (ENG)'), max_length=255, unique=True)
     name_jpn = models.CharField(_('Name (JPN)'), max_length=255, unique=True)
-    image = models.ImageField(_('Image'), upload_to='contents/')
+    image = models.ImageField(_('Image'), upload_to='contents/animes/')
     synopsis = models.TextField(_('Synopsis'))
     episodes = models.IntegerField(_('Episodes'), validators=[MinValueValidator(0), MaxValueValidator(1500)])
     duration = models.CharField(_('Duration'), max_length=20, help_text='Format: "25 min. per ep."')
@@ -114,9 +146,43 @@ class Content(BaseModel, SlugMixin):
     url_id = models.ManyToManyField(Url)
 
     class Meta:
-        """Meta definition for Content."""
-        verbose_name = _('Content')
-        verbose_name_plural = _('Contents')
+        """Meta definition for Anime."""
+        verbose_name = _('Anime')
+        verbose_name_plural = _('Animes')
+
+    def __str__(self):
+        return str(self.name)
+
+
+class Manga(BaseModel, SlugMixin):
+    """Model definition for Manga (Entity)."""
+    STATUS_CHOICES = [
+        ('P', _('Pending')),
+        ('A', _('Airing')),
+        ('F', _('Finished')),
+        ('U', _('Upcoming'))
+    ]
+    CATEGORY_CHOICES = [
+        ('P', _('Pending')),
+        ('O', _('Manga')),
+    ]
+    name = models.CharField(_('Name (ENG)'), max_length=255, unique=True)
+    name_jpn = models.CharField(_('Name (JPN)'), max_length=255, unique=True)
+    image = models.ImageField(_('Image'), upload_to='contents/mangas/')
+    synopsis = models.TextField(_('Synopsis'))
+    chapters = models.IntegerField(_('Chapters'), validators=[MinValueValidator(0)])
+    release = models.DateField(_('Release'))
+    category = models.CharField(_('Category'), max_length=1, choices=CATEGORY_CHOICES, default='P')
+    status = models.CharField(_('Status'), max_length=1, choices=STATUS_CHOICES, default='P')
+    author_id = models.ForeignKey(Author, on_delete=models.CASCADE)
+    demographic_id = models.ForeignKey(Demographic, on_delete=models.CASCADE)
+    genre_id = models.ManyToManyField(Genre)
+    url_id = models.ManyToManyField(Url)
+
+    class Meta:
+        """Meta definition for Manga."""
+        verbose_name = _('Manga')
+        verbose_name_plural = _('Mangas')
 
     def __str__(self):
         return str(self.name)

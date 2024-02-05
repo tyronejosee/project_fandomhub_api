@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 from apps.contents.models import (
-    Url, Studio, Genre, Season, Rating, Content,
+    Url, Studio, Genre, Season, Rating, Anime,
 )
 
 
@@ -65,8 +65,8 @@ class RatingSerializer(serializers.ModelSerializer):
         fields = ('id', 'name',)
 
 
-class ContentSerializer(serializers.ModelSerializer):
-    """Serializer for Content model."""
+class AnimeSerializer(serializers.ModelSerializer):
+    """Serializer for Anime model."""
     status = serializers.CharField(source='get_status_display')
     category = serializers.CharField(source='get_category_display')
     # studio_id = StudioSerializer()
@@ -76,8 +76,8 @@ class ContentSerializer(serializers.ModelSerializer):
     # url_id = UrlSerializer(many=True)
 
     class Meta:
-        """Meta definition for ContentSerializer."""
-        model = Content
+        """Meta definition for AnimeSerializer."""
+        model = Anime
         fields = [
             'id', 'name', 'name_jpn', 'slug', 'image', 'synopsis', 'episodes',
             'duration', 'release', 'category', 'status', 'studio_id',

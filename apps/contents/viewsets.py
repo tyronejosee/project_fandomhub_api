@@ -8,10 +8,10 @@ from rest_framework.filters import SearchFilter
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from apps.utils.mixins import CreateMixin
-from apps.contents.models import (Url, Studio, Genre, Season, Rating, Content)
+from apps.contents.models import (Url, Studio, Genre, Season, Rating, Anime)
 from apps.contents.serializers import (
     UrlSerializer, StudioSerializer, GenreSerializer, SeasonSerializer,
-    RatingSerializer, ContentSerializer
+    RatingSerializer, AnimeSerializer
 )
 
 
@@ -43,14 +43,14 @@ class StudioViewSet(viewsets.ModelViewSet, CreateMixin):
         return _('Studio created successfully.')
 
     @action(detail=True, methods=['get'])
-    def content_list(self, request, pk=None):
+    def anime_list(self, request, pk=None):
         """
-        Retrieve a list of contents for the specified studio.
+        Retrieve a list of animes for the specified studio.
         """
         try:
             studio = self.get_object()
-            contents = Content.objects.filter(studio_id=studio)
-            serializer = ContentSerializer(contents, many=True)
+            animes = Anime.objects.filter(studio_id=studio)
+            serializer = AnimeSerializer(animes, many=True)
             return Response(serializer.data)
         except Http404:
             return Response(
@@ -89,14 +89,14 @@ class GenreViewSet(viewsets.ModelViewSet, CreateMixin):
             )
 
     @action(detail=True, methods=['get'])
-    def content_list(self, request, pk=None):
+    def anime_list(self, request, pk=None):
         """
-        Retrieve a list of contents for the specified genre.
+        Retrieve a list of animes for the specified genre.
         """
         try:
             genre = self.get_object()
-            contents = Content.objects.filter(genre_id=genre)
-            serializer = ContentSerializer(contents, many=True)
+            animes = Anime.objects.filter(genre_id=genre)
+            serializer = AnimeSerializer(animes, many=True)
             return Response(serializer.data)
         except Http404:
             return Response(
@@ -130,16 +130,16 @@ class RatingViewSet(viewsets.ModelViewSet, CreateMixin):
         return _('Rating created successfully.')
 
 
-class ContentViewSet(viewsets.ModelViewSet, CreateMixin):
+class AnimeViewSet(viewsets.ModelViewSet, CreateMixin):
     """
-    Viewset for managing Content instances.
+    Viewset for managing Anime instances.
     """
-    serializer_class = ContentSerializer
+    serializer_class = AnimeSerializer
     filter_backends = [SearchFilter]
     search_fields = ['name',]
 
     def get_queryset(self):
-        return Content.objects.filter(available=True)
+        return Anime.objects.filter(available=True)
 
     def get_create_message(self):
-        return _('Content created successfully.')
+        return _('Anime created successfully.')

@@ -3,16 +3,16 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from apps.contents.viewsets import (
-    UrlViewSet, StudioViewSet, GenreViewSet, SeasonViewSet, RatingViewSet, ContentViewSet
+    UrlViewSet, StudioViewSet, GenreViewSet, SeasonViewSet, RatingViewSet, AnimeViewSet,
 )
 
 router = DefaultRouter()
-router.register(r'urls', UrlViewSet, basename='url')
-router.register(r'studios', StudioViewSet, basename='studio')
+router.register(r'animes', AnimeViewSet, basename='anime')
 router.register(r'genres', GenreViewSet, basename='genre')
+router.register(r'studios', StudioViewSet, basename='studio')
 router.register(r'seasons', SeasonViewSet, basename='season')
 router.register(r'ratings', RatingViewSet, basename='rating')
-router.register(r'contents', ContentViewSet, basename='content')
+router.register(r'urls', UrlViewSet, basename='url')
 
 
 urlpatterns = [

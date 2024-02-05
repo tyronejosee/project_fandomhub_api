@@ -3,12 +3,8 @@
 from django.contrib import admin
 from django.utils.translation import gettext as _
 from apps.contents.models import (
-    Content,
-    Studio,
-    Genre,
-    Season,
-    Rating,
-    Url
+    Anime, Studio, Genre, Season, Rating, Url,
+    Manga, Author, Demographic,
 )
 
 
@@ -67,12 +63,46 @@ class RatingAdmin(admin.ModelAdmin):
     ordering = ('pk',)
 
 
-@admin.register(Content)
-class UserAdmin(admin.ModelAdmin):
-    """Admin config for Content model."""
+@admin.register(Author)
+class AuthorAdmin(admin.ModelAdmin):
+    """Admin config for Author model."""
+    search_fields = ('name',)
+    list_display = ('name', 'available')
+    list_filter = ('available',)
+    list_per_page = 25
+    readonly_fields = ('pk', 'created_at', 'updated_at',)
+    ordering = ('pk',)
+
+
+@admin.register(Demographic)
+class DemographicAdmin(admin.ModelAdmin):
+    """Admin config for Demographic model."""
+    search_fields = ('name',)
+    list_display = ('name', 'available')
+    list_filter = ('available',)
+    list_per_page = 25
+    readonly_fields = ('pk', 'created_at', 'updated_at',)
+    ordering = ('pk',)
+
+
+@admin.register(Anime)
+class AnimeAdmin(admin.ModelAdmin):
+    """Admin config for Anime model."""
     search_fields = ('name', 'name_jpn')
     list_display = ('name', 'available')
     list_filter = ('status', 'genre_id', 'studio_id')
+    list_editable = ('available',)
+    list_per_page = 25
+    readonly_fields = ('pk', 'created_at', 'updated_at',)
+    ordering = ('pk',)
+
+
+@admin.register(Manga)
+class MangaAdmin(admin.ModelAdmin):
+    """Admin config for Manga model."""
+    search_fields = ('name', 'name_jpn')
+    list_display = ('name', 'available')
+    list_filter = ('status', 'genre_id',)
     list_editable = ('available',)
     list_per_page = 25
     readonly_fields = ('pk', 'created_at', 'updated_at',)
