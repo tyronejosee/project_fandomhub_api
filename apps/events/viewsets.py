@@ -1,0 +1,1 @@
+"""Viewsets for Events App."""
