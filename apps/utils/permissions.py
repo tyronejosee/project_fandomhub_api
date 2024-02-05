@@ -1,4 +1,4 @@
-"""Permissions for Utils App."""
+"""Permissions for Contents App."""
 
 from rest_framework.permissions import BasePermission
 

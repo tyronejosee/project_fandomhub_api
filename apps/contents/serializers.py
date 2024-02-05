@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 from apps.contents.models import (
-    Url, Studio, Genre, Premiered, Rating, Content,
+    Url, Studio, Genre, Season, Rating, Content,
 )
 
 
@@ -12,7 +12,14 @@ class UrlSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for UrlSerializer."""
         model = Url
-        fields = '__all__'
+        fields = ('tag', 'url')
+
+    def to_representation(self,instance):
+        return {
+            'id': instance.id,
+            'tag': instance.get_tag_display(),
+            'url': instance.url,
+        }
 
 
 class StudioSerializer(serializers.ModelSerializer):
@@ -23,9 +30,10 @@ class StudioSerializer(serializers.ModelSerializer):
         model = Studio
         fields = (
             'id', 'slug', 'name', 'name_jpn', 'established', 'image',
-            'created_at', 'updated_at'
         )
-        read_only_fields = ('slug', 'created_at', 'updated_at')
+        read_only_fields = ('slug',)
+
+    # add to representation for image field
 
 
 class GenreSerializer(serializers.ModelSerializer):
@@ -35,15 +43,17 @@ class GenreSerializer(serializers.ModelSerializer):
         """Meta definition for GenreSerializer."""
         model = Genre
         fields = ('id', 'name', 'slug',)
+        read_only_fields = ('slug',)
 
 
-class PremieredSerializer(serializers.ModelSerializer):
-    """Serializer for Premiered model."""
+class SeasonSerializer(serializers.ModelSerializer):
+    """Serializer for Season model."""
 
     class Meta:
-        """Meta definition for PremieredSerializer."""
-        model = Premiered
+        """Meta definition for SeasonSerializer."""
+        model = Season
         fields = ('id', 'name', 'slug',)
+        read_only_fields = ('slug',)
 
 
 class RatingSerializer(serializers.ModelSerializer):
@@ -52,24 +62,26 @@ class RatingSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for RatingSerializer."""
         model = Rating
-        fields = '__all__'
+        fields = ('id', 'name',)
 
 
 class ContentSerializer(serializers.ModelSerializer):
     """Serializer for Content model."""
     status = serializers.CharField(source='get_status_display')
     category = serializers.CharField(source='get_category_display')
-    studio_id = StudioSerializer()
-    genre_id = GenreSerializer()
-    premiered_id = PremieredSerializer()
-    rating_id = RatingSerializer()
-    url_id = UrlSerializer()
+    # studio_id = StudioSerializer()
+    # genre_id = GenreSerializer()
+    # season_id = SeasonSerializer()
+    # rating_id = RatingSerializer()
+    # url_id = UrlSerializer(many=True)
 
     class Meta:
         """Meta definition for ContentSerializer."""
         model = Content
         fields = [
-            'name', 'name_jpn', 'image', 'synopsis', 'episodes',
+            'id', 'name', 'name_jpn', 'slug', 'image', 'synopsis', 'episodes',
             'duration', 'release', 'category', 'status', 'studio_id',
-            'genre_id', 'premiered_id', 'rating_id', 'url_id',
+            'genre_id', 'season_id', 'rating_id', 'url_id',
         ]
+
+    # Add to representation

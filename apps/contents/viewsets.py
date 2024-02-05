@@ -7,7 +7,7 @@ from rest_framework import status
 from rest_framework.filters import SearchFilter
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from apps.utils.permissions import IsAdminOrReadOnly
+from apps.utils.mixins import CreateMixin
 from apps.contents.models import (Url, Studio, Genre, Season, Rating, Content)
 from apps.contents.serializers import (
     UrlSerializer, StudioSerializer, GenreSerializer, SeasonSerializer,
@@ -15,31 +15,37 @@ from apps.contents.serializers import (
 )
 
 
-class UrlViewSet(viewsets.ModelViewSet):
-    """Viewset for managing Url instances."""
+class UrlViewSet(viewsets.ModelViewSet, CreateMixin):
+    """
+    Viewset for managing Url instances.
+    """
     serializer_class = UrlSerializer
-    permission_classes = [IsAdminOrReadOnly]
 
     def get_queryset(self):
         return Url.objects.filter(available=True)
 
+    def get_create_message(self):
+        return _('Url created successfully.')
 
-class StudioViewSet(viewsets.ModelViewSet):
-    """Viewset for managing Studio instances."""
+
+class StudioViewSet(viewsets.ModelViewSet, CreateMixin):
+    """
+    Viewset for managing Studio instances.
+    """
     serializer_class = StudioSerializer
-    permission_classes = [IsAdminOrReadOnly]
     filter_backends = [SearchFilter]
     search_fields = ['slug', 'name']
 
     def get_queryset(self):
         return Studio.objects.filter(available=True)
 
+    def get_create_message(self):
+        return _('Studio created successfully.')
+
     @action(detail=True, methods=['get'])
     def content_list(self, request, pk=None):
         """
-        Pending.
-
-        Pending.
+        Retrieve a list of contents for the specified studio.
         """
         try:
             studio = self.get_object()
@@ -52,45 +58,20 @@ class StudioViewSet(viewsets.ModelViewSet):
             )
 
 
-class GenreViewSet(viewsets.ModelViewSet):
+class GenreViewSet(viewsets.ModelViewSet, CreateMixin):
     """
     Viewset for managing Genre instances.
-
-    Pending.
     """
     serializer_class = GenreSerializer
-    permission_classes = [IsAdminOrReadOnly]
 
     def get_queryset(self):
         return Genre.objects.filter(available=True)
 
-    def create(self, request, *args, **kwargs):
-        """
-        Create a new genre.
-
-        Returns
-        """
-        try:
-            serializer = self.get_serializer(data=request.data)
-            serializer.is_valid(raise_exception=True)
-            self.perform_create(serializer)
-            headers = self.get_success_headers(serializer.data)
-            return Response(
-                {'message': _('Genre created successfully.'), 'data': serializer.data},
-                status=status.HTTP_201_CREATED,
-                headers=headers
-            )
-        except Exception as e:
-            return Response(
-                {'errors': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+    def get_create_message(self):
+        return _('Genre created successfully.')
 
     def destroy(self, request, *args, **kwargs):
-        """
-        Set 'available' to False for logical deletion of a genre.
-
-        Pending.
-        """
+        # Deletes the instance logically
         try:
             instance = self.get_object()
             instance.available = False
@@ -110,9 +91,7 @@ class GenreViewSet(viewsets.ModelViewSet):
     @action(detail=True, methods=['get'])
     def content_list(self, request, pk=None):
         """
-        Lists anime contents associated with a specific genre.
-
-        Pending.
+        Retrieve a list of contents for the specified genre.
         """
         try:
             genre = self.get_object()
@@ -125,30 +104,42 @@ class GenreViewSet(viewsets.ModelViewSet):
             )
 
 
-class SeasonViewSet(viewsets.ModelViewSet):
-    """Viewset for managing Season instances."""
+class SeasonViewSet(viewsets.ModelViewSet, CreateMixin):
+    """
+    Viewset for managing Season instances.
+    """
     serializer_class = SeasonSerializer
-    permission_classes = [IsAdminOrReadOnly]
 
     def get_queryset(self):
         return Season.objects.filter(available=True)
 
+    def get_create_message(self):
+        return _('Season created successfully.')
 
-class RatingViewSet(viewsets.ModelViewSet):
-    """Viewset for managing Rating instances."""
+
+class RatingViewSet(viewsets.ModelViewSet, CreateMixin):
+    """
+    Viewset for managing Rating instances.
+    """
     serializer_class = RatingSerializer
-    permission_classes = [IsAdminOrReadOnly]
 
     def get_queryset(self):
         return Rating.objects.filter(available=True)
 
+    def get_create_message(self):
+        return _('Rating created successfully.')
 
-class ContentViewSet(viewsets.ModelViewSet):
-    """Viewset for managing Content instances."""
+
+class ContentViewSet(viewsets.ModelViewSet, CreateMixin):
+    """
+    Viewset for managing Content instances.
+    """
     serializer_class = ContentSerializer
-    permission_classes = [IsAdminOrReadOnly]
     filter_backends = [SearchFilter]
     search_fields = ['name',]
 
     def get_queryset(self):
         return Content.objects.filter(available=True)
+
+    def get_create_message(self):
+        return _('Content created successfully.')

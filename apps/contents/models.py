@@ -1,7 +1,7 @@
 """Models for Contents App."""
 
 from django.db import models
-from django.core.validators import MinValueValidator
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.translation import gettext as _
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
@@ -102,7 +102,7 @@ class Content(BaseModel, SlugMixin):
     name_jpn = models.CharField(_('Name (JPN)'), max_length=255, unique=True)
     image = models.ImageField(_('Image'), upload_to='contents/')
     synopsis = models.TextField(_('Synopsis'))
-    episodes = models.IntegerField(_('Episodes'), validators=[MinValueValidator(0)])
+    episodes = models.IntegerField(_('Episodes'), validators=[MinValueValidator(0), MaxValueValidator(1500)])
     duration = models.CharField(_('Duration'), max_length=20, help_text='Format: "25 min. per ep."')
     release = models.DateField(_('Release'))
     category = models.CharField(_('Category'), max_length=1, choices=CATEGORY_CHOICES, default='P')
