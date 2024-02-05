@@ -1,4 +1,4 @@
-"""Base Settings."""
+"""Settings for config project (Base)."""
 
 import os
 from pathlib import Path
@@ -29,6 +29,10 @@ LOCAL_APPS = [
     'apps.users',
     'apps.utils',
     'apps.contents',
+    'apps.events',
+    'apps.queues',
+    'apps.reviews',
+    'apps.searches',
 ]
 
 THIRD_APPS = [

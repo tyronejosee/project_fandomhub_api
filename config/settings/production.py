@@ -1,4 +1,4 @@
-"""Production Settings."""
+"""Settings for config project (Production)."""
 
 from .base import *
 

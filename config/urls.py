@@ -1,4 +1,4 @@
-"""URLs for Project."""
+"""URLs for config project."""
 
 from django.conf import settings
 from django.conf.urls.static import static

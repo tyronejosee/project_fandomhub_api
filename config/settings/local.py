@@ -1,4 +1,4 @@
-"""Local Settings."""
+"""Settings for config project (Local)."""
 
 from .base import *
 
