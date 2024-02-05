@@ -4,12 +4,11 @@ from django.http import Http404
 from django.utils.translation import gettext as _
 from rest_framework import viewsets
 from rest_framework import status
-from rest_framework.permissions import IsAdminUser
+from rest_framework.filters import SearchFilter
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from apps.contents.models import (
-    Url, Studio, Genre, Season, Rating, Content
-)
+from apps.utils.permissions import IsAdminOrReadOnly
+from apps.contents.models import (Url, Studio, Genre, Season, Rating, Content)
 from apps.contents.serializers import (
     UrlSerializer, StudioSerializer, GenreSerializer, SeasonSerializer,
     RatingSerializer, ContentSerializer
@@ -19,7 +18,7 @@ from apps.contents.serializers import (
 class UrlViewSet(viewsets.ModelViewSet):
     """Viewset for managing Url instances."""
     serializer_class = UrlSerializer
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAdminOrReadOnly]
 
     def get_queryset(self):
         return Url.objects.filter(available=True)
@@ -28,7 +27,9 @@ class UrlViewSet(viewsets.ModelViewSet):
 class StudioViewSet(viewsets.ModelViewSet):
     """Viewset for managing Studio instances."""
     serializer_class = StudioSerializer
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAdminOrReadOnly]
+    filter_backends = [SearchFilter]
+    search_fields = ['slug', 'name']
 
     def get_queryset(self):
         return Studio.objects.filter(available=True)
@@ -58,7 +59,7 @@ class GenreViewSet(viewsets.ModelViewSet):
     Pending.
     """
     serializer_class = GenreSerializer
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAdminOrReadOnly]
 
     def get_queryset(self):
         return Genre.objects.filter(available=True)
@@ -127,7 +128,7 @@ class GenreViewSet(viewsets.ModelViewSet):
 class SeasonViewSet(viewsets.ModelViewSet):
     """Viewset for managing Season instances."""
     serializer_class = SeasonSerializer
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAdminOrReadOnly]
 
     def get_queryset(self):
         return Season.objects.filter(available=True)
@@ -136,7 +137,7 @@ class SeasonViewSet(viewsets.ModelViewSet):
 class RatingViewSet(viewsets.ModelViewSet):
     """Viewset for managing Rating instances."""
     serializer_class = RatingSerializer
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAdminOrReadOnly]
 
     def get_queryset(self):
         return Rating.objects.filter(available=True)
@@ -145,7 +146,9 @@ class RatingViewSet(viewsets.ModelViewSet):
 class ContentViewSet(viewsets.ModelViewSet):
     """Viewset for managing Content instances."""
     serializer_class = ContentSerializer
-    permission_classes = [IsAdminUser]
+    permission_classes = [IsAdminOrReadOnly]
+    filter_backends = [SearchFilter]
+    search_fields = ['name',]
 
     def get_queryset(self):
         return Content.objects.filter(available=True)
