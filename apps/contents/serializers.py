@@ -28,9 +28,7 @@ class StudioSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for StudioSerializer."""
         model = Studio
-        fields = (
-            'id', 'slug', 'name', 'name_jpn', 'established', 'image',
-        )
+        fields = ('id', 'slug', 'name', 'name_jpn', 'established', 'image',)
         read_only_fields = ('slug',)
 
     # add to representation for image field
