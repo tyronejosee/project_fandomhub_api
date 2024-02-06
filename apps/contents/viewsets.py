@@ -21,9 +21,10 @@ class UrlViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     serializer_class = UrlSerializer
     search_fields = ['url', 'tag']
     ordering_fields = ['tag']
+    ordering = ['id']
 
     def get_queryset(self):
-        return Url.objects.filter(available=True).order_by('id')
+        return Url.objects.filter(available=True)
 
 
 class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
@@ -33,9 +34,10 @@ class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     serializer_class = StudioSerializer
     search_fields = ['name']
     ordering_fields = ['name']
+    ordering = ['id']
 
     def get_queryset(self):
-        return Studio.objects.filter(available=True).order_by('id')
+        return Studio.objects.filter(available=True)
 
     @action(detail=True, methods=['get'])
     def anime_list(self, request, pk=None):
@@ -60,12 +62,13 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     serializer_class = GenreSerializer
     search_fields = ['name',]
     ordering_fields = ['name']
+    ordering = ['id']
 
     def get_queryset(self):
-        return Genre.objects.filter(available=True).order_by('id')
+        return Genre.objects.filter(available=True)
 
     @action(detail=True, methods=['get'])
-    def anime_list(self, request, pk=None):
+    def animes(self, request, pk=None):
         """
         Retrieve a list of animes for the specified genre.
         """
@@ -87,9 +90,10 @@ class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     serializer_class = SeasonSerializer
     search_fields = ['name']
     ordering_fields = ['name']
+    ordering = ['id']
 
     def get_queryset(self):
-        return Season.objects.filter(available=True).order_by('id')
+        return Season.objects.filter(available=True)
 
 
 class RatingViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
@@ -99,9 +103,10 @@ class RatingViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     serializer_class = RatingSerializer
     search_fields = ['name']
     ordering_fields = ['name']
+    ordering = ['id']
 
     def get_queryset(self):
-        return Rating.objects.filter(available=True).order_by('id')
+        return Rating.objects.filter(available=True)
 
 
 class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
@@ -111,6 +116,7 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     serializer_class = AnimeSerializer
     search_fields = ['name', 'studio_id__name']
     ordering_fields = ['name']
+    ordering = ['id']
 
     def get_queryset(self):
-        return Anime.objects.filter(available=True).order_by('id')
+        return Anime.objects.filter(available=True)

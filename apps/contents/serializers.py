@@ -65,13 +65,9 @@ class RatingSerializer(serializers.ModelSerializer):
 
 class AnimeSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
+    image = serializers.CharField(source='get_image')
     status = serializers.CharField(source='get_status_display')
     category = serializers.CharField(source='get_category_display')
-    # studio_id = StudioSerializer()
-    # genre_id = GenreSerializer()
-    # season_id = SeasonSerializer()
-    # rating_id = RatingSerializer()
-    # url_id = UrlSerializer(many=True)
 
     class Meta:
         """Meta definition for AnimeSerializer."""
