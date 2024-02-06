@@ -110,7 +110,7 @@ class Demographic(BaseModel):
 
 class Author(BaseModel):
     """Model definition for Author (Catalog)."""
-    name = models.CharField(_('Name'), max_length=50, unique=True)
+    name = models.CharField(_('Name'), max_length=255, unique=True)
 
     class Meta:
         """Meta definition for Author."""
@@ -141,7 +141,9 @@ class Anime(BaseModel, SlugMixin):
     name_jpn = models.CharField(_('Name (JPN)'), max_length=255, unique=True)
     image = models.ImageField(_('Image'), upload_to=image_path, blank=True, null=True)
     synopsis = models.TextField(_('Synopsis'), blank=True, null=True)
-    episodes = models.IntegerField(_('Episodes'), validators=[MinValueValidator(0), MaxValueValidator(1500)])
+    episodes = models.IntegerField(
+        _('Episodes'), validators=[MinValueValidator(0), MaxValueValidator(1500)]
+    )
     duration = models.CharField(_('Duration'), max_length=20, blank=True, null=True)
     release = models.DateField(_('Release'), blank=True, null=True)
     category = models.CharField(_('Category'), max_length=1, choices=CATEGORY_CHOICES, default='P')

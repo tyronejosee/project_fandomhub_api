@@ -2,9 +2,12 @@
 
 from rest_framework import serializers
 from apps.contents.models import (
-    Url, Studio, Genre, Season, Rating, Anime,
+    Url, Studio, Genre, Season, Rating, Demographic,
+    Author, Anime, Manga
 )
 
+
+# Association models serializers
 
 class UrlSerializer(serializers.ModelSerializer):
     """Serializer for Url model."""
@@ -22,16 +25,17 @@ class UrlSerializer(serializers.ModelSerializer):
         }
 
 
+# Catalog models serializers
+
 class StudioSerializer(serializers.ModelSerializer):
     """Serializer for Studio model."""
+    image = serializers.CharField(source='get_image')
 
     class Meta:
         """Meta definition for StudioSerializer."""
         model = Studio
         fields = ('id', 'slug', 'name', 'name_jpn', 'established', 'image',)
         read_only_fields = ('slug',)
-
-    # add to representation for image field
 
 
 class GenreSerializer(serializers.ModelSerializer):
@@ -63,6 +67,26 @@ class RatingSerializer(serializers.ModelSerializer):
         fields = ('id', 'name',)
 
 
+class DemographicSerializer(serializers.ModelSerializer):
+    """Serializer for Demographic model."""
+
+    class Meta:
+        """Meta definition for DemographicSerializer."""
+        model = Demographic
+        fields = ('id', 'name',)
+
+
+class AuthorSerializer(serializers.ModelSerializer):
+    """Serializer for Author model."""
+
+    class Meta:
+        """Meta definition for AuthorSerializer."""
+        model = Author
+        fields = ('id', 'name',)
+
+
+# Entity models serializers
+
 class AnimeSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
     image = serializers.CharField(source='get_image')
@@ -78,4 +102,16 @@ class AnimeSerializer(serializers.ModelSerializer):
             'genre_id', 'season_id', 'rating_id', 'url_id',
         ]
 
-    # Add to representation
+
+class MangaSerializer(serializers.ModelSerializer):
+    """Serializer for Manga model."""
+    image = serializers.CharField(source='get_image')
+
+    class Meta:
+        """Meta definition for MangaSerializer."""
+        model = Manga
+        fields = [
+            'id', 'name', 'name_jpn', 'slug', 'image', 'synopsis', 'chapters',
+            'release', 'category', 'status', 'author_id', 'demographic_id',
+            'genre_id', 'url_id',
+        ]

@@ -7,12 +7,16 @@ from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from apps.utils.mixins import LogicalDeleteMixin
-from apps.contents.models import (Url, Studio, Genre, Season, Rating, Anime)
+from apps.contents.models import (
+    Url, Studio, Genre, Season, Rating, Demographic, Author, Anime, Manga
+)
 from apps.contents.serializers import (
     UrlSerializer, StudioSerializer, GenreSerializer, SeasonSerializer,
-    RatingSerializer, AnimeSerializer
+    RatingSerializer, DemographicSerializer, AuthorSerializer, AnimeSerializer, MangaSerializer
 )
 
+
+# Url viewset
 
 class UrlViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
@@ -26,6 +30,8 @@ class UrlViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Url.objects.filter(available=True)
 
+
+# Studio, Genre, Season, Rating, Demographic, Author viewsets
 
 class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
@@ -109,6 +115,34 @@ class RatingViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
         return Rating.objects.filter(available=True)
 
 
+class DemographicViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+    """
+    Viewset for managing Demographic instances.
+    """
+    serializer_class = DemographicSerializer
+    search_fields = ['name']
+    ordering_fields = ['name']
+    ordering = ['id']
+
+    def get_queryset(self):
+        return Demographic.objects.filter(available=True)
+
+
+class AuthorViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+    """
+    Viewset for managing Author instances.
+    """
+    serializer_class = AuthorSerializer
+    search_fields = ['name']
+    ordering_fields = ['name']
+    ordering = ['id']
+
+    def get_queryset(self):
+        return Author.objects.filter(available=True)
+
+
+# Anime, Manga viewsets
+
 class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Anime instances.
@@ -120,3 +154,16 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
 
     def get_queryset(self):
         return Anime.objects.filter(available=True)
+
+
+class MangaViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+    """
+    Viewset for managing Manga instances.
+    """
+    serializer_class = MangaSerializer
+    search_fields = ['name',]
+    ordering_fields = ['name']
+    ordering = ['id']
+
+    def get_queryset(self):
+        return Manga.objects.filter(available=True)
