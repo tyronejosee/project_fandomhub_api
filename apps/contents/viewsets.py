@@ -4,9 +4,9 @@ from django.http import Http404
 from django.utils.translation import gettext as _
 from rest_framework import viewsets
 from rest_framework import status
-#from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from apps.utils.mixins import LogicalDeleteMixin
 from apps.contents.models import (Url, Studio, Genre, Season, Rating, Anime)
 from apps.contents.serializers import (
     UrlSerializer, StudioSerializer, GenreSerializer, SeasonSerializer,
@@ -14,7 +14,7 @@ from apps.contents.serializers import (
 )
 
 
-class UrlViewSet(viewsets.ModelViewSet):
+class UrlViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Url instances.
     """
@@ -26,7 +26,7 @@ class UrlViewSet(viewsets.ModelViewSet):
         return Url.objects.filter(available=True).order_by('id')
 
 
-class StudioViewSet(viewsets.ModelViewSet):
+class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Studio instances.
     """
@@ -53,7 +53,7 @@ class StudioViewSet(viewsets.ModelViewSet):
             )
 
 
-class GenreViewSet(viewsets.ModelViewSet):
+class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Genre instances.
     """
@@ -64,24 +64,6 @@ class GenreViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         return Genre.objects.filter(available=True).order_by('id')
 
-    def destroy(self, request, *args, **kwargs):
-        # Deletes the instance logically
-        try:
-            instance = self.get_object()
-            instance.available = False
-            instance.save()
-            return Response(
-                {'message': _('Genre deleted successfully.')}, status=status.HTTP_204_NO_CONTENT
-            )
-        except Http404:
-            return Response(
-                {'errors': _('Genre not found.')}, status=status.HTTP_404_NOT_FOUND
-            )
-        except Exception as e:
-            return Response(
-                {'errors': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
-
     @action(detail=True, methods=['get'])
     def anime_list(self, request, pk=None):
         """
@@ -91,14 +73,14 @@ class GenreViewSet(viewsets.ModelViewSet):
             genre = self.get_object()
             animes = Anime.objects.filter(genre_id=genre).order_by('id')
             serializer = AnimeSerializer(animes, many=True)
-            return Response(serializer.data)
+            return Response(serializer.data, status=status.HTTP_200_OK)
         except Http404:
             return Response(
                 {'errors': _('Genre not found.')}, status=status.HTTP_404_NOT_FOUND
             )
 
 
-class SeasonViewSet(viewsets.ModelViewSet):
+class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Season instances.
     """
@@ -110,7 +92,7 @@ class SeasonViewSet(viewsets.ModelViewSet):
         return Season.objects.filter(available=True).order_by('id')
 
 
-class RatingViewSet(viewsets.ModelViewSet):
+class RatingViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Rating instances.
     """
@@ -122,7 +104,7 @@ class RatingViewSet(viewsets.ModelViewSet):
         return Rating.objects.filter(available=True).order_by('id')
 
 
-class AnimeViewSet(viewsets.ModelViewSet):
+class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Anime instances.
     """
