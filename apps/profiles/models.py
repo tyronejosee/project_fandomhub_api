@@ -1,3 +1,44 @@
-from django.db import models
+"""Models for Profiles App."""
 
-# Create your models here.
+from django.db import models
+from django.utils.translation import gettext as _
+from apps.utils.models import BaseModel
+from apps.users.models import User
+from apps.utils.paths import profile_image_path
+
+
+class Profile(BaseModel):
+    """Model definition for Profile (Entity)."""
+    user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name=_('User'))
+    bio = models.TextField(_('Bio'), blank=True, null=True)
+    website = models.URLField(_('Website'), blank=True, null=True)
+    birth_date = models.DateField(_('Birth Date'), blank=True, null=True)
+    image = models.ImageField(_('Image'), upload_to=profile_image_path, blank=True, null=True)
+    cover = models.ImageField(_('Cover'), upload_to=profile_image_path, blank=True, null=True)
+
+    class Meta:
+        """Meta definition for Profile."""
+        verbose_name = _('Profile')
+        verbose_name_plural = _('Profiles')
+
+    def __str__(self):
+        return str(self.user.username)
+
+
+class Follow(BaseModel):
+    """Model definition for Follow (Association)."""
+    follower = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='following', verbose_name=_('Follower')
+    )
+    followed_user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='followers', verbose_name=_('Followed User')
+    )
+
+    class Meta:
+        """Meta definition for Follow."""
+        unique_together = ('follower', 'followed_user')
+        verbose_name = _('Follow')
+        verbose_name_plural = _('Follows')
+
+    def __str__(self):
+        return f"{self.follower.username} follows {self.followed_user.username}"
