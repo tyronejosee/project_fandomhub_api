@@ -34,6 +34,9 @@ urlpatterns = [
 
     # Apps urls
     path('', include('apps.contents.routers')),
+
+    # Apps urls
+    path('', include('apps.users.routers')),
 ]
 
 
