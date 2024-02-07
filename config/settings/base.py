@@ -29,8 +29,9 @@ LOCAL_APPS = [
     'apps.users',
     'apps.utils',
     'apps.contents',
+    'apps.categories',
     'apps.events',
-    'apps.queues',
+    'apps.profiles',
     'apps.reviews',
     'apps.searches',
 ]
