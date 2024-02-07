@@ -43,8 +43,8 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser, PermissionsMixin):
     """Model definition for User (Entity)."""
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    username = models.CharField(_('Username'), max_length=255, unique=True)
     email = models.EmailField(_('Email'),max_length=255, unique=True,)
+    username = models.CharField(_('Username'), max_length=255, unique=True)
     first_name = models.CharField(_('First Name'), max_length=255, blank=True, null=True)
     last_name = models.CharField(_('Last Name'), max_length=255, blank=True, null=True)
     is_active = models.BooleanField(_('Is Active'), default=True)
