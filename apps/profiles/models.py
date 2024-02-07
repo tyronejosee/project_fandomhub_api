@@ -1,10 +1,13 @@
 """Models for Profiles App."""
 
+from django.conf import settings
 from django.db import models
 from django.utils.translation import gettext as _
 from apps.utils.models import BaseModel
-from apps.users.models import User
 from apps.utils.paths import profile_image_path
+
+
+User = settings.AUTH_USER_MODEL
 
 
 class Profile(BaseModel):

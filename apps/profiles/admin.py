@@ -1,3 +1,9 @@
-from django.contrib import admin
+"""Admin for Profiles App."""
 
-# Register your models here.
+from django.contrib import admin
+from apps.profiles.models import Profile
+
+
+@admin.register(Profile)
+class ProfileAdmin(admin.ModelAdmin):
+    """Admin config for Profile model."""

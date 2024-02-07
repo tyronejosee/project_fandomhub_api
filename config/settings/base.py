@@ -30,8 +30,7 @@ LOCAL_APPS = [
     'apps.utils',
     'apps.contents',
     'apps.categories',
-    'apps.events',
-    #'apps.profiles',
+    'apps.profiles',
     'apps.reviews',
     'apps.searches',
 ]

@@ -17,9 +17,9 @@ class UserAdmin(admin.ModelAdmin):
     ordering = ('username',)
 
     fieldsets = (
-        (_('Account info'), {'fields': ('username', 'email', 'password', 'pk')}),
-        (_('Personal info'), {'fields': ('first_name', 'last_name', 'image')}),
-        (_('Permissions'), {'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')}),
+        (_('Account info'), {'fields': ('pk', 'username', 'email', 'password', 'is_active')}),
+        (_('Personal info'), {'fields': ('first_name', 'last_name')}),
+        (_('Permissions'), {'fields': ('is_staff', 'is_superuser', 'groups', 'user_permissions')}),
         (_('Records'), {'fields': ('last_login', 'date_joined')}),
     )
 
@@ -27,7 +27,8 @@ class UserAdmin(admin.ModelAdmin):
         (None, {
             'classes': ('wide',),
             'fields': (
-                'username', 'email', 'first_name', 'last_name', 'password1', 'password2', 'is_staff', 'is_superuser'
+                'username', 'email', 'first_name', 'last_name', 'password1',
+                'password2', 'is_staff', 'is_superuser'
             ),
         }),
     )
