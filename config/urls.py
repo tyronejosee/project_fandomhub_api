@@ -13,10 +13,10 @@ schema_view = get_schema_view(
     openapi.Info(
       title="Project: Beehive API",
       default_version='v1',
-      description="Pending description",
-      terms_of_service="https://www.google.com/policies/terms/",
-      contact=openapi.Contact(email="contact@snippets.local"),
-      license=openapi.License(name="Apache License"),
+      description="The Beehive API provides access to data about beehives, bees, and more. Search for information, get specific details, and stay updated on the latest developments in your beekeeping activities.",
+      terms_of_service="https://github.com/tyronejosee/project_beehive_api/blob/main/LICENSE",
+      contact=openapi.Contact(email="alt.tyronejose@gmail.com"),
+      license=openapi.License(name="Apache License 2.0"),
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
@@ -34,6 +34,7 @@ urlpatterns = [
 
     # Apps urls
     path('', include('apps.contents.routers')),
+    path('', include('apps.categories.routers')),
 
     # Apps urls
     path('', include('apps.users.routers')),
