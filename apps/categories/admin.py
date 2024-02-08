@@ -2,7 +2,7 @@
 
 from django.contrib import admin
 from django.utils.translation import gettext as _
-from apps.categories.models import Studio, Genre, Season, Rating, Url, Author, Demographic
+from apps.categories.models import Studio, Genre, Season, Url, Author, Demographic
 
 
 @admin.register(Url)
@@ -41,19 +41,8 @@ class GenreAdmin(admin.ModelAdmin):
 @admin.register(Season)
 class SeasonAdmin(admin.ModelAdmin):
     """Admin config for Season model."""
-    search_fields = ('name',)
-    list_display = ('name', 'available')
-    list_filter = ('available',)
-    list_per_page = 25
-    readonly_fields = ('pk', 'created_at', 'updated_at',)
-    ordering = ('pk',)
-
-
-@admin.register(Rating)
-class RatingAdmin(admin.ModelAdmin):
-    """Admin config for Rating model."""
-    search_fields = ('name',)
-    list_display = ('name', 'available')
+    search_fields = ('season', 'year')
+    list_display = ('season', 'available')
     list_filter = ('available',)
     list_per_page = 25
     readonly_fields = ('pk', 'created_at', 'updated_at',)

@@ -1,6 +1,7 @@
 """Models for Categories App."""
 
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.translation import gettext as _
 from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
@@ -64,30 +65,34 @@ class Genre(BaseModel, SlugMixin):
         return str(self.name)
 
 
-class Season(BaseModel, SlugMixin):
+class Season(BaseModel):
     """Model definition for Season (Catalog)."""
-    name = models.CharField(_('Name'), max_length=25, unique=True)
+    SEASON_CHOICES = [
+        (0, _('Pending')),
+        (1, _('Winter')),
+        (2, _('Spring')),
+        (3, _('Summer')),
+        (4, _('Fall')),
+    ]
+    season = models.IntegerField(_('Season'), choices=SEASON_CHOICES, default=0)
+    year = models.IntegerField(
+        _('Year'), validators=[MinValueValidator(1900), MaxValueValidator(2100)], default=2010
+    )
 
     class Meta:
         """Meta definition for Season."""
         verbose_name = _('Season')
         verbose_name_plural = _('Season')
 
-    def __str__(self):
-        return str(self.name)
-
-
-class Rating(BaseModel):
-    """Model definition for Rating (Catalog)."""
-    name = models.CharField(_('Name'), max_length=50, unique=True)
-
-    class Meta:
-        """Meta definition for Rating."""
-        verbose_name = _('Rating')
-        verbose_name_plural = _('Ratings')
+    def get_season_display_name(self):
+        """Gets the season name based on the season value."""
+        for choice in self.SEASON_CHOICES:
+            if choice[0] == self.season:
+                return choice[1]
+        return _('Pending')
 
     def __str__(self):
-        return str(self.name)
+        return f'{self.get_season_display_name()} {self.year}'
 
 
 class Demographic(BaseModel):

@@ -9,10 +9,10 @@ from rest_framework.response import Response
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.contents.models import Anime
 from apps.contents.serializers import AnimeSerializer
-from apps.categories.models import Url, Studio, Genre, Season, Rating, Demographic, Author
+from apps.categories.models import Url, Studio, Genre, Season, Demographic, Author
 from apps.categories.serializers import (
     UrlSerializer, StudioSerializer, GenreSerializer, SeasonSerializer,
-    RatingSerializer, DemographicSerializer, AuthorSerializer,
+    DemographicSerializer, AuthorSerializer,
 )
 
 
@@ -96,19 +96,6 @@ class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
 
     def get_queryset(self):
         return Season.objects.filter(available=True)
-
-
-class RatingViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
-    """
-    Viewset for managing Rating instances.
-    """
-    serializer_class = RatingSerializer
-    search_fields = ['name']
-    ordering_fields = ['name']
-    ordering = ['id']
-
-    def get_queryset(self):
-        return Rating.objects.filter(available=True)
 
 
 class DemographicViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
