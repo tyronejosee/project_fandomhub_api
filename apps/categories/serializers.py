@@ -47,8 +47,8 @@ class SeasonSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for SeasonSerializer."""
         model = Season
-        fields = ('id', 'name', 'slug',)
-        read_only_fields = ('slug',)
+        fields = ('id', 'season',)
+        read_only_fields = ('id',)
 
 
 class DemographicSerializer(serializers.ModelSerializer):

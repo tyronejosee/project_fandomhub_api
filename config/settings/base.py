@@ -41,7 +41,8 @@ THIRD_APPS = [
     'social_django',
     'rest_framework_simplejwt',
     'rest_framework_simplejwt.token_blacklist',
-    'drf_yasg',
+    'drf_spectacular',
+    'drf_spectacular_sidecar',
 ]
 
 INSTALLED_APPS = BASE_APPS + PROJECT_APPS + THIRD_APPS
@@ -140,6 +141,7 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle'
         #'apps.utils.throttles.StaffUserThrottle',
     ],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'DEFAULT_CONTENT_LANGUAGE': 'en',
 
     # Generic view behavior
@@ -213,6 +215,16 @@ DJOSER = {
 }
 
 # APPEND_SLASH = False
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Project: Beehive',
+    'DESCRIPTION': 'The Beehive API provides access to data about beehives, bees, and more',
+    'VERSION': 'v1',
+    'SERVE_INCLUDE_SCHEMA': False,
+    'SWAGGER_UI_DIST': 'SIDECAR',
+    'SWAGGER_UI_FAVICON_HREF': 'SIDECAR',
+    'REDOC_DIST': 'SIDECAR',
+}
 
 SWAGGER_SETTINGS = {'DOC_EXPANSION': 'none'}
 
