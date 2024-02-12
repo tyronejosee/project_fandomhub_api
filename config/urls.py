@@ -20,6 +20,7 @@ urlpatterns = [
     path('', include('apps.contents.routers')),
     path('', include('apps.categories.routers')),
     path('', include('apps.users.routers')),
+    path('', include('apps.watchlists.routers')),
 ]
 
 
