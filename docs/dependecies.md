@@ -1,11 +1,12 @@
 # Dependencies
 
-- rest-framework
-- djoser
-- simple_jwt
-- django-yasg
-- django-environ
-- pillow
-- django-filter
-- coverage
-- django-debug-toolbar
+- [X] rest-framework
+- [x] djoser
+- [x] simple_jwt
+- [x] drf-espectacular
+- [x] django-environ
+- [x] pillow
+- [x] django-filter
+- [ ] coverage
+- [ ] django-debug-toolbar
+- [ ] django-dbbackup

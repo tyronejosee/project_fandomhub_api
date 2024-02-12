@@ -7,9 +7,7 @@ from apps.utils.models import BaseModel
 from apps.utils.paths import profile_image_path
 from apps.contents.models import Anime
 
-
 User = settings.AUTH_USER_MODEL
-
 
 class Profile(BaseModel):
     """Model definition for Profile (Entity)."""
@@ -50,7 +48,18 @@ class Follow(BaseModel):
 
 class AnimeList(models.Model):
     """Model definition for AnimeList (Association)."""
-    anime = models.ForeignKey(Anime, related_name='anime_list_status', on_delete=models.CASCADE)
-    user = models.ForeignKey(User, related_name='user_list_status', on_delete=models.CASCADE)
-    status = models.CharField(max_length=20)
-    num_episodes_watched = models.IntegerField(default=0)
+    STATUS_CHOICES = (
+        (0, 'Pending'),
+        (1, 'Watching'),
+        (2, 'Completed'),
+        (3, 'On Hold'),
+        (4, 'Dropped'),
+        (5, 'Plan to Watch')
+    )
+    user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name=_('User'))
+    anime = models.ForeignKey(Anime, on_delete=models.CASCADE, verbose_name=_('Anime'))
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=0)
+    is_watched = models.BooleanField(default=False)
+    score = models.IntegerField(default=0) # 10
+    priority = models.IntegerField(default=0)
+    comments = models.TextField(blank=True)

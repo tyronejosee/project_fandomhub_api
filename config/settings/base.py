@@ -25,13 +25,12 @@ BASE_APPS = [
 ]
 
 PROJECT_APPS = [
+    'apps.categories',
+    'apps.contents',
+    'apps.profiles',
+    'apps.searches',
     'apps.users',
     'apps.utils',
-    'apps.contents',
-    'apps.categories',
-    'apps.profiles',
-    'apps.reviews',
-    'apps.searches',
 ]
 
 THIRD_APPS = [
@@ -142,6 +141,7 @@ REST_FRAMEWORK = {
         #'apps.utils.throttles.StaffUserThrottle',
     ],
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+    # 'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.NamespaceVersioning',
     'DEFAULT_CONTENT_LANGUAGE': 'en',
 
     # Generic view behavior
@@ -166,9 +166,9 @@ REST_FRAMEWORK = {
     'ORDERING_PARAM': 'ordering',
 
     # Versioning
-    'DEFAULT_VERSION': None,
-    'ALLOWED_VERSIONS': None,
-    'VERSION_PARAM': 'version',
+    # 'DEFAULT_VERSION': 'v2',
+    # 'ALLOWED_VERSIONS': ['v1', 'v2'],
+    # 'VERSION_PARAM': 'version',
 }
 
 AUTHENTICATION_BACKENDS = (
@@ -217,15 +217,17 @@ DJOSER = {
 # APPEND_SLASH = False
 
 SPECTACULAR_SETTINGS = {
+    'SCHEMA_PATH_PREFIX': r'^/api/v\d+',
+    'SCHEMA_PATH_PREFIX_TRIM': True,
     'TITLE': 'Project: Beehive',
     'DESCRIPTION': 'The Beehive API provides access to data about beehives, bees, and more',
+    'LICENSE': {'name': 'Apache Licence 2.0', 'url': 'wwwww.com'},
     'VERSION': 'v1',
+    'CONTACT': {'name': 'Developer', 'url': 'wwwww.com'},
     'SERVE_INCLUDE_SCHEMA': False,
     'SWAGGER_UI_DIST': 'SIDECAR',
     'SWAGGER_UI_FAVICON_HREF': 'SIDECAR',
     'REDOC_DIST': 'SIDECAR',
 }
-
-SWAGGER_SETTINGS = {'DOC_EXPANSION': 'none'}
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

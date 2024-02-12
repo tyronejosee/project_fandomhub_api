@@ -1,7 +1,7 @@
 # Folder Structure
 
 ```txt
-project_beehive/
+project_beehive_api/
 │
 ├── config/
 │   │

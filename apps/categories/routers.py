@@ -8,7 +8,6 @@ from apps.categories.viewsets import (
 )
 
 
-# Routes
 router = DefaultRouter()
 router.register(r'genres', GenreViewSet, basename='genre')
 router.register(r'studios', StudioViewSet, basename='studio')

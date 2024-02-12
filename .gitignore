@@ -3,6 +3,7 @@ PLANNING.md
 enpoints.md
 desktop.ini
 temp.py
+temp/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
