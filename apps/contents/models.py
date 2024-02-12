@@ -7,31 +7,13 @@ from apps.categories.models import Url, Studio, Genre, Season, Demographic, Auth
 from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
+from apps.contents.choices import (
+    STATUS_CHOICES, CATEGORY_CHOICES, RATING_CHOICES, MEDIA_TYPE_CHOICES
+)
 
 
 class Anime(BaseModel, SlugMixin):
     """Model definition for Anime (Entity)."""
-    STATUS_CHOICES = [
-        (0, _('Pending')),
-        (1, _('Finished')),
-        (2, _('Airing')),
-        (3, _('Upcoming'))
-    ]
-    CATEGORY_CHOICES = [
-        (0, _('Pending')),
-        (1, _('ONA')),
-        (2, _('Series')),
-        (3, _('Movies'))
-    ]
-    RATING_CHOICES = [
-        (0, _('Pending')),
-        (1, _('G - All Ages')),
-        (2, _('PG - Children')),
-        (3, _('PG-13 - Teens 13 and Older')),
-        (4, _('R - 17+ (Violence & Profanity)')),
-        (5, _('R+ - Profanity & Mild Nudity')),
-        (6, _('RX - Hentai')),
-    ]
     name = models.CharField(_('Name (ENG)'), max_length=255, unique=True)
     name_jpn = models.CharField(_('Name (JPN)'), max_length=255, unique=True)
     image = models.ImageField(_('Image'), upload_to=image_path, blank=True, null=True)
@@ -66,24 +48,14 @@ class Anime(BaseModel, SlugMixin):
 
 class Manga(BaseModel, SlugMixin):
     """Model definition for Manga (Entity)."""
-    STATUS_CHOICES = [
-        ('P', _('Pending')),
-        ('A', _('Airing')),
-        ('F', _('Finished')),
-        ('U', _('Upcoming'))
-    ]
-    CATEGORY_CHOICES = [
-        ('P', _('Pending')),
-        ('O', _('Manga')),
-    ]
     name = models.CharField(_('Name (ENG)'), max_length=255, unique=True)
     name_jpn = models.CharField(_('Name (JPN)'), max_length=255, unique=True)
     image = models.ImageField(_('Image'), upload_to=image_path, blank=True, null=True)
     synopsis = models.TextField(_('Synopsis'), blank=True, null=True)
     chapters = models.IntegerField(_('Chapters'), validators=[MinValueValidator(0)])
     release = models.DateField(_('Release'), blank=True, null=True)
-    category = models.CharField(_('Category'), max_length=1, choices=CATEGORY_CHOICES, default='P')
-    status = models.CharField(_('Status'), max_length=1, choices=STATUS_CHOICES, default='P')
+    media_type = models.IntegerField(_('Media Type'), choices=MEDIA_TYPE_CHOICES, default=0)
+    status = models.IntegerField(_('Status'), choices=STATUS_CHOICES, default=0)
     author_id = models.ForeignKey(Author, on_delete=models.CASCADE, blank=True, null=True)
     demographic_id = models.ForeignKey(Demographic, on_delete=models.CASCADE, blank=True, null=True)
     genre_id = models.ManyToManyField(Genre, blank=True)
