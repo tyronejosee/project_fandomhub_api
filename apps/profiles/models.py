@@ -5,7 +5,7 @@ from django.db import models
 from django.utils.translation import gettext as _
 from apps.utils.models import BaseModel
 from apps.utils.paths import profile_image_path
-from apps.contents.models import Anime
+
 
 User = settings.AUTH_USER_MODEL
 
@@ -44,22 +44,3 @@ class Follow(BaseModel):
 
     def __str__(self):
         return f"{self.follower.username} follows {self.followed_user.username}"
-
-
-class AnimeList(models.Model):
-    """Model definition for AnimeList (Association)."""
-    STATUS_CHOICES = (
-        (0, 'Pending'),
-        (1, 'Watching'),
-        (2, 'Completed'),
-        (3, 'On Hold'),
-        (4, 'Dropped'),
-        (5, 'Plan to Watch')
-    )
-    user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name=_('User'))
-    anime = models.ForeignKey(Anime, on_delete=models.CASCADE, verbose_name=_('Anime'))
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default=0)
-    is_watched = models.BooleanField(default=False)
-    score = models.IntegerField(default=0) # 10
-    priority = models.IntegerField(default=0)
-    comments = models.TextField(blank=True)
