@@ -29,6 +29,6 @@ class MangaSerializer(serializers.ModelSerializer):
         model = Manga
         fields = [
             'id', 'name', 'name_jpn', 'slug', 'image', 'synopsis', 'chapters',
-            'release', 'category', 'status', 'author_id', 'demographic_id',
+            'release', 'media_type', 'status', 'author_id', 'demographic_id',
             'genre_id', 'url_id',
         ]

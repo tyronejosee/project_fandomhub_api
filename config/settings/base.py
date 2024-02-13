@@ -81,8 +81,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
-AUTH_USER_MODEL = 'users.User'
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -134,7 +132,8 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly'
-        #'apps.utils.permissions.IsAdminOrReadOnly',
+        # 'apps.utils.permissions.IsAdminOrReadOnly',
+        # 'rest_framework.permissions.IsAuthenticated',
     ],
     'DEFAULT_THROTTLE_CLASSES': [
         'rest_framework.throttling.AnonRateThrottle',
@@ -175,7 +174,6 @@ REST_FRAMEWORK = {
 AUTHENTICATION_BACKENDS = (
     'social_core.backends.google.GoogleOAuth2',
     'social_core.backends.facebook.FacebookOAuth2',
-    # 'social_core.backends.twitter.TwitterOAuth',
     'django.contrib.auth.backends.ModelBackend',
 )
 
@@ -215,16 +213,34 @@ DJOSER = {
     },
 }
 
+
 # APPEND_SLASH = False
+
+AUTH_USER_MODEL = 'users.User'
+
+EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
+
+if not DEBUG:
+    DEFAULT_FROM_EMAIL = 'Beehive - API <alt.tyronejose@gmail.com>'
+    EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = env('EMAIL_HOST')
+    EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+    EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
+    EMAIL_PORT = env('EMAIL_PORT')
+    EMAIL_USE_TLS = env('EMAIL_USE_TLS')
+
 
 SPECTACULAR_SETTINGS = {
     'SCHEMA_PATH_PREFIX': r'^/api/v\d+',
     'SCHEMA_PATH_PREFIX_TRIM': True,
     'TITLE': 'Project: Beehive',
-    'DESCRIPTION': 'The Beehive API provides access to data about beehives, bees, and more',
-    'LICENSE': {'name': 'Apache Licence 2.0', 'url': 'wwwww.com'},
     'VERSION': 'v1',
-    'CONTACT': {'name': 'Developer', 'url': 'wwwww.com'},
+    'DESCRIPTION': 'The Beehive API provides access to data about beehives, bees, and more',
+    'LICENSE': {
+        'name': 'Apache Licence 2.0',
+        'url': 'https://github.com/tyronejosee/project_beehive_api/blob/main/LICENSE'
+    },
+    'CONTACT': {'name': 'Developer', 'url': 'https://github.com/tyronejosee'},
     'SERVE_INCLUDE_SCHEMA': False,
     'SWAGGER_UI_DIST': 'SIDECAR',
     'SWAGGER_UI_FAVICON_HREF': 'SIDECAR',
