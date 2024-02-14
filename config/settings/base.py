@@ -25,12 +25,13 @@ BASE_APPS = [
 ]
 
 PROJECT_APPS = [
+    'apps.utils',
     'apps.categories',
     'apps.contents',
+    'apps.persons',
     'apps.profiles',
     'apps.searches',
     'apps.users',
-    'apps.utils',
     'apps.watchlists',
 ]
 

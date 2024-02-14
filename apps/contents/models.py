@@ -3,13 +3,14 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.translation import gettext as _
-from apps.categories.models import Url, Studio, Genre, Season, Demographic, Author
+from apps.categories.models import Url, Studio, Genre, Season, Demographic
 from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.contents.choices import (
     STATUS_CHOICES, CATEGORY_CHOICES, RATING_CHOICES, MEDIA_TYPE_CHOICES
 )
+from apps.persons.models import Author
 
 
 class Anime(BaseModel, SlugMixin):

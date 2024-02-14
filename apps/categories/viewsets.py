@@ -9,10 +9,9 @@ from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.contents.models import Anime
 from apps.contents.serializers import AnimeSerializer
-from apps.categories.models import Url, Studio, Genre, Season, Demographic, Author
+from apps.categories.models import Url, Studio, Genre, Season, Demographic
 from apps.categories.serializers import (
-    UrlSerializer, StudioSerializer, GenreSerializer, SeasonSerializer,
-    DemographicSerializer, AuthorSerializer,
+    UrlSerializer, StudioSerializer, GenreSerializer, SeasonSerializer, DemographicSerializer
 )
 
 
@@ -112,17 +111,3 @@ class DemographicViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
 
     def get_queryset(self):
         return Demographic.objects.filter(available=True)
-
-
-class AuthorViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
-    """
-    Viewset for managing Author instances.
-    """
-    serializer_class = AuthorSerializer
-    permission_classes = [IsStaffOrReadOnly]
-    search_fields = ['name']
-    ordering_fields = ['name']
-    ordering = ['id']
-
-    def get_queryset(self):
-        return Author.objects.filter(available=True)

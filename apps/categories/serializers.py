@@ -1,7 +1,7 @@
 """Serializers for Contents App."""
 
 from rest_framework import serializers
-from apps.categories.models import Url, Studio, Genre, Season, Demographic, Author
+from apps.categories.models import Url, Studio, Genre, Season, Demographic
 
 
 class UrlSerializer(serializers.ModelSerializer):
@@ -57,13 +57,4 @@ class DemographicSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for DemographicSerializer."""
         model = Demographic
-        fields = ('id', 'name',)
-
-
-class AuthorSerializer(serializers.ModelSerializer):
-    """Serializer for Author model."""
-
-    class Meta:
-        """Meta definition for AuthorSerializer."""
-        model = Author
         fields = ('id', 'name',)

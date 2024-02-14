@@ -1,8 +1,7 @@
 """Admin for Contents App."""
 
 from django.contrib import admin
-from django.utils.translation import gettext as _
-from apps.categories.models import Studio, Genre, Season, Url, Author, Demographic
+from apps.categories.models import Studio, Genre, Season, Url, Demographic
 
 
 @admin.register(Url)
@@ -52,17 +51,6 @@ class SeasonAdmin(admin.ModelAdmin):
 @admin.register(Demographic)
 class DemographicAdmin(admin.ModelAdmin):
     """Admin config for Demographic model."""
-    search_fields = ('name',)
-    list_display = ('name', 'available')
-    list_filter = ('available',)
-    list_per_page = 25
-    readonly_fields = ('pk', 'created_at', 'updated_at',)
-    ordering = ('pk',)
-
-
-@admin.register(Author)
-class AuthorAdmin(admin.ModelAdmin):
-    """Admin config for Author model."""
     search_fields = ('name',)
     list_display = ('name', 'available')
     list_filter = ('available',)
