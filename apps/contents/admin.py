@@ -13,7 +13,10 @@ class AnimeAdmin(admin.ModelAdmin):
     list_filter = ('status', 'genre_id', 'studio_id')
     list_editable = ('available',)
     list_per_page = 25
-    readonly_fields = ('pk', 'created_at', 'updated_at',)
+    readonly_fields = (
+        'pk', 'mean', 'rank', 'popularity', 'num_list_users', 'num_scoring_users',
+        'created_at', 'updated_at'
+    )
     ordering = ('pk',)
 
 
@@ -25,5 +28,8 @@ class MangaAdmin(admin.ModelAdmin):
     list_filter = ('status', 'genre_id',)
     list_editable = ('available',)
     list_per_page = 25
-    readonly_fields = ('pk', 'created_at', 'updated_at',)
+    readonly_fields = (
+        'pk', 'mean', 'rank', 'popularity', 'num_list_users', 'num_scoring_users',
+        'created_at', 'updated_at'
+    )
     ordering = ('pk',)

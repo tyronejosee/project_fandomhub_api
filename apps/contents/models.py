@@ -28,9 +28,14 @@ class Anime(BaseModel, SlugMixin):
     status = models.IntegerField(_('Status'), choices=STATUS_CHOICES, default=0)
     rating = models.IntegerField(_('Rating'), choices=RATING_CHOICES, default=0)
     studio_id = models.ForeignKey(Studio, on_delete=models.CASCADE, blank=True, null=True)
-    genre_id = models.ForeignKey(Genre, on_delete=models.CASCADE, blank=True, null=True)
+    genre_id = models.ManyToManyField(Genre, blank=True)
     season_id = models.ForeignKey(Season, on_delete=models.CASCADE, blank=True, null=True)
     url_id = models.ManyToManyField(Url, blank=True)
+    mean = models.FloatField(_('Mean'), blank=True, null=True)
+    rank = models.IntegerField(_('Rank'), blank=True, null=True)
+    popularity = models.IntegerField(_('Popularity'), blank=True, null=True)
+    num_list_users = models.IntegerField(_('Number of List Users'), blank=True, null=True)
+    num_scoring_users = models.IntegerField(_('Number of Scoring Users'), blank=True, null=True)
 
     class Meta:
         """Meta definition for Anime."""
@@ -39,12 +44,6 @@ class Anime(BaseModel, SlugMixin):
 
     def __str__(self):
         return str(self.name)
-
-    def get_image(self):
-        """Returns the image URL or an empty string."""
-        if self.image:
-            return str(self.image.url)
-        return ''
 
 
 class Manga(BaseModel, SlugMixin):
@@ -61,6 +60,11 @@ class Manga(BaseModel, SlugMixin):
     demographic_id = models.ForeignKey(Demographic, on_delete=models.CASCADE, blank=True, null=True)
     genre_id = models.ManyToManyField(Genre, blank=True)
     url_id = models.ManyToManyField(Url, blank=True)
+    mean = models.FloatField(_('Mean'), blank=True, null=True)
+    rank = models.IntegerField(_('Rank'), blank=True, null=True)
+    popularity = models.IntegerField(_('Popularity'), blank=True, null=True)
+    num_list_users = models.IntegerField(_('Number of List Users'), blank=True, null=True)
+    num_scoring_users = models.IntegerField(_('Number of Scoring Users'), blank=True, null=True)
 
     class Meta:
         """Meta definition for Manga."""
@@ -69,9 +73,3 @@ class Manga(BaseModel, SlugMixin):
 
     def __str__(self):
         return str(self.name)
-
-    def get_image(self):
-        """Returns the image URL or an empty string."""
-        if self.image:
-            return str(self.image.url)
-        return ''

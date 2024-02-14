@@ -6,7 +6,6 @@ from apps.contents.models import Anime, Manga
 
 class AnimeSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
-    image = serializers.CharField(source='get_image')
     status = serializers.CharField(source='get_status_display')
     category = serializers.CharField(source='get_category_display')
 
@@ -22,7 +21,6 @@ class AnimeSerializer(serializers.ModelSerializer):
 
 class MangaSerializer(serializers.ModelSerializer):
     """Serializer for Manga model."""
-    image = serializers.CharField(source='get_image')
 
     class Meta:
         """Meta definition for MangaSerializer."""

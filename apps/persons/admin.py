@@ -8,8 +8,8 @@ from apps.persons.models import Author
 class AuthorAdmin(admin.ModelAdmin):
     """Admin config for Author model."""
     search_fields = ('name',)
-    #list_display = ('name', 'available')
-    #list_filter = ('available',)
+    list_display = ('name', 'available')
+    list_filter = ('available',)
     list_per_page = 25
-    readonly_fields = ('pk',)
+    readonly_fields = ('pk', 'created_at', 'updated_at')
     ordering = ('pk',)
