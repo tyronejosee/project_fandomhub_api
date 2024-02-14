@@ -1,14 +1,16 @@
 """Permissions for Utils App."""
 
-from rest_framework.permissions import BasePermission
+from rest_framework.permissions import BasePermission, SAFE_METHODS
 
 
-class IsAdminOrReadOnly(BasePermission):
+class IsStaffOrReadOnly(BasePermission):
     """
-    Allows access only to admin users.
+    Allows access only to staff users.
     """
 
     def has_permission(self, request, view):
         return bool(
-            request.method in ['GET', 'HEAD', 'OPTIONS'] or (request.user and request.user.is_staff)
+            request.method in SAFE_METHODS or
+            request.user and
+            request.user.is_staff
         )

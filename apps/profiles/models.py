@@ -9,6 +9,7 @@ from apps.utils.paths import profile_image_path
 
 User = settings.AUTH_USER_MODEL
 
+
 class Profile(BaseModel):
     """Model definition for Profile (Entity)."""
     user = models.OneToOneField(User, on_delete=models.CASCADE, verbose_name=_('User'))

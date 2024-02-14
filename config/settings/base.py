@@ -127,12 +127,11 @@ REST_FRAMEWORK = {
     # Base API policies
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
-        #'rest_framework.authentication.SessionAuthentication',
         #'rest_framework.authentication.BasicAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly'
-        # 'apps.utils.permissions.IsAdminOrReadOnly',
+        # 'apps.utils.permissions.IsStaffOrReadOnly',
         # 'rest_framework.permissions.IsAuthenticated',
     ],
     'DEFAULT_THROTTLE_CLASSES': [
