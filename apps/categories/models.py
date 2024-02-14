@@ -6,20 +6,13 @@ from django.utils.translation import gettext as _
 from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
+from apps.categories.choices import TAG_CHOICES, SEASON_CHOICES
 
 
 class Url(BaseModel):
     """Model definition for Url (Association)."""
-    TAG_CHOICES = [
-        ('P', _('Pending')),
-        ('S', _('Official Site')),
-        ('C', _('Crunchyroll')),
-        ('N', _('Netflix')),
-        ('Y', _('Youtube Acccount')),
-        ('X', _('X Account')),
-    ]
     url = models.URLField(_('URL'))
-    tag = models.CharField(_('Tag'), max_length=1, choices=TAG_CHOICES, default='P')
+    tag = models.IntegerField(_('Tag'), choices=TAG_CHOICES, default=0)
 
     class Meta:
         """Meta definition for Url."""
@@ -67,13 +60,6 @@ class Genre(BaseModel, SlugMixin):
 
 class Season(BaseModel):
     """Model definition for Season (Catalog)."""
-    SEASON_CHOICES = [
-        (0, _('Pending')),
-        (1, _('Winter')),
-        (2, _('Spring')),
-        (3, _('Summer')),
-        (4, _('Fall')),
-    ]
     season = models.IntegerField(_('Season'), choices=SEASON_CHOICES, default=0)
     year = models.IntegerField(
         _('Year'), validators=[MinValueValidator(1900), MaxValueValidator(2100)], default=2010
@@ -86,7 +72,7 @@ class Season(BaseModel):
 
     def get_season_display_name(self):
         """Gets the season name based on the season value."""
-        for choice in self.SEASON_CHOICES:
+        for choice in SEASON_CHOICES:
             if choice[0] == self.season:
                 return choice[1]
         return _('Pending')
