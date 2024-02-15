@@ -1,0 +1,505 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-15 16:11-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\apps\categories\choices.py:7 .\apps\categories\choices.py:16
+#: .\apps\categories\models.py:78 .\apps\contents\choices.py:7
+#: .\apps\contents\choices.py:14 .\apps\contents\choices.py:24
+#: .\apps\contents\choices.py:34 .\apps\contents\choices.py:44
+msgid "Pending"
+msgstr ""
+
+#: .\apps\categories\choices.py:8
+msgid "Official Site"
+msgstr ""
+
+#: .\apps\categories\choices.py:9
+msgid "Crunchyroll"
+msgstr ""
+
+#: .\apps\categories\choices.py:10
+msgid "Netflix"
+msgstr ""
+
+#: .\apps\categories\choices.py:11
+msgid "Youtube Acccount"
+msgstr ""
+
+#: .\apps\categories\choices.py:12
+msgid "X Account"
+msgstr ""
+
+#: .\apps\categories\choices.py:17
+msgid "Winter"
+msgstr ""
+
+#: .\apps\categories\choices.py:18
+msgid "Spring"
+msgstr ""
+
+#: .\apps\categories\choices.py:19
+msgid "Summer"
+msgstr ""
+
+#: .\apps\categories\choices.py:20
+msgid "Fall"
+msgstr ""
+
+#: .\apps\categories\models.py:14
+msgid "URL"
+msgstr ""
+
+#: .\apps\categories\models.py:15
+msgid "Tag"
+msgstr ""
+
+#: .\apps\categories\models.py:19
+msgid "Url"
+msgstr ""
+
+#: .\apps\categories\models.py:20
+msgid "Urls"
+msgstr ""
+
+#: .\apps\categories\models.py:28 .\apps\contents\models.py:18
+#: .\apps\contents\models.py:51
+msgid "Name (ENG)"
+msgstr ""
+
+#: .\apps\categories\models.py:29 .\apps\contents\models.py:19
+#: .\apps\contents\models.py:52
+msgid "Name (JPN)"
+msgstr ""
+
+#: .\apps\categories\models.py:30
+msgid "Established"
+msgstr ""
+
+#: .\apps\categories\models.py:31 .\apps\contents\models.py:20
+#: .\apps\contents\models.py:53 .\apps\profiles\models.py:19
+msgid "Image"
+msgstr ""
+
+#: .\apps\categories\models.py:35
+msgid "Studio"
+msgstr ""
+
+#: .\apps\categories\models.py:36
+msgid "Studios"
+msgstr ""
+
+#: .\apps\categories\models.py:50 .\apps\categories\models.py:86
+#: .\apps\persons\models.py:10 .\apps\users\models.py:45
+msgid "Name"
+msgstr ""
+
+#: .\apps\categories\models.py:54
+msgid "Genre"
+msgstr ""
+
+#: .\apps\categories\models.py:55
+msgid "Genres"
+msgstr ""
+
+#: .\apps\categories\models.py:63 .\apps\categories\models.py:70
+#: .\apps\categories\models.py:71
+msgid "Season"
+msgstr ""
+
+#: .\apps\categories\models.py:65
+msgid "Year"
+msgstr ""
+
+#: .\apps\categories\models.py:90
+msgid "Demographic"
+msgstr ""
+
+#: .\apps\categories\models.py:91
+msgid "Demographics"
+msgstr ""
+
+#: .\apps\categories\viewsets.py:56
+msgid "There are no animes for this studio."
+msgstr ""
+
+#: .\apps\categories\viewsets.py:84
+msgid "There are no animes for this genre."
+msgstr ""
+
+#: .\apps\contents\choices.py:8
+msgid "Finished"
+msgstr ""
+
+#: .\apps\contents\choices.py:9
+msgid "Airing"
+msgstr ""
+
+#: .\apps\contents\choices.py:10
+msgid "Upcoming"
+msgstr ""
+
+#: .\apps\contents\choices.py:15
+msgid "TV"
+msgstr ""
+
+#: .\apps\contents\choices.py:16
+msgid "OVA"
+msgstr ""
+
+#: .\apps\contents\choices.py:17
+msgid "Movie"
+msgstr ""
+
+#: .\apps\contents\choices.py:18
+msgid "Special"
+msgstr ""
+
+#: .\apps\contents\choices.py:19
+msgid "ONA"
+msgstr ""
+
+#: .\apps\contents\choices.py:20 .\apps\contents\choices.py:53
+msgid "Music"
+msgstr ""
+
+#: .\apps\contents\choices.py:25
+msgid "G - All Ages"
+msgstr ""
+
+#: .\apps\contents\choices.py:26
+msgid "PG - Children"
+msgstr ""
+
+#: .\apps\contents\choices.py:27
+msgid "PG-13 - Teens 13 and Older"
+msgstr ""
+
+#: .\apps\contents\choices.py:28
+msgid "R - 17+ (Violence & Profanity)"
+msgstr ""
+
+#: .\apps\contents\choices.py:29
+msgid "R+ - Profanity & Mild Nudity"
+msgstr ""
+
+#: .\apps\contents\choices.py:30
+msgid "RX - Hentai"
+msgstr ""
+
+#: .\apps\contents\choices.py:35 .\apps\contents\choices.py:46
+#: .\apps\contents\models.py:71 .\apps\watchlists\models.py:45
+msgid "Manga"
+msgstr ""
+
+#: .\apps\contents\choices.py:36 .\apps\contents\choices.py:47
+msgid "Novel"
+msgstr ""
+
+#: .\apps\contents\choices.py:37
+msgid "One Shot"
+msgstr ""
+
+#: .\apps\contents\choices.py:38
+msgid "Doujinshi"
+msgstr ""
+
+#: .\apps\contents\choices.py:39
+msgid "Manhwa"
+msgstr ""
+
+#: .\apps\contents\choices.py:40
+msgid "OEL"
+msgstr ""
+
+#: .\apps\contents\choices.py:45
+msgid "Original"
+msgstr ""
+
+#: .\apps\contents\choices.py:48
+msgid "Light Novel"
+msgstr ""
+
+#: .\apps\contents\choices.py:49
+msgid "Visual Novel"
+msgstr ""
+
+#: .\apps\contents\choices.py:50
+msgid "Game"
+msgstr ""
+
+#: .\apps\contents\choices.py:51
+msgid "Book"
+msgstr ""
+
+#: .\apps\contents\choices.py:52
+msgid "Radio"
+msgstr ""
+
+#: .\apps\contents\models.py:21 .\apps\contents\models.py:54
+msgid "Synopsis"
+msgstr ""
+
+#: .\apps\contents\models.py:23
+msgid "Episodes"
+msgstr ""
+
+#: .\apps\contents\models.py:25
+msgid "Duration"
+msgstr ""
+
+#: .\apps\contents\models.py:26 .\apps\contents\models.py:56
+msgid "Release"
+msgstr ""
+
+#: .\apps\contents\models.py:27
+msgid "Category"
+msgstr ""
+
+#: .\apps\contents\models.py:28 .\apps\contents\models.py:58
+#: .\apps\watchlists\models.py:17
+msgid "Status"
+msgstr ""
+
+#: .\apps\contents\models.py:29
+msgid "Rating"
+msgstr ""
+
+#: .\apps\contents\models.py:34 .\apps\contents\models.py:63
+msgid "Mean"
+msgstr ""
+
+#: .\apps\contents\models.py:35 .\apps\contents\models.py:64
+msgid "Rank"
+msgstr ""
+
+#: .\apps\contents\models.py:36 .\apps\contents\models.py:65
+msgid "Popularity"
+msgstr ""
+
+#: .\apps\contents\models.py:37 .\apps\contents\models.py:66
+msgid "Number of List Users"
+msgstr ""
+
+#: .\apps\contents\models.py:38 .\apps\contents\models.py:67
+msgid "Number of Scoring Users"
+msgstr ""
+
+#: .\apps\contents\models.py:42 .\apps\watchlists\models.py:35
+msgid "Anime"
+msgstr ""
+
+#: .\apps\contents\models.py:43
+msgid "Animes"
+msgstr ""
+
+#: .\apps\contents\models.py:55
+msgid "Chapters"
+msgstr ""
+
+#: .\apps\contents\models.py:57
+msgid "Media Type"
+msgstr ""
+
+#: .\apps\contents\models.py:72
+msgid "Mangas"
+msgstr ""
+
+#: .\apps\persons\models.py:14
+msgid "Author"
+msgstr ""
+
+#: .\apps\persons\models.py:15
+msgid "Authors"
+msgstr ""
+
+#: .\apps\profiles\models.py:15 .\apps\users\models.py:78
+#: .\apps\watchlists\models.py:14
+msgid "User"
+msgstr ""
+
+#: .\apps\profiles\models.py:16
+msgid "Bio"
+msgstr ""
+
+#: .\apps\profiles\models.py:17
+msgid "Website"
+msgstr ""
+
+#: .\apps\profiles\models.py:18
+msgid "Birth Date"
+msgstr ""
+
+#: .\apps\profiles\models.py:20
+msgid "Cover"
+msgstr ""
+
+#: .\apps\profiles\models.py:24
+msgid "Profile"
+msgstr ""
+
+#: .\apps\profiles\models.py:25
+msgid "Profiles"
+msgstr ""
+
+#: .\apps\profiles\models.py:34
+msgid "Follower"
+msgstr ""
+
+#: .\apps\profiles\models.py:37
+msgid "Followed User"
+msgstr ""
+
+#: .\apps\profiles\models.py:43
+msgid "Follow"
+msgstr ""
+
+#: .\apps\profiles\models.py:44
+msgid "Follows"
+msgstr ""
+
+#: .\apps\users\admin.py:32
+msgid "Account info"
+msgstr ""
+
+#: .\apps\users\admin.py:33
+msgid "Personal info"
+msgstr ""
+
+#: .\apps\users\admin.py:34 .\apps\users\models.py:47
+msgid "Permissions"
+msgstr ""
+
+#: .\apps\users\admin.py:35
+msgid "Records"
+msgstr ""
+
+#: .\apps\users\models.py:17
+msgid "Users must have an email address"
+msgstr ""
+
+#: .\apps\users\models.py:35
+msgid "Superuser must have is_staff=True."
+msgstr ""
+
+#: .\apps\users\models.py:37
+msgid "Superuser must have is_superuser=True."
+msgstr ""
+
+#: .\apps\users\models.py:52
+msgid "Role"
+msgstr ""
+
+#: .\apps\users\models.py:53 .\apps\users\models.py:66
+msgid "Roles"
+msgstr ""
+
+#: .\apps\users\models.py:62
+msgid "Email"
+msgstr ""
+
+#: .\apps\users\models.py:63
+msgid "Username"
+msgstr ""
+
+#: .\apps\users\models.py:64
+msgid "First Name"
+msgstr ""
+
+#: .\apps\users\models.py:65
+msgid "Last Name"
+msgstr ""
+
+#: .\apps\users\models.py:67
+msgid "Is Active"
+msgstr ""
+
+#: .\apps\users\models.py:68
+msgid "Is Staff"
+msgstr ""
+
+#: .\apps\users\models.py:69
+msgid "Date Joined"
+msgstr ""
+
+#: .\apps\users\models.py:79
+msgid "Users"
+msgstr ""
+
+#: .\apps\utils\mixins.py:15
+msgid "Slug"
+msgstr ""
+
+#: .\apps\utils\mixins.py:46
+msgid "Resource not found."
+msgstr ""
+
+#: .\apps\utils\models.py:11
+msgid "Available"
+msgstr ""
+
+#: .\apps\utils\models.py:12
+msgid "Created at"
+msgstr ""
+
+#: .\apps\utils\models.py:13
+msgid "Updated at"
+msgstr ""
+
+#: .\apps\watchlists\models.py:19
+msgid "Is Watched"
+msgstr ""
+
+#: .\apps\watchlists\models.py:20
+msgid "Score"
+msgstr ""
+
+#: .\apps\watchlists\models.py:21
+msgid "Priority"
+msgstr ""
+
+#: .\apps\watchlists\models.py:22
+msgid "Tags"
+msgstr ""
+
+#: .\apps\watchlists\models.py:23
+msgid "Comments"
+msgstr ""
+
+#: .\apps\watchlists\models.py:39
+msgid "AnimeWatchlist"
+msgstr ""
+
+#: .\apps\watchlists\models.py:40
+msgid "AnimeWatchlists"
+msgstr ""
+
+#: .\apps\watchlists\models.py:49
+msgid "MangaWatchlist"
+msgstr ""
+
+#: .\apps\watchlists\models.py:50
+msgid "MangaWatchlists"
+msgstr ""
+
+#: .\static\dump\mixins.py:14
+msgid "Instance created successfully."
+msgstr ""
+
+#: .\static\dump\viewsets.py:18
+msgid "Genre created successfully."
+msgstr ""

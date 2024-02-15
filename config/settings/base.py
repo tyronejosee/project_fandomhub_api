@@ -104,7 +104,7 @@ PASSWORD_HASHERS = [
     "django.contrib.auth.hashers.BCryptSHA256PasswordHasher",
 ]
 
-LANGUAGE_CODE = 'en'
+LANGUAGE_CODE = 'en' #es
 
 LANGUAGES = [
     ('en', 'English'),
@@ -116,7 +116,9 @@ LANGUAGES = [
     ('de', 'German'),
 ]
 
-LOCALE_PATHS = (os.path.join(BASE_DIR, 'translations'),)
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
 
 TIME_ZONE = 'UTC'
 
