@@ -21,485 +21,486 @@ msgstr ""
 #: .\apps\categories\models.py:78 .\apps\contents\choices.py:7
 #: .\apps\contents\choices.py:14 .\apps\contents\choices.py:24
 #: .\apps\contents\choices.py:34 .\apps\contents\choices.py:44
+
 msgid "Pending"
-msgstr ""
+msgstr "保留中"
 
 #: .\apps\categories\choices.py:8
 msgid "Official Site"
-msgstr ""
+msgstr "公式サイト"
 
 #: .\apps\categories\choices.py:9
 msgid "Crunchyroll"
-msgstr ""
+msgstr "クランチロール"
 
 #: .\apps\categories\choices.py:10
 msgid "Netflix"
-msgstr ""
+msgstr "Netflix"
 
 #: .\apps\categories\choices.py:11
 msgid "Youtube Acccount"
-msgstr ""
+msgstr "YouTubeアカウント"
 
 #: .\apps\categories\choices.py:12
 msgid "X Account"
-msgstr ""
+msgstr "Xアカウント"
 
 #: .\apps\categories\choices.py:17
 msgid "Winter"
-msgstr ""
+msgstr "冬"
 
 #: .\apps\categories\choices.py:18
 msgid "Spring"
-msgstr ""
+msgstr "春"
 
 #: .\apps\categories\choices.py:19
 msgid "Summer"
-msgstr ""
+msgstr "夏"
 
 #: .\apps\categories\choices.py:20
 msgid "Fall"
-msgstr ""
+msgstr "秋"
 
 #: .\apps\categories\models.py:14
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: .\apps\categories\models.py:15
 msgid "Tag"
-msgstr ""
+msgstr "タグ"
 
 #: .\apps\categories\models.py:19
 msgid "Url"
-msgstr ""
+msgstr "URL"
 
 #: .\apps\categories\models.py:20
 msgid "Urls"
-msgstr ""
+msgstr "URLs"
 
 #: .\apps\categories\models.py:28 .\apps\contents\models.py:18
 #: .\apps\contents\models.py:51
 msgid "Name (ENG)"
-msgstr ""
+msgstr "名前 (英語)"
 
 #: .\apps\categories\models.py:29 .\apps\contents\models.py:19
 #: .\apps\contents\models.py:52
 msgid "Name (JPN)"
-msgstr ""
+msgstr "名前 (日本語)"
 
 #: .\apps\categories\models.py:30
 msgid "Established"
-msgstr ""
+msgstr "設立年"
 
 #: .\apps\categories\models.py:31 .\apps\contents\models.py:20
 #: .\apps\contents\models.py:53 .\apps\profiles\models.py:19
 msgid "Image"
-msgstr ""
+msgstr "画像"
 
 #: .\apps\categories\models.py:35
 msgid "Studio"
-msgstr ""
+msgstr "制作会社"
 
 #: .\apps\categories\models.py:36
 msgid "Studios"
-msgstr ""
+msgstr "制作会社"
 
 #: .\apps\categories\models.py:50 .\apps\categories\models.py:86
 #: .\apps\persons\models.py:10 .\apps\users\models.py:45
 msgid "Name"
-msgstr ""
+msgstr "名前"
 
 #: .\apps\categories\models.py:54
 msgid "Genre"
-msgstr ""
+msgstr "ジャンル"
 
 #: .\apps\categories\models.py:55
 msgid "Genres"
-msgstr ""
+msgstr "ジャンル"
 
 #: .\apps\categories\models.py:63 .\apps\categories\models.py:70
 #: .\apps\categories\models.py:71
 msgid "Season"
-msgstr ""
+msgstr "シーズン"
 
 #: .\apps\categories\models.py:65
 msgid "Year"
-msgstr ""
+msgstr "年"
 
 #: .\apps\categories\models.py:90
 msgid "Demographic"
-msgstr ""
+msgstr "デモグラフィック"
 
 #: .\apps\categories\models.py:91
 msgid "Demographics"
-msgstr ""
+msgstr "デモグラフィック"
 
 #: .\apps\categories\viewsets.py:56
 msgid "There are no animes for this studio."
-msgstr ""
+msgstr "この制作会社のアニメはありません。"
 
 #: .\apps\categories\viewsets.py:84
 msgid "There are no animes for this genre."
-msgstr ""
+msgstr "このジャンルのアニメはありません。"
 
 #: .\apps\contents\choices.py:8
 msgid "Finished"
-msgstr ""
+msgstr "完結"
 
 #: .\apps\contents\choices.py:9
 msgid "Airing"
-msgstr ""
+msgstr "放送中"
 
 #: .\apps\contents\choices.py:10
 msgid "Upcoming"
-msgstr ""
+msgstr "未来"
 
 #: .\apps\contents\choices.py:15
 msgid "TV"
-msgstr ""
+msgstr "TV"
 
 #: .\apps\contents\choices.py:16
 msgid "OVA"
-msgstr ""
+msgstr "OVA"
 
 #: .\apps\contents\choices.py:17
 msgid "Movie"
-msgstr ""
+msgstr "映画"
 
 #: .\apps\contents\choices.py:18
 msgid "Special"
-msgstr ""
+msgstr "特別"
 
 #: .\apps\contents\choices.py:19
 msgid "ONA"
-msgstr ""
+msgstr "ONA"
 
 #: .\apps\contents\choices.py:20 .\apps\contents\choices.py:53
 msgid "Music"
-msgstr ""
+msgstr "音楽"
 
 #: .\apps\contents\choices.py:25
 msgid "G - All Ages"
-msgstr ""
+msgstr "G - 全年齢"
 
 #: .\apps\contents\choices.py:26
 msgid "PG - Children"
-msgstr ""
+msgstr "PG - 子供向け"
 
 #: .\apps\contents\choices.py:27
 msgid "PG-13 - Teens 13 and Older"
-msgstr ""
+msgstr "PG-13 - 13歳以上のティーン向け"
 
 #: .\apps\contents\choices.py:28
 msgid "R - 17+ (Violence & Profanity)"
-msgstr ""
+msgstr "R - 17+ (暴力とわいせつ)"
 
 #: .\apps\contents\choices.py:29
 msgid "R+ - Profanity & Mild Nudity"
-msgstr ""
+msgstr "R+ - わいせつと軽度の裸体"
 
 #: .\apps\contents\choices.py:30
 msgid "RX - Hentai"
-msgstr ""
+msgstr "RX - 変態"
 
 #: .\apps\contents\choices.py:35 .\apps\contents\choices.py:46
 #: .\apps\contents\models.py:71 .\apps\watchlists\models.py:45
 msgid "Manga"
-msgstr ""
+msgstr "漫画"
 
 #: .\apps\contents\choices.py:36 .\apps\contents\choices.py:47
 msgid "Novel"
-msgstr ""
+msgstr "小説"
 
 #: .\apps\contents\choices.py:37
 msgid "One Shot"
-msgstr ""
+msgstr "ワンショット"
 
 #: .\apps\contents\choices.py:38
 msgid "Doujinshi"
-msgstr ""
+msgstr "同人誌"
 
 #: .\apps\contents\choices.py:39
 msgid "Manhwa"
-msgstr ""
+msgstr "マンファ"
 
 #: .\apps\contents\choices.py:40
 msgid "OEL"
-msgstr ""
+msgstr "OEL"
 
 #: .\apps\contents\choices.py:45
 msgid "Original"
-msgstr ""
+msgstr "オリジナル"
 
 #: .\apps\contents\choices.py:48
 msgid "Light Novel"
-msgstr ""
+msgstr "ライトノベル"
 
 #: .\apps\contents\choices.py:49
 msgid "Visual Novel"
-msgstr ""
+msgstr "ビジュアルノベル"
 
 #: .\apps\contents\choices.py:50
 msgid "Game"
-msgstr ""
+msgstr "ゲーム"
 
 #: .\apps\contents\choices.py:51
 msgid "Book"
-msgstr ""
+msgstr "本"
 
 #: .\apps\contents\choices.py:52
 msgid "Radio"
-msgstr ""
+msgstr "ラジオ"
 
 #: .\apps\contents\models.py:21 .\apps\contents\models.py:54
 msgid "Synopsis"
-msgstr ""
+msgstr "あらすじ"
 
 #: .\apps\contents\models.py:23
 msgid "Episodes"
-msgstr ""
+msgstr "エピソード"
 
 #: .\apps\contents\models.py:25
 msgid "Duration"
-msgstr ""
+msgstr "期間"
 
 #: .\apps\contents\models.py:26 .\apps\contents\models.py:56
 msgid "Release"
-msgstr ""
+msgstr "リリース"
 
 #: .\apps\contents\models.py:27
 msgid "Category"
-msgstr ""
+msgstr "カテゴリ"
 
 #: .\apps\contents\models.py:28 .\apps\contents\models.py:58
 #: .\apps\watchlists\models.py:17
 msgid "Status"
-msgstr ""
+msgstr "ステータス"
 
 #: .\apps\contents\models.py:29
 msgid "Rating"
-msgstr ""
+msgstr "評価"
 
 #: .\apps\contents\models.py:34 .\apps\contents\models.py:63
 msgid "Mean"
-msgstr ""
+msgstr "平均"
 
 #: .\apps\contents\models.py:35 .\apps\contents\models.py:64
 msgid "Rank"
-msgstr ""
+msgstr "ランク"
 
 #: .\apps\contents\models.py:36 .\apps\contents\models.py:65
 msgid "Popularity"
-msgstr ""
+msgstr "人気度"
 
 #: .\apps\contents\models.py:37 .\apps\contents\models.py:66
 msgid "Number of List Users"
-msgstr ""
+msgstr "リストユーザー数"
 
 #: .\apps\contents\models.py:38 .\apps\contents\models.py:67
 msgid "Number of Scoring Users"
-msgstr ""
+msgstr "スコアリングユーザー数"
 
 #: .\apps\contents\models.py:42 .\apps\watchlists\models.py:35
 msgid "Anime"
-msgstr ""
+msgstr "アニメ"
 
 #: .\apps\contents\models.py:43
 msgid "Animes"
-msgstr ""
+msgstr "アニメ"
 
 #: .\apps\contents\models.py:55
 msgid "Chapters"
-msgstr ""
+msgstr "チャプター"
 
 #: .\apps\contents\models.py:57
 msgid "Media Type"
-msgstr ""
+msgstr "メディアタイプ"
 
 #: .\apps\contents\models.py:72
 msgid "Mangas"
-msgstr ""
+msgstr "漫画"
 
 #: .\apps\persons\models.py:14
 msgid "Author"
-msgstr ""
+msgstr "著者"
 
 #: .\apps\persons\models.py:15
 msgid "Authors"
-msgstr ""
+msgstr "著者"
 
 #: .\apps\profiles\models.py:15 .\apps\users\models.py:78
 #: .\apps\watchlists\models.py:14
 msgid "User"
-msgstr ""
+msgstr "ユーザー"
 
 #: .\apps\profiles\models.py:16
 msgid "Bio"
-msgstr ""
+msgstr "バイオ"
 
 #: .\apps\profiles\models.py:17
 msgid "Website"
-msgstr ""
+msgstr "ウェブサイト"
 
 #: .\apps\profiles\models.py:18
 msgid "Birth Date"
-msgstr ""
+msgstr "誕生日"
 
 #: .\apps\profiles\models.py:20
 msgid "Cover"
-msgstr ""
+msgstr "カバー"
 
 #: .\apps\profiles\models.py:24
 msgid "Profile"
-msgstr ""
+msgstr "プロフィール"
 
 #: .\apps\profiles\models.py:25
 msgid "Profiles"
-msgstr ""
+msgstr "プロフィール"
 
 #: .\apps\profiles\models.py:34
 msgid "Follower"
-msgstr ""
+msgstr "フォロワー"
 
 #: .\apps\profiles\models.py:37
 msgid "Followed User"
-msgstr ""
+msgstr "フォローされたユーザー"
 
 #: .\apps\profiles\models.py:43
 msgid "Follow"
-msgstr ""
+msgstr "フォロー"
 
 #: .\apps\profiles\models.py:44
 msgid "Follows"
-msgstr ""
+msgstr "フォロー中"
 
 #: .\apps\users\admin.py:32
 msgid "Account info"
-msgstr ""
+msgstr "アカウント情報"
 
 #: .\apps\users\admin.py:33
 msgid "Personal info"
-msgstr ""
+msgstr "個人情報"
 
 #: .\apps\users\admin.py:34 .\apps\users\models.py:47
 msgid "Permissions"
-msgstr ""
+msgstr "権限"
 
 #: .\apps\users\admin.py:35
 msgid "Records"
-msgstr ""
+msgstr "記録"
 
 #: .\apps\users\models.py:17
 msgid "Users must have an email address"
-msgstr ""
+msgstr "ユーザーはメールアドレスを持っている必要があります"
 
 #: .\apps\users\models.py:35
 msgid "Superuser must have is_staff=True."
-msgstr ""
+msgstr "スーパーユーザーはis_staff=Trueである必要があります"
 
 #: .\apps\users\models.py:37
 msgid "Superuser must have is_superuser=True."
-msgstr ""
+msgstr "スーパーユーザーはis_superuser=Trueである必要があります"
 
 #: .\apps\users\models.py:52
 msgid "Role"
-msgstr ""
+msgstr "役割"
 
 #: .\apps\users\models.py:53 .\apps\users\models.py:66
 msgid "Roles"
-msgstr ""
+msgstr "役割"
 
 #: .\apps\users\models.py:62
 msgid "Email"
-msgstr ""
+msgstr "メール"
 
 #: .\apps\users\models.py:63
 msgid "Username"
-msgstr ""
+msgstr "ユーザー名"
 
 #: .\apps\users\models.py:64
 msgid "First Name"
-msgstr ""
+msgstr "名"
 
 #: .\apps\users\models.py:65
 msgid "Last Name"
-msgstr ""
+msgstr "姓"
 
 #: .\apps\users\models.py:67
 msgid "Is Active"
-msgstr ""
+msgstr "有効"
 
 #: .\apps\users\models.py:68
 msgid "Is Staff"
-msgstr ""
+msgstr "スタッフ"
 
 #: .\apps\users\models.py:69
 msgid "Date Joined"
-msgstr ""
+msgstr "参加日"
 
 #: .\apps\users\models.py:79
 msgid "Users"
-msgstr ""
+msgstr "ユーザー"
 
 #: .\apps\utils\mixins.py:15
 msgid "Slug"
-msgstr ""
+msgstr "スラッグ"
 
 #: .\apps\utils\mixins.py:46
 msgid "Resource not found."
-msgstr ""
+msgstr "リソースが見つかりません。"
 
 #: .\apps\utils\models.py:11
 msgid "Available"
-msgstr ""
+msgstr "利用可能"
 
 #: .\apps\utils\models.py:12
 msgid "Created at"
-msgstr ""
+msgstr "作成日時"
 
 #: .\apps\utils\models.py:13
 msgid "Updated at"
-msgstr ""
+msgstr "更新日時"
 
 #: .\apps\watchlists\models.py:19
 msgid "Is Watched"
-msgstr ""
+msgstr "視聴済み"
 
 #: .\apps\watchlists\models.py:20
 msgid "Score"
-msgstr ""
+msgstr "スコア"
 
 #: .\apps\watchlists\models.py:21
 msgid "Priority"
-msgstr ""
+msgstr "優先度"
 
 #: .\apps\watchlists\models.py:22
 msgid "Tags"
-msgstr ""
+msgstr "タグ"
 
 #: .\apps\watchlists\models.py:23
 msgid "Comments"
-msgstr ""
+msgstr "コメント"
 
 #: .\apps\watchlists\models.py:39
 msgid "AnimeWatchlist"
-msgstr ""
+msgstr "アニメウォッチリスト"
 
 #: .\apps\watchlists\models.py:40
 msgid "AnimeWatchlists"
-msgstr ""
+msgstr "アニメウォッチリスト"
 
 #: .\apps\watchlists\models.py:49
 msgid "MangaWatchlist"
-msgstr ""
+msgstr "漫画ウォッチリスト"
 
 #: .\apps\watchlists\models.py:50
 msgid "MangaWatchlists"
-msgstr ""
+msgstr "漫画ウォッチリスト"
 
 #: .\static\dump\mixins.py:14
 msgid "Instance created successfully."
-msgstr ""
+msgstr "インスタンスが正常に作成されました。"
 
 #: .\static\dump\viewsets.py:18
 msgid "Genre created successfully."
-msgstr ""
+msgstr "ジャンルが正常に作成されました。"

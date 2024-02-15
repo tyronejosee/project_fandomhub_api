@@ -21,6 +21,7 @@ msgstr ""
 #: .\apps\categories\models.py:78 .\apps\contents\choices.py:7
 #: .\apps\contents\choices.py:14 .\apps\contents\choices.py:24
 #: .\apps\contents\choices.py:34 .\apps\contents\choices.py:44
+
 msgid "Pending"
 msgstr ""
 
