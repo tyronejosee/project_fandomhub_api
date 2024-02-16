@@ -12,7 +12,8 @@ class AnimeWatchlistSerializer(serializers.ModelSerializer):
         """Meta definition for AnimeWatchlistSerializer."""
         model = AnimeWatchlist
         fields = [
-            'id', 'user', 'status', 'anime', 'is_watched', 'score', 'priority', 'tags', 'comments'
+            'id', 'user', 'status', 'anime', 'is_watched', 'score',
+            'priority', 'tags', 'comments'
         ]
 
 
@@ -24,5 +25,6 @@ class MangaWatchlistSerializer(serializers.ModelSerializer):
         """Meta definition for MangaWatchlistSerializer."""
         model = MangaWatchlist
         fields = [
-            'id', 'user', 'manga', 'status', 'is_watched', 'score', 'priority', 'tags', 'comments'
+            'id', 'user', 'manga', 'status', 'is_watched', 'score',
+            'priority', 'tags', 'comments'
         ]

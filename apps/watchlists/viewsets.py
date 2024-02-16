@@ -1,9 +1,10 @@
 """Viewsets for Watchlists App."""
 
-from django.utils.translation import gettext as _
 from rest_framework import viewsets
 from apps.watchlists.models import AnimeWatchlist, MangaWatchlist
-from apps.watchlists.serializers import AnimeWatchlistSerializer, MangaWatchlistSerializer
+from apps.watchlists.serializers import (
+    AnimeWatchlistSerializer, MangaWatchlistSerializer
+)
 
 
 class AnimeWatchlistViewSet(viewsets.ModelViewSet):

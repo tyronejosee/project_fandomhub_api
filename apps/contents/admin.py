@@ -1,7 +1,6 @@
 """Admin for Contents App."""
 
 from django.contrib import admin
-from django.utils.translation import gettext as _
 from apps.contents.models import Anime, Manga
 
 
@@ -14,8 +13,8 @@ class AnimeAdmin(admin.ModelAdmin):
     list_editable = ('available',)
     list_per_page = 25
     readonly_fields = (
-        'pk', 'mean', 'rank', 'popularity', 'num_list_users', 'num_scoring_users',
-        'created_at', 'updated_at'
+        'pk', 'mean', 'rank', 'popularity', 'num_list_users',
+        'num_scoring_users', 'created_at', 'updated_at'
     )
     ordering = ('pk',)
 
@@ -29,7 +28,7 @@ class MangaAdmin(admin.ModelAdmin):
     list_editable = ('available',)
     list_per_page = 25
     readonly_fields = (
-        'pk', 'mean', 'rank', 'popularity', 'num_list_users', 'num_scoring_users',
-        'created_at', 'updated_at'
+        'pk', 'mean', 'rank', 'popularity', 'num_list_users',
+        'num_scoring_users', 'created_at', 'updated_at'
     )
     ordering = ('pk',)
