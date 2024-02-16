@@ -1,0 +1,20 @@
+[run]
+source =
+    apps/
+    config/
+omit =
+    */migrations/*
+    */tests/*
+    manage.py
+parallel = True
+concurrency = multiprocessing
+
+[report]
+skip_covered = True
+fail_under = 80
+ignore_errors = True
+sort = -miss
+
+[html]
+directory = reports
+skip_empty = True
