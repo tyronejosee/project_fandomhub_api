@@ -13,8 +13,6 @@ environ.Env.read_env('config/.env')
 
 SECRET_KEY = env('SECRET_KEY')
 
-DEBUG = env.bool('DEBUG', default=False)
-
 BASE_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -104,7 +102,7 @@ PASSWORD_HASHERS = [
     "django.contrib.auth.hashers.BCryptSHA256PasswordHasher",
 ]
 
-LANGUAGE_CODE = 'en' #es
+LANGUAGE_CODE = 'en'
 
 LANGUAGES = [
     ('en', 'English'),
@@ -127,47 +125,33 @@ USE_I18N = True
 USE_TZ = True
 
 REST_FRAMEWORK = {
-    # Base API policies
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework_simplejwt.authentication.JWTAuthentication',
         #'rest_framework.authentication.BasicAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly'
-        # 'apps.utils.permissions.IsStaffOrReadOnly',
-        # 'rest_framework.permissions.IsAuthenticated',
     ],
     'DEFAULT_THROTTLE_CLASSES': [
         'rest_framework.throttling.AnonRateThrottle',
         'rest_framework.throttling.UserRateThrottle'
-        #'apps.utils.throttles.StaffUserThrottle',
     ],
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     # 'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.NamespaceVersioning',
     'DEFAULT_CONTENT_LANGUAGE': 'en',
-
-    # Generic view behavior
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'DEFAULT_FILTER_BACKENDS': [
         'rest_framework.filters.SearchFilter',
         'rest_framework.filters.OrderingFilter',
     ],
-
-    # Throttling
     'DEFAULT_THROTTLE_RATES': {
         'anon': '100/day',
         'user': '1000/day'
     },
     'NUM_PROXIES': None,
-
-    # Pagination
     'PAGE_SIZE': 5,
-
-    # Filtering
     'SEARCH_PARAM': 'q',
     'ORDERING_PARAM': 'ordering',
-
-    # Versioning
     # 'DEFAULT_VERSION': 'v2',
     # 'ALLOWED_VERSIONS': ['v1', 'v2'],
     # 'VERSION_PARAM': 'version',
@@ -215,22 +199,7 @@ DJOSER = {
     },
 }
 
-
-# APPEND_SLASH = False
-
 AUTH_USER_MODEL = 'users.User'
-
-EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend'
-
-if not DEBUG:
-    DEFAULT_FROM_EMAIL = 'Beehive - API <alt.tyronejose@gmail.com>'
-    EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
-    EMAIL_HOST = env('EMAIL_HOST')
-    EMAIL_HOST_USER = env('EMAIL_HOST_USER')
-    EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
-    EMAIL_PORT = env('EMAIL_PORT')
-    EMAIL_USE_TLS = env('EMAIL_USE_TLS')
-
 
 SPECTACULAR_SETTINGS = {
     'SCHEMA_PATH_PREFIX': r'^/api/v\d+',
