@@ -1,7 +1,7 @@
-# SOME DESCRIPTIVE TITLE.
+# BEEHIVE - FRENCH.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# TYRONE JOSE <ALT.TYRONEJOSE@GMAIL.COM>, 2024.
 #
 #, fuzzy
 msgid ""
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
 #: .\apps\categories\choices.py:7 .\apps\categories\choices.py:16
 #: .\apps\categories\models.py:78 .\apps\contents\choices.py:7
 #: .\apps\contents\choices.py:14 .\apps\contents\choices.py:24

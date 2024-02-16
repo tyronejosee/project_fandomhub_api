@@ -1,7 +1,7 @@
 # BEEHIVE - ITALIAN.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# TYRONEJOSE <ALT.TYONEJOSE@GMAIL.COM>, 2024.
+# TYRONE JOSE <ALT.TYRONEJOSE@GMAIL.COM>, 2024.
 #
 #, fuzzy
 msgid ""
