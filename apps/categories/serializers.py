@@ -12,7 +12,7 @@ class UrlSerializer(serializers.ModelSerializer):
         model = Url
         fields = ('tag', 'url')
 
-    def to_representation(self,instance):
+    def to_representation(self, instance):
         return {
             'id': instance.id,
             'tag': instance.get_tag_display(),

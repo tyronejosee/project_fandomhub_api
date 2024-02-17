@@ -20,7 +20,7 @@ class RoleAdmin(admin.ModelAdmin):
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
     """Admin config for User model."""
-    list_display = ('username', 'email', 'is_staff', 'is_superuser', 'date_joined')
+    list_display = ('username', 'email', 'is_staff', 'is_superuser')
     list_display_links = ['username']
     search_fields = ('username', 'email', 'first_name', 'last_name')
     list_filter = ('is_staff', 'is_superuser', 'is_active')
@@ -29,10 +29,18 @@ class UserAdmin(admin.ModelAdmin):
     ordering = ('username',)
 
     fieldsets = (
-        (_('Account info'), {'fields': ('pk', 'username', 'email', 'password', 'is_active')}),
-        (_('Personal info'), {'fields': ('first_name', 'last_name')}),
-        (_('Permissions'), {'fields': ('is_staff', 'is_superuser', 'roles',)}),
-        (_('Records'), {'fields': ('last_login', 'date_joined')}),
+        (_('Account info'), {
+            'fields': ('pk', 'username', 'email', 'password', 'is_active')
+        }),
+        (_('Personal info'), {
+            'fields': ('first_name', 'last_name')
+        }),
+        (_('Permissions'), {'fields': (
+            'is_staff', 'is_superuser', 'roles',)
+        }),
+        (_('Records'), {'fields': (
+            'last_login', 'date_joined')
+        }),
     )
 
     add_fieldsets = (

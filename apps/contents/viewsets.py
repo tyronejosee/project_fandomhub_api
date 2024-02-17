@@ -1,8 +1,8 @@
 """Viewsets for Contents App."""
 
-from django.utils.translation import gettext as _
+# from django.utils.translation import gettext as _
 from rest_framework import viewsets
-from rest_framework.decorators import action
+# from rest_framework.decorators import action
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.contents.models import Anime, Manga
 from apps.contents.serializers import AnimeSerializer, MangaSerializer
@@ -33,7 +33,8 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     #         serializer = AnimeSerializer(anime_list, many=True)
     #         return Response(serializer.data, status=status.HTTP_200_OK)
     #     return Response(
-    #         {'detail': _('There are no animes for this genre.')}, status=status.HTTP_404_NOT_FOUND
+    #         {'detail': _('There are no animes for this genre.')},
+    #         status=status.HTTP_404_NOT_FOUND
     #     )
 
 

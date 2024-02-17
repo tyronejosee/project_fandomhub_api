@@ -2,7 +2,9 @@
 
 import uuid
 from django.db import models
-from django.contrib.auth.models import BaseUserManager, AbstractBaseUser, PermissionsMixin
+from django.contrib.auth.models import (
+    BaseUserManager, AbstractBaseUser, PermissionsMixin
+)
 from django.utils.translation import gettext as _
 from django.utils import timezone
 from apps.profiles.models import Profile
@@ -27,7 +29,7 @@ class UserManager(BaseUserManager):
         return user
 
     def create_superuser(self, email, password, **kwargs):
-        """Creates and returns a superuser with the given email and password."""
+        """Creates a superuser with the given email and password."""
         kwargs.setdefault('is_staff', True)
         kwargs.setdefault('is_superuser', True)
 
@@ -61,9 +63,12 @@ class User(AbstractBaseUser, PermissionsMixin):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(_('Email'), max_length=255, unique=True,)
     username = models.CharField(_('Username'), max_length=255, unique=True)
-    first_name = models.CharField(_('First Name'), max_length=255, blank=True, null=True)
-    last_name = models.CharField(_('Last Name'), max_length=255, blank=True, null=True)
-    roles = models.ManyToManyField(Role, related_name='users', blank=True, verbose_name=_('Roles'))
+    first_name = models.CharField(
+        _('First Name'), max_length=255, blank=True, null=True)
+    last_name = models.CharField(
+        _('Last Name'), max_length=255, blank=True, null=True)
+    roles = models.ManyToManyField(
+        Role, related_name='users', blank=True, verbose_name=_('Roles'))
     is_active = models.BooleanField(_('Is Active'), default=True)
     is_staff = models.BooleanField(_('Is Staff'), default=False)
     date_joined = models.DateTimeField(_('Date Joined'), default=timezone.now)

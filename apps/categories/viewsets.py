@@ -11,7 +11,8 @@ from apps.contents.models import Anime
 from apps.contents.serializers import AnimeSerializer
 from apps.categories.models import Url, Studio, Genre, Season, Demographic
 from apps.categories.serializers import (
-    UrlSerializer, StudioSerializer, GenreSerializer, SeasonSerializer, DemographicSerializer
+    UrlSerializer, StudioSerializer, GenreSerializer,
+    SeasonSerializer, DemographicSerializer
 )
 
 
@@ -53,7 +54,8 @@ class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
             serializer = AnimeSerializer(anime_list, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(
-            {'detail': _('There are no animes for this studio.')}, status=status.HTTP_404_NOT_FOUND
+            {'detail': _('There are no animes for this studio.')},
+            status=status.HTTP_404_NOT_FOUND
         )
 
 
@@ -81,7 +83,8 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
             serializer = AnimeSerializer(anime_list, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(
-            {'detail': _('There are no animes for this genre.')}, status=status.HTTP_404_NOT_FOUND
+            {'detail': _('There are no animes for this genre.')},
+            status=status.HTTP_404_NOT_FOUND
         )
 
 

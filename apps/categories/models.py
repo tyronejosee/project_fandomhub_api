@@ -27,8 +27,12 @@ class Studio(BaseModel, SlugMixin):
     """Model definition for Studio (Catalog)."""
     name = models.CharField(_('Name (ENG)'), max_length=255, unique=True)
     name_jpn = models.CharField(_('Name (JPN)'), max_length=255, unique=True)
-    established = models.CharField(_('Established'), max_length=255, blank=True, null=True)
-    image = models.ImageField(_('Image'), upload_to=image_path, blank=True, null=True)
+    established = models.CharField(
+        _('Established'), max_length=255, blank=True, null=True
+    )
+    image = models.ImageField(
+        _('Image'), upload_to=image_path, blank=True, null=True
+    )
 
     class Meta:
         """Meta definition for Studio."""
@@ -60,9 +64,12 @@ class Genre(BaseModel, SlugMixin):
 
 class Season(BaseModel):
     """Model definition for Season (Catalog)."""
-    season = models.IntegerField(_('Season'), choices=SEASON_CHOICES, default=0)
+    season = models.IntegerField(
+        _('Season'), choices=SEASON_CHOICES, default=0
+    )
     year = models.IntegerField(
-        _('Year'), validators=[MinValueValidator(1900), MaxValueValidator(2100)], default=2010
+        _('Year'),  default=2010,
+        validators=[MinValueValidator(1900), MaxValueValidator(2100)]
     )
 
     class Meta:

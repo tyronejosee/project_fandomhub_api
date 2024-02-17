@@ -2,9 +2,11 @@ name: Beehive CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   build:
@@ -27,12 +29,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          
-      # - name: Lint with flake8
-      #   run: |
-      #     pip install flake8
-      #     flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-      #     flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+      - name: Lint with flake8
+        run: |
+          pip install flake8
+          flake8 --config .flake8
       
       # - name: Coverage report
       #   run: |
@@ -43,3 +44,5 @@ jobs:
       - name: Django testing
         run: |
           python manage.py test
+        env:
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}

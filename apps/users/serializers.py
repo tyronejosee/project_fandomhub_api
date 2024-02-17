@@ -13,4 +13,6 @@ class UserSerializer(UserCreateSerializer):
     class Meta(UserCreateSerializer.Meta):
         """Meta definition for UserSerializer."""
         model = User
-        fields = ('id', 'email', 'username', 'first_name', 'last_name', 'date_joined')
+        fields = (
+            'id', 'email', 'username', 'first_name', 'last_name', 'date_joined'
+        )
