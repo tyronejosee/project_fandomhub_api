@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    container_name: beehive_db
+    restart: always
+    environment:
+      POSTGRES_DB: myproject
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    volumes:
+      - .dbdata:/var/lib/postgresql
+
+  redis:
+    image: redis
+    container_name: beehive_redis
+    ports:
+      - 6379:6379
+
+  web:
+    build: .
+    container_name: beehive_web
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis

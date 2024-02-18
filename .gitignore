@@ -4,7 +4,6 @@ desktop.ini
 migrations/
 */migrations/
 apps/persons/migrations/
-text.txt
 *.mo
 db.sqlite3
 
