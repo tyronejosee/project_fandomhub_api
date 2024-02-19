@@ -19,6 +19,21 @@ class AnimeSerializer(serializers.ModelSerializer):
         ]
 
 
+class AnimeListSerializer(serializers.ModelSerializer):
+    """Serializer for listing Anime with limited fields."""
+    year = serializers.SerializerMethodField()
+
+    class Meta:
+        model = Anime
+        fields = [
+            'id', 'name', 'year', 'episodes', 'rank',
+            'popularity', 'num_list_users'
+        ]
+
+    def get_year(self, obj):
+        return obj.season_id.year if obj.season_id else None
+
+
 class MangaSerializer(serializers.ModelSerializer):
     """Serializer for Manga model."""
 

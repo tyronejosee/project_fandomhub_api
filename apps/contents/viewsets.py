@@ -1,11 +1,13 @@
 """Viewsets for Contents App."""
 
-# from django.utils.translation import gettext as _
+from django.utils.translation import gettext as _
 from rest_framework import viewsets
-# from rest_framework.decorators import action
+from rest_framework.decorators import action
+from rest_framework.response import Response
+from rest_framework import status
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.contents.models import Anime, Manga
-from apps.contents.serializers import AnimeSerializer, MangaSerializer
+from apps.contents.serializers import AnimeSerializer, MangaSerializer, AnimeListSerializer
 from apps.utils.permissions import IsStaffOrReadOnly
 
 
@@ -22,20 +24,16 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Anime.objects.filter(available=True)
 
-    # @action(detail=False, methods=['get'], url_path='populars')
-    # def popular_list(self, request, pk=None):
-    #     """
-    #     Retrieve a list of animes for the specified genre.
-    #     """
-    #     genre = self.get_object()
-    #     anime_list = Anime.objects.filter(genre_id=genre)
-    #     if anime_list.exists():
-    #         serializer = AnimeSerializer(anime_list, many=True)
-    #         return Response(serializer.data, status=status.HTTP_200_OK)
-    #     return Response(
-    #         {'detail': _('There are no animes for this genre.')},
-    #         status=status.HTTP_404_NOT_FOUND
-    #     )
+    @action(detail=False, methods=['get'], url_path='populars')
+    def popular_list(self, request, pk=None):
+        """
+        Retrieve a list of the 50 most popular anime.
+        """
+        popular_list = Anime.objects.order_by('-popularity')[:50]
+        if not popular_list:
+            return Response(status=status.HTTP_204_NO_CONTENT)
+        serializer = AnimeListSerializer(popular_list, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
 
 
 class MangaViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
