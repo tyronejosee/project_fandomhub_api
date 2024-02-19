@@ -9,13 +9,13 @@ from apps.watchlists.viewsets import (
 
 router_v1 = DefaultRouter()
 router_v1.register(
-    r'anime_watchlists', AnimeWatchlistViewSet, basename='anime_watchlist'
+    r"anime_watchlists", AnimeWatchlistViewSet, basename="anime_watchlist"
 )
 router_v1.register(
-    r'manga_watchlists', MangaWatchlistViewSet, basename='manga_watchlist'
+    r"manga_watchlists", MangaWatchlistViewSet, basename="manga_watchlist"
 )
 
 
 urlpatterns = [
-    path('api/v1/', include(router_v1.urls))
+    path("api/v1/", include(router_v1.urls))
 ]

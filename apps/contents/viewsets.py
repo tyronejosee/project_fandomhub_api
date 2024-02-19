@@ -18,19 +18,19 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     serializer_class = AnimeSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ['name', 'studio_id__name']
-    ordering_fields = ['name']
-    ordering = ['id']
+    search_fields = ["name", "studio_id__name"]
+    ordering_fields = ["name"]
+    ordering = ["id"]
 
     def get_queryset(self):
         return Anime.objects.filter(available=True)
 
-    @action(detail=False, methods=['get'], url_path='populars')
+    @action(detail=False, methods=["get"], url_path="populars")
     def popular_list(self, request, pk=None):
         """
         Retrieve a list of the 50 most popular anime.
         """
-        popular_list = Anime.objects.order_by('-popularity')[:50]
+        popular_list = Anime.objects.order_by("-popularity")[:50]
         if not popular_list:
             return Response(status=status.HTTP_204_NO_CONTENT)
         serializer = AnimeListSerializer(popular_list, many=True)
@@ -43,9 +43,9 @@ class MangaViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     serializer_class = MangaSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ['name',]
-    ordering_fields = ['name']
-    ordering = ['id']
+    search_fields = ["name",]
+    ordering_fields = ["name"]
+    ordering = ["id"]
 
     def get_queryset(self):
         return Manga.objects.filter(available=True)

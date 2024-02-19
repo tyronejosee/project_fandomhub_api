@@ -8,6 +8,6 @@ from django.dispatch import receiver
 @receiver(post_delete)
 def remove_image_on_delete(sender, instance, **kwargs):
     """Signal removes the related image when the instance is deleted."""
-    if hasattr(instance, 'image') and instance.image:
+    if hasattr(instance, "image") and instance.image:
         if instance.image.path and os.path.exists(instance.image.path):
             os.remove(instance.image.path)

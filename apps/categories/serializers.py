@@ -10,25 +10,25 @@ class UrlSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for UrlSerializer."""
         model = Url
-        fields = ('tag', 'url')
+        fields = ("tag", "url")
 
     def to_representation(self, instance):
         return {
-            'id': instance.id,
-            'tag': instance.get_tag_display(),
-            'url': instance.url,
+            "id": instance.id,
+            "tag": instance.get_tag_display(),
+            "url": instance.url,
         }
 
 
 class StudioSerializer(serializers.ModelSerializer):
     """Serializer for Studio model."""
-    image = serializers.CharField(source='get_image')
+    image = serializers.CharField(source="get_image")
 
     class Meta:
         """Meta definition for StudioSerializer."""
         model = Studio
-        fields = ('id', 'slug', 'name', 'name_jpn', 'established', 'image',)
-        read_only_fields = ('slug',)
+        fields = ("id", "slug", "name", "name_jpn", "established", "image",)
+        read_only_fields = ("slug",)
 
 
 class GenreSerializer(serializers.ModelSerializer):
@@ -37,8 +37,8 @@ class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for GenreSerializer."""
         model = Genre
-        fields = ('id', 'name', 'slug',)
-        read_only_fields = ('slug',)
+        fields = ("id", "name", "slug",)
+        read_only_fields = ("slug",)
 
 
 class SeasonSerializer(serializers.ModelSerializer):
@@ -47,8 +47,8 @@ class SeasonSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for SeasonSerializer."""
         model = Season
-        fields = ('id', 'season',)
-        read_only_fields = ('id',)
+        fields = ("id", "season",)
+        read_only_fields = ("id",)
 
 
 class DemographicSerializer(serializers.ModelSerializer):
@@ -57,4 +57,4 @@ class DemographicSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for DemographicSerializer."""
         model = Demographic
-        fields = ('id', 'name',)
+        fields = ("id", "name",)

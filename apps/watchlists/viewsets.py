@@ -12,9 +12,9 @@ class AnimeWatchlistViewSet(viewsets.ModelViewSet):
     Pending.
     """
     serializer_class = AnimeWatchlistSerializer
-    search_fields = ['user', 'anime__name']
-    ordering_fields = ['user']
-    ordering = ['id']
+    search_fields = ["user", "anime__name"]
+    ordering_fields = ["user"]
+    ordering = ["id"]
 
     def get_queryset(self):
         return AnimeWatchlist.objects.all()
@@ -25,9 +25,9 @@ class MangaWatchlistViewSet(viewsets.ModelViewSet):
     Pending.
     """
     serializer_class = MangaWatchlistSerializer
-    search_fields = ['user', 'manga__name']
-    ordering_fields = ['user']
-    ordering = ['id']
+    search_fields = ["user", "manga__name"]
+    ordering_fields = ["user"]
+    ordering = ["id"]
 
     def get_queryset(self):
         return MangaWatchlist.objects.all()

@@ -22,9 +22,9 @@ class UrlViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     serializer_class = UrlSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ['url', 'tag']
-    ordering_fields = ['tag']
-    ordering = ['id']
+    search_fields = ["url", "tag"]
+    ordering_fields = ["tag"]
+    ordering = ["id"]
 
     def get_queryset(self):
         return Url.objects.filter(available=True)
@@ -36,14 +36,14 @@ class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     serializer_class = StudioSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ['name']
-    ordering_fields = ['name']
-    ordering = ['id']
+    search_fields = ["name"]
+    ordering_fields = ["name"]
+    ordering = ["id"]
 
     def get_queryset(self):
         return Studio.objects.filter(available=True)
 
-    @action(detail=True, methods=['get'], url_path='animes')
+    @action(detail=True, methods=["get"], url_path="animes")
     def anime_list(self, request, pk=None):
         """
         Retrieve a list of animes for the specified studio.
@@ -54,7 +54,7 @@ class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
             serializer = AnimeSerializer(anime_list, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(
-            {'detail': _('There are no animes for this studio.')},
+            {"detail": _("There are no animes for this studio.")},
             status=status.HTTP_404_NOT_FOUND
         )
 
@@ -65,14 +65,14 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     serializer_class = GenreSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ['name',]
-    ordering_fields = ['name']
-    ordering = ['id']
+    search_fields = ["name",]
+    ordering_fields = ["name"]
+    ordering = ["id"]
 
     def get_queryset(self):
         return Genre.objects.filter(available=True)
 
-    @action(detail=True, methods=['get'], url_path='animes')
+    @action(detail=True, methods=["get"], url_path="animes")
     def anime_list(self, request, pk=None):
         """
         Retrieve a list of animes for the specified genre.
@@ -83,7 +83,7 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
             serializer = AnimeSerializer(anime_list, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(
-            {'detail': _('There are no animes for this genre.')},
+            {"detail": _("There are no animes for this genre.")},
             status=status.HTTP_404_NOT_FOUND
         )
 
@@ -94,9 +94,9 @@ class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     serializer_class = SeasonSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ['name']
-    ordering_fields = ['name']
-    ordering = ['id']
+    search_fields = ["name"]
+    ordering_fields = ["name"]
+    ordering = ["id"]
 
     def get_queryset(self):
         return Season.objects.filter(available=True)
@@ -108,9 +108,9 @@ class DemographicViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     serializer_class = DemographicSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ['name']
-    ordering_fields = ['name']
-    ordering = ['id']
+    search_fields = ["name"]
+    ordering_fields = ["name"]
+    ordering = ["id"]
 
     def get_queryset(self):
         return Demographic.objects.filter(available=True)

@@ -10,4 +10,4 @@ class AuthorSerializer(ModelSerializer):
     class Meta:
         """Meta definition for AuthorSerializer."""
         model = Author
-        fields = ('id', 'name',)
+        fields = ("id", "name",)

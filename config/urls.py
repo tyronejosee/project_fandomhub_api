@@ -11,21 +11,21 @@ from drf_spectacular.views import (
 
 urlpatterns = [
     # Admin urls
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
 
     # Schemas urls
-    path('api/schema/swagger/',
-         SpectacularSwaggerView.as_view(url_name='schema'), name='swagger'),
-    path('api/schema/redoc/',
-         SpectacularRedocView.as_view(url_name='schema'), name='redoc'),
-    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    path("api/schema/swagger/",
+         SpectacularSwaggerView.as_view(url_name="schema"), name="swagger"),
+    path("api/schema/redoc/",
+         SpectacularRedocView.as_view(url_name="schema"), name="redoc"),
+    path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
 
     # Apps urls
-    path('', include('apps.contents.routers')),
-    path('', include('apps.categories.routers')),
-    path('', include('apps.persons.routers')),
-    path('', include('apps.users.routers')),
-    path('', include('apps.watchlists.routers')),
+    path("", include("apps.contents.routers")),
+    path("", include("apps.categories.routers")),
+    path("", include("apps.persons.routers")),
+    path("", include("apps.users.routers")),
+    path("", include("apps.watchlists.routers")),
 ]
 
 
@@ -38,6 +38,6 @@ if settings.DEBUG:
 
 
 # Custom attributes for admin
-admin.site.site_header = 'Project: Beehive'
-admin.site.site_title = 'Beehive'
-admin.site.index_title = 'Admin'
+admin.site.site_header = "Project: Beehive"
+admin.site.site_title = "Beehive"
+admin.site.index_title = "Admin"

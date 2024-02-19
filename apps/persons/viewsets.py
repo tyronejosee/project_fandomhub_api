@@ -13,9 +13,9 @@ class AuthorViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     serializer_class = AuthorSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ['name']
-    ordering_fields = ['name']
-    ordering = ['id']
+    search_fields = ["name"]
+    ordering_fields = ["name"]
+    ordering = ["id"]
 
     def get_queryset(self):
         return Author.objects.filter(available=True)

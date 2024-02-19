@@ -6,10 +6,10 @@ from apps.contents.viewsets import AnimeViewSet, MangaViewSet
 
 
 router = DefaultRouter()
-router.register(r'animes', AnimeViewSet, basename='anime')
-router.register(r'mangas', MangaViewSet, basename='manga')
+router.register(r"animes", AnimeViewSet, basename="anime")
+router.register(r"mangas", MangaViewSet, basename="manga")
 
 
 urlpatterns = [
-    path('api/v1/', include(router.urls))
+    path("api/v1/", include(router.urls))
 ]

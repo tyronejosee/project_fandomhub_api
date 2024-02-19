@@ -6,16 +6,16 @@ from apps.contents.models import Anime, Manga
 
 class AnimeSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
-    status = serializers.CharField(source='get_status_display')
-    category = serializers.CharField(source='get_category_display')
+    status = serializers.CharField(source="get_status_display")
+    category = serializers.CharField(source="get_category_display")
 
     class Meta:
         """Meta definition for AnimeSerializer."""
         model = Anime
         fields = [
-            'id', 'name', 'name_jpn', 'slug', 'image', 'synopsis', 'episodes',
-            'duration', 'release', 'category', 'status', 'rating', 'studio_id',
-            'genre_id', 'season_id', 'url_id',
+            "id", "name", "name_jpn", "slug", "image", "synopsis", "episodes",
+            "duration", "release", "category", "status", "rating", "studio_id",
+            "genre_id", "season_id", "url_id",
         ]
 
 
@@ -26,8 +26,8 @@ class AnimeListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Anime
         fields = [
-            'id', 'name', 'year', 'episodes', 'rank',
-            'popularity', 'num_list_users'
+            "id", "name", "year", "episodes", "rank",
+            "popularity", "num_list_users"
         ]
 
     def get_year(self, obj):
@@ -41,7 +41,7 @@ class MangaSerializer(serializers.ModelSerializer):
         """Meta definition for MangaSerializer."""
         model = Manga
         fields = [
-            'id', 'name', 'name_jpn', 'slug', 'image', 'synopsis', 'chapters',
-            'release', 'media_type', 'status', 'author_id', 'demographic_id',
-            'genre_id', 'url_id',
+            "id", "name", "name_jpn", "slug", "image", "synopsis", "chapters",
+            "release", "media_type", "status", "author_id", "demographic_id",
+            "genre_id", "url_id",
         ]

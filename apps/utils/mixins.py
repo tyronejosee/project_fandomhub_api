@@ -12,9 +12,9 @@ class SlugMixin(models.Model):
     """
     Mixin providing slug functionality for models.
     """
-    slug = models.SlugField(_('Slug'), unique=True, blank=True, null=True)
+    slug = models.SlugField(_("Slug"), unique=True, blank=True, null=True)
 
-    def generate_slug(self, field_name='name'):
+    def generate_slug(self, field_name="name"):
         """Generate a slug based on the content of the instance."""
         content = getattr(self, field_name)
         self.slug = slugify(content)
@@ -43,11 +43,11 @@ class LogicalDeleteMixin:
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Http404:
             return Response(
-                {'errors': _('Resource not found.')},
+                {"errors": _("Resource not found.")},
                 status=status.HTTP_404_NOT_FOUND
             )
         except Exception as e:
             return Response(
-                {'errors': str(e)},
+                {"errors": str(e)},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
