@@ -1,13 +1,14 @@
 """Viewsets for Contents App."""
 
-from django.utils.translation import gettext as _
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.contents.models import Anime, Manga
-from apps.contents.serializers import AnimeSerializer, MangaSerializer, AnimeListSerializer
+from apps.contents.serializers import (
+    AnimeSerializer, MangaSerializer, AnimeListSerializer
+)
 from apps.utils.permissions import IsStaffOrReadOnly
 
 
