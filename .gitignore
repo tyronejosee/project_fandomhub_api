@@ -33,6 +33,7 @@ share/*python-wheels/
 MANIFEST
 
 # Unit test / coverage reports
+.coveragerc
 htmlcov/
 .tox/
 .nox/
