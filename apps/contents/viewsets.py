@@ -11,7 +11,7 @@ from apps.contents.serializers import (
 )
 from apps.utils.permissions import IsStaffOrReadOnly
 from drf_spectacular.utils import extend_schema_view, extend_schema
-from apps.contents.schemas import anime_schemas
+from apps.contents.schemas import anime_schemas, manga_schemas
 
 
 @extend_schema_view(**anime_schemas)
@@ -44,6 +44,7 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
+@extend_schema_view(**manga_schemas)
 class MangaViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Manga instances.
