@@ -1,14 +1,15 @@
 """Tests for Models in Contents App."""
 
-from django.test import TestCase
 from datetime import date
+from django.test import TestCase
+from django.core.exceptions import ValidationError
 from apps.contents.models import Anime, Manga
 from apps.categories.models import Studio, Genre, Season, Url, Demographic
 from apps.persons.models import Author
 
 
-class ContentModelsTest(TestCase):
-    """Test cases for models."""
+class AnimeModelTestCase(TestCase):
+    """Test cases for Anime model."""
 
     def setUp(self):
         # External models
@@ -21,10 +22,7 @@ class ContentModelsTest(TestCase):
         )
         self.url = Url.objects.create(url="http://example.com")
 
-    # Anime Model
-    def test_anime_creation(self):
-        """Test creation of a Anime instance."""
-        anime = Anime.objects.create(
+        self.anime = Anime.objects.create(
             name="Name Example",
             name_jpn="Name JPN Example",
             image=None,
@@ -44,29 +42,65 @@ class ContentModelsTest(TestCase):
             num_scoring_users=500
         )
 
-        anime.genre_id.set([self.genre])
-        anime.url_id.set([self.url])
+        # Set ManyToManyField
+        self.anime.genre_id.set([self.genre])
+        self.anime.url_id.set([self.url])
 
-        self.assertEqual(anime.name, "Name Example")
-        self.assertEqual(anime.name_jpn, "Name JPN Example")
-        self.assertEqual(anime.synopsis, "Synopsis Example")
-        self.assertEqual(anime.episodes, 12)
-        self.assertEqual(anime.duration, "24 min per Episode")
-        self.assertEqual(anime.release, date(2022, 1, 1))
-        self.assertEqual(anime.category, 1)
-        self.assertEqual(anime.status, 1)
-        self.assertEqual(anime.rating, 1)
-        self.assertEqual(anime.studio_id, self.studio)
-        self.assertEqual(anime.genre_id.first(), self.genre)
-        self.assertEqual(anime.season_id, self.season)
-        self.assertEqual(anime.url_id.first(), self.url)
-        self.assertEqual(anime.mean, 8.0)
-        self.assertEqual(anime.rank, 1)
-        self.assertEqual(anime.popularity, 100)
-        self.assertEqual(anime.num_list_users, 1000)
-        self.assertEqual(anime.num_scoring_users, 500)
+    def test_creation(self):
+        """Test creation of a Anime instance."""
+        self.assertEqual(self.anime.name, "Name Example")
+        self.assertEqual(self.anime.name_jpn, "Name JPN Example")
+        self.assertEqual(self.anime.synopsis, "Synopsis Example")
+        self.assertEqual(self.anime.episodes, 12)
+        self.assertEqual(self.anime.duration, "24 min per Episode")
+        self.assertEqual(self.anime.release, date(2022, 1, 1))
+        self.assertEqual(self.anime.category, 1)
+        self.assertEqual(self.anime.status, 1)
+        self.assertEqual(self.anime.rating, 1)
+        self.assertEqual(self.anime.studio_id, self.studio)
+        self.assertEqual(self.anime.genre_id.first(), self.genre)
+        self.assertEqual(self.anime.season_id, self.season)
+        self.assertEqual(self.anime.url_id.first(), self.url)
+        self.assertEqual(self.anime.mean, 8.0)
+        self.assertEqual(self.anime.rank, 1)
+        self.assertEqual(self.anime.popularity, 100)
+        self.assertEqual(self.anime.num_list_users, 1000)
+        self.assertEqual(self.anime.num_scoring_users, 500)
 
-    def test_anime_query(self):
+    def test_episodes_validation(self):
+        """Test episodes field validation."""
+        # Test negative episodes value
+        with self.assertRaises(ValidationError):
+            anime = Anime(
+                name="Test Anime",
+                name_jpn="Test Anime JP",
+                episodes=-1
+            )
+            anime.full_clean()
+
+        # Test episodes value over the maximum allowed
+        with self.assertRaises(ValidationError):
+            anime = Anime(
+                name="Test Anime",
+                name_jpn="Test Anime JP",
+                episodes=1501
+            )
+            anime.full_clean()
+
+        # Test valid episodes value
+        anime = Anime(
+            name="Test Anime",
+            name_jpn="Test Anime JP",
+            episodes=12
+        )
+        anime.full_clean()
+
+    def test_str_method(self):
+        """Test srt method."""
+        anime = Anime.objects.get(name="Name Example")
+        self.assertEqual(str(anime), "Name Example")
+
+    def test_query(self):
         """Test querying for anime objects."""
         Anime.objects.create(
             name="Query Example One",
@@ -88,10 +122,21 @@ class ContentModelsTest(TestCase):
         self.assertEqual(queried_animes.count(), 2)
         self.assertNotEqual(queried_animes.count(), 0)
 
-    # Manga Model
-    def test_manga_creation(self):
-        """Test creation of a Manga instance."""
-        manga = Manga.objects.create(
+
+class MangaModelTestCase(TestCase):
+    """Test cases for Manga model."""
+
+    def setUp(self):
+        # External models
+        self.genre = Genre.objects.create(name="Genre Example")
+        self.season = Season.objects.create(season=1, year=2024)
+        self.author = Author.objects.create(name="Author Example")
+        self.demographic = Demographic.objects.create(
+            name="Demographic Example"
+        )
+        self.url = Url.objects.create(url="http://example.com")
+
+        self.manga = Manga.objects.create(
             name="Name Example",
             name_jpn="Name JPN Example",
             image=None,
@@ -109,25 +154,44 @@ class ContentModelsTest(TestCase):
             num_scoring_users=500,
         )
 
-        manga.genre_id.set([self.genre])
-        manga.url_id.set([self.url])
+        # Set ManyToManyField
+        self.manga.genre_id.set([self.genre])
+        self.manga.url_id.set([self.url])
 
-        self.assertEqual(manga.name, "Name Example")
-        self.assertEqual(manga.name_jpn, "Name JPN Example")
-        self.assertEqual(manga.synopsis, "Synopsis Example")
-        self.assertEqual(manga.chapters, 50)
-        self.assertEqual(manga.release, date(2024, 1, 1))
-        self.assertEqual(manga.media_type, 1)
-        self.assertEqual(manga.status, 1)
-        self.assertEqual(manga.author_id, self.author)
-        self.assertEqual(manga.demographic_id, self.demographic)
-        self.assertEqual(manga.genre_id.first(), self.genre)
-        self.assertEqual(manga.url_id.first(), self.url)
-        self.assertEqual(manga.mean, 8.0)
-        self.assertEqual(manga.rank, 1)
-        self.assertEqual(manga.popularity, 100)
-        self.assertEqual(manga.num_list_users, 1000)
-        self.assertEqual(manga.num_scoring_users, 500)
+    def test_manga_creation(self):
+        """Test creation of a Manga instance."""
+        self.assertEqual(self.manga.name, "Name Example")
+        self.assertEqual(self.manga.name_jpn, "Name JPN Example")
+        self.assertEqual(self.manga.synopsis, "Synopsis Example")
+        self.assertEqual(self.manga.chapters, 50)
+        self.assertEqual(self.manga.release, date(2024, 1, 1))
+        self.assertEqual(self.manga.media_type, 1)
+        self.assertEqual(self.manga.status, 1)
+        self.assertEqual(self.manga.author_id, self.author)
+        self.assertEqual(self.manga.demographic_id, self.demographic)
+        self.assertEqual(self.manga.genre_id.first(), self.genre)
+        self.assertEqual(self.manga.url_id.first(), self.url)
+        self.assertEqual(self.manga.mean, 8.0)
+        self.assertEqual(self.manga.rank, 1)
+        self.assertEqual(self.manga.popularity, 100)
+        self.assertEqual(self.manga.num_list_users, 1000)
+        self.assertEqual(self.manga.num_scoring_users, 500)
+
+    def test_chapters_validation(self):
+        """Test chapters field validation."""
+        # Test negative chapters value
+        with self.assertRaises(ValidationError):
+            manga = Manga(
+                name="Test Manga",
+                name_jpn="Test Manga JP",
+                chapters=-1
+            )
+            manga.full_clean()
+
+    def test_str_method(self):
+        """Test srt method."""
+        manga = Manga.objects.get(name="Name Example")
+        self.assertEqual(str(manga), "Name Example")
 
     def test_manga_query(self):
         """Test querying for anime objects."""
