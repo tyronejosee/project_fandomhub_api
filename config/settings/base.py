@@ -202,8 +202,6 @@ DJOSER = {
 AUTH_USER_MODEL = "users.User"
 
 SPECTACULAR_SETTINGS = {
-    "SCHEMA_PATH_PREFIX": r"^/api/v\d+",
-    "SCHEMA_PATH_PREFIX_TRIM": True,
     "TITLE": "Project: Beehive",
     "VERSION": "v1",
     "DESCRIPTION": "The Beehive API provides access to data about beehives, bees, and more",
@@ -212,6 +210,8 @@ SPECTACULAR_SETTINGS = {
         "url": "https://github.com/tyronejosee/project_beehive_api/blob/main/LICENSE"
     },
     "CONTACT": {"name": "Developer", "url": "https://github.com/tyronejosee"},
+    "SCHEMA_PATH_PREFIX": r"^/api/v\d+",
+    "SCHEMA_PATH_PREFIX_TRIM": True,
     "SERVE_INCLUDE_SCHEMA": False,
     "SWAGGER_UI_DIST": "SIDECAR",
     "SWAGGER_UI_FAVICON_HREF": "SIDECAR",

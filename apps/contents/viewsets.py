@@ -10,8 +10,11 @@ from apps.contents.serializers import (
     AnimeSerializer, MangaSerializer, AnimeListSerializer
 )
 from apps.utils.permissions import IsStaffOrReadOnly
+from drf_spectacular.utils import extend_schema_view, extend_schema
+from apps.contents.schemas import anime_schemas
 
 
+@extend_schema_view(**anime_schemas)
 class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Anime instances.
@@ -25,10 +28,14 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Anime.objects.filter(available=True)
 
+    @extend_schema(
+        summary="Get Popular Animes",
+        description="Retrieve a list of the 50 most popular anime."
+    )
     @action(detail=False, methods=["get"], url_path="populars")
     def popular_list(self, request, pk=None):
         """
-        Retrieve a list of the 50 most popular anime.
+        Action return a list of the 50 most popular anime.
         """
         popular_list = Anime.objects.order_by("-popularity")[:50]
         if not popular_list:
