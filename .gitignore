@@ -3,8 +3,6 @@ PLANNING.md
 desktop.ini
 migrations/
 */migrations/
-apps/persons/migrations/
-*.mo
 db.sqlite3
 
 # Byte-compiled / optimized / DLL files
