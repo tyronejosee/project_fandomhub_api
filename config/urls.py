@@ -29,7 +29,7 @@ urlpatterns = [
 ]
 
 
-# Debug Config
+# Debug config
 if settings.DEBUG:
     urlpatterns += static(
         settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
@@ -37,7 +37,7 @@ if settings.DEBUG:
         settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 
-# Custom attributes for admin
+# AdminSite props.
 admin.site.site_header = "Project: Beehive"
 admin.site.site_title = "Beehive"
 admin.site.index_title = "Admin"
