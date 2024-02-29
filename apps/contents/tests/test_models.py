@@ -4,7 +4,7 @@ from datetime import date
 from django.test import TestCase
 from django.core.exceptions import ValidationError
 from apps.contents.models import Anime, Manga
-from apps.categories.models import Studio, Genre, Season, Url, Demographic
+from apps.categories.models import Studio, Genre, Season, Demographic
 from apps.persons.models import Author
 
 
@@ -20,7 +20,6 @@ class AnimeModelTestCase(TestCase):
         self.demographic = Demographic.objects.create(
             name="Demographic Example"
         )
-        self.url = Url.objects.create(url="http://example.com")
 
         self.anime = Anime.objects.create(
             name="Name Example",
@@ -31,6 +30,8 @@ class AnimeModelTestCase(TestCase):
             duration="24 min per Episode",
             release=date(2022, 1, 1),
             category=1,
+            website="https://example.com",
+            trailer="https://example.com/trailer",
             status=1,
             rating=1,
             studio_id=self.studio,
@@ -44,7 +45,6 @@ class AnimeModelTestCase(TestCase):
 
         # Set ManyToManyField
         self.anime.genre_id.set([self.genre])
-        self.anime.url_id.set([self.url])
 
     def test_creation(self):
         """Test creation of a Anime instance."""
@@ -55,12 +55,13 @@ class AnimeModelTestCase(TestCase):
         self.assertEqual(self.anime.duration, "24 min per Episode")
         self.assertEqual(self.anime.release, date(2022, 1, 1))
         self.assertEqual(self.anime.category, 1)
+        self.assertEqual(self.anime.website, "https://example.com")
+        self.assertEqual(self.anime.trailer, "https://example.com/trailer")
         self.assertEqual(self.anime.status, 1)
         self.assertEqual(self.anime.rating, 1)
         self.assertEqual(self.anime.studio_id, self.studio)
         self.assertEqual(self.anime.genre_id.first(), self.genre)
         self.assertEqual(self.anime.season_id, self.season)
-        self.assertEqual(self.anime.url_id.first(), self.url)
         self.assertEqual(self.anime.mean, 8.0)
         self.assertEqual(self.anime.rank, 1)
         self.assertEqual(self.anime.popularity, 100)
@@ -134,7 +135,6 @@ class MangaModelTestCase(TestCase):
         self.demographic = Demographic.objects.create(
             name="Demographic Example"
         )
-        self.url = Url.objects.create(url="http://example.com")
 
         self.manga = Manga.objects.create(
             name="Name Example",
@@ -144,6 +144,7 @@ class MangaModelTestCase(TestCase):
             chapters=50,
             release=date(2024, 1, 1),
             media_type=1,
+            website="https://example.com",
             status=1,
             author_id=self.author,
             demographic_id=self.demographic,
@@ -156,7 +157,6 @@ class MangaModelTestCase(TestCase):
 
         # Set ManyToManyField
         self.manga.genre_id.set([self.genre])
-        self.manga.url_id.set([self.url])
 
     def test_manga_creation(self):
         """Test creation of a Manga instance."""
@@ -166,11 +166,11 @@ class MangaModelTestCase(TestCase):
         self.assertEqual(self.manga.chapters, 50)
         self.assertEqual(self.manga.release, date(2024, 1, 1))
         self.assertEqual(self.manga.media_type, 1)
+        self.assertEqual(self.manga.website, "https://example.com")
         self.assertEqual(self.manga.status, 1)
         self.assertEqual(self.manga.author_id, self.author)
         self.assertEqual(self.manga.demographic_id, self.demographic)
         self.assertEqual(self.manga.genre_id.first(), self.genre)
-        self.assertEqual(self.manga.url_id.first(), self.url)
         self.assertEqual(self.manga.mean, 8.0)
         self.assertEqual(self.manga.rank, 1)
         self.assertEqual(self.manga.popularity, 100)
