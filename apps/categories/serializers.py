@@ -1,23 +1,7 @@
 """Serializers for Contents App."""
 
 from rest_framework import serializers
-from apps.categories.models import Url, Studio, Genre, Season, Demographic
-
-
-class UrlSerializer(serializers.ModelSerializer):
-    """Serializer for Url model."""
-
-    class Meta:
-        """Meta definition for UrlSerializer."""
-        model = Url
-        fields = ["tag", "url"]
-
-    def to_representation(self, instance):
-        return {
-            "id": instance.id,
-            "tag": instance.get_tag_display(),
-            "url": instance.url,
-        }
+from apps.categories.models import Studio, Genre, Season, Demographic
 
 
 class StudioSerializer(serializers.ModelSerializer):

@@ -14,8 +14,8 @@ class AnimeSerializer(serializers.ModelSerializer):
         model = Anime
         fields = [
             "id", "name", "name_jpn", "slug", "image", "synopsis", "episodes",
-            "duration", "release", "category", "status", "rating", "studio_id",
-            "genre_id", "season_id", "url_id",
+            "duration", "release", "category", "website", "trailer", "status",
+            "rating", "studio_id", "genre_id", "season_id",
         ]
 
 
@@ -41,7 +41,7 @@ class MangaSerializer(serializers.ModelSerializer):
         """Meta definition for MangaSerializer."""
         model = Manga
         fields = [
-            "id", "name", "name_jpn", "slug", "image", "synopsis", "chapters",
-            "release", "media_type", "status", "author_id", "demographic_id",
-            "genre_id", "url_id",
+            "id", "name", "name_jpn", "slug", "image", "synopsis",
+            "chapters", "release", "media_type", "website", "status",
+            "author_id", "demographic_id", "genre_id",
         ]

@@ -1,18 +1,7 @@
 """Admin for Contents App."""
 
 from django.contrib import admin
-from apps.categories.models import Studio, Genre, Season, Url, Demographic
-
-
-@admin.register(Url)
-class UrlAdmin(admin.ModelAdmin):
-    """Admin config for Url model."""
-    search_fields = ["tag", "url"]
-    list_display = ["url", "tag", "available"]
-    list_filter = ["available",]
-    list_per_page = 25
-    readonly_fields = ["pk", "created_at", "updated_at",]
-    ordering = ["pk",]
+from apps.categories.models import Studio, Genre, Season, Demographic
 
 
 @admin.register(Studio)

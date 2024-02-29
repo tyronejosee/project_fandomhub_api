@@ -6,21 +6,7 @@ from django.utils.translation import gettext as _
 from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
-from apps.categories.choices import TAG_CHOICES, SEASON_CHOICES
-
-
-class Url(BaseModel):
-    """Model definition for Url (Association)."""
-    url = models.URLField(_("URL"))
-    tag = models.IntegerField(_("Tag"), choices=TAG_CHOICES, default=0)
-
-    class Meta:
-        """Meta definition for Url."""
-        verbose_name = _("Url")
-        verbose_name_plural = _("Urls")
-
-    def __str__(self):
-        return str(self.url)
+from apps.categories.choices import SEASON_CHOICES
 
 
 class Studio(BaseModel, SlugMixin):

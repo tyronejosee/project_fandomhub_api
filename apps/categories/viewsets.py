@@ -10,28 +10,13 @@ from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.contents.models import Anime
 from apps.contents.serializers import AnimeSerializer
-from apps.categories.models import Url, Studio, Genre, Season, Demographic
+from apps.categories.models import Studio, Genre, Season, Demographic
 from apps.categories.serializers import (
-    UrlSerializer, StudioSerializer, GenreSerializer,
-    SeasonSerializer, DemographicSerializer
+    StudioSerializer, GenreSerializer, SeasonSerializer, DemographicSerializer
 )
 from apps.categories.schemas import (
     studio_schemas, genre_schemas, season_schemas, demographic_schemas
 )
-
-
-class UrlViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
-    """
-    Viewset for managing Url instances.
-    """
-    serializer_class = UrlSerializer
-    permission_classes = [IsStaffOrReadOnly]
-    search_fields = ["url", "tag"]
-    ordering_fields = ["tag"]
-    ordering = ["id"]
-
-    def get_queryset(self):
-        return Url.objects.filter(available=True)
 
 
 @extend_schema_view(**studio_schemas)

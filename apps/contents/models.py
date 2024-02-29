@@ -3,7 +3,7 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.translation import gettext as _
-from apps.categories.models import Url, Studio, Genre, Season, Demographic
+from apps.categories.models import Studio, Genre, Season, Demographic
 from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
@@ -32,6 +32,8 @@ class Anime(BaseModel, SlugMixin):
     category = models.IntegerField(
         _("Category"), choices=CATEGORY_CHOICES, default=0
     )
+    website = models.URLField(max_length=255, blank=True)
+    trailer = models.URLField(max_length=255, blank=True)
     status = models.IntegerField(
         _("Status"), choices=STATUS_CHOICES, default=0
     )
@@ -45,7 +47,6 @@ class Anime(BaseModel, SlugMixin):
     season_id = models.ForeignKey(
         Season, on_delete=models.CASCADE, blank=True, null=True
     )
-    url_id = models.ManyToManyField(Url, blank=True)
     mean = models.FloatField(_("Mean"), blank=True, null=True)
     rank = models.IntegerField(_("Rank"), blank=True, null=True)
     popularity = models.IntegerField(_("Popularity"), blank=True, null=True)
@@ -80,6 +81,7 @@ class Manga(BaseModel, SlugMixin):
     media_type = models.IntegerField(
         _("Media Type"), choices=MEDIA_TYPE_CHOICES, default=0
     )
+    website = models.URLField(max_length=255, blank=True)
     status = models.IntegerField(
         _("Status"), choices=STATUS_CHOICES, default=0
     )
@@ -90,7 +92,6 @@ class Manga(BaseModel, SlugMixin):
         Demographic, on_delete=models.CASCADE, blank=True, null=True
     )
     genre_id = models.ManyToManyField(Genre, blank=True)
-    url_id = models.ManyToManyField(Url, blank=True)
     mean = models.FloatField(_("Mean"), blank=True, null=True)
     rank = models.IntegerField(_("Rank"), blank=True, null=True)
     popularity = models.IntegerField(_("Popularity"), blank=True, null=True)
