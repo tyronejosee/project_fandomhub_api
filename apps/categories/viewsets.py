@@ -5,6 +5,7 @@ from rest_framework import viewsets
 from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from drf_spectacular.utils import extend_schema_view, extend_schema
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.contents.models import Anime
@@ -13,6 +14,9 @@ from apps.categories.models import Url, Studio, Genre, Season, Demographic
 from apps.categories.serializers import (
     UrlSerializer, StudioSerializer, GenreSerializer,
     SeasonSerializer, DemographicSerializer
+)
+from apps.categories.schemas import (
+    studio_schemas, genre_schemas, season_schemas, demographic_schemas
 )
 
 
@@ -30,6 +34,7 @@ class UrlViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
         return Url.objects.filter(available=True)
 
 
+@extend_schema_view(**studio_schemas)
 class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Studio instances.
@@ -43,6 +48,10 @@ class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Studio.objects.filter(available=True)
 
+    @extend_schema(
+        summary="Get Animes for Studio",
+        description="Retrieve a list of animes for studio."
+    )
     @action(detail=True, methods=["get"], url_path="animes")
     def anime_list(self, request, pk=None):
         """
@@ -59,6 +68,7 @@ class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
         )
 
 
+@extend_schema_view(**genre_schemas)
 class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Genre instances.
@@ -72,6 +82,10 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Genre.objects.filter(available=True)
 
+    @extend_schema(
+        summary="Get Animes for Genre",
+        description="Retrieve a list of animes for genre."
+    )
     @action(detail=True, methods=["get"], url_path="animes")
     def anime_list(self, request, pk=None):
         """
@@ -88,6 +102,7 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
         )
 
 
+@extend_schema_view(**season_schemas)
 class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Season instances.
@@ -102,6 +117,7 @@ class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
         return Season.objects.filter(available=True)
 
 
+@extend_schema_view(**demographic_schemas)
 class DemographicViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Demographic instances.
