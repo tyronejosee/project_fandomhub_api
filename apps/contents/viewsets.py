@@ -1,16 +1,15 @@
 """Viewsets for Contents App."""
 
-from rest_framework import viewsets
+from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from rest_framework import status
+from drf_spectacular.utils import extend_schema_view, extend_schema
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.contents.models import Anime, Manga
 from apps.contents.serializers import (
     AnimeSerializer, MangaSerializer, AnimeListSerializer
 )
 from apps.utils.permissions import IsStaffOrReadOnly
-from drf_spectacular.utils import extend_schema_view, extend_schema
 from apps.contents.schemas import anime_schemas, manga_schemas
 
 

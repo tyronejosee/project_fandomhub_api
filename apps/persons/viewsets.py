@@ -1,12 +1,15 @@
 """Viewsets for Persons App."""
 
 from rest_framework import viewsets
+from drf_spectacular.utils import extend_schema_view
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.persons.models import Author
 from apps.persons.serializers import AuthorSerializer
+from apps.persons.schemas import author_schemas
 
 
+@extend_schema_view(**author_schemas)
 class AuthorViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Author instances.
