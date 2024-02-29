@@ -1,8 +1,8 @@
 # Project files
 PLANNING.md
 desktop.ini
-migrations/
-*/migrations/
+# migrations/
+# */migrations/
 db.sqlite3
 
 # Byte-compiled / optimized / DLL files
