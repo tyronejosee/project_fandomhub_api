@@ -1,1 +1,1 @@
-"""Serializers for Searches App."""
+"""Admin for Searches App."""
