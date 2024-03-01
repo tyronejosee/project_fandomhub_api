@@ -3,3 +3,10 @@ env
 __pycache__
 .git
 .gitignore
+.coverage
+.flake8
+desktop.ini
+LICENCE
+PLANNING.md
+README.md
+docs
