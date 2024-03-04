@@ -3,7 +3,8 @@
 from rest_framework import serializers
 from apps.contents.models import Anime, Manga
 from apps.categories.serializers import (
-    GenreSerializer, StudioListSerializer, SeasonListSerializer
+    GenreSerializer, StudioListSerializer, SeasonListSerializer,
+    DemographicSerializer
 )
 
 
@@ -42,6 +43,9 @@ class AnimeListSerializer(serializers.ModelSerializer):
 
 class MangaSerializer(serializers.ModelSerializer):
     """Serializer for Manga model."""
+    author = serializers.CharField(source='author.name')
+    demographic = DemographicSerializer()
+    genres = GenreSerializer(many=True)
 
     class Meta:
         """Meta definition for MangaSerializer."""

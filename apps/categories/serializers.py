@@ -1,7 +1,7 @@
 """Serializers for Contents App."""
 
 from rest_framework import serializers
-from apps.categories.models import Studio, Genre, Season, Demographic
+from apps.categories.models import Studio, Genre, Theme, Season, Demographic
 
 
 class StudioListSerializer(serializers.ModelSerializer):
@@ -31,6 +31,16 @@ class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for GenreSerializer."""
         model = Genre
+        fields = ["id", "name", "slug",]
+        read_only_fields = ["slug",]
+
+
+class ThemeSerializer(serializers.ModelSerializer):
+    """Serializer for Theme model."""
+
+    class Meta:
+        """Meta definition for ThemeSerializer."""
+        model = Theme
         fields = ["id", "name", "slug",]
         read_only_fields = ["slug",]
 

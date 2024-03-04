@@ -31,24 +31,24 @@ RATING_CHOICES = [
 ]
 
 MEDIA_TYPE_CHOICES = [
-    ("0", _("Pending")),
-    ("1", _("Manga")),
-    ("2", _("Novel")),
-    ("3", _("One Shot")),
-    ("4", _("Doujinshi")),
-    ("5", _("Manhwa")),
-    ("6", _("OEL")),
+    (0, _("Pending")),
+    (1, _("Manga")),
+    (2, _("Novel")),
+    (3, _("One Shot")),
+    (4, _("Doujinshi")),
+    (5, _("Manhwa")),
+    (6, _("OEL")),
 ]
 
 SOURCE_CHOICES = [
-    ("0", _("Pending")),
-    ("1", _("Original")),
-    ("2", _("Manga")),
-    ("3", _("Novel")),
-    ("4", _("Light Novel")),
-    ("5", _("Visual Novel")),
-    ("6", _("Game")),
-    ("7", _("Book")),
-    ("8", _("Radio")),
-    ("9", _("Music")),
+    (0, _("Pending")),
+    (1, _("Original")),
+    (2, _("Manga")),
+    (3, _("Novel")),
+    (4, _("Light Novel")),
+    (5, _("Visual Novel")),
+    (6, _("Game")),
+    (7, _("Book")),
+    (8, _("Radio")),
+    (9, _("Music")),
 ]

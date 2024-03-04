@@ -48,6 +48,19 @@ class Genre(BaseModel, SlugMixin):
         return str(self.name)
 
 
+class Theme(BaseModel, SlugMixin):
+    """Model definition for Theme (Catalog)."""
+    name = models.CharField(_("Name"), max_length=255, unique=True)
+
+    class Meta:
+        """Meta definition for Theme."""
+        verbose_name = _("Theme")
+        verbose_name_plural = _("Themes")
+
+    def __str__(self):
+        return str(self.name)
+
+
 class Season(BaseModel):
     """Model definition for Season (Catalog)."""
     season = models.IntegerField(

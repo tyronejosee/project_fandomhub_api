@@ -10,9 +10,10 @@ from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.contents.models import Anime
 from apps.contents.serializers import AnimeSerializer
-from apps.categories.models import Studio, Genre, Season, Demographic
+from apps.categories.models import Studio, Genre, Theme, Season, Demographic
 from apps.categories.serializers import (
-    StudioSerializer, GenreSerializer, SeasonSerializer, DemographicSerializer
+    StudioSerializer, GenreSerializer, ThemeSerializer,
+    SeasonSerializer, DemographicSerializer
 )
 from apps.categories.schemas import (
     studio_schemas, genre_schemas, season_schemas, demographic_schemas
@@ -85,6 +86,20 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
             {"detail": _("There are no animes for this genre.")},
             status=status.HTTP_404_NOT_FOUND
         )
+
+
+class ThemeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+    """
+    Viewset for managing Theme instances.
+    """
+    serializer_class = ThemeSerializer
+    permission_classes = [IsStaffOrReadOnly]
+    search_fields = ["name",]
+    ordering_fields = ["name"]
+    ordering = ["id"]
+
+    def get_queryset(self):
+        return Theme.objects.filter(available=True)
 
 
 @extend_schema_view(**season_schemas)

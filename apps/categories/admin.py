@@ -1,7 +1,7 @@
 """Admin for Contents App."""
 
 from django.contrib import admin
-from apps.categories.models import Studio, Genre, Season, Demographic
+from apps.categories.models import Studio, Genre, Theme, Season, Demographic
 
 
 @admin.register(Studio)
@@ -18,6 +18,17 @@ class StudioAdmin(admin.ModelAdmin):
 @admin.register(Genre)
 class GenreAdmin(admin.ModelAdmin):
     """Admin config for Genre model."""
+    search_fields = ["name",]
+    list_display = ["name", "available"]
+    list_filter = ["available",]
+    list_per_page = 25
+    readonly_fields = ["pk", "slug", "created_at", "updated_at",]
+    ordering = ["pk",]
+
+
+@admin.register(Theme)
+class ThemeAdmin(admin.ModelAdmin):
+    """Admin config for Theme model."""
     search_fields = ["name",]
     list_display = ["name", "available"]
     list_filter = ["available",]

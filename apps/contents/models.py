@@ -3,7 +3,7 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.translation import gettext as _
-from apps.categories.models import Studio, Genre, Season, Demographic
+from apps.categories.models import Studio, Genre, Theme, Season, Demographic
 from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
@@ -44,6 +44,7 @@ class Anime(BaseModel, SlugMixin):
         Studio, on_delete=models.CASCADE, blank=True, null=True
     )
     genres = models.ManyToManyField(Genre, blank=True)
+    themes = models.ManyToManyField(Theme, blank=True)
     season = models.ForeignKey(
         Season, on_delete=models.CASCADE, blank=True, null=True
     )
@@ -92,6 +93,7 @@ class Manga(BaseModel, SlugMixin):
         Demographic, on_delete=models.CASCADE, blank=True, null=True
     )
     genres = models.ManyToManyField(Genre, blank=True)
+    themes = models.ManyToManyField(Theme, blank=True)
     mean = models.FloatField(_("Mean"), blank=True, null=True)
     rank = models.IntegerField(_("Rank"), blank=True, null=True)
     popularity = models.IntegerField(_("Popularity"), blank=True, null=True)
