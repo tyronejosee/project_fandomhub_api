@@ -27,10 +27,11 @@ class AnimeSerializer(serializers.ModelSerializer):
 
 
 class AnimeListSerializer(serializers.ModelSerializer):
-    """Serializer for listing Anime with limited fields."""
+    """Serializer for Anime model (List only)."""
     year = serializers.SerializerMethodField()
 
     class Meta:
+        """Meta definition for AnimeListSerializer."""
         model = Anime
         fields = [
             "id", "name", "year", "episodes", "rank",
@@ -43,7 +44,7 @@ class AnimeListSerializer(serializers.ModelSerializer):
 
 class MangaSerializer(serializers.ModelSerializer):
     """Serializer for Manga model."""
-    author = serializers.CharField(source='author.name')
+    author = serializers.CharField(source="author.name")
     demographic = DemographicSerializer()
     genres = GenreSerializer(many=True)
 

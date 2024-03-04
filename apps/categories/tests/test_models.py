@@ -61,10 +61,10 @@ class GenreModelTestCase(TestCase):
     """Test cases for Genre model."""
 
     def test_creation(self):
+        """Test creation of a Genre instance."""
         genre = Genre.objects.create(
             name="Romance"
         )
-        """Test creation of a Genre instance."""
         self.assertEqual(genre.name, "Romance")
         self.assertEqual(genre.available, True)
 
