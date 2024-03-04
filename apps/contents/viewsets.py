@@ -20,7 +20,7 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     serializer_class = AnimeSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ["name", "studio_id__name"]
+    search_fields = ["name", "studio__name"]
     ordering_fields = ["name"]
     ordering = ["id"]
 

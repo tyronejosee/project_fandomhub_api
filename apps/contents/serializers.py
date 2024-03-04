@@ -2,10 +2,16 @@
 
 from rest_framework import serializers
 from apps.contents.models import Anime, Manga
+from apps.categories.serializers import (
+    GenreSerializer, StudioListSerializer, SeasonListSerializer
+)
 
 
 class AnimeSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
+    studio = StudioListSerializer()
+    genres = GenreSerializer(many=True)
+    season = SeasonListSerializer()
     status = serializers.CharField(source="get_status_display")
     category = serializers.CharField(source="get_category_display")
 
@@ -15,7 +21,7 @@ class AnimeSerializer(serializers.ModelSerializer):
         fields = [
             "id", "name", "name_jpn", "slug", "image", "synopsis", "episodes",
             "duration", "release", "category", "website", "trailer", "status",
-            "rating", "studio_id", "genre_id", "season_id",
+            "rating", "studio", "genres", "season",
         ]
 
 
@@ -31,7 +37,7 @@ class AnimeListSerializer(serializers.ModelSerializer):
         ]
 
     def get_year(self, obj):
-        return obj.season_id.year if obj.season_id else None
+        return obj.season.year if obj.season else None
 
 
 class MangaSerializer(serializers.ModelSerializer):
@@ -43,5 +49,5 @@ class MangaSerializer(serializers.ModelSerializer):
         fields = [
             "id", "name", "name_jpn", "slug", "image", "synopsis",
             "chapters", "release", "media_type", "website", "status",
-            "author_id", "demographic_id", "genre_id",
+            "author", "demographic", "genres",
         ]

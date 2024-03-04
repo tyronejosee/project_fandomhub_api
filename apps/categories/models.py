@@ -57,6 +57,7 @@ class Season(BaseModel):
         _("Year"),  default=2010,
         validators=[MinValueValidator(1900), MaxValueValidator(2100)]
     )
+    fullname = models.CharField(_("Fullname"), max_length=255, blank=True)
 
     class Meta:
         """Meta definition for Season."""
@@ -70,8 +71,13 @@ class Season(BaseModel):
                 return choice[1]
         return _("Pending")
 
+    def save(self, *args, **kwargs):
+        """Override the save method to update the fullname field."""
+        self.fullname = f"{self.get_season_display_name()} {self.year}"
+        super().save(*args, **kwargs)
+
     def __str__(self):
-        return f"{self.get_season_display_name()} {self.year}"
+        return str(self.fullname)
 
 
 class Demographic(BaseModel):

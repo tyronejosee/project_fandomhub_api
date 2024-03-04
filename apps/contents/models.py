@@ -40,11 +40,11 @@ class Anime(BaseModel, SlugMixin):
     rating = models.IntegerField(
         _("Rating"), choices=RATING_CHOICES, default=0
     )
-    studio_id = models.ForeignKey(
+    studio = models.ForeignKey(
         Studio, on_delete=models.CASCADE, blank=True, null=True
     )
-    genre_id = models.ManyToManyField(Genre, blank=True)
-    season_id = models.ForeignKey(
+    genres = models.ManyToManyField(Genre, blank=True)
+    season = models.ForeignKey(
         Season, on_delete=models.CASCADE, blank=True, null=True
     )
     mean = models.FloatField(_("Mean"), blank=True, null=True)
@@ -85,13 +85,13 @@ class Manga(BaseModel, SlugMixin):
     status = models.IntegerField(
         _("Status"), choices=STATUS_CHOICES, default=0
     )
-    author_id = models.ForeignKey(
+    author = models.ForeignKey(
         Author, on_delete=models.CASCADE, blank=True, null=True
     )
-    demographic_id = models.ForeignKey(
+    demographic = models.ForeignKey(
         Demographic, on_delete=models.CASCADE, blank=True, null=True
     )
-    genre_id = models.ManyToManyField(Genre, blank=True)
+    genres = models.ManyToManyField(Genre, blank=True)
     mean = models.FloatField(_("Mean"), blank=True, null=True)
     rank = models.IntegerField(_("Rank"), blank=True, null=True)
     popularity = models.IntegerField(_("Popularity"), blank=True, null=True)

@@ -11,7 +11,7 @@ class StudioAdmin(admin.ModelAdmin):
     list_display = ["name", "available"]
     list_filter = ["available",]
     list_per_page = 25
-    readonly_fields = ["pk", "created_at", "updated_at",]
+    readonly_fields = ["pk", "slug", "created_at", "updated_at",]
     ordering = ["pk",]
 
 
@@ -22,7 +22,7 @@ class GenreAdmin(admin.ModelAdmin):
     list_display = ["name", "available"]
     list_filter = ["available",]
     list_per_page = 25
-    readonly_fields = ["pk", "created_at", "updated_at",]
+    readonly_fields = ["pk", "slug", "created_at", "updated_at",]
     ordering = ["pk",]
 
 
@@ -30,10 +30,10 @@ class GenreAdmin(admin.ModelAdmin):
 class SeasonAdmin(admin.ModelAdmin):
     """Admin config for Season model."""
     search_fields = ["season", "year"]
-    list_display = ["season", "available"]
-    list_filter = ["available",]
+    list_display = ["fullname", "available"]
+    list_filter = ["available", "year", "season"]
     list_per_page = 25
-    readonly_fields = ["pk", "created_at", "updated_at",]
+    readonly_fields = ["pk", "fullname", "created_at", "updated_at",]
     ordering = ["pk",]
 
 
