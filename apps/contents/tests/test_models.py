@@ -34,8 +34,8 @@ class AnimeModelTestCase(TestCase):
             trailer="https://example.com/trailer",
             status=1,
             rating=1,
-            studio_id=self.studio,
-            season_id=self.season,
+            studio=self.studio,
+            season=self.season,
             mean=8.0,
             rank=1,
             popularity=100,
@@ -44,7 +44,7 @@ class AnimeModelTestCase(TestCase):
         )
 
         # Set ManyToManyField
-        self.anime.genre_id.set([self.genre])
+        self.anime.genres.set([self.genre])
 
     def test_creation(self):
         """Test creation of a Anime instance."""
@@ -59,9 +59,9 @@ class AnimeModelTestCase(TestCase):
         self.assertEqual(self.anime.trailer, "https://example.com/trailer")
         self.assertEqual(self.anime.status, 1)
         self.assertEqual(self.anime.rating, 1)
-        self.assertEqual(self.anime.studio_id, self.studio)
-        self.assertEqual(self.anime.genre_id.first(), self.genre)
-        self.assertEqual(self.anime.season_id, self.season)
+        self.assertEqual(self.anime.studio, self.studio)
+        self.assertEqual(self.anime.genres.first(), self.genre)
+        self.assertEqual(self.anime.season, self.season)
         self.assertEqual(self.anime.mean, 8.0)
         self.assertEqual(self.anime.rank, 1)
         self.assertEqual(self.anime.popularity, 100)
@@ -146,8 +146,8 @@ class MangaModelTestCase(TestCase):
             media_type=1,
             website="https://example.com",
             status=1,
-            author_id=self.author,
-            demographic_id=self.demographic,
+            author=self.author,
+            demographic=self.demographic,
             mean=8.0,
             rank=1,
             popularity=100,
@@ -156,7 +156,7 @@ class MangaModelTestCase(TestCase):
         )
 
         # Set ManyToManyField
-        self.manga.genre_id.set([self.genre])
+        self.manga.genres.set([self.genre])
 
     def test_manga_creation(self):
         """Test creation of a Manga instance."""
@@ -168,9 +168,9 @@ class MangaModelTestCase(TestCase):
         self.assertEqual(self.manga.media_type, 1)
         self.assertEqual(self.manga.website, "https://example.com")
         self.assertEqual(self.manga.status, 1)
-        self.assertEqual(self.manga.author_id, self.author)
-        self.assertEqual(self.manga.demographic_id, self.demographic)
-        self.assertEqual(self.manga.genre_id.first(), self.genre)
+        self.assertEqual(self.manga.author, self.author)
+        self.assertEqual(self.manga.demographic, self.demographic)
+        self.assertEqual(self.manga.genres.first(), self.genre)
         self.assertEqual(self.manga.mean, 8.0)
         self.assertEqual(self.manga.rank, 1)
         self.assertEqual(self.manga.popularity, 100)
