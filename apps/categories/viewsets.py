@@ -16,7 +16,8 @@ from apps.categories.serializers import (
     SeasonSerializer, DemographicSerializer
 )
 from apps.categories.schemas import (
-    studio_schemas, genre_schemas, season_schemas, demographic_schemas
+    studio_schemas, genre_schemas, theme_schemas,
+    season_schemas, demographic_schemas
 )
 
 
@@ -88,6 +89,7 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
         )
 
 
+@extend_schema_view(**theme_schemas)
 class ThemeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     Viewset for managing Theme instances.
