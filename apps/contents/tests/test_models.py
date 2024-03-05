@@ -117,6 +117,21 @@ class AnimeModelTestCase(TestCase):
         with self.assertRaises(Anime.DoesNotExist):
             Anime.objects.get(pk=anime.pk)
 
+    def test_validate_name_rom(self):
+        """Test name_rom field validation."""
+        anime = Anime.objects.create(
+            name="Naruto",
+            name_jpn="ナルト",
+            name_rom=""    # Empty
+        )
+        self.assertEqual(anime.name_rom, "Naruto")
+        self.assertEqual(anime.name, anime.name_rom)
+
+        anime.name = "Boruto: Naruto Next Generations"   # Update
+        anime.save()
+        self.assertEqual(anime.name_rom, "Boruto: Naruto Next Generations")
+        self.assertEqual(anime.name, anime.name_rom)
+
 
 class MangaModelTestCase(TestCase):
     """Test cases for Manga model."""
@@ -228,3 +243,18 @@ class MangaModelTestCase(TestCase):
                 chapters=-1    # Negative
             )
             manga.full_clean()
+
+    def test_validate_name_rom(self):
+        """Test name_rom field validation."""
+        manga = Anime.objects.create(
+            name="Monogatari Series: First Season",
+            name_jpn="〈物語〉シリーズ ファーストシーズン",
+            name_rom=""    # Empty
+        )
+        self.assertEqual(manga.name_rom, "Monogatari Series: First Season")
+        self.assertEqual(manga.name, manga.name_rom)
+
+        manga.name = "Monogatari Series: Second Season"   # Update
+        manga.save()
+        self.assertEqual(manga.name_rom, "Monogatari Series: Second Season")
+        self.assertEqual(manga.name, manga.name_rom)
