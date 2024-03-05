@@ -212,7 +212,6 @@ class MangaModelTestCase(TestCase):
         manga = Manga(
             name="Chainsaw Man: Buddy Stories",
             name_jpn="チェンソーマンバディ・ストーリーズ",
-            author=self.author,
             chapters=4
         )
         manga.save()

@@ -15,8 +15,13 @@ from apps.persons.models import Author
 
 class Anime(BaseModel, SlugMixin):
     """Model definition for Anime (Entity)."""
-    name = models.CharField(_("Name (ENG)"), max_length=255, unique=True)
-    name_jpn = models.CharField(_("Name (JPN)"), max_length=255, unique=True)
+    name = models.CharField(_("Name (English)"), max_length=255, unique=True)
+    name_jpn = models.CharField(
+        _("Name (Japanese)"), max_length=255, unique=True
+    )
+    name_rom = models.CharField(
+        _("Name (Romaji)"), max_length=255, unique=True, blank=True
+    )
     image = models.ImageField(
         _("Image"), upload_to=image_path, blank=True, null=True
     )
@@ -63,6 +68,11 @@ class Anime(BaseModel, SlugMixin):
         verbose_name = _("Anime")
         verbose_name_plural = _("Animes")
 
+    def save(self, *args, **kwargs):
+        if not self.name_rom or self.name_rom != self.name:
+            self.name_rom = self.name
+        super(SlugMixin, self).save(*args, **kwargs)
+
     def __str__(self):
         return str(self.name)
 
@@ -71,6 +81,9 @@ class Manga(BaseModel, SlugMixin):
     """Model definition for Manga (Entity)."""
     name = models.CharField(_("Name (ENG)"), max_length=255, unique=True)
     name_jpn = models.CharField(_("Name (JPN)"), max_length=255, unique=True)
+    name_rom = models.CharField(
+        _("Name (Romaji)"), max_length=255, unique=True, blank=True
+    )
     image = models.ImageField(
         _("Image"), upload_to=image_path, blank=True, null=True
     )
@@ -108,6 +121,12 @@ class Manga(BaseModel, SlugMixin):
         """Meta definition for Manga."""
         verbose_name = _("Manga")
         verbose_name_plural = _("Mangas")
+
+    def save(self, *args, **kwargs):
+        if not self.name_rom or self.name_rom != self.name:
+            self.name_rom = self.name
+            print(self.name_rom)
+        super(SlugMixin, self).save(*args, **kwargs)
 
     def __str__(self):
         return str(self.name)
