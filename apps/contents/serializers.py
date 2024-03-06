@@ -34,7 +34,7 @@ class AnimeListSerializer(serializers.ModelSerializer):
         """Meta definition for AnimeListSerializer."""
         model = Anime
         fields = [
-            "id", "name", "year", "episodes", "rank",
+            "id", "name", "image", "year", "episodes", "rank",
             "popularity", "num_list_users"
         ]
 

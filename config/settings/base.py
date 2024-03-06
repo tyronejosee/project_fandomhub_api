@@ -142,12 +142,12 @@ REST_FRAMEWORK = {
         "rest_framework.filters.SearchFilter",
         "rest_framework.filters.OrderingFilter",
     ],
-    "DEFAULT_THROTTLE_RATES": {
-        "anon": "100/day",
-        "user": "1000/day"
-    },
+    # "DEFAULT_THROTTLE_RATES": {
+    #     "anon": "100/day",
+    #     "user": "1000/day"
+    # },
     "NUM_PROXIES": None,
-    "PAGE_SIZE": 5,
+    "PAGE_SIZE": 2,
     "SEARCH_PARAM": "q",
     "ORDERING_PARAM": "ordering",
     # "DEFAULT_VERSION": "v2",
