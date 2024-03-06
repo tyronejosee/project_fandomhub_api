@@ -36,6 +36,7 @@ THIRD_APPS = [
     "rest_framework",
     "djoser",
     "social_django",
+    "modeltranslation",
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
     "drf_spectacular",
@@ -114,6 +115,14 @@ LANGUAGES = [
 
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, "locale"),
+)
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = "en"
+
+MODELTRANSLATION_LANGUAGES = ("en", "ja", "es",)
+
+MODELTRANSLATION_TRANSLATION_FILES = (
+    "apps.contents.translation",
 )
 
 TIME_ZONE = "UTC"
