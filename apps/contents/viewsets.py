@@ -1,5 +1,8 @@
 """Viewsets for Contents App."""
 
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
+from django.views.decorators.vary import vary_on_cookie
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -27,11 +30,22 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Anime.objects.filter(available=True)
 
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_cookie)
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_cookie)
+    def retrieve(self, request, *args, **kwargs):
+        return super().retrieve(request, *args, **kwargs)
+
     @extend_schema(
         summary="Get Popular Animes",
         description="Retrieve a list of the 50 most popular anime."
     )
     @action(detail=False, methods=["get"], url_path="populars")
+    @method_decorator(cache_page(60 * 60 * 2))
     def popular_list(self, request, pk=None):
         """
         Action return a list of the 50 most popular anime.
@@ -56,3 +70,13 @@ class MangaViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
 
     def get_queryset(self):
         return Manga.objects.filter(available=True)
+
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_cookie)
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_cookie)
+    def retrieve(self, request, *args, **kwargs):
+        return super().retrieve(request, *args, **kwargs)
