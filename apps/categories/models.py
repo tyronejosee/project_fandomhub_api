@@ -11,7 +11,9 @@ from apps.categories.choices import SEASON_CHOICES
 
 class Studio(BaseModel, SlugMixin):
     """Model definition for Studio (Catalog)."""
-    name = models.CharField(_("Name (ENG)"), max_length=255, unique=True)
+    name = models.CharField(
+        _("Name (ENG)"), max_length=255, unique=True, db_index=True
+    )
     name_jpn = models.CharField(_("Name (JPN)"), max_length=255, unique=True)
     established = models.CharField(
         _("Established"), max_length=255, blank=True, null=True
@@ -37,7 +39,9 @@ class Studio(BaseModel, SlugMixin):
 
 class Genre(BaseModel, SlugMixin):
     """Model definition for Genre (Catalog)."""
-    name = models.CharField(_("Name"), max_length=255, unique=True)
+    name = models.CharField(
+        _("Name"), max_length=255, unique=True, db_index=True
+    )
 
     class Meta:
         """Meta definition for Genre."""
@@ -50,7 +54,9 @@ class Genre(BaseModel, SlugMixin):
 
 class Theme(BaseModel, SlugMixin):
     """Model definition for Theme (Catalog)."""
-    name = models.CharField(_("Name"), max_length=255, unique=True)
+    name = models.CharField(
+        _("Name"), max_length=255, unique=True, db_index=True
+    )
 
     class Meta:
         """Meta definition for Theme."""
@@ -68,7 +74,8 @@ class Season(BaseModel):
     )
     year = models.IntegerField(
         _("Year"),  default=2010,
-        validators=[MinValueValidator(1900), MaxValueValidator(2100)]
+        validators=[MinValueValidator(1900), MaxValueValidator(2100)],
+        db_index=True
     )
     fullname = models.CharField(_("Fullname"), max_length=255, blank=True)
 
@@ -95,7 +102,9 @@ class Season(BaseModel):
 
 class Demographic(BaseModel):
     """Model definition for Demographic (Catalog)."""
-    name = models.CharField(_("Name"), max_length=50, unique=True)
+    name = models.CharField(
+        _("Name"), max_length=50, unique=True, db_index=True
+    )
 
     class Meta:
         """Meta definition for Demographic."""

@@ -85,10 +85,12 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Genre.objects.filter(available=True)
+        return Genre.objects.filter(
+            available=True
+        ).defer("available", "created_at", "updated_at")
 
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
+    # @method_decorator(cache_page(60 * 60 * 2))
+    # @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 

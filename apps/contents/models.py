@@ -15,9 +15,11 @@ from apps.persons.models import Author
 
 class Anime(BaseModel, SlugMixin):
     """Model definition for Anime (Entity)."""
-    name = models.CharField(_("Name (English)"), max_length=255, unique=True)
+    name = models.CharField(
+        _("Name (English)"), max_length=255, unique=True, db_index=True
+    )
     name_jpn = models.CharField(
-        _("Name (Japanese)"), max_length=255, unique=True
+        _("Name (Japanese)"), max_length=255, unique=True,
     )
     name_rom = models.CharField(
         _("Name (Romaji)"), max_length=255, unique=True, blank=True
@@ -79,7 +81,9 @@ class Anime(BaseModel, SlugMixin):
 
 class Manga(BaseModel, SlugMixin):
     """Model definition for Manga (Entity)."""
-    name = models.CharField(_("Name (ENG)"), max_length=255, unique=True)
+    name = models.CharField(
+        _("Name (ENG)"), max_length=255, unique=True, db_index=True
+    )
     name_jpn = models.CharField(_("Name (JPN)"), max_length=255, unique=True)
     name_rom = models.CharField(
         _("Name (Romaji)"), max_length=255, unique=True, blank=True
