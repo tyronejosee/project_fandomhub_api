@@ -16,7 +16,7 @@ class StudioListSerializer(serializers.ModelSerializer):
 
 class StudioSerializer(serializers.ModelSerializer):
     """Serializer for Studio model."""
-    image = serializers.CharField(source="get_image")
+    # image = serializers.CharField(source="get_image", read_only=True)
 
     class Meta:
         """Meta definition for StudioSerializer."""
@@ -61,7 +61,7 @@ class SeasonSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for SeasonSerializer."""
         model = Season
-        fields = ["id", "season", "year"]
+        fields = ["id", "season", "year", "fullname"]
         read_only_fields = ["id",]
 
 

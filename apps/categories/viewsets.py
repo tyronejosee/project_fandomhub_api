@@ -38,7 +38,9 @@ class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     # lookup_field = "slug"
 
     def get_queryset(self):
-        return Studio.objects.filter(available=True)
+        return Studio.objects.filter(
+            available=True
+        ).defer("available", "created_at", "updated_at")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -87,10 +89,10 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Genre.objects.filter(
             available=True
-        ).defer("available", "created_at", "updated_at")
+        ).values("id", "name", "slug")
 
-    # @method_decorator(cache_page(60 * 60 * 2))
-    # @method_decorator(vary_on_cookie)
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
@@ -131,7 +133,9 @@ class ThemeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Theme.objects.filter(available=True)
+        return Theme.objects.filter(
+            available=True
+        ).values("id", "name", "slug")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -156,7 +160,9 @@ class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Season.objects.filter(available=True)
+        return Season.objects.filter(
+            available=True
+        ).values("id", "season", "year", "fullname")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -181,7 +187,9 @@ class DemographicViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Demographic.objects.filter(available=True)
+        return Demographic.objects.filter(
+            available=True
+        ).values("id", "name")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)

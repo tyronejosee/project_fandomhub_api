@@ -33,7 +33,7 @@ class Studio(BaseModel, SlugMixin):
     def get_image(self):
         """Returns the image URL or an empty string."""
         if self.image:
-            return str(self.image.url)
+            return self.image.url
         return ""
 
 
