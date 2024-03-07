@@ -7,7 +7,9 @@ from apps.utils.models import BaseModel
 
 class Author(BaseModel):
     """Model definition for Author (Catalog)."""
-    name = models.CharField(_("Name"), max_length=255, unique=True)
+    name = models.CharField(
+        _("Name"), max_length=255, unique=True, db_index=True
+    )
 
     class Meta:
         """Meta definition for Author."""

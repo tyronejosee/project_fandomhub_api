@@ -10,7 +10,9 @@ from apps.users.managers import UserManager
 
 class Role(models.Model):
     """Model definition for Role (Association)."""
-    name = models.CharField(_("Name"), max_length=50, unique=True)
+    name = models.CharField(
+        _("Name"), max_length=50, unique=True, db_index=True
+    )
     permissions = models.ManyToManyField(
         "auth.Permission", blank=True, verbose_name=_("Permissions")
     )
@@ -27,8 +29,12 @@ class Role(models.Model):
 class User(AbstractBaseUser, PermissionsMixin):
     """Model definition for User (Entity)."""
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    email = models.EmailField(_("Email"), max_length=255, unique=True,)
-    username = models.CharField(_("Username"), max_length=255, unique=True)
+    email = models.EmailField(
+        _("Email"), max_length=255, unique=True, db_index=True
+    )
+    username = models.CharField(
+        _("Username"), max_length=255, unique=True, db_index=True
+    )
     first_name = models.CharField(
         _("First Name"), max_length=255, blank=True, null=True)
     last_name = models.CharField(
