@@ -56,3 +56,14 @@ class MangaSerializer(serializers.ModelSerializer):
             "chapters", "release", "media_type", "website", "status",
             "author", "demographic", "genres",
         ]
+
+
+class MangaListSerializer(serializers.ModelSerializer):
+    """Serializer for Manga model (List only)."""
+
+    class Meta:
+        """Meta definition for MangaSerializer."""
+        model = Manga
+        fields = [
+            "id", "name", "image", "release", "media_type", "status"
+        ]

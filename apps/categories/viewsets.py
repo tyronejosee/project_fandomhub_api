@@ -12,8 +12,8 @@ from drf_spectacular.utils import extend_schema_view, extend_schema
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import LargeSetPagination
-from apps.contents.models import Anime
-from apps.contents.serializers import AnimeListSerializer
+from apps.contents.models import Anime, Manga
+from apps.contents.serializers import AnimeListSerializer, MangaListSerializer
 from apps.categories.models import Studio, Genre, Theme, Season, Demographic
 from apps.categories.serializers import (
     StudioSerializer, GenreSerializer, ThemeSerializer,
@@ -82,6 +82,7 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     """
     serializer_class = GenreSerializer
     permission_classes = [IsStaffOrReadOnly]
+    pagination_class = LargeSetPagination
     search_fields = ["name",]
     ordering_fields = ["name"]
     ordering = ["id"]
@@ -106,17 +107,37 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
         description="Retrieve a list of animes for genre."
     )
     @action(detail=True, methods=["get"], url_path="animes")
+    @method_decorator(cache_page(60 * 60 * 2))
     def anime_list(self, request, pk=None):
         """
         Retrieve a list of animes for the specified genre.
         """
-        genre = self.get_object()
-        anime_list = Anime.objects.filter(genres=genre)
+        anime_list = Anime.objects.filter(genres=pk)
+        print(anime_list)
         if anime_list.exists():
             serializer = AnimeListSerializer(anime_list, many=True)
             return Response(serializer.data, status=status.HTTP_200_OK)
         return Response(
             {"detail": _("There are no animes for this genre.")},
+            status=status.HTTP_404_NOT_FOUND
+        )
+
+    @extend_schema(
+        summary="Get Mangas for Genre",
+        description="Retrieve a list of mangas for genre."
+    )
+    @action(detail=True, methods=["get"], url_path="mangas")
+    @method_decorator(cache_page(60 * 60 * 2))
+    def manga_list(self, request, pk=None):
+        """
+        Retrieve a list of mangas for the specified genre.
+        """
+        manga_list = Manga.objects.filter(genres=pk)
+        if manga_list.exists():
+            serializer = MangaListSerializer(manga_list, many=True)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(
+            {"detail": _("There are no mangas for this genre.")},
             status=status.HTTP_404_NOT_FOUND
         )
 
