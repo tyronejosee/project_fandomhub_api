@@ -56,7 +56,26 @@ CACHES = {
     },
 }
 
+MIDDLEWARE = [
+    "social_django.middleware.SocialAuthExceptionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
+    # "whitenoise.middleware.WhiteNoiseMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
+]
+
 # APPEND_SLASH = False
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
