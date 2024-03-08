@@ -6,7 +6,6 @@ from django.utils.translation import gettext as _
 from apps.contents.models import Anime, Manga
 from apps.watchlists.choices import STATUS_CHOICES
 
-
 User = settings.AUTH_USER_MODEL
 
 

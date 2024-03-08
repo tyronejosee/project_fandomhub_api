@@ -6,7 +6,6 @@ from django.utils.translation import gettext as _
 from apps.utils.models import BaseModel
 from apps.utils.paths import profile_image_path
 
-
 User = settings.AUTH_USER_MODEL
 
 
@@ -32,24 +31,3 @@ class Profile(BaseModel):
 
     def __str__(self):
         return str(self.user.username)
-
-
-class Follow(BaseModel):
-    """Model definition for Follow (Association)."""
-    follower = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="following",
-        verbose_name=_("Follower")
-    )
-    followed_user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="followers",
-        verbose_name=_("Followed User")
-    )
-
-    class Meta:
-        """Meta definition for Follow."""
-        unique_together = ("follower", "followed_user")
-        verbose_name = _("Follow")
-        verbose_name_plural = _("Follows")
-
-    def __str__(self):
-        return f"{self.follower.username} - {self.followed_user.username}"

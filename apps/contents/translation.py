@@ -6,5 +6,5 @@ from apps.contents.models import Anime
 
 @register(Anime)
 class AnimeTranslationOptions(TranslationOptions):
-    """"Pending."""
+    """"Model translations config for Anime model."""
     fields = ("synopsis",)

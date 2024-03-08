@@ -6,7 +6,6 @@ from apps.watchlists.viewsets import (
     AnimeWatchlistViewSet, MangaWatchlistViewSet
 )
 
-
 router_v1 = DefaultRouter()
 router_v1.register(
     r"anime_watchlists", AnimeWatchlistViewSet, basename="anime_watchlist"
@@ -14,7 +13,6 @@ router_v1.register(
 router_v1.register(
     r"manga_watchlists", MangaWatchlistViewSet, basename="manga_watchlist"
 )
-
 
 urlpatterns = [
     path("api/v1/", include(router_v1.urls))

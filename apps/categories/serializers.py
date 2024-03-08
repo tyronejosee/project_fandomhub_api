@@ -16,7 +16,6 @@ class StudioListSerializer(serializers.ModelSerializer):
 
 class StudioSerializer(serializers.ModelSerializer):
     """Serializer for Studio model."""
-    # image = serializers.CharField(source="get_image", read_only=True)
 
     class Meta:
         """Meta definition for StudioSerializer."""
