@@ -11,7 +11,7 @@ from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema_view, extend_schema
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
-from apps.utils.pagination import LargeSetPagination
+from apps.utils.pagination import LargeSetPagination, MediumSetPagination
 from apps.contents.models import Anime, Manga
 from apps.contents.serializers import AnimeListSerializer, MangaListSerializer
 from apps.categories.models import Studio, Genre, Theme, Season, Demographic
@@ -23,6 +23,9 @@ from apps.categories.schemas import (
     studio_schemas, genre_schemas, theme_schemas,
     season_schemas, demographic_schemas
 )
+
+from django.core.exceptions import ValidationError
+from uuid import UUID
 
 
 @extend_schema_view(**studio_schemas)
@@ -90,7 +93,7 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Genre.objects.filter(
             available=True
-        ).values("id", "name", "slug")
+        ).only("id", "name", "slug")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -112,11 +115,13 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
         """
         Retrieve a list of animes for the specified genre.
         """
-        anime_list = Anime.objects.filter(genres=pk)
-        print(anime_list)
+        genre = self.get_object()
+        anime_list = Anime.objects.filter(genres=genre)
         if anime_list.exists():
-            serializer = AnimeListSerializer(anime_list, many=True)
-            return Response(serializer.data, status=status.HTTP_200_OK)
+            paginator = MediumSetPagination()
+            result_page = paginator.paginate_queryset(anime_list, request)
+            serializer = AnimeListSerializer(result_page, many=True)
+            return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no animes for this genre.")},
             status=status.HTTP_404_NOT_FOUND
@@ -132,10 +137,13 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
         """
         Retrieve a list of mangas for the specified genre.
         """
-        manga_list = Manga.objects.filter(genres=pk)
+        genre = self.get_object()
+        manga_list = Manga.objects.filter(genres=genre)
         if manga_list.exists():
-            serializer = MangaListSerializer(manga_list, many=True)
-            return Response(serializer.data, status=status.HTTP_200_OK)
+            paginator = MediumSetPagination()
+            result_page = paginator.paginate_queryset(manga_list, request)
+            serializer = MangaListSerializer(result_page, many=True)
+            return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no mangas for this genre.")},
             status=status.HTTP_404_NOT_FOUND
