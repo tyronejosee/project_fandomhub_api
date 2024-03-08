@@ -3,14 +3,16 @@
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_cookie
+from django.utils.translation import gettext as _
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema_view, extend_schema
 from apps.utils.mixins import LogicalDeleteMixin
+from apps.utils.pagination import MediumSetPagination
 from apps.contents.models import Anime, Manga
 from apps.contents.serializers import (
-    AnimeSerializer, MangaSerializer, AnimeListSerializer
+    AnimeSerializer, MangaSerializer, AnimeListSerializer, MangaListSerializer
 )
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.contents.schemas import anime_schemas, manga_schemas
@@ -80,3 +82,24 @@ class MangaViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     @method_decorator(vary_on_cookie)
     def retrieve(self, request, *args, **kwargs):
         return super().retrieve(request, *args, **kwargs)
+
+    @extend_schema(
+        summary="Get Popular Mangas",
+        description="Retrieve a list of the 50 most popular mangas."
+    )
+    @action(detail=False, methods=["get"], url_path="populars")
+    @method_decorator(cache_page(60 * 60 * 2))
+    def popular_list(self, request, pk=None):
+        """
+        Action return a list of the 50 most popular mangas.
+        """
+        popular_list = Manga.objects.order_by("-popularity")[:50]
+        paginator = MediumSetPagination()
+        result_page = paginator.paginate_queryset(popular_list, request)
+        if result_page is not None:
+            serializer = MangaListSerializer(result_page, many=True).data
+            return paginator.get_paginated_response(serializer)
+        return Response(
+            {"detail": _("There are no popular mangas available.")},
+            status=status.HTTP_204_NO_CONTENT
+        )
