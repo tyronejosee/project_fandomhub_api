@@ -1,5 +1,8 @@
 """Viewsets for Contents App."""
 
+from rest_framework.permissions import AllowAny
+
+from django.core.cache import cache
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_cookie
@@ -153,7 +156,7 @@ class ThemeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     Viewset for managing Theme instances.
     """
     serializer_class = ThemeSerializer
-    permission_classes = [IsStaffOrReadOnly]
+    permission_classes = [AllowAny]    # IsStaffOrReadOnly
     search_fields = ["name",]
     ordering_fields = ["name"]
     ordering = ["id"]
@@ -161,7 +164,7 @@ class ThemeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Theme.objects.filter(
             available=True
-        ).values("id", "name", "slug")
+        ).only("id", "name", "slug")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -172,6 +175,11 @@ class ThemeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     @method_decorator(vary_on_cookie)
     def retrieve(self, request, *args, **kwargs):
         return super().retrieve(request, *args, **kwargs)
+
+    def create(self, request, *args, **kwargs):
+        response = super().create(request, *args, **kwargs)
+        cache.clear()
+        return response
 
 
 @extend_schema_view(**season_schemas)

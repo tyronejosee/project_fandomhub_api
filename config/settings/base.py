@@ -143,7 +143,7 @@ REST_FRAMEWORK = {
     #     "user": "1000/day"
     # },
     "NUM_PROXIES": None,
-    "PAGE_SIZE": 2,
+    "PAGE_SIZE": 25,
     "SEARCH_PARAM": "q",
     "ORDERING_PARAM": "ordering",
     # "DEFAULT_VERSION": "v2",

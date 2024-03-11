@@ -2,6 +2,9 @@
 
 from django.db import models
 from django.http import Http404
+from django.utils.decorators import method_decorator
+from django.views.decorators.cache import cache_page
+from django.core.cache import cache
 from django.utils.text import slugify
 from django.utils.translation import gettext as _
 from rest_framework import status
@@ -40,6 +43,7 @@ class LogicalDeleteMixin:
             instance = self.get_object()
             instance.available = False
             instance.save()
+            cache.clear()
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Http404:
             return Response(
@@ -51,3 +55,27 @@ class LogicalDeleteMixin:
                 {"errors": str(e)},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
+
+
+class CacheResponseMixin:
+    """Mixin for ViewSets to cache responses using `cache_page` decorator."""
+    cache_timeout = 60 * 60 * 2  # 2 hours
+
+    def list(self, request, *args, **kwargs):
+        return self._cache_response(super().list, request, *args, **kwargs)
+
+    def retrieve(self, request, *args, **kwargs):
+        return self._cache_response(super().retrieve, request, *args, **kwargs)
+
+    def create(self, request, *args, **kwargs):
+        response = super().create(request, *args, **kwargs)
+        self._invalidate_cache()
+        return response
+
+    def _cache_response(self, method, request, *args, **kwargs):
+        if hasattr(self, 'cache_timeout'):
+            method = method_decorator(cache_page(self.cache_timeout))(method)
+        return method(request, *args, **kwargs)
+
+    def _invalidate_cache(self):
+        cache.clear()
