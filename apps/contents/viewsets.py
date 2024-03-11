@@ -32,6 +32,11 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Anime.objects.filter(available=True)
 
+    def get_serializer_class(self):
+        if self.action == "list":
+            return AnimeListSerializer
+        return super().get_serializer_class()
+
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
@@ -72,6 +77,11 @@ class MangaViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
 
     def get_queryset(self):
         return Manga.objects.filter(available=True)
+
+    def get_serializer_class(self):
+        if self.action == "list":
+            return MangaListSerializer
+        return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
