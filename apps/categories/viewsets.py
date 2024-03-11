@@ -24,9 +24,6 @@ from apps.categories.schemas import (
     season_schemas, demographic_schemas
 )
 
-from django.core.exceptions import ValidationError
-from uuid import UUID
-
 
 @extend_schema_view(**studio_schemas)
 class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
@@ -191,7 +188,7 @@ class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def get_queryset(self):
         return Season.objects.filter(
             available=True
-        ).values("id", "season", "year", "fullname")
+        ).only("id", "season", "year", "fullname")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -202,6 +199,24 @@ class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     @method_decorator(vary_on_cookie)
     def retrieve(self, request, *args, **kwargs):
         return super().retrieve(request, *args, **kwargs)
+
+    @action(detail=True, methods=["get"], url_path="animes")
+    @method_decorator(cache_page(60 * 60 * 2))
+    def anime_list(self, request, pk=None):
+        """
+        Retrieve a list of animes for the specified season.
+        """
+        season = self.get_object()
+        anime_list = Anime.objects.filter(season=season)
+        if anime_list.exists():
+            paginator = MediumSetPagination()
+            result_page = paginator.paginate_queryset(anime_list, request)
+            serializer = AnimeListSerializer(result_page, many=True)
+            return paginator.get_paginated_response(serializer.data)
+        return Response(
+            {"detail": _("There are no animes for this season.")},
+            status=status.HTTP_404_NOT_FOUND
+        )
 
 
 @extend_schema_view(**demographic_schemas)
