@@ -1,0 +1,18 @@
+-r production.txt
+
+# Database
+psycopg==3.1.18
+
+# Documentation
+sphinx==7.2.6
+sphinx-autobuild==2024.2.4
+
+# Code quality
+ruff==0.3.2
+coverage==7.4.3
+flake8==7.0.0
+pre-commit==3.6.2
+
+# Django
+django-debug-toolbar==4.3.0
+factory-boy==3.3.0
