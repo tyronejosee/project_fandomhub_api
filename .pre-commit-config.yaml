@@ -30,7 +30,8 @@ repos:
     rev: '7.0.0'
     hooks:
       - id: flake8
-        additional_dependencies: ['flake8-docstrings']
+        # additional_dependencies: ['flake8-docstrings']
+        args: ['--config', '.flake8']
 
   # # Run the Ruff linter.
   # - repo: https://github.com/astral-sh/ruff-pre-commit

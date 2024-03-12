@@ -28,6 +28,7 @@ urlpatterns = [
     path("", include("apps.categories.routers")),
     path("", include("apps.persons.routers")),
     path("", include("apps.users.routers")),
+    path("", include("apps.playlists.routers")),
 ]
 
 
