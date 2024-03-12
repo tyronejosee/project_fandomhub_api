@@ -28,7 +28,7 @@ PROJECT_APPS = [
     "apps.profiles",
     "apps.searches",
     "apps.users",
-    "apps.watchlists",
+    # "apps.playlists",
 ]
 
 THIRD_APPS = [
