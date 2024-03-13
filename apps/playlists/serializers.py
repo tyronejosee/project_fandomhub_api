@@ -1,37 +1,31 @@
 """Serializers for Playlists App."""
 
 from rest_framework import serializers
-from apps.playlists.models import Playlist, PlaylistAnime
-from apps.contents.serializers import AnimeListSerializer
-
-
-# class MangaWatchlistSerializer(serializers.ModelSerializer):
-#     """Serializer for MangaWatchlist model."""
-#     status = serializers.CharField(source="get_status_display")
-
-#     class Meta:
-#         """Meta definition for MangaWatchlistSerializer."""
-#         model = MangaWatchlist
-#         fields = [
-#             "id", "user", "manga", "status", "is_watched", "score",
-#             "priority", "tags", "comments"
-#         ]
-
-
-class PlaylistAnimeSerializer(serializers.ModelSerializer):
-    """Pending."""
-    anime = AnimeListSerializer()
-
-    class Meta:
-        """Pending."""
-        model = PlaylistAnime
-        fields = ["id", "rating", "status", "score", "anime"]
+from apps.playlists.models import Playlist, PlaylistItem
+from apps.contents.serializers import (
+    AnimeMinimumSerializer, MangaMinimumSerializer
+)
 
 
 class PlaylistSerializer(serializers.ModelSerializer):
-    """Pending."""
+    """Serializer for Playlist model."""
 
     class Meta:
         """Pending."""
         model = Playlist
-        fields = "__all__"
+        fields = [
+            "id", "name", "user", "created_at", "anime_items", "manga_items"
+        ]
+
+
+class PlaylistItemSerializer(serializers.ModelSerializer):
+    """Serializer for PlaylistItem model."""
+    anime = AnimeMinimumSerializer()
+    manga = MangaMinimumSerializer()
+
+    class Meta:
+        """Pending."""
+        model = PlaylistItem
+        fields = [
+            "id", "playlist", "anime", "manga", "status", "is_watched"
+        ]

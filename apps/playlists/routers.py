@@ -2,7 +2,7 @@
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from apps.playlists.views import PlaylistViewSet
+from apps.playlists.viewsets import PlaylistViewSet
 
 router_v1 = DefaultRouter()
 router_v1.register(r"playlists", PlaylistViewSet, basename="playlist")
