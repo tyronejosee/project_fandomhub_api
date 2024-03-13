@@ -1,36 +1,25 @@
 """Admin for Playlists App."""
 
 from django.contrib import admin
-from apps.playlists.models import Playlist, PlaylistAnime, PlaylistManga
-
-admin.site.register(Playlist)
-admin.site.register(PlaylistAnime)
-admin.site.register(PlaylistManga)
+from apps.playlists.models import Playlist, PlaylistItem
 
 
-# """Admin for Watchlists App."""
-
-# from django.contrib import admin
-# from apps.watchlists.models import AnimeWatchlist, MangaWatchlist
-
-
-# @admin.register(AnimeWatchlist)
-# class AnimeWatchlistAdmin(admin.ModelAdmin):
-#     """Admin config for AnimeWatchlist model."""
-#     search_fields = ["user",]
-#     list_display = ["user", "anime"]
-#     list_filter = ["is_watched",]
-#     list_per_page = 25
-#     readonly_fields = ["pk",]
-#     ordering = ["pk",]
+@admin.register(Playlist)
+class PlaylistAdmin(admin.ModelAdmin):
+    """Admin config for Playlist model."""
+    search_fields = ["user",]
+    list_display = ["user",]
+    list_per_page = 25
+    readonly_fields = ["pk",]
+    ordering = ["pk",]
 
 
-# @admin.register(MangaWatchlist)
-# class MangaWatchlistAdmin(admin.ModelAdmin):
-#     """Admin config for MangaWatchlist model."""
-#     search_fields = ["user",]
-#     list_display = ["user", "manga"]
-#     list_filter = ["is_watched",]
-#     list_per_page = 25
-#     readonly_fields = ["pk",]
-#     ordering = ["pk",]
+@admin.register(PlaylistItem)
+class PlaylistItemAdmin(admin.ModelAdmin):
+    """Admin config for PlaylistItem model."""
+    search_fields = ["playlist",]
+    list_display = ["playlist",]
+    list_filter = ["is_watched", "status"]
+    list_per_page = 25
+    readonly_fields = ["pk",]
+    ordering = ["pk",]    # Order pending

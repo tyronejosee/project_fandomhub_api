@@ -1,3 +1,5 @@
+"""Configs for Playlists App."""
+
 from django.apps import AppConfig
 
 
