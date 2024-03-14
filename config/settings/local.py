@@ -37,7 +37,7 @@ if "test" in sys.argv:
 else:
     DATABASES = {
         "default": {
-            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "ENGINE": "django.db.backends.postgresql",
             "NAME": "beehive_db",
             "USER": "postgres",
             "PASSWORD": "bernardoreyes",
@@ -69,6 +69,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
+    # "apps.utils.middlewares.CensorshipMiddleware"
 ]
 
 # APPEND_SLASH = False

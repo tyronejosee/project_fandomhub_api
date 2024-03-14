@@ -35,6 +35,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.locale.LocaleMiddleware",
+    # "apps.utils.middlewares.CensorshipMiddleware"
 ]
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
