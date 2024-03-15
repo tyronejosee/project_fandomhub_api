@@ -46,6 +46,9 @@ else:
         }
     }
 
+def make_key(key, key_prefix, version):
+    return ":".join([key_prefix, str(version), key])
+
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
@@ -62,7 +65,9 @@ MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     # "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.cache.UpdateCacheMiddleware",
     "django.middleware.common.CommonMiddleware",
+    "django.middleware.cache.FetchFromCacheMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",

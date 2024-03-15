@@ -1,7 +1,6 @@
 """Viewsets for Contents App."""
 
-from rest_framework.permissions import AllowAny
-
+from django.db import transaction
 from django.core.cache import cache
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
@@ -156,7 +155,7 @@ class ThemeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     Viewset for managing Theme instances.
     """
     serializer_class = ThemeSerializer
-    permission_classes = [AllowAny]    # IsStaffOrReadOnly
+    permission_classes = [IsStaffOrReadOnly]
     search_fields = ["name",]
     ordering_fields = ["name"]
     ordering = ["id"]
@@ -166,20 +165,28 @@ class ThemeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
             available=True
         ).only("id", "name", "slug")
 
-    # @method_decorator(cache_page(60 * 60 * 2))
-    # @method_decorator(vary_on_cookie)
+    @method_decorator(cache_page(60 * 60 * 2, key_prefix="theme_list"))
+    @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
-    # @method_decorator(cache_page(60 * 60 * 2))
-    # @method_decorator(vary_on_cookie)
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_cookie)
     def retrieve(self, request, *args, **kwargs):
         return super().retrieve(request, *args, **kwargs)
 
+    @transaction.atomic
     def create(self, request, *args, **kwargs):
-        response = super().create(request, *args, **kwargs)
         cache.clear()
-        return response
+        return super().create(request, *args, **kwargs)
+
+    @transaction.atomic
+    def update(self, request, *args, **kwargs):
+        return super().update(request, *args, **kwargs)
+
+    @transaction.atomic
+    def destroy(self, request, *args, **kwargs):
+        return super().destroy(request, *args, **kwargs)
 
 
 @extend_schema_view(**season_schemas)
