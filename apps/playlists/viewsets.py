@@ -67,16 +67,10 @@ class PlaylistAnimeViewSet(viewsets.ModelViewSet):
     ordering = ["id"]    # Add order field
 
     def get_queryset(self):
-        # Return the anime in the current playlist
-        if hasattr(self, "playlist"):
-            return PlaylistAnime.objects.filter(playlist=self.playlist)
+        # Return the manga in the current playlist
         user = self.request.user
-        self.playlist = Playlist.objects.get(user=user)
-        return (
-            PlaylistAnime.objects
-            .filter(playlist=self.playlist)
-            .select_related("playlist")
-        )
+        playlist = Playlist.objects.get(user=user)
+        return PlaylistAnime.objects.filter(playlist=playlist)
 
     @action(detail=True, methods=["post"], url_path="mark-favorite")
     def switch_is_favorite(self, request, pk=None):
@@ -101,16 +95,11 @@ class PlaylistMangaViewSet(viewsets.ModelViewSet):
     """ViewSet for managing manga in playlists."""
 
     serializer_class = PlaylistMangaSerializer
+    permission_classes = [IsAuthenticated, IsOwner]
     ordering = ["id"]    # Add order field
 
     def get_queryset(self):
         # Return the manga in the current playlist
-        if hasattr(self, "playlist"):
-            return PlaylistManga.objects.filter(playlist=self.playlist)
         user = self.request.user
-        self.playlist = Playlist.objects.get(user=user)
-        return (
-            PlaylistManga.objects
-            .filter(playlist=self.playlist)
-            .select_related("playlist")
-        )
+        playlist = Playlist.objects.get(user=user)
+        return PlaylistManga.objects.filter(playlist=playlist)

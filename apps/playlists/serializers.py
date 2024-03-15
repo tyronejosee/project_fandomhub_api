@@ -20,23 +20,23 @@ class PlaylistSerializer(serializers.ModelSerializer):
 
 class PlaylistAnimeSerializer(serializers.ModelSerializer):
     """Serializer for PlaylistAnime model."""
-    anime = AnimeMinimumSerializer()
+    anime = AnimeMinimumSerializer(read_only=True)
 
     class Meta:
         """Meta definition for PlaylistAnimeSerializer."""
         model = PlaylistAnime
         fields = [
-            "id", "playlist", "anime", "status", "is_watched", "is_favorite"
+            "id", "anime", "status", "is_watched", "is_favorite"
         ]    # Add order field
 
 
 class PlaylistMangaSerializer(serializers.ModelSerializer):
     """Serializer for PlaylistManga model."""
-    manga = MangaMinimumSerializer()
+    manga = MangaMinimumSerializer(read_only=True)
 
     class Meta:
         """Meta definition for PlaylistMangaSerializer."""
         model = PlaylistAnime
         fields = [
-            "id", "playlist", "manga", "status", "is_watched", "is_favorite"
+            "id", "manga", "status", "is_watched", "is_favorite"
         ]   # Add order field

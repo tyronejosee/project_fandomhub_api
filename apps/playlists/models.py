@@ -33,7 +33,7 @@ class PlaylistBase(BaseModel):
         db_index=True, verbose_name=_("Playlist")
     )
     status = models.CharField(
-        _("Status"),max_length=20, choices=STATUS_CHOICES,
+        _("Status"), max_length=20, choices=STATUS_CHOICES,
         default="pending", db_index=True
     )
     is_watched = models.BooleanField(
