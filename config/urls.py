@@ -44,6 +44,6 @@ if settings.DEBUG:
 
 
 # AdminSite props.
-admin.site.site_header = "Project: Beehive"
-admin.site.site_title = "Beehive"
+admin.site.site_header = "FandomHub"
+admin.site.site_title = "FandomHub"
 admin.site.index_title = "Admin"

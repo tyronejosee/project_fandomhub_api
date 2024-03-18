@@ -38,7 +38,7 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
-            "NAME": "beehive_db",
+            "NAME": "fandomhub_db",
             "USER": "postgres",
             "PASSWORD": "bernardoreyes",
             "HOST": "db",
@@ -52,7 +52,7 @@ def make_key(key, key_prefix, version):
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://beehive_redis:6379",
+        "LOCATION": "redis://fandomhub_redis:6379",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         },

@@ -1,11 +1,12 @@
 """Viewsets for Playlists App."""
 
 from django.utils.translation import gettext as _
+from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from rest_framework.permissions import IsAuthenticated
-from rest_framework import viewsets
-from rest_framework import status
+from rest_framework.mixins import ListModelMixin, RetrieveModelMixin
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework import status
 from apps.utils.permissions import IsOwner
 from apps.playlists.models import Playlist, PlaylistAnime, PlaylistManga
 from apps.playlists.serializers import (
@@ -13,7 +14,7 @@ from apps.playlists.serializers import (
 )
 
 
-class PlaylistViewSet(viewsets.ModelViewSet):
+class PlaylistViewSet(ModelViewSet):
     """ViewSet for managing playlists."""
 
     serializer_class = PlaylistSerializer
@@ -60,7 +61,7 @@ class PlaylistViewSet(viewsets.ModelViewSet):
         )
 
 
-class PlaylistAnimeViewSet(viewsets.ModelViewSet):
+class PlaylistAnimeViewSet(ListModelMixin, RetrieveModelMixin, GenericViewSet):
     """ViewSet for managing anime in playlists."""
 
     serializer_class = PlaylistAnimeSerializer
@@ -91,7 +92,7 @@ class PlaylistAnimeViewSet(viewsets.ModelViewSet):
         )
 
 
-class PlaylistMangaViewSet(viewsets.ModelViewSet):
+class PlaylistMangaViewSet(ListModelMixin, RetrieveModelMixin, GenericViewSet):
     """ViewSet for managing manga in playlists."""
 
     serializer_class = PlaylistMangaSerializer

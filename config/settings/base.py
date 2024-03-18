@@ -187,12 +187,12 @@ DJOSER = {
 AUTH_USER_MODEL = "users.User"
 
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Project: Beehive",
+    "TITLE": "FandomHub (API)",
     "VERSION": "v1",
-    "DESCRIPTION": "The Beehive API provides access to data about beehives, bees, and more",
+    "DESCRIPTION": "The FandomHub API provides access to data about animes and manga.",
     "LICENSE": {
         "name": "Apache Licence 2.0",
-        "url": "https://github.com/tyronejosee/project_beehive_api/blob/main/LICENSE"
+        "url": "https://github.com/tyronejosee/project_fandomhub_api/blob/main/LICENSE"
     },
     "CONTACT": {"name": "Developer", "url": "https://github.com/tyronejosee"},
     "SCHEMA_PATH_PREFIX": r"^/api/v\d+",

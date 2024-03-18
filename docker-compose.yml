@@ -3,10 +3,10 @@ version: "3.9"
 services:
   db:
     image: postgres
-    container_name: beehive_db
+    container_name: fandomhub_db
     restart: always
     environment:
-      POSTGRES_DB: beehive_db
+      POSTGRES_DB: fandomhub_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: bernardoreyes
     ports:
@@ -16,12 +16,12 @@ services:
 
   redis:
     image: redis
-    container_name: beehive_redis
+    container_name: fandomhub_redis
     ports:
       - 6379:6379
 
   web:
-    container_name: beehive_web
+    container_name: fandomhub_web
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:

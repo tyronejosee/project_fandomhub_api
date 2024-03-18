@@ -1,4 +1,4 @@
-name: Beehive CI
+name: FandomHub CI
 
 on:
   push:
@@ -34,7 +34,7 @@ jobs:
         run: |
           pip install flake8
           flake8 --config .flake8
-      
+
       # - name: Coverage report
       #   run: |
       #     pip install coverage

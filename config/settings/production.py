@@ -40,7 +40,7 @@ MIDDLEWARE = [
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
-DEFAULT_FROM_EMAIL = "Beehive - API <alt.tyronejose@gmail.com>"
+DEFAULT_FROM_EMAIL = "FandomHub - API <alt.tyronejose@gmail.com>"
 EMAIL_HOST = env("EMAIL_HOST")
 EMAIL_HOST_USER = env("EMAIL_HOST_USER")
 EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
