@@ -81,6 +81,8 @@ Perform database migrations.
 (env) docker compose exec web bash
 (env) docker compose exec web python manage.py makemigrations*
 (env) docker compose exec web python manage.py migrate
+(env) docker compose exec web python manage.py migrate <app_label> <migration_name>
+(env) docker compose exec web python manage.py showmigrations
 ```
 
 > Note: Create the migrations in case Django skips any.
@@ -139,8 +141,11 @@ Check the creation of migrations before creating them.
 ## PostgreSQL
 
 ```bash
+(env) docker compose exec web python manage.py dumpdata > backup.json
+(env) docker compose exec web python manage.py loaddata
 (env) docker compose exec db psql -U postgres -d fandomhub_db
 (fandomhub_db=#) \dt
+(fandomhub_db=#) \d <table>
 ```
 
 ## Redis

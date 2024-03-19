@@ -1,9 +1,9 @@
 # Project files
+db.sqlite3
+.env.dev
+.env.prod
 PLANNING.md
 desktop.ini
-# migrations/
-# */migrations/
-db.sqlite3
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
