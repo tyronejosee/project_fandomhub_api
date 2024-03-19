@@ -1,7 +1,9 @@
 """Serializers for Contents App."""
 
+from django.core.validators import RegexValidator
 from rest_framework import serializers
 from apps.categories.models import Studio, Genre, Theme, Season, Demographic
+from apps.utils.validators import validate_name
 
 
 class StudioListSerializer(serializers.ModelSerializer):
@@ -16,6 +18,7 @@ class StudioListSerializer(serializers.ModelSerializer):
 
 class StudioSerializer(serializers.ModelSerializer):
     """Serializer for Studio model."""
+    name = serializers.CharField(max_length=255, validators=[validate_name])
 
     class Meta:
         """Meta definition for StudioSerializer."""
@@ -26,6 +29,7 @@ class StudioSerializer(serializers.ModelSerializer):
 
 class GenreSerializer(serializers.ModelSerializer):
     """Serializer for Genre model."""
+    name = serializers.CharField(max_length=255, validators=[validate_name])
 
     class Meta:
         """Meta definition for GenreSerializer."""
@@ -36,6 +40,7 @@ class GenreSerializer(serializers.ModelSerializer):
 
 class ThemeSerializer(serializers.ModelSerializer):
     """Serializer for Theme model."""
+    name = serializers.CharField(max_length=255, validators=[validate_name])
 
     class Meta:
         """Meta definition for ThemeSerializer."""
@@ -61,11 +66,12 @@ class SeasonSerializer(serializers.ModelSerializer):
         """Meta definition for SeasonSerializer."""
         model = Season
         fields = ["id", "season", "year", "fullname"]
-        read_only_fields = ["id",]
+        read_only_fields = ["id", "fullname"]
 
 
 class DemographicSerializer(serializers.ModelSerializer):
     """Serializer for Demographic model."""
+    name = serializers.CharField(max_length=255, validators=[validate_name])
 
     class Meta:
         """Meta definition for DemographicSerializer."""
