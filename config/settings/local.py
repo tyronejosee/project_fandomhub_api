@@ -27,6 +27,8 @@ CSRF_TRUSTED_ORIGINS = [
     "http://127.0.0.1:8000",
 ]
 
+CORS_ORIGIN_ALLOW_ALL = True
+
 if "test" in sys.argv:
     DATABASES = {
         "default": {
@@ -46,8 +48,10 @@ else:
         }
     }
 
+
 def make_key(key, key_prefix, version):
     return ":".join([key_prefix, str(version), key])
+
 
 CACHES = {
     "default": {

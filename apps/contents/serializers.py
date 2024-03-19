@@ -39,7 +39,7 @@ class AnimeListSerializer(serializers.ModelSerializer):
         ]
 
     def get_year(self, obj):
-        return obj.season.year if obj.season else None
+        return int(obj.season.year if obj.season else None)
 
 
 class AnimeMinimumSerializer(serializers.ModelSerializer):

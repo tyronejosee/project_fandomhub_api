@@ -8,7 +8,7 @@ from .models import Review
 class ReviewAdmin(admin.ModelAdmin):
     """Admin config for Review model."""
     search_fields = ["user", "anime__name"]
-    list_display = ["name", "available"]
+    list_display = ["comment", "available"]
     list_filter = ["rating",]
     list_editable = ["available",]
     list_per_page = 25
