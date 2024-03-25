@@ -1,7 +1,8 @@
 """Serializers for Persons App."""
 
 from rest_framework.serializers import ModelSerializer
-from apps.persons.models import Author
+
+from .models import Author
 
 
 class AuthorSerializer(ModelSerializer):

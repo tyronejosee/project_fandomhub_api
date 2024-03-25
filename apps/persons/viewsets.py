@@ -9,14 +9,15 @@ from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema_view, extend_schema
+
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import MediumSetPagination
-from apps.persons.models import Author
-from apps.persons.serializers import AuthorSerializer
-from apps.persons.schemas import author_schemas
 from apps.contents.models import Manga
 from apps.contents.serializers import MangaListSerializer
+from .models import Author
+from .serializers import AuthorSerializer
+from .schemas import author_schemas
 
 
 @extend_schema_view(**author_schemas)

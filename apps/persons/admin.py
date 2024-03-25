@@ -1,6 +1,7 @@
 """Admin for Persons App."""
 
 from django.contrib import admin
+
 from apps.persons.models import Author
 
 
