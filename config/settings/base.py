@@ -41,7 +41,6 @@ THIRD_APPS = [
     "rest_framework_simplejwt.token_blacklist",
     "drf_spectacular",
     "drf_spectacular_sidecar",
-    "debug_toolbar",
 ]
 
 INSTALLED_APPS = BASE_APPS + PROJECT_APPS + THIRD_APPS
@@ -142,6 +141,10 @@ REST_FRAMEWORK = {
     # "ALLOWED_VERSIONS": ["v1", "v2"],
     # "VERSION_PARAM": "version",
 }
+
+# ENUM_NAME_OVERRIDES = {
+#     "status": "StatusEnum",
+# }
 
 AUTHENTICATION_BACKENDS = (
     "social_core.backends.google.GoogleOAuth2",
