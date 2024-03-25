@@ -4,13 +4,13 @@
 
 ### Series Information
 
-- [ ] Get detailed information about a specific anime or manga series.
+- [x] Get detailed information about a specific anime or manga series.
 - [ ] Search for series by title, genre, airing year, etc.
 - [ ] Filter series by popularity, rating, duration, etc.
 
 ### User Interaction
 
-- [ ] Allow users to mark series as favorites or add them to a watchlist.
+- [x] Allow users to mark series as favorites or add them to a watchlist.
 - [ ] Allow users to leave reviews and ratings for specific series.
 
 ### Recommendations and Discovery
@@ -20,32 +20,20 @@
 
 ### Lists and Additional Details
 
-- [ ] Get the episode list of a specific anime series.
-- [ ] Get information about the original manga related to an anime series.
-- [ ] Get information about the availability of merchandise related to an anime or manga series.
-- [ ] Get information about the soundtracks and music of an anime series.
-- [ ] Get information about video game adaptations related to an anime or manga series.
+- [x] Get the episode list of a specific anime series.
+- [x] Get information about the original manga related to an anime series.
 
 ### Additional Information
 
-- [ ] Get information about the staff involved in creating an anime or manga series.
+- [x] Get information about the staff involved in creating an anime or manga series.
 - [ ] Get information about the availability of a series on different streaming platforms.
-- [ ] Get information about upcoming anime conventions, events, and premieres.
-- [ ] Get information about awards and accolades received by an anime or manga series.
-
-### Specific Features
-
-- [ ] Get information about the production status of an ongoing series.
-- [ ] Get information about the production status of an ongoing series.
-- [ ] Get information about the production status of an ongoing series.
-- [ ] Get information about the production status of an ongoing series.
 
 ## **Non-Functional**
 
 ### Usability and Documentation
 
-- [ ] The API should be easy to use for developers, with clear and comprehensive documentation that includes usage examples, descriptions of endpoints, request parameters, and expected responses.
-- [ ] Documentation should be up-to-date and easily accessible so that developers can quickly integrate it into their applications.
+- [x] The API should be easy to use for developers, with clear and comprehensive documentation that includes usage examples, descriptions of endpoints, request parameters, and expected responses.
+- [x] Documentation should be up-to-date and easily accessible so that developers can quickly integrate it into their applications.
 
 ### Scalability
 
@@ -65,7 +53,7 @@
 ### Availability
 
 - [ ] The API should be highly available, with uptime close to 100% to ensure that users can access it at all times.
-- [ ] Redundancy and fault tolerance strategies should be implemented to mitigate the impacts of possible service interruptions.
+- [x] Redundancy and fault tolerance strategies should be implemented to mitigate the impacts of possible service interruptions.
 
 ### Maintainability
 
@@ -74,10 +62,10 @@
 
 ## Limitations
 
-- [ ] Request limits per minute/hour
-- [ ] Access limits to detailed data of certain series or specific features.
-- [ ] Authentication requirements for certain operations, such as using access tokens or API keys to query or modify data on behalf of users.
-- [ ] Performance and scalability considerations, implementing caching, query optimization, or load distribution to handle traffic spikes.
-- [ ] Compatibility limitations with specific versions.
+- [x] Request limits per minute/hour
+- [x] Access limits to detailed data of certain series or specific features.
+- [x] Authentication requirements for certain operations, such as using access tokens or API keys to query or modify data on behalf of users.
+- [x] Performance and scalability considerations, implementing caching, query optimization, or load distribution to handle traffic spikes.
+- [x] Compatibility limitations with specific versions.
 - [ ] Access restrictions from certain geographical locations.
 - [ ] Data restrictions, such as limited availability of certain types of information or the need to obtain special permissions to access sensitive or restricted data.

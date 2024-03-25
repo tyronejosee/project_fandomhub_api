@@ -8,7 +8,7 @@ from django.views.decorators.vary import vary_on_cookie
 from django.utils.translation import gettext as _
 from rest_framework import viewsets
 from rest_framework import status
-from rest_framework.permissions import AllowAny
+# from rest_framework.permissions import AllowAny
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema_view, extend_schema

@@ -54,6 +54,9 @@ class User(AbstractBaseUser, PermissionsMixin):
         """Meta definition for User model."""
         verbose_name = _("User")
         verbose_name_plural = _("Users")
+        # indexes = [
+        #     models.Index(fields=["email"]),
+        # ]
 
     def __str__(self):
         return str(self.username)

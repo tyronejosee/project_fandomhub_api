@@ -1,6 +1,5 @@
 """Serializers for Contents App."""
 
-from django.core.validators import RegexValidator
 from rest_framework import serializers
 from apps.categories.models import Studio, Genre, Theme, Season, Demographic
 from apps.utils.validators import validate_name
