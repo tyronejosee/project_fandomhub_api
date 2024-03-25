@@ -4,10 +4,10 @@ from django.shortcuts import get_object_or_404
 from rest_framework import serializers
 
 from apps.contents.models import Anime
-from apps.contents.serializers import AnimeMinimumSerializer
-from apps.contents.serializers import MangaMinimumSerializer
-from apps.playlists.models import Playlist
-from apps.playlists.models import PlaylistAnime
+from apps.contents.serializers import (
+    AnimeMinimumSerializer, MangaMinimumSerializer
+)
+from .models import Playlist, PlaylistAnime
 
 
 class PlaylistSerializer(serializers.ModelSerializer):

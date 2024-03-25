@@ -2,8 +2,8 @@
 
 from django.urls import path
 
-from .views import PlaylistAnimeList
-from .views import PlaylistList
+from .views import PlaylistAnimeList, PlaylistList
+
 
 urlpatterns = [
     path("api/v1/playlists/", PlaylistList.as_view()),

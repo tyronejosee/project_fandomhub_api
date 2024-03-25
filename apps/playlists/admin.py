@@ -1,7 +1,8 @@
 """Admin for Playlists App."""
 
 from django.contrib import admin
-from apps.playlists.models import Playlist, PlaylistAnime, PlaylistManga
+
+from .models import Playlist, PlaylistAnime, PlaylistManga
 
 
 @admin.register(Playlist)

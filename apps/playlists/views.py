@@ -61,7 +61,8 @@ class PlaylistAnimeList(APIView):
         playlist = Playlist.objects.get(user=self.request.user)
         anime_id = request.data.get("anime_id")
 
-        if PlaylistAnime.objects.filter(playlist=playlist, anime_id=anime_id).exists():
+        if PlaylistAnime.objects.filter(
+                playlist=playlist, anime_id=anime_id).exists():
             return Response(
                 {"error": "Anime already in playlist"},
                 status=status.HTTP_400_BAD_REQUEST,
