@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-15 16:11-0300\n"
+"POT-Creation-Date: 2024-03-26 13:32-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,128 +18,142 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: .\apps\categories\choices.py:7 .\apps\categories\choices.py:16
-#: .\apps\categories\models.py:78 .\apps\contents\choices.py:7
-#: .\apps\contents\choices.py:14 .\apps\contents\choices.py:24
-#: .\apps\contents\choices.py:34 .\apps\contents\choices.py:44
+#: .\apps\categories\choices.py:7 .\apps\categories\models.py:92
+#: .\apps\contents\choices.py:7 .\apps\contents\choices.py:14
+#: .\apps\contents\choices.py:24 .\apps\contents\choices.py:34
+#: .\apps\contents\choices.py:44 .\apps\news\choices.py:7
 msgid "Pending"
 msgstr "保留中"
 
 #: .\apps\categories\choices.py:8
-msgid "Official Site"
-msgstr "公式サイト"
-
-#: .\apps\categories\choices.py:9
-msgid "Crunchyroll"
-msgstr "クランチロール"
-
-#: .\apps\categories\choices.py:10
-msgid "Netflix"
-msgstr "Netflix"
-
-#: .\apps\categories\choices.py:11
-msgid "Youtube Acccount"
-msgstr "YouTubeアカウント"
-
-#: .\apps\categories\choices.py:12
-msgid "X Account"
-msgstr "Xアカウント"
-
-#: .\apps\categories\choices.py:17
 msgid "Winter"
 msgstr "冬"
 
-#: .\apps\categories\choices.py:18
+#: .\apps\categories\choices.py:9
 msgid "Spring"
 msgstr "春"
 
-#: .\apps\categories\choices.py:19
+#: .\apps\categories\choices.py:10
 msgid "Summer"
 msgstr "夏"
 
-#: .\apps\categories\choices.py:20
+#: .\apps\categories\choices.py:11
 msgid "Fall"
 msgstr "秋"
 
-#: .\apps\categories\models.py:14
-msgid "URL"
-msgstr "URL"
-
-#: .\apps\categories\models.py:15
-msgid "Tag"
-msgstr "タグ"
-
-#: .\apps\categories\models.py:19
-msgid "Url"
-msgstr "URL"
-
-#: .\apps\categories\models.py:20
-msgid "Urls"
-msgstr "URLs"
-
-#: .\apps\categories\models.py:28 .\apps\contents\models.py:18
-#: .\apps\contents\models.py:51
-msgid "Name (ENG)"
+#: .\apps\categories\models.py:16 .\apps\contents\models.py:20
+#: .\apps\contents\models.py:86
+#, fuzzy
+#| msgid "Name (ENG)"
+msgid "name (eng)"
 msgstr "名前 (英語)"
 
-#: .\apps\categories\models.py:29 .\apps\contents\models.py:19
-#: .\apps\contents\models.py:52
-msgid "Name (JPN)"
-msgstr "名前 (日本語)"
+#: .\apps\categories\models.py:18 .\apps\contents\models.py:23
+#: .\apps\contents\models.py:88
+#, fuzzy
+#| msgid "Name (ENG)"
+msgid "name (jpn)"
+msgstr "名前 (英語)"
 
-#: .\apps\categories\models.py:30
-msgid "Established"
+#: .\apps\categories\models.py:20
+#, fuzzy
+#| msgid "Established"
+msgid "established"
 msgstr "設立年"
 
-#: .\apps\categories\models.py:31 .\apps\contents\models.py:20
-#: .\apps\contents\models.py:53 .\apps\profiles\models.py:19
-msgid "Image"
+#: .\apps\categories\models.py:23 .\apps\contents\models.py:29
+#: .\apps\contents\models.py:93 .\apps\news\models.py:18
+#: .\apps\profiles\models.py:22
+#, fuzzy
+#| msgid "Image"
+msgid "image"
 msgstr "画像"
 
-#: .\apps\categories\models.py:35
-msgid "Studio"
+#: .\apps\categories\models.py:28
+#, fuzzy
+#| msgid "Studio"
+msgid "studio"
 msgstr "制作会社"
 
-#: .\apps\categories\models.py:36
-msgid "Studios"
+#: .\apps\categories\models.py:29
+#, fuzzy
+#| msgid "Studios"
+msgid "studios"
 msgstr "制作会社"
 
-#: .\apps\categories\models.py:50 .\apps\categories\models.py:86
-#: .\apps\persons\models.py:10 .\apps\users\models.py:45
-msgid "Name"
-msgstr "名前"
+#: .\apps\categories\models.py:44 .\apps\categories\models.py:59
+#: .\apps\categories\models.py:106 .\apps\persons\models.py:12
+#: .\apps\playlists\models.py:19 .\apps\users\models.py:15
+#, fuzzy
+#| msgid "Username"
+msgid "name"
+msgstr "ユーザー名"
 
-#: .\apps\categories\models.py:54
-msgid "Genre"
+#: .\apps\categories\models.py:49
+#, fuzzy
+#| msgid "Genre"
+msgid "genre"
 msgstr "ジャンル"
 
-#: .\apps\categories\models.py:55
-msgid "Genres"
+#: .\apps\categories\models.py:50 .\apps\contents\models.py:116
+#, fuzzy
+#| msgid "Genres"
+msgid "genres"
 msgstr "ジャンル"
 
-#: .\apps\categories\models.py:63 .\apps\categories\models.py:70
-#: .\apps\categories\models.py:71
-msgid "Season"
+#: .\apps\categories\models.py:64
+msgid "theme"
+msgstr ""
+
+#: .\apps\categories\models.py:65 .\apps\contents\models.py:119
+msgid "themes"
+msgstr ""
+
+#: .\apps\categories\models.py:74 .\apps\categories\models.py:84
+#: .\apps\categories\models.py:85
+#, fuzzy
+#| msgid "Season"
+msgid "season"
 msgstr "シーズン"
 
-#: .\apps\categories\models.py:65
-msgid "Year"
-msgstr "年"
+#: .\apps\categories\models.py:77
+msgid "year"
+msgstr ""
 
-#: .\apps\categories\models.py:90
-msgid "Demographic"
+#: .\apps\categories\models.py:80
+msgid "fullname"
+msgstr ""
+
+#: .\apps\categories\models.py:111 .\apps\contents\models.py:113
+#, fuzzy
+#| msgid "Demographic"
+msgid "demographic"
 msgstr "デモグラフィック"
 
-#: .\apps\categories\models.py:91
-msgid "Demographics"
+#: .\apps\categories\models.py:112
+#, fuzzy
+#| msgid "Demographics"
+msgid "demographics"
 msgstr "デモグラフィック"
 
-#: .\apps\categories\viewsets.py:56
+#: .\apps\categories\viewsets.py:77
 msgid "There are no animes for this studio."
 msgstr "この制作会社のアニメはありません。"
 
-#: .\apps\categories\viewsets.py:84
+#: .\apps\categories\viewsets.py:127
 msgid "There are no animes for this genre."
+msgstr "このジャンルのアニメはありません。"
+
+#: .\apps\categories\viewsets.py:149
+#, fuzzy
+#| msgid "There are no animes for this genre."
+msgid "There are no mangas for this genre."
+msgstr "このジャンルのアニメはありません。"
+
+#: .\apps\categories\viewsets.py:234
+#, fuzzy
+#| msgid "There are no animes for this genre."
+msgid "There are no animes for this season."
 msgstr "このジャンルのアニメはありません。"
 
 #: .\apps\contents\choices.py:8
@@ -203,7 +217,6 @@ msgid "RX - Hentai"
 msgstr "RX - 変態"
 
 #: .\apps\contents\choices.py:35 .\apps\contents\choices.py:46
-#: .\apps\contents\models.py:71 .\apps\watchlists\models.py:45
 msgid "Manga"
 msgstr "漫画"
 
@@ -251,256 +264,490 @@ msgstr "本"
 msgid "Radio"
 msgstr "ラジオ"
 
-#: .\apps\contents\models.py:21 .\apps\contents\models.py:54
-msgid "Synopsis"
+#: .\apps\contents\models.py:26 .\apps\contents\models.py:90
+#, fuzzy
+#| msgid "Name (ENG)"
+msgid "name (rmj)"
+msgstr "名前 (英語)"
+
+#: .\apps\contents\models.py:31 .\apps\contents\models.py:95
+#, fuzzy
+#| msgid "Synopsis"
+msgid "synopsis"
 msgstr "あらすじ"
 
-#: .\apps\contents\models.py:23
-msgid "Episodes"
+#: .\apps\contents\models.py:33
+#, fuzzy
+#| msgid "Episodes"
+msgid "episodes"
 msgstr "エピソード"
 
-#: .\apps\contents\models.py:25
-msgid "Duration"
+#: .\apps\contents\models.py:37
+#, fuzzy
+#| msgid "Duration"
+msgid "duration"
 msgstr "期間"
 
-#: .\apps\contents\models.py:26 .\apps\contents\models.py:56
-msgid "Release"
+#: .\apps\contents\models.py:39 .\apps\contents\models.py:99
+#, fuzzy
+#| msgid "Release"
+msgid "release"
 msgstr "リリース"
 
-#: .\apps\contents\models.py:27
-msgid "Category"
+#: .\apps\contents\models.py:41
+#, fuzzy
+#| msgid "Category"
+msgid "category"
 msgstr "カテゴリ"
 
-#: .\apps\contents\models.py:28 .\apps\contents\models.py:58
-#: .\apps\watchlists\models.py:17
-msgid "Status"
+#: .\apps\contents\models.py:46 .\apps\contents\models.py:105
+#: .\apps\playlists\models.py:37
+#, fuzzy
+#| msgid "Status"
+msgid "status"
 msgstr "ステータス"
 
-#: .\apps\contents\models.py:29
-msgid "Rating"
+#: .\apps\contents\models.py:49 .\apps\reviews\models.py:21
+#, fuzzy
+#| msgid "Rating"
+msgid "rating"
 msgstr "評価"
 
-#: .\apps\contents\models.py:34 .\apps\contents\models.py:63
-msgid "Mean"
-msgstr "平均"
+#: .\apps\contents\models.py:59 .\apps\contents\models.py:121
+msgid "mean"
+msgstr ""
 
-#: .\apps\contents\models.py:35 .\apps\contents\models.py:64
-msgid "Rank"
-msgstr "ランク"
+#: .\apps\contents\models.py:60 .\apps\contents\models.py:122
+msgid "rank"
+msgstr ""
 
-#: .\apps\contents\models.py:36 .\apps\contents\models.py:65
-msgid "Popularity"
+#: .\apps\contents\models.py:61 .\apps\contents\models.py:123
+#, fuzzy
+#| msgid "Popularity"
+msgid "popularity"
 msgstr "人気度"
 
-#: .\apps\contents\models.py:37 .\apps\contents\models.py:66
-msgid "Number of List Users"
+#: .\apps\contents\models.py:63 .\apps\contents\models.py:125
+#, fuzzy
+#| msgid "Number of List Users"
+msgid "number of list users"
 msgstr "リストユーザー数"
 
-#: .\apps\contents\models.py:38 .\apps\contents\models.py:67
-msgid "Number of Scoring Users"
+#: .\apps\contents\models.py:66 .\apps\contents\models.py:128
+#, fuzzy
+#| msgid "Number of Scoring Users"
+msgid "number of scoring users"
 msgstr "スコアリングユーザー数"
 
-#: .\apps\contents\models.py:42 .\apps\watchlists\models.py:35
-msgid "Anime"
+#: .\apps\contents\models.py:71 .\apps\playlists\models.py:57
+#: .\apps\reviews\models.py:19
+#, fuzzy
+#| msgid "Anime"
+msgid "anime"
 msgstr "アニメ"
-
-#: .\apps\contents\models.py:43
-msgid "Animes"
-msgstr "アニメ"
-
-#: .\apps\contents\models.py:55
-msgid "Chapters"
-msgstr "チャプター"
-
-#: .\apps\contents\models.py:57
-msgid "Media Type"
-msgstr "メディアタイプ"
 
 #: .\apps\contents\models.py:72
-msgid "Mangas"
-msgstr "漫画"
+#, fuzzy
+#| msgid "Animes"
+msgid "animes"
+msgstr "アニメ"
 
-#: .\apps\persons\models.py:14
-msgid "Author"
-msgstr "著者"
+#: .\apps\contents\models.py:97
+#, fuzzy
+#| msgid "Chapters"
+msgid "chapters"
+msgstr "チャプター"
 
-#: .\apps\persons\models.py:15
-msgid "Authors"
-msgstr "著者"
+#: .\apps\contents\models.py:101
+#, fuzzy
+#| msgid "Media Type"
+msgid "media type"
+msgstr "メディアタイプ"
 
-#: .\apps\profiles\models.py:15 .\apps\users\models.py:78
-#: .\apps\watchlists\models.py:14
-msgid "User"
-msgstr "ユーザー"
-
-#: .\apps\profiles\models.py:16
-msgid "Bio"
-msgstr "バイオ"
-
-#: .\apps\profiles\models.py:17
-msgid "Website"
+#: .\apps\contents\models.py:103 .\apps\profiles\models.py:19
+#, fuzzy
+#| msgid "Website"
+msgid "website"
 msgstr "ウェブサイト"
 
+#: .\apps\contents\models.py:109 .\apps\persons\models.py:17
+#, fuzzy
+#| msgid "Author"
+msgid "author"
+msgstr "著者"
+
+#: .\apps\contents\models.py:133 .\apps\playlists\models.py:73
+#, fuzzy
+#| msgid "Manga"
+msgid "manga"
+msgstr "漫画"
+
+#: .\apps\contents\models.py:134
+#, fuzzy
+#| msgid "Mangas"
+msgid "mangas"
+msgstr "漫画"
+
+#: .\apps\contents\viewsets.py:114
+msgid "There are no popular mangas available."
+msgstr ""
+
+#: .\apps\news\choices.py:8
+#, fuzzy
+#| msgid "Anime"
+msgid "New Anime"
+msgstr "アニメ"
+
+#: .\apps\news\choices.py:9
+#, fuzzy
+#| msgid "Manga"
+msgid "New Manga"
+msgstr "漫画"
+
+#: .\apps\news\choices.py:10
+msgid "Spoiler"
+msgstr ""
+
+#: .\apps\news\choices.py:11
+msgid "Review"
+msgstr ""
+
+#: .\apps\news\choices.py:12
+msgid "Interview"
+msgstr ""
+
+#: .\apps\news\choices.py:13
+msgid "Event"
+msgstr ""
+
+#: .\apps\news\choices.py:14
+msgid "Recommendation"
+msgstr ""
+
+#: .\apps\news\models.py:15
+msgid "title"
+msgstr ""
+
+#: .\apps\news\models.py:16
+msgid "description"
+msgstr ""
+
+#: .\apps\news\models.py:17
+msgid "content"
+msgstr ""
+
+#: .\apps\news\models.py:19
+msgid "source"
+msgstr ""
+
+#: .\apps\news\models.py:21
+#, fuzzy
+#| msgid "Tag"
+msgid "tag"
+msgstr "タグ"
+
+#: .\apps\news\models.py:24 .\apps\playlists\models.py:17
+#: .\apps\profiles\models.py:16 .\apps\reviews\models.py:16
+#: .\apps\users\models.py:56
+msgid "user"
+msgstr ""
+
+#: .\apps\news\models.py:29
+msgid "New"
+msgstr ""
+
+#: .\apps\news\models.py:30
+msgid "News"
+msgstr ""
+
+#: .\apps\persons\models.py:18
+#, fuzzy
+#| msgid "Authors"
+msgid "authors"
+msgstr "著者"
+
+#: .\apps\persons\viewsets.py:64
+#, fuzzy
+#| msgid "There are no animes for this studio."
+msgid "There are no mangas for this author."
+msgstr "この制作会社のアニメはありません。"
+
+#: .\apps\playlists\models.py:23 .\apps\playlists\models.py:34
+msgid "playlist"
+msgstr ""
+
+#: .\apps\playlists\models.py:24
+msgid "playlists"
+msgstr ""
+
+#: .\apps\playlists\models.py:41
+#, fuzzy
+#| msgid "Is Watched"
+msgid "is watched"
+msgstr "視聴済み"
+
+#: .\apps\playlists\models.py:44
+msgid "is favorite"
+msgstr ""
+
+#: .\apps\playlists\models.py:62
+msgid "playlist anime"
+msgstr ""
+
+#: .\apps\playlists\models.py:63
+msgid "playlist animes"
+msgstr ""
+
+#: .\apps\playlists\models.py:78
+msgid "playlist manga"
+msgstr ""
+
+#: .\apps\playlists\models.py:79
+msgid "playlist mangas"
+msgstr ""
+
 #: .\apps\profiles\models.py:18
-msgid "Birth Date"
-msgstr "誕生日"
+#, fuzzy
+#| msgid "Bio"
+msgid "bio"
+msgstr "バイオ"
 
 #: .\apps\profiles\models.py:20
-msgid "Cover"
-msgstr "カバー"
-
-#: .\apps\profiles\models.py:24
-msgid "Profile"
-msgstr "プロフィール"
+#, fuzzy
+#| msgid "Birth Date"
+msgid "birth date"
+msgstr "誕生日"
 
 #: .\apps\profiles\models.py:25
-msgid "Profiles"
+#, fuzzy
+#| msgid "Cover"
+msgid "cover"
+msgstr "カバー"
+
+#: .\apps\profiles\models.py:30
+#, fuzzy
+#| msgid "Profile"
+msgid "profile"
 msgstr "プロフィール"
 
-#: .\apps\profiles\models.py:34
-msgid "Follower"
-msgstr "フォロワー"
+#: .\apps\profiles\models.py:31
+#, fuzzy
+#| msgid "Profiles"
+msgid "profiles"
+msgstr "プロフィール"
 
-#: .\apps\profiles\models.py:37
-msgid "Followed User"
-msgstr "フォローされたユーザー"
+#: .\apps\reviews\models.py:22
+#, fuzzy
+#| msgid "Comments"
+msgid "comment"
+msgstr "コメント"
 
-#: .\apps\profiles\models.py:43
-msgid "Follow"
-msgstr "フォロー"
+#: .\apps\reviews\models.py:26
+msgid "review"
+msgstr ""
 
-#: .\apps\profiles\models.py:44
-msgid "Follows"
-msgstr "フォロー中"
+#: .\apps\reviews\models.py:27
+msgid "reviews"
+msgstr ""
 
-#: .\apps\users\admin.py:32
+#: .\apps\users\admin.py:34
 msgid "Account info"
 msgstr "アカウント情報"
 
-#: .\apps\users\admin.py:33
+#: .\apps\users\admin.py:40
 msgid "Personal info"
 msgstr "個人情報"
 
-#: .\apps\users\admin.py:34 .\apps\users\models.py:47
+#: .\apps\users\admin.py:46
 msgid "Permissions"
 msgstr "権限"
 
-#: .\apps\users\admin.py:35
+#: .\apps\users\admin.py:52
 msgid "Records"
 msgstr "記録"
 
-#: .\apps\users\models.py:17
+#: .\apps\users\managers.py:15
 msgid "Users must have an email address"
 msgstr "ユーザーはメールアドレスを持っている必要があります"
 
-#: .\apps\users\models.py:35
+#: .\apps\users\managers.py:33
 msgid "Superuser must have is_staff=True."
 msgstr "スーパーユーザーはis_staff=Trueである必要があります"
 
-#: .\apps\users\models.py:37
+#: .\apps\users\managers.py:35
 msgid "Superuser must have is_superuser=True."
 msgstr "スーパーユーザーはis_superuser=Trueである必要があります"
 
-#: .\apps\users\models.py:52
-msgid "Role"
+#: .\apps\users\models.py:18
+#, fuzzy
+#| msgid "Permissions"
+msgid "permissions"
+msgstr "権限"
+
+#: .\apps\users\models.py:23
+msgid "role"
+msgstr ""
+
+#: .\apps\users\models.py:24 .\apps\users\models.py:44
+#, fuzzy
+#| msgid "Roles"
+msgid "roles"
 msgstr "役割"
 
-#: .\apps\users\models.py:53 .\apps\users\models.py:66
-msgid "Roles"
-msgstr "役割"
-
-#: .\apps\users\models.py:62
-msgid "Email"
+#: .\apps\users\models.py:34
+#, fuzzy
+#| msgid "Email"
+msgid "email"
 msgstr "メール"
 
-#: .\apps\users\models.py:63
-msgid "Username"
+#: .\apps\users\models.py:37
+#, fuzzy
+#| msgid "Username"
+msgid "username"
 msgstr "ユーザー名"
 
-#: .\apps\users\models.py:64
-msgid "First Name"
+#: .\apps\users\models.py:40
+#, fuzzy
+#| msgid "First Name"
+msgid "first name"
 msgstr "名"
 
-#: .\apps\users\models.py:65
-msgid "Last Name"
+#: .\apps\users\models.py:42
+#, fuzzy
+#| msgid "Last Name"
+msgid "last name"
 msgstr "姓"
 
-#: .\apps\users\models.py:67
-msgid "Is Active"
+#: .\apps\users\models.py:45
+#, fuzzy
+#| msgid "Is Active"
+msgid "is active"
 msgstr "有効"
 
-#: .\apps\users\models.py:68
-msgid "Is Staff"
+#: .\apps\users\models.py:46
+#, fuzzy
+#| msgid "Is Staff"
+msgid "is staff"
 msgstr "スタッフ"
 
-#: .\apps\users\models.py:69
-msgid "Date Joined"
+#: .\apps\users\models.py:47
+#, fuzzy
+#| msgid "Date Joined"
+msgid "date joined"
 msgstr "参加日"
 
-#: .\apps\users\models.py:79
-msgid "Users"
+#: .\apps\users\models.py:57
+#, fuzzy
+#| msgid "Users"
+msgid "users"
 msgstr "ユーザー"
 
-#: .\apps\utils\mixins.py:15
+#: .\apps\utils\mixins.py:14
 msgid "Slug"
 msgstr "スラッグ"
 
-#: .\apps\utils\mixins.py:46
+#: .\apps\utils\mixins.py:44
 msgid "Resource not found."
 msgstr "リソースが見つかりません。"
 
-#: .\apps\utils\models.py:11
-msgid "Available"
+#: .\apps\utils\models.py:12
+#, fuzzy
+#| msgid "Available"
+msgid "available"
 msgstr "利用可能"
 
-#: .\apps\utils\models.py:12
-msgid "Created at"
+#: .\apps\utils\models.py:14
+#, fuzzy
+#| msgid "Created at"
+msgid "created at"
 msgstr "作成日時"
 
-#: .\apps\utils\models.py:13
-msgid "Updated at"
+#: .\apps\utils\models.py:16
+#, fuzzy
+#| msgid "Updated at"
+msgid "updated at"
 msgstr "更新日時"
 
-#: .\apps\watchlists\models.py:19
-msgid "Is Watched"
-msgstr "視聴済み"
+#~ msgid "Official Site"
+#~ msgstr "公式サイト"
 
-#: .\apps\watchlists\models.py:20
-msgid "Score"
-msgstr "スコア"
+#~ msgid "Crunchyroll"
+#~ msgstr "クランチロール"
 
-#: .\apps\watchlists\models.py:21
-msgid "Priority"
-msgstr "優先度"
+#~ msgid "Netflix"
+#~ msgstr "Netflix"
 
-#: .\apps\watchlists\models.py:22
-msgid "Tags"
-msgstr "タグ"
+#~ msgid "Youtube Acccount"
+#~ msgstr "YouTubeアカウント"
 
-#: .\apps\watchlists\models.py:23
-msgid "Comments"
-msgstr "コメント"
+#~ msgid "X Account"
+#~ msgstr "Xアカウント"
 
-#: .\apps\watchlists\models.py:39
-msgid "AnimeWatchlist"
-msgstr "アニメウォッチリスト"
+#~ msgid "URL"
+#~ msgstr "URL"
 
-#: .\apps\watchlists\models.py:40
-msgid "AnimeWatchlists"
-msgstr "アニメウォッチリスト"
+#~ msgid "Url"
+#~ msgstr "URL"
 
-#: .\apps\watchlists\models.py:49
-msgid "MangaWatchlist"
-msgstr "漫画ウォッチリスト"
+#~ msgid "Urls"
+#~ msgstr "URLs"
 
-#: .\apps\watchlists\models.py:50
-msgid "MangaWatchlists"
-msgstr "漫画ウォッチリスト"
+#~ msgid "Name (JPN)"
+#~ msgstr "名前 (日本語)"
 
-#: .\static\dump\mixins.py:14
-msgid "Instance created successfully."
-msgstr "インスタンスが正常に作成されました。"
+#~ msgid "Name"
+#~ msgstr "名前"
 
-#: .\static\dump\viewsets.py:18
-msgid "Genre created successfully."
-msgstr "ジャンルが正常に作成されました。"
+#~ msgid "Year"
+#~ msgstr "年"
+
+#~ msgid "Mean"
+#~ msgstr "平均"
+
+#~ msgid "Rank"
+#~ msgstr "ランク"
+
+#~ msgid "User"
+#~ msgstr "ユーザー"
+
+#~ msgid "Follower"
+#~ msgstr "フォロワー"
+
+#~ msgid "Followed User"
+#~ msgstr "フォローされたユーザー"
+
+#~ msgid "Follow"
+#~ msgstr "フォロー"
+
+#~ msgid "Follows"
+#~ msgstr "フォロー中"
+
+#~ msgid "Role"
+#~ msgstr "役割"
+
+#~ msgid "Score"
+#~ msgstr "スコア"
+
+#~ msgid "Priority"
+#~ msgstr "優先度"
+
+#~ msgid "Tags"
+#~ msgstr "タグ"
+
+#~ msgid "AnimeWatchlist"
+#~ msgstr "アニメウォッチリスト"
+
+#~ msgid "AnimeWatchlists"
+#~ msgstr "アニメウォッチリスト"
+
+#~ msgid "MangaWatchlist"
+#~ msgstr "漫画ウォッチリスト"
+
+#~ msgid "MangaWatchlists"
+#~ msgstr "漫画ウォッチリスト"
+
+#~ msgid "Instance created successfully."
+#~ msgstr "インスタンスが正常に作成されました。"
+
+#~ msgid "Genre created successfully."
+#~ msgstr "ジャンルが正常に作成されました。"
