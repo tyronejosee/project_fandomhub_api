@@ -2,7 +2,9 @@
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from apps.contents.viewsets import AnimeViewSet, MangaViewSet
+
+from .viewsets import AnimeViewSet, MangaViewSet
+
 
 router = DefaultRouter()
 router.register(r"animes", AnimeViewSet, basename="anime")

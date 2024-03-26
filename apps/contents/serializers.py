@@ -2,11 +2,12 @@
 
 from rest_framework import serializers
 from drf_spectacular.utils import extend_schema_field
-from apps.contents.models import Anime, Manga
+
 from apps.categories.serializers import (
     GenreSerializer, StudioListSerializer, SeasonListSerializer,
     DemographicSerializer
 )
+from .models import Anime, Manga
 
 
 class AnimeSerializer(serializers.ModelSerializer):

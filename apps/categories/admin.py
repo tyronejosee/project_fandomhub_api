@@ -1,7 +1,8 @@
 """Admin for Contents App."""
 
 from django.contrib import admin
-from apps.categories.models import Studio, Genre, Theme, Season, Demographic
+
+from .models import Studio, Genre, Theme, Season, Demographic
 
 
 @admin.register(Studio)

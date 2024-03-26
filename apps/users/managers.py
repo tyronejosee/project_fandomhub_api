@@ -2,6 +2,7 @@
 
 from django.contrib.auth.models import BaseUserManager
 from django.utils.translation import gettext as _
+
 from apps.profiles.models import Profile
 
 

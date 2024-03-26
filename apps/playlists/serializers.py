@@ -15,32 +15,22 @@ class PlaylistSerializer(serializers.ModelSerializer):
 
     class Meta:
         """Meta definition for PlaylistSerializer."""
-
         model = Playlist
         fields = [
-            "id",
-            "name",
-            "created_at",
+            "id", "name", "created_at"
         ]
 
 
 class PlaylistAnimeSerializer(serializers.ModelSerializer):
     """Serializer for PlaylistAnime model."""
-
     anime_id = serializers.UUIDField(write_only=True)
     anime = AnimeMinimumSerializer(read_only=True)
 
     class Meta:
         """Meta definition for PlaylistAnimeSerializer."""
-
         model = PlaylistAnime
         fields = [
-            "id",
-            "anime",
-            "anime_id",
-            "status",
-            "is_watched",
-            "is_favorite",
+            "id", "anime", "anime_id", "status", "is_watched", "is_favorite"
         ]  # Add order field
 
         def create(self, validated_data):
@@ -55,17 +45,11 @@ class PlaylistAnimeSerializer(serializers.ModelSerializer):
 
 class PlaylistMangaSerializer(serializers.ModelSerializer):
     """Serializer for PlaylistManga model."""
-
     manga = MangaMinimumSerializer(read_only=True)
 
     class Meta:
         """Meta definition for PlaylistMangaSerializer."""
-
         model = PlaylistAnime
         fields = [
-            "id",
-            "manga",
-            "status",
-            "is_watched",
-            "is_favorite",
+            "id", "manga", "status", "is_watched", "is_favorite"
         ]  # Add order field

@@ -1,8 +1,9 @@
 """Serializers for Contents App."""
 
 from rest_framework import serializers
-from apps.categories.models import Studio, Genre, Theme, Season, Demographic
+
 from apps.utils.validators import validate_name
+from .models import Studio, Genre, Theme, Season, Demographic
 
 
 class StudioListSerializer(serializers.ModelSerializer):

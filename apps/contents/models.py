@@ -3,49 +3,50 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.translation import gettext as _
-from apps.categories.models import Studio, Genre, Theme, Season, Demographic
+
 from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
-from apps.contents.choices import (
+from apps.categories.models import Studio, Genre, Theme, Season, Demographic
+from apps.persons.models import Author
+from .choices import (
     STATUS_CHOICES, CATEGORY_CHOICES, RATING_CHOICES, MEDIA_TYPE_CHOICES
 )
-from apps.persons.models import Author
 
 
 class Anime(BaseModel, SlugMixin):
     """Model definition for Anime (Entity)."""
     name = models.CharField(
-        _("Name (English)"), max_length=255, unique=True, db_index=True
+        _("name (eng)"), max_length=255, unique=True, db_index=True
     )
     name_jpn = models.CharField(
-        _("Name (Japanese)"), max_length=255, unique=True,
+        _("name (jpn)"), max_length=255, unique=True,
     )
     name_rom = models.CharField(
-        _("Name (Romaji)"), max_length=255, unique=True, blank=True
+        _("name (rmj)"), max_length=255, unique=True, blank=True
     )
     image = models.ImageField(
-        _("Image"), upload_to=image_path, blank=True, null=True
+        _("image"), upload_to=image_path, blank=True, null=True
     )
-    synopsis = models.TextField(_("Synopsis"), blank=True, null=True)
+    synopsis = models.TextField(_("synopsis"), blank=True, null=True)
     episodes = models.IntegerField(
-        _("Episodes"), default=0,
+        _("episodes"), default=0,
         validators=[MinValueValidator(0), MaxValueValidator(1500)]
     )
     duration = models.CharField(
-        _("Duration"), max_length=20, blank=True, null=True
+        _("duration"), max_length=20, blank=True, null=True
     )
-    release = models.DateField(_("Release"), blank=True, null=True)
+    release = models.DateField(_("release"), blank=True, null=True)
     category = models.IntegerField(
-        _("Category"), choices=CATEGORY_CHOICES, default=0
+        _("category"), choices=CATEGORY_CHOICES, default=0
     )
     website = models.URLField(max_length=255, blank=True)
     trailer = models.URLField(max_length=255, blank=True)
     status = models.IntegerField(
-        _("Status"), choices=STATUS_CHOICES, default=0
+        _("status"), choices=STATUS_CHOICES, default=0
     )
     rating = models.IntegerField(
-        _("Rating"), choices=RATING_CHOICES, default=0
+        _("rating"), choices=RATING_CHOICES, default=0
     )
     studio = models.ForeignKey(
         Studio, on_delete=models.CASCADE, blank=True, null=True
@@ -55,20 +56,20 @@ class Anime(BaseModel, SlugMixin):
     season = models.ForeignKey(
         Season, on_delete=models.CASCADE, blank=True, null=True
     )
-    mean = models.FloatField(_("Mean"), blank=True, null=True)
-    rank = models.IntegerField(_("Rank"), blank=True, null=True)
-    popularity = models.IntegerField(_("Popularity"), blank=True, null=True)
+    mean = models.FloatField(_("mean"), blank=True, null=True)
+    rank = models.IntegerField(_("rank"), blank=True, null=True)
+    popularity = models.IntegerField(_("popularity"), blank=True, null=True)
     num_list_users = models.IntegerField(
-        _("Number of List Users"), blank=True, null=True
+        _("number of list users"), blank=True, null=True
     )
     num_scoring_users = models.IntegerField(
-        _("Number of Scoring Users"), blank=True, null=True
+        _("number of scoring users"), blank=True, null=True
     )
 
     class Meta:
         """Meta definition for Anime."""
-        verbose_name = _("Anime")
-        verbose_name_plural = _("Animes")
+        verbose_name = _("anime")
+        verbose_name_plural = _("animes")
 
     def save(self, *args, **kwargs):
         if not self.name_rom or self.name_rom != self.name:
@@ -82,49 +83,55 @@ class Anime(BaseModel, SlugMixin):
 class Manga(BaseModel, SlugMixin):
     """Model definition for Manga (Entity)."""
     name = models.CharField(
-        _("Name (ENG)"), max_length=255, unique=True, db_index=True
+        _("name (eng)"), max_length=255, unique=True, db_index=True
     )
-    name_jpn = models.CharField(_("Name (JPN)"), max_length=255, unique=True)
+    name_jpn = models.CharField(_("name (jpn)"), max_length=255, unique=True)
     name_rom = models.CharField(
-        _("Name (Romaji)"), max_length=255, unique=True, blank=True
+        _("name (rmj)"), max_length=255, unique=True, blank=True
     )
     image = models.ImageField(
-        _("Image"), upload_to=image_path, blank=True, null=True
+        _("image"), upload_to=image_path, blank=True, null=True
     )
-    synopsis = models.TextField(_("Synopsis"), blank=True, null=True)
+    synopsis = models.TextField(_("synopsis"), blank=True, null=True)
     chapters = models.IntegerField(
-        _("Chapters"), validators=[MinValueValidator(0)]
+        _("chapters"), validators=[MinValueValidator(0)]
     )
-    release = models.DateField(_("Release"), blank=True, null=True)
+    release = models.DateField(_("release"), blank=True, null=True)
     media_type = models.IntegerField(
-        _("Media Type"), choices=MEDIA_TYPE_CHOICES, default=0
+        _("media type"), choices=MEDIA_TYPE_CHOICES, default=0
     )
-    website = models.URLField(max_length=255, blank=True)
+    website = models.URLField(_("website"), max_length=255, blank=True)
     status = models.IntegerField(
-        _("Status"), choices=STATUS_CHOICES, default=0
+        _("status"), choices=STATUS_CHOICES, default=0
     )
     author = models.ForeignKey(
-        Author, on_delete=models.CASCADE, blank=True, null=True
+        Author, on_delete=models.CASCADE, blank=True, null=True,
+        verbose_name=_("author")
     )
     demographic = models.ForeignKey(
-        Demographic, on_delete=models.CASCADE, blank=True, null=True
+        Demographic, on_delete=models.CASCADE, blank=True, null=True,
+        verbose_name=_("demographic")
     )
-    genres = models.ManyToManyField(Genre, blank=True)
-    themes = models.ManyToManyField(Theme, blank=True)
-    mean = models.FloatField(_("Mean"), blank=True, null=True)
-    rank = models.IntegerField(_("Rank"), blank=True, null=True)
-    popularity = models.IntegerField(_("Popularity"), blank=True, null=True)
+    genres = models.ManyToManyField(
+        Genre, blank=True, verbose_name=_("genres")
+    )
+    themes = models.ManyToManyField(
+        Theme, blank=True, verbose_name=_("themes")
+    )
+    mean = models.FloatField(_("mean"), blank=True, null=True)
+    rank = models.IntegerField(_("rank"), blank=True, null=True)
+    popularity = models.IntegerField(_("popularity"), blank=True, null=True)
     num_list_users = models.IntegerField(
-        _("Number of List Users"), blank=True, null=True
+        _("number of list users"), blank=True, null=True
     )
     num_scoring_users = models.IntegerField(
-        _("Number of Scoring Users"), blank=True, null=True
+        _("number of scoring users"), blank=True, null=True
     )
 
     class Meta:
         """Meta definition for Manga."""
-        verbose_name = _("Manga")
-        verbose_name_plural = _("Mangas")
+        verbose_name = _("manga")
+        verbose_name_plural = _("mangas")
 
     def save(self, *args, **kwargs):
         if not self.name_rom or self.name_rom != self.name:

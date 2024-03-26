@@ -17,7 +17,6 @@ from .serializers import PlaylistSerializer
 
 class PlaylistList(APIView):
     """View for listing and creating playlists."""
-
     serializer_class = PlaylistSerializer
     permission_classes = [IsAuthenticated, IsOwner]
 
@@ -42,7 +41,6 @@ class PlaylistList(APIView):
 
 class PlaylistAnimeList(APIView):
     """View for listing, adding, and removing anime from a playlist.."""
-
     serializer_class = PlaylistAnimeSerializer
     permission_classes = [IsAuthenticated, IsOwner]
 

@@ -8,14 +8,15 @@ from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema_view, extend_schema
+
 from apps.utils.mixins import LogicalDeleteMixin
+from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import MediumSetPagination
-from apps.contents.models import Anime, Manga
-from apps.contents.serializers import (
+from .models import Anime, Manga
+from .serializers import (
     AnimeSerializer, MangaSerializer, AnimeListSerializer, MangaListSerializer
 )
-from apps.utils.permissions import IsStaffOrReadOnly
-from apps.contents.schemas import anime_schemas, manga_schemas
+from .schemas import anime_schemas, manga_schemas
 
 
 @extend_schema_view(**anime_schemas)

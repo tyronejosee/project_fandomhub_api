@@ -3,29 +3,30 @@
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.utils.translation import gettext as _
+
 from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
-from apps.categories.choices import SEASON_CHOICES
+from .choices import SEASON_CHOICES
 
 
 class Studio(BaseModel, SlugMixin):
     """Model definition for Studio (Catalog)."""
     name = models.CharField(
-        _("Name (ENG)"), max_length=255, unique=True, db_index=True
+        _("name (eng)"), max_length=255, unique=True, db_index=True
     )
-    name_jpn = models.CharField(_("Name (JPN)"), max_length=255, unique=True)
+    name_jpn = models.CharField(_("name (jpn)"), max_length=255, unique=True)
     established = models.CharField(
-        _("Established"), max_length=255, blank=True, null=True
+        _("established"), max_length=255, blank=True, null=True
     )
     image = models.ImageField(
-        _("Image"), upload_to=image_path, blank=True, null=True
+        _("image"), upload_to=image_path, blank=True, null=True
     )
 
     class Meta:
         """Meta definition for Studio."""
-        verbose_name = _("Studio")
-        verbose_name_plural = _("Studios")
+        verbose_name = _("studio")
+        verbose_name_plural = _("studios")
 
     def __str__(self):
         return str(self.name)
@@ -40,13 +41,13 @@ class Studio(BaseModel, SlugMixin):
 class Genre(BaseModel, SlugMixin):
     """Model definition for Genre (Catalog)."""
     name = models.CharField(
-        _("Name"), max_length=255, unique=True, db_index=True
+        _("name"), max_length=255, unique=True, db_index=True
     )
 
     class Meta:
         """Meta definition for Genre."""
-        verbose_name = _("Genre")
-        verbose_name_plural = _("Genres")
+        verbose_name = _("genre")
+        verbose_name_plural = _("genres")
 
     def __str__(self):
         return str(self.name)
@@ -55,13 +56,13 @@ class Genre(BaseModel, SlugMixin):
 class Theme(BaseModel, SlugMixin):
     """Model definition for Theme (Catalog)."""
     name = models.CharField(
-        _("Name"), max_length=255, unique=True, db_index=True
+        _("name"), max_length=255, unique=True, db_index=True
     )
 
     class Meta:
         """Meta definition for Theme."""
-        verbose_name = _("Theme")
-        verbose_name_plural = _("Themes")
+        verbose_name = _("theme")
+        verbose_name_plural = _("themes")
 
     def __str__(self):
         return str(self.name)
@@ -70,19 +71,18 @@ class Theme(BaseModel, SlugMixin):
 class Season(BaseModel):
     """Model definition for Season (Catalog)."""
     season = models.IntegerField(
-        _("Season"), choices=SEASON_CHOICES, default=0
+        _("season"), choices=SEASON_CHOICES, default=0
     )
     year = models.IntegerField(
-        _("Year"),  default=2010,
-        validators=[MinValueValidator(1900), MaxValueValidator(2100)],
-        db_index=True
+        _("year"), default=2010, db_index=True,
+        validators=[MinValueValidator(1900), MaxValueValidator(2100)]
     )
-    fullname = models.CharField(_("Fullname"), max_length=255, blank=True)
+    fullname = models.CharField(_("fullname"), max_length=255, blank=True)
 
     class Meta:
         """Meta definition for Season."""
-        verbose_name = _("Season")
-        verbose_name_plural = _("Season")
+        verbose_name = _("season")
+        verbose_name_plural = _("season")
 
     def get_season_display_name(self):
         """Gets the season name based on the season value."""
@@ -103,13 +103,13 @@ class Season(BaseModel):
 class Demographic(BaseModel):
     """Model definition for Demographic (Catalog)."""
     name = models.CharField(
-        _("Name"), max_length=50, unique=True, db_index=True
+        _("name"), max_length=50, unique=True, db_index=True
     )
 
     class Meta:
         """Meta definition for Demographic."""
-        verbose_name = _("Demographic")
-        verbose_name_plural = _("Demographics")
+        verbose_name = _("demographic")
+        verbose_name_plural = _("demographics")
 
     def __str__(self):
         return str(self.name)

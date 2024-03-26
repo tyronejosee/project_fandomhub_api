@@ -1,7 +1,8 @@
 """Admin for Profiles App."""
 
 from django.contrib import admin
-from apps.profiles.models import Profile
+
+from .models import Profile
 
 
 @admin.register(Profile)

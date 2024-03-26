@@ -2,10 +2,12 @@
 
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from apps.categories.viewsets import (
+
+from .viewsets import (
     StudioViewSet, GenreViewSet, ThemeViewSet,
     SeasonViewSet, DemographicViewSet
 )
+
 
 router_v1 = DefaultRouter()
 router_v1.register(r"genres", GenreViewSet, basename="genre")

@@ -2,7 +2,7 @@
 
 from django.contrib import admin
 
-from apps.persons.models import Author
+from .models import Author
 
 
 @admin.register(Author)

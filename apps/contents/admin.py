@@ -1,7 +1,8 @@
 """Admin for Contents App."""
 
 from django.contrib import admin
-from apps.contents.models import Anime, Manga
+
+from .models import Anime, Manga
 
 
 @admin.register(Anime)

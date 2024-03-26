@@ -1,12 +1,13 @@
 """Serializers for Reviesws App."""
 
-from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
+
 from apps.users.serializers import UserSerializer
 from apps.contents.serializers import AnimeListSerializer
 from .models import Review
 
 
-class ReviewSerializer(ModelSerializer):
+class ReviewSerializer(serializers.ModelSerializer):
     """Serializer for Review model."""
     user = UserSerializer()
     anime = AnimeListSerializer()

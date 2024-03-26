@@ -2,7 +2,8 @@
 
 from django.contrib import admin
 from django.utils.translation import gettext as _
-from apps.users.models import User, Role
+
+from .models import User, Role
 
 
 @admin.register(Role)
@@ -63,7 +64,7 @@ class UserAdmin(admin.ModelAdmin):
                 "fields": [
                     "username", "email", "first_name", "last_name",
                     "password1", "password2", "is_staff", "is_superuser"
-                    ],
+                ],
             }
         ),
     ]

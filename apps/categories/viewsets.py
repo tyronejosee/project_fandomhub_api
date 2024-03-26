@@ -12,17 +12,18 @@ from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema_view, extend_schema
+
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import LargeSetPagination, MediumSetPagination
 from apps.contents.models import Anime, Manga
 from apps.contents.serializers import AnimeListSerializer, MangaListSerializer
-from apps.categories.models import Studio, Genre, Theme, Season, Demographic
-from apps.categories.serializers import (
+from .models import Studio, Genre, Theme, Season, Demographic
+from .serializers import (
     StudioSerializer, GenreSerializer, ThemeSerializer,
     SeasonSerializer, DemographicSerializer
 )
-from apps.categories.schemas import (
+from .schemas import (
     studio_schemas, genre_schemas, theme_schemas,
     season_schemas, demographic_schemas
 )

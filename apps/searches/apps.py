@@ -1,3 +1,5 @@
+"""Configs for Searches App."""
+
 from django.apps import AppConfig
 
 
