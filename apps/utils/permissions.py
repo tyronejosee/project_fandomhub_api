@@ -7,9 +7,9 @@ class IsStaffOrReadOnly(BasePermission):
     """Allows access only to staff users."""
 
     def has_permission(self, request, view):
-        return bool(
-            request.method in SAFE_METHODS or request.user and request.user.is_staff
-        )
+        is_safe_method = request.method in SAFE_METHODS
+        is_staff = request.user and request.user.is_staff
+        return is_safe_method or is_staff
 
 
 class IsOwner(BasePermission):
