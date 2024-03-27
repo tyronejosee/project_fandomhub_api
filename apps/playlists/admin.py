@@ -23,6 +23,7 @@ class PlaylistAnimeAdmin(admin.ModelAdmin):
     list_filter = ["is_watched", "status"]
     list_per_page = 25
     readonly_fields = ["pk",]
+    autocomplete_fields = ["anime"]
     ordering = ["pk",]    # Order pending
 
 
@@ -34,4 +35,5 @@ class PlaylistMangaAdmin(admin.ModelAdmin):
     list_filter = ["is_watched", "status"]
     list_per_page = 25
     readonly_fields = ["pk",]
+    autocomplete_fields = ["manga"]
     ordering = ["pk",]    # Order pending
