@@ -72,7 +72,7 @@ class Anime(BaseModel, SlugMixin):
         verbose_name_plural = _("animes")
 
     def save(self, *args, **kwargs):
-        if not self.name_rom or self.name_rom != self.name:
+        if not self.name_rom:
             self.name_rom = self.name
         super(SlugMixin, self).save(*args, **kwargs)
 
@@ -134,9 +134,8 @@ class Manga(BaseModel, SlugMixin):
         verbose_name_plural = _("mangas")
 
     def save(self, *args, **kwargs):
-        if not self.name_rom or self.name_rom != self.name:
+        if not self.name_rom:
             self.name_rom = self.name
-            print(self.name_rom)
         super(SlugMixin, self).save(*args, **kwargs)
 
     def __str__(self):
