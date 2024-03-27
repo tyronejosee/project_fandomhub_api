@@ -1,87 +1,81 @@
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
+@method*decorator(cache_page(60 * 60 \_ 2))
+@method_decorator(vary_on_cookie)
+def list(self, request, *args, \*\*kwargs):
+return super().list(request, *args, \*\*kwargs)
 
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
+@method*decorator(cache_page(60 * 60 \_ 2))
+@method_decorator(vary_on_cookie)
+def retrieve(self, request, *args, \*\*kwargs):
+return super().retrieve(request, *args, \*\*kwargs)
 
-    def create(self, request, *args, **kwargs):
-        response = super().create(request, *args, **kwargs)
-        cache.clear()
-        return response
+def create(self, request, *args, \*\*kwargs):
+response = super().create(request, *args, \*\*kwargs)
+cache.clear()
+return response
 
+---
 
+# @action(detail=True, methods=['post'])
 
+# def add_anime(self, request, pk=None):
 
-    # @action(detail=True, methods=['post'])
-    # def add_anime(self, request, pk=None):
-    #     """Pending."""
-    #     playlist = self.get_object()
-    #     anime_id = request.data.get('anime_id')
-    #     rating = request.data.get('rating')
+# """Pending."""
 
-    #     if not anime_id or not rating:
-    #         return Response(
-    #             {'error': 'anime_id and rating are required'},
-    #             status=status.HTTP_400_BAD_REQUEST
-    #         )
+# playlist = self.get_object()
 
-    #     try:
-    #         anime = Anime.objects.get(pk=anime_id)
-    #     except Anime.DoesNotExist:
-    #         return Response({'error': 'Anime not found'}, status=404)
+# anime_id = request.data.get('anime_id')
 
-    #     playlist_anime, created = PlaylistAnime.objects.get_or_create(
-    #         playlist=playlist, anime=anime
-    #     )
-    #     playlist_anime.rating = rating
-    #     playlist_anime.save()
+# rating = request.data.get('rating')
 
-    #     serializer = PlaylistSerializer(playlist)
-    #     return Response(serializer.data)
+# if not anime_id or not rating:
 
+# return Response(
 
+# {'error': 'anime_id and rating are required'},
 
+# status=status.HTTP_400_BAD_REQUEST
 
+# )
 
+# try:
 
+# anime = Anime.objects.get(pk=anime_id)
 
+# except Anime.DoesNotExist:
 
-    rating = models.PositiveSmallIntegerField(
-        default=0, validators=[MinValueValidator(1), MaxValueValidator(10)])
-    status = models.CharField(
-        max_length=20, choices=STATUS_CHOICES,
-        default="pending", db_index=True
-    )
-    is_watched = models.BooleanField(default=False, db_index=True)
-    tags = models.CharField(max_length=255, blank=True)
-    comments = models.TextField(blank=True)
+# return Response({'error': 'Anime not found'}, status=404)
 
+# playlist_anime, created = PlaylistAnime.objects.get_or_create(
 
+# playlist=playlist, anime=anime
 
+# )
 
+# playlist_anime.rating = rating
 
+# playlist_anime.save()
 
+# serializer = PlaylistSerializer(playlist)
 
+# return Response(serializer.data)
 
+---
 
+rating = models.PositiveSmallIntegerField(
+default=0, validators=[MinValueValidator(1), MaxValueValidator(10)])
+status = models.CharField(
+max_length=20, choices=STATUS_CHOICES,
+default="pending", db_index=True
+)
+is_watched = models.BooleanField(default=False, db_index=True)
+tags = models.CharField(max_length=255, blank=True)
+comments = models.TextField(blank=True)
 
-
-
-
-
-
-
-
-
-
+---
 
 """Viewsets for Playlists App."""
 
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext as \_
 from rest_framework.viewsets import ModelViewSet, GenericViewSet
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.mixins import ListModelMixin, RetrieveModelMixin
@@ -91,12 +85,11 @@ from rest_framework import status
 from apps.utils.permissions import IsOwner
 from apps.playlists.models import Playlist, PlaylistAnime, PlaylistManga
 from apps.playlists.serializers import (
-    PlaylistSerializer, PlaylistAnimeSerializer, PlaylistMangaSerializer
+PlaylistSerializer, PlaylistAnimeSerializer, PlaylistMangaSerializer
 )
 
-
 class PlaylistViewSet(ModelViewSet):
-    """ViewSet for managing playlists."""
+"""ViewSet for managing playlists."""
 
     serializer_class = PlaylistSerializer
     permission_classes = [IsAuthenticated, IsOwner]
@@ -141,9 +134,8 @@ class PlaylistViewSet(ModelViewSet):
             status=status.HTTP_404_NOT_FOUND
         )
 
-
 class PlaylistAnimeViewSet(ListModelMixin, RetrieveModelMixin, GenericViewSet):
-    """ViewSet for managing anime in playlists."""
+"""ViewSet for managing anime in playlists."""
 
     serializer_class = PlaylistAnimeSerializer
     ordering = ["id"]    # Add order field
@@ -172,9 +164,8 @@ class PlaylistAnimeViewSet(ListModelMixin, RetrieveModelMixin, GenericViewSet):
             status=status.HTTP_200_OK
         )
 
-
 class PlaylistMangaViewSet(ListModelMixin, RetrieveModelMixin, GenericViewSet):
-    """ViewSet for managing manga in playlists."""
+"""ViewSet for managing manga in playlists."""
 
     serializer_class = PlaylistMangaSerializer
     permission_classes = [IsAuthenticated, IsOwner]

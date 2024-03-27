@@ -84,6 +84,9 @@ class Season(BaseModel):
         verbose_name = _("season")
         verbose_name_plural = _("season")
 
+    def __str__(self):
+        return str(self.fullname)
+
     def get_season_display_name(self):
         """Gets the season name based on the season value."""
         for choice in SEASON_CHOICES:
@@ -95,9 +98,6 @@ class Season(BaseModel):
         """Override the save method to update the fullname field."""
         self.fullname = f"{self.get_season_display_name()} {self.year}"
         super().save(*args, **kwargs)
-
-    def __str__(self):
-        return str(self.fullname)
 
 
 class Demographic(BaseModel):

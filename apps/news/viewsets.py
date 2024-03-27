@@ -17,8 +17,8 @@ class NewViewSet(ListModelMixin,
     """Viewset for managing New instances."""
     serializer_class = NewSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ["title", "author__name"]
-    ordering_fields = ["author__name"]
+    search_fields = ["title", "author__username"]
+    ordering_fields = ["author__username"]
     ordering = ["id"]
 
     def get_queryset(self):

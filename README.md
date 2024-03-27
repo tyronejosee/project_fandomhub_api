@@ -113,8 +113,8 @@ http://127.0.0.1:8000/api/schema/redoc/
 Generate translation files for the languages.
 
 ```bash
-(env) docker compose exec web django-admin makemessages -l ja --ignore=env/*
-(env) docker compose exec web django-admin makemessages -l es --ignore=env/*
+(env) django-admin makemessages -l ja --ignore=env/*
+(env) django-admin makemessages -l es --ignore=env/*
 ```
 
 > Use --ignore to exclude specific directories from translation.
@@ -122,7 +122,7 @@ Generate translation files for the languages.
 Compile translation files after making changes to translations.
 
 ```bash
-(env) docker compose exec web django-admin compilemessages
+(env) django-admin compilemessages
 ```
 
 ## Important Notes
@@ -158,3 +158,9 @@ Check the creation of migrations before creating them.
 ## License
 
 This project is under the [Apache-2.0 license](https://github.com/tyronejosee/project_fandomhub_api/blob/main/LICENSE).
+
+## TODO:
+
+```bash
+python manage.py runserver --settings=config.settings.development
+```
