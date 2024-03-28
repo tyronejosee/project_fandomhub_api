@@ -15,7 +15,7 @@ from .serializers import PlaylistAnimeSerializer
 from .serializers import PlaylistSerializer
 
 
-class PlaylistList(APIView):
+class PlaylistAPIView(APIView):
     """View for listing and creating playlists."""
     serializer_class = PlaylistSerializer
     permission_classes = [IsAuthenticated, IsOwner]
@@ -29,17 +29,8 @@ class PlaylistList(APIView):
         serializer = self.serializer_class(playlist, many=True)
         return Response(serializer.data)
 
-    def post(self, request, format=None):
-        """Create a new playlist."""
-        serializer = self.self.serializer_class(data=request.data)
-        print(serializer)
-        if serializer.is_valid(user=request.user):
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
-class PlaylistAnimeList(APIView):
+class PlaylistAnimeAPIView(APIView):
     """View for listing, adding, and removing anime from a playlist.."""
     serializer_class = PlaylistAnimeSerializer
     permission_classes = [IsAuthenticated, IsOwner]
@@ -59,16 +50,16 @@ class PlaylistAnimeList(APIView):
         playlist = Playlist.objects.get(user=self.request.user)
         anime_id = request.data.get("anime_id")
 
-        if PlaylistAnime.objects.filter(
-                playlist=playlist, anime_id=anime_id).exists():
+        if not anime_id:
             return Response(
-                {"error": "Anime already in playlist"},
+                {"errors": "anime_id is required"},
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
-        if not anime_id:
+        if PlaylistAnime.objects.filter(
+                playlist=playlist, anime_id=anime_id).exists():
             return Response(
-                {"error": "anime_id is required"},
+                {"errors": "Anime already in playlist"},
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
@@ -82,7 +73,7 @@ class PlaylistAnimeList(APIView):
 
     def delete(self, request, pk=None, format=None):
         """Remove an anime from the playlist."""
-        playlist = Playlist.objects.get(user=self.request.user)
+        playlist = get_object_or_404(Playlist, user=self.request.user)
         playlist_anime = get_object_or_404(
             PlaylistAnime,
             id=pk,
@@ -90,3 +81,24 @@ class PlaylistAnimeList(APIView):
         )
         playlist_anime.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+    def patch(self, request, pk: None):
+        playlist = get_object_or_404(Playlist, user=self.request.user)
+        playlist_anime = get_object_or_404(
+            PlaylistAnime,
+            id=pk,
+            playlist=playlist,
+        )
+
+        is_watched = request.data.get("is_watched")
+        is_favorite = request.data.get("is_favorite")
+
+        if is_watched is not None:
+            playlist_anime.is_watched = is_watched
+
+        if is_favorite is not None:
+            playlist_anime.is_favorite = is_favorite
+
+        playlist_anime.save()
+        serializer = self.serializer_class(playlist_anime)
+        return Response(serializer.data)

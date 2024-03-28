@@ -2,11 +2,11 @@
 
 from django.urls import path
 
-from .views import PlaylistAnimeList, PlaylistList
+from .views import PlaylistAPIView, PlaylistAnimeAPIView
 
 
 urlpatterns = [
-    path("api/v1/playlists/", PlaylistList.as_view()),
-    path("api/v1/playlists/animes/", PlaylistAnimeList.as_view()),
-    path("api/v1/playlists/animes/<uuid:pk>/", PlaylistAnimeList.as_view()),
+    path("api/v1/playlists/me/", PlaylistAPIView.as_view()),
+    path("api/v1/playlists/animes/", PlaylistAnimeAPIView.as_view()),
+    path("api/v1/playlists/animes/<uuid:pk>/", PlaylistAnimeAPIView.as_view()),
 ]
