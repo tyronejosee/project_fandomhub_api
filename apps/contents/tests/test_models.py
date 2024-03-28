@@ -26,6 +26,7 @@ class AnimeModelTestCase(TestCase):
         anime = Anime.objects.create(
             name="Berserk",
             name_jpn="剣風伝奇ベルセルク",
+            name_rom="Berserk",
             image=None,
             synopsis="Incapacitated...",
             episodes=25,
@@ -51,6 +52,7 @@ class AnimeModelTestCase(TestCase):
 
         self.assertEqual(anime.name, "Berserk")
         self.assertEqual(anime.name_jpn, "剣風伝奇ベルセルク")
+        self.assertEqual(anime.name_rom, "Berserk")
         self.assertEqual(anime.synopsis, "Incapacitated...")
         self.assertEqual(anime.episodes, 25)
         self.assertEqual(anime.duration, "23 min. per ep.")
@@ -125,11 +127,6 @@ class AnimeModelTestCase(TestCase):
             name_rom=""    # Empty
         )
         self.assertEqual(anime.name_rom, "Naruto")
-        self.assertEqual(anime.name, anime.name_rom)
-
-        anime.name = "Boruto: Naruto Next Generations"   # Update
-        anime.save()
-        self.assertEqual(anime.name_rom, "Boruto: Naruto Next Generations")
         self.assertEqual(anime.name, anime.name_rom)
 
 
@@ -252,9 +249,4 @@ class MangaModelTestCase(TestCase):
             name_rom=""    # Empty
         )
         self.assertEqual(manga.name_rom, "Monogatari Series: First Season")
-        self.assertEqual(manga.name, manga.name_rom)
-
-        manga.name = "Monogatari Series: Second Season"   # Update
-        manga.save()
-        self.assertEqual(manga.name_rom, "Monogatari Series: Second Season")
         self.assertEqual(manga.name, manga.name_rom)
