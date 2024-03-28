@@ -1,5 +1,6 @@
 """Views for Playlists App."""
 
+from django.core.cache import cache
 from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
@@ -8,7 +9,6 @@ from rest_framework.views import APIView
 
 from apps.contents.models import Anime, Manga
 from apps.utils.permissions import IsOwner
-
 from .models import Playlist, PlaylistAnime, PlaylistManga
 from .serializers import (
     PlaylistSerializer, PlaylistAnimeSerializer, PlaylistMangaSerializer
@@ -34,6 +34,7 @@ class PlaylistAnimeAPIView(APIView):
     """View for listing, adding, and removing animes from a playlist.."""
     serializer_class = PlaylistAnimeSerializer
     permission_classes = [IsAuthenticated, IsOwner]
+    CACHE_TIMEOUT = 7200  # Cache for 2 hours
 
     def get_queryset(self):
         playlist = Playlist.objects.get(user=self.request.user)
@@ -41,9 +42,16 @@ class PlaylistAnimeAPIView(APIView):
 
     def get(self, request, pk=None):
         """Return the current user's playlist (anime)."""
-        queryset = self.get_queryset()
-        serializer = self.serializer_class(queryset, many=True)
-        return Response(serializer.data)
+        cache_key = f"playlist_anime_{request.user.id}"
+        cached_data = cache.get(cache_key)
+
+        if cached_data is None:
+            queryset = self.get_queryset()
+            serializer = self.serializer_class(queryset, many=True)
+            cache.set(cache_key, serializer.data, self.CACHE_TIMEOUT)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
+        return Response(cached_data, status=status.HTTP_200_OK)
 
     def post(self, request, format=None):
         """Add an anime to the playlist."""
@@ -68,6 +76,11 @@ class PlaylistAnimeAPIView(APIView):
             playlist=playlist,
             anime=anime,
         )
+
+        # Invalidate cache
+        cache_key = f"playlist_anime_{request.user.id}"
+        cache.delete(cache_key)
+
         serializer = self.serializer_class(playlist_anime)
         return Response(serializer.data)
 
@@ -93,6 +106,10 @@ class PlaylistAnimeAPIView(APIView):
         if is_favorite is not None:
             playlist_anime.is_favorite = is_favorite
 
+        # Invalidate cache
+        cache_key = f"playlist_anime_{request.user.id}"
+        cache.delete(cache_key)
+
         playlist_anime.save()
         serializer = self.serializer_class(playlist_anime)
         return Response(serializer.data)
@@ -105,6 +122,11 @@ class PlaylistAnimeAPIView(APIView):
             id=pk,
             playlist=playlist,
         )
+
+        # Invalidate cache
+        cache_key = f"playlist_anime_{request.user.id}"
+        cache.delete(cache_key)
+
         playlist_anime.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
@@ -113,6 +135,7 @@ class PlaylistMangaAPIView(APIView):
     """View for listing, adding, and removing mangas from a playlist.."""
     serializer_class = PlaylistMangaSerializer
     permission_classes = [IsAuthenticated, IsOwner]
+    CACHE_TIMEOUT = 7200  # Cache for 2 hours
 
     def get_queryset(self):
         playlist = Playlist.objects.get(user=self.request.user)
@@ -120,9 +143,16 @@ class PlaylistMangaAPIView(APIView):
 
     def get(self, request, pk=None):
         """Return the current user's playlist (manga)."""
-        queryset = self.get_queryset()
-        serializer = self.serializer_class(queryset, many=True)
-        return Response(serializer.data)
+        cache_key = f"playlist_manga_{request.user.id}"
+        cached_data = cache.get(cache_key)
+
+        if cached_data is None:
+            queryset = self.get_queryset()
+            serializer = self.serializer_class(queryset, many=True)
+            cache.set(cache_key, serializer.data, self.CACHE_TIMEOUT)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+
+        return Response(cached_data, status=status.HTTP_200_OK)
 
     def post(self, request, format=None):
         """Add an manga to the playlist."""
@@ -147,6 +177,11 @@ class PlaylistMangaAPIView(APIView):
             playlist=playlist,
             manga=manga,
         )
+
+        # Invalidate cache
+        cache_key = f"playlist_manga_{request.user.id}"
+        cache.delete(cache_key)
+
         serializer = self.serializer_class(playlist_manga)
         return Response(serializer.data)
 
@@ -172,6 +207,10 @@ class PlaylistMangaAPIView(APIView):
         if is_favorite is not None:
             playlist_manga.is_favorite = is_favorite
 
+        # Invalidate cache
+        cache_key = f"playlist_manga_{request.user.id}"
+        cache.delete(cache_key)
+
         playlist_manga.save()
         serializer = self.serializer_class(playlist_manga)
         return Response(serializer.data)
@@ -184,5 +223,10 @@ class PlaylistMangaAPIView(APIView):
             id=pk,
             playlist=playlist,
         )
+
+        # Invalidate cache
+        cache_key = f"playlist_manga_{request.user.id}"
+        cache.delete(cache_key)
+
         playlist_manga.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
