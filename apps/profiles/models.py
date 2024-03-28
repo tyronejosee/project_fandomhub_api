@@ -13,7 +13,8 @@ User = settings.AUTH_USER_MODEL
 class Profile(BaseModel):
     """Model definition for Profile (Entity)."""
     user = models.OneToOneField(
-        User, on_delete=models.CASCADE, verbose_name=_("user")
+        User, on_delete=models.CASCADE, related_name="profile",
+        db_index=True, verbose_name=_("user"),
     )
     bio = models.TextField(_("bio"), blank=True, null=True)
     website = models.URLField(_("website"), blank=True, null=True)

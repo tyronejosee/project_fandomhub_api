@@ -54,7 +54,7 @@ class PlaylistAnime(PlaylistBase):
     """Model definition for PlaylistAnime (Pivot)."""
     anime = models.ForeignKey(
         Anime, on_delete=models.CASCADE,
-        related_name="playlist_animes", verbose_name=_("anime")
+        related_name="playlist_anime", verbose_name=_("anime")
     )
 
     class Meta:
@@ -70,7 +70,7 @@ class PlaylistManga(PlaylistBase):
     """Model definition for PlaylistManga (Pivot)."""
     manga = models.ForeignKey(
         Manga, on_delete=models.CASCADE,
-        related_name="playlist_mangas", verbose_name=_("manga")
+        related_name="playlist_manga", verbose_name=_("manga")
     )
 
     class Meta:
