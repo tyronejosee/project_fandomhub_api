@@ -2,6 +2,7 @@
 
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django.core.exceptions import ValidationError
 from django.utils.translation import gettext as _
 
 from apps.utils.paths import image_path
@@ -70,14 +71,16 @@ class Theme(BaseModel, SlugMixin):
 
 class Season(BaseModel):
     """Model definition for Season (Catalog)."""
-    season = models.IntegerField(
-        _("season"), choices=SEASON_CHOICES, default=0
+    season = models.CharField(
+        _("season"), max_length=10, choices=SEASON_CHOICES, default="pending"
     )
     year = models.IntegerField(
         _("year"), default=2010, db_index=True,
         validators=[MinValueValidator(1900), MaxValueValidator(2100)]
     )
-    fullname = models.CharField(_("fullname"), max_length=255, blank=True)
+    fullname = models.CharField(
+        _("fullname"), max_length=255, unique=True, blank=True
+    )
 
     class Meta:
         """Meta definition for Season."""
@@ -87,16 +90,12 @@ class Season(BaseModel):
     def __str__(self):
         return str(self.fullname)
 
-    def get_season_display_name(self):
-        """Gets the season name based on the season value."""
-        for choice in SEASON_CHOICES:
-            if choice[0] == self.season:
-                return choice[1]
-        return _("Pending")
-
     def save(self, *args, **kwargs):
         """Override the save method to update the fullname field."""
-        self.fullname = f"{self.get_season_display_name()} {self.year}"
+        fullname_caps = self.season.capitalize()
+        self.fullname = f"{fullname_caps} {self.year}"
+        if Season.objects.filter(fullname=self.fullname).exists():
+            raise ValidationError("The fullname field must be unique.")
         super().save(*args, **kwargs)
 
 

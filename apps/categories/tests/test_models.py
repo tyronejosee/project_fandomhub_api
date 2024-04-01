@@ -167,16 +167,16 @@ class SeasonModelTestCase(TestCase):
 
     def test_update_season(self):
         """Test updating a season."""
-        season = Season(season=1, year=2022)
+        season = Season(season="winter", year=2022)
         season.save()
 
-        season.season = 2
+        season.season = "spring"
         season.year = 2023
         season.full_clean()
         season.save()
 
         updated_season = Season.objects.get(pk=season.pk)
-        self.assertEqual(updated_season.season, 2)
+        self.assertEqual(updated_season.season, "spring")
         self.assertEqual(updated_season.year, 2023)
 
     def test_delete_season(self):
