@@ -16,7 +16,7 @@ class AnimeModelTestCase(TestCase):
         self.studio = Studio.objects.create(name="OLM")
         self.genre = Genre.objects.create(name="Action")
         self.theme = Theme.objects.create(name="Gore")
-        self.season = Season.objects.create(season=1, year=1997)
+        self.season = Season.objects.create(season="spring", year=1997)
         self.demographic = Demographic.objects.create(
             name="Seinen"
         )
@@ -32,10 +32,10 @@ class AnimeModelTestCase(TestCase):
             episodes=25,
             duration="23 min. per ep.",
             release=date(1997, 10, 8),
-            category=1,
+            category="tv",
             website="https://www.vap.co.jp/berserk/tv.html",
             trailer="https://youtu.be/5g5uPsKDGYg",
-            status=1,
+            status="finished",
             rating=1,
             studio=self.studio,
             season=self.season,
@@ -57,12 +57,12 @@ class AnimeModelTestCase(TestCase):
         self.assertEqual(anime.episodes, 25)
         self.assertEqual(anime.duration, "23 min. per ep.")
         self.assertEqual(anime.release, date(1997, 10, 8))
-        self.assertEqual(anime.category, 1)
+        self.assertEqual(anime.category, "tv")
         self.assertEqual(
             anime.website, "https://www.vap.co.jp/berserk/tv.html"
         )
         self.assertEqual(anime.trailer, "https://youtu.be/5g5uPsKDGYg")
-        self.assertEqual(anime.status, 1)
+        self.assertEqual(anime.status, "finished")
         self.assertEqual(anime.rating, 1)
         self.assertEqual(anime.studio, self.studio)
         self.assertEqual(anime.genres.first(), self.genre)

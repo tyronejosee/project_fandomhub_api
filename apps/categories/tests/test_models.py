@@ -159,10 +159,10 @@ class SeasonModelTestCase(TestCase):
     def test_creation_season(self):
         """Test creating a season"""
         season = Season.objects.create(
-            season=1,
+            season="winter",
             year=2024
         )
-        self.assertEqual(season.season, 1)
+        self.assertEqual(season.season, "winter")
         self.assertEqual(season.year, 2024)
 
     def test_update_season(self):
@@ -181,7 +181,7 @@ class SeasonModelTestCase(TestCase):
 
     def test_delete_season(self):
         """Test deleting a season."""
-        season = Season(season=1, year=2022)
+        season = Season(season="summer", year=2022)
         season.save()
         season.delete()
         with self.assertRaises(Season.DoesNotExist):
