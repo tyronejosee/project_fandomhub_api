@@ -37,16 +37,17 @@ class Anime(BaseModel, SlugMixin):
         _("duration"), max_length=20, blank=True, null=True
     )
     release = models.DateField(_("release"), blank=True, null=True)
-    category = models.IntegerField(
-        _("category"), choices=CATEGORY_CHOICES, default=0
+    category = models.CharField(
+        _("category"), max_length=10, choices=CATEGORY_CHOICES,
+        default="pending"
     )
     website = models.URLField(max_length=255, blank=True)
     trailer = models.URLField(max_length=255, blank=True)
-    status = models.IntegerField(
-        _("status"), choices=STATUS_CHOICES, default=0
+    status = models.CharField(
+        _("status"), max_length=10, choices=STATUS_CHOICES, default="pending"
     )
-    rating = models.IntegerField(
-        _("rating"), choices=RATING_CHOICES, default=0
+    rating = models.CharField(
+        _("rating"), max_length=10, choices=RATING_CHOICES, default="pending"
     )
     studio = models.ForeignKey(
         Studio, on_delete=models.CASCADE, blank=True, null=True
@@ -97,12 +98,13 @@ class Manga(BaseModel, SlugMixin):
         _("chapters"), validators=[MinValueValidator(0)]
     )
     release = models.DateField(_("release"), blank=True, null=True)
-    media_type = models.IntegerField(
-        _("media type"), choices=MEDIA_TYPE_CHOICES, default=0
+    media_type = models.CharField(
+        _("media type"), max_length=10, choices=MEDIA_TYPE_CHOICES,
+        default="pending"
     )
     website = models.URLField(_("website"), max_length=255, blank=True)
-    status = models.IntegerField(
-        _("status"), choices=STATUS_CHOICES, default=0
+    status = models.CharField(
+        _("status"), max_length=10, choices=STATUS_CHOICES, default="pending"
     )
     author = models.ForeignKey(
         Author, on_delete=models.CASCADE, blank=True, null=True,
