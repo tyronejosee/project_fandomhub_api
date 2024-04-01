@@ -5,12 +5,15 @@ from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_cookie
 from rest_framework.viewsets import GenericViewSet
 from rest_framework.mixins import ListModelMixin, RetrieveModelMixin
+from drf_spectacular.utils import extend_schema_view
 
 from apps.utils.permissions import IsStaffOrReadOnly
 from .models import New
 from .serializers import NewSerializer, NewListSerializer
+from .schemas import new_schemas
 
 
+@extend_schema_view(**new_schemas)
 class NewViewSet(ListModelMixin,
                  RetrieveModelMixin,
                  GenericViewSet):

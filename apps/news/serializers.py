@@ -19,7 +19,7 @@ class NewListSerializer(serializers.ModelSerializer):
         ]
         read_only_fields = ["author"]
 
-    def get_author(self, obj):
+    def get_author(self, obj) -> str:
         return obj.author.username
 
 
