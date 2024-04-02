@@ -32,12 +32,6 @@ class Studio(BaseModel, SlugMixin):
     def __str__(self):
         return str(self.name)
 
-    def get_image(self):
-        """Returns the image URL or an empty string."""
-        if self.image:
-            return self.image.url
-        return ""
-
 
 class Genre(BaseModel, SlugMixin):
     """Model definition for Genre (Catalog)."""

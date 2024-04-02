@@ -1,4 +1,4 @@
-"""Schemas for Persons App."""
+"""Schemas for News App."""
 
 from drf_spectacular.utils import extend_schema
 
