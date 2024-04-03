@@ -61,7 +61,8 @@ class Anime(BaseModel, SlugMixin):
     rank = models.IntegerField(_("rank"), blank=True, null=True)
     popularity = models.IntegerField(_("popularity"), blank=True, null=True)
     favorites = models.IntegerField(
-        _("favorites"), blank=True, null=True, default=0)
+        _("favorites"), blank=True, null=True, default=0
+    )
     num_list_users = models.IntegerField(
         _("number of list users"), blank=True, null=True, default=0
     )
@@ -122,11 +123,11 @@ class Manga(BaseModel, SlugMixin):
     mean = models.FloatField(_("mean"), blank=True, null=True)
     rank = models.IntegerField(_("rank"), blank=True, null=True)
     popularity = models.IntegerField(_("popularity"), blank=True, null=True)
-    num_list_users = models.IntegerField(
-        _("number of list users"), blank=True, null=True
+    favorites = models.IntegerField(
+        _("favorites"), blank=True, null=True, default=0
     )
-    num_scoring_users = models.IntegerField(
-        _("number of scoring users"), blank=True, null=True
+    num_list_users = models.IntegerField(
+        _("number of list users"), blank=True, null=True, default=0
     )
 
     class Meta:

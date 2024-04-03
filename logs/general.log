@@ -553,3 +553,152 @@ TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
 2024-04-03 18:36:19,280:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
 2024-04-03 18:36:23,658:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
 2024-04-03 18:36:24,875:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:42:02,114:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/signals.py changed, reloading.)
+2024-04-03 18:42:04,409:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:42:05,411:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:43:26,687:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/models.py changed, reloading.)
+2024-04-03 18:43:28,739:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:43:29,881:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:43:36,662:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/models.py changed, reloading.)
+2024-04-03 18:43:38,830:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:43:39,662:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:43:59,408:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/models.py changed, reloading.)
+2024-04-03 18:44:01,625:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:44:02,625:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:44:22,811:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/models.py changed, reloading.)
+2024-04-03 18:44:25,187:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:44:26,053:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:46:05,620:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:46:29,571:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/admin.py changed, reloading.)
+2024-04-03 18:46:31,460:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:46:32,208:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:46:42,283:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/admin.py changed, reloading.)
+2024-04-03 18:46:45,321:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:46:46,257:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:48:34,311:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:48:51,837:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:54:14,687:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/signals.py changed, reloading.)
+2024-04-03 18:54:16,643:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:54:17,570:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:54:21,539:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/signals.py changed, reloading.)
+2024-04-03 18:54:23,272:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:54:24,186:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:54:59,518:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/signals.py changed, reloading.)
+2024-04-03 18:55:01,472:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:55:02,497:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:55:07,643:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/signals.py changed, reloading.)
+2024-04-03 18:55:09,787:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:55:10,543:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:55:23,006:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/signals.py changed, reloading.)
+2024-04-03 18:55:25,030:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:55:25,831:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:55:31,696:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/signals.py changed, reloading.)
+2024-04-03 18:55:33,484:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:55:34,239:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 18:55:46,913:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/signals.py changed, reloading.)
+2024-04-03 18:55:49,341:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 18:55:50,530:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 19:02:29,756:DEBUG - PIL.Image Image.py (line 363. Importing BlpImagePlugin)
+2024-04-03 19:02:29,759:DEBUG - PIL.Image Image.py (line 363. Importing BmpImagePlugin)
+2024-04-03 19:02:29,759:DEBUG - PIL.Image Image.py (line 363. Importing BufrStubImagePlugin)
+2024-04-03 19:02:29,764:DEBUG - PIL.Image Image.py (line 363. Importing CurImagePlugin)
+2024-04-03 19:02:29,765:DEBUG - PIL.Image Image.py (line 363. Importing DcxImagePlugin)
+2024-04-03 19:02:29,767:DEBUG - PIL.Image Image.py (line 363. Importing DdsImagePlugin)
+2024-04-03 19:02:29,775:DEBUG - PIL.Image Image.py (line 363. Importing EpsImagePlugin)
+2024-04-03 19:02:29,780:DEBUG - PIL.Image Image.py (line 363. Importing FitsImagePlugin)
+2024-04-03 19:02:29,781:DEBUG - PIL.Image Image.py (line 363. Importing FliImagePlugin)
+2024-04-03 19:02:29,783:DEBUG - PIL.Image Image.py (line 363. Importing FpxImagePlugin)
+2024-04-03 19:02:29,785:DEBUG - PIL.Image Image.py (line 366. Image: failed to import FpxImagePlugin: No module named 'olefile')
+2024-04-03 19:02:29,786:DEBUG - PIL.Image Image.py (line 363. Importing FtexImagePlugin)
+2024-04-03 19:02:29,788:DEBUG - PIL.Image Image.py (line 363. Importing GbrImagePlugin)
+2024-04-03 19:02:29,789:DEBUG - PIL.Image Image.py (line 363. Importing GifImagePlugin)
+2024-04-03 19:02:29,790:DEBUG - PIL.Image Image.py (line 363. Importing GribStubImagePlugin)
+2024-04-03 19:02:29,791:DEBUG - PIL.Image Image.py (line 363. Importing Hdf5StubImagePlugin)
+2024-04-03 19:02:29,793:DEBUG - PIL.Image Image.py (line 363. Importing IcnsImagePlugin)
+2024-04-03 19:02:29,796:DEBUG - PIL.Image Image.py (line 363. Importing IcoImagePlugin)
+2024-04-03 19:02:29,799:DEBUG - PIL.Image Image.py (line 363. Importing ImImagePlugin)
+2024-04-03 19:02:29,801:DEBUG - PIL.Image Image.py (line 363. Importing ImtImagePlugin)
+2024-04-03 19:02:29,803:DEBUG - PIL.Image Image.py (line 363. Importing IptcImagePlugin)
+2024-04-03 19:02:29,804:DEBUG - PIL.Image Image.py (line 363. Importing JpegImagePlugin)
+2024-04-03 19:02:29,806:DEBUG - PIL.Image Image.py (line 363. Importing Jpeg2KImagePlugin)
+2024-04-03 19:02:29,807:DEBUG - PIL.Image Image.py (line 363. Importing McIdasImagePlugin)
+2024-04-03 19:02:29,808:DEBUG - PIL.Image Image.py (line 363. Importing MicImagePlugin)
+2024-04-03 19:02:29,810:DEBUG - PIL.Image Image.py (line 366. Image: failed to import MicImagePlugin: No module named 'olefile')
+2024-04-03 19:02:29,810:DEBUG - PIL.Image Image.py (line 363. Importing MpegImagePlugin)
+2024-04-03 19:02:29,814:DEBUG - PIL.Image Image.py (line 363. Importing MpoImagePlugin)
+2024-04-03 19:02:29,830:DEBUG - PIL.Image Image.py (line 363. Importing MspImagePlugin)
+2024-04-03 19:02:29,831:DEBUG - PIL.Image Image.py (line 363. Importing PalmImagePlugin)
+2024-04-03 19:02:29,834:DEBUG - PIL.Image Image.py (line 363. Importing PcdImagePlugin)
+2024-04-03 19:02:29,836:DEBUG - PIL.Image Image.py (line 363. Importing PcxImagePlugin)
+2024-04-03 19:02:29,837:DEBUG - PIL.Image Image.py (line 363. Importing PdfImagePlugin)
+2024-04-03 19:02:29,848:DEBUG - PIL.Image Image.py (line 363. Importing PixarImagePlugin)
+2024-04-03 19:02:29,849:DEBUG - PIL.Image Image.py (line 363. Importing PngImagePlugin)
+2024-04-03 19:02:29,850:DEBUG - PIL.Image Image.py (line 363. Importing PpmImagePlugin)
+2024-04-03 19:02:29,851:DEBUG - PIL.Image Image.py (line 363. Importing PsdImagePlugin)
+2024-04-03 19:02:29,853:DEBUG - PIL.Image Image.py (line 363. Importing QoiImagePlugin)
+2024-04-03 19:02:29,854:DEBUG - PIL.Image Image.py (line 363. Importing SgiImagePlugin)
+2024-04-03 19:02:29,856:DEBUG - PIL.Image Image.py (line 363. Importing SpiderImagePlugin)
+2024-04-03 19:02:29,857:DEBUG - PIL.Image Image.py (line 363. Importing SunImagePlugin)
+2024-04-03 19:02:29,859:DEBUG - PIL.Image Image.py (line 363. Importing TgaImagePlugin)
+2024-04-03 19:02:29,861:DEBUG - PIL.Image Image.py (line 363. Importing TiffImagePlugin)
+2024-04-03 19:02:29,862:DEBUG - PIL.Image Image.py (line 363. Importing WebPImagePlugin)
+2024-04-03 19:02:29,866:DEBUG - PIL.Image Image.py (line 363. Importing WmfImagePlugin)
+2024-04-03 19:02:29,868:DEBUG - PIL.Image Image.py (line 363. Importing XbmImagePlugin)
+2024-04-03 19:02:29,870:DEBUG - PIL.Image Image.py (line 363. Importing XpmImagePlugin)
+2024-04-03 19:02:29,872:DEBUG - PIL.Image Image.py (line 363. Importing XVThumbImagePlugin)
+2024-04-03 19:03:09,648:ERROR - django.request log.py (line 241. Internal Server Error: /admin/playlists/playlistmanga/add/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1853, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1257, in save_model
+    obj.save()
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 924, in save_base
+    post_save.send(
+  File "/usr/local/lib/python3.12/site-packages/django/dispatch/dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/playlists/signals.py", line 33, in update_manga_on_favorite
+    manga = instance.anime
+            ^^^^^^^^^^^^^^
+AttributeError: 'PlaylistManga' object has no attribute 'anime'
+2024-04-03 19:03:28,459:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/signals.py changed, reloading.)
+2024-04-03 19:03:30,754:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 19:03:31,632:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
