@@ -11,6 +11,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 env = environ.Env()
 environ.Env.read_env("config/.env")
 
+# Directorio para los logs
+LOG_DIR = os.path.join(BASE_DIR, 'logs')
+
+# Crear el directorio de logs si no existe
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
+
 BASE_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -206,6 +213,41 @@ SPECTACULAR_SETTINGS = {
     "SWAGGER_UI_DIST": "SIDECAR",
     "SWAGGER_UI_FAVICON_HREF": "SIDECAR",
     "REDOC_DIST": "SIDECAR",
+}
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "file": {
+            "class": "logging.FileHandler",
+            'filename': os.path.join(LOG_DIR, "general.log"),
+            "level": "DEBUG",
+            "formatter": "verbose"
+        },
+        "console": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "simple"
+        }
+    },
+    "loggers": {
+        "": {
+            "level": "DEBUG",
+            "handlers": ["file", "console"],
+            # "propagate": True,
+        }
+    },
+    "formatters": {
+        "simple": {
+            "format": "{asctime}:{levelname} {message}",
+            "style": "{"
+        },
+        "verbose": {
+            "format": "{asctime}:{levelname} - {name} {module}.py (line {lineno:d}. {message})",
+            "style": "{"
+        }
+    }
 }
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

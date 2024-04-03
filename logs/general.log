@@ -1,0 +1,5 @@
+2024-04-03 13:56:43,124:DEBUG - psycopg.pq couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 13:56:44,255:INFO - django.utils.autoreload Watching for file changes with StatReloader)
+2024-04-03 13:57:11,641:INFO - django.utils.autoreload /app/config/settings/base.py changed, reloading.)
+2024-04-03 13:57:19,852:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 13:57:20,644:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
