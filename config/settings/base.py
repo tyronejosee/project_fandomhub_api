@@ -11,13 +11,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 env = environ.Env()
 environ.Env.read_env("config/.env")
 
-# Directorio para los logs
-LOG_DIR = os.path.join(BASE_DIR, 'logs')
-
-# Crear el directorio de logs si no existe
-if not os.path.exists(LOG_DIR):
-    os.makedirs(LOG_DIR)
-
 BASE_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -215,6 +208,9 @@ SPECTACULAR_SETTINGS = {
     "REDOC_DIST": "SIDECAR",
 }
 
+LOG_DIR = os.path.join(BASE_DIR, "logs")
+
+# TODO: Add external logging service
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,
