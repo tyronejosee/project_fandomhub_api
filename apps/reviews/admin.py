@@ -2,13 +2,25 @@
 
 from django.contrib import admin
 
-from .models import Review
+from .models import ReviewAnime, ReviewManga
 
 
-@admin.register(Review)
-class ReviewAdmin(admin.ModelAdmin):
-    """Admin config for Review model."""
-    search_fields = ["user", "anime__name"]
+@admin.register(ReviewAnime)
+class ReviewAnimeAdmin(admin.ModelAdmin):
+    """Admin config for ReviewAnime model."""
+    search_fields = ["user"]
+    list_display = ["comment", "available"]
+    list_filter = ["rating",]
+    list_editable = ["available",]
+    list_per_page = 25
+    readonly_fields = ["pk", "created_at", "updated_at"]
+    ordering = ["user",]
+
+
+@admin.register(ReviewManga)
+class ReviewMangaAdmin(admin.ModelAdmin):
+    """Admin config for ReviewManga model."""
+    search_fields = ["user"]
     list_display = ["comment", "available"]
     list_filter = ["rating",]
     list_editable = ["available",]

@@ -2,31 +2,48 @@
 
 from django.db import models
 from django.conf import settings
+from django.core.validators import MaxValueValidator, MinValueValidator
 from django.utils.translation import gettext as _
 
 from apps.utils.models import BaseModel
-from apps.contents.models import Anime
+from apps.contents.models import Anime, Manga
 
 User = settings.AUTH_USER_MODEL
 
 
-class Review(BaseModel):
+class ReviewBase(BaseModel):
     """Model definition for Review."""
     user = models.ForeignKey(
         User, on_delete=models.CASCADE,
         db_index=True, verbose_name=_("user")
     )
-    anime = models.ForeignKey(
-        Anime, on_delete=models.CASCADE,
-        db_index=True, verbose_name=_("anime")
+    rating = models.IntegerField(
+        _("rating"), validators=[MinValueValidator(1), MaxValueValidator(10)]
     )
-    rating = models.DecimalField(_("rating"), max_digits=2, decimal_places=1)
     comment = models.TextField(_("comment"))
 
     class Meta:
-        """Meta definition for Review."""
-        verbose_name = _("review")
-        verbose_name_plural = _("reviews")
+        """Meta definition for ReviewBase."""
+        abstract = True
+
+
+class ReviewAnime(ReviewBase):
+    """Model definition for ReviewAnime (Pivot)."""
+    anime = models.ForeignKey(
+        Anime, on_delete=models.CASCADE,
+        related_name="review_anime", verbose_name=_("anime")
+    )
 
     def __str__(self):
-        return str(self.comment)
+        return str(f"{self.user} {self.anime}")
+
+
+class ReviewManga(ReviewBase):
+    """Model definition for ReviewManga (Pivot)."""
+    manga = models.ForeignKey(
+        Manga, on_delete=models.CASCADE,
+        related_name="review_manga", verbose_name=_("manga")
+    )
+
+    def __str__(self):
+        return str(f"{self.user} {self.manga}")
