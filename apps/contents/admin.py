@@ -14,8 +14,8 @@ class AnimeAdmin(admin.ModelAdmin):
     list_editable = ["available",]
     list_per_page = 25
     readonly_fields = [
-        "pk", "slug", "mean", "rank", "popularity", "num_list_users",
-        "num_scoring_users", "created_at", "updated_at"
+        "pk", "slug", "mean", "rank", "popularity", "favorites",
+        "num_list_users", "created_at", "updated_at"
     ]
     autocomplete_fields = ["studio", "genres", "themes", "season"]
     ordering = ["name"]

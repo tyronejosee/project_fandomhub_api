@@ -19,7 +19,7 @@ class PlaylistAdmin(admin.ModelAdmin):
 class PlaylistAnimeAdmin(admin.ModelAdmin):
     """Admin config for PlaylistAnime model."""
     search_fields = ["playlist",]
-    list_display = ["playlist",]
+    list_display = ["playlist", "anime"]
     list_filter = ["is_watched", "status"]
     list_per_page = 25
     readonly_fields = ["pk",]
@@ -31,7 +31,7 @@ class PlaylistAnimeAdmin(admin.ModelAdmin):
 class PlaylistMangaAdmin(admin.ModelAdmin):
     """Admin config for PlaylistManga model."""
     search_fields = ["playlist",]
-    list_display = ["playlist",]
+    list_display = ["playlist", "manga"]
     list_filter = ["is_watched", "status"]
     list_per_page = 25
     readonly_fields = ["pk",]
