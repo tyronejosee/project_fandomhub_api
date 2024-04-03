@@ -42,8 +42,8 @@ class AnimeModelTestCase(TestCase):
             mean=8.0,
             rank=1,
             popularity=100,
+            favorites=3,
             num_list_users=1000,
-            num_scoring_users=500
         )
 
         # Set ManyToManyField
@@ -71,8 +71,8 @@ class AnimeModelTestCase(TestCase):
         self.assertEqual(anime.mean, 8.0)
         self.assertEqual(anime.rank, 1)
         self.assertEqual(anime.popularity, 100)
+        self.assertEqual(anime.favorites, 3)
         self.assertEqual(anime.num_list_users, 1000)
-        self.assertEqual(anime.num_scoring_users, 500)
 
     def test_duplicate_anime_name(self):
         """Test for duplicate anime name."""

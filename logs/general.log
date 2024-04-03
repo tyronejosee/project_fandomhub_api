@@ -409,3 +409,5 @@ TypeError: unsupported operand type(s) for +=: 'NoneType' and 'int'
 2024-04-03 16:12:24,012:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/signals.py changed, reloading.)
 2024-04-03 16:12:25,781:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
 2024-04-03 16:12:26,505:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-03 13:23:36,525:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-03 13:26:38,786:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
