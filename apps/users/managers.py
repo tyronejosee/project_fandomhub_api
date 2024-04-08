@@ -4,6 +4,7 @@ from django.contrib.auth.models import BaseUserManager
 from django.utils.translation import gettext as _
 
 from apps.profiles.models import Profile
+from apps.playlists.models import Playlist
 
 
 class UserManager(BaseUserManager):
@@ -20,8 +21,12 @@ class UserManager(BaseUserManager):
         user.set_password(password)
         user.save()
 
+        # Create a profile and playlist
         profile = Profile.objects.create(user=user)
         profile.save()
+        playlist = Playlist.objects.create(user=user)
+        playlist.save()
+
         return user
 
     def create_superuser(self, email, password, **kwargs):
