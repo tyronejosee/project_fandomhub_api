@@ -67,22 +67,22 @@ EMAIL_USE_TLS=""
 Docker run.
 
 ```bash
-(env) docker compose up
-(env) docker compose up --build
-(env) docker compose stop
-(env) docker compose logs -f
-(env) docker compose start
-(env) docker compose restart <service>
+(env) docker compose -f docker-compose.dev.yml up
+(env) docker compose -f docker-compose.dev.yml up --build
+(env) docker compose -f docker-compose.dev.yml stop
+(env) docker compose -f docker-compose.dev.yml logs -f
+(env) docker compose -f docker-compose.dev.yml start
+(env) docker compose -f docker-compose.dev.yml restart <service>
 ```
 
 Perform database migrations.
 
 ```bash
-(env) docker compose exec web bash
-(env) docker compose exec web python manage.py makemigrations*
-(env) docker compose exec web python manage.py migrate
-(env) docker compose exec web python manage.py migrate <app_label> <migration_name>
-(env) docker compose exec web python manage.py showmigrations
+(env) docker compose -f docker-compose.dev.yml exec web bash
+(env) docker compose -f docker-compose.dev.yml exec web python manage.py makemigrations*
+(env) docker compose -f docker-compose.dev.yml exec web python manage.py migrate
+(env) docker compose -f docker-compose.dev.yml exec web python manage.py migrate <app_label> <migration_name>
+(env) docker compose -f docker-compose.dev.yml exec web python manage.py showmigrations
 ```
 
 > Note: Create the migrations in case Django skips any.
@@ -92,7 +92,7 @@ Perform database migrations.
 Create a superuser to access the entire site without restrictions.
 
 ```bash
-(env) docker compose exec web python manage.py createsuperuser
+(env) docker compose -f docker-compose.dev.yml exec web python manage.py createsuperuser
 ```
 
 Log in to `admin`:
@@ -130,10 +130,10 @@ Compile translation files after making changes to translations.
 Check the creation of migrations before creating them.
 
 ```bash
-(env) docker compose exec web bash
-(env) docker compose exec web python manage.py makemigrations users
-(env) docker compose exec web python manage.py makemigrations
-(env) docker compose exec web python manage.py migrate
+(env) docker compose -f docker-compose.dev.yml exec web bash
+(env) docker compose -f docker-compose.dev.yml exec web python manage.py makemigrations users
+(env) docker compose -f docker-compose.dev.yml exec web python manage.py makemigrations
+(env) docker compose -f docker-compose.dev.yml exec web python manage.py migrate
 ```
 
 > Note: Checking migrations before their creation is necessary to avoid inconsistencies in user models.
@@ -141,9 +141,9 @@ Check the creation of migrations before creating them.
 ## PostgreSQL
 
 ```bash
-(env) docker compose exec web python manage.py dumpdata > backup.json
-(env) docker compose exec web python manage.py loaddata
-(env) docker compose exec db psql -U postgres -d fandomhub_db
+(env) docker compose -f docker-compose.dev.yml exec web python manage.py dumpdata > backup.json
+(env) docker compose -f docker-compose.dev.yml exec web python manage.py loaddata
+(env) docker compose -f docker-compose.dev.yml exec db psql -U postgres -d fandomhub_db
 (fandomhub_db=#) \dt
 (fandomhub_db=#) \d <table>
 ```
@@ -158,9 +158,3 @@ Check the creation of migrations before creating them.
 ## License
 
 This project is under the [Apache-2.0 license](https://github.com/tyronejosee/project_fandomhub_api/blob/main/LICENSE).
-
-## TODO:
-
-```bash
-python manage.py runserver --settings=config.settings.development
-```

@@ -759,3 +759,6 @@ AttributeError: 'PlaylistManga' object has no attribute 'anime'
 2024-04-08 15:33:31,775:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/managers.py changed, reloading.)
 2024-04-08 15:33:33,459:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
 2024-04-08 15:33:34,174:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-08 16:35:53,185:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-08 16:35:55,397:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-08 16:35:56,164:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
