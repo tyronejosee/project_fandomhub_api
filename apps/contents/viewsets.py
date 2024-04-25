@@ -4,7 +4,8 @@ from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_cookie
 from django.utils.translation import gettext as _
-from rest_framework import viewsets, status
+from rest_framework import status
+from rest_framework.viewsets import ModelViewSet
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema_view, extend_schema
@@ -14,13 +15,12 @@ from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import MediumSetPagination
 from .models import Anime, Manga
 from .serializers import (
-    AnimeSerializer, MangaSerializer, AnimeListSerializer, MangaListSerializer
-)
+    AnimeSerializer, MangaSerializer, AnimeListSerializer, MangaListSerializer)
 from .schemas import anime_schemas, manga_schemas
 
 
 @extend_schema_view(**anime_schemas)
-class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
     """
     Viewset for managing Anime instances.
     """
@@ -31,7 +31,7 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Anime.objects.filter(available=True)
+        return Anime.objects.get_available()
 
     def get_serializer_class(self):
         if self.action == "list":
@@ -43,22 +43,17 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
-
     @extend_schema(
         summary="Get Popular Animes",
         description="Retrieve a list of the 50 most popular anime."
     )
-    @action(detail=False, methods=["get"], url_path="populars")
+    @action(detail=False, methods=["get"], url_path="popular")
     @method_decorator(cache_page(60 * 60 * 2))
     def popular_list(self, request, pk=None):
         """
         Action return a list of the 50 most popular anime.
         """
-        popular_list = Anime.objects.order_by("-popularity")[:50]
+        popular_list = Anime.objects.get_popular()[:50]
         if not popular_list:
             return Response(status=status.HTTP_204_NO_CONTENT)
         serializer = AnimeListSerializer(popular_list, many=True)
@@ -66,7 +61,7 @@ class AnimeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
 
 
 @extend_schema_view(**manga_schemas)
-class MangaViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
     """
     Viewset for managing Manga instances.
     """
@@ -77,7 +72,7 @@ class MangaViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Manga.objects.filter(available=True)
+        return Manga.objects.get_available()
 
     def get_serializer_class(self):
         if self.action == "list":
@@ -89,22 +84,17 @@ class MangaViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
-
     @extend_schema(
         summary="Get Popular Mangas",
         description="Retrieve a list of the 50 most popular mangas."
     )
-    @action(detail=False, methods=["get"], url_path="populars")
+    @action(detail=False, methods=["get"], url_path="popular")
     @method_decorator(cache_page(60 * 60 * 2))
     def popular_list(self, request, pk=None):
         """
         Action return a list of the 50 most popular mangas.
         """
-        popular_list = Manga.objects.order_by("-popularity")[:50]
+        popular_list = Manga.objects.get_popular()[:50]
         paginator = MediumSetPagination()
         result_page = paginator.paginate_queryset(popular_list, request)
         if result_page is not None:

@@ -5,8 +5,7 @@ from drf_spectacular.utils import extend_schema_field
 
 from apps.categories.serializers import (
     GenreSerializer, StudioListSerializer, SeasonListSerializer,
-    DemographicSerializer
-)
+    DemographicSerializer)
 from .models import Anime, Manga
 
 
