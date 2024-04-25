@@ -146,6 +146,7 @@ class MangaModelTestCase(TestCase):
         manga = Manga.objects.create(
             name="Chainsaw Man",
             name_jpn="チェンソーマン",
+            name_rom="Chainsaw Man",
             image=None,
             synopsis="Denji has...",
             chapters=97,
@@ -158,8 +159,7 @@ class MangaModelTestCase(TestCase):
             mean=8.0,
             rank=1,
             popularity=100,
-            num_list_users=1000,
-            num_scoring_users=500,
+            num_list_users=1000
         )
 
         # Set ManyToManyField
@@ -167,6 +167,7 @@ class MangaModelTestCase(TestCase):
 
         self.assertEqual(manga.name, "Chainsaw Man")
         self.assertEqual(manga.name_jpn, "チェンソーマン")
+        self.assertEqual(manga.name_rom, "Chainsaw Man")
         self.assertEqual(manga.synopsis, "Denji has...")
         self.assertEqual(manga.chapters, 97)
         self.assertEqual(manga.release, date(2018, 12, 3))
@@ -182,7 +183,6 @@ class MangaModelTestCase(TestCase):
         self.assertEqual(manga.rank, 1)
         self.assertEqual(manga.popularity, 100)
         self.assertEqual(manga.num_list_users, 1000)
-        self.assertEqual(manga.num_scoring_users, 500)
 
     def test_duplicate_manga_name(self):
         """Test for duplicate manga name."""

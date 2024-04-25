@@ -5,6 +5,7 @@ from django.db import models
 from django.utils.translation import gettext as _
 
 from apps.utils.models import BaseModel
+from .managers import NewManager
 from .choices import TAG_CHOICES
 
 User = settings.AUTH_USER_MODEL
@@ -18,14 +19,15 @@ class New(BaseModel):
     image = models.ImageField(_("image"), upload_to="news/")
     source = models.URLField(_("source"), max_length=255)
     tag = models.CharField(
-        _("tag"), max_length=15, choices=TAG_CHOICES, default="pending"
-    )
+        _("tag"), max_length=15, choices=TAG_CHOICES, default="pending")
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, verbose_name=_("user")
-    )
+        User, on_delete=models.CASCADE, verbose_name=_("user"))
+
+    objects = NewManager()
 
     class Meta:
         """Meta definition for New."""
+        ordering = ["pk"]
         verbose_name = _("New")
         verbose_name_plural = _("News")
         indexes = [
