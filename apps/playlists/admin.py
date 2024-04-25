@@ -12,7 +12,7 @@ class PlaylistAdmin(admin.ModelAdmin):
     list_display = ["user",]
     list_per_page = 25
     readonly_fields = ["pk",]
-    ordering = ["pk",]
+    ordering = ["created_at",]
 
 
 @admin.register(PlaylistAnime)
@@ -24,7 +24,7 @@ class PlaylistAnimeAdmin(admin.ModelAdmin):
     list_per_page = 25
     readonly_fields = ["pk",]
     autocomplete_fields = ["anime"]
-    ordering = ["pk",]    # Order pending
+    ordering = ["created_at",]    # Order pending
 
 
 @admin.register(PlaylistManga)
@@ -36,4 +36,4 @@ class PlaylistMangaAdmin(admin.ModelAdmin):
     list_per_page = 25
     readonly_fields = ["pk",]
     autocomplete_fields = ["manga"]
-    ordering = ["pk",]    # Order pending
+    ordering = ["created_at",]    # Order pending

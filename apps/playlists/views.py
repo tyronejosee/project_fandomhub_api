@@ -11,8 +11,7 @@ from apps.contents.models import Anime, Manga
 from apps.utils.permissions import IsOwner
 from .models import Playlist, PlaylistAnime, PlaylistManga
 from .serializers import (
-    PlaylistSerializer, PlaylistAnimeSerializer, PlaylistMangaSerializer
-)
+    PlaylistSerializer, PlaylistAnimeSerializer, PlaylistMangaSerializer)
 
 
 class PlaylistAPIView(APIView):

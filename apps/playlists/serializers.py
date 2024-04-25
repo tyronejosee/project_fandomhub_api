@@ -5,8 +5,7 @@ from rest_framework import serializers
 
 from apps.contents.models import Anime, Manga
 from apps.contents.serializers import (
-    AnimeMinimumSerializer, MangaMinimumSerializer
-)
+    AnimeMinimumSerializer, MangaMinimumSerializer)
 from .models import Playlist, PlaylistAnime, PlaylistManga
 
 

@@ -7,6 +7,7 @@ from django.utils.translation import gettext as _
 
 from apps.utils.models import BaseModel
 from apps.contents.models import Anime, Manga
+from .managers import PlaylistManager, PlaylistBaseManager
 from .choices import STATUS_CHOICES
 
 User = settings.AUTH_USER_MODEL
@@ -15,12 +16,14 @@ User = settings.AUTH_USER_MODEL
 class Playlist(BaseModel):
     """Model definition for Playlist (Entity)."""
     user = models.OneToOneField(
-        User, on_delete=models.CASCADE, db_index=True, verbose_name=_("user")
-    )
+        User, on_delete=models.CASCADE, db_index=True, verbose_name=_("user"))
     name = models.CharField(_("name"), max_length=255)
+
+    objects = PlaylistManager()
 
     class Meta:
         """Meta definition for Playlist."""
+        ordering = ["pk"]
         verbose_name = _("playlist")
         verbose_name_plural = _("playlists")
 
@@ -32,19 +35,17 @@ class PlaylistBase(BaseModel):
     """Model definition for PlaylistBase (Base)."""
     playlist = models.ForeignKey(
         Playlist, on_delete=models.CASCADE,
-        db_index=True, verbose_name=_("playlist")
-    )
+        db_index=True, verbose_name=_("playlist"))
     status = models.CharField(
         _("status"), max_length=20, choices=STATUS_CHOICES,
-        default="pending", db_index=True
-    )
+        default="pending", db_index=True)
     is_watched = models.BooleanField(
-        _("is watched"), default=False, db_index=True
-    )
+        _("is watched"), default=False, db_index=True)
     is_favorite = models.BooleanField(
-        _("is favorite"), default=False, db_index=True
-    )
+        _("is favorite"), default=False, db_index=True)
     # order = models.IntegerField(default=0, db_index=True)
+
+    objects = PlaylistBaseManager()
 
     class Meta:
         """Meta definition for PlaylistBase."""
@@ -55,11 +56,11 @@ class PlaylistAnime(PlaylistBase):
     """Model definition for PlaylistAnime (Pivot)."""
     anime = models.ForeignKey(
         Anime, on_delete=models.CASCADE,
-        related_name="playlist_anime", verbose_name=_("anime")
-    )
+        related_name="playlist_anime", verbose_name=_("anime"))
 
     class Meta:
         """Meta definition for PlaylistAnime."""
+        ordering = ["pk"]
         verbose_name = _("playlist anime")
         verbose_name_plural = _("playlist animes")
 
@@ -71,11 +72,11 @@ class PlaylistManga(PlaylistBase):
     """Model definition for PlaylistManga (Pivot)."""
     manga = models.ForeignKey(
         Manga, on_delete=models.CASCADE,
-        related_name="playlist_manga", verbose_name=_("manga")
-    )
+        related_name="playlist_manga", verbose_name=_("manga"))
 
     class Meta:
         """Meta definition for PlaylistManga."""
+        ordering = ["pk"]
         verbose_name = _("playlist manga")
         verbose_name_plural = _("playlist mangas")
 
