@@ -13,4 +13,4 @@ class AuthorAdmin(admin.ModelAdmin):
     list_filter = ["available",]
     list_per_page = 25
     readonly_fields = ["pk", "created_at", "updated_at"]
-    ordering = ["pk",]
+    ordering = ["-created_at",]

@@ -32,17 +32,12 @@ class AuthorViewSet(LogicalDeleteMixin, ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Author.objects.filter(available=True)
+        return Author.objects.get_available().only("id", "name")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
 
     @extend_schema(
         summary="Get Mangas for Author",
@@ -55,12 +50,12 @@ class AuthorViewSet(LogicalDeleteMixin, ModelViewSet):
         Retrieve a list of mangas for the specified author.
         """
         manga_list = Manga.objects.filter(author=pk)
+        if not manga_list.exists():
+            return Response(
+                {"detail": _("There are no mangas for this author.")},
+                status=status.HTTP_404_NOT_FOUND
+            )
         paginator = MediumSetPagination()
-        result_page = paginator.paginate_queryset(manga_list, request)
-        if result_page is not None:
-            serializer = MangaListSerializer(result_page, many=True).data
-            return paginator.get_paginated_response(serializer)
-        return Response(
-            {"detail": _("There are no mangas for this author.")},
-            status=status.HTTP_404_NOT_FOUND
-        )
+        paginated_data = paginator.paginate_queryset(manga_list, request)
+        serializer = MangaListSerializer(paginated_data, many=True)
+        return paginator.get_paginated_response(serializer.data)
