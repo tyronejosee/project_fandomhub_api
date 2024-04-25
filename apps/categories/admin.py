@@ -13,7 +13,7 @@ class StudioAdmin(admin.ModelAdmin):
     list_filter = ["available",]
     list_per_page = 25
     readonly_fields = ["pk", "slug", "created_at", "updated_at",]
-    ordering = ["pk",]
+    ordering = ["created_at",]
 
 
 @admin.register(Genre)
@@ -24,7 +24,7 @@ class GenreAdmin(admin.ModelAdmin):
     list_filter = ["available",]
     list_per_page = 25
     readonly_fields = ["pk", "slug", "created_at", "updated_at",]
-    ordering = ["pk",]
+    ordering = ["created_at",]
 
 
 @admin.register(Theme)
@@ -35,7 +35,7 @@ class ThemeAdmin(admin.ModelAdmin):
     list_filter = ["available",]
     list_per_page = 25
     readonly_fields = ["pk", "slug", "created_at", "updated_at",]
-    ordering = ["pk",]
+    ordering = ["created_at",]
 
 
 @admin.register(Season)
@@ -46,7 +46,7 @@ class SeasonAdmin(admin.ModelAdmin):
     list_filter = ["available", "year", "season"]
     list_per_page = 25
     readonly_fields = ["pk", "fullname", "created_at", "updated_at",]
-    ordering = ["pk",]
+    ordering = ["created_at",]
 
 
 @admin.register(Demographic)

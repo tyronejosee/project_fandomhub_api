@@ -5,8 +5,7 @@ from rest_framework.routers import DefaultRouter
 
 from .viewsets import (
     StudioViewSet, GenreViewSet, ThemeViewSet,
-    SeasonViewSet, DemographicViewSet
-)
+    SeasonViewSet, DemographicViewSet)
 
 
 router_v1 = DefaultRouter()

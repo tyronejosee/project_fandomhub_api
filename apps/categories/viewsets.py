@@ -1,14 +1,11 @@
 """Viewsets for Contents App."""
 
-from django.db import transaction
-from django.core.cache import cache
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_cookie
 from django.utils.translation import gettext as _
-from rest_framework import viewsets
+from rest_framework.viewsets import ModelViewSet
 from rest_framework import status
-# from rest_framework.permissions import AllowAny
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from drf_spectacular.utils import extend_schema_view, extend_schema
@@ -21,16 +18,14 @@ from apps.contents.serializers import AnimeListSerializer, MangaListSerializer
 from .models import Studio, Genre, Theme, Season, Demographic
 from .serializers import (
     StudioSerializer, GenreSerializer, ThemeSerializer,
-    SeasonSerializer, DemographicSerializer
-)
+    SeasonSerializer, DemographicSerializer)
 from .schemas import (
     studio_schemas, genre_schemas, theme_schemas,
-    season_schemas, demographic_schemas
-)
+    season_schemas, demographic_schemas)
 
 
 @extend_schema_view(**studio_schemas)
-class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
     """
     Viewset for managing Studio instances.
     """
@@ -42,19 +37,14 @@ class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     # lookup_field = "slug"
 
     def get_queryset(self):
-        return Studio.objects.filter(
-            available=True
-        ).defer("available", "created_at", "updated_at")
+        return Studio.objects.get_available().defer(
+            "available", "created_at", "updated_at"
+        )
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
 
     @extend_schema(
         summary="Get Animes for Studio",
@@ -80,7 +70,7 @@ class StudioViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
 
 
 @extend_schema_view(**genre_schemas)
-class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
     """
     Viewset for managing Genre instances.
     """
@@ -92,19 +82,12 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Genre.objects.filter(
-            available=True
-        ).only("id", "name", "slug")
+        return Genre.objects.get_available().only("id", "name", "slug")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
 
     @extend_schema(
         summary="Get Animes for Genre",
@@ -152,7 +135,7 @@ class GenreViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
 
 
 @extend_schema_view(**theme_schemas)
-class ThemeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+class ThemeViewSet(LogicalDeleteMixin, ModelViewSet):
     """
     Viewset for managing Theme instances.
     """
@@ -163,36 +146,16 @@ class ThemeViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Theme.objects.filter(
-            available=True
-        ).only("id", "name", "slug")
+        return Theme.objects.get_available().only("id", "name", "slug")
 
-    @method_decorator(cache_page(60 * 60 * 2, key_prefix="theme_list"))
+    @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
-
-    @transaction.atomic
-    def create(self, request, *args, **kwargs):
-        cache.clear()
-        return super().create(request, *args, **kwargs)
-
-    @transaction.atomic
-    def update(self, request, *args, **kwargs):
-        return super().update(request, *args, **kwargs)
-
-    @transaction.atomic
-    def destroy(self, request, *args, **kwargs):
-        return super().destroy(request, *args, **kwargs)
-
 
 @extend_schema_view(**season_schemas)
-class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
     """
     Viewset for managing Season instances.
     """
@@ -203,19 +166,14 @@ class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Season.objects.filter(
-            available=True
-        ).only("id", "season", "year", "fullname")
+        return Season.objects.get_available().only(
+            "id", "season", "year", "fullname"
+        )
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
 
     @action(detail=True, methods=["get"], url_path="animes")
     @method_decorator(cache_page(60 * 60 * 2))
@@ -237,7 +195,7 @@ class SeasonViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
 
 
 @extend_schema_view(**demographic_schemas)
-class DemographicViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
+class DemographicViewSet(LogicalDeleteMixin, ModelViewSet):
     """
     Viewset for managing Demographic instances.
     """
@@ -248,16 +206,9 @@ class DemographicViewSet(LogicalDeleteMixin, viewsets.ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Demographic.objects.filter(
-            available=True
-        ).values("id", "name")
+        return Demographic.objects.get_available().values("id", "name")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def retrieve(self, request, *args, **kwargs):
-        return super().retrieve(request, *args, **kwargs)
