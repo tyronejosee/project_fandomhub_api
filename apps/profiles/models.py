@@ -6,6 +6,7 @@ from django.utils.translation import gettext as _
 
 from apps.utils.models import BaseModel
 from apps.utils.paths import profile_image_path
+from .managers import ProfileManager
 
 User = settings.AUTH_USER_MODEL
 
@@ -14,20 +15,20 @@ class Profile(BaseModel):
     """Model definition for Profile (Entity)."""
     user = models.OneToOneField(
         User, on_delete=models.CASCADE, related_name="profile",
-        db_index=True, verbose_name=_("user"),
-    )
+        db_index=True, verbose_name=_("user"),)
     bio = models.TextField(_("bio"), blank=True, null=True)
     website = models.URLField(_("website"), blank=True, null=True)
     birth_date = models.DateField(_("birth date"), blank=True, null=True)
     image = models.ImageField(
-        _("image"), upload_to=profile_image_path, blank=True, null=True
-    )
+        _("image"), upload_to=profile_image_path, blank=True, null=True)
     cover = models.ImageField(
-        _("cover"), upload_to=profile_image_path, blank=True, null=True
-    )
+        _("cover"), upload_to=profile_image_path, blank=True, null=True)
+
+    objects = ProfileManager()
 
     class Meta:
         """Meta definition for Profile."""
+        ordering = ["pk"]
         verbose_name = _("profile")
         verbose_name_plural = _("profiles")
 
