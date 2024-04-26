@@ -1,1 +1,0 @@
-"""Admin for Searches App."""

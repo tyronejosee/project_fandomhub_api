@@ -26,7 +26,6 @@ PROJECT_APPS = [
     "apps.contents",
     "apps.persons",
     "apps.profiles",
-    "apps.searches",
     "apps.users",
     "apps.playlists",
     "apps.reviews",

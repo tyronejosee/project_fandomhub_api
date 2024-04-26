@@ -1,1 +1,0 @@
-"""Viewsets for Searches App."""
