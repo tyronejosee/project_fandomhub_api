@@ -21,7 +21,6 @@ class ProfileViewSet(RetrieveModelMixin,
     """
     permission_classes = [IsAuthenticated]
     serializer_class = ProfileSerializer
-    ordering = ["id"]
 
     def get_queryset(self):
         user = self.request.user

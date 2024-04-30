@@ -6,14 +6,17 @@ from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from drf_spectacular.utils import extend_schema_view
 
 from apps.contents.models import Anime, Manga
 from apps.utils.permissions import IsOwner
 from .models import Playlist, PlaylistAnime, PlaylistManga
 from .serializers import (
     PlaylistSerializer, PlaylistAnimeSerializer, PlaylistMangaSerializer)
+from .schemas import playlists_schemas, playlists_anime_schemas, playlists_manga_schemas
 
 
+@extend_schema_view(**playlists_schemas)
 class PlaylistAPIView(APIView):
     """View for listing and creating playlists."""
     serializer_class = PlaylistSerializer
@@ -29,6 +32,7 @@ class PlaylistAPIView(APIView):
         return Response(serializer.data)
 
 
+@extend_schema_view(**playlists_anime_schemas)
 class PlaylistAnimeAPIView(APIView):
     """View for listing, adding, and removing animes from a playlist.."""
     serializer_class = PlaylistAnimeSerializer
@@ -39,7 +43,7 @@ class PlaylistAnimeAPIView(APIView):
         playlist = Playlist.objects.get(user=self.request.user)
         return PlaylistAnime.objects.filter(playlist=playlist)
 
-    def get(self, request, pk=None):
+    def get(self, request):
         """Return the current user's playlist (anime)."""
         cache_key = f"playlist_anime_{request.user.id}"
         cached_data = cache.get(cache_key)
@@ -83,12 +87,12 @@ class PlaylistAnimeAPIView(APIView):
         serializer = self.serializer_class(playlist_anime)
         return Response(serializer.data)
 
-    def patch(self, request, pk: None):
+    def patch(self, request, anime_id):
         """Update metadata status of a anime in the playlist."""
         playlist = get_object_or_404(Playlist, user=self.request.user)
         playlist_anime = get_object_or_404(
             PlaylistAnime,
-            id=pk,
+            id=anime_id,
             playlist=playlist,
         )
 
@@ -113,12 +117,12 @@ class PlaylistAnimeAPIView(APIView):
         serializer = self.serializer_class(playlist_anime)
         return Response(serializer.data)
 
-    def delete(self, request, pk=None, format=None):
+    def delete(self, request, anime_id, format=None):
         """Remove an anime from the playlist."""
         playlist = get_object_or_404(Playlist, user=self.request.user)
         playlist_anime = get_object_or_404(
             PlaylistAnime,
-            id=pk,
+            id=anime_id,
             playlist=playlist,
         )
 
@@ -130,6 +134,7 @@ class PlaylistAnimeAPIView(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
+@extend_schema_view(**playlists_manga_schemas)
 class PlaylistMangaAPIView(APIView):
     """View for listing, adding, and removing mangas from a playlist.."""
     serializer_class = PlaylistMangaSerializer

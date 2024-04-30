@@ -7,7 +7,7 @@ from .viewsets import ProfileViewSet
 
 
 router_v1 = DefaultRouter()
-router_v1.register(r"profiles", ProfileViewSet, basename="profile")
+router_v1.register(r"profiles/(?P<id>\d+)", ProfileViewSet, basename="profile")
 
 urlpatterns = [
     path("api/v1/", include(router_v1.urls))
