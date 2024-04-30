@@ -8,11 +8,14 @@ from rest_framework import status
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from drf_spectacular.utils import extend_schema_view, extend_schema
 
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import MediumSetPagination
+from apps.reviews.models import ReviewAnime
+from apps.reviews.serializers import ReviewAnimeSerializer
 from .models import Anime, Manga
 from .serializers import (
     AnimeSerializer, MangaSerializer, AnimeListSerializer, MangaListSerializer)
@@ -38,6 +41,11 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
             return AnimeListSerializer
         return super().get_serializer_class()
 
+    def get_permissions(self):
+        if self.action == "reviews":
+            return [IsAuthenticatedOrReadOnly()]
+        return super().get_permissions()
+
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
@@ -58,6 +66,39 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
             return Response(status=status.HTTP_204_NO_CONTENT)
         serializer = AnimeListSerializer(popular_list, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+    @action(detail=True, methods=["GET", "POST"], url_path="reviews")
+    def reviews(self, request, pk=None, format=None):
+        """
+        Action retrieves and creates reviews for an anime
+        """
+        anime = self.get_object()
+
+        if request.method == "GET":
+            # Get all reviews for the anime
+            reviews = ReviewAnime.objects.filter(
+                anime=anime).order_by("-created_at")
+            if reviews.exists():
+                serializer = ReviewAnimeSerializer(reviews, many=True)
+                return Response(serializer.data)
+            return Response(
+                {"detail": "No reviews for this anime."},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        elif request.method == "POST":
+            # Create a new review for the anime
+            serializer = ReviewAnimeSerializer(data=request.data)
+            if serializer.is_valid():
+                serializer.save(user=request.user, anime=anime)
+                return Response(
+                    serializer.data,
+                    status=status.HTTP_201_CREATED
+                )
+            return Response(
+                serializer.errors,
+                status=status.HTTP_400_BAD_REQUEST
+            )
 
 
 @extend_schema_view(**manga_schemas)

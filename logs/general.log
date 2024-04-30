@@ -1926,3 +1926,1155 @@ django.core.exceptions.FieldError: Invalid field name(s) given in select_related
 2024-04-30 17:14:27,714:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/routers.py changed, reloading.)
 2024-04-30 17:14:30,334:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
 2024-04-30 17:14:31,349:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 17:49:03,448:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 17:49:08,167:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 17:49:10,150:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 17:49:23,892:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 17:49:30,868:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 17:49:32,223:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 17:50:09,168:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 17:50:12,352:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 17:50:13,829:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 17:50:20,433:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 17:50:23,082:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 17:50:24,267:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 17:55:08,632:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 17:55:13,136:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 17:55:16,814:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 17:55:23,179:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 17:55:27,660:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 17:55:29,588:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 17:55:37,018:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 17:55:41,464:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 17:55:43,142:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 17:55:50,596:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 17:55:52,987:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 17:55:55,098:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 17:56:07,265:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 17:56:10,653:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 17:56:14,095:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 17:57:46,834:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 17:57:50,217:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 17:57:51,577:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:00:28,631:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:00:37,522:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:00:41,851:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:00:50,378:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:00:58,401:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:01:02,725:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:01:25,356:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:01:30,860:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:01:32,055:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:01:44,507:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:01:48,510:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:01:50,716:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:04:34,154:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:04:40,576:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:04:43,021:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:04:50,242:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:04:53,710:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:04:54,759:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:05:11,460:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 18:07:13,906:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:07:18,619:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:07:21,655:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:08:36,006:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 18:08:44,101:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 18:11:01,513:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:11:06,086:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:11:07,668:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:11:21,812:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 18:11:26,020:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 18:11:28,765:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 18:12:00,566:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 69, in reviews
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `commentrating` is not valid for model `ReviewAnime`.
+2024-04-30 18:12:45,203:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 69, in reviews
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `commentrating` is not valid for model `ReviewAnime`.
+2024-04-30 18:13:40,541:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:13:43,509:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:13:45,390:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:13:55,632:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:13:58,056:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:13:59,156:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:15:31,392:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:16:59,123:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:17:02,687:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:17:04,286:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:17:08,966:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:17:13,189:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:17:15,262:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:17:31,656:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:17:34,550:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:17:36,515:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:17:44,702:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:17:47,167:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:17:48,280:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:19:16,929:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:19:19,454:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:19:20,509:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:19:26,276:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:19:30,717:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:19:31,866:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:19:44,667:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:19:47,848:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:19:48,966:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:20:10,432:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 70, in reviews
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `commentrating` is not valid for model `ReviewAnime`.
+2024-04-30 18:22:17,296:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:22:22,194:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:22:24,443:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:23:58,135:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:24:03,934:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:24:04,780:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:24:12,354:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AnimeViewSet.reviews() got an unexpected keyword argument 'pk'
+2024-04-30 18:24:41,565:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:24:44,374:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:24:46,136:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:24:51,956:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:24:54,915:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:24:56,707:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:25:03,246:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:25:06,014:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:25:07,404:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:25:14,154:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 68, in reviews
+    if reviews.exists():
+       ^^^^^^^^^^^^^^
+AttributeError: 'ReviewAnime' object has no attribute 'exists'
+2024-04-30 18:25:55,526:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:25:58,932:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:26:00,464:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:26:07,713:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 69, in reviews
+    if reviews.exists():
+       ^^^^^^^^^^^^^^
+AttributeError: 'ReviewAnime' object has no attribute 'exists'
+2024-04-30 18:26:28,483:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:26:34,730:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:26:39,864:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:26:52,408:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:26:55,860:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:26:56,894:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:27:04,085:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:27:06,490:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:27:07,901:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:27:11,801:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 71, in reviews
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+           ^
+TypeError: 'ReviewAnime' object is not iterable
+2024-04-30 18:27:59,856:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:28:03,122:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:28:04,261:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:28:11,022:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:28:16,076:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:28:18,952:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:28:31,506:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 70, in reviews
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `commentrating` is not valid for model `ReviewAnime`.
+2024-04-30 18:30:49,763:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:30:52,612:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:30:54,410:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:31:16,663:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:31:20,139:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:31:21,730:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:31:31,008:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:31:33,230:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:31:34,620:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:31:40,985:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:31:44,462:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:31:46,470:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:31:51,635:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:31:54,642:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:31:56,362:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:32:00,966:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:32:02,936:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:32:03,759:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:32:52,281:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:32:55,919:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:32:56,887:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:39:08,876:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:39:16,751:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:39:19,995:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:39:30,577:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:39:33,187:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:39:34,171:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:39:56,420:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:39:58,872:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:39:59,920:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:40:32,919:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:40:36,009:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:40:37,155:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:42:01,622:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:42:04,892:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:42:07,187:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:43:08,465:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:43:10,490:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:43:11,444:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:44:58,069:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:45:01,396:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:45:02,405:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:47:04,197:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:47:06,240:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:47:07,078:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:47:44,165:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:47:50,770:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:47:52,720:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:48:01,305:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:48:05,398:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:48:06,693:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:48:19,611:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: AnimeViewSet.reviews() got an unexpected keyword argument 'pk'
+2024-04-30 18:48:37,675:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:48:45,561:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:48:50,990:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:48:56,841:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:48:59,346:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:49:00,494:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:49:09,730:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:49:12,597:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:49:13,739:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:49:42,475:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:49:44,997:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:49:45,820:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:50:09,885:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:50:12,563:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:50:13,608:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:50:44,286:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:50:48,434:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:50:50,511:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:51:24,300:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/serializers.py changed, reloading.)
+2024-04-30 18:51:26,815:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:51:28,395:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:51:51,994:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/serializers.py changed, reloading.)
+2024-04-30 18:51:55,138:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:51:57,088:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:52:03,975:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/serializers.py changed, reloading.)
+2024-04-30 18:52:07,816:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:52:09,445:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:52:20,451:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/serializers.py changed, reloading.)
+2024-04-30 18:52:24,894:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:52:26,244:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:52:33,435:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:52:37,535:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:52:39,404:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:53:17,881:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:53:21,171:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:53:22,663:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:53:31,499:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:53:33,569:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:53:34,742:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:53:39,909:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:53:42,533:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:53:43,670:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:53:57,942:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 18:54:00,338:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:54:01,490:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:57:03,787:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:57:05,794:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:57:06,644:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 18:57:14,135:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'UUID' object has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 72, in reviews
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `username` on serializer `UserListSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `UUID` instance.
+Original exception text was: 'UUID' object has no attribute 'username'.
+2024-04-30 18:57:19,146:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'UUID' object has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 72, in reviews
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `username` on serializer `UserListSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `UUID` instance.
+Original exception text was: 'UUID' object has no attribute 'username'.
+2024-04-30 18:57:25,407:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'UUID' object has no attribute 'username'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 72, in reviews
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `username` on serializer `UserListSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `UUID` instance.
+Original exception text was: 'UUID' object has no attribute 'username'.
+2024-04-30 18:57:49,163:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 18:57:52,394:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 18:57:53,491:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:11:09,636:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:11:12,099:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:11:13,013:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:11:18,675:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:11:21,221:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:11:22,026:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:11:35,157:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:11:38,118:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:11:40,592:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:11:45,626:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:11:48,453:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:11:50,072:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:11:58,156:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:12:00,027:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:12:00,841:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:12:07,673:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:12:10,822:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:12:12,660:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:12:16,534:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:12:20,011:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:12:22,913:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:12:33,757:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:12:37,074:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:12:38,114:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:12:52,903:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:12:55,942:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:12:57,983:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:13:06,098:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:13:08,597:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:13:10,375:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:13:20,000:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:13:23,820:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:13:25,883:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:13:33,082:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:13:38,380:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:13:39,834:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:13:46,007:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:13:47,990:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:13:50,109:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:13:56,573:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:13:59,096:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:14:00,870:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:14:08,074:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:14:10,006:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:14:11,065:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:14:28,260:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:14:30,687:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:14:31,846:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:14:50,156:WARNING - django.request log.py (line 241. Unauthorized: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 19:16:43,408:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:16:45,708:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:16:46,631:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:17:08,943:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:17:11,058:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:17:11,900:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:17:21,287:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:17:23,732:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:17:25,094:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:17:38,594:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:17:40,724:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:17:41,635:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:17:53,708:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:17:56,731:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:17:57,758:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:18:14,215:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:18:16,774:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:18:19,006:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:18:25,687:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:18:27,780:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:18:28,650:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:18:35,941:WARNING - django.request log.py (line 241. Bad Request: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 19:18:38,251:WARNING - django.request log.py (line 241. Bad Request: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 19:18:42,578:WARNING - django.request log.py (line 241. Bad Request: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 19:18:56,716:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:19:00,698:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:19:01,915:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:19:09,564:WARNING - django.request log.py (line 241. Unauthorized: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 19:21:29,891:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:21:36,380:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:21:38,152:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:23:40,059:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:23:42,010:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:23:42,927:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:24:29,441:WARNING - django.request log.py (line 241. Unauthorized: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 19:24:31,735:WARNING - django.request log.py (line 241. Unauthorized: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 19:24:46,993:WARNING - django.request log.py (line 241. Unauthorized: /api/v1/tokens/jwt/create/)
+2024-04-30 19:26:45,601:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 87, in reviews
+    if serializer.is_valid(user=request.user):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseSerializer.is_valid() got an unexpected keyword argument 'user'
+2024-04-30 19:27:17,238:WARNING - django.request log.py (line 241. Unauthorized: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 19:30:06,998:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 87, in reviews
+    if serializer.is_valid(user=request.user):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseSerializer.is_valid() got an unexpected keyword argument 'user'
+2024-04-30 19:31:33,143:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:31:36,066:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:31:37,278:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:31:43,543:WARNING - django.request log.py (line 241. Bad Request: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+2024-04-30 19:32:39,829:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 732, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "anime_id" of relation "reviews_reviewanime" violates not-null constraint
+DETAIL:  Failing row contains (bc7693e9-c174-4cef-9470-4326241e9b0c, t, 2024-04-30, 2024-04-30, 3, Me gusto mucho este anime, null, 1773902e-65fa-4259-a838-b3ce671ee873).
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 88, in reviews
+    serializer.save(user=request.user)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 732, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: null value in column "anime_id" of relation "reviews_reviewanime" violates not-null constraint
+DETAIL:  Failing row contains (bc7693e9-c174-4cef-9470-4326241e9b0c, t, 2024-04-30, 2024-04-30, 3, Me gusto mucho este anime, null, 1773902e-65fa-4259-a838-b3ce671ee873).
+2024-04-30 19:33:53,240:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/animes/5e95364e-fc44-4f86-8041-222f4cd218ea/reviews/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 732, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.NotNullViolation: null value in column "anime_id" of relation "reviews_reviewanime" violates not-null constraint
+DETAIL:  Failing row contains (0beb5314-7d22-4e38-b10f-b91d18e03639, t, 2024-04-30, 2024-04-30, 3, Me gusto mucho este anime, null, 1773902e-65fa-4259-a838-b3ce671ee873).
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/contents/viewsets.py", line 88, in reviews
+    serializer.save(user=request.user)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 732, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: null value in column "anime_id" of relation "reviews_reviewanime" violates not-null constraint
+DETAIL:  Failing row contains (0beb5314-7d22-4e38-b10f-b91d18e03639, t, 2024-04-30, 2024-04-30, 3, Me gusto mucho este anime, null, 1773902e-65fa-4259-a838-b3ce671ee873).
+2024-04-30 19:35:08,869:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:35:13,200:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:35:14,455:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:35:22,321:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:35:25,741:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:35:27,111:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:36:16,087:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:36:19,373:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:36:20,718:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:36:27,293:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:36:29,944:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:36:30,921:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:36:41,745:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:36:43,720:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:36:44,589:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:36:52,126:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:36:54,071:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:36:55,114:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:37:57,204:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:37:59,680:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:38:00,826:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:38:06,166:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:38:08,410:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:38:09,553:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:38:15,626:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:38:17,611:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:38:19,350:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:38:26,233:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:38:28,946:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:38:30,856:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:38:36,508:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:38:39,211:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:38:40,250:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:39:04,802:WARNING - django.request log.py (line 241. Forbidden: /api/v1/animes/)
+2024-04-30 19:40:58,797:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:41:01,176:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:41:02,092:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:41:20,557:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:41:22,569:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:41:23,387:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:41:28,978:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:41:32,014:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:41:34,438:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:42:03,126:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:42:05,067:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:42:05,902:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:42:45,337:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:42:48,352:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:42:49,393:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:44:09,596:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:44:11,492:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:44:12,314:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:44:28,517:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-04-30 19:44:31,099:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:44:32,018:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:45:15,964:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:45:18,557:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:45:19,479:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:45:34,866:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/serializers.py changed, reloading.)
+2024-04-30 19:45:37,099:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:45:38,231:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:45:56,369:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/serializers.py changed, reloading.)
+2024-04-30 19:46:01,057:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:46:02,802:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-04-30 19:46:11,298:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/serializers.py changed, reloading.)
+2024-04-30 19:46:13,348:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-04-30 19:46:14,502:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
