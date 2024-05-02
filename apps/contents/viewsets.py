@@ -3,6 +3,7 @@
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_cookie
+from django.shortcuts import get_object_or_404
 from django.utils.translation import gettext as _
 from rest_framework import status
 from rest_framework.viewsets import ModelViewSet
@@ -51,7 +52,7 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         return super().get_serializer_class()
 
     def get_permissions(self):
-        if self.action == "reviews":
+        if self.action == "review_list" or self.action == "review_detail":
             return [IsAuthenticatedOrReadOnly()]
         return super().get_permissions()
 
@@ -80,7 +81,7 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     @action(detail=True, methods=["GET", "POST"], url_path="reviews")
-    def reviews(self, request, pk=None, format=None):
+    def review_list(self, request, pk=None, format=None):
         """
         Action retrieves and creates reviews for an anime
 
@@ -115,6 +116,44 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
+    @action(
+        detail=True,
+        methods=["GET", "PUT", "DELETE"],
+        url_path="reviews/(?P<review_id>[^/.]+)"
+    )
+    def review_detail(self, request, pk=None, review_id=None, format=None):
+        """
+        Action retrieves, updates, or deletes a review for an anime.
+
+        Endpoints:
+        - GET /api/v1/animes/{id}/reviews/{id}/
+        - PUT /api/v1/animes/{id}/reviews/{id}/
+        - DELETE /api/v1/animes/{id}/reviews/{id}/
+        """
+        anime = self.get_object()
+        review = get_object_or_404(ReviewAnime, id=review_id, anime=anime)
+
+        if request.method == "GET":
+            # Retrieve the review associated with the anime
+            serializer = ReviewAnimeSerializer(review)
+            return Response(serializer.data)
+
+        elif request.method == "PUT":
+            # Update the review associated with the anime
+            serializer = ReviewAnimeSerializer(review, data=request.data)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            return Response(
+                serializer.errors,
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        elif request.method == "DELETE":
+            # Delete the review associated with the anime
+            review.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
+
 
 @extend_schema_view(**manga_schemas)
 class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
@@ -139,7 +178,7 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
         return Manga.objects.get_available()
 
     def get_serializer_class(self):
-        if self.action == "list":
+        if self.action == "review_list" or self.action == "review_detail":
             return MangaListSerializer
         return super().get_serializer_class()
 
@@ -196,7 +235,7 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
         methods=["POST"],
     )
     @action(detail=True, methods=["GET", "POST"], url_path="reviews")
-    def reviews(self, request, pk=None, format=None):
+    def review_list(self, request, pk=None, format=None):
         """
         Action retrieves and creates reviews for an manga.
 
@@ -230,3 +269,41 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
                 serializer.errors,
                 status=status.HTTP_400_BAD_REQUEST
             )
+
+    @action(
+        detail=True,
+        methods=["GET", "PUT", "DELETE"],
+        url_path="reviews/(?P<review_id>[^/.]+)"
+    )
+    def review_detail(self, request, pk=None, review_id=None, format=None):
+        """
+        Action retrieves, updates, or deletes a review for an manga.
+
+        Endpoints:
+        - GET /api/v1/mangas/{id}/reviews/{id}/
+        - PUT /api/v1/mangas/{id}/reviews/{id}/
+        - DELETE /api/v1/mangas/{id}/reviews/{id}/
+        """
+        manga = self.get_object()
+        review = get_object_or_404(ReviewManga, id=review_id, manga=manga)
+
+        if request.method == "GET":
+            # Retrieve the review associated with the manga
+            serializer = ReviewMangaSerializer(review)
+            return Response(serializer.data)
+
+        elif request.method == "PUT":
+            # Update the review associated with the manga
+            serializer = ReviewMangaSerializer(review, data=request.data)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            return Response(
+                serializer.errors,
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        elif request.method == "DELETE":
+            # Delete the review associated with the manga
+            review.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
