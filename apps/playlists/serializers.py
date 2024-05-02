@@ -16,7 +16,9 @@ class PlaylistSerializer(serializers.ModelSerializer):
         """Meta definition for PlaylistSerializer."""
         model = Playlist
         fields = [
-            "id", "name", "created_at"
+            "id",
+            "name",
+            "created_at"
         ]
 
 
@@ -29,7 +31,12 @@ class PlaylistAnimeSerializer(serializers.ModelSerializer):
         """Meta definition for PlaylistAnimeSerializer."""
         model = PlaylistAnime
         fields = [
-            "id", "anime", "anime_id", "status", "is_watched", "is_favorite"
+            "id",
+            "anime",
+            "anime_id",
+            "status",
+            "is_watched",
+            "is_favorite"
         ]  # Add order field
 
         def create(self, validated_data):
@@ -51,7 +58,12 @@ class PlaylistMangaSerializer(serializers.ModelSerializer):
         """Meta definition for PlaylistMangaSerializer."""
         model = PlaylistManga
         fields = [
-            "id", "manga", "manga_id", "status", "is_watched", "is_favorite"
+            "id",
+            "manga",
+            "manga_id",
+            "status",
+            "is_watched",
+            "is_favorite"
         ]  # Add order field
 
         def create(self, validated_data):
