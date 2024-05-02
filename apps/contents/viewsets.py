@@ -1,4 +1,4 @@
-"""Viewsets for Contents App."""
+"""ViewSets for Contents App."""
 
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
@@ -15,7 +15,8 @@ from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import MediumSetPagination
 from apps.reviews.models import ReviewAnime, ReviewManga
-from apps.reviews.serializers import ReviewAnimeSerializer, ReviewMangaSerializer
+from apps.reviews.serializers import (
+    ReviewAnimeSerializer, ReviewMangaSerializer)
 from .models import Anime, Manga
 from .serializers import (
     AnimeSerializer, MangaSerializer, AnimeListSerializer, MangaListSerializer)
@@ -25,7 +26,15 @@ from .schemas import anime_schemas, manga_schemas
 @extend_schema_view(**anime_schemas)
 class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
     """
-    Viewset for managing Anime instances.
+    ViewSet for managing Anime instances.
+
+    Endpoints:
+    - GET /api/v1/animes/
+    - POST /api/v1/animes/
+    - GET /api/v1/animes/{id}/
+    - PUT /api/v1/animes/{id}/
+    - PATCH /api/v1/animes/{id}/
+    - DELETE /api/v1/animes/{id}/
     """
     serializer_class = AnimeSerializer
     permission_classes = [IsStaffOrReadOnly]
@@ -60,6 +69,9 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
     def popular_list(self, request, pk=None):
         """
         Action return a list of the 50 most popular anime.
+
+        Endpoints:
+        - GET /api/v1/animes/popular/
         """
         popular_list = Anime.objects.get_popular()[:50]
         if not popular_list:
@@ -71,13 +83,16 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
     def reviews(self, request, pk=None, format=None):
         """
         Action retrieves and creates reviews for an anime
+
+        Endpoints:
+        - GET /api/v1/animes/{id}/reviews/
+        - POST /api/v1/animes/{id}/reviews/
         """
         anime = self.get_object()
 
         if request.method == "GET":
             # Get all reviews for the anime
-            reviews = ReviewAnime.objects.filter(
-                anime=anime).order_by("-created_at")
+            reviews = ReviewAnime.objects.get_reviews_for_anime(anime)
             if reviews.exists():
                 serializer = ReviewAnimeSerializer(reviews, many=True)
                 return Response(serializer.data)
@@ -104,7 +119,15 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
 @extend_schema_view(**manga_schemas)
 class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
     """
-    Viewset for managing Manga instances.
+    ViewSet for managing Manga instances.
+
+    Endpoints:
+    - GET /api/v1/mangas/
+    - POST /api/v1/mangas/
+    - GET /api/v1/mangas/{id}/
+    - PUT /api/v1/mangas/{id}/
+    - PATCH /api/v1/mangas/{id}/
+    - DELETE /api/v1/mangas/{id}/
     """
     serializer_class = MangaSerializer
     permission_classes = [IsStaffOrReadOnly]
@@ -139,6 +162,9 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
     def popular_list(self, request, pk=None):
         """
         Action return a list of the 50 most popular mangas.
+
+        Endpoints:
+        - GET /api/v1/mangas/popular/
         """
         popular_list = Manga.objects.get_popular()[:50]
         paginator = MediumSetPagination()
@@ -172,14 +198,17 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
     @action(detail=True, methods=["GET", "POST"], url_path="reviews")
     def reviews(self, request, pk=None, format=None):
         """
-        Action retrieves and creates reviews for an manga
+        Action retrieves and creates reviews for an manga.
+
+        Endpoints:
+        - GET /api/v1/mangas/{id}/reviews/
+        - POST /api/v1/mangas/{id}/reviews/
         """
         manga = self.get_object()
 
         if request.method == "GET":
             # Get all reviews for the manga
-            reviews = ReviewManga.objects.filter(
-                manga=manga).order_by("-created_at")
+            reviews = ReviewManga.objects.get_reviews_for_manga(manga)
             if reviews.exists():
                 serializer = ReviewMangaSerializer(reviews, many=True)
                 return Response(serializer.data)

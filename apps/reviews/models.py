@@ -7,6 +7,7 @@ from django.utils.translation import gettext as _
 
 from apps.utils.models import BaseModel
 from apps.contents.models import Anime, Manga
+from .managers import ReviewAnimeManager, ReviewMangaManager
 
 User = settings.AUTH_USER_MODEL
 
@@ -34,6 +35,8 @@ class ReviewAnime(ReviewBase):
         related_name="review_anime", verbose_name=_("anime")
     )
 
+    objects = ReviewAnimeManager()
+
     def __str__(self):
         return str(f"{self.user} {self.anime}")
 
@@ -44,6 +47,8 @@ class ReviewManga(ReviewBase):
         Manga, on_delete=models.CASCADE,
         related_name="review_manga", verbose_name=_("manga")
     )
+
+    objects = ReviewMangaManager()
 
     def __str__(self):
         return str(f"{self.user} {self.manga}")

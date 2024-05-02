@@ -11,9 +11,9 @@ class AuthorManager(Manager):
         return super().get_queryset()
 
     def get_available(self):
-        """Get all available authors"""
+        """Get all available authors."""
         return self.get_queryset().filter(available=True)
 
     def get_unavailable(self):
-        """Get all unavailable authors"""
+        """Get all unavailable authors."""
         return self.get_queryset().filter(available=False)
