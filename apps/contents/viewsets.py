@@ -10,7 +10,8 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from drf_spectacular.utils import extend_schema_view, extend_schema
+from drf_spectacular.utils import (
+    extend_schema_view, extend_schema, OpenApiParameter)
 
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
@@ -116,6 +117,9 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
+    @extend_schema(
+        parameters=[OpenApiParameter("review_id", str, OpenApiParameter.PATH)]
+    )
     @action(
         detail=True,
         methods=["GET", "PUT", "DELETE"],
