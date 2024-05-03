@@ -13,7 +13,14 @@ class StudioSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for StudioSerializer."""
         model = Studio
-        fields = ["id", "slug", "name", "name_jpn", "established", "image",]
+        fields = [
+            "id",
+            "slug",
+            "name",
+            "name_jpn",
+            "established",
+            "image"
+        ]
         read_only_fields = ["slug",]
 
 
@@ -23,7 +30,11 @@ class StudioListSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for StudioListSerializer."""
         model = Studio
-        fields = ["id", "slug", "name"]
+        fields = [
+            "id",
+            "slug",
+            "name"
+        ]
         read_only_fields = ["slug",]
 
 
@@ -34,7 +45,11 @@ class GenreSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for GenreSerializer."""
         model = Genre
-        fields = ["id", "name", "slug",]
+        fields = [
+            "id",
+            "name",
+            "slug"
+        ]
         read_only_fields = ["slug",]
 
 
@@ -45,7 +60,11 @@ class ThemeSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for ThemeSerializer."""
         model = Theme
-        fields = ["id", "name", "slug",]
+        fields = [
+            "id",
+            "name",
+            "slug"
+        ]
         read_only_fields = ["slug",]
 
 
@@ -55,7 +74,12 @@ class SeasonSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for SeasonSerializer."""
         model = Season
-        fields = ["id", "season", "year", "fullname"]
+        fields = [
+            "id",
+            "season",
+            "year",
+            "fullname"
+        ]
         read_only_fields = ["id", "fullname"]
 
 
@@ -65,7 +89,10 @@ class SeasonListSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for SeasonListSerializer."""
         model = Season
-        fields = ["id", "fullname"]
+        fields = [
+            "id",
+            "fullname"
+        ]
         read_only_fields = ["id",]
 
 
@@ -76,4 +103,7 @@ class DemographicSerializer(serializers.ModelSerializer):
     class Meta:
         """Meta definition for DemographicSerializer."""
         model = Demographic
-        fields = ["id", "name",]
+        fields = [
+            "id",
+            "name"
+        ]

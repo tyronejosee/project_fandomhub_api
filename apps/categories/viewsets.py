@@ -27,7 +27,15 @@ from .schemas import (
 @extend_schema_view(**studio_schemas)
 class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
     """
-    Viewset for managing Studio instances.
+    ViewSet for managing Studio instances.
+
+    Endpoints:
+    - GET /api/v1/studios/
+    - POST /api/v1/studios/
+    - GET /api/v1/studios/{id}/
+    - PUT /api/v1/studios/{id}/
+    - PATCH /api/v1/studios/{id}/
+    - DELETE /api/v1/studios/{id}/
     """
     serializer_class = StudioSerializer
     permission_classes = [IsStaffOrReadOnly]
@@ -55,6 +63,9 @@ class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
     def anime_list(self, request, pk=None):
         """
         Retrieve a list of animes for the specified studio.
+
+        Endpoints:
+        - GET /api/v1/studios/{id}/animes/
         """
         studio = self.get_object()
         anime_list = Anime.objects.filter(studio=studio)
@@ -72,7 +83,15 @@ class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
 @extend_schema_view(**genre_schemas)
 class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
     """
-    Viewset for managing Genre instances.
+    ViewSet for managing Genre instances.
+
+    Endpoints:
+    - GET /api/v1/genres/
+    - POST /api/v1/genres/
+    - GET /api/v1/genres/{id}/
+    - PUT /api/v1/genres/{id}/
+    - PATCH /api/v1/genres/{id}/
+    - DELETE /api/v1/genres/{id}/
     """
     serializer_class = GenreSerializer
     permission_classes = [IsStaffOrReadOnly]
@@ -98,6 +117,9 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
     def anime_list(self, request, pk=None):
         """
         Retrieve a list of animes for the specified genre.
+
+        Endpoints:
+        - GET /api/v1/genres/{id}/animes/
         """
         genre = self.get_object()
         anime_list = Anime.objects.filter(genres=genre)
@@ -113,13 +135,16 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
 
     @extend_schema(
         summary="Get Mangas for Genre",
-        description="Retrieve a list of mangas for genre."
+        description="Retrieve a manga list for genre."
     )
     @action(detail=True, methods=["get"], url_path="mangas")
     @method_decorator(cache_page(60 * 60 * 2))
     def manga_list(self, request, pk=None):
         """
-        Retrieve a list of mangas for the specified genre.
+        Retrieve a manga list for the specified genre.
+
+        Endpoints:
+        - GET /api/v1/studios/{id}/mangas/
         """
         genre = self.get_object()
         manga_list = Manga.objects.filter(genres=genre)
@@ -137,7 +162,15 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
 @extend_schema_view(**theme_schemas)
 class ThemeViewSet(LogicalDeleteMixin, ModelViewSet):
     """
-    Viewset for managing Theme instances.
+    ViewSet for managing Theme instances.
+
+    Endpoints:
+    - GET /api/v1/themes/
+    - POST /api/v1/themes/
+    - GET /api/v1/themes/{id}/
+    - PUT /api/v1/themes/{id}/
+    - PATCH /api/v1/themes/{id}/
+    - DELETE /api/v1/themes/{id}/
     """
     serializer_class = ThemeSerializer
     permission_classes = [IsStaffOrReadOnly]
@@ -157,7 +190,15 @@ class ThemeViewSet(LogicalDeleteMixin, ModelViewSet):
 @extend_schema_view(**season_schemas)
 class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
     """
-    Viewset for managing Season instances.
+    ViewSet for managing Season instances.
+
+    Endpoints:
+    - GET /api/v1/seasons/
+    - POST /api/v1/seasons/
+    - GET /api/v1/seasons/{id}/
+    - PUT /api/v1/seasons/{id}/
+    - PATCH /api/v1/seasons/{id}/
+    - DELETE /api/v1/seasons/{id}/
     """
     serializer_class = SeasonSerializer
     permission_classes = [IsStaffOrReadOnly]
@@ -180,6 +221,9 @@ class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
     def anime_list(self, request, pk=None):
         """
         Retrieve a list of animes for the specified season.
+
+        Endpoints:
+        - GET /api/v1/seasons/{id}/animes/
         """
         season = self.get_object()
         anime_list = Anime.objects.filter(season=season)
@@ -197,7 +241,15 @@ class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
 @extend_schema_view(**demographic_schemas)
 class DemographicViewSet(LogicalDeleteMixin, ModelViewSet):
     """
-    Viewset for managing Demographic instances.
+    ViewSet for managing Demographic instances.
+
+    Endpoints:
+    - GET /api/v1/demographics/
+    - POST /api/v1/demographics/
+    - GET /api/v1/demographics/{id}/
+    - PUT /api/v1/demographics/{id}/
+    - PATCH /api/v1/demographics/{id}/
+    - DELETE /api/v1/demographics/{id}/
     """
     serializer_class = DemographicSerializer
     permission_classes = [IsStaffOrReadOnly]
