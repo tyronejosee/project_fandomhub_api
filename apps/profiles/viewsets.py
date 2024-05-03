@@ -1,12 +1,10 @@
 """ViewSets for Profiles App."""
 
-# from django.utils.decorators import method_decorator
-# from django.views.decorators.cache import cache_page
-# from django.views.decorators.vary import vary_on_cookie
 from rest_framework.viewsets import GenericViewSet
-from rest_framework.mixins import (
-    RetrieveModelMixin, UpdateModelMixin, DestroyModelMixin)
+from rest_framework.mixins import RetrieveModelMixin, UpdateModelMixin
 from rest_framework.permissions import IsAuthenticated
+from rest_framework.decorators import action
+from rest_framework.response import Response
 
 from .models import Profile
 from .serializers import ProfileSerializer
@@ -14,13 +12,14 @@ from .serializers import ProfileSerializer
 
 class ProfileViewSet(RetrieveModelMixin,
                      UpdateModelMixin,
-                     DestroyModelMixin,
                      GenericViewSet):
     """
     ViewSet for managing Profile instances.
 
     Endpoints:
-    - Pending
+    - GET /api/v1/profiles/{id}/
+    - PUT /api/v1/profiles/{id}/
+    - PATCH /api/v1/profiles/{id}/
     """
     permission_classes = [IsAuthenticated]
     serializer_class = ProfileSerializer
@@ -29,7 +28,15 @@ class ProfileViewSet(RetrieveModelMixin,
         user = self.request.user
         return Profile.objects.get_available().filter(user=user)
 
-    # @method_decorator(cache_page(60 * 60 * 2))
-    # @method_decorator(vary_on_cookie)
-    # def retrieve(self, request, *args, **kwargs):
-    #     return super().list(request, *args, **kwargs)
+    @action(detail=False, methods=["get"], url_path="me")
+    def me_detail(self, request, pk=None):
+        """
+        Action returns the detail of the authenticated profile.
+
+        Endpoints:
+        - GET /api/v1/profiles/me/
+        """
+        profile = self.get_queryset()
+        print(profile)
+        serializer = ProfileSerializer(profile)
+        return Response(serializer.data)

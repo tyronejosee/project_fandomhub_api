@@ -13,7 +13,3 @@ class ProfileManager(Manager):
     def get_available(self):
         """Get all available profiles"""
         return self.get_queryset().filter(available=True)
-
-    def get_unavailable(self):
-        """Get all unavailable profiles"""
-        return self.get_queryset().filter(available=False)

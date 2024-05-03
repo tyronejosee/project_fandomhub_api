@@ -14,5 +14,11 @@ class ProfileSerializer(serializers.ModelSerializer):
         """Meta definition for ProfileSerializer."""
         model = Profile
         fields = [
-            "id", "user", "bio", "website", "birth_date", "image", "cover"
+            "id",
+            "user",
+            "bio",
+            "website",
+            "birth_date",
+            "image",
+            "cover"
         ]
