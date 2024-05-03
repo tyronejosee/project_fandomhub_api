@@ -41,11 +41,11 @@ class LogicalDeleteMixin:
             return Response(status=status.HTTP_204_NO_CONTENT)
         except Http404:
             return Response(
-                {"errors": _("Resource not found.")},
+                {"detail": _("Resource not found.")},
                 status=status.HTTP_404_NOT_FOUND
             )
         except Exception as e:
             return Response(
-                {"errors": str(e)},
+                {"detail": str(e)},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )

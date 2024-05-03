@@ -14,10 +14,6 @@ class PlaylistManager(Manager):
         """Get all available playlists"""
         return self.get_queryset().filter(available=True)
 
-    def get_unavailable(self):
-        """Get all unavailable playlists"""
-        return self.get_queryset().filter(available=False)
-
 
 class PlaylistBaseManager(Manager):
     """Manager for PlaylistBase."""
@@ -29,7 +25,3 @@ class PlaylistBaseManager(Manager):
     def get_available(self):
         """Get all available playlist items (Base)."""
         return self.get_queryset().filter(available=True)
-
-    def get_unavailable(self):
-        """Get all unavailable playlist items (Base)."""
-        return self.get_queryset().filter(available=False)

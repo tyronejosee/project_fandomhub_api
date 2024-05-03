@@ -1,4 +1,4 @@
-"""Viewsets for News App."""
+"""ViewSets for News App."""
 
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
@@ -17,7 +17,13 @@ from .schemas import new_schemas
 class NewViewSet(ListModelMixin,
                  RetrieveModelMixin,
                  GenericViewSet):
-    """Viewset for managing New instances."""
+    """
+    ViewSet for managing New instances.
+
+    Endpoints:
+    - GET /api/v1/news/
+    - GET /api/v1/news/{id}/
+    """
     serializer_class = NewSerializer
     permission_classes = [IsStaffOrReadOnly]
     search_fields = ["title", "author__username"]

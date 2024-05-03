@@ -163,8 +163,6 @@ class PlaylistAnimeDetailView(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
-#################
-
 @extend_schema_view(**playlists_manga_schemas)
 class PlaylistMangaListView(APIView):
     """

@@ -14,7 +14,12 @@ class NewListSerializer(serializers.ModelSerializer):
         """Meta definition for NewListSerializer."""
         model = New
         fields = [
-            "id", "title", "description", "image", "tag", "author"
+            "id",
+            "title",
+            "description",
+            "image",
+            "tag",
+            "author"
         ]
         read_only_fields = ["author"]
 
@@ -30,6 +35,14 @@ class NewSerializer(serializers.ModelSerializer):
         """Meta definition for NewSerializer."""
         model = New
         fields = [
-            "id", "title", "description", "content", "image",
-            "source", "tag", "author", "created_at", "updated_at"
+            "id",
+            "title",
+            "description",
+            "content",
+            "image",
+            "source",
+            "tag",
+            "author",
+            "created_at",
+            "updated_at"
         ]

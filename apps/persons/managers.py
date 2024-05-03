@@ -13,7 +13,3 @@ class AuthorManager(Manager):
     def get_available(self):
         """Get all available authors."""
         return self.get_queryset().filter(available=True)
-
-    def get_unavailable(self):
-        """Get all unavailable authors."""
-        return self.get_queryset().filter(available=False)

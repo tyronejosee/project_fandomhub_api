@@ -13,7 +13,3 @@ class NewManager(Manager):
     def get_available(self):
         """Get all available news"""
         return self.get_queryset().filter(available=True)
-
-    def get_unavailable(self):
-        """Get all unavailable news"""
-        return self.get_queryset().filter(available=False)

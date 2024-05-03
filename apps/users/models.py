@@ -12,11 +12,9 @@ from .managers import UserManager
 class Role(models.Model):
     """Model definition for Role (Association)."""
     name = models.CharField(
-        _("name"), max_length=50, unique=True, db_index=True
-    )
+        _("name"), max_length=50, unique=True, db_index=True)
     permissions = models.ManyToManyField(
-        "auth.Permission", blank=True, verbose_name=_("permissions")
-    )
+        "auth.Permission", blank=True, verbose_name=_("permissions"))
 
     class Meta:
         """Meta definition for Role model."""
@@ -31,11 +29,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     """Model definition for User (Entity)."""
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(
-        _("email"), max_length=255, unique=True, db_index=True
-    )
+        _("email"), max_length=255, unique=True, db_index=True)
     username = models.CharField(
-        _("username"), max_length=255, unique=True, db_index=True
-    )
+        _("username"), max_length=255, unique=True, db_index=True)
     first_name = models.CharField(
         _("first name"), max_length=255, blank=True, null=True)
     last_name = models.CharField(

@@ -1,4 +1,4 @@
-"""Viewsets for Persons App."""
+"""ViewSets for Persons App."""
 
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
@@ -23,7 +23,15 @@ from .schemas import author_schemas
 @extend_schema_view(**author_schemas)
 class AuthorViewSet(LogicalDeleteMixin, ModelViewSet):
     """
-    Viewset for managing Author instances.
+    ViewSet for managing Author instances.
+
+    Endpoints:
+    - GET /api/v1/authors/
+    - POST /api/v1/authors/
+    - GET /api/v1/authors/{id}/
+    - PUT /api/v1/authors/{id}/
+    - PATCH /api/v1/authors/{id}/
+    - DELETE /api/v1/authors/{id}/
     """
     serializer_class = AuthorSerializer
     permission_classes = [IsStaffOrReadOnly]
@@ -50,12 +58,12 @@ class AuthorViewSet(LogicalDeleteMixin, ModelViewSet):
         Retrieve a list of mangas for the specified author.
         """
         manga_list = Manga.objects.filter(author=pk)
-        if not manga_list.exists():
-            return Response(
-                {"detail": _("There are no mangas for this author.")},
-                status=status.HTTP_404_NOT_FOUND
-            )
-        paginator = MediumSetPagination()
-        paginated_data = paginator.paginate_queryset(manga_list, request)
-        serializer = MangaListSerializer(paginated_data, many=True)
-        return paginator.get_paginated_response(serializer.data)
+        if manga_list.exists():
+            paginator = MediumSetPagination()
+            paginated_data = paginator.paginate_queryset(manga_list, request)
+            serializer = MangaListSerializer(paginated_data, many=True)
+            return paginator.get_paginated_response(serializer.data)
+        return Response(
+            {"detail": _("There are no mangas for this author.")},
+            status=status.HTTP_404_NOT_FOUND
+        )

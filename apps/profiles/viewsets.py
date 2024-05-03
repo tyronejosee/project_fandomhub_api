@@ -17,7 +17,10 @@ class ProfileViewSet(RetrieveModelMixin,
                      DestroyModelMixin,
                      GenericViewSet):
     """
-    Viewset for managing Profile instances.
+    ViewSet for managing Profile instances.
+
+    Endpoints:
+    - Pending
     """
     permission_classes = [IsAuthenticated]
     serializer_class = ProfileSerializer

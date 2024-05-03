@@ -16,11 +16,9 @@ class ReviewBase(BaseModel):
     """Model definition for Review."""
     user = models.ForeignKey(
         User, on_delete=models.CASCADE,
-        db_index=True, verbose_name=_("user")
-    )
+        db_index=True, verbose_name=_("user"))
     rating = models.IntegerField(
-        _("rating"), validators=[MinValueValidator(1), MaxValueValidator(10)]
-    )
+        _("rating"), validators=[MinValueValidator(1), MaxValueValidator(10)])
     comment = models.TextField(_("comment"))
 
     class Meta:
@@ -32,8 +30,7 @@ class ReviewAnime(ReviewBase):
     """Model definition for ReviewAnime (Pivot)."""
     anime = models.ForeignKey(
         Anime, on_delete=models.CASCADE,
-        related_name="review_anime", verbose_name=_("anime")
-    )
+        related_name="review_anime", verbose_name=_("anime"))
 
     objects = ReviewAnimeManager()
 
@@ -45,8 +42,7 @@ class ReviewManga(ReviewBase):
     """Model definition for ReviewManga (Pivot)."""
     manga = models.ForeignKey(
         Manga, on_delete=models.CASCADE,
-        related_name="review_manga", verbose_name=_("manga")
-    )
+        related_name="review_manga", verbose_name=_("manga"))
 
     objects = ReviewMangaManager()
 
