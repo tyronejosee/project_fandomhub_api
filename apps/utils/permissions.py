@@ -9,13 +9,11 @@ class IsStaffOrReadOnly(BasePermission):
     def has_permission(self, request, view):
         is_safe_method = request.method in SAFE_METHODS
         is_staff = request.user and request.user.is_staff
-        return is_safe_method or is_staff
+        return bool(is_safe_method or is_staff)
 
 
 class IsOwner(BasePermission):
     """Allows access only allow owners of an object to access it."""
 
     def has_object_permission(self, request, view, obj):
-        if request.method in SAFE_METHODS:
-            return True
-        return obj.user == request.user
+        return bool(obj.user == request.user)

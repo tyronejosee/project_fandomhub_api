@@ -11,5 +11,9 @@ class ProfileManager(Manager):
         return super().get_queryset()
 
     def get_available(self):
-        """Get all available profiles"""
+        """Get all available profiles."""
         return self.get_queryset().filter(available=True)
+
+    def get_by_user(self, user):
+        """Get the profile for the specified user."""
+        return self.get_available().get(user=user)

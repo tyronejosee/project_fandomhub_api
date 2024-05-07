@@ -6,6 +6,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import action
 from rest_framework.response import Response
 
+from apps.utils.permissions import IsOwner
 from .models import Profile
 from .serializers import ProfileSerializer
 
@@ -21,12 +22,12 @@ class ProfileViewSet(RetrieveModelMixin,
     - PUT /api/v1/profiles/{id}/
     - PATCH /api/v1/profiles/{id}/
     """
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated, IsOwner]
     serializer_class = ProfileSerializer
 
     def get_queryset(self):
         user = self.request.user
-        return Profile.objects.get_available().filter(user=user)
+        return Profile.objects.get_by_user(user)
 
     @action(detail=False, methods=["get"], url_path="me")
     def me_detail(self, request, pk=None):
@@ -37,6 +38,5 @@ class ProfileViewSet(RetrieveModelMixin,
         - GET /api/v1/profiles/me/
         """
         profile = self.get_queryset()
-        print(profile)
         serializer = ProfileSerializer(profile)
         return Response(serializer.data)

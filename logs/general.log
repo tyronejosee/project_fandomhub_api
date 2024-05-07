@@ -4695,3 +4695,483 @@ AttributeError: 'Anime' object has no attribute 'user'
 2024-05-07 17:41:08,668:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
 2024-05-07 17:41:10,787:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
 2024-05-07 17:41:11,855:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 17:47:01,375:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-05-07 17:47:04,080:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 17:47:05,135:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:31:54,447:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/)
+2024-05-07 18:33:35,795:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:33:38,170:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:33:39,358:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:34:00,229:WARNING - django.request log.py (line 241. Unauthorized: /api/v1/profiles/me/)
+2024-05-07 18:34:02,301:WARNING - django.request log.py (line 241. Unauthorized: /api/v1/profiles/me/)
+2024-05-07 18:34:36,041:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/serializers.py changed, reloading.)
+2024-05-07 18:34:38,355:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:34:39,463:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:34:42,125:WARNING - django.request log.py (line 241. Unauthorized: /api/v1/profiles/me/)
+2024-05-07 18:34:43,514:WARNING - django.request log.py (line 241. Unauthorized: /api/v1/profiles/me/)
+2024-05-07 18:34:46,601:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/profiles/me/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/profiles/viewsets.py", line 41, in me_detail
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `ProfileSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+2024-05-07 18:34:57,645:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/serializers.py changed, reloading.)
+2024-05-07 18:35:00,376:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:35:01,775:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:35:07,478:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/profiles/me/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/profiles/viewsets.py", line 41, in me_detail
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `ProfileSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+2024-05-07 18:35:18,064:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/serializers.py changed, reloading.)
+2024-05-07 18:35:20,634:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:35:21,920:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:35:42,985:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/serializers.py changed, reloading.)
+2024-05-07 18:35:45,554:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:35:46,627:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:36:07,241:WARNING - django.request log.py (line 241. Not Found: /favicon.ico)
+2024-05-07 18:36:20,562:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/serializers.py changed, reloading.)
+2024-05-07 18:36:22,823:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:36:23,939:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:36:59,536:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/serializers.py changed, reloading.)
+2024-05-07 18:37:02,733:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:37:04,453:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:37:46,803:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:37:48,619:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:37:49,554:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:38:12,215:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:38:14,750:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:38:15,994:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:38:47,301:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:38:49,296:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:38:50,317:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:39:49,397:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:39:51,500:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:39:52,417:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:40:11,311:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:40:13,559:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:40:14,537:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:40:19,089:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/profiles/me/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/profiles/viewsets.py", line 39, in me_detail
+    profile = self.get_queryset(pk)
+              ^^^^^^^^^^^^^^^^^^^^^
+TypeError: ProfileViewSet.get_queryset() takes 1 positional argument but 2 were given
+2024-05-07 18:40:32,383:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:40:38,806:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:40:40,249:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:40:58,423:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:41:01,511:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:41:02,690:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:41:27,663:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 18:41:29,746:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:41:30,989:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:41:36,302:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 18:41:38,852:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:41:40,151:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:41:46,834:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 18:41:49,605:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:41:50,584:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:41:57,614:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 18:41:59,885:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:42:01,963:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:42:07,873:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 18:42:10,039:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:42:11,036:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:42:25,302:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 18:42:28,239:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:42:29,298:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:42:46,819:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:42:49,279:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:42:50,517:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:47:16,494:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:47:19,004:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:47:20,035:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:47:25,204:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:47:29,110:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:47:30,000:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:47:34,533:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/profiles/me/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/profiles/viewsets.py", line 39, in me_detail
+    profile = self.get_object(pk)
+              ^^^^^^^^^^^^^^^^^^^
+TypeError: GenericAPIView.get_object() takes 1 positional argument but 2 were given
+2024-05-07 18:48:09,829:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:48:12,074:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:48:13,354:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:48:35,772:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:48:37,695:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:48:38,854:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:48:55,819:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:48:58,247:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:48:59,172:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:50:18,324:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:50:20,248:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:50:21,084:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:50:41,174:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:50:42,999:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:50:43,826:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:51:19,969:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:51:21,783:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:51:22,718:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:51:28,102:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:51:30,524:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:51:31,582:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:51:40,329:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:51:42,136:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:51:43,304:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:51:49,461:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:51:51,976:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:51:53,531:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:51:59,540:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:52:01,595:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:52:02,572:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:52:09,303:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/profiles/me/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/profiles/viewsets.py", line 42, in me_detail
+    data["id"] = profile.id
+                 ^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'id'
+2024-05-07 18:52:24,522:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:52:30,539:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:52:31,940:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:56:21,930:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/permissions.py changed, reloading.)
+2024-05-07 18:56:24,028:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:56:24,845:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:56:52,093:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/permissions.py changed, reloading.)
+2024-05-07 18:56:53,941:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:56:54,834:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:56:58,075:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/permissions.py changed, reloading.)
+2024-05-07 18:57:00,058:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:57:01,068:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:57:09,356:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/permissions.py changed, reloading.)
+2024-05-07 18:57:11,203:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:57:12,027:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:57:51,295:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:57:53,331:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:57:54,341:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:58:05,355:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:58:07,511:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:58:08,398:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:58:19,519:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:58:21,699:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:58:22,991:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:58:27,656:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:58:30,324:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:58:31,867:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:58:37,750:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 18:58:40,209:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 18:58:41,481:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 18:59:35,786:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/)
+2024-05-07 19:01:35,885:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/profiles/42324a72-bfa1-4a34-a09e-55c62711a15a)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PATCH, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PATCH data. Change your form to point to 127.0.0.1:8000/api/v1/profiles/42324a72-bfa1-4a34-a09e-55c62711a15a/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+2024-05-07 19:01:44,703:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/42324a72-bfa1-4a34-a09e-55c62711a15a/)
+2024-05-07 19:02:17,563:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/3f44dd37-5536-408b-927d-5f7213a6fb53/)
+2024-05-07 19:02:18,874:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/3f44dd37-5536-408b-927d-5f7213a6fb53/)
+2024-05-07 19:02:19,689:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/3f44dd37-5536-408b-927d-5f7213a6fb53/)
+2024-05-07 19:02:20,663:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/3f44dd37-5536-408b-927d-5f7213a6fb53/)
+2024-05-07 19:02:21,734:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/3f44dd37-5536-408b-927d-5f7213a6fb53/)
+2024-05-07 19:02:23,332:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/3f44dd37-5536-408b-927d-5f7213a6fb53/)
+2024-05-07 19:02:44,069:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:02:46,408:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:02:47,560:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:02:51,057:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:02:53,530:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:02:54,683:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:03:01,988:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:03:03,747:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:03:04,659:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:03:08,336:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:03:10,986:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:03:12,384:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:03:15,633:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:03:18,386:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:03:19,521:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:03:24,486:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:03:26,818:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:03:28,016:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:03:33,632:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:03:36,337:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:03:37,469:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:03:41,001:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/3f44dd37-5536-408b-927d-5f7213a6fb53/)
+2024-05-07 19:03:42,791:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/3f44dd37-5536-408b-927d-5f7213a6fb53/)
+2024-05-07 19:03:44,579:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/3f44dd37-5536-408b-927d-5f7213a6fb53/)
+2024-05-07 19:04:04,368:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:04:06,250:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:04:07,014:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:05:53,610:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/permissions.py changed, reloading.)
+2024-05-07 19:05:55,936:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:05:56,818:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:06:14,775:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:06:16,733:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:06:17,469:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:06:28,774:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/permissions.py changed, reloading.)
+2024-05-07 19:06:31,235:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:06:32,757:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:06:38,972:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/permissions.py changed, reloading.)
+2024-05-07 19:06:41,417:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:06:42,699:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:11:53,172:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:11:55,269:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:11:56,371:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:12:00,588:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:12:02,412:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:12:03,432:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:12:07,878:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:12:09,758:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:12:10,759:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:12:40,453:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/)
+2024-05-07 19:14:28,177:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:14:30,313:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:14:31,200:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:14:35,691:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:14:37,712:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:14:38,838:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:17:47,621:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 19:17:49,554:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:17:50,411:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:18:17,151:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/profiles/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/pagination.py", line 204, in paginate_queryset
+    self.page = paginator.page(page_number)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 89, in page
+    number = self.validate_number(number)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 70, in validate_number
+    if number > self.num_pages:
+                ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 116, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+       ^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/paginator.py", line 111, in count
+    return len(self.object_list)
+           ^^^^^^^^^^^^^^^^^^^^^
+TypeError: object of type 'Profile' has no len()
+2024-05-07 19:18:34,805:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/viewsets.py changed, reloading.)
+2024-05-07 19:18:38,552:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:18:40,086:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:20:26,398:WARNING - django.request log.py (line 241. Not Found: /api/v1/profiles/42324a72-bfa1-4a34-a09e-55c62711a15a/)
+2024-05-07 19:22:14,234:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 19:22:16,255:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:22:17,242:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:22:24,125:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 19:22:26,304:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:22:27,644:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:22:32,636:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 19:22:34,521:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:22:35,397:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:22:40,693:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 19:22:43,019:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:22:44,031:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:22:55,246:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 19:22:57,076:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:22:57,836:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-07 19:23:15,342:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/managers.py changed, reloading.)
+2024-05-07 19:23:17,403:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-07 19:23:18,351:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
