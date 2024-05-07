@@ -52,11 +52,6 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
             return AnimeListSerializer
         return super().get_serializer_class()
 
-    def get_permissions(self):
-        if self.action == "review_list" or self.action == "review_detail":
-            return [IsAuthenticatedOrReadOnly()]
-        return super().get_permissions()
-
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
@@ -81,7 +76,12 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         serializer = AnimeListSerializer(popular_list, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    @action(detail=True, methods=["GET", "POST"], url_path="reviews")
+    @action(
+        detail=True,
+        methods=["GET", "POST"],
+        permission_classes=[IsAuthenticatedOrReadOnly],
+        url_path="reviews"
+    )
     def review_list(self, request, pk=None, format=None):
         """
         Action retrieves and creates reviews for an anime
@@ -123,6 +123,7 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
     @action(
         detail=True,
         methods=["GET", "PUT", "DELETE"],
+        permission_classes=[IsAuthenticatedOrReadOnly],
         url_path="reviews/(?P<review_id>[^/.]+)"
     )
     def review_detail(self, request, pk=None, review_id=None, format=None):
@@ -137,6 +138,8 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         anime = self.get_object()
         review = get_object_or_404(ReviewAnime, id=review_id, anime=anime)
 
+        message = "You do not have permission to perform this action."
+
         if request.method == "GET":
             # Retrieve the review associated with the anime
             serializer = ReviewAnimeSerializer(review)
@@ -144,6 +147,11 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
 
         elif request.method == "PUT":
             # Update the review associated with the anime
+            if review.user != request.user:
+                return Response(
+                    {"detail": message},
+                    status=status.HTTP_403_FORBIDDEN
+                )
             serializer = ReviewAnimeSerializer(review, data=request.data)
             if serializer.is_valid():
                 serializer.save()
@@ -155,6 +163,11 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
 
         elif request.method == "DELETE":
             # Delete the review associated with the anime
+            if review.user != request.user:
+                return Response(
+                    {"detail": message},
+                    status=status.HTTP_403_FORBIDDEN
+                )
             review.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
 
@@ -185,11 +198,6 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
         if self.action == "review_list" or self.action == "review_detail":
             return MangaListSerializer
         return super().get_serializer_class()
-
-    def get_permissions(self):
-        if self.action == "reviews":
-            return [IsAuthenticatedOrReadOnly()]
-        return super().get_permissions()
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -238,7 +246,12 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
         },
         methods=["POST"],
     )
-    @action(detail=True, methods=["GET", "POST"], url_path="reviews")
+    @action(
+        detail=True,
+        methods=["GET", "POST"],
+        permission_classes=[IsAuthenticatedOrReadOnly],
+        url_path="reviews"
+    )
     def review_list(self, request, pk=None, format=None):
         """
         Action retrieves and creates reviews for an manga.
@@ -277,6 +290,7 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
     @action(
         detail=True,
         methods=["GET", "PUT", "DELETE"],
+        permission_classes=[IsAuthenticatedOrReadOnly],
         url_path="reviews/(?P<review_id>[^/.]+)"
     )
     def review_detail(self, request, pk=None, review_id=None, format=None):
@@ -291,6 +305,8 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
         manga = self.get_object()
         review = get_object_or_404(ReviewManga, id=review_id, manga=manga)
 
+        message = "You do not have permission to perform this action."
+
         if request.method == "GET":
             # Retrieve the review associated with the manga
             serializer = ReviewMangaSerializer(review)
@@ -298,6 +314,11 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
 
         elif request.method == "PUT":
             # Update the review associated with the manga
+            if review.user != request.user:
+                return Response(
+                    {"detail": message},
+                    status=status.HTTP_403_FORBIDDEN
+                )
             serializer = ReviewMangaSerializer(review, data=request.data)
             if serializer.is_valid():
                 serializer.save()
@@ -309,5 +330,10 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
 
         elif request.method == "DELETE":
             # Delete the review associated with the manga
+            if review.user != request.user:
+                return Response(
+                    {"detail": message},
+                    status=status.HTTP_403_FORBIDDEN
+                )
             review.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
