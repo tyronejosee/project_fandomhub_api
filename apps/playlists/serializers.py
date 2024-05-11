@@ -13,7 +13,6 @@ class PlaylistSerializer(serializers.ModelSerializer):
     """Serializer for Playlist model."""
 
     class Meta:
-        """Meta definition for PlaylistSerializer."""
         model = Playlist
         fields = [
             "id",
@@ -28,7 +27,6 @@ class PlaylistAnimeSerializer(serializers.ModelSerializer):
     anime = AnimeMinimumSerializer(read_only=True)
 
     class Meta:
-        """Meta definition for PlaylistAnimeSerializer."""
         model = PlaylistAnime
         fields = [
             "id",
@@ -55,7 +53,6 @@ class PlaylistMangaSerializer(serializers.ModelSerializer):
     manga = MangaMinimumSerializer(read_only=True)
 
     class Meta:
-        """Meta definition for PlaylistMangaSerializer."""
         model = PlaylistManga
         fields = [
             "id",

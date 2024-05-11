@@ -8,7 +8,7 @@ from .models import User, Role
 
 @admin.register(Role)
 class RoleAdmin(admin.ModelAdmin):
-    """Admin config for Role model."""
+    """Admin for Role model."""
     list_display = ["name",]
     list_display_links = ["name"]
     search_fields = ["name",]
@@ -20,7 +20,7 @@ class RoleAdmin(admin.ModelAdmin):
 
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
-    """Admin config for User model."""
+    """Admin for User model."""
     list_display = ["username", "email", "is_staff", "is_superuser"]
     list_display_links = ["username"]
     search_fields = ["username", "email", "first_name", "last_name"]

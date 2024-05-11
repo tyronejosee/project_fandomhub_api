@@ -27,7 +27,6 @@ class Profile(BaseModel):
     objects = ProfileManager()
 
     class Meta:
-        """Meta definition for Profile."""
         ordering = ["pk"]
         verbose_name = _("profile")
         verbose_name_plural = _("profiles")

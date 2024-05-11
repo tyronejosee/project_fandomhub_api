@@ -17,7 +17,7 @@ class Role(models.Model):
         "auth.Permission", blank=True, verbose_name=_("permissions"))
 
     class Meta:
-        """Meta definition for Role model."""
+        ordering = ["pk"]
         verbose_name = _("role")
         verbose_name_plural = _("roles")
 
@@ -48,7 +48,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     REQUIRED_FIELDS = ["username"]
 
     class Meta:
-        """Meta definition for User model."""
+        ordering = ["pk"]
         verbose_name = _("user")
         verbose_name_plural = _("users")
 

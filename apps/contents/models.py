@@ -57,7 +57,6 @@ class Anime(BaseModel, SlugMixin):
     objects = AnimeManager()
 
     class Meta:
-        """Meta definition for Anime."""
         ordering = ["pk"]
         verbose_name = _("anime")
         verbose_name_plural = _("animes")
@@ -111,7 +110,6 @@ class Manga(BaseModel, SlugMixin):
     objects = MangaManager()
 
     class Meta:
-        """Meta definition for Manga."""
         ordering = ["pk"]
         verbose_name = _("manga")
         verbose_name_plural = _("mangas")

@@ -11,7 +11,6 @@ class NewListSerializer(serializers.ModelSerializer):
     author = serializers.SerializerMethodField()
 
     class Meta:
-        """Meta definition for NewListSerializer."""
         model = New
         fields = [
             "id",
@@ -32,7 +31,6 @@ class NewSerializer(serializers.ModelSerializer):
     tag = serializers.CharField(source="get_tag_display")
 
     class Meta:
-        """Meta definition for NewSerializer."""
         model = New
         fields = [
             "id",

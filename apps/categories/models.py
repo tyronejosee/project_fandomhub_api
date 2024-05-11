@@ -27,7 +27,6 @@ class Studio(BaseModel, SlugMixin):
     objects = StudioManager()
 
     class Meta:
-        """Meta definition for Studio."""
         ordering = ["pk"]
         verbose_name = _("studio")
         verbose_name_plural = _("studios")
@@ -44,7 +43,6 @@ class Genre(BaseModel, SlugMixin):
     objects = GenreManager()
 
     class Meta:
-        """Meta definition for Genre."""
         ordering = ["pk"]
         verbose_name = _("genre")
         verbose_name_plural = _("genres")
@@ -61,7 +59,6 @@ class Theme(BaseModel, SlugMixin):
     objects = ThemeManager()
 
     class Meta:
-        """Meta definition for Theme."""
         ordering = ["pk"]
         verbose_name = _("theme")
         verbose_name_plural = _("themes")
@@ -83,7 +80,6 @@ class Season(BaseModel):
     objects = SeasonManager()
 
     class Meta:
-        """Meta definition for Season."""
         ordering = ["pk"]
         verbose_name = _("season")
         verbose_name_plural = _("season")
@@ -108,7 +104,6 @@ class Demographic(BaseModel):
     objects = DemographicManager()
 
     class Meta:
-        """Meta definition for Demographic."""
         ordering = ["pk"]
         verbose_name = _("demographic")
         verbose_name_plural = _("demographics")

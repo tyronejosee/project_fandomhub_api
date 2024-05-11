@@ -22,7 +22,6 @@ class ReviewBase(BaseModel):
     comment = models.TextField(_("comment"))
 
     class Meta:
-        """Meta definition for ReviewBase."""
         abstract = True
 
 

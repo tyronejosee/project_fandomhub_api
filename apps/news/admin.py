@@ -7,7 +7,7 @@ from .models import New
 
 @admin.register(New)
 class NewAdmin(admin.ModelAdmin):
-    """Admin config for New model."""
+    """Admin for New model."""
     search_fields = ["title",]
     list_display = ["title",]
     list_filter = ["available",]

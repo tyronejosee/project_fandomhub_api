@@ -11,7 +11,6 @@ class StudioSerializer(serializers.ModelSerializer):
     name = serializers.CharField(max_length=255, validators=[validate_name])
 
     class Meta:
-        """Meta definition for StudioSerializer."""
         model = Studio
         fields = [
             "id",
@@ -28,7 +27,6 @@ class StudioListSerializer(serializers.ModelSerializer):
     """Serializer for Studio model (List only)."""
 
     class Meta:
-        """Meta definition for StudioListSerializer."""
         model = Studio
         fields = [
             "id",
@@ -43,7 +41,6 @@ class GenreSerializer(serializers.ModelSerializer):
     name = serializers.CharField(max_length=255, validators=[validate_name])
 
     class Meta:
-        """Meta definition for GenreSerializer."""
         model = Genre
         fields = [
             "id",
@@ -58,7 +55,6 @@ class ThemeSerializer(serializers.ModelSerializer):
     name = serializers.CharField(max_length=255, validators=[validate_name])
 
     class Meta:
-        """Meta definition for ThemeSerializer."""
         model = Theme
         fields = [
             "id",
@@ -72,7 +68,6 @@ class SeasonSerializer(serializers.ModelSerializer):
     """Serializer for Season model."""
 
     class Meta:
-        """Meta definition for SeasonSerializer."""
         model = Season
         fields = [
             "id",
@@ -87,7 +82,6 @@ class SeasonListSerializer(serializers.ModelSerializer):
     """Serializer for Season model (List only)."""
 
     class Meta:
-        """Meta definition for SeasonListSerializer."""
         model = Season
         fields = [
             "id",
@@ -101,7 +95,6 @@ class DemographicSerializer(serializers.ModelSerializer):
     name = serializers.CharField(max_length=255, validators=[validate_name])
 
     class Meta:
-        """Meta definition for DemographicSerializer."""
         model = Demographic
         fields = [
             "id",

@@ -42,7 +42,6 @@ class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
     search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]
-    # lookup_field = "slug"
 
     def get_queryset(self):
         return Studio.objects.get_available().defer(

@@ -15,7 +15,6 @@ class Author(BaseModel):
     objects = AuthorManager()
 
     class Meta:
-        """Meta definition for Author."""
         ordering = ["pk"]
         verbose_name = _("author")
         verbose_name_plural = _("authors")

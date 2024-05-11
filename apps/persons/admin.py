@@ -7,7 +7,7 @@ from .models import Author
 
 @admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):
-    """Admin config for Author model."""
+    """Admin for Author model."""
     search_fields = ["name",]
     list_display = ["name", "available"]
     list_filter = ["available",]

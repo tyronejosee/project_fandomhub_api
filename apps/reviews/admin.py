@@ -7,7 +7,7 @@ from .models import ReviewAnime, ReviewManga
 
 @admin.register(ReviewAnime)
 class ReviewAnimeAdmin(admin.ModelAdmin):
-    """Admin config for ReviewAnime model."""
+    """Admin for ReviewAnime model."""
     search_fields = ["user"]
     list_display = ["comment", "available"]
     list_filter = ["rating",]
@@ -19,7 +19,7 @@ class ReviewAnimeAdmin(admin.ModelAdmin):
 
 @admin.register(ReviewManga)
 class ReviewMangaAdmin(admin.ModelAdmin):
-    """Admin config for ReviewManga model."""
+    """Admin for ReviewManga model."""
     search_fields = ["user"]
     list_display = ["comment", "available"]
     list_filter = ["rating",]

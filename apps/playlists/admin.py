@@ -7,7 +7,7 @@ from .models import Playlist, PlaylistAnime, PlaylistManga
 
 @admin.register(Playlist)
 class PlaylistAdmin(admin.ModelAdmin):
-    """Admin config for Playlist model."""
+    """Admin for Playlist model."""
     search_fields = ["user",]
     list_display = ["user",]
     list_per_page = 25
@@ -17,7 +17,7 @@ class PlaylistAdmin(admin.ModelAdmin):
 
 @admin.register(PlaylistAnime)
 class PlaylistAnimeAdmin(admin.ModelAdmin):
-    """Admin config for PlaylistAnime model."""
+    """Admin for PlaylistAnime model."""
     search_fields = ["playlist",]
     list_display = ["playlist", "anime"]
     list_filter = ["is_watched", "status"]
@@ -29,7 +29,7 @@ class PlaylistAnimeAdmin(admin.ModelAdmin):
 
 @admin.register(PlaylistManga)
 class PlaylistMangaAdmin(admin.ModelAdmin):
-    """Admin config for PlaylistManga model."""
+    """Admin for PlaylistManga model."""
     search_fields = ["playlist",]
     list_display = ["playlist", "manga"]
     list_filter = ["is_watched", "status"]

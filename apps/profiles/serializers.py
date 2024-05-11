@@ -11,7 +11,6 @@ class ProfileSerializer(serializers.ModelSerializer):
     user = UserSerializer(read_only=True)
 
     class Meta:
-        """Meta definition for ProfileSerializer."""
         model = Profile
         fields = [
             "id",

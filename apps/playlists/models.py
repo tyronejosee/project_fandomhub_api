@@ -22,7 +22,6 @@ class Playlist(BaseModel):
     objects = PlaylistManager()
 
     class Meta:
-        """Meta definition for Playlist."""
         ordering = ["pk"]
         verbose_name = _("playlist")
         verbose_name_plural = _("playlists")
@@ -48,7 +47,6 @@ class PlaylistBase(BaseModel):
     objects = PlaylistBaseManager()
 
     class Meta:
-        """Meta definition for PlaylistBase."""
         abstract = True
 
 
@@ -59,7 +57,6 @@ class PlaylistAnime(PlaylistBase):
         related_name="playlist_anime", verbose_name=_("anime"))
 
     class Meta:
-        """Meta definition for PlaylistAnime."""
         ordering = ["pk"]
         verbose_name = _("playlist anime")
         verbose_name_plural = _("playlist animes")
@@ -75,7 +72,6 @@ class PlaylistManga(PlaylistBase):
         related_name="playlist_manga", verbose_name=_("manga"))
 
     class Meta:
-        """Meta definition for PlaylistManga."""
         ordering = ["pk"]
         verbose_name = _("playlist manga")
         verbose_name_plural = _("playlist mangas")

@@ -24,7 +24,6 @@ class SlugMixin(models.Model):
         super().save(*args, **kwargs)
 
     class Meta:
-        """Meta definition for SlugMixin."""
         abstract = True
 
 

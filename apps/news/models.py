@@ -26,10 +26,9 @@ class New(BaseModel):
     objects = NewManager()
 
     class Meta:
-        """Meta definition for New."""
         ordering = ["pk"]
-        verbose_name = _("New")
-        verbose_name_plural = _("News")
+        verbose_name = _("new")
+        verbose_name_plural = _("news")
         indexes = [
             models.Index(fields=["title"], name="title_idx"),
             models.Index(fields=["tag"], name="tag_idx"),

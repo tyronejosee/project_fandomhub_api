@@ -16,5 +16,4 @@ class BaseModel(models.Model):
         _("updated at"), auto_now=True, auto_now_add=False)
 
     class Meta:
-        """Meta definition for BaseModel."""
         abstract = True

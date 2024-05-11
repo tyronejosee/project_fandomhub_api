@@ -7,7 +7,7 @@ from .models import Anime, Manga
 
 @admin.register(Anime)
 class AnimeAdmin(admin.ModelAdmin):
-    """Admin config for Anime model."""
+    """Admin for Anime model."""
     search_fields = ["name", "name_jpn", "name_rom"]
     list_display = ["name", "available"]
     list_filter = ["status", "genres", "studio"]
@@ -23,7 +23,7 @@ class AnimeAdmin(admin.ModelAdmin):
 
 @admin.register(Manga)
 class MangaAdmin(admin.ModelAdmin):
-    """Admin config for Manga model."""
+    """Admin for Manga model."""
     search_fields = ["name", "name_jpn", "name_rom"]
     list_display = ["name", "available"]
     list_filter = ["status", "genres",]

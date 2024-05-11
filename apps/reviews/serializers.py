@@ -12,7 +12,6 @@ class ReviewAnimeSerializer(ModelSerializer):
     # TODO: Add image field to the user
 
     class Meta:
-        """Meta definition for ReviewAnimeSerializer."""
         model = ReviewAnime
         fields = [
             "id",
@@ -30,7 +29,6 @@ class ReviewMangaSerializer(ModelSerializer):
     # TODO: Add image field to the user
 
     class Meta:
-        """Meta definition for ReviewMangaSerializer."""
         model = ReviewManga
         fields = [
             "id",

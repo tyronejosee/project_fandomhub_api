@@ -7,7 +7,7 @@ from .models import Profile
 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
-    """Admin config for Profile model."""
+    """Admin for Profile model."""
     search_fields = ["user",]
     list_display = ["user", "available"]
     list_editable = ["available"]

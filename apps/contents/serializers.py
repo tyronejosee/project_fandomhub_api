@@ -18,7 +18,6 @@ class AnimeSerializer(serializers.ModelSerializer):
     category = serializers.CharField(source="get_category_display")
 
     class Meta:
-        """Meta definition for AnimeSerializer."""
         model = Anime
         fields = [
             "id",
@@ -46,7 +45,6 @@ class AnimeListSerializer(serializers.ModelSerializer):
     year = serializers.SerializerMethodField()
 
     class Meta:
-        """Meta definition for AnimeListSerializer."""
         model = Anime
         fields = [
             "id",
@@ -68,7 +66,6 @@ class AnimeMinimumSerializer(serializers.ModelSerializer):
     """Serializer for Anime model (Minimum)."""
 
     class Meta:
-        """Meta definition for AnimeListSerializer."""
         model = Anime
         fields = [
             "id",
@@ -84,7 +81,6 @@ class MangaSerializer(serializers.ModelSerializer):
     genres = GenreSerializer(many=True)
 
     class Meta:
-        """Meta definition for MangaSerializer."""
         model = Manga
         fields = [
             "id",
@@ -108,7 +104,6 @@ class MangaListSerializer(serializers.ModelSerializer):
     """Serializer for Manga model (List only)."""
 
     class Meta:
-        """Meta definition for MangaSerializer."""
         model = Manga
         fields = [
             "id",
@@ -124,7 +119,6 @@ class MangaMinimumSerializer(serializers.ModelSerializer):
     """Serializer for Anime model (Minimum)."""
 
     class Meta:
-        """Meta definition for AnimeListSerializer."""
         model = Manga
         fields = [
             "id",

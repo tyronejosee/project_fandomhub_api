@@ -142,10 +142,6 @@ REST_FRAMEWORK = {
     # "VERSION_PARAM": "version",
 }
 
-# ENUM_NAME_OVERRIDES = {
-#     "status": "StatusEnum",
-# }
-
 AUTHENTICATION_BACKENDS = (
     "social_core.backends.google.GoogleOAuth2",
     "social_core.backends.facebook.FacebookOAuth2",
