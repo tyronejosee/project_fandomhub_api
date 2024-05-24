@@ -8,6 +8,7 @@ from .models import Profile
 
 class ProfileSerializer(serializers.ModelSerializer):
     """Serializer for Profile model."""
+
     user = UserSerializer(read_only=True)
 
     class Meta:
@@ -19,5 +20,5 @@ class ProfileSerializer(serializers.ModelSerializer):
             "website",
             "birth_date",
             "image",
-            "cover"
+            "cover",
         ]

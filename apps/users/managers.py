@@ -8,7 +8,7 @@ from apps.playlists.models import Playlist
 
 
 class UserManager(BaseUserManager):
-    """Manager for User instances."""
+    """Manager for User model."""
 
     def create_user(self, email, password=None, **kwargs):
         """Creates and returns a user with the given email and password."""

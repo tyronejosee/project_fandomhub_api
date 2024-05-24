@@ -9,20 +9,24 @@ from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from .managers import (
-    StudioManager, GenreManager, ThemeManager,
-    SeasonManager, DemographicManager)
+    StudioManager,
+    GenreManager,
+    ThemeManager,
+    SeasonManager,
+    DemographicManager,
+)
 from .choices import SEASON_CHOICES
 
 
 class Studio(BaseModel, SlugMixin):
-    """Model definition for Studio (Catalog)."""
-    name = models.CharField(
-        _("name (eng)"), max_length=255, unique=True, db_index=True)
+    """Model definition for Studio."""
+
+    name = models.CharField(_("name (eng)"), max_length=255, unique=True, db_index=True)
     name_jpn = models.CharField(_("name (jpn)"), max_length=255, unique=True)
     established = models.CharField(
-        _("established"), max_length=255, blank=True, null=True)
-    image = models.ImageField(
-        _("image"), upload_to=image_path, blank=True, null=True)
+        _("established"), max_length=255, blank=True, null=True
+    )
+    image = models.ImageField(_("image"), upload_to=image_path, blank=True, null=True)
 
     objects = StudioManager()
 
@@ -36,9 +40,9 @@ class Studio(BaseModel, SlugMixin):
 
 
 class Genre(BaseModel, SlugMixin):
-    """Model definition for Genre (Catalog)."""
-    name = models.CharField(
-        _("name"), max_length=255, unique=True, db_index=True)
+    """Model definition for Genre."""
+
+    name = models.CharField(_("name"), max_length=255, unique=True, db_index=True)
 
     objects = GenreManager()
 
@@ -52,9 +56,9 @@ class Genre(BaseModel, SlugMixin):
 
 
 class Theme(BaseModel, SlugMixin):
-    """Model definition for Theme (Catalog)."""
-    name = models.CharField(
-        _("name"), max_length=255, unique=True, db_index=True)
+    """Model definition for Theme."""
+
+    name = models.CharField(_("name"), max_length=255, unique=True, db_index=True)
 
     objects = ThemeManager()
 
@@ -68,14 +72,18 @@ class Theme(BaseModel, SlugMixin):
 
 
 class Season(BaseModel):
-    """Model definition for Season (Catalog)."""
+    """Model definition for Season."""
+
     season = models.CharField(
-        _("season"), max_length=10, choices=SEASON_CHOICES, default="pending")
+        _("season"), max_length=10, choices=SEASON_CHOICES, default="pending"
+    )
     year = models.IntegerField(
-        _("year"), default=2010, db_index=True,
-        validators=[MinValueValidator(1900), MaxValueValidator(2100)])
-    fullname = models.CharField(
-        _("fullname"), max_length=255, unique=True, blank=True)
+        _("year"),
+        default=2010,
+        db_index=True,
+        validators=[MinValueValidator(1900), MaxValueValidator(2100)],
+    )
+    fullname = models.CharField(_("fullname"), max_length=255, unique=True, blank=True)
 
     objects = SeasonManager()
 
@@ -97,9 +105,9 @@ class Season(BaseModel):
 
 
 class Demographic(BaseModel):
-    """Model definition for Demographic (Catalog)."""
-    name = models.CharField(
-        _("name"), max_length=50, unique=True, db_index=True)
+    """Model definition for Demographic."""
+
+    name = models.CharField(_("name"), max_length=50, unique=True, db_index=True)
 
     objects = DemographicManager()
 

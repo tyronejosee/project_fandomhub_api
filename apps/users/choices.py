@@ -1,12 +1,13 @@
 """Choices for Contents App."""
 
+from django.db.models import TextChoices
 from django.utils.translation import gettext as _
 
 
-STATUS_CHOICES = [
-    ("client", _("Client")),
-    ("admin", _("Admin")),
-    ("moderator", _("Moderator")),
-    ("helper", _("Helper")),
-    ("editor", _("Editor"))
-]
+class Role(TextChoices):
+
+    MEMBER = "member", _("Member")
+    PREMIUM = "premium", _("Premium")
+    CONTRIBUTOR = "contributor", _("Contributor")
+    MODERATOR = "moderator", _("Moderator")
+    ADMINISTRATOR = "administrator", _("Administrator")

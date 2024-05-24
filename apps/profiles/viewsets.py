@@ -11,9 +11,7 @@ from .models import Profile
 from .serializers import ProfileSerializer
 
 
-class ProfileViewSet(RetrieveModelMixin,
-                     UpdateModelMixin,
-                     GenericViewSet):
+class ProfileViewSet(RetrieveModelMixin, UpdateModelMixin, GenericViewSet):
     """
     ViewSet for managing Profile instances.
 
@@ -22,6 +20,7 @@ class ProfileViewSet(RetrieveModelMixin,
     - PUT /api/v1/profiles/{id}/
     - PATCH /api/v1/profiles/{id}/
     """
+
     permission_classes = [IsAuthenticated, IsOwner]
     serializer_class = ProfileSerializer
 

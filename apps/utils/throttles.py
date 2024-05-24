@@ -5,18 +5,21 @@ from rest_framework.throttling import AnonRateThrottle, UserRateThrottle
 
 class AnonUserThrottle(AnonRateThrottle):
     """Throttle class for anon users (100 requests/day)."""
+
     scope = "anon"
     THROTTLE_RATES = {"anon": "100/day"}
 
 
 class AuthUserThrottle(UserRateThrottle):
     """Throttle class for auth users (1000 requests/day)."""
+
     scope = "user"
     THROTTLE_RATES = {"user": "1000/day"}
 
 
 class StaffUserThrottle(UserRateThrottle):
     """Throttle class for staff (no limits)."""
+
     scope = "staff"
     THROTTLE_RATES = {"staff": None}
 

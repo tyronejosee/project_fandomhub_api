@@ -8,7 +8,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: bernardoreyes
     ports:
-      - 5432:5432
+      - 5440:5432
     volumes:
       - .data:/var/lib/postgresql
 
@@ -16,7 +16,7 @@ services:
     image: redis
     container_name: fandomhub_redis
     ports:
-      - 6379:6379
+      - 6390:6379
 
   web:
     container_name: fandomhub_web
@@ -27,7 +27,7 @@ services:
     volumes:
       - .:/app
     ports:
-      - "8000:8000"
+      - "8010:8000"
     env_file:
       - ./.env.dev
     depends_on:

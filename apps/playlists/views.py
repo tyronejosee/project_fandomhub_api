@@ -12,9 +12,11 @@ from apps.contents.models import Anime, Manga
 from apps.utils.permissions import IsOwner
 from .models import Playlist, PlaylistAnime, PlaylistManga
 from .serializers import (
-    PlaylistSerializer, PlaylistAnimeSerializer, PlaylistMangaSerializer)
-from .schemas import (
-    playlists_schemas, playlists_anime_schemas, playlists_manga_schemas)
+    PlaylistSerializer,
+    PlaylistAnimeSerializer,
+    PlaylistMangaSerializer,
+)
+from .schemas import playlists_schemas, playlists_anime_schemas, playlists_manga_schemas
 
 
 @extend_schema_view(**playlists_schemas)
@@ -25,6 +27,7 @@ class PlaylistView(APIView):
     Endpoints:
     - GET /api/v1/playlists/me/
     """
+
     serializer_class = PlaylistSerializer
     permission_classes = [IsAuthenticated, IsOwner]
 
@@ -47,6 +50,7 @@ class PlaylistAnimeListView(APIView):
     - GET /api/v1/playlists/animes/
     - POST /api/v1/playlists/animes/
     """
+
     permission_classes = [IsAuthenticated, IsOwner]
     cache_timeout = 7200  # Cache for 2 hours
 
@@ -66,8 +70,7 @@ class PlaylistAnimeListView(APIView):
                 cache.set(cache_key, serializer.data, self.cache_timeout)
                 return Response(serializer.data, status=status.HTTP_200_OK)
             return Response(
-                {"detail": "Empty anime playlist."},
-                status=status.HTTP_404_NOT_FOUND
+                {"detail": "Empty anime playlist."}, status=status.HTTP_404_NOT_FOUND
             )
 
         return Response(cached_data, status=status.HTTP_200_OK)
@@ -85,8 +88,7 @@ class PlaylistAnimeListView(APIView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
-        if PlaylistAnime.objects.filter(
-                playlist=playlist, anime_id=anime_id).exists():
+        if PlaylistAnime.objects.filter(playlist=playlist, anime_id=anime_id).exists():
             return Response(
                 {"detail": "Anime already in playlist."},
                 status=status.HTTP_404_NOT_FOUND,
@@ -114,6 +116,7 @@ class PlaylistAnimeDetailView(APIView):
     - PATCH /api/v1/playlists/animes/{id}/
     - DELETE /api/v1/playlists/animes/{id}/
     """
+
     permission_classes = [IsAuthenticated, IsOwner]
 
     def patch(self, request, item_id):
@@ -172,6 +175,7 @@ class PlaylistMangaListView(APIView):
     - GET /api/v1/playlists/mangas/
     - POST /api/v1/playlists/mangas/
     """
+
     permission_classes = [IsAuthenticated, IsOwner]
     cache_timeout = 7200  # Cache for 2 hours
 
@@ -191,8 +195,7 @@ class PlaylistMangaListView(APIView):
                 cache.set(cache_key, serializer.data, self.cache_timeout)
                 return Response(serializer.data, status=status.HTTP_200_OK)
             return Response(
-                {"detail": "Empty manga playlist."},
-                status=status.HTTP_404_NOT_FOUND
+                {"detail": "Empty manga playlist."}, status=status.HTTP_404_NOT_FOUND
             )
 
         return Response(cached_data, status=status.HTTP_200_OK)
@@ -210,8 +213,7 @@ class PlaylistMangaListView(APIView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
-        if PlaylistManga.objects.filter(
-                playlist=playlist, manga_id=manga_id).exists():
+        if PlaylistManga.objects.filter(playlist=playlist, manga_id=manga_id).exists():
             return Response(
                 {"detail": "Manga already in playlist."},
                 status=status.HTTP_404_NOT_FOUND,
@@ -239,6 +241,7 @@ class PlaylistMangaDetailView(APIView):
     - PATCH /api/v1/playlists/mangas/{id}/
     - DELETE /api/v1/playlists/mangas/{id}/
     """
+
     permission_classes = [IsAuthenticated, IsOwner]
 
     def patch(self, request, item_id):

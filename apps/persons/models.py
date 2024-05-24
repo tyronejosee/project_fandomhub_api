@@ -8,9 +8,9 @@ from apps.utils.models import BaseModel
 
 
 class Author(BaseModel):
-    """Model definition for Author (Catalog)."""
-    name = models.CharField(
-        _("name"), max_length=255, unique=True, db_index=True)
+    """Model definition for Author."""
+
+    name = models.CharField(_("name"), max_length=255, unique=True, db_index=True)
 
     objects = AuthorManager()
 

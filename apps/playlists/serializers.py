@@ -4,8 +4,7 @@ from django.shortcuts import get_object_or_404
 from rest_framework import serializers
 
 from apps.contents.models import Anime, Manga
-from apps.contents.serializers import (
-    AnimeMinimumSerializer, MangaMinimumSerializer)
+from apps.contents.serializers import AnimeMinimumSerializer, MangaMinimumSerializer
 from .models import Playlist, PlaylistAnime, PlaylistManga
 
 
@@ -17,12 +16,13 @@ class PlaylistSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "name",
-            "created_at"
+            "created_at",
         ]
 
 
 class PlaylistAnimeSerializer(serializers.ModelSerializer):
     """Serializer for PlaylistAnime model."""
+
     anime_id = serializers.UUIDField(write_only=True)
     anime = AnimeMinimumSerializer(read_only=True)
 
@@ -34,7 +34,7 @@ class PlaylistAnimeSerializer(serializers.ModelSerializer):
             "anime_id",
             "status",
             "is_watched",
-            "is_favorite"
+            "is_favorite",
         ]  # Add order field
 
         def create(self, validated_data):
@@ -49,6 +49,7 @@ class PlaylistAnimeSerializer(serializers.ModelSerializer):
 
 class PlaylistMangaSerializer(serializers.ModelSerializer):
     """Serializer for PlaylistManga model."""
+
     manga_id = serializers.UUIDField(write_only=True)
     manga = MangaMinimumSerializer(read_only=True)
 
@@ -60,7 +61,7 @@ class PlaylistMangaSerializer(serializers.ModelSerializer):
             "manga_id",
             "status",
             "is_watched",
-            "is_favorite"
+            "is_favorite",
         ]  # Add order field
 
         def create(self, validated_data):

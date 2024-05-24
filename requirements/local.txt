@@ -2,6 +2,7 @@
 
 # Database
 psycopg==3.1.18
+psycopg2-binary==2.9.9
 
 # Documentation
 sphinx==7.2.6

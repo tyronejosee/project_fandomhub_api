@@ -12,7 +12,7 @@ User = settings.AUTH_USER_MODEL
 
 
 class New(BaseModel):
-    """Model definition for New (Entity)."""
+    """Model definition for New."""
     title = models.CharField(_("title"), max_length=100)
     description = models.CharField(_("description"), max_length=255)
     content = models.TextField(_("content"))

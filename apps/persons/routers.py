@@ -10,5 +10,5 @@ router_v1 = DefaultRouter()
 router_v1.register(r"authors", AuthorViewSet, basename="author")
 
 urlpatterns = [
-    path("api/v1/", include(router_v1.urls))
+    path("api/v1/", include(router_v1.urls)),
 ]
