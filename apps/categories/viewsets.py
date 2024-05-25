@@ -17,11 +17,19 @@ from apps.contents.models import Anime, Manga
 from apps.contents.serializers import AnimeListSerializer, MangaListSerializer
 from .models import Studio, Genre, Theme, Season, Demographic
 from .serializers import (
-    StudioSerializer, GenreSerializer, ThemeSerializer,
-    SeasonSerializer, DemographicSerializer)
+    StudioSerializer,
+    GenreSerializer,
+    ThemeSerializer,
+    SeasonSerializer,
+    DemographicSerializer,
+)
 from .schemas import (
-    studio_schemas, genre_schemas, theme_schemas,
-    season_schemas, demographic_schemas)
+    studio_schemas,
+    genre_schemas,
+    theme_schemas,
+    season_schemas,
+    demographic_schemas,
+)
 
 
 @extend_schema_view(**studio_schemas)
@@ -37,6 +45,7 @@ class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
     - PATCH /api/v1/studios/{id}/
     - DELETE /api/v1/studios/{id}/
     """
+
     serializer_class = StudioSerializer
     permission_classes = [IsStaffOrReadOnly]
     search_fields = ["name"]
@@ -55,7 +64,7 @@ class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
 
     @extend_schema(
         summary="Get Animes for Studio",
-        description="Retrieve a list of animes for studio."
+        description="Retrieve a list of animes for studio.",
     )
     @action(detail=True, methods=["get"], url_path="animes")
     @method_decorator(cache_page(60 * 60 * 2))
@@ -75,7 +84,7 @@ class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
             return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no animes for this studio.")},
-            status=status.HTTP_404_NOT_FOUND
+            status=status.HTTP_404_NOT_FOUND,
         )
 
 
@@ -92,10 +101,11 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
     - PATCH /api/v1/genres/{id}/
     - DELETE /api/v1/genres/{id}/
     """
+
     serializer_class = GenreSerializer
     permission_classes = [IsStaffOrReadOnly]
     pagination_class = LargeSetPagination
-    search_fields = ["name",]
+    search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]
 
@@ -109,7 +119,7 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
 
     @extend_schema(
         summary="Get Animes for Genre",
-        description="Retrieve a list of animes for genre."
+        description="Retrieve a list of animes for genre.",
     )
     @action(detail=True, methods=["get"], url_path="animes")
     @method_decorator(cache_page(60 * 60 * 2))
@@ -129,12 +139,11 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
             return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no animes for this genre.")},
-            status=status.HTTP_404_NOT_FOUND
+            status=status.HTTP_404_NOT_FOUND,
         )
 
     @extend_schema(
-        summary="Get Mangas for Genre",
-        description="Retrieve a manga list for genre."
+        summary="Get Mangas for Genre", description="Retrieve a manga list for genre."
     )
     @action(detail=True, methods=["get"], url_path="mangas")
     @method_decorator(cache_page(60 * 60 * 2))
@@ -154,7 +163,7 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
             return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no mangas for this genre.")},
-            status=status.HTTP_404_NOT_FOUND
+            status=status.HTTP_404_NOT_FOUND,
         )
 
 
@@ -171,9 +180,10 @@ class ThemeViewSet(LogicalDeleteMixin, ModelViewSet):
     - PATCH /api/v1/themes/{id}/
     - DELETE /api/v1/themes/{id}/
     """
+
     serializer_class = ThemeSerializer
     permission_classes = [IsStaffOrReadOnly]
-    search_fields = ["name",]
+    search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]
 
@@ -199,6 +209,7 @@ class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
     - PATCH /api/v1/seasons/{id}/
     - DELETE /api/v1/seasons/{id}/
     """
+
     serializer_class = SeasonSerializer
     permission_classes = [IsStaffOrReadOnly]
     search_fields = ["name"]
@@ -206,9 +217,7 @@ class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
     ordering = ["id"]
 
     def get_queryset(self):
-        return Season.objects.get_available().only(
-            "id", "season", "year", "fullname"
-        )
+        return Season.objects.get_available().only("id", "season", "year", "fullname")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -233,7 +242,7 @@ class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
             return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no animes for this season.")},
-            status=status.HTTP_404_NOT_FOUND
+            status=status.HTTP_404_NOT_FOUND,
         )
 
 
@@ -250,6 +259,7 @@ class DemographicViewSet(LogicalDeleteMixin, ModelViewSet):
     - PATCH /api/v1/demographics/{id}/
     - DELETE /api/v1/demographics/{id}/
     """
+
     serializer_class = DemographicSerializer
     permission_classes = [IsStaffOrReadOnly]
     search_fields = ["name"]

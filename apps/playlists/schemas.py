@@ -26,7 +26,7 @@ playlists_anime_schemas = {
     "delete": extend_schema(
         summary="Remove an Anime to the Playlist",
         description="Pending.",
-    )
+    ),
 }
 
 playlists_manga_schemas = {
@@ -45,5 +45,5 @@ playlists_manga_schemas = {
     "delete": extend_schema(
         summary="Remove an Manga to the Playlist",
         description="Pending.",
-    )
+    ),
 }

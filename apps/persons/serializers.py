@@ -12,5 +12,5 @@ class AuthorSerializer(ModelSerializer):
         model = Author
         fields = [
             "id",
-            "name"
+            "name",
         ]

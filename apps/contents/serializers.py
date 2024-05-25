@@ -4,13 +4,17 @@ from rest_framework import serializers
 from drf_spectacular.utils import extend_schema_field
 
 from apps.categories.serializers import (
-    GenreSerializer, StudioListSerializer, SeasonListSerializer,
-    DemographicSerializer)
+    GenreSerializer,
+    StudioListSerializer,
+    SeasonListSerializer,
+    DemographicSerializer,
+)
 from .models import Anime, Manga
 
 
 class AnimeSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
+
     studio = StudioListSerializer()
     genres = GenreSerializer(many=True)
     season = SeasonListSerializer()
@@ -36,12 +40,13 @@ class AnimeSerializer(serializers.ModelSerializer):
             "rating",
             "studio",
             "genres",
-            "season"
+            "season",
         ]
 
 
 class AnimeListSerializer(serializers.ModelSerializer):
     """Serializer for Anime model (List only)."""
+
     year = serializers.SerializerMethodField()
 
     class Meta:
@@ -54,7 +59,7 @@ class AnimeListSerializer(serializers.ModelSerializer):
             "episodes",
             "rank",
             "popularity",
-            "num_list_users"
+            "num_list_users",
         ]
 
     @extend_schema_field(int)
@@ -70,12 +75,13 @@ class AnimeMinimumSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "name",
-            "image"
+            "image",
         ]
 
 
 class MangaSerializer(serializers.ModelSerializer):
     """Serializer for Manga model."""
+
     author = serializers.CharField(source="author.name")
     demographic = DemographicSerializer()
     genres = GenreSerializer(many=True)
@@ -96,7 +102,7 @@ class MangaSerializer(serializers.ModelSerializer):
             "status",
             "author",
             "demographic",
-            "genres"
+            "genres",
         ]
 
 
@@ -111,7 +117,7 @@ class MangaListSerializer(serializers.ModelSerializer):
             "image",
             "release",
             "media_type",
-            "status"
+            "status",
         ]
 
 
@@ -123,5 +129,5 @@ class MangaMinimumSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "name",
-            "image"
+            "image",
         ]

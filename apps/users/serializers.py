@@ -17,7 +17,8 @@ class UserSerializer(UserCreateSerializer):
             "username",
             "first_name",
             "last_name",
-            "date_joined"
+            "created_at",
+            "updated_at",
         ]
 
 
@@ -29,4 +30,4 @@ class UserListSerializer(UserCreateSerializer):
         fields = [
             "id",
             "username",
-        ]  # TODO: Add image field to the user
+        ]

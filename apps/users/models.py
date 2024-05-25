@@ -3,9 +3,11 @@
 import uuid
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
-from django.utils import timezone
+from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
+from apps.utils.validators import FileSizeValidator, ImageSizeValidator
+from apps.utils.paths import image_path
 from .managers import UserManager
 from .choices import Role
 
@@ -20,12 +22,24 @@ class User(AbstractBaseUser, PermissionsMixin):
         _("first name"), max_length=255, blank=True, null=True
     )
     last_name = models.CharField(_("last name"), max_length=255, blank=True, null=True)
+    image = models.ImageField(
+        _("image"),
+        upload_to=image_path,
+        blank=True,
+        null=True,
+        validators=[
+            FileExtensionValidator(allowed_extensions=["jpg", "png", "webp"]),
+            ImageSizeValidator(max_width=600, max_height=600),
+            FileSizeValidator(limit_mb=1),
+        ],
+    )
     role = models.CharField(
         _("role"), max_length=15, choices=Role.choices, default=Role.MEMBER
     )
     is_active = models.BooleanField(_("is active"), default=True)
     is_staff = models.BooleanField(_("is staff"), default=False)
-    date_joined = models.DateTimeField(_("date joined"), default=timezone.now)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     objects = UserManager()
 

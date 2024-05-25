@@ -6,7 +6,8 @@ from .models import New
 
 
 class NewListSerializer(serializers.ModelSerializer):
-    """Serializer for New model (List only).."""
+    """Serializer for New model (List).."""
+
     tag = serializers.CharField(source="get_tag_display")
     author = serializers.SerializerMethodField()
 
@@ -18,7 +19,7 @@ class NewListSerializer(serializers.ModelSerializer):
             "description",
             "image",
             "tag",
-            "author"
+            "author",
         ]
         read_only_fields = ["author"]
 
@@ -28,6 +29,7 @@ class NewListSerializer(serializers.ModelSerializer):
 
 class NewSerializer(serializers.ModelSerializer):
     """Serializer for New model."""
+
     tag = serializers.CharField(source="get_tag_display")
 
     class Meta:
@@ -42,5 +44,5 @@ class NewSerializer(serializers.ModelSerializer):
             "tag",
             "author",
             "created_at",
-            "updated_at"
+            "updated_at",
         ]

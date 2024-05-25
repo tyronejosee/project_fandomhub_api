@@ -24,13 +24,13 @@ repos:
     rev: "1.16.0"
     hooks:
       - id: django-upgrade
-        args: ["--target-version", "4.2"]
+        args: ["--target-version", "5.0"]
 
   - repo: https://github.com/pycqa/flake8
     rev: "7.0.0"
     hooks:
       - id: flake8
-        args: ["--max-line-length=79", "--ignore=E501"]
+        args: ["--max-line-length=79", "--ignore=E501,W503"]
 
   # # Run the Ruff linter.
   # - repo: https://github.com/astral-sh/ruff-pre-commit

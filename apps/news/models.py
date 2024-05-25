@@ -13,15 +13,16 @@ User = settings.AUTH_USER_MODEL
 
 class New(BaseModel):
     """Model definition for New."""
+
     title = models.CharField(_("title"), max_length=100)
     description = models.CharField(_("description"), max_length=255)
     content = models.TextField(_("content"))
     image = models.ImageField(_("image"), upload_to="news/")
     source = models.URLField(_("source"), max_length=255)
     tag = models.CharField(
-        _("tag"), max_length=15, choices=TAG_CHOICES, default="pending")
-    author = models.ForeignKey(
-        User, on_delete=models.CASCADE, verbose_name=_("user"))
+        _("tag"), max_length=15, choices=TAG_CHOICES, default="pending"
+    )
+    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("user"))
 
     objects = NewManager()
 

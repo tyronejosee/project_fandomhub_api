@@ -1,40 +1,33 @@
 """Serializers for Reviews App."""
 
-from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
 
-from apps.users.serializers import UserListSerializer
-from .models import ReviewAnime, ReviewManga
+from .models import Review
 
 
-class ReviewAnimeSerializer(ModelSerializer):
-    """Serializer for ReviewAnime model."""
-    user = UserListSerializer(read_only=True)
-    # TODO: Add image field to the user
+class ReviewReadSerializer(serializers.ModelSerializer):
+    """Serializer for Review model (List/retrieve)."""
+
+    user = serializers.StringRelatedField()
 
     class Meta:
-        model = ReviewAnime
+        model = Review
         fields = [
             "id",
             "user",
             "comment",
             "rating",
             "created_at",
-            "updated_at"
+            "updated_at",
         ]
 
 
-class ReviewMangaSerializer(ModelSerializer):
-    """Serializer for ReviewManga model."""
-    user = UserListSerializer(read_only=True)
-    # TODO: Add image field to the user
+class ReviewWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Review model (Create/update)."""
 
     class Meta:
-        model = ReviewManga
+        model = Review
         fields = [
-            "id",
-            "user",
             "comment",
             "rating",
-            "created_at",
-            "updated_at"
         ]
