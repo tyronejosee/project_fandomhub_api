@@ -10,6 +10,4 @@ router = DefaultRouter()
 router.register(r"animes", AnimeViewSet, basename="anime")
 router.register(r"mangas", MangaViewSet, basename="manga")
 
-urlpatterns = [
-    path("api/v1/", include(router.urls)),
-]
+urlpatterns = [path("api/v1/", include(router.urls))]

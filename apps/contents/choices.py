@@ -7,7 +7,7 @@ STATUS_CHOICES = [
     ("pending", _("Pending")),
     ("finished", _("Finished")),
     ("airing", _("Airing")),
-    ("upcoming", _("Upcoming"))
+    ("upcoming", _("Upcoming")),
 ]
 
 CATEGORY_CHOICES = [

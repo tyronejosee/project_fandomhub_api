@@ -11,5 +11,5 @@ new_schemas = {
     "retrieve": extend_schema(
         summary="Get New",
         description="Get detailed information about a specific new entry.",
-    )
+    ),
 }

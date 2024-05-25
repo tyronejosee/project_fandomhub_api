@@ -4,8 +4,12 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
 from .viewsets import (
-    StudioViewSet, GenreViewSet, ThemeViewSet,
-    SeasonViewSet, DemographicViewSet)
+    StudioViewSet,
+    GenreViewSet,
+    ThemeViewSet,
+    SeasonViewSet,
+    DemographicViewSet,
+)
 
 
 router_v1 = DefaultRouter()
@@ -15,6 +19,4 @@ router_v1.register(r"studios", StudioViewSet, basename="studio")
 router_v1.register(r"seasons", SeasonViewSet, basename="season")
 router_v1.register(r"demographics", DemographicViewSet, basename="demographic")
 
-urlpatterns = [
-    path("api/v1/", include(router_v1.urls))
-]
+urlpatterns = [path("api/v1/", include(router_v1.urls))]

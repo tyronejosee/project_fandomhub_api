@@ -8,9 +8,23 @@ from .models import Author
 @admin.register(Author)
 class AuthorAdmin(admin.ModelAdmin):
     """Admin for Author model."""
-    search_fields = ["name",]
-    list_display = ["name", "available"]
-    list_filter = ["available",]
+
     list_per_page = 25
-    readonly_fields = ["pk", "created_at", "updated_at"]
-    ordering = ["-created_at",]
+    search_fields = [
+        "name",
+    ]
+    list_display = [
+        "name",
+        "available",
+    ]
+    list_filter = [
+        "available",
+    ]
+    readonly_fields = [
+        "pk",
+        "created_at",
+        "updated_at",
+    ]
+    ordering = [
+        "-created_at",
+    ]

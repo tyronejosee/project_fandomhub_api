@@ -33,6 +33,7 @@ class AuthorViewSet(LogicalDeleteMixin, ModelViewSet):
     - PATCH /api/v1/authors/{id}/
     - DELETE /api/v1/authors/{id}/
     """
+
     serializer_class = AuthorSerializer
     permission_classes = [IsStaffOrReadOnly]
     search_fields = ["name"]
@@ -49,7 +50,7 @@ class AuthorViewSet(LogicalDeleteMixin, ModelViewSet):
 
     @extend_schema(
         summary="Get Mangas for Author",
-        description="Retrieve a list of mangas for author."
+        description="Retrieve a list of mangas for author.",
     )
     @action(detail=True, methods=["get"], url_path="mangas")
     @method_decorator(cache_page(60 * 60 * 2))
@@ -65,5 +66,5 @@ class AuthorViewSet(LogicalDeleteMixin, ModelViewSet):
             return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no mangas for this author.")},
-            status=status.HTTP_404_NOT_FOUND
+            status=status.HTTP_404_NOT_FOUND,
         )

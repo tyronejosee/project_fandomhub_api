@@ -11,5 +11,5 @@ TAG_CHOICES = [
     ("review", _("Review")),
     ("interview", _("Interview")),
     ("event", _("Event")),
-    ("recommendation", _("Recommendation"))
+    ("recommendation", _("Recommendation")),
 ]

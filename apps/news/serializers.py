@@ -15,11 +15,11 @@ class NewListSerializer(serializers.ModelSerializer):
         model = New
         fields = [
             "id",
+            "author",
             "title",
             "description",
             "image",
             "tag",
-            "author",
         ]
         read_only_fields = ["author"]
 
@@ -36,13 +36,13 @@ class NewSerializer(serializers.ModelSerializer):
         model = New
         fields = [
             "id",
+            "author",
             "title",
             "description",
             "content",
             "image",
             "source",
             "tag",
-            "author",
             "created_at",
             "updated_at",
         ]

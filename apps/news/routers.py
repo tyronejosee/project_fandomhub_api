@@ -9,6 +9,4 @@ from .viewsets import NewViewSet
 router_v1 = DefaultRouter()
 router_v1.register(r"news", NewViewSet, basename="new")
 
-urlpatterns = [
-    path("api/v1/", include(router_v1.urls))
-]
+urlpatterns = [path("api/v1/", include(router_v1.urls))]
