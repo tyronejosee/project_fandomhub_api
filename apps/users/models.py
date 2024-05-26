@@ -3,13 +3,10 @@
 import uuid
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
-from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
-from apps.utils.validators import FileSizeValidator, ImageSizeValidator
-from apps.utils.paths import image_path
 from .managers import UserManager
-from .choices import Role
+from .choices import RoleChoices
 
 
 class User(AbstractBaseUser, PermissionsMixin):
@@ -18,28 +15,14 @@ class User(AbstractBaseUser, PermissionsMixin):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     email = models.EmailField(_("email"), max_length=255, unique=True, db_index=True)
     username = models.CharField(_("username"), max_length=255, unique=True)
-    first_name = models.CharField(
-        _("first name"), max_length=255, blank=True, null=True
-    )
-    last_name = models.CharField(_("last name"), max_length=255, blank=True, null=True)
-    image = models.ImageField(
-        _("image"),
-        upload_to=image_path,
-        blank=True,
-        null=True,
-        validators=[
-            FileExtensionValidator(allowed_extensions=["jpg", "png", "webp"]),
-            ImageSizeValidator(max_width=600, max_height=600),
-            FileSizeValidator(limit_mb=1),
-        ],
-    )
     role = models.CharField(
-        _("role"), max_length=15, choices=Role.choices, default=Role.MEMBER
+        _("role"), max_length=15, choices=RoleChoices.choices, default=RoleChoices.MEMBER
     )
+    is_online = models.BooleanField(_("is online"), default=False)
     is_active = models.BooleanField(_("is active"), default=True)
     is_staff = models.BooleanField(_("is staff"), default=False)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    created_at = models.DateTimeField(_("created at"), auto_now_add=True)
+    updated_at = models.DateTimeField(_("updated at"), auto_now=True)
 
     objects = UserManager()
 
@@ -53,7 +36,3 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return str(self.username)
-
-    @property
-    def full_name(self):
-        return f"{self.first_name} {self.last_name}"

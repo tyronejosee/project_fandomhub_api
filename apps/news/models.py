@@ -5,8 +5,9 @@ from django.db import models
 from django.utils.translation import gettext as _
 
 from apps.utils.models import BaseModel
+from apps.utils.paths import image_path
 from .managers import NewManager
-from .choices import TAG_CHOICES
+from .choices import TagChoices
 
 User = settings.AUTH_USER_MODEL
 
@@ -18,10 +19,10 @@ class New(BaseModel):
     title = models.CharField(_("title"), max_length=100)
     description = models.CharField(_("description"), max_length=255)
     content = models.TextField(_("content"))
-    image = models.ImageField(_("image"), upload_to="news/")
+    image = models.ImageField(_("image"), upload_to=image_path)
     source = models.URLField(_("source"), max_length=255)
     tag = models.CharField(
-        _("tag"), max_length=15, choices=TAG_CHOICES, default="pending"
+        _("tag"), max_length=15, choices=TagChoices.choices, default=TagChoices.PENDING
     )
 
     objects = NewManager()

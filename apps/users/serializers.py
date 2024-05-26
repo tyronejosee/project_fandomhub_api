@@ -15,15 +15,13 @@ class UserSerializer(UserCreateSerializer):
             "id",
             "email",
             "username",
-            "first_name",
-            "last_name",
             "created_at",
             "updated_at",
         ]
 
 
-class UserListSerializer(UserCreateSerializer):
-    """Serializer for User model."""
+class UserMinimumSerializer(UserCreateSerializer):
+    """Serializer for User model (Minimum)."""
 
     class Meta(UserCreateSerializer.Meta):
         model = User

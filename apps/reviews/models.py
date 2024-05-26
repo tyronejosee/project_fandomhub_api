@@ -26,8 +26,8 @@ class Review(BaseModel):
         _("rating"), validators=[MinValueValidator(1), MaxValueValidator(10)]
     )
     comment = models.TextField(_("comment"))
-    helpful_count = models.PositiveIntegerField(default=0)
-    reported_count = models.PositiveIntegerField(default=0)
+    helpful_count = models.PositiveIntegerField(_("helpful count"), default=0)
+    reported_count = models.PositiveIntegerField(_("reported count"), default=0)
 
     objects = ReviewManager()
 

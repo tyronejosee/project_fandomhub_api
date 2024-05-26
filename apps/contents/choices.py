@@ -1,54 +1,59 @@
 """Choices for Contents App."""
 
+from django.db.models import TextChoices
 from django.utils.translation import gettext as _
 
 
-STATUS_CHOICES = [
-    ("pending", _("Pending")),
-    ("finished", _("Finished")),
-    ("airing", _("Airing")),
-    ("upcoming", _("Upcoming")),
-]
+class StatusChoices(TextChoices):
 
-CATEGORY_CHOICES = [
-    ("pending", _("Pending")),
-    ("tv", _("TV")),
-    ("ova", _("OVA")),
-    ("movie", _("Movie")),
-    ("special", _("Special")),
-    ("ona", _("ONA")),
-    ("music", _("Music")),
-]
+    PENDING = "pending", _("Pending")
+    FINISHED = "finished", _("Finished")
+    AIRING = "airing", _("Airing")
+    UPCOMING = "upcoming", _("Upcoming")
 
-RATING_CHOICES = [
-    ("pending", _("Pending")),
-    ("g", _("G - All Ages")),
-    ("pg", _("PG - Children")),
-    ("pg13", _("PG-13 - Teens 13 and Older")),
-    ("r", _("R - 17+ (Violence & Profanity)")),
-    ("rplus", _("R+ - Profanity & Mild Nudity")),
-    ("rx", _("RX - Hentai")),
-]
 
-MEDIA_TYPE_CHOICES = [
-    ("pending", _("Pending")),
-    ("manga", _("Manga")),
-    ("novel", _("Novel")),
-    ("oneshot", _("One Shot")),
-    ("doujinshi", _("Doujinshi")),
-    ("manhwa", _("Manhwa")),
-    ("oel", _("OEL")),
-]
+class CategoryChoices(TextChoices):
 
-SOURCE_CHOICES = [
-    ("pending", _("Pending")),
-    ("original", _("Original")),
-    ("manga", _("Manga")),
-    ("novel", _("Novel")),
-    ("lnovel", _("Light Novel")),
-    ("vnovel", _("Visual Novel")),
-    ("game", _("Game")),
-    ("book", _("Book")),
-    ("radio", _("Radio")),
-    ("music", _("Music")),
-]
+    PENDING = "pending", _("Pending")
+    TV = "tv", _("TV")
+    OVA = "ova", _("OVA")
+    MOVIE = "movie", _("Movie")
+    SPECIAL = "special", _("Special")
+    ONA = "ona", _("ONA")
+    MUSIC = "music", _("Music")
+
+
+class RatingChoices(TextChoices):
+
+    PENDING = "pending", _("Pending")
+    G = "g", _("G - All Ages")
+    PG = "pg", _("PG - Children")
+    PG13 = "pg13", _("PG-13 - Teens 13 and Older")
+    R = "r", _("R - 17+ (Violence & Profanity)")
+    RPLUS = "rplus", _("R+ - Profanity & Mild Nudity")
+    RX = "rx", _("RX - Hentai")
+
+
+class MediaTypeChoices(TextChoices):
+
+    PENDING = "pending", _("Pending")
+    MANGA = "manga", _("Manga")
+    NOVEL = "novel", _("Novel")
+    ONESHOT = "oneshot", _("One Shot")
+    DOUJINSHI = "doujinshi", _("Doujinshi")
+    MANHWA = "manhwa", _("Manhwa")
+    OEL = "oel", _("OEL")
+
+
+class SourceChoices(TextChoices):
+
+    PENDING = "pending", _("Pending")
+    ORIGINAL = "original", _("Original")
+    MANGA = "manga", _("Manga")
+    NOVEL = "novel", _("Novel")
+    LNOVEL = "lnovel", _("Light Novel")
+    VNOVEL = "vnovel", _("Visual Novel")
+    GAME = "game", _("Game")
+    BOOK = "book", _("Book")
+    RADIO = "radio", _("Radio")
+    MUSIC = "music", _("Music")

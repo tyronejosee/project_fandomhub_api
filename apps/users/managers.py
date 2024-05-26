@@ -4,7 +4,7 @@ from django.contrib.auth.models import BaseUserManager
 from django.utils.translation import gettext as _
 
 from apps.profiles.models import Profile
-from apps.playlists.models import Playlist
+from .choices import Role
 
 
 class UserManager(BaseUserManager):
@@ -20,19 +20,15 @@ class UserManager(BaseUserManager):
 
         user.set_password(password)
         user.save()
-
-        # Create a profile and playlist
         profile = Profile.objects.create(user=user)
         profile.save()
-        playlist = Playlist.objects.create(user=user)
-        playlist.save()
-
         return user
 
     def create_superuser(self, email, password, **kwargs):
         """Creates a superuser with the given email and password."""
         kwargs.setdefault("is_staff", True)
         kwargs.setdefault("is_superuser", True)
+        kwargs.setdefault("role", Role.ADMINISTRATOR)
 
         if kwargs.get("is_staff") is not True:
             raise ValueError(_("Superuser must have is_staff=True."))

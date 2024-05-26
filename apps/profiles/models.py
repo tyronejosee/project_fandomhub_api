@@ -2,9 +2,11 @@
 
 from django.conf import settings
 from django.db import models
+from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
 from apps.utils.models import BaseModel
+from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.utils.paths import profile_image_path
 from .managers import ProfileManager
 
@@ -21,14 +23,32 @@ class Profile(BaseModel):
         db_index=True,
         verbose_name=_("user"),
     )
-    bio = models.TextField(_("bio"), blank=True, null=True)
-    website = models.URLField(_("website"), blank=True, null=True)
+    first_name = models.CharField(_("first name"), max_length=255, blank=True)
+    last_name = models.CharField(_("last name"), max_length=255, blank=True)
+    bio = models.TextField(_("bio"), blank=True)
+    website = models.URLField(_("website"), blank=True)
     birth_date = models.DateField(_("birth date"), blank=True, null=True)
     image = models.ImageField(
-        _("image"), upload_to=profile_image_path, blank=True, null=True
+        _("image"),
+        upload_to=profile_image_path,
+        blank=True,
+        null=True,
+        validators=[
+            FileExtensionValidator(allowed_extensions=["jpg", "png", "webp"]),
+            ImageSizeValidator(max_width=600, max_height=600),
+            FileSizeValidator(limit_mb=1),
+        ],
     )
     cover = models.ImageField(
-        _("cover"), upload_to=profile_image_path, blank=True, null=True
+        _("cover"),
+        upload_to=profile_image_path,
+        blank=True,
+        null=True,
+        validators=[
+            FileExtensionValidator(allowed_extensions=["jpg", "png", "webp"]),
+            ImageSizeValidator(max_width=1200, max_height=600),
+            FileSizeValidator(limit_mb=1),
+        ],
     )
 
     objects = ProfileManager()
@@ -40,3 +60,7 @@ class Profile(BaseModel):
 
     def __str__(self):
         return str(self.user)
+
+    @property
+    def full_name(self):
+        return f"{self.first_name} {self.last_name}"

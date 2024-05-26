@@ -15,7 +15,7 @@ from .managers import (
     SeasonManager,
     DemographicManager,
 )
-from .choices import SEASON_CHOICES
+from .choices import SeasonChoices
 
 
 class Studio(BaseModel, SlugMixin):
@@ -75,7 +75,10 @@ class Season(BaseModel):
     """Model definition for Season."""
 
     season = models.CharField(
-        _("season"), max_length=10, choices=SEASON_CHOICES, default="pending"
+        _("season"),
+        max_length=10,
+        choices=SeasonChoices.choices,
+        default=SeasonChoices.PENDING,
     )
     year = models.IntegerField(
         _("year"),

@@ -8,10 +8,3 @@ class PlaylistManager(Manager):
 
     def get_available(self):
         return self.filter(available=True)
-
-
-class PlaylistBaseManager(Manager):
-    """Manager for PlaylistBase."""
-
-    def get_available(self):
-        return self.filter(available=True)

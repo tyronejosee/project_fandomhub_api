@@ -10,12 +10,7 @@ from apps.utils.mixins import SlugMixin
 from apps.categories.models import Studio, Genre, Theme, Season, Demographic
 from apps.persons.models import Author
 from .managers import AnimeManager, MangaManager
-from .choices import (
-    STATUS_CHOICES,
-    CATEGORY_CHOICES,
-    RATING_CHOICES,
-    MEDIA_TYPE_CHOICES,
-)
+from .choices import StatusChoices, CategoryChoices, RatingChoices, MediaTypeChoices
 
 
 class Anime(BaseModel, SlugMixin):
@@ -40,15 +35,24 @@ class Anime(BaseModel, SlugMixin):
     duration = models.CharField(_("duration"), max_length=20, blank=True, null=True)
     release = models.DateField(_("release"), blank=True, null=True)
     category = models.CharField(
-        _("category"), max_length=10, choices=CATEGORY_CHOICES, default="pending"
+        _("category"),
+        max_length=10,
+        choices=CategoryChoices.choices,
+        default=CategoryChoices.PENDING,
     )
     website = models.URLField(max_length=255, blank=True)
     trailer = models.URLField(max_length=255, blank=True)
     status = models.CharField(
-        _("status"), max_length=10, choices=STATUS_CHOICES, default="pending"
+        _("status"),
+        max_length=10,
+        choices=StatusChoices.choices,
+        default=StatusChoices.PENDING,
     )
     rating = models.CharField(
-        _("rating"), max_length=10, choices=RATING_CHOICES, default="pending"
+        _("rating"),
+        max_length=10,
+        choices=RatingChoices.choices,
+        default=RatingChoices.PENDING,
     )
     studio = models.ForeignKey(Studio, on_delete=models.CASCADE, blank=True, null=True)
     genres = models.ManyToManyField(Genre, blank=True)
@@ -91,11 +95,17 @@ class Manga(BaseModel, SlugMixin):
     chapters = models.IntegerField(_("chapters"), validators=[MinValueValidator(0)])
     release = models.DateField(_("release"), blank=True, null=True)
     media_type = models.CharField(
-        _("media type"), max_length=10, choices=MEDIA_TYPE_CHOICES, default="pending"
+        _("media type"),
+        max_length=10,
+        choices=MediaTypeChoices.choices,
+        default=MediaTypeChoices.PENDING,
     )
     website = models.URLField(_("website"), max_length=255, blank=True)
     status = models.CharField(
-        _("status"), max_length=10, choices=STATUS_CHOICES, default="pending"
+        _("status"),
+        max_length=10,
+        choices=StatusChoices.choices,
+        default=StatusChoices.PENDING,
     )
     author = models.ForeignKey(
         Author,

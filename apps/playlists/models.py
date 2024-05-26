@@ -2,15 +2,16 @@
 
 from django.conf import settings
 from django.db import models
+from django.contrib.contenttypes.fields import GenericForeignKey
+from django.contrib.contenttypes.models import ContentType
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
 from apps.utils.models import BaseModel
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.utils.paths import image_path
-from apps.contents.models import Anime, Manga
-from .managers import PlaylistManager, PlaylistBaseManager
-from .choices import STATUS_CHOICES
+from .managers import PlaylistManager
+from .choices import StatusChoices
 
 User = settings.AUTH_USER_MODEL
 
@@ -68,62 +69,30 @@ class Playlist(BaseModel):
         return str(f"{self.user} - {self.name}")
 
 
-class PlaylistBase(BaseModel):
-    """Model definition for PlaylistBase (Base)."""
+class PlaylistItem(BaseModel):
+    """Model definition for PlaylistItem."""
 
     playlist = models.ForeignKey(
         Playlist, on_delete=models.CASCADE, db_index=True, verbose_name=_("playlist")
     )
+    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
+    object_id = models.UUIDField()
+    content_object = GenericForeignKey("content_type", "object_id")
     status = models.CharField(
         _("status"),
         max_length=20,
-        choices=STATUS_CHOICES,
-        default="pending",
+        choices=StatusChoices.choices,
+        default=StatusChoices.PENDING,
         db_index=True,
     )
     is_watched = models.BooleanField(_("is watched"), default=False, db_index=True)
     is_favorite = models.BooleanField(_("is favorite"), default=False, db_index=True)
     order = models.FloatField(default=0)
 
-    objects = PlaylistBaseManager()
-
-    class Meta:
-        abstract = True
-
-
-class PlaylistAnime(PlaylistBase):
-    """Model definition for PlaylistAnime."""
-
-    anime = models.ForeignKey(
-        Anime,
-        on_delete=models.CASCADE,
-        related_name="playlist_anime",
-        verbose_name=_("anime"),
-    )
-
     class Meta:
         ordering = ["pk"]
-        verbose_name = _("playlist anime")
-        verbose_name_plural = _("playlist animes")
+        verbose_name = _("playlist item")
+        verbose_name_plural = _("playlist items")
 
     def __str__(self):
-        return str(f"{self.anime.name}")
-
-
-class PlaylistManga(PlaylistBase):
-    """Model definition for PlaylistManga."""
-
-    manga = models.ForeignKey(
-        Manga,
-        on_delete=models.CASCADE,
-        related_name="playlist_manga",
-        verbose_name=_("manga"),
-    )
-
-    class Meta:
-        ordering = ["pk"]
-        verbose_name = _("playlist manga")
-        verbose_name_plural = _("playlist mangas")
-
-    def __str__(self):
-        return str(f"{self.manga.name}")
+        return str(f"{self.playlist} - {self.object_id}")
