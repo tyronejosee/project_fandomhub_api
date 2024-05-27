@@ -1,15 +1,15 @@
 """Routers for Playlists App."""
 
-# from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 
-# from .views import (
-#     PlaylistView,
-#     PlaylistAnimeListView,
-#     PlaylistAnimeDetailView,
-#     PlaylistMangaListView,
-#     PlaylistMangaDetailView,
-# )
+from .viewsets import PlaylistViewSet
 
+
+router = DefaultRouter()
+router.register(r"playlists", PlaylistViewSet, basename="playlist")
+
+urlpatterns = [path("api/v1/", include(router.urls))]
 
 # urlpatterns = [
 #     path(
