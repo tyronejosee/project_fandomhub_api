@@ -409,3 +409,6 @@ TypeError: Object of type Playlist is not JSON serializable
 2024-05-27 21:49:21,151:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/serializers.py changed, reloading.)
 2024-05-27 21:49:23,818:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
 2024-05-27 21:49:25,604:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-27 22:51:18,346:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-27 22:51:29,676:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-27 22:51:31,670:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
