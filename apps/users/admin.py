@@ -1,7 +1,6 @@
 """Admin for Users App."""
 
 from django.contrib import admin
-from django.utils.translation import gettext as _
 
 from .models import User
 
@@ -10,54 +9,28 @@ from .models import User
 class UserAdmin(admin.ModelAdmin):
     """Admin for User model."""
 
-    list_display = ["username", "email", "is_staff", "is_superuser",]
-    list_display_links = ["username"]
-    search_fields = ["username", "email", "first_name", "last_name"]
-    list_filter = ["is_staff", "is_superuser", "is_active"]
+    ordering = ["username"]
     list_per_page = 25
-    readonly_fields = [
-        "pk",
+    list_display = [
+        "username",
+        "email",
+        "is_staff",
+        "is_superuser",
     ]
-    ordering = [
+    list_display_links = [
         "username",
     ]
-
-    fieldsets = [
-        (
-            _("Account info"),
-            {"fields": ["pk", "username", "email", "password", "is_active"]},
-        ),
-        (_("Personal info"), {"fields": ["first_name", "last_name"]}),
-        (
-            _("Permissions"),
-            {
-                "fields": [
-                    "is_staff",
-                    "is_superuser",
-                    "roles",
-                ]
-            },
-        ),
-        (_("Records"), {"fields": ["last_login", "date_joined"]}),
+    search_fields = [
+        "username",
+        "email",
+        "first_name",
+        "last_name",
     ]
-
-    add_fieldsets = [
-        (
-            None,
-            {
-                "classes": [
-                    "wide",
-                ],
-                "fields": [
-                    "username",
-                    "email",
-                    "first_name",
-                    "last_name",
-                    "password1",
-                    "password2",
-                    "is_staff",
-                    "is_superuser",
-                ],
-            },
-        ),
+    list_filter = [
+        "is_staff",
+        "is_superuser",
+        "is_active",
+    ]
+    readonly_fields = [
+        "pk",
     ]
