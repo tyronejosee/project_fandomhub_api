@@ -25,9 +25,8 @@ class Profile(BaseModel):
     )
     first_name = models.CharField(_("first name"), max_length=255, blank=True)
     last_name = models.CharField(_("last name"), max_length=255, blank=True)
-    bio = models.TextField(_("bio"), blank=True)
-    website = models.URLField(_("website"), blank=True)
     birth_date = models.DateField(_("birth date"), blank=True, null=True)
+    bio = models.TextField(_("bio"), blank=True)
     image = models.ImageField(
         _("image"),
         upload_to=profile_image_path,

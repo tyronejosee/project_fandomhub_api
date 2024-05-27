@@ -2,11 +2,13 @@
 
 from django.db import models
 from django.core.validators import MinValueValidator, MaxValueValidator
+from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
 from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
+from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.categories.models import Studio, Genre, Theme, Season, Demographic
 from apps.persons.models import Author
 from .managers import AnimeManager, MangaManager
@@ -16,7 +18,7 @@ from .choices import StatusChoices, CategoryChoices, RatingChoices, MediaTypeCho
 class Anime(BaseModel, SlugMixin):
     """Model definition for Anime."""
 
-    name = models.CharField(_("name (eng)"), max_length=255, unique=True, db_index=True)
+    name = models.CharField(_("name (eng)"), max_length=255, unique=True)
     name_jpn = models.CharField(
         _("name (jpn)"),
         max_length=255,
@@ -25,7 +27,15 @@ class Anime(BaseModel, SlugMixin):
     name_rom = models.CharField(
         _("name (rmj)"), max_length=255, unique=True, blank=True
     )
-    image = models.ImageField(_("image"), upload_to=image_path, blank=True, null=True)
+    image = models.ImageField(
+        _("image"),
+        upload_to=image_path,
+        validators=[
+            FileExtensionValidator(allowed_extensions=["jpg", "webp"]),
+            ImageSizeValidator(max_width=909, max_height=1280),
+            FileSizeValidator(limit_mb=2),
+        ],
+    )
     synopsis = models.TextField(_("synopsis"), blank=True, null=True)
     episodes = models.IntegerField(
         _("episodes"),
@@ -85,12 +95,20 @@ class Anime(BaseModel, SlugMixin):
 class Manga(BaseModel, SlugMixin):
     """Model definition for Manga."""
 
-    name = models.CharField(_("name (eng)"), max_length=255, unique=True, db_index=True)
+    name = models.CharField(_("name (eng)"), max_length=255, unique=True)
     name_jpn = models.CharField(_("name (jpn)"), max_length=255, unique=True)
     name_rom = models.CharField(
         _("name (rmj)"), max_length=255, unique=True, blank=True
     )
-    image = models.ImageField(_("image"), upload_to=image_path, blank=True, null=True)
+    image = models.ImageField(
+        _("image"),
+        upload_to=image_path,
+        validators=[
+            FileExtensionValidator(allowed_extensions=["jpg", "webp"]),
+            ImageSizeValidator(max_width=909, max_height=1280),
+            FileSizeValidator(limit_mb=2),
+        ],
+    )
     synopsis = models.TextField(_("synopsis"), blank=True, null=True)
     chapters = models.IntegerField(_("chapters"), validators=[MinValueValidator(0)])
     release = models.DateField(_("release"), blank=True, null=True)
