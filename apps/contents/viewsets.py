@@ -4,17 +4,14 @@ from django.contrib.contenttypes.models import ContentType
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_cookie
-
-# from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404
 from django.utils.translation import gettext as _
 from rest_framework import status
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from drf_spectacular.utils import extend_schema_view, extend_schema
-
-# from drf_spectacular.utils import OpenApiParameter
+from drf_spectacular.utils import extend_schema_view, extend_schema, OpenApiParameter
 
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
@@ -89,7 +86,7 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         permission_classes=[IsAuthenticatedOrReadOnly],
         url_path="reviews",
     )
-    def review_list(self, request, pk=None, format=None):
+    def review_list(self, request, *args, **kwargs):
         """
         Action retrieves and creates reviews for an anime
 
@@ -97,11 +94,10 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         - GET /api/v1/animes/{id}/reviews/
         - POST /api/v1/animes/{id}/reviews/
         """
-        anime = self.get_object()
 
         if request.method == "GET":
             # Get all reviews for anime
-            # anime
+            anime = self.get_object()
             content_type = ContentType.objects.get_for_model(Anime)
 
             reviews = Review.objects.filter(
@@ -117,67 +113,64 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
 
         elif request.method == "POST":
             # Create a review for anime
-            content_type = ContentType.objects.get_for_model(Anime)
-
             serializer = ReviewWriteSerializer(data=request.data)
             if serializer.is_valid():
-                serializer.save(user=request.user, anime=anime)
+                anime = self.get_object()
+                content_type = ContentType.objects.get_for_model(Anime)
+                serializer.save(
+                    user=request.user,
+                    content_type=content_type,
+                    object_id=anime.pk,
+                )
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    # @extend_schema(
-    #     parameters=[OpenApiParameter("review_id", str, OpenApiParameter.PATH)]
-    # )
-    # @action(
-    #     detail=True,
-    #     methods=["GET", "PUT", "DELETE"],
-    #     permission_classes=[IsAuthenticatedOrReadOnly],
-    #     url_path="reviews/(?P<review_id>[^/.]+)"
-    # )
-    # def review_detail(self, request, pk=None, review_id=None, format=None):
-    #     """
-    #     Action retrieves, updates, or deletes a review for an anime.
+    @extend_schema(
+        parameters=[OpenApiParameter("review_id", str, OpenApiParameter.PATH)]
+    )
+    @action(
+        detail=True,
+        methods=["GET", "PATCH", "DELETE"],
+        permission_classes=[IsAuthenticatedOrReadOnly],
+        url_path="reviews/(?P<review_id>[^/.]+)",
+    )
+    def review_detail(self, request, pk=None, review_id=None, *args, **kwargs):
+        """
+        Action retrieves, updates, or deletes a review for an anime.
 
-    #     Endpoints:
-    #     - GET /api/v1/animes/{id}/reviews/{id}/
-    #     - PUT /api/v1/animes/{id}/reviews/{id}/
-    #     - DELETE /api/v1/animes/{id}/reviews/{id}/
-    #     """
-    #     anime = self.get_object()
-    #     review = get_object_or_404(Review, id=review_id, anime=anime)
+        Endpoints:
+        - GET /api/v1/animes/{id}/reviews/{id}/
+        - PUT /api/v1/animes/{id}/reviews/{id}/
+        - DELETE /api/v1/animes/{id}/reviews/{id}/
+        """
+        anime = self.get_object()
+        content_type = ContentType.objects.get_for_model(Anime)
+        review = get_object_or_404(
+            Review, id=review_id, content_type=content_type, object_id=anime.pk
+        )
+        message = "You do not have permission to perform this action."
 
-    #     message = "You do not have permission to perform this action."
+        if request.method == "GET":
+            # Retrieve the review associated with the anime
+            serializer = ReviewReadSerializer(review)
+            return Response(serializer.data)
 
-    #     if request.method == "GET":
-    #         # Retrieve the review associated with the anime
-    #         serializer = ReviewReadSerializer(review)
-    #         return Response(serializer.data)
+        elif request.method == "PATCH":
+            # Update the review associated with the anime
+            if review.user != request.user:
+                return Response({"detail": message}, status=status.HTTP_403_FORBIDDEN)
+            serializer = ReviewWriteSerializer(review, data=request.data, partial=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    #     elif request.method == "PUT":
-    #         # Update the review associated with the anime
-    #         if review.user != request.user:
-    #             return Response(
-    #                 {"detail": message},
-    #                 status=status.HTTP_403_FORBIDDEN
-    #             )
-    #         serializer = ReviewWriteSerializer(review, data=request.data)
-    #         if serializer.is_valid():
-    #             serializer.save()
-    #             return Response(serializer.data)
-    #         return Response(
-    #             serializer.errors,
-    #             status=status.HTTP_400_BAD_REQUEST
-    #         )
-
-    #     elif request.method == "DELETE":
-    #         # Delete the review associated with the anime
-    #         if review.user != request.user:
-    #             return Response(
-    #                 {"detail": message},
-    #                 status=status.HTTP_403_FORBIDDEN
-    #             )
-    #         review.delete()
-    #         return Response(status=status.HTTP_204_NO_CONTENT)
+        elif request.method == "DELETE":
+            # Delete the review associated with the anime
+            if review.user != request.user:
+                return Response({"detail": message}, status=status.HTTP_403_FORBIDDEN)
+            review.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
 
 
 @extend_schema_view(**manga_schemas)

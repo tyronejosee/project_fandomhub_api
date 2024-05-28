@@ -1,7 +1,6 @@
 """Serializers for Contents App."""
 
 from rest_framework import serializers
-from drf_spectacular.utils import extend_schema_field
 
 from apps.categories.serializers import (
     GenreSerializer,
@@ -47,24 +46,21 @@ class AnimeSerializer(serializers.ModelSerializer):
 class AnimeListSerializer(serializers.ModelSerializer):
     """Serializer for Anime model (List only)."""
 
-    year = serializers.SerializerMethodField()
-
     class Meta:
         model = Anime
         fields = [
             "id",
             "name",
             "image",
-            "year",
             "episodes",
             "rank",
             "popularity",
             "num_list_users",
         ]
 
-    @extend_schema_field(int)
-    def get_year(self, obj):
-        return int(obj.season.year if obj.season else None)
+    # @extend_schema_field(int)
+    # def get_year(self, obj):
+    #     return int(obj.season.year if obj.season else None)
 
 
 class AnimeMinimumSerializer(serializers.ModelSerializer):
