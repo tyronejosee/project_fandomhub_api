@@ -6,45 +6,40 @@ from apps.utils.validators import validate_name
 from .models import Studio, Genre, Theme, Season, Demographic
 
 
-class StudioSerializer(serializers.ModelSerializer):
-    """Serializer for Studio model."""
-
-    name = serializers.CharField(max_length=255, validators=[validate_name])
+class StudioReadSerializer(serializers.ModelSerializer):
+    """Serializer for Studio model (List/Retrieve)."""
 
     class Meta:
         model = Studio
         fields = [
             "id",
+            "name",
+            "name_jpn",
             "slug",
+            "established",
+            "image",
+            "created_at",
+            "updated_at",
+        ]
+
+
+class StudioWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Studio model (Create/update)."""
+
+    name = serializers.CharField(validators=[validate_name])
+
+    class Meta:
+        model = Studio
+        fields = [
             "name",
             "name_jpn",
             "established",
             "image",
         ]
-        read_only_fields = [
-            "slug",
-        ]
 
 
-class StudioListSerializer(serializers.ModelSerializer):
-    """Serializer for Studio model (List only)."""
-
-    class Meta:
-        model = Studio
-        fields = [
-            "id",
-            "slug",
-            "name",
-        ]
-        read_only_fields = [
-            "slug",
-        ]
-
-
-class GenreSerializer(serializers.ModelSerializer):
-    """Serializer for Genre model."""
-
-    name = serializers.CharField(max_length=255, validators=[validate_name])
+class GenreReadSerializer(serializers.ModelSerializer):
+    """Serializer for Genre model (List/retrieve)."""
 
     class Meta:
         model = Genre
@@ -52,16 +47,25 @@ class GenreSerializer(serializers.ModelSerializer):
             "id",
             "name",
             "slug",
+            "created_at",
+            "updated_at",
         ]
-        read_only_fields = [
-            "slug",
+
+
+class GenreWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Genre model (Create/update)."""
+
+    name = serializers.CharField(validators=[validate_name])
+
+    class Meta:
+        model = Genre
+        fields = [
+            "name",
         ]
 
 
-class ThemeSerializer(serializers.ModelSerializer):
-    """Serializer for Theme model."""
-
-    name = serializers.CharField(max_length=255, validators=[validate_name])
+class ThemeReadSerializer(serializers.ModelSerializer):
+    """Serializer for Theme model (List/Retrieve)."""
 
     class Meta:
         model = Theme
@@ -69,14 +73,25 @@ class ThemeSerializer(serializers.ModelSerializer):
             "id",
             "name",
             "slug",
-        ]
-        read_only_fields = [
-            "slug",
+            "created_at",
+            "updated_at",
         ]
 
 
-class SeasonSerializer(serializers.ModelSerializer):
-    """Serializer for Season model."""
+class ThemeWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Theme model (Create/update)."""
+
+    name = serializers.CharField(validators=[validate_name])
+
+    class Meta:
+        model = Theme
+        fields = [
+            "name",
+        ]
+
+
+class SeasonReadSerializer(serializers.ModelSerializer):
+    """Serializer for Season model (List/Retrieve)."""
 
     class Meta:
         model = Season
@@ -85,35 +100,44 @@ class SeasonSerializer(serializers.ModelSerializer):
             "season",
             "year",
             "fullname",
-        ]
-        read_only_fields = [
-            "id",
-            "fullname",
+            "created_at",
+            "updated_at",
         ]
 
 
-class SeasonListSerializer(serializers.ModelSerializer):
-    """Serializer for Season model (List only)."""
+class SeasonWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Season model (Create/update)."""
 
     class Meta:
         model = Season
         fields = [
-            "id",
-            "fullname",
-        ]
-        read_only_fields = [
-            "id",
+            "season",
+            "year",
         ]
 
 
-class DemographicSerializer(serializers.ModelSerializer):
-    """Serializer for Demographic model."""
+class DemographicReadSerializer(serializers.ModelSerializer):
+    """Serializer for Demographic model (List/Retrieve)."""
 
-    name = serializers.CharField(max_length=255, validators=[validate_name])
+    name = serializers.CharField(validators=[validate_name])
 
     class Meta:
         model = Demographic
         fields = [
             "id",
+            "name",
+            "created_at",
+            "updated_at",
+        ]
+
+
+class DemographicWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Demographic model (Create/update)."""
+
+    name = serializers.CharField(validators=[validate_name])
+
+    class Meta:
+        model = Demographic
+        fields = [
             "name",
         ]

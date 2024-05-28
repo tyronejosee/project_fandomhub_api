@@ -1,23 +1,22 @@
 """Serializers for Contents App."""
 
 from rest_framework import serializers
-from drf_spectacular.utils import extend_schema_field
 
 from apps.categories.serializers import (
-    GenreSerializer,
-    StudioListSerializer,
-    SeasonListSerializer,
-    DemographicSerializer,
+    GenreReadSerializer,
+    StudioReadSerializer,
+    SeasonReadSerializer,
+    DemographicReadSerializer,
 )
 from .models import Anime, Manga
 
 
-class AnimeSerializer(serializers.ModelSerializer):
+class AnimeReadSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
 
-    studio = StudioListSerializer()
-    genres = GenreSerializer(many=True)
-    season = SeasonListSerializer()
+    studio = StudioReadSerializer()
+    genres = GenreReadSerializer(many=True)
+    season = SeasonReadSerializer()
     status = serializers.CharField(source="get_status_display")
     category = serializers.CharField(source="get_category_display")
 
@@ -27,7 +26,38 @@ class AnimeSerializer(serializers.ModelSerializer):
             "id",
             "name",
             "name_jpn",
+            "name_rom",
             "slug",
+            "image",
+            "synopsis",
+            "episodes",
+            "duration",
+            "release",
+            "category",
+            "website",
+            "trailer",
+            "status",
+            "rating",
+            "studio",
+            "genres",
+            "season",
+            "mean",
+            "rank",
+            "popularity",
+            "favorites",
+            "num_list_users",
+        ]
+
+
+class AnimeWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Anime model."""
+
+    class Meta:
+        model = Anime
+        fields = [
+            "name",
+            "name_jpn",
+            "name_rom",
             "image",
             "synopsis",
             "episodes",
@@ -44,10 +74,8 @@ class AnimeSerializer(serializers.ModelSerializer):
         ]
 
 
-class AnimeListSerializer(serializers.ModelSerializer):
-    """Serializer for Anime model (List only)."""
-
-    year = serializers.SerializerMethodField()
+class AnimeMinimalSerializer(serializers.ModelSerializer):
+    """Serializer for Anime model (Minimal)."""
 
     class Meta:
         model = Anime
@@ -55,36 +83,22 @@ class AnimeListSerializer(serializers.ModelSerializer):
             "id",
             "name",
             "image",
-            "year",
             "episodes",
             "rank",
             "popularity",
             "num_list_users",
         ]
 
-    @extend_schema_field(int)
-    def get_year(self, obj):
-        return int(obj.season.year if obj.season else None)
+    # def get_year(self, obj):
+    #     return int(obj.season.year if obj.season else None)
 
 
-class AnimeMinimumSerializer(serializers.ModelSerializer):
-    """Serializer for Anime model (Minimum)."""
-
-    class Meta:
-        model = Anime
-        fields = [
-            "id",
-            "name",
-            "image",
-        ]
-
-
-class MangaSerializer(serializers.ModelSerializer):
-    """Serializer for Manga model."""
+class MangaReadSerializer(serializers.ModelSerializer):
+    """Serializer for Manga model (Retrieve)."""
 
     author = serializers.CharField(source="author.name")
-    demographic = DemographicSerializer()
-    genres = GenreSerializer(many=True)
+    demographic = DemographicReadSerializer()
+    genres = GenreReadSerializer(many=True)
 
     class Meta:
         model = Manga
@@ -106,8 +120,32 @@ class MangaSerializer(serializers.ModelSerializer):
         ]
 
 
-class MangaListSerializer(serializers.ModelSerializer):
-    """Serializer for Manga model (List only)."""
+class MangaWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Manga model (Create/update)."""
+
+    class Meta:
+        model = Manga
+        fields = [
+            "name",
+            "name_jpn",
+            "name_rom",
+            "slug",
+            "image",
+            "synopsis",
+            "chapters",
+            "release",
+            "media_type",
+            "website",
+            "status",
+            "author",
+            "demographic",
+            "genres",
+            "themes",
+        ]
+
+
+class MangaMinimalSerializer(serializers.ModelSerializer):
+    """Serializer for Anime model (Minimal)."""
 
     class Meta:
         model = Manga
@@ -118,16 +156,4 @@ class MangaListSerializer(serializers.ModelSerializer):
             "release",
             "media_type",
             "status",
-        ]
-
-
-class MangaMinimumSerializer(serializers.ModelSerializer):
-    """Serializer for Anime model (Minimum)."""
-
-    class Meta:
-        model = Manga
-        fields = [
-            "id",
-            "name",
-            "image",
         ]

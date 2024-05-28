@@ -14,7 +14,7 @@ from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import MediumSetPagination
 from apps.contents.models import Manga
-from apps.contents.serializers import MangaListSerializer
+from apps.contents.serializers import MangaMinimalSerializer
 from .models import Author
 from .serializers import AuthorSerializer
 from .schemas import author_schemas
@@ -62,7 +62,7 @@ class AuthorViewSet(LogicalDeleteMixin, ModelViewSet):
         if manga_list.exists():
             paginator = MediumSetPagination()
             paginated_data = paginator.paginate_queryset(manga_list, request)
-            serializer = MangaListSerializer(paginated_data, many=True)
+            serializer = MangaMinimalSerializer(paginated_data, many=True)
             return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no mangas for this author.")},

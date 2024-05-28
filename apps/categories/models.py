@@ -109,7 +109,7 @@ class Season(BaseModel):
         return str(self.fullname)
 
     def save(self, *args, **kwargs):
-        """Override the save method to update the fullname field."""
+        # Override the save method to update the fullname field
         fullname_caps = self.season.capitalize()
         self.fullname = f"{fullname_caps} {self.year}"
         if Season.objects.filter(fullname=self.fullname).exists():

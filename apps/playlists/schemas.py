@@ -3,13 +3,6 @@
 from drf_spectacular.utils import extend_schema
 
 
-playlists_schemas = {
-    "get": extend_schema(
-        summary="Get info to the Playlist",
-        description="Pending.",
-    ),
-}
-
 playlists_anime_schemas = {
     "get": extend_schema(
         summary="Get all Animes to the Playlist",

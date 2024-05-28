@@ -2,20 +2,16 @@
 
 from rest_framework import serializers
 
-from apps.users.serializers import UserSerializer
 from .models import Profile
 
 
 class ProfileReadSerializer(serializers.ModelSerializer):
     """Serializer for Profile model (Retrieve)."""
 
-    user = UserSerializer(read_only=True)
-
     class Meta:
         model = Profile
         fields = [
             "id",
-            "user",
             "bio",
             "birth_date",
             "image",
@@ -30,7 +26,6 @@ class ProfileWriteSerializer(serializers.ModelSerializer):
         model = Profile
         fields = [
             "id",
-            "user",
             "bio",
             "birth_date",
             "image",

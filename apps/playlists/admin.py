@@ -2,7 +2,7 @@
 
 from django.contrib import admin
 
-from .models import Playlist, PlaylistAnime, PlaylistManga
+from .models import Playlist, PlaylistItem
 
 
 @admin.register(Playlist)
@@ -24,9 +24,9 @@ class PlaylistAdmin(admin.ModelAdmin):
     ]
 
 
-@admin.register(PlaylistAnime)
-class PlaylistAnimeAdmin(admin.ModelAdmin):
-    """Admin for PlaylistAnime model."""
+@admin.register(PlaylistItem)
+class PlaylistItemAdmin(admin.ModelAdmin):
+    """Admin for PlaylistItem model."""
 
     list_per_page = 25
     search_fields = [
@@ -34,45 +34,13 @@ class PlaylistAnimeAdmin(admin.ModelAdmin):
     ]
     list_display = [
         "playlist",
-        "anime",
-    ]
-    list_filter = [
-        "is_watched",
-        "status",
+        "content_type",
     ]
     readonly_fields = [
         "pk",
-    ]
-    autocomplete_fields = [
-        "anime",
+        "created_at",
+        "updated_at",
     ]
     ordering = [
         "created_at",
-    ]  # Order pending
-
-
-@admin.register(PlaylistManga)
-class PlaylistMangaAdmin(admin.ModelAdmin):
-    """Admin for PlaylistManga model."""
-
-    list_per_page = 25
-    search_fields = [
-        "playlist",
     ]
-    list_display = [
-        "playlist",
-        "manga",
-    ]
-    list_filter = [
-        "is_watched",
-        "status",
-    ]
-    readonly_fields = [
-        "pk",
-    ]
-    autocomplete_fields = [
-        "manga",
-    ]
-    ordering = [
-        "created_at",
-    ]  # Order pending

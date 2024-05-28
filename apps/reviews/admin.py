@@ -15,6 +15,7 @@ class ReviewAdmin(admin.ModelAdmin):
         "user",
     ]
     list_display = [
+        "user",
         "comment",
         "available",
     ]
