@@ -14,7 +14,7 @@ from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import LargeSetPagination, MediumSetPagination
 from apps.contents.models import Anime, Manga
-from apps.contents.serializers import AnimeListSerializer, MangaListSerializer
+from apps.contents.serializers import AnimeMinimalSerializer, MangaMinimalSerializer
 from .models import Studio, Genre, Theme, Season, Demographic
 from .serializers import (
     StudioSerializer,
@@ -80,7 +80,7 @@ class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
         if anime_list.exists():
             paginator = LargeSetPagination()
             result_page = paginator.paginate_queryset(anime_list, request)
-            serializer = AnimeListSerializer(result_page, many=True)
+            serializer = AnimeMinimalSerializer(result_page, many=True)
             return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no animes for this studio.")},
@@ -135,7 +135,7 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
         if anime_list.exists():
             paginator = MediumSetPagination()
             result_page = paginator.paginate_queryset(anime_list, request)
-            serializer = AnimeListSerializer(result_page, many=True)
+            serializer = AnimeMinimalSerializer(result_page, many=True)
             return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no animes for this genre.")},
@@ -159,7 +159,7 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
         if manga_list.exists():
             paginator = MediumSetPagination()
             result_page = paginator.paginate_queryset(manga_list, request)
-            serializer = MangaListSerializer(result_page, many=True)
+            serializer = MangaMinimalSerializer(result_page, many=True)
             return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no mangas for this genre.")},
@@ -238,7 +238,7 @@ class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
         if anime_list.exists():
             paginator = MediumSetPagination()
             result_page = paginator.paginate_queryset(anime_list, request)
-            serializer = AnimeListSerializer(result_page, many=True)
+            serializer = AnimeMinimalSerializer(result_page, many=True)
             return paginator.get_paginated_response(serializer.data)
         return Response(
             {"detail": _("There are no animes for this season.")},

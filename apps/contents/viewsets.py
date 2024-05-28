@@ -10,20 +10,23 @@ from rest_framework import status
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from rest_framework.permissions import IsAuthenticatedOrReadOnly, AllowAny
 from drf_spectacular.utils import extend_schema_view, extend_schema, OpenApiParameter
 
 from apps.utils.mixins import LogicalDeleteMixin
-from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import MediumSetPagination
+from apps.users.permissions import IsMember, IsContributor
+from apps.users.choices import RoleChoices
 from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer, ReviewWriteSerializer
 from .models import Anime, Manga
 from .serializers import (
-    AnimeSerializer,
-    MangaSerializer,
-    AnimeListSerializer,
-    MangaListSerializer,
+    AnimeReadSerializer,
+    AnimeWriteSerializer,
+    AnimeMinimalSerializer,
+    MangaReadSerializer,
+    MangaWriteSerializer,
+    MangaMinimalSerializer,
 )
 from .schemas import anime_schemas, manga_schemas
 
@@ -42,8 +45,7 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/animes/{id}/
     """
 
-    serializer_class = AnimeSerializer
-    permission_classes = [IsStaffOrReadOnly]
+    serializer_class = AnimeWriteSerializer
     search_fields = ["name", "studio__name"]
     ordering_fields = ["name"]
     ordering = ["id"]
@@ -51,9 +53,17 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
     def get_queryset(self):
         return Anime.objects.get_available()
 
+    def get_permissions(self):
+        if self.action in ["create", "update", "partial_update", "destroy"]:
+            return [IsContributor()]
+        else:
+            return [AllowAny()]
+
     def get_serializer_class(self):
         if self.action == "list":
-            return AnimeListSerializer
+            return AnimeMinimalSerializer
+        elif self.action == "retrieve":
+            return AnimeReadSerializer
         return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
@@ -75,20 +85,21 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         - GET /api/v1/animes/popular/
         """
         popular_list = Anime.objects.get_popular()[:50]
+
         if not popular_list:
             return Response(status=status.HTTP_204_NO_CONTENT)
-        serializer = AnimeListSerializer(popular_list, many=True)
+        serializer = AnimeMinimalSerializer(popular_list, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     @action(
         detail=True,
         methods=["GET", "POST"],
-        permission_classes=[IsAuthenticatedOrReadOnly],
+        permission_classes=[IsMember],
         url_path="reviews",
     )
     def review_list(self, request, *args, **kwargs):
         """
-        Action retrieves and creates reviews for an anime
+        Action retrieves and creates reviews for an anime.
 
         Endpoints:
         - GET /api/v1/animes/{id}/reviews/
@@ -106,6 +117,7 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
             if reviews.exists():
                 serializer = ReviewReadSerializer(reviews, many=True)
                 return Response(serializer.data)
+
             return Response(
                 {"detail": "No reviews for this anime."},
                 status=status.HTTP_404_NOT_FOUND,
@@ -113,6 +125,11 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
 
         elif request.method == "POST":
             # Create a review for anime
+            if not request.user.role == RoleChoices.MEMBER:
+                return Response(
+                    {"detail": "You do not have permission to create reviews."},
+                    status=status.HTTP_403_FORBIDDEN,
+                )
             serializer = ReviewWriteSerializer(data=request.data)
             if serializer.is_valid():
                 anime = self.get_object()
@@ -187,20 +204,25 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/mangas/{id}/
     """
 
-    serializer_class = MangaSerializer
-    permission_classes = [IsStaffOrReadOnly]
-    search_fields = [
-        "name",
-    ]
+    serializer_class = MangaWriteSerializer
+    search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]
 
     def get_queryset(self):
         return Manga.objects.get_available()
 
+    def get_permissions(self):
+        if self.action in ["create", "update", "partial_update", "destroy"]:
+            return [IsContributor()]
+        else:
+            return [AllowAny()]
+
     def get_serializer_class(self):
-        if self.action == "review_list" or self.action == "review_detail":
-            return MangaListSerializer
+        if self.action == "list":
+            return MangaMinimalSerializer
+        elif self.action == "retrieve":
+            return MangaReadSerializer
         return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
@@ -223,10 +245,12 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
         """
         popular_list = Manga.objects.get_popular()[:50]
         paginator = MediumSetPagination()
+
         result_page = paginator.paginate_queryset(popular_list, request)
         if result_page is not None:
-            serializer = MangaListSerializer(result_page, many=True).data
+            serializer = MangaMinimalSerializer(result_page, many=True).data
             return paginator.get_paginated_response(serializer)
+
         return Response(
             {"detail": _("There are no popular mangas available.")},
             status=status.HTTP_204_NO_CONTENT,
@@ -250,94 +274,100 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
     #     },
     #     methods=["POST"],
     # )
-    # @action(
-    #     detail=True,
-    #     methods=["GET", "POST"],
-    #     permission_classes=[IsAuthenticatedOrReadOnly],
-    #     url_path="reviews"
-    # )
-    # def review_list(self, request, pk=None, format=None):
-    #     """
-    #     Action retrieves and creates reviews for an manga.
+    @action(
+        detail=True,
+        methods=["GET", "POST"],
+        permission_classes=[IsAuthenticatedOrReadOnly],
+        url_path="reviews",
+    )
+    def review_list(self, request, *args, **kwargs):
+        """
+        Action retrieves and creates reviews for an manga.
 
-    #     Endpoints:
-    #     - GET /api/v1/mangas/{id}/reviews/
-    #     - POST /api/v1/mangas/{id}/reviews/
-    #     """
-    #     manga = self.get_object()
+        Endpoints:
+        - GET /api/v1/mangas/{id}/reviews/
+        - POST /api/v1/mangas/{id}/reviews/
+        """
 
-    #     if request.method == "GET":
-    #         # Get all reviews for the manga
-    #         reviews = Review.objects.get_reviews_for_manga(manga)
-    #         if reviews.exists():
-    #             serializer = ReviewReadSerializer(reviews, many=True)
-    #             return Response(serializer.data)
-    #         return Response(
-    #             {"detail": "No reviews for this anime."},
-    #             status=status.HTTP_404_NOT_FOUND
-    #         )
+        if request.method == "GET":
+            # Get all reviews for manga
+            manga = self.get_object()
+            content_type = ContentType.objects.get_for_model(Manga)
 
-    #     elif request.method == "POST":
-    #         # Create a new review for the manga
-    #         serializer = ReviewWriteSerializer(data=request.data)
-    #         if serializer.is_valid():
-    #             serializer.save(user=request.user, manga=manga)
-    #             return Response(
-    #                 serializer.data,
-    #                 status=status.HTTP_201_CREATED
-    #             )
-    #         return Response(
-    #             serializer.errors,
-    #             status=status.HTTP_400_BAD_REQUEST
-    #         )
+            reviews = Review.objects.filter(
+                content_type=content_type, object_id=manga.pk
+            )
+            if reviews.exists():
+                serializer = ReviewReadSerializer(reviews, many=True)
+                return Response(serializer.data)
 
-    # @action(
-    #     detail=True,
-    #     methods=["GET", "PUT", "DELETE"],
-    #     permission_classes=[IsAuthenticatedOrReadOnly],
-    #     url_path="reviews/(?P<review_id>[^/.]+)"
-    # )
-    # def review_detail(self, request, pk=None, review_id=None, format=None):
-    #     """
-    #     Action retrieves, updates, or deletes a review for an manga.
+            return Response(
+                {"detail": "No reviews for this manga."},
+                status=status.HTTP_404_NOT_FOUND,
+            )
 
-    #     Endpoints:
-    #     - GET /api/v1/mangas/{id}/reviews/{id}/
-    #     - PUT /api/v1/mangas/{id}/reviews/{id}/
-    #     - DELETE /api/v1/mangas/{id}/reviews/{id}/
-    #     """
-    #     manga = self.get_object()
-    #     review = get_object_or_404(Review, id=review_id, manga=manga)
+        elif request.method == "POST":
+            # Create a review for manga
+            if not request.user.role == RoleChoices.MEMBER:
+                return Response(
+                    {"detail": "You do not have permission to create reviews."},
+                    status=status.HTTP_403_FORBIDDEN,
+                )
+            serializer = ReviewWriteSerializer(data=request.data)
+            if serializer.is_valid():
+                manga = self.get_object()
+                content_type = ContentType.objects.get_for_model(Manga)
+                serializer.save(
+                    user=request.user,
+                    content_type=content_type,
+                    object_id=manga.pk,
+                )
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    #     message = "You do not have permission to perform this action."
+    @extend_schema(
+        parameters=[OpenApiParameter("review_id", str, OpenApiParameter.PATH)]
+    )
+    @action(
+        detail=True,
+        methods=["GET", "PATCH", "DELETE"],
+        permission_classes=[IsAuthenticatedOrReadOnly],
+        url_path="reviews/(?P<review_id>[^/.]+)",
+    )
+    def review_detail(self, request, pk=None, review_id=None, *args, **kwargs):
+        """
+        Action retrieves, updates, or deletes a review for an manga.
 
-    #     if request.method == "GET":
-    #         # Retrieve the review associated with the manga
-    #         serializer = ReviewReadSerializer(review)
-    #         return Response(serializer.data)
+        Endpoints:
+        - GET /api/v1/mangas/{id}/reviews/{id}/
+        - PUT /api/v1/mangas/{id}/reviews/{id}/
+        - DELETE /api/v1/mangas/{id}/reviews/{id}/
+        """
+        manga = self.get_object()
+        content_type = ContentType.objects.get_for_model(Manga)
+        review = get_object_or_404(
+            Review, id=review_id, content_type=content_type, object_id=manga.pk
+        )
+        message = "You do not have permission to perform this action."
 
-    #     elif request.method == "PUT":
-    #         # Update the review associated with the manga
-    #         if review.user != request.user:
-    #             return Response(
-    #                 {"detail": message},
-    #                 status=status.HTTP_403_FORBIDDEN
-    #             )
-    #         serializer = ReviewWriteSerializer(review, data=request.data)
-    #         if serializer.is_valid():
-    #             serializer.save()
-    #             return Response(serializer.data)
-    #         return Response(
-    #             serializer.errors,
-    #             status=status.HTTP_400_BAD_REQUEST
-    #         )
+        if request.method == "GET":
+            # Retrieve the review associated with the manga
+            serializer = ReviewReadSerializer(review)
+            return Response(serializer.data)
 
-    #     elif request.method == "DELETE":
-    #         # Delete the review associated with the manga
-    #         if review.user != request.user:
-    #             return Response(
-    #                 {"detail": message},
-    #                 status=status.HTTP_403_FORBIDDEN
-    #             )
-    #         review.delete()
-    #         return Response(status=status.HTTP_204_NO_CONTENT)
+        elif request.method == "PATCH":
+            # Update the review associated with the manga
+            if review.user != request.user:
+                return Response({"detail": message}, status=status.HTTP_403_FORBIDDEN)
+            serializer = ReviewWriteSerializer(review, data=request.data, partial=True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+        elif request.method == "DELETE":
+            # Delete the review associated with the manga
+            if review.user != request.user:
+                return Response({"detail": message}, status=status.HTTP_403_FORBIDDEN)
+            review.delete()
+            return Response(status=status.HTTP_204_NO_CONTENT)
