@@ -3,10 +3,10 @@
 from rest_framework import serializers
 
 from apps.categories.serializers import (
-    GenreSerializer,
-    StudioListSerializer,
-    SeasonListSerializer,
-    DemographicSerializer,
+    GenreReadSerializer,
+    StudioReadSerializer,
+    SeasonReadSerializer,
+    DemographicReadSerializer,
 )
 from .models import Anime, Manga
 
@@ -14,9 +14,9 @@ from .models import Anime, Manga
 class AnimeReadSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
 
-    studio = StudioListSerializer()
-    genres = GenreSerializer(many=True)
-    season = SeasonListSerializer()
+    studio = StudioReadSerializer()
+    genres = GenreReadSerializer(many=True)
+    season = SeasonReadSerializer()
     status = serializers.CharField(source="get_status_display")
     category = serializers.CharField(source="get_category_display")
 
@@ -97,8 +97,8 @@ class MangaReadSerializer(serializers.ModelSerializer):
     """Serializer for Manga model (Retrieve)."""
 
     author = serializers.CharField(source="author.name")
-    demographic = DemographicSerializer()
-    genres = GenreSerializer(many=True)
+    demographic = DemographicReadSerializer()
+    genres = GenreReadSerializer(many=True)
 
     class Meta:
         model = Manga

@@ -47,7 +47,7 @@ class ImageSizeValidator:
 
 @deconstructible
 class FileSizeValidator:
-    """Pending."""
+    """Validator to check if a file's size exceeds a given limit."""
 
     message = _("File size must be under %(limit)s. Current size is %(size)s.")
     code = "invalid_size"

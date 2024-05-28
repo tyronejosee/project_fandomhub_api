@@ -1,5 +1,3 @@
-# Project
-
 <div align="center">
   <a href="https://github.com/tyronejosee/project_new_store#gh-light-mode-only" target="_blank">
     <img src="./.github//logo_light.svg" alt="logo-light" width="80">
@@ -8,11 +6,11 @@
     <img src="./.github//logo_dark.svg" alt="logo-dark" width="80">
   </a>
 </div>
-<br>
 <div align="center">
   <h1><strong>FandomHub - API</strong></h1>
   <a href="#"><strong>📚 Documentation</strong></a>
 </div>
+<br>
 <p align="center">
 An API inspired by MyAnimeList, designed for retrieving detailed information about anime and manga. It provides access to titles, genres, ratings, and user reviews, allowing users to query and explore a wide range of anime and manga content.
 <p>

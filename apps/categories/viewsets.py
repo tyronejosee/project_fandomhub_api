@@ -8,20 +8,26 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework.permissions import AllowAny
 from drf_spectacular.utils import extend_schema_view, extend_schema
 
 from apps.utils.mixins import LogicalDeleteMixin
-from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import LargeSetPagination, MediumSetPagination
+from apps.users.permissions import IsContributor
 from apps.contents.models import Anime, Manga
 from apps.contents.serializers import AnimeMinimalSerializer, MangaMinimalSerializer
 from .models import Studio, Genre, Theme, Season, Demographic
 from .serializers import (
-    StudioSerializer,
-    GenreSerializer,
-    ThemeSerializer,
-    SeasonSerializer,
-    DemographicSerializer,
+    StudioReadSerializer,
+    StudioWriteSerializer,
+    GenreReadSerializer,
+    GenreWriteSerializer,
+    ThemeReadSerializer,
+    ThemeWriteSerializer,
+    SeasonReadSerializer,
+    SeasonWriteSerializer,
+    DemographicReadSerializer,
+    DemographicWriteSerializer,
 )
 from .schemas import (
     studio_schemas,
@@ -46,16 +52,24 @@ class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/studios/{id}/
     """
 
-    serializer_class = StudioSerializer
-    permission_classes = [IsStaffOrReadOnly]
+    serializer_class = StudioReadSerializer
+    permission_classes = [IsContributor]
     search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]
 
     def get_queryset(self):
-        return Studio.objects.get_available().defer(
-            "available", "created_at", "updated_at"
-        )
+        return Studio.objects.get_available()
+
+    def get_permissions(self):
+        if self.action in ["list", "retrieve"]:
+            return [AllowAny()]
+        return super().get_permissions()
+
+    def get_serializer_class(self):
+        if self.action in ["create", "update", "partial_update"]:
+            return StudioWriteSerializer
+        return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -102,15 +116,25 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/genres/{id}/
     """
 
-    serializer_class = GenreSerializer
-    permission_classes = [IsStaffOrReadOnly]
+    serializer_class = GenreReadSerializer
+    permission_classes = [IsContributor]
     pagination_class = LargeSetPagination
     search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]
 
     def get_queryset(self):
-        return Genre.objects.get_available().only("id", "name", "slug")
+        return Genre.objects.get_available()
+
+    def get_permissions(self):
+        if self.action in ["list", "retrieve"]:
+            return [AllowAny()]
+        return super().get_permissions()
+
+    def get_serializer_class(self):
+        if self.action in ["create", "update", "partial_update"]:
+            return GenreWriteSerializer
+        return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -181,14 +205,24 @@ class ThemeViewSet(LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/themes/{id}/
     """
 
-    serializer_class = ThemeSerializer
-    permission_classes = [IsStaffOrReadOnly]
+    serializer_class = ThemeReadSerializer
+    permission_classes = [IsContributor]
     search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]
 
     def get_queryset(self):
-        return Theme.objects.get_available().only("id", "name", "slug")
+        return Theme.objects.get_available()
+
+    def get_permissions(self):
+        if self.action in ["list", "retrieve"]:
+            return [AllowAny()]
+        return super().get_permissions()
+
+    def get_serializer_class(self):
+        if self.action in ["create", "update", "partial_update"]:
+            return ThemeWriteSerializer
+        return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -210,14 +244,24 @@ class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/seasons/{id}/
     """
 
-    serializer_class = SeasonSerializer
-    permission_classes = [IsStaffOrReadOnly]
+    serializer_class = SeasonReadSerializer
+    permission_classes = [IsContributor]
     search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]
 
     def get_queryset(self):
-        return Season.objects.get_available().only("id", "season", "year", "fullname")
+        return Season.objects.get_available()
+
+    def get_permissions(self):
+        if self.action in ["list", "retrieve"]:
+            return [AllowAny()]
+        return super().get_permissions()
+
+    def get_serializer_class(self):
+        if self.action in ["create", "update", "partial_update"]:
+            return SeasonWriteSerializer
+        return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
@@ -260,14 +304,24 @@ class DemographicViewSet(LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/demographics/{id}/
     """
 
-    serializer_class = DemographicSerializer
-    permission_classes = [IsStaffOrReadOnly]
+    serializer_class = DemographicReadSerializer
+    permission_classes = [IsContributor]
     search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]
 
     def get_queryset(self):
-        return Demographic.objects.get_available().values("id", "name")
+        return Demographic.objects.get_available()
+
+    def get_permissions(self):
+        if self.action in ["list", "retrieve"]:
+            return [AllowAny()]
+        return super().get_permissions()
+
+    def get_serializer_class(self):
+        if self.action in ["create", "update", "partial_update"]:
+            return DemographicWriteSerializer
+        return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)
