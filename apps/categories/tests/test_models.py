@@ -2,19 +2,21 @@
 
 from django.test import TestCase
 from django.core.exceptions import ValidationError
+
 from apps.categories.models import Studio, Genre, Theme, Season, Demographic
 
 
 class StudioModelTestCase(TestCase):
     """Test cases for Studio model."""
 
-    def test_creation_genre(self):
+    def test_creation_studio(self):
         """Test creating a studio."""
+
         studio = Studio.objects.create(
             name="Studio Ghibli",
             name_jpn="スタジオジブリ",
             established="Jun, 1985",
-            image=None
+            image=None,
         )
         self.assertEqual(studio.name, "Studio Ghibli")
         self.assertEqual(studio.name_jpn, "スタジオジブリ")
@@ -24,10 +26,7 @@ class StudioModelTestCase(TestCase):
 
     def test_update_studio(self):
         """Test updating a studio."""
-        studio = Studio(
-            name="MAPPA",
-            name_jpn="MAPPA"
-        )
+        studio = Studio(name="MAPPA", name_jpn="MAPPA")
         studio.save()
 
         studio.name = "A-1 Pictures"
@@ -38,10 +37,7 @@ class StudioModelTestCase(TestCase):
 
     def test_delete_studio(self):
         """Test deleting a studio."""
-        studio = Studio(
-            name="Bones",
-            name_jpn="ボンズ"
-        )
+        studio = Studio(name="Bones", name_jpn="ボンズ")
         studio.save()
         studio.delete()
         with self.assertRaises(Studio.DoesNotExist):
@@ -50,17 +46,11 @@ class StudioModelTestCase(TestCase):
     def test_validate_name_field(self):
         """Test name field validation."""
         with self.assertRaises(ValidationError):
-            studio1 = Studio(
-                name="Studio Ghibli",
-                name_jpn="スタジオジブリ"
-            )
+            studio1 = Studio(name="Studio Ghibli", name_jpn="スタジオジブリ")
             studio1.save()
 
-            studio2 = Studio(
-                name="Studio Ghibli",
-                name_jpn="Another Name"
-            )
-            studio2.full_clean()    # Error
+            studio2 = Studio(name="Studio Ghibli", name_jpn="Another Name")
+            studio2.full_clean()  # Error
 
 
 class GenreModelTestCase(TestCase):
@@ -68,9 +58,7 @@ class GenreModelTestCase(TestCase):
 
     def test_creation_genre(self):
         """Test creating a studio."""
-        genre = Genre.objects.create(
-            name="Romance"
-        )
+        genre = Genre.objects.create(name="Romance")
         self.assertEqual(genre.name, "Romance")
         self.assertEqual(genre.available, True)
 
@@ -89,7 +77,7 @@ class GenreModelTestCase(TestCase):
 
     def test_delete_genre(self):
         """Test deleting a genre."""
-        genre = Genre(name='Action')
+        genre = Genre(name="Action")
         genre.save()
         genre.delete()
 
@@ -103,7 +91,7 @@ class GenreModelTestCase(TestCase):
             genre1.save()
 
             genre2 = Genre(name="Fantasy")
-            genre2.full_clean()    # Error
+            genre2.full_clean()  # Error
 
 
 class ThemeModelTestCase(TestCase):
@@ -111,17 +99,13 @@ class ThemeModelTestCase(TestCase):
 
     def test_creation_theme(self):
         """Test creating a theme."""
-        theme = Theme.objects.create(
-            name="Parody"
-        )
+        theme = Theme.objects.create(name="Parody")
         self.assertEqual(theme.name, "Parody")
         self.assertEqual(theme.available, True)
 
     def test_update_theme(self):
         """Test updating a theme."""
-        theme = Theme(
-            name="Super Power"
-        )
+        theme = Theme(name="Super Power")
         theme.save()
 
         theme.name = "Adult Cast"
@@ -134,9 +118,7 @@ class ThemeModelTestCase(TestCase):
 
     def test_delete_theme(self):
         """Test deleting a theme."""
-        theme = Theme(
-            name="Isekai"
-        )
+        theme = Theme(name="Isekai")
         theme.save()
         theme.delete()
 
@@ -150,7 +132,7 @@ class ThemeModelTestCase(TestCase):
             theme1.save()
 
             theme2 = Theme(name="Fantasy")
-            theme2.full_clean()    # Error
+            theme2.full_clean()  # Error
 
 
 class SeasonModelTestCase(TestCase):
@@ -158,10 +140,7 @@ class SeasonModelTestCase(TestCase):
 
     def test_creation_season(self):
         """Test creating a season"""
-        season = Season.objects.create(
-            season="winter",
-            year=2024
-        )
+        season = Season.objects.create(season="winter", year=2024)
         self.assertEqual(season.season, "winter")
         self.assertEqual(season.year, 2024)
 
@@ -191,16 +170,16 @@ class SeasonModelTestCase(TestCase):
         """Test season field validation."""
         with self.assertRaises(ValidationError):
             season = Season(season=5, year=2022)
-            season.full_clean()    # Error
+            season.full_clean()  # Error
 
     def test_validate_year_field(self):
         """Test year field validation."""
         with self.assertRaises(ValidationError):
-            season = Season(season=1, year=1899)    # Min=1900
+            season = Season(season=1, year=1899)  # Min=1900
             season.full_clean()
 
         with self.assertRaises(ValidationError):
-            season = Season(season=1, year=2101)    # max=2100
+            season = Season(season=1, year=2101)  # max=2100
             season.full_clean()
 
 
@@ -231,7 +210,7 @@ class DemographicModelTestCase(TestCase):
 
     def test_delete_demographic(self):
         """Test deleting a demographic."""
-        demographic = Demographic(name='Young Adults')
+        demographic = Demographic(name="Young Adults")
         demographic.save()
 
         demographic.delete()
@@ -246,4 +225,4 @@ class DemographicModelTestCase(TestCase):
             demographic1.save()
 
             demographic2 = Demographic(name="Seinen")
-            demographic2.full_clean()    # Error
+            demographic2.full_clean()  # Error

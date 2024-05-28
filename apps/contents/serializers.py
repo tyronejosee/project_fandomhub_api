@@ -72,6 +72,9 @@ class AnimeWriteSerializer(serializers.ModelSerializer):
             "genres",
             "season",
         ]
+        extra_kwargs = {
+            "image": {"required": True},
+        }
 
 
 class AnimeMinimalSerializer(serializers.ModelSerializer):
@@ -142,6 +145,9 @@ class MangaWriteSerializer(serializers.ModelSerializer):
             "genres",
             "themes",
         ]
+        extra_kwargs = {
+            "image": {"required": True},
+        }
 
 
 class MangaMinimalSerializer(serializers.ModelSerializer):

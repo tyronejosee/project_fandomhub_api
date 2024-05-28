@@ -36,6 +36,9 @@ class StudioWriteSerializer(serializers.ModelSerializer):
             "established",
             "image",
         ]
+        extra_kwargs = {
+            "image": {"required": True},
+        }
 
 
 class GenreReadSerializer(serializers.ModelSerializer):

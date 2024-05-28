@@ -30,6 +30,8 @@ class Anime(BaseModel, SlugMixin):
     image = models.ImageField(
         _("image"),
         upload_to=image_path,
+        blank=True,
+        null=True,
         validators=[
             FileExtensionValidator(allowed_extensions=["jpg", "webp"]),
             ImageSizeValidator(max_width=909, max_height=1280),
@@ -103,6 +105,8 @@ class Manga(BaseModel, SlugMixin):
     image = models.ImageField(
         _("image"),
         upload_to=image_path,
+        blank=True,
+        null=True,
         validators=[
             FileExtensionValidator(allowed_extensions=["jpg", "webp"]),
             ImageSizeValidator(max_width=909, max_height=1280),

@@ -30,6 +30,8 @@ class Studio(BaseModel, SlugMixin):
     )
     image = models.ImageField(
         _("image"),
+        blank=True,
+        null=True,
         upload_to=image_path,
         validators=[
             FileExtensionValidator(allowed_extensions=["webp"]),
