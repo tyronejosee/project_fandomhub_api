@@ -1,19 +1,21 @@
-# Project FandomHub
+# Project
 
-<p align="center">
+<div align="center">
   <a href="https://github.com/tyronejosee/project_new_store#gh-light-mode-only" target="_blank">
-    <img src="./static/img/logo_light.svg" alt="logo-light" width="80">
+    <img src="./.github//logo_light.svg" alt="logo-light" width="80">
   </a>
   <a href="https://github.com/tyronejosee/project_new_store#gh-dark-mode-only" target="_blank">
-    <img src="./static/img/logo_dark.svg" alt="logo-dark" width="80">
+    <img src="./.github//logo_dark.svg" alt="logo-dark" width="80">
   </a>
-</p>
+</div>
+<br>
+<div align="center">
+  <h1><strong>FandomHub - API</strong></h1>
+  <a href="#"><strong>📚 Documentation</strong></a>
+</div>
 <p align="center">
-An API for querying information about anime and manga, based on MyAnimeList, providing details such as titles, genres, ratings, and user reviews.
+An API inspired by MyAnimeList, designed for retrieving detailed information about anime and manga. It provides access to titles, genres, ratings, and user reviews, allowing users to query and explore a wide range of anime and manga content.
 <p>
-<p align="center">
-  <a href="#"><strong>Documentation</strong></a>
-</p>
 <p align="center">
   <a href="https://www.python.org/">
   <img src="https://img.shields.io/badge/python-3.11.8-blue" alt="python-version">
@@ -26,7 +28,7 @@ An API for querying information about anime and manga, based on MyAnimeList, pro
   </a>
 </p>
 
-## Installation
+## ⚙️ Installation
 
 Clone the repository.
 
@@ -87,7 +89,7 @@ Perform database migrations.
 
 > Note: Create the migrations in case Django skips any.
 
-## Usage
+## 🚀 Usage
 
 Create a superuser to access the entire site without restrictions.
 
@@ -108,7 +110,7 @@ http://127.0.0.1:8000/api/schema/swagger/
 http://127.0.0.1:8000/api/schema/redoc/
 ```
 
-## Internationalization
+## 🌍 Internationalization
 
 Generate translation files for the languages.
 
@@ -125,7 +127,7 @@ Compile translation files after making changes to translations.
 (env) django-admin compilemessages
 ```
 
-## Important Notes
+## 🚨 Important Notes
 
 Check the creation of migrations before creating them.
 
@@ -138,7 +140,7 @@ Check the creation of migrations before creating them.
 
 > Note: Checking migrations before their creation is necessary to avoid inconsistencies in user models.
 
-## PostgreSQL
+## 💾 PostgreSQL
 
 ```bash
 (env) docker compose -f docker-compose.dev.yml exec web python manage.py dumpdata > backup.json
@@ -148,13 +150,13 @@ Check the creation of migrations before creating them.
 (fandomhub_db=#) \d <table>
 ```
 
-## Redis
+## 💾 Redis
 
 ```bash
 (env) docker compose exec redis redis-cli
 (127.0.0.1:6379) keys *
 ```
 
-## License
+## ⚖️ License
 
 This project is under the [Apache-2.0 license](https://github.com/tyronejosee/project_fandomhub_api/blob/main/LICENSE).

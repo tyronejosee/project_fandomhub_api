@@ -1832,3 +1832,5 @@ NameError: name 'All' is not defined. Did you mean: 'all'?
 2024-05-28 16:54:09,643:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
 2024-05-28 16:54:11,092:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
 2024-05-28 16:57:01,288:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-05-28 16:57:03,969:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-28 16:57:05,119:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
