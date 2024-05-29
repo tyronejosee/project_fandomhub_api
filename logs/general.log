@@ -2177,3 +2177,576 @@ NameError: name 'All' is not defined. Did you mean: 'all'?
 2024-05-28 20:24:19,703:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
 2024-05-28 20:24:20,817:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
 2024-05-28 20:24:38,324:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 15:34:05,765:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 15:34:14,462:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 15:34:15,455:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:02:21,577:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:02:23,482:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:03:03,873:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:03:17,627:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:04:07,844:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:04:10,595:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:04:12,240:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:04:19,261:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:04:22,532:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:04:24,522:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:04:30,355:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:04:33,183:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:04:35,244:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:04:58,729:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:05:01,581:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:05:02,735:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:05:06,804:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:05:09,666:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:05:10,763:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:05:13,702:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:05:18,182:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:05:19,458:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:05:23,792:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:05:26,288:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:05:27,728:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:05:34,975:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:05:38,177:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:05:39,743:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:05:45,679:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:05:49,451:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:05:51,692:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:05:58,367:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:06:01,371:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:06:02,735:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:06:07,697:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:06:10,172:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:06:11,355:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:06:18,055:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:06:21,768:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:06:23,085:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:06:27,627:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:06:30,745:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:06:32,492:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:06:42,931:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:06:47,168:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:06:49,101:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:06:54,580:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:06:57,190:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:06:58,382:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:07:08,195:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:07:12,315:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:07:13,550:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:07:24,662:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:07:27,130:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:07:28,342:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:07:33,138:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:07:35,669:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:07:36,871:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:08:24,814:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:08:26,812:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:08:27,865:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:08:52,478:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:08:55,046:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:08:56,327:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:09:01,409:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:09:04,247:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:09:05,917:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:09:16,065:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:09:19,447:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:09:21,105:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:15:00,173:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/models.py changed, reloading.)
+2024-05-29 17:15:02,584:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:15:03,859:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:15:30,429:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:15:32,820:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:15:34,234:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:16:05,581:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/admin.py changed, reloading.)
+2024-05-29 17:16:07,960:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:16:09,205:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:16:48,998:WARNING - django.request log.py (line 241. Not Found: /favicon.ico)
+2024-05-29 17:20:45,657:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/viewsets.py changed, reloading.)
+2024-05-29 17:20:48,504:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:20:50,781:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:25:16,523:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/contents/viewsets.py changed, reloading.)
+2024-05-29 17:25:18,938:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:25:20,183:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:30:28,780:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/models.py changed, reloading.)
+2024-05-29 17:30:31,561:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:30:32,465:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:30:41,200:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/models.py changed, reloading.)
+2024-05-29 17:30:43,898:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:30:45,976:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:37:31,700:INFO - django.utils.autoreload autoreload.py (line 266. /app/config/urls.py changed, reloading.)
+2024-05-29 17:37:34,355:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:37:35,806:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:38:10,165:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/routers.py changed, reloading.)
+2024-05-29 17:38:12,485:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:38:13,730:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:38:57,576:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/routers.py changed, reloading.)
+2024-05-29 17:39:00,606:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:39:01,860:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:40:49,500:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 17:40:55,062:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:40:56,929:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:41:04,791:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 17:41:07,881:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:41:09,961:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:41:45,171:WARNING - django.request log.py (line 241. Forbidden: /api/v1/clubs/)
+2024-05-29 17:46:17,772:DEBUG - PIL.Image Image.py (line 363. Importing BlpImagePlugin)
+2024-05-29 17:46:17,787:DEBUG - PIL.Image Image.py (line 363. Importing BmpImagePlugin)
+2024-05-29 17:46:17,807:DEBUG - PIL.Image Image.py (line 363. Importing BufrStubImagePlugin)
+2024-05-29 17:46:17,831:DEBUG - PIL.Image Image.py (line 363. Importing CurImagePlugin)
+2024-05-29 17:46:17,847:DEBUG - PIL.Image Image.py (line 363. Importing DcxImagePlugin)
+2024-05-29 17:46:17,889:DEBUG - PIL.Image Image.py (line 363. Importing DdsImagePlugin)
+2024-05-29 17:46:17,949:DEBUG - PIL.Image Image.py (line 363. Importing EpsImagePlugin)
+2024-05-29 17:46:17,959:DEBUG - PIL.Image Image.py (line 363. Importing FitsImagePlugin)
+2024-05-29 17:46:17,966:DEBUG - PIL.Image Image.py (line 363. Importing FliImagePlugin)
+2024-05-29 17:46:17,987:DEBUG - PIL.Image Image.py (line 363. Importing FpxImagePlugin)
+2024-05-29 17:46:18,009:DEBUG - PIL.Image Image.py (line 366. Image: failed to import FpxImagePlugin: No module named 'olefile')
+2024-05-29 17:46:18,010:DEBUG - PIL.Image Image.py (line 363. Importing FtexImagePlugin)
+2024-05-29 17:46:18,014:DEBUG - PIL.Image Image.py (line 363. Importing GbrImagePlugin)
+2024-05-29 17:46:18,019:DEBUG - PIL.Image Image.py (line 363. Importing GifImagePlugin)
+2024-05-29 17:46:18,020:DEBUG - PIL.Image Image.py (line 363. Importing GribStubImagePlugin)
+2024-05-29 17:46:18,023:DEBUG - PIL.Image Image.py (line 363. Importing Hdf5StubImagePlugin)
+2024-05-29 17:46:18,027:DEBUG - PIL.Image Image.py (line 363. Importing IcnsImagePlugin)
+2024-05-29 17:46:18,040:DEBUG - PIL.Image Image.py (line 363. Importing IcoImagePlugin)
+2024-05-29 17:46:18,044:DEBUG - PIL.Image Image.py (line 363. Importing ImImagePlugin)
+2024-05-29 17:46:18,053:DEBUG - PIL.Image Image.py (line 363. Importing ImtImagePlugin)
+2024-05-29 17:46:18,055:DEBUG - PIL.Image Image.py (line 363. Importing IptcImagePlugin)
+2024-05-29 17:46:18,059:DEBUG - PIL.Image Image.py (line 363. Importing JpegImagePlugin)
+2024-05-29 17:46:18,064:DEBUG - PIL.Image Image.py (line 363. Importing Jpeg2KImagePlugin)
+2024-05-29 17:46:18,066:DEBUG - PIL.Image Image.py (line 363. Importing McIdasImagePlugin)
+2024-05-29 17:46:18,070:DEBUG - PIL.Image Image.py (line 363. Importing MicImagePlugin)
+2024-05-29 17:46:18,077:DEBUG - PIL.Image Image.py (line 366. Image: failed to import MicImagePlugin: No module named 'olefile')
+2024-05-29 17:46:18,078:DEBUG - PIL.Image Image.py (line 363. Importing MpegImagePlugin)
+2024-05-29 17:46:18,082:DEBUG - PIL.Image Image.py (line 363. Importing MpoImagePlugin)
+2024-05-29 17:46:18,126:DEBUG - PIL.Image Image.py (line 363. Importing MspImagePlugin)
+2024-05-29 17:46:18,128:DEBUG - PIL.Image Image.py (line 363. Importing PalmImagePlugin)
+2024-05-29 17:46:18,164:DEBUG - PIL.Image Image.py (line 363. Importing PcdImagePlugin)
+2024-05-29 17:46:18,167:DEBUG - PIL.Image Image.py (line 363. Importing PcxImagePlugin)
+2024-05-29 17:46:18,168:DEBUG - PIL.Image Image.py (line 363. Importing PdfImagePlugin)
+2024-05-29 17:46:18,215:DEBUG - PIL.Image Image.py (line 363. Importing PixarImagePlugin)
+2024-05-29 17:46:18,217:DEBUG - PIL.Image Image.py (line 363. Importing PngImagePlugin)
+2024-05-29 17:46:18,219:DEBUG - PIL.Image Image.py (line 363. Importing PpmImagePlugin)
+2024-05-29 17:46:18,221:DEBUG - PIL.Image Image.py (line 363. Importing PsdImagePlugin)
+2024-05-29 17:46:18,226:DEBUG - PIL.Image Image.py (line 363. Importing QoiImagePlugin)
+2024-05-29 17:46:18,233:DEBUG - PIL.Image Image.py (line 363. Importing SgiImagePlugin)
+2024-05-29 17:46:18,235:DEBUG - PIL.Image Image.py (line 363. Importing SpiderImagePlugin)
+2024-05-29 17:46:18,242:DEBUG - PIL.Image Image.py (line 363. Importing SunImagePlugin)
+2024-05-29 17:46:18,253:DEBUG - PIL.Image Image.py (line 363. Importing TgaImagePlugin)
+2024-05-29 17:46:18,258:DEBUG - PIL.Image Image.py (line 363. Importing TiffImagePlugin)
+2024-05-29 17:46:18,259:DEBUG - PIL.Image Image.py (line 363. Importing WebPImagePlugin)
+2024-05-29 17:46:18,274:DEBUG - PIL.Image Image.py (line 363. Importing WmfImagePlugin)
+2024-05-29 17:46:18,278:DEBUG - PIL.Image Image.py (line 363. Importing XbmImagePlugin)
+2024-05-29 17:46:18,301:DEBUG - PIL.Image Image.py (line 363. Importing XpmImagePlugin)
+2024-05-29 17:46:18,314:DEBUG - PIL.Image Image.py (line 363. Importing XVThumbImagePlugin)
+2024-05-29 17:46:23,671:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/clubs/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-05-29 17:48:28,647:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/serializers.py changed, reloading.)
+2024-05-29 17:48:31,413:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:48:32,618:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:48:36,308:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/clubs/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-05-29 17:48:38,054:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/clubs/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-05-29 17:50:38,395:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 17:50:40,896:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:50:42,530:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:50:46,088:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/clubs/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-05-29 17:51:40,686:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/serializers.py changed, reloading.)
+2024-05-29 17:51:43,300:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:51:45,065:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:51:47,326:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/clubs/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-05-29 17:52:45,268:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/serializers.py changed, reloading.)
+2024-05-29 17:52:48,281:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:52:50,159:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:53:52,436:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 17:53:55,182:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:53:56,742:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:54:00,563:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/clubs/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-05-29 17:54:02,485:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/clubs/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-05-29 17:55:22,483:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/serializers.py changed, reloading.)
+2024-05-29 17:55:25,690:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:55:27,598:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:55:34,489:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/serializers.py changed, reloading.)
+2024-05-29 17:55:37,339:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:55:38,628:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:55:44,560:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/serializers.py changed, reloading.)
+2024-05-29 17:55:47,904:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:55:49,315:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:56:14,930:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 17:56:17,885:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 17:56:19,122:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 17:58:24,107:DEBUG - PIL.Image Image.py (line 363. Importing BlpImagePlugin)
+2024-05-29 17:58:24,114:DEBUG - PIL.Image Image.py (line 363. Importing BmpImagePlugin)
+2024-05-29 17:58:24,115:DEBUG - PIL.Image Image.py (line 363. Importing BufrStubImagePlugin)
+2024-05-29 17:58:24,117:DEBUG - PIL.Image Image.py (line 363. Importing CurImagePlugin)
+2024-05-29 17:58:24,119:DEBUG - PIL.Image Image.py (line 363. Importing DcxImagePlugin)
+2024-05-29 17:58:24,144:DEBUG - PIL.Image Image.py (line 363. Importing DdsImagePlugin)
+2024-05-29 17:58:24,162:DEBUG - PIL.Image Image.py (line 363. Importing EpsImagePlugin)
+2024-05-29 17:58:24,165:DEBUG - PIL.Image Image.py (line 363. Importing FitsImagePlugin)
+2024-05-29 17:58:24,169:DEBUG - PIL.Image Image.py (line 363. Importing FliImagePlugin)
+2024-05-29 17:58:24,175:DEBUG - PIL.Image Image.py (line 363. Importing FpxImagePlugin)
+2024-05-29 17:58:24,179:DEBUG - PIL.Image Image.py (line 366. Image: failed to import FpxImagePlugin: No module named 'olefile')
+2024-05-29 17:58:24,180:DEBUG - PIL.Image Image.py (line 363. Importing FtexImagePlugin)
+2024-05-29 17:58:24,187:DEBUG - PIL.Image Image.py (line 363. Importing GbrImagePlugin)
+2024-05-29 17:58:24,189:DEBUG - PIL.Image Image.py (line 363. Importing GifImagePlugin)
+2024-05-29 17:58:24,190:DEBUG - PIL.Image Image.py (line 363. Importing GribStubImagePlugin)
+2024-05-29 17:58:24,198:DEBUG - PIL.Image Image.py (line 363. Importing Hdf5StubImagePlugin)
+2024-05-29 17:58:24,202:DEBUG - PIL.Image Image.py (line 363. Importing IcnsImagePlugin)
+2024-05-29 17:58:24,209:DEBUG - PIL.Image Image.py (line 363. Importing IcoImagePlugin)
+2024-05-29 17:58:24,213:DEBUG - PIL.Image Image.py (line 363. Importing ImImagePlugin)
+2024-05-29 17:58:24,218:DEBUG - PIL.Image Image.py (line 363. Importing ImtImagePlugin)
+2024-05-29 17:58:24,220:DEBUG - PIL.Image Image.py (line 363. Importing IptcImagePlugin)
+2024-05-29 17:58:24,225:DEBUG - PIL.Image Image.py (line 363. Importing JpegImagePlugin)
+2024-05-29 17:58:24,226:DEBUG - PIL.Image Image.py (line 363. Importing Jpeg2KImagePlugin)
+2024-05-29 17:58:24,228:DEBUG - PIL.Image Image.py (line 363. Importing McIdasImagePlugin)
+2024-05-29 17:58:24,231:DEBUG - PIL.Image Image.py (line 363. Importing MicImagePlugin)
+2024-05-29 17:58:24,235:DEBUG - PIL.Image Image.py (line 366. Image: failed to import MicImagePlugin: No module named 'olefile')
+2024-05-29 17:58:24,236:DEBUG - PIL.Image Image.py (line 363. Importing MpegImagePlugin)
+2024-05-29 17:58:24,238:DEBUG - PIL.Image Image.py (line 363. Importing MpoImagePlugin)
+2024-05-29 17:58:24,271:DEBUG - PIL.Image Image.py (line 363. Importing MspImagePlugin)
+2024-05-29 17:58:24,279:DEBUG - PIL.Image Image.py (line 363. Importing PalmImagePlugin)
+2024-05-29 17:58:24,287:DEBUG - PIL.Image Image.py (line 363. Importing PcdImagePlugin)
+2024-05-29 17:58:24,288:DEBUG - PIL.Image Image.py (line 363. Importing PcxImagePlugin)
+2024-05-29 17:58:24,296:DEBUG - PIL.Image Image.py (line 363. Importing PdfImagePlugin)
+2024-05-29 17:58:24,323:DEBUG - PIL.Image Image.py (line 363. Importing PixarImagePlugin)
+2024-05-29 17:58:24,324:DEBUG - PIL.Image Image.py (line 363. Importing PngImagePlugin)
+2024-05-29 17:58:24,325:DEBUG - PIL.Image Image.py (line 363. Importing PpmImagePlugin)
+2024-05-29 17:58:24,328:DEBUG - PIL.Image Image.py (line 363. Importing PsdImagePlugin)
+2024-05-29 17:58:24,330:DEBUG - PIL.Image Image.py (line 363. Importing QoiImagePlugin)
+2024-05-29 17:58:24,333:DEBUG - PIL.Image Image.py (line 363. Importing SgiImagePlugin)
+2024-05-29 17:58:24,338:DEBUG - PIL.Image Image.py (line 363. Importing SpiderImagePlugin)
+2024-05-29 17:58:24,341:DEBUG - PIL.Image Image.py (line 363. Importing SunImagePlugin)
+2024-05-29 17:58:24,343:DEBUG - PIL.Image Image.py (line 363. Importing TgaImagePlugin)
+2024-05-29 17:58:24,345:DEBUG - PIL.Image Image.py (line 363. Importing TiffImagePlugin)
+2024-05-29 17:58:24,349:DEBUG - PIL.Image Image.py (line 363. Importing WebPImagePlugin)
+2024-05-29 17:58:24,370:DEBUG - PIL.Image Image.py (line 363. Importing WmfImagePlugin)
+2024-05-29 17:58:24,381:DEBUG - PIL.Image Image.py (line 363. Importing XbmImagePlugin)
+2024-05-29 17:58:24,388:DEBUG - PIL.Image Image.py (line 363. Importing XpmImagePlugin)
+2024-05-29 17:58:24,393:DEBUG - PIL.Image Image.py (line 363. Importing XVThumbImagePlugin)
+2024-05-29 18:00:11,987:INFO - django.utils.autoreload autoreload.py (line 266. /app/config/settings/base.py changed, reloading.)
+2024-05-29 18:00:14,783:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:00:15,946:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:02:11,208:INFO - django.utils.autoreload autoreload.py (line 266. /app/config/settings/base.py changed, reloading.)
+2024-05-29 18:02:14,281:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:02:15,490:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:03:11,696:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 18:03:15,184:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:03:17,899:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:03:36,977:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 18:03:40,128:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:03:41,557:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:03:57,490:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 18:04:00,833:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:04:02,583:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:07:41,122:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 18:07:44,296:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:07:45,680:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:07:55,925:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 18:07:58,477:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:08:00,273:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:08:20,073:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 18:08:22,526:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:08:23,724:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:36:15,835:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 18:36:18,077:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:36:19,118:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:36:26,325:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 18:36:28,351:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:36:29,435:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:37:09,384:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-05-29 18:37:11,298:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:37:12,301:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:38:35,103:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/serializers.py changed, reloading.)
+2024-05-29 18:38:37,151:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:38:38,112:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:38:46,421:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/serializers.py changed, reloading.)
+2024-05-29 18:38:48,568:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:38:49,806:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:38:57,484:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/serializers.py changed, reloading.)
+2024-05-29 18:38:59,663:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:39:01,476:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-29 18:39:07,740:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/serializers.py changed, reloading.)
+2024-05-29 18:39:10,061:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-29 18:39:11,209:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)

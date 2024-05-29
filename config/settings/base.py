@@ -25,6 +25,7 @@ PROJECT_APPS = [
     "apps.categories",
     "apps.contents",
     "apps.persons",
+    "apps.clubs",
     "apps.profiles",
     "apps.users",
     "apps.playlists",
@@ -99,9 +100,7 @@ LANGUAGES = [
     ("de", "German"),
 ]
 
-LOCALE_PATHS = (
-    os.path.join(BASE_DIR, "locale"),
-)
+LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
 
 TIME_ZONE = "UTC"
 
@@ -112,14 +111,13 @@ USE_TZ = True
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework_simplejwt.authentication.JWTAuthentication",
-        # "rest_framework.authentication.BasicAuthentication",
     ],
     "DEFAULT_PERMISSION_CLASSES": [
         "rest_framework.permissions.IsAuthenticatedOrReadOnly"
     ],
     "DEFAULT_THROTTLE_CLASSES": [
         "rest_framework.throttling.AnonRateThrottle",
-        "rest_framework.throttling.UserRateThrottle"
+        "rest_framework.throttling.UserRateThrottle",
     ],
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
     # "DEFAULT_VERSIONING_CLASS": "rest_framework.versioning.NamespaceVersioning",
@@ -136,7 +134,7 @@ REST_FRAMEWORK = {
     "NUM_PROXIES": None,
     "PAGE_SIZE": 25,
     "SEARCH_PARAM": "q",
-    "ORDERING_PARAM": "ordering",
+    "ORDERING_PARAM": "order",
     # "DEFAULT_VERSION": "v2",
     # "ALLOWED_VERSIONS": ["v1", "v2"],
     # "VERSION_PARAM": "version",
@@ -149,14 +147,12 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SIMPLE_JWT = {
-    "AUTH_HEADER_TYPES": ("JWT", ),
+    "AUTH_HEADER_TYPES": ("JWT",),
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=10080),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
     "ROTATE_REFRESFH_TOKENS": True,
     "BLACKLIST_AFTER_ROTATION": True,
-    "AUTH_TOKEN_CLASSES": (
-        "rest_framework_simplejwt.tokens.AccessToken",
-    )
+    "AUTH_TOKEN_CLASSES": ("rest_framework_simplejwt.tokens.AccessToken",),
 }
 
 DJOSER = {
@@ -174,7 +170,8 @@ DJOSER = {
     "SEND_ACTIVATION_EMAIL": True,
     "SOCIAL_AUTH_TOKEN_STRATEGY": "djoser.social.token.jwt.TokenStrategy",
     "SOCIAL_AUTH_ALLOWED_REDIRECT_URIS": [
-        "http://localhost:8000/google", "http://localhost:8000/facebook"
+        "http://localhost:8000/google",
+        "http://localhost:8000/facebook",
     ],
     "SERIALIZERS": {
         "user_create": "apps.users.serializers.UserSerializer",
@@ -192,7 +189,7 @@ SPECTACULAR_SETTINGS = {
     "DESCRIPTION": "The FandomHub API provides access to data about animes and manga.",
     "LICENSE": {
         "name": "Apache Licence 2.0",
-        "url": "https://github.com/tyronejosee/project_fandomhub_api/blob/main/LICENSE"
+        "url": "https://github.com/tyronejosee/project_fandomhub_api/blob/main/LICENSE",
     },
     "CONTACT": {"name": "Developer", "url": "https://github.com/tyronejosee"},
     "SCHEMA_PATH_PREFIX": r"^/api/v\d+",
@@ -212,15 +209,15 @@ LOGGING = {
     "handlers": {
         "file": {
             "class": "logging.FileHandler",
-            'filename': os.path.join(LOG_DIR, "general.log"),
+            "filename": os.path.join(LOG_DIR, "general.log"),
             "level": "DEBUG",
-            "formatter": "verbose"
+            "formatter": "verbose",
         },
         "console": {
             "class": "logging.StreamHandler",
             "level": "DEBUG",
-            "formatter": "simple"
-        }
+            "formatter": "simple",
+        },
     },
     "loggers": {
         "": {
@@ -230,15 +227,12 @@ LOGGING = {
         }
     },
     "formatters": {
-        "simple": {
-            "format": "{asctime}:{levelname} {message}",
-            "style": "{"
-        },
+        "simple": {"format": "{asctime}:{levelname} {message}", "style": "{"},
         "verbose": {
             "format": "{asctime}:{levelname} - {name} {module}.py (line {lineno:d}. {message})",
-            "style": "{"
-        }
-    }
+            "style": "{",
+        },
+    },
 }
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"

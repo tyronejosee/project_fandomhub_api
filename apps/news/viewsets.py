@@ -22,8 +22,8 @@ class NewViewSet(ReadOnlyModelViewSet):
     - GET /api/v1/news/{id}/
     """
 
-    serializer_class = NewSerializer
     permission_classes = [IsStaffOrReadOnly]
+    serializer_class = NewSerializer
     search_fields = ["title", "author__username"]
     ordering_fields = ["title", "created_at"]
     ordering = ["id"]

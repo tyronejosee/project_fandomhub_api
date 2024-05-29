@@ -48,7 +48,6 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
     serializer_class = AnimeWriteSerializer
     search_fields = ["name", "studio__name"]
     ordering_fields = ["name"]
-    ordering = ["id"]
 
     def get_queryset(self):
         return Anime.objects.get_available()

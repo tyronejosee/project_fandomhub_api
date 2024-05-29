@@ -9,6 +9,7 @@ from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.utils.paths import image_path
+from .managers import ClubManager
 from .choices import CategoryChoices
 
 User = settings.AUTH_USER_MODEL
@@ -41,6 +42,8 @@ class Club(BaseModel, SlugMixin):
         verbose_name=_("creator"),
     )
     is_public = models.BooleanField(_("is public"))
+
+    objects = ClubManager()
 
     class Meta:
         ordering = ["pk"]
