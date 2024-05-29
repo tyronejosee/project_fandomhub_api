@@ -21,16 +21,26 @@ BASE_APPS = [
 ]
 
 PROJECT_APPS = [
-    "apps.utils",
+    "apps.animes",
     "apps.categories",
-    "apps.contents",
-    "apps.persons",
+    "apps.characters",
     "apps.clubs",
-    "apps.profiles",
-    "apps.users",
-    "apps.playlists",
-    "apps.reviews",
+    "apps.contents",
+    "apps.genres",
+    "apps.mangas",
     "apps.news",
+    # "apps.others",
+    "apps.peoples",
+    "apps.persons",
+    "apps.playlists",
+    "apps.profiles",
+    "apps.randoms",
+    "apps.recommendations",
+    "apps.reviews",
+    "apps.seasons",
+    "apps.tops",
+    "apps.users",
+    "apps.utils",
 ]
 
 THIRD_APPS = [

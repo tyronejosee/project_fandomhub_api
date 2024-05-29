@@ -1,0 +1,1 @@
+"""Admin for Characters App."""
