@@ -2,6 +2,7 @@
 
 from django.conf import settings
 from django.db import models
+from django.db.models import UniqueConstraint
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
@@ -65,6 +66,9 @@ class ClubMember(BaseModel):
         ordering = ["-created_at"]
         verbose_name = _("club member")
         verbose_name_plural = _("club members")
+        constraints = [
+            UniqueConstraint(fields=["club", "user"], name="unique_club_user")
+        ]
 
     def __str__(self):
         return str(self.user.username)

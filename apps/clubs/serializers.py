@@ -1,8 +1,10 @@
 """Serializers for Clubs App."""
 
+from django.db import IntegrityError
+from django.utils.translation import gettext as _
 from rest_framework import serializers
 
-from .models import Club
+from .models import Club, ClubMember
 
 
 class ClubReadSerializer(serializers.ModelSerializer):
@@ -36,3 +38,35 @@ class ClubWriteSerializer(serializers.ModelSerializer):
             "category",
             "is_public",
         ]
+
+
+class ClubMemberReadSerializer(serializers.ModelSerializer):
+    """Serializer for ClubMember model (List/retrieve)."""
+
+    user = serializers.StringRelatedField()
+    joined_at = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
+
+    class Meta:
+        model = ClubMember
+        fields = [
+            "user",
+            "joined_at",
+        ]
+
+
+class ClubMemberWriteSerializer(serializers.ModelSerializer):
+    """Serializer for ClubMember model (Create/update)."""
+
+    class Meta:
+        model = ClubMember
+        fields = [
+            "user",
+        ]
+
+    def create(self, validated_data):
+        try:
+            return super().create(validated_data)
+        except IntegrityError:
+            raise serializers.ValidationError(
+                _("This user is already a member of the club.")
+            )

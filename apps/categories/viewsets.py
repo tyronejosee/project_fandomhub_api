@@ -5,10 +5,10 @@ from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_cookie
 from django.utils.translation import gettext as _
 from rest_framework.viewsets import ModelViewSet
-from rest_framework import status
+from rest_framework.permissions import AllowAny
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from rest_framework.permissions import AllowAny
+from rest_framework import status
 from drf_spectacular.utils import extend_schema_view, extend_schema
 
 from apps.utils.mixins import LogicalDeleteMixin
