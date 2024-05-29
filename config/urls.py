@@ -35,7 +35,7 @@ urlpatterns = [
         name="redoc",
     ),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
-    # Apps urls
+    # Apps urls (Routers)
     path("", include("apps.contents.routers")),
     path("", include("apps.categories.routers")),
     path("", include("apps.persons.routers")),
@@ -44,6 +44,8 @@ urlpatterns = [
     path("", include("apps.clubs.routers")),
     path("", include("apps.playlists.routers")),
     path("", include("apps.news.routers")),
+    # Apps urls (URLs)
+    path("", include("apps.randoms.urls")),
 ]
 
 
