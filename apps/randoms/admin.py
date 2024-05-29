@@ -1,0 +1,1 @@
+"""Admin for Randoms App."""

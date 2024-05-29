@@ -35,7 +35,7 @@ class Club(BaseModel, SlugMixin):
     category = models.CharField(
         _("category"), max_length=30, choices=CategoryChoices.choices
     )
-    members = models.IntegerField(_("members"), default=0)
+    members = models.PositiveIntegerField(_("members"), default=0)
     created_by = models.OneToOneField(
         User,
         on_delete=models.CASCADE,

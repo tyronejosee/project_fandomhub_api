@@ -1,0 +1,1 @@
+"""Admin for Peoples App."""

@@ -1,0 +1,1 @@
+"""ViewSets for Randoms App."""
