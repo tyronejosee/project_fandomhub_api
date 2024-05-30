@@ -2,7 +2,13 @@
 
 import uuid
 from django.db import models
+from django.contrib.contenttypes.fields import GenericForeignKey
+from django.contrib.contenttypes.models import ContentType
+from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
+
+from .validators import FileSizeValidator, ImageSizeValidator
+from .paths import image_path
 
 
 class BaseModel(models.Model):
@@ -15,3 +21,30 @@ class BaseModel(models.Model):
 
     class Meta:
         abstract = True
+
+
+class Picture(BaseModel):
+    """Model definition for Picture."""
+
+    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
+    object_id = models.UUIDField()
+    content_object = GenericForeignKey("content_type", "object_id")
+    image = models.ImageField(
+        _("image"),
+        blank=True,
+        null=True,
+        upload_to=image_path,
+        validators=[
+            FileExtensionValidator(allowed_extensions=["jpg", "png", "webp"]),
+            ImageSizeValidator(max_width=3000, max_height=3000),
+            FileSizeValidator(limit_mb=1),
+        ],
+    )
+
+    class Meta:
+        ordering = ["pk"]
+        verbose_name = _("picture")
+        verbose_name_plural = _("pictures")
+
+    def __str__(self):
+        return str(self.content_object)
