@@ -3,29 +3,29 @@
 from drf_spectacular.utils import extend_schema
 
 
-author_schemas = {
+person_schemas = {
     "list": extend_schema(
-        summary="Get Several Authors",
-        description="Retrieve a list of all author entries.",
+        summary="Get Several Persons",
+        description="Retrieve a list of all person entries.",
     ),
     "create": extend_schema(
-        summary="Create Author",
-        description="Create a new author entry.",
+        summary="Create Person",
+        description="Create a new person entry.",
     ),
     "retrieve": extend_schema(
-        summary="Get Author",
-        description="Get detailed information about a specific author entry.",
+        summary="Get Person",
+        description="Get detailed information about a specific person entry.",
     ),
     "update": extend_schema(
-        summary="Change Author",
-        description="Change all fields of a specific author entry.",
+        summary="Change Person",
+        description="Change all fields of a specific person entry.",
     ),
     "partial_update": extend_schema(
-        summary="Update Author",
-        description="Update some fields of a specific author entry.",
+        summary="Update Person",
+        description="Update some fields of a specific person entry.",
     ),
     "destroy": extend_schema(
-        summary="Remove Author",
-        description="Remove a specific author entry.",
+        summary="Remove Person",
+        description="Remove a specific person entry.",
     ),
 }

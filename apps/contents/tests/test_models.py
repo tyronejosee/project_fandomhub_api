@@ -5,7 +5,7 @@ from django.test import TestCase
 from django.core.exceptions import ValidationError
 from apps.contents.models import Anime, Manga
 from apps.categories.models import Studio, Genre, Theme, Season, Demographic
-from apps.persons.models import Author
+from apps.persons.models import Person
 
 
 class AnimeModelTestCase(TestCase):
@@ -17,9 +17,7 @@ class AnimeModelTestCase(TestCase):
         self.genre = Genre.objects.create(name="Action")
         self.theme = Theme.objects.create(name="Gore")
         self.season = Season.objects.create(season="spring", year=1997)
-        self.demographic = Demographic.objects.create(
-            name="Seinen"
-        )
+        self.demographic = Demographic.objects.create(name="Seinen")
 
     def test_creation(self):
         """Test creation of a Anime instance."""
@@ -58,9 +56,7 @@ class AnimeModelTestCase(TestCase):
         self.assertEqual(anime.duration, "23 min. per ep.")
         self.assertEqual(anime.release, date(1997, 10, 8))
         self.assertEqual(anime.category, "tv")
-        self.assertEqual(
-            anime.website, "https://www.vap.co.jp/berserk/tv.html"
-        )
+        self.assertEqual(anime.website, "https://www.vap.co.jp/berserk/tv.html")
         self.assertEqual(anime.trailer, "https://youtu.be/5g5uPsKDGYg")
         self.assertEqual(anime.status, "finished")
         self.assertEqual(anime.rating, 1)
@@ -80,16 +76,16 @@ class AnimeModelTestCase(TestCase):
             anime1 = Anime(
                 name="Komi Can't Communicate",
                 name_jpn="古見さんは、コミュ症です。",
-                episodes=12
+                episodes=12,
             )
             anime1.save()
 
             anime2 = Anime(
                 name="Komi Can't Communicate",
                 name_jpn="古見さんは、コミュ症です。",
-                episodes=12
+                episodes=12,
             )
-            anime2.full_clean()    # Error
+            anime2.full_clean()  # Error
 
     def test_update_anime(self):
         """Test updating an anime."""
@@ -97,7 +93,7 @@ class AnimeModelTestCase(TestCase):
             name="Dark Gathering",
             name_jpn="ダークギャザリング",
             studio=self.studio,
-            episodes=25
+            episodes=25,
         )
         anime.save()
 
@@ -122,9 +118,7 @@ class AnimeModelTestCase(TestCase):
     def test_validate_name_rom(self):
         """Test name_rom field validation."""
         anime = Anime.objects.create(
-            name="Naruto",
-            name_jpn="ナルト",
-            name_rom=""    # Empty
+            name="Naruto", name_jpn="ナルト", name_rom=""  # Empty
         )
         self.assertEqual(anime.name_rom, "Naruto")
         self.assertEqual(anime.name, anime.name_rom)
@@ -136,10 +130,10 @@ class MangaModelTestCase(TestCase):
     def setUp(self):
         # External models
         self.genre = Genre.objects.create(name="Action")
-        self.author = Author.objects.create(name="Fujimoto Tatsuki")
-        self.demographic = Demographic.objects.create(
-            name="Shounen"
-        )
+        self.author = Person.objects.create(
+            name="Fujimoto Tatsuki"
+        )  # TODO: Add new fields
+        self.demographic = Demographic.objects.create(name="Shounen")
 
     def test_manga_creation(self):
         """Test creation of a Manga instance."""
@@ -159,7 +153,7 @@ class MangaModelTestCase(TestCase):
             mean=8.0,
             rank=1,
             popularity=100,
-            num_list_users=1000
+            num_list_users=1000,
         )
 
         # Set ManyToManyField
@@ -191,7 +185,7 @@ class MangaModelTestCase(TestCase):
                 name="Fire Punch",
                 name_jpn="ファイアパンチ",
                 author=self.author,
-                chapters=83
+                chapters=83,
             )
             manga1.save()
 
@@ -199,17 +193,14 @@ class MangaModelTestCase(TestCase):
                 name="Fire Punch",
                 name_jpn="ファイアパンチ",
                 author=self.author,
-                chapters=83
+                chapters=83,
             )
-            manga2.full_clean()    # Error
+            manga2.full_clean()  # Error
 
     def test_update_manga(self):
         """Test updating a manga."""
         manga = Manga(
-            name="Goodbye, Ery",
-            name_jpn="さよなら絵梨",
-            author=self.author,
-            chapters=1
+            name="Goodbye, Ery", name_jpn="さよなら絵梨", author=self.author, chapters=1
         )
         manga.save()
 
@@ -224,7 +215,7 @@ class MangaModelTestCase(TestCase):
         manga = Manga(
             name="Chainsaw Man: Buddy Stories",
             name_jpn="チェンソーマンバディ・ストーリーズ",
-            chapters=4
+            chapters=4,
         )
         manga.save()
         manga.delete()
@@ -235,9 +226,7 @@ class MangaModelTestCase(TestCase):
         """Test chapters field validation."""
         with self.assertRaises(ValidationError):
             manga = Manga(
-                name="Look Back",
-                name_jpn="ルックバック",
-                chapters=-1    # Negative
+                name="Look Back", name_jpn="ルックバック", chapters=-1  # Negative
             )
             manga.full_clean()
 
@@ -246,7 +235,7 @@ class MangaModelTestCase(TestCase):
         manga = Anime.objects.create(
             name="Monogatari Series: First Season",
             name_jpn="〈物語〉シリーズ ファーストシーズン",
-            name_rom=""    # Empty
+            name_rom="",  # Empty
         )
         self.assertEqual(manga.name_rom, "Monogatari Series: First Season")
         self.assertEqual(manga.name, manga.name_rom)

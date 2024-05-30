@@ -10,7 +10,7 @@ from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.categories.models import Studio, Genre, Theme, Season, Demographic
-from apps.persons.models import Author
+from apps.persons.models import Person
 from .managers import AnimeManager, MangaManager
 from .choices import StatusChoices, CategoryChoices, RatingChoices, MediaTypeChoices
 
@@ -130,7 +130,7 @@ class Manga(BaseModel, SlugMixin):
         default=StatusChoices.PENDING,
     )
     author = models.ForeignKey(
-        Author,
+        Person,
         on_delete=models.CASCADE,
         blank=True,
         null=True,

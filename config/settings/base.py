@@ -29,8 +29,6 @@ PROJECT_APPS = [
     "apps.genres",
     "apps.mangas",
     "apps.news",
-    # "apps.others",
-    "apps.peoples",
     "apps.persons",
     "apps.playlists",
     "apps.profiles",

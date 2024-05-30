@@ -15,33 +15,33 @@ from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import MediumSetPagination
 from apps.contents.models import Manga
 from apps.contents.serializers import MangaMinimalSerializer
-from .models import Author
-from .serializers import AuthorSerializer
-from .schemas import author_schemas
+from .models import Person
+from .serializers import PersonSerializer
+from .schemas import person_schemas
 
 
-@extend_schema_view(**author_schemas)
-class AuthorViewSet(LogicalDeleteMixin, ModelViewSet):
+@extend_schema_view(**person_schemas)
+class PersonViewSet(LogicalDeleteMixin, ModelViewSet):
     """
-    ViewSet for managing Author instances.
+    ViewSet for managing Person instances.
 
     Endpoints:
-    - GET /api/v1/authors/
-    - POST /api/v1/authors/
-    - GET /api/v1/authors/{id}/
-    - PUT /api/v1/authors/{id}/
-    - PATCH /api/v1/authors/{id}/
-    - DELETE /api/v1/authors/{id}/
+    - GET /api/v1/persons/
+    - POST /api/v1/persons/
+    - GET /api/v1/persons/{id}/
+    - PUT /api/v1/persons/{id}/
+    - PATCH /api/v1/persons/{id}/
+    - DELETE /api/v1/persons/{id}/
     """
 
-    serializer_class = AuthorSerializer
+    serializer_class = PersonSerializer
     permission_classes = [IsStaffOrReadOnly]
     search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]
 
     def get_queryset(self):
-        return Author.objects.get_available().only("id", "name")
+        return Person.objects.get_available().only("id", "name")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_cookie)

@@ -2,12 +2,12 @@
 
 from django.contrib import admin
 
-from .models import Author
+from .models import Person
 
 
-@admin.register(Author)
-class AuthorAdmin(admin.ModelAdmin):
-    """Admin for Author model."""
+@admin.register(Person)
+class PersonAdmin(admin.ModelAdmin):
+    """Admin for Person model."""
 
     list_per_page = 25
     search_fields = [

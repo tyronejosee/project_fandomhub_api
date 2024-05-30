@@ -2,14 +2,14 @@
 
 from rest_framework.serializers import ModelSerializer
 
-from .models import Author
+from .models import Person
 
 
-class AuthorSerializer(ModelSerializer):
-    """Serializer for Author model."""
+class PersonSerializer(ModelSerializer):
+    """Serializer for Person model."""
 
     class Meta:
-        model = Author
+        model = Person
         fields = [
             "id",
             "name",
