@@ -36,7 +36,6 @@ urlpatterns = [
     ),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     # Apps urls (Routers)
-    path("", include("apps.contents.routers")),
     path("", include("apps.categories.routers")),
     path("", include("apps.persons.routers")),
     path("", include("apps.users.routers")),

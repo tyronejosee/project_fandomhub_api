@@ -1,4 +1,4 @@
-"""Serializers for Contents App."""
+"""Serializers for Animes App."""
 
 from rest_framework import serializers
 
@@ -6,9 +6,8 @@ from apps.categories.serializers import (
     GenreReadSerializer,
     StudioReadSerializer,
     SeasonReadSerializer,
-    DemographicReadSerializer,
 )
-from .models import Anime, Manga
+from .models import Anime
 
 
 class AnimeReadSerializer(serializers.ModelSerializer):
@@ -94,72 +93,3 @@ class AnimeMinimalSerializer(serializers.ModelSerializer):
 
     # def get_year(self, obj):
     #     return int(obj.season.year if obj.season else None)
-
-
-class MangaReadSerializer(serializers.ModelSerializer):
-    """Serializer for Manga model (Retrieve)."""
-
-    author = serializers.CharField(source="author.name")
-    demographic = DemographicReadSerializer()
-    genres = GenreReadSerializer(many=True)
-
-    class Meta:
-        model = Manga
-        fields = [
-            "id",
-            "name",
-            "name_jpn",
-            "slug",
-            "image",
-            "synopsis",
-            "chapters",
-            "release",
-            "media_type",
-            "website",
-            "status",
-            "author",
-            "demographic",
-            "genres",
-        ]
-
-
-class MangaWriteSerializer(serializers.ModelSerializer):
-    """Serializer for Manga model (Create/update)."""
-
-    class Meta:
-        model = Manga
-        fields = [
-            "name",
-            "name_jpn",
-            "name_rom",
-            "slug",
-            "image",
-            "synopsis",
-            "chapters",
-            "release",
-            "media_type",
-            "website",
-            "status",
-            "author",
-            "demographic",
-            "genres",
-            "themes",
-        ]
-        extra_kwargs = {
-            "image": {"required": True},
-        }
-
-
-class MangaMinimalSerializer(serializers.ModelSerializer):
-    """Serializer for Anime model (Minimal)."""
-
-    class Meta:
-        model = Manga
-        fields = [
-            "id",
-            "name",
-            "image",
-            "release",
-            "media_type",
-            "status",
-        ]

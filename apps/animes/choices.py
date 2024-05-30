@@ -1,4 +1,4 @@
-"""Choices for Contents App."""
+"""Choices for Animes App."""
 
 from django.db.models import TextChoices
 from django.utils.translation import gettext as _
@@ -32,17 +32,6 @@ class RatingChoices(TextChoices):
     R = "r", _("R - 17+ (Violence & Profanity)")
     RPLUS = "rplus", _("R+ - Profanity & Mild Nudity")
     RX = "rx", _("RX - Hentai")
-
-
-class MediaTypeChoices(TextChoices):
-
-    PENDING = "pending", _("Pending")
-    MANGA = "manga", _("Manga")
-    NOVEL = "novel", _("Novel")
-    ONESHOT = "oneshot", _("One Shot")
-    DOUJINSHI = "doujinshi", _("Doujinshi")
-    MANHWA = "manhwa", _("Manhwa")
-    OEL = "oel", _("OEL")
 
 
 class SourceChoices(TextChoices):

@@ -6,8 +6,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
-from apps.contents.models import Anime, Manga
-from apps.contents.serializers import AnimeMinimalSerializer, MangaMinimalSerializer
+from apps.animes.models import Anime
+from apps.animes.serializers import AnimeMinimalSerializer
+from apps.mangas.models import Manga
+from apps.mangas.serializers import MangaMinimalSerializer
 
 
 class RandomContentView(APIView):

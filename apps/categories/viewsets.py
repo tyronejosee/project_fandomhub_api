@@ -1,4 +1,4 @@
-"""Viewsets for Contents App."""
+"""Viewsets for Categories App."""
 
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
@@ -14,8 +14,10 @@ from drf_spectacular.utils import extend_schema_view, extend_schema
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.pagination import LargeSetPagination, MediumSetPagination
 from apps.users.permissions import IsContributor
-from apps.contents.models import Anime, Manga
-from apps.contents.serializers import AnimeMinimalSerializer, MangaMinimalSerializer
+from apps.animes.models import Anime
+from apps.mangas.models import Manga
+from apps.animes.serializers import AnimeMinimalSerializer
+from apps.mangas.serializers import MangaMinimalSerializer
 from .models import Studio, Genre, Theme, Season, Demographic
 from .serializers import (
     StudioReadSerializer,

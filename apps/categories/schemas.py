@@ -1,4 +1,4 @@
-"""Schemas for Contents App."""
+"""Schemas for Categories App."""
 
 from drf_spectacular.utils import extend_schema
 

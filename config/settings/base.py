@@ -25,7 +25,6 @@ PROJECT_APPS = [
     "apps.categories",
     "apps.characters",
     "apps.clubs",
-    "apps.contents",
     "apps.genres",
     "apps.mangas",
     "apps.news",

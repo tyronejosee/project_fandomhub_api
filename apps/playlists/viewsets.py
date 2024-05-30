@@ -10,7 +10,8 @@ from rest_framework.decorators import action
 from rest_framework import status
 from rest_framework.exceptions import PermissionDenied
 
-from apps.contents.models import Anime, Manga
+from apps.animes.models import Anime
+from apps.mangas.models import Manga
 from apps.utils.permissions import IsOwner
 from .models import Playlist, PlaylistItem
 from .serializers import (

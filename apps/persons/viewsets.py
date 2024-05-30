@@ -13,8 +13,8 @@ from drf_spectacular.utils import extend_schema_view, extend_schema
 from apps.utils.mixins import LogicalDeleteMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from apps.utils.pagination import MediumSetPagination
-from apps.contents.models import Manga
-from apps.contents.serializers import MangaMinimalSerializer
+from apps.mangas.models import Manga
+from apps.mangas.serializers import MangaMinimalSerializer
 from .models import Person
 from .serializers import PersonSerializer
 from .schemas import person_schemas

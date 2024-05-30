@@ -1,4 +1,4 @@
-"""Serializers for Contents App."""
+"""Serializers for Categories App."""
 
 from rest_framework import serializers
 
