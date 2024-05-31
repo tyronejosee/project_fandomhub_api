@@ -115,7 +115,7 @@ class Season(BaseModel):
         fullname_caps = self.season.capitalize()
         self.fullname = f"{fullname_caps} {self.year}"
         if Season.objects.filter(fullname=self.fullname).exists():
-            raise ValidationError("The fullname field must be unique.")
+            raise ValidationError(_("The fullname field must be unique."))
         super().save(*args, **kwargs)
 
 

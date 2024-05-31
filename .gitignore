@@ -53,3 +53,12 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Node modules
+node_modules/
+
+# VitePress build output
+docs/.vitepress/dist/
+
+# VitePress cache
+docs/.vitepress/cache/
