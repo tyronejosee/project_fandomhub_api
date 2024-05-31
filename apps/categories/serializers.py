@@ -3,7 +3,7 @@
 from rest_framework import serializers
 
 from apps.utils.validators import validate_name
-from .models import Studio, Genre, Theme, Season, Demographic
+from .models import Studio, Genre, Theme, Demographic
 
 
 class StudioReadSerializer(serializers.ModelSerializer):
@@ -90,32 +90,6 @@ class ThemeWriteSerializer(serializers.ModelSerializer):
         model = Theme
         fields = [
             "name",
-        ]
-
-
-class SeasonReadSerializer(serializers.ModelSerializer):
-    """Serializer for Season model (List/Retrieve)."""
-
-    class Meta:
-        model = Season
-        fields = [
-            "id",
-            "season",
-            "year",
-            "fullname",
-            "created_at",
-            "updated_at",
-        ]
-
-
-class SeasonWriteSerializer(serializers.ModelSerializer):
-    """Serializer for Season model (Create/update)."""
-
-    class Meta:
-        model = Season
-        fields = [
-            "season",
-            "year",
         ]
 
 

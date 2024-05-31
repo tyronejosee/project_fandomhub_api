@@ -18,7 +18,7 @@ from apps.animes.models import Anime
 from apps.mangas.models import Manga
 from apps.animes.serializers import AnimeMinimalSerializer
 from apps.mangas.serializers import MangaMinimalSerializer
-from .models import Studio, Genre, Theme, Season, Demographic
+from .models import Studio, Genre, Theme, Demographic
 from .serializers import (
     StudioReadSerializer,
     StudioWriteSerializer,
@@ -26,8 +26,6 @@ from .serializers import (
     GenreWriteSerializer,
     ThemeReadSerializer,
     ThemeWriteSerializer,
-    SeasonReadSerializer,
-    SeasonWriteSerializer,
     DemographicReadSerializer,
     DemographicWriteSerializer,
 )
@@ -35,7 +33,6 @@ from .schemas import (
     studio_schemas,
     genre_schemas,
     theme_schemas,
-    season_schemas,
     demographic_schemas,
 )
 
@@ -230,66 +227,6 @@ class ThemeViewSet(LogicalDeleteMixin, ModelViewSet):
     @method_decorator(vary_on_cookie)
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
-
-
-@extend_schema_view(**season_schemas)
-class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
-    """
-    ViewSet for managing Season instances.
-
-    Endpoints:
-    - GET /api/v1/seasons/
-    - POST /api/v1/seasons/
-    - GET /api/v1/seasons/{id}/
-    - PUT /api/v1/seasons/{id}/
-    - PATCH /api/v1/seasons/{id}/
-    - DELETE /api/v1/seasons/{id}/
-    """
-
-    serializer_class = SeasonReadSerializer
-    permission_classes = [IsContributor]
-    search_fields = ["name"]
-    ordering_fields = ["name"]
-    ordering = ["id"]
-
-    def get_queryset(self):
-        return Season.objects.get_available()
-
-    def get_permissions(self):
-        if self.action in ["list", "retrieve"]:
-            return [AllowAny()]
-        return super().get_permissions()
-
-    def get_serializer_class(self):
-        if self.action in ["create", "update", "partial_update"]:
-            return SeasonWriteSerializer
-        return super().get_serializer_class()
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
-
-    @action(detail=True, methods=["get"], url_path="animes")
-    @method_decorator(cache_page(60 * 60 * 2))
-    def anime_list(self, request, pk=None):
-        """
-        Retrieve a list of animes for the specified season.
-
-        Endpoints:
-        - GET /api/v1/seasons/{id}/animes/
-        """
-        season = self.get_object()
-        anime_list = Anime.objects.filter(season=season)
-        if anime_list.exists():
-            paginator = MediumSetPagination()
-            result_page = paginator.paginate_queryset(anime_list, request)
-            serializer = AnimeMinimalSerializer(result_page, many=True)
-            return paginator.get_paginated_response(serializer.data)
-        return Response(
-            {"detail": _("There are no animes for this season.")},
-            status=status.HTTP_404_NOT_FOUND,
-        )
 
 
 @extend_schema_view(**demographic_schemas)

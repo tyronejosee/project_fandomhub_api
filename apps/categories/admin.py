@@ -2,7 +2,7 @@
 
 from django.contrib import admin
 
-from .models import Studio, Genre, Theme, Season, Demographic
+from .models import Studio, Genre, Theme, Demographic
 
 
 @admin.register(Studio)
@@ -64,25 +64,6 @@ class ThemeAdmin(admin.ModelAdmin):
     readonly_fields = [
         "pk",
         "slug",
-        "created_at",
-        "updated_at",
-    ]
-    ordering = [
-        "created_at",
-    ]
-
-
-@admin.register(Season)
-class SeasonAdmin(admin.ModelAdmin):
-    """Admin for Season model."""
-
-    search_fields = ["season", "year"]
-    list_display = ["fullname", "available"]
-    list_filter = ["available", "year", "season"]
-    list_per_page = 25
-    readonly_fields = [
-        "pk",
-        "fullname",
         "created_at",
         "updated_at",
     ]

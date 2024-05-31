@@ -1,4 +1,4 @@
-"""Choices for Categories App."""
+"""Choices for Seasons App."""
 
 from django.db.models import TextChoices
 from django.utils.translation import gettext as _
