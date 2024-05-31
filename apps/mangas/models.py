@@ -9,7 +9,8 @@ from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
-from apps.categories.models import Genre, Theme, Demographic
+from apps.categories.models import Theme, Demographic
+from apps.genres.models import Genre
 from apps.persons.models import Person
 from .managers import MangaManager
 from .choices import StatusChoices, MediaTypeChoices

@@ -2,7 +2,8 @@
 
 from rest_framework import serializers
 
-from apps.categories.serializers import GenreReadSerializer, DemographicReadSerializer
+from apps.categories.serializers import DemographicReadSerializer
+from apps.genres.serializers import GenreReadSerializer
 from .models import Manga
 
 

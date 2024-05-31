@@ -36,15 +36,25 @@ urlpatterns = [
     ),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     # Apps urls (Routers)
+    path("", include("apps.animes.routers")),
     path("", include("apps.categories.routers")),
-    path("", include("apps.persons.routers")),
-    path("", include("apps.users.routers")),
-    path("", include("apps.profiles.routers")),
+    # path("", include("apps.characters.routers")),
     path("", include("apps.clubs.routers")),
-    path("", include("apps.playlists.routers")),
+    path("", include("apps.genres.routers")),
+    path("", include("apps.mangas.routers")),
     path("", include("apps.news.routers")),
+    path("", include("apps.persons.routers")),
+    path("", include("apps.playlists.routers")),
+    path("", include("apps.profiles.routers")),
+    path("", include("apps.seasons.routers")),
+    path("", include("apps.studios.routers")),
+    path("", include("apps.users.routers")),
     # Apps urls (URLs)
     path("", include("apps.randoms.urls")),
+    # path("", include("apps.recommendations.urls")),
+    # path("", include("apps.reviews.urls")),
+    # path("", include("apps.tops.urls")),
+    # path("", include("apps.utils.urls")),
 ]
 
 

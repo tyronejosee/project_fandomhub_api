@@ -9,7 +9,10 @@ from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
-from apps.categories.models import Studio, Genre, Theme, Season
+from apps.categories.models import Theme
+from apps.studios.models import Studio
+from apps.genres.models import Genre
+from apps.seasons.models import Season
 from .managers import AnimeManager
 from .choices import StatusChoices, CategoryChoices, RatingChoices
 

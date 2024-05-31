@@ -2,11 +2,9 @@
 
 from rest_framework import serializers
 
-from apps.categories.serializers import (
-    GenreReadSerializer,
-    StudioReadSerializer,
-    SeasonReadSerializer,
-)
+from apps.studios.serializers import StudioReadSerializer
+from apps.genres.serializers import GenreReadSerializer
+from apps.seasons.serializers import SeasonReadSerializer
 from .models import Anime
 
 

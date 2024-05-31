@@ -5,7 +5,8 @@ from django.test import TestCase
 from django.core.exceptions import ValidationError
 
 from apps.mangas.models import Manga
-from apps.categories.models import Genre, Demographic
+from apps.categories.models import Demographic
+from apps.genres.models import Genre
 from apps.persons.models import Person
 
 
@@ -118,9 +119,11 @@ class MangaModelTestCase(TestCase):
     def test_validate_name_rom(self):
         """Test name_rom field validation."""
         manga = Manga.objects.create(
-            name="Monogatari Series: First Season",
+            name="Monogatari Series First Season",
             name_jpn="〈物語〉シリーズ ファーストシーズン",
             name_rom="",  # Empty
+            chapters=4,
         )
-        self.assertEqual(manga.name_rom, "Monogatari Series: First Season")
+        self.assertEqual(manga.name_rom, "Monogatari Series First Season")
         self.assertEqual(manga.name, manga.name_rom)
+        self.assertEqual(manga.chapters, 4)

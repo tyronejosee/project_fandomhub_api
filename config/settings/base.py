@@ -9,7 +9,7 @@ import environ
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 env = environ.Env()
-environ.Env.read_env("config/.env")
+environ.Env.read_env(".env.dev")
 
 BASE_APPS = [
     "django.contrib.admin",
@@ -35,6 +35,7 @@ PROJECT_APPS = [
     "apps.recommendations",
     "apps.reviews",
     "apps.seasons",
+    "apps.studios",
     "apps.tops",
     "apps.users",
     "apps.utils",

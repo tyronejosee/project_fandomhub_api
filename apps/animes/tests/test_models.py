@@ -5,7 +5,10 @@ from django.test import TestCase
 from django.core.exceptions import ValidationError
 
 from apps.animes.models import Anime
-from apps.categories.models import Studio, Genre, Theme, Season, Demographic
+from apps.categories.models import Theme, Demographic
+from apps.studios.models import Studio
+from apps.genres.models import Genre
+from apps.seasons.models import Season
 
 
 class AnimeModelTestCase(TestCase):
