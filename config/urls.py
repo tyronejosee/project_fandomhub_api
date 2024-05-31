@@ -38,7 +38,7 @@ urlpatterns = [
     # Apps urls (Routers)
     path("", include("apps.animes.routers")),
     path("", include("apps.categories.routers")),
-    # path("", include("apps.characters.routers")),
+    path("", include("apps.characters.routers")),
     path("", include("apps.clubs.routers")),
     path("", include("apps.genres.routers")),
     path("", include("apps.mangas.routers")),

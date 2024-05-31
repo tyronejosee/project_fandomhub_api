@@ -1,8 +1,6 @@
 """Models for Characters App."""
 
 from django.db import models
-from django.contrib.contenttypes.fields import GenericForeignKey
-from django.contrib.contenttypes.models import ContentType
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
@@ -11,6 +9,9 @@ from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.utils.paths import image_path
 from apps.persons.models import Person
+from apps.animes.models import Anime
+from apps.mangas.models import Manga
+from .managers import CharacterManager
 from .choices import RoleChoices, LanguageChoices
 
 
@@ -33,9 +34,8 @@ class Character(BaseModel, SlugMixin):
             FileSizeValidator(limit_mb=1),
         ],
     )
-    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
-    object_id = models.UUIDField()
-    content_object = GenericForeignKey("content_type", "object_id")
+
+    objects = CharacterManager()
 
     class Meta:
         ordering = ["pk"]
@@ -49,20 +49,21 @@ class Character(BaseModel, SlugMixin):
 class CharacterVoice(BaseModel):
     """Model definition for CharacterVoice."""
 
-    voice = models.ForeignKey(
-        Person,
-        on_delete=models.PROTECT,
-        verbose_name=_("voice"),
-    )
-    character = models.ForeignKey(
+    character_id = models.ForeignKey(
         Character,
+        related_name="character_voice",
         on_delete=models.CASCADE,
-        verbose_name=_("character"),
+    )
+    voice_id = models.ForeignKey(
+        Person,
+        related_name="character_voice",
+        on_delete=models.PROTECT,
     )
     language = models.CharField(
         _("language"),
         max_length=20,
         choices=LanguageChoices.choices,
+        default=LanguageChoices.JAPANESE,
     )
 
     class Meta:
@@ -71,4 +72,50 @@ class CharacterVoice(BaseModel):
         verbose_name_plural = _("character voices")
 
     def __str__(self):
-        return str(f"{self.character} - {self.voice}")
+        return str(f"{self.character_id} - {self.voice_id}")
+
+
+class CharacterAnime(models.Model):
+    """Model definition for CharacterAnime."""
+
+    character_id = models.ForeignKey(
+        Character,
+        related_name="character_anime",
+        on_delete=models.CASCADE,
+    )
+    anime_id = models.ForeignKey(
+        Anime,
+        related_name="character_anime",
+        on_delete=models.CASCADE,
+    )
+
+    class Meta:
+        ordering = ["pk"]
+        verbose_name = _("character anime")
+        verbose_name_plural = _("character animes")
+
+    def __str__(self):
+        return str(f"{self.character_id} - {self.anime_id}")
+
+
+class CharacterManga(models.Model):
+    """Model definition for CharacterManga."""
+
+    character_id = models.ForeignKey(
+        Character,
+        related_name="character_manga",
+        on_delete=models.CASCADE,
+    )
+    manga_id = models.ForeignKey(
+        Manga,
+        related_name="character_manga",
+        on_delete=models.CASCADE,
+    )
+
+    class Meta:
+        ordering = ["pk"]
+        verbose_name = _("character manga")
+        verbose_name_plural = _("character mangas")
+
+    def __str__(self):
+        return str(f"{self.character_id} - {self.manga_id}")
