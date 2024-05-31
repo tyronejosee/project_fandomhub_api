@@ -641,3 +641,257 @@ Traceback (most recent call last):
     raise ex.with_traceback(None)
 django.db.utils.IntegrityError: null value in column "object_id" of relation "characters_character" violates not-null constraint
 DETAIL:  Failing row contains (656f7998-b9c8-4cb9-a276-3527bddbb835, t, 2024-05-31, 2024-05-31, kikoru-shinomiya, Kikoru Shinomiya, 四ノ宮 キコル, 0, Kikoru is a young prodigy of Kaiju slaying., main, characters/character/kikoru-shinomiya_aZW0cug.webp, null, null).
+2024-05-31 22:20:44,562:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:20:48,810:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:20:50,326:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-31 22:21:16,558:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:21:32,988:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:21:53,145:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:28:21,590:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/__init__.py changed, reloading.)
+2024-05-31 22:28:24,808:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:28:26,420:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-31 22:29:27,698:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:30:59,119:ERROR - django.request log.py (line 241. Internal Server Error: /api/schema/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/views.py", line 84, in get
+    return self._get_schema_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/views.py", line 92, in _get_schema_response
+    data=generator.get_schema(request=request, public=self.serve_public),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/generators.py", line 281, in get_schema
+    paths=self.parse(request, public),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/generators.py", line 252, in parse
+    operation = view.schema.get_operation(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 111, in get_operation
+    operation['responses'] = self._get_response_bodies()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 1367, in _get_response_bodies
+    return {'200': self._get_response_for_code(response_serializers, '200', direction=direction)}
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 1423, in _get_response_for_code
+    component = self.resolve_serializer(serializer, direction)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 1605, in resolve_serializer
+    component.schema = self._map_serializer(serializer, direction, bypass_extensions)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 927, in _map_serializer
+    schema = self._map_basic_serializer(serializer, direction)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 1020, in _map_basic_serializer
+    for field in serializer.fields.values():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-05-31 22:30:59,495:ERROR - django.request log.py (line 241. Internal Server Error: /api/schema/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/views.py", line 84, in get
+    return self._get_schema_response(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/views.py", line 92, in _get_schema_response
+    data=generator.get_schema(request=request, public=self.serve_public),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/generators.py", line 281, in get_schema
+    paths=self.parse(request, public),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/generators.py", line 252, in parse
+    operation = view.schema.get_operation(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 111, in get_operation
+    operation['responses'] = self._get_response_bodies()
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 1367, in _get_response_bodies
+    return {'200': self._get_response_for_code(response_serializers, '200', direction=direction)}
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 1423, in _get_response_for_code
+    component = self.resolve_serializer(serializer, direction)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 1605, in resolve_serializer
+    component.schema = self._map_serializer(serializer, direction, bypass_extensions)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 927, in _map_serializer
+    schema = self._map_basic_serializer(serializer, direction)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/openapi.py", line 1020, in _map_basic_serializer
+    for field in serializer.fields.values():
+                 ^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-05-31 22:31:04,523:WARNING - django.request log.py (line 241. Not Found: /favicon.ico)
+2024-05-31 22:32:23,815:DEBUG - PIL.Image Image.py (line 363. Importing BlpImagePlugin)
+2024-05-31 22:32:23,818:DEBUG - PIL.Image Image.py (line 363. Importing BmpImagePlugin)
+2024-05-31 22:32:23,819:DEBUG - PIL.Image Image.py (line 363. Importing BufrStubImagePlugin)
+2024-05-31 22:32:23,823:DEBUG - PIL.Image Image.py (line 363. Importing CurImagePlugin)
+2024-05-31 22:32:23,825:DEBUG - PIL.Image Image.py (line 363. Importing DcxImagePlugin)
+2024-05-31 22:32:23,828:DEBUG - PIL.Image Image.py (line 363. Importing DdsImagePlugin)
+2024-05-31 22:32:23,841:DEBUG - PIL.Image Image.py (line 363. Importing EpsImagePlugin)
+2024-05-31 22:32:23,844:DEBUG - PIL.Image Image.py (line 363. Importing FitsImagePlugin)
+2024-05-31 22:32:23,846:DEBUG - PIL.Image Image.py (line 363. Importing FliImagePlugin)
+2024-05-31 22:32:23,850:DEBUG - PIL.Image Image.py (line 363. Importing FpxImagePlugin)
+2024-05-31 22:32:23,855:DEBUG - PIL.Image Image.py (line 366. Image: failed to import FpxImagePlugin: No module named 'olefile')
+2024-05-31 22:32:23,856:DEBUG - PIL.Image Image.py (line 363. Importing FtexImagePlugin)
+2024-05-31 22:32:23,858:DEBUG - PIL.Image Image.py (line 363. Importing GbrImagePlugin)
+2024-05-31 22:32:23,860:DEBUG - PIL.Image Image.py (line 363. Importing GifImagePlugin)
+2024-05-31 22:32:23,863:DEBUG - PIL.Image Image.py (line 363. Importing GribStubImagePlugin)
+2024-05-31 22:32:23,867:DEBUG - PIL.Image Image.py (line 363. Importing Hdf5StubImagePlugin)
+2024-05-31 22:32:23,869:DEBUG - PIL.Image Image.py (line 363. Importing IcnsImagePlugin)
+2024-05-31 22:32:23,874:DEBUG - PIL.Image Image.py (line 363. Importing IcoImagePlugin)
+2024-05-31 22:32:23,878:DEBUG - PIL.Image Image.py (line 363. Importing ImImagePlugin)
+2024-05-31 22:32:23,882:DEBUG - PIL.Image Image.py (line 363. Importing ImtImagePlugin)
+2024-05-31 22:32:23,884:DEBUG - PIL.Image Image.py (line 363. Importing IptcImagePlugin)
+2024-05-31 22:32:23,888:DEBUG - PIL.Image Image.py (line 363. Importing JpegImagePlugin)
+2024-05-31 22:32:23,890:DEBUG - PIL.Image Image.py (line 363. Importing Jpeg2KImagePlugin)
+2024-05-31 22:32:23,891:DEBUG - PIL.Image Image.py (line 363. Importing McIdasImagePlugin)
+2024-05-31 22:32:23,894:DEBUG - PIL.Image Image.py (line 363. Importing MicImagePlugin)
+2024-05-31 22:32:23,897:DEBUG - PIL.Image Image.py (line 366. Image: failed to import MicImagePlugin: No module named 'olefile')
+2024-05-31 22:32:23,898:DEBUG - PIL.Image Image.py (line 363. Importing MpegImagePlugin)
+2024-05-31 22:32:23,900:DEBUG - PIL.Image Image.py (line 363. Importing MpoImagePlugin)
+2024-05-31 22:32:23,923:DEBUG - PIL.Image Image.py (line 363. Importing MspImagePlugin)
+2024-05-31 22:32:23,925:DEBUG - PIL.Image Image.py (line 363. Importing PalmImagePlugin)
+2024-05-31 22:32:23,929:DEBUG - PIL.Image Image.py (line 363. Importing PcdImagePlugin)
+2024-05-31 22:32:23,931:DEBUG - PIL.Image Image.py (line 363. Importing PcxImagePlugin)
+2024-05-31 22:32:23,934:DEBUG - PIL.Image Image.py (line 363. Importing PdfImagePlugin)
+2024-05-31 22:32:23,951:DEBUG - PIL.Image Image.py (line 363. Importing PixarImagePlugin)
+2024-05-31 22:32:23,952:DEBUG - PIL.Image Image.py (line 363. Importing PngImagePlugin)
+2024-05-31 22:32:23,953:DEBUG - PIL.Image Image.py (line 363. Importing PpmImagePlugin)
+2024-05-31 22:32:23,954:DEBUG - PIL.Image Image.py (line 363. Importing PsdImagePlugin)
+2024-05-31 22:32:23,959:DEBUG - PIL.Image Image.py (line 363. Importing QoiImagePlugin)
+2024-05-31 22:32:23,963:DEBUG - PIL.Image Image.py (line 363. Importing SgiImagePlugin)
+2024-05-31 22:32:23,965:DEBUG - PIL.Image Image.py (line 363. Importing SpiderImagePlugin)
+2024-05-31 22:32:23,968:DEBUG - PIL.Image Image.py (line 363. Importing SunImagePlugin)
+2024-05-31 22:32:23,970:DEBUG - PIL.Image Image.py (line 363. Importing TgaImagePlugin)
+2024-05-31 22:32:23,972:DEBUG - PIL.Image Image.py (line 363. Importing TiffImagePlugin)
+2024-05-31 22:32:23,973:DEBUG - PIL.Image Image.py (line 363. Importing WebPImagePlugin)
+2024-05-31 22:32:23,980:DEBUG - PIL.Image Image.py (line 363. Importing WmfImagePlugin)
+2024-05-31 22:32:23,982:DEBUG - PIL.Image Image.py (line 363. Importing XbmImagePlugin)
+2024-05-31 22:32:23,989:DEBUG - PIL.Image Image.py (line 363. Importing XpmImagePlugin)
+2024-05-31 22:32:23,993:DEBUG - PIL.Image Image.py (line 363. Importing XVThumbImagePlugin)
+2024-05-31 22:36:58,081:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/characters/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/characters/viewsets.py", line 48, in list
+    return super().list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'values'
+2024-05-31 22:37:33,046:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/serializers.py changed, reloading.)
+2024-05-31 22:37:37,335:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:37:40,548:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-31 22:37:48,309:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/serializers.py changed, reloading.)
+2024-05-31 22:37:51,133:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:37:52,510:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-31 22:49:53,775:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-05-31 22:49:56,501:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:49:58,106:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-31 22:52:08,944:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-05-31 22:52:12,718:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:52:14,299:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-31 22:52:22,985:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-05-31 22:52:26,658:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:52:28,507:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-31 22:54:39,327:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/admin.py changed, reloading.)
+2024-05-31 22:54:43,716:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:54:46,334:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-31 22:55:18,994:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/admin.py changed, reloading.)
+2024-05-31 22:55:22,253:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:55:24,340:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-31 22:57:32,395:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/__init__.py changed, reloading.)
+2024-05-31 22:57:35,344:DEBUG - psycopg.pq __init__.py (line 66. couldn't import psycopg 'c' implementation: No module named 'psycopg_c')
+2024-05-31 22:57:36,941:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-05-31 23:24:30,108:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/admin.py changed, reloading.)

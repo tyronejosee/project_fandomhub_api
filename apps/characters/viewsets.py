@@ -46,3 +46,10 @@ class CharacterViewSet(LogicalDeleteMixin, ModelViewSet):
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
+
+    # @action(detail=True, methods=["get"], url_path="voices")
+    # def voices(self, request, pk=None):
+    #     character = self.get_object()
+    #     voices = CharacterVoice.objects.filter(character_id=character)
+    #     serializer = CharacterVoiceSerializer(voices, many=True)
+    #     return Response(serializer.data)
