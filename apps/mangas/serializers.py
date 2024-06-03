@@ -13,6 +13,8 @@ class MangaReadSerializer(serializers.ModelSerializer):
     author = serializers.CharField(source="author.name")
     demographic = DemographicReadSerializer()
     genres = GenreReadSerializer(many=True)
+    media_type = serializers.CharField(source="get_media_type_display")
+    status = serializers.CharField(source="get_status_display")
 
     class Meta:
         model = Manga
@@ -63,6 +65,9 @@ class MangaWriteSerializer(serializers.ModelSerializer):
 
 class MangaMinimalSerializer(serializers.ModelSerializer):
     """Serializer for Anime model (Minimal)."""
+
+    media_type = serializers.CharField(source="get_media_type_display")
+    status = serializers.CharField(source="get_status_display")
 
     class Meta:
         model = Manga

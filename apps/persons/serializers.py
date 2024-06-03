@@ -5,19 +5,11 @@ from rest_framework import serializers
 from .models import Person
 
 
-class PersonSerializer(serializers.ModelSerializer):
-    """Serializer for Person model."""
-
-    class Meta:
-        model = Person
-        fields = [
-            "id",
-            "name",
-        ]
-
-
 class PersonReadSerializer(serializers.ModelSerializer):
     """Serializer for Person model (List/retrieve)."""
+
+    language = serializers.CharField(source="get_language_display")
+    category = serializers.CharField(source="get_category_display")
 
     class Meta:
         model = Person
@@ -37,6 +29,25 @@ class PersonReadSerializer(serializers.ModelSerializer):
             "favorites",
             "created_at",
             "updated_at",
+        ]
+
+
+class PersonWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Person model (Create/update)."""
+
+    class Meta:
+        model = Person
+        fields = [
+            "name",
+            "given_name",
+            "family_name",
+            "image",
+            "alternate_names",
+            "birthday",
+            "about",
+            "website",
+            "language",
+            "category",
         ]
         extra_kwargs = {
             "image": {"required": True},
