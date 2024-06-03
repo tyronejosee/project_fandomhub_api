@@ -22,3 +22,5 @@ class LanguageChoices(TextChoices):
     GERMAN = "german", _("German")
     ITALIAN = "italian", _("Italian")
     PORTUGUESE = "portuguese", _("Portuguese")
+
+    # TODO: Remove when resetting migrations

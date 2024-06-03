@@ -22,6 +22,7 @@ class PersonAdmin(admin.ModelAdmin):
     ]
     readonly_fields = [
         "pk",
+        "slug",
         "created_at",
         "updated_at",
     ]

@@ -16,6 +16,9 @@ from apps.utils.models import Picture
 from apps.utils.serializers import PictureReadSerializer, PictureWriteSerializer
 from apps.animes.serializers import AnimeMinimalSerializer
 from apps.mangas.serializers import MangaMinimalSerializer
+from apps.characters.models import CharacterVoice
+from apps.persons.models import Person
+from apps.persons.serializers import PersonMinimalSerializer
 from apps.users.permissions import IsContributor
 from apps.users.choices import RoleChoices
 from .models import Character, CharacterAnime, CharacterManga
@@ -47,6 +50,7 @@ class CharacterViewSet(LogicalDeleteMixin, ModelViewSet):
             "list",
             "retrieve",
             "picture_list",
+            "voices_list",
             "anime_for_character",
             "manga_for_character",
         ]:
@@ -63,13 +67,8 @@ class CharacterViewSet(LogicalDeleteMixin, ModelViewSet):
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
-    # @action(detail=True, methods=["get"], url_path="voices")
-    # def voices(self, request, pk=None):
-    #     character = self.get_object()
-    #     voices = CharacterVoice.objects.filter(character_id=character)
-    #     serializer = CharacterVoiceSerializer(voices, many=True)
-    #     return Response(serializer.data)
-
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     @action(detail=True, methods=["get", "post"], url_path="pictures")
     def picture_list(self, request, pk=None, *args, **kwargs):
         """
@@ -121,6 +120,24 @@ class CharacterViewSet(LogicalDeleteMixin, ModelViewSet):
 
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    @action(detail=True, methods=["get"], url_path="voices")
+    def voices_list(self, request, pk=None):
+        try:
+            character = self.get_object()
+            character_anime = CharacterVoice.objects.filter(character_id=character)
+            voice_ids = character_anime.values_list("voice_id", flat=True)
+            persons = Person.objects.filter(id__in=voice_ids)
+            serializer = PersonMinimalSerializer(persons, many=True)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        except Character.DoesNotExist:
+            return Response(
+                {"detail": "Character not found."}, status=status.HTTP_404_NOT_FOUND
+            )
+
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     @action(detail=True, methods=["get"], url_path="anime")
     def anime_for_character(self, request, pk=None, *args, **kwargs):
         """
@@ -150,6 +167,8 @@ class CharacterViewSet(LogicalDeleteMixin, ModelViewSet):
                 {"detail": "Character not found."}, status=status.HTTP_404_NOT_FOUND
             )
 
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     @action(detail=True, methods=["get"], url_path="manga")
     def manga_for_character(self, request, pk=None, *args, **kwargs):
         """

@@ -13,7 +13,7 @@ from apps.persons.models import Person
 from apps.animes.models import Anime
 from apps.mangas.models import Manga
 from .managers import CharacterManager
-from .choices import RoleChoices, LanguageChoices
+from .choices import RoleChoices
 
 
 class Character(BaseModel, SlugMixin):
@@ -59,12 +59,6 @@ class CharacterVoice(BaseModel):
         Person,
         related_name="character_voice",
         on_delete=models.PROTECT,
-    )
-    language = models.CharField(
-        _("language"),
-        max_length=20,
-        choices=LanguageChoices.choices,
-        default=LanguageChoices.JAPANESE,
     )
 
     class Meta:

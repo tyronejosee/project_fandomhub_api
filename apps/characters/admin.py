@@ -49,7 +49,7 @@ class CharacterVoiceAdmin(admin.ModelAdmin):
         "available",
     ]
     list_filter = [
-        "language",
+        "character_id",
     ]
     list_editable = [
         "available",
