@@ -5,7 +5,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
-from apps.utils.paths import image_path
+from apps.utils.paths import picture_image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
@@ -31,7 +31,7 @@ class Anime(BaseModel, SlugMixin):
     )
     image = models.ImageField(
         _("image"),
-        upload_to=image_path,
+        upload_to=picture_image_path,
         blank=True,
         null=True,
         validators=[
