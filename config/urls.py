@@ -14,10 +14,8 @@ from drf_spectacular.views import (
 
 urlpatterns = [
     # Temp urls
-    path(
-        "",
-        RedirectView.as_view(pattern_name="swagger"),
-    ),
+    # path("", RedirectView.as_view(pattern_name="swagger")),
+    path("", RedirectView.as_view(url="/admin/")),
     # Admin urls
     path(
         "admin/",

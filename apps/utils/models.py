@@ -5,6 +5,7 @@ from django.db import models
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.core.validators import FileExtensionValidator
+from django.core.exceptions import ValidationError
 from django.utils.translation import gettext as _
 
 from .validators import FileSizeValidator, ImageSizeValidator
@@ -26,7 +27,11 @@ class BaseModel(models.Model):
 class Picture(BaseModel):
     """Model definition for Picture."""
 
-    content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
+    content_type = models.ForeignKey(
+        ContentType,
+        on_delete=models.CASCADE,
+        limit_choices_to={"model__in": ["anime", "manga", "character", "person"]},
+    )
     object_id = models.UUIDField()
     content_object = GenericForeignKey("content_type", "object_id")
     image = models.ImageField(
@@ -48,3 +53,36 @@ class Picture(BaseModel):
 
     def __str__(self):
         return str(self.content_object)
+
+    def save(self, *args, **kwargs):
+        # Override the method to validate the limit of polymorphic tables
+        if self.content_type.model not in ["anime", "manga", "character", "person"]:
+            raise ValidationError(_("Invalid model relationship"))
+        super(Video, self).save(*args, **kwargs)
+
+
+class Video(BaseModel):
+    """Model definition for Video."""
+
+    content_type = models.ForeignKey(
+        ContentType,
+        on_delete=models.CASCADE,
+        limit_choices_to={"model__in": ["anime", "manga"]},
+    )
+    object_id = models.UUIDField()
+    content_object = GenericForeignKey("content_type", "object_id")
+    video = models.URLField()
+
+    class Meta:
+        ordering = ["pk"]
+        verbose_name = _("video")
+        verbose_name_plural = _("videos")
+
+    def __str__(self):
+        return str(self.content_object)
+
+    def save(self, *args, **kwargs):
+        # Override the method to validate the limit of polymorphic tables
+        if self.content_type.model not in ["anime", "manga"]:
+            raise ValidationError(_("Invalid model relationship"))
+        super(Video, self).save(*args, **kwargs)
