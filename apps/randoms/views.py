@@ -33,7 +33,7 @@ class RandomContentView(APIView):
             serializer = serializer_class(content)
             return Response(serializer.data)
         return Response(
-            {"details": _("No available content found.")},
+            {"detail": _("No available content found.")},
             status=status.HTTP_404_NOT_FOUND,
         )
 

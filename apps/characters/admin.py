@@ -2,7 +2,7 @@
 
 from django.contrib import admin
 
-from .models import Character, CharacterVoice
+from .models import Character, CharacterVoice, CharacterAnime, CharacterManga
 
 
 @admin.register(Character)
@@ -59,3 +59,49 @@ class CharacterVoiceAdmin(admin.ModelAdmin):
         "created_at",
         "updated_at",
     ]
+
+
+@admin.register(CharacterManga)
+class CharacterMangaAdmin(admin.ModelAdmin):
+    """Admin for CharacterManga model."""
+
+    list_per_page = 25
+    search_fields = [
+        "character_id__name",
+        "manga_id__name",
+    ]
+    list_display = [
+        "character_id",
+        "manga_id",
+    ]
+    # list_editable = [
+    #     "available",
+    # ]
+    # readonly_fields = [
+    #     "pk",
+    #     "created_at",
+    #     "updated_at",
+    # ]
+
+
+@admin.register(CharacterAnime)
+class CharacterAnimeAdmin(admin.ModelAdmin):
+    """Admin for CharacterAnime model."""
+
+    list_per_page = 25
+    search_fields = [
+        "character_id__name",
+        "anime_id__name",
+    ]
+    list_display = [
+        "character_id",
+        "anime_id",
+    ]
+    # list_editable = [
+    #     "available",
+    # ]
+    # readonly_fields = [
+    #     "pk",
+    #     "created_at",
+    #     "updated_at",
+    # ]

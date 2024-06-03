@@ -11,10 +11,12 @@ class PictureAdmin(admin.ModelAdmin):
 
     list_per_page = 25
     search_fields = [
+        "name",
         "object_id",
     ]
     list_display = [
-        "object_id",
+        "name",
+        "image",
         "content_type",
     ]
     list_filter = [

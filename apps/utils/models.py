@@ -9,7 +9,8 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext as _
 
 from .validators import FileSizeValidator, ImageSizeValidator
-from .paths import image_path
+from .functions import generate_random_code
+from .paths import picture_image_path
 
 
 class BaseModel(models.Model):
@@ -34,11 +35,12 @@ class Picture(BaseModel):
     )
     object_id = models.UUIDField()
     content_object = GenericForeignKey("content_type", "object_id")
+    name = models.CharField(_("name"), max_length=100, default=generate_random_code)
     image = models.ImageField(
         _("image"),
         blank=True,
         null=True,
-        upload_to=image_path,
+        upload_to=picture_image_path,
         validators=[
             FileExtensionValidator(allowed_extensions=["jpg", "png", "webp"]),
             ImageSizeValidator(max_width=3000, max_height=3000),
@@ -58,7 +60,7 @@ class Picture(BaseModel):
         # Override the method to validate the limit of polymorphic tables
         if self.content_type.model not in ["anime", "manga", "character", "person"]:
             raise ValidationError(_("Invalid model relationship"))
-        super(Video, self).save(*args, **kwargs)
+        super(Picture, self).save(*args, **kwargs)
 
 
 class Video(BaseModel):
@@ -71,7 +73,7 @@ class Video(BaseModel):
     )
     object_id = models.UUIDField()
     content_object = GenericForeignKey("content_type", "object_id")
-    video = models.URLField()
+    video = models.URLField(_("video"))
 
     class Meta:
         ordering = ["pk"]

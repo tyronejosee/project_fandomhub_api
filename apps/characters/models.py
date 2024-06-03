@@ -1,6 +1,7 @@
 """Models for Characters App."""
 
 from django.db import models
+from django.db.models import UniqueConstraint
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
@@ -93,6 +94,11 @@ class CharacterAnime(models.Model):
         ordering = ["pk"]
         verbose_name = _("character anime")
         verbose_name_plural = _("character animes")
+        constraints = [
+            UniqueConstraint(
+                fields=["character_id", "anime_id"], name="unique_character_anime"
+            )
+        ]
 
     def __str__(self):
         return str(f"{self.character_id} - {self.anime_id}")
@@ -116,6 +122,11 @@ class CharacterManga(models.Model):
         ordering = ["pk"]
         verbose_name = _("character manga")
         verbose_name_plural = _("character mangas")
+        constraints = [
+            UniqueConstraint(
+                fields=["character_id", "manga_id"], name="unique_character_manga"
+            )
+        ]
 
     def __str__(self):
         return str(f"{self.character_id} - {self.manga_id}")

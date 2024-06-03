@@ -128,10 +128,10 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
             serializer = ReviewWriteSerializer(data=request.data)
             if serializer.is_valid():
                 anime = self.get_object()
-                content_type = ContentType.objects.get_for_model(Anime)
+                anime_model = ContentType.objects.get_for_model(Anime)
                 serializer.save(
                     user=request.user,
-                    content_type=content_type,
+                    content_type=anime_model,
                     object_id=anime.pk,
                 )
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -156,9 +156,12 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         - DELETE /api/v1/animes/{id}/reviews/{id}/
         """
         anime = self.get_object()
-        content_type = ContentType.objects.get_for_model(Anime)
+        anime_model = ContentType.objects.get_for_model(Anime)
         review = get_object_or_404(
-            Review, id=review_id, content_type=content_type, object_id=anime.pk
+            Review,
+            id=review_id,
+            content_type=anime_model,
+            object_id=anime.pk,
         )
         message = _("You do not have permission to perform this action.")
 
