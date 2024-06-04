@@ -2,8 +2,7 @@
 
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
-
-# from django.views.decorators.vary import vary_on_headers
+from django.views.decorators.vary import vary_on_headers
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
@@ -53,11 +52,13 @@ class ClubViewSet(ModelViewSet):
         return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
     @action(detail=True, methods=["get"], url_path="members")
     @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def member_list(self, request, pk=None):
         """
         Retrieve a list of members for club.

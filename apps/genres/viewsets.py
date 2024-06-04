@@ -2,7 +2,7 @@
 
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
-from django.views.decorators.vary import vary_on_cookie
+from django.views.decorators.vary import vary_on_headers
 from django.utils.translation import gettext as _
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import AllowAny
@@ -58,7 +58,7 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
         return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
@@ -68,6 +68,7 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
     )
     @action(detail=True, methods=["get"], url_path="animes")
     @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def anime_list(self, request, pk=None):
         """
         Retrieve a list of animes for the specified genre.
@@ -92,6 +93,7 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
     )
     @action(detail=True, methods=["get"], url_path="mangas")
     @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def manga_list(self, request, pk=None):
         """
         Retrieve a manga list for the specified genre.

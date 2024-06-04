@@ -3,7 +3,7 @@
 from django.contrib.contenttypes.models import ContentType
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
-from django.views.decorators.vary import vary_on_cookie
+from django.views.decorators.vary import vary_on_headers
 from django.shortcuts import get_object_or_404
 from django.utils.translation import gettext as _
 from rest_framework import status
@@ -42,6 +42,7 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/mangas/{id}/
     """
 
+    permission_classes = [IsContributor]
     serializer_class = MangaWriteSerializer
     search_fields = ["name"]
     ordering_fields = ["name"]
@@ -51,10 +52,9 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
         return Manga.objects.get_available()
 
     def get_permissions(self):
-        if self.action in ["create", "update", "partial_update", "destroy"]:
-            return [IsContributor()]
-        else:
+        if self.action in ["list", "retrieve"]:
             return [AllowAny()]
+        return super().get_permissions()
 
     def get_serializer_class(self):
         if self.action == "list":
@@ -64,7 +64,7 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
         return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 

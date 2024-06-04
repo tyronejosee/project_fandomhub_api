@@ -2,7 +2,7 @@
 
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
-from django.views.decorators.vary import vary_on_cookie
+from django.views.decorators.vary import vary_on_headers
 from rest_framework.viewsets import ReadOnlyModelViewSet
 from drf_spectacular.utils import extend_schema_view
 
@@ -26,7 +26,7 @@ class NewViewSet(ReadOnlyModelViewSet):
     serializer_class = NewSerializer
     search_fields = ["title", "author__username"]
     ordering_fields = ["title", "created_at"]
-    ordering = ["id"]
+    ordering = ["-created_at"]
 
     def get_queryset(self):
         return New.objects.get_available()
@@ -37,6 +37,6 @@ class NewViewSet(ReadOnlyModelViewSet):
         return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)

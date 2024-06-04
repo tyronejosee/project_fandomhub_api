@@ -3,7 +3,6 @@
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_headers
-from django.views.decorators.vary import vary_on_cookie
 from django.contrib.contenttypes.models import ContentType
 from django.utils.translation import gettext as _
 from rest_framework.viewsets import ModelViewSet
@@ -65,7 +64,7 @@ class PersonViewSet(LogicalDeleteMixin, ModelViewSet):
         return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 

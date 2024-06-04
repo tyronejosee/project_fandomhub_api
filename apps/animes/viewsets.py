@@ -3,7 +3,7 @@
 from django.contrib.contenttypes.models import ContentType
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
-from django.views.decorators.vary import vary_on_cookie
+from django.views.decorators.vary import vary_on_headers
 from django.shortcuts import get_object_or_404
 from django.utils.translation import gettext as _
 from rest_framework import status
@@ -41,6 +41,7 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/animes/{id}/
     """
 
+    permission_classes = [IsContributor()]
     serializer_class = AnimeWriteSerializer
     search_fields = ["name", "studio__name"]
     ordering_fields = ["name"]
@@ -49,10 +50,9 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         return Anime.objects.get_available()
 
     def get_permissions(self):
-        if self.action in ["create", "update", "partial_update", "destroy"]:
-            return [IsContributor()]
-        else:
+        if self.action in ["list", "retrieve"]:
             return [AllowAny()]
+        return super().get_permissions()
 
     def get_serializer_class(self):
         if self.action == "list":
@@ -62,7 +62,7 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         return super().get_serializer_class()
 
     @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_cookie)
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def list(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
@@ -72,6 +72,7 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
     )
     @action(detail=False, methods=["get"], url_path="popular")
     @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def popular_list(self, request, pk=None):
         """
         Action return a list of the 50 most popular anime.

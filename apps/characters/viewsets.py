@@ -45,6 +45,7 @@ class CharacterViewSet(LogicalDeleteMixin, ModelViewSet):
     def get_queryset(self):
         return Character.objects.get_available()
 
+    # TODO: Refactor
     def get_permissions(self):
         if self.action in [
             "list",
