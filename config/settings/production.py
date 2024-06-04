@@ -1,6 +1,5 @@
 """Settings for config project (Production)."""
 
-
 import os
 import environ
 from .base import *
@@ -11,10 +10,7 @@ environ.Env.read_env("config/.env")
 
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    "example.com",
-    "www.example.com"
-]
+ALLOWED_HOSTS = ["example.com", "www.example.com"]
 
 DATABASES = {
     "default": {

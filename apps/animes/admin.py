@@ -1,8 +1,15 @@
 """Admin for Animes App."""
 
 from django.contrib import admin
+from import_export import resources
 
 from .models import Anime
+
+
+class BookResource(resources.ModelResource):
+
+    class Meta:
+        model = Anime
 
 
 @admin.register(Anime)

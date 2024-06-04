@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 
-from .models import Picture
+from .models import Picture, Video
 
 
 class PictureReadSerializer(serializers.ModelSerializer):
@@ -30,3 +30,24 @@ class PictureWriteSerializer(serializers.ModelSerializer):
             "name": {"required": True},
             "image": {"required": True},
         }
+
+
+class VideoReadSerializer(serializers.ModelSerializer):
+    """Serializer for Video model (List/Retrieve)."""
+
+    class Meta:
+        model = Video
+        fields = [
+            "id",
+            "video",
+        ]
+
+
+class VideoWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Video model (Create/Update)."""
+
+    class Meta:
+        model = Video
+        fields = [
+            "video",
+        ]

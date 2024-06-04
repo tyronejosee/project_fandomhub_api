@@ -46,6 +46,7 @@ THIRD_APPS = [
     "rest_framework",
     "djoser",
     "social_django",
+    "import_export",
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
     "drf_spectacular",

@@ -14,8 +14,8 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly, AllowAny
 from drf_spectacular.utils import extend_schema_view, extend_schema, OpenApiParameter
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
-from apps.utils.models import Picture
-from apps.utils.serializers import PictureReadSerializer
+from apps.utils.models import Picture, Video
+from apps.utils.serializers import PictureReadSerializer, VideoReadSerializer
 from apps.users.permissions import IsMember, IsContributor
 from apps.users.choices import RoleChoices
 from apps.characters.models import Character, CharacterAnime
@@ -201,6 +201,8 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         permission_classes=[AllowAny],
         url_path="pictures",
     )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def get_pictures(self, request, pk=None, *args, **kwargs):
         """
         Action retrieve pictures associated with a anime.
@@ -226,6 +228,44 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 return Response(serializer.data)
             return Response(
                 {"detail": "No pictures found for this anime."},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="videos",
+    )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def get_videos(self, request, pk=None, *args, **kwargs):
+        """
+        Action retrieve videos associated with a anime.
+
+        Endpoints:
+        - GET api/v1/animes/{id}/videos/
+        """
+        try:
+            anime = self.get_object()
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": "Anime not found."}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            videos = Video.objects.filter(
+                content_type__model="anime", object_id=anime.id
+            )  # TODO: Add manager
+            if videos:
+                serializer = VideoReadSerializer(videos, many=True)
+                return Response(serializer.data)
+            return Response(
+                {"detail": "No videos found for this anime."},
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
