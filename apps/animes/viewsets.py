@@ -16,6 +16,10 @@ from drf_spectacular.utils import extend_schema_view, extend_schema, OpenApiPara
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.users.permissions import IsMember, IsContributor
 from apps.users.choices import RoleChoices
+from apps.characters.models import Character, CharacterAnime
+from apps.characters.serializers import CharacterMinimalSerializer
+from apps.persons.models import Person, StaffAnime
+from apps.persons.serializers import StaffMinimalSerializer
 from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer, ReviewWriteSerializer
 from .models import Anime
@@ -41,7 +45,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/animes/{id}/
     """
 
-    permission_classes = [IsContributor()]
+    permission_classes = [IsContributor]
     serializer_class = AnimeWriteSerializer
     search_fields = ["name", "studio__name"]
     ordering_fields = ["name"]
@@ -61,6 +65,90 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return AnimeReadSerializer
         return super().get_serializer_class()
 
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="characters",
+    )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def get_characters(self, request, pk=None, *args, **kwargs):
+        """
+        Action retrieve characters associated with a anime.
+
+        Endpoints:
+        - GET api/v1/animes/{id}/characters/
+        """
+        try:
+            anime = self.get_object()
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": "Anime not found."}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            relations = CharacterAnime.objects.filter(anime_id=anime)
+            if not relations.exists():
+                return Response(
+                    {"detail": "No characters found for this anime."},
+                    status=status.HTTP_404_NOT_FOUND,
+                )
+            character_ids = relations.values_list("character_id", flat=True)
+            characters = Character.objects.filter(id__in=character_ids)
+            if not characters.exists():
+                return Response(
+                    {"detail": "No characters found."}, status=status.HTTP_404_NOT_FOUND
+                )
+            serializer = CharacterMinimalSerializer(characters, many=True)
+            return Response(serializer.data)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="staff",
+    )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def get_staff(self, request, pk=None, *args, **kwargs):
+        """
+        Action retrieve staff associated with a anime.
+
+        Endpoints:
+        - GET api/v1/animes/{id}/characters/
+        """
+        try:
+            anime = self.get_object()
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": "Anime not found."}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            relations = StaffAnime.objects.filter(anime_id=anime)
+            if not relations.exists():
+                return Response(
+                    {"detail": "No staff found for this anime."},
+                    status=status.HTTP_404_NOT_FOUND,
+                )
+            staff_ids = relations.values_list("person_id", flat=True)
+            staff = Person.objects.filter(id__in=staff_ids)
+            if not staff.exists():
+                return Response(
+                    {"detail": "No staff found."}, status=status.HTTP_404_NOT_FOUND
+                )
+            serializer = StaffMinimalSerializer(staff, many=True)
+            return Response(serializer.data)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
     @extend_schema(
         summary="Get Popular Animes",
         description="Retrieve a list of the 50 most popular anime.",
@@ -68,7 +156,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     @action(detail=False, methods=["get"], url_path="popular")
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def popular_list(self, request, pk=None):
+    def get_populars(self, request, pk=None):
         """
         Action return a list of the 50 most popular anime.
 
@@ -88,7 +176,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         permission_classes=[IsMember],
         url_path="reviews",
     )
-    def review_list(self, request, *args, **kwargs):
+    def get_reviews(self, request, *args, **kwargs):
         """
         Action retrieves and creates reviews for an anime.
 

@@ -1,6 +1,7 @@
 """Models for Persons App."""
 
 from django.db import models
+from django.db.models import UniqueConstraint
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
@@ -8,6 +9,7 @@ from apps.utils.models import BaseModel
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.utils.mixins import SlugMixin
 from apps.utils.paths import image_path
+from apps.animes.models import Anime
 from .managers import PersonManager
 from .choices import CategoryChoices, LanguageChoices
 
@@ -75,3 +77,31 @@ class Person(BaseModel, SlugMixin):
 
     def __str__(self):
         return self.name
+
+
+class StaffAnime(BaseModel):
+    """Model definition for StaffAnime."""
+
+    person_id = models.ForeignKey(
+        Person,
+        related_name="person_anime",
+        on_delete=models.CASCADE,
+    )
+    anime_id = models.ForeignKey(
+        Anime,
+        related_name="person_anime",
+        on_delete=models.CASCADE,
+    )
+
+    class Meta:
+        ordering = ["pk"]
+        verbose_name = _("staff anime")
+        verbose_name_plural = _("staff animes")
+        constraints = [
+            UniqueConstraint(
+                fields=["person_id", "anime_id"], name="unique_staff_anime"
+            )
+        ]
+
+    def __str__(self):
+        return str(f"{self.person_id} - {self.anime_id}")

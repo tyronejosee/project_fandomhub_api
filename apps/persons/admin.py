@@ -2,7 +2,7 @@
 
 from django.contrib import admin
 
-from .models import Person
+from .models import Person, StaffAnime
 
 
 @admin.register(Person)
@@ -26,6 +26,33 @@ class PersonAdmin(admin.ModelAdmin):
     readonly_fields = [
         "pk",
         "slug",
+        "created_at",
+        "updated_at",
+    ]
+
+
+@admin.register(StaffAnime)
+class StaffAnimeAdmin(admin.ModelAdmin):
+    """Admin for StaffAnime model."""
+
+    list_per_page = 25
+    search_fields = [
+        "person_id",
+        "anime_id",
+    ]
+    list_display = [
+        "person_id",
+        "anime_id",
+        "available",
+    ]
+    list_filter = [
+        "anime_id",
+    ]
+    list_editable = [
+        "available",
+    ]
+    readonly_fields = [
+        "pk",
         "created_at",
         "updated_at",
     ]

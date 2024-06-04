@@ -38,3 +38,18 @@ class CharacterWriteSerializer(serializers.ModelSerializer):
         extra_kwargs = {
             "image": {"required": True},
         }
+
+
+class CharacterMinimalSerializer(serializers.ModelSerializer):
+    """Serializer for Character model (Minimal)."""
+
+    role = serializers.CharField(source="get_role_display")
+
+    class Meta:
+        model = Character
+        fields = [
+            "id",
+            "name",
+            "role",
+            "image",
+        ]

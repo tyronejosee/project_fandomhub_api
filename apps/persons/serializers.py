@@ -67,3 +67,23 @@ class PersonMinimalSerializer(serializers.ModelSerializer):
             "image",
             "language",
         ]
+
+
+class StaffMinimalSerializer(serializers.ModelSerializer):
+    """Serializer for Person model (Staff Minimal)."""
+
+    category = serializers.CharField(source="get_category_display")
+
+    class Meta:
+        model = Person
+        fields = [
+            "id",
+            "name",
+            "image",
+            "category",
+        ]
+
+    def to_representation(self, instance):
+        data = super().to_representation(instance)
+        data["image"] = data.get("image", "") or ""
+        return data
