@@ -14,3 +14,18 @@ class MangaManager(Manager):
 
     def get_popular(self):
         return self.get_available().order_by("-popularity")
+
+    def get_recommendations(self):
+        return (
+            self.get_available()
+            .filter(is_recommended=True)
+            .order_by("-updated_at")
+            .only(
+                "id",
+                "name",
+                "image",
+                "release",
+                "media_type",
+                "status",
+            )
+        )

@@ -67,6 +67,7 @@ class Manga(BaseModel, SlugMixin):
     )
     genres = models.ManyToManyField(Genre, blank=True, verbose_name=_("genres"))
     themes = models.ManyToManyField(Theme, blank=True, verbose_name=_("themes"))
+    is_recommended = models.BooleanField(_("is recommended"), default=False)
     mean = models.FloatField(_("mean"), blank=True, null=True)
     rank = models.IntegerField(_("rank"), blank=True, null=True)
     popularity = models.IntegerField(_("popularity"), blank=True, null=True)

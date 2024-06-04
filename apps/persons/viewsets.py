@@ -43,8 +43,8 @@ class PersonViewSet(LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/persons/{id}/
     """
 
-    serializer_class = PersonWriteSerializer
     permission_classes = [IsContributor]
+    serializer_class = PersonWriteSerializer
     search_fields = ["name"]
     ordering_fields = ["name"]
     ordering = ["id"]

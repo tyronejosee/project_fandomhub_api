@@ -1,1 +1,0 @@
-"""ViewSets for Recommendations App."""

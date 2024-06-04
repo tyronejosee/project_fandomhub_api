@@ -21,6 +21,7 @@ class ReviewAdmin(admin.ModelAdmin):
     ]
     list_filter = [
         "rating",
+        "is_spoiler",
     ]
     list_editable = [
         "available",

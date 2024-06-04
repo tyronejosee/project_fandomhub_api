@@ -49,7 +49,7 @@ urlpatterns = [
     path("", include("apps.users.routers")),
     # Apps urls (URLs)
     path("", include("apps.randoms.urls")),
-    # path("", include("apps.recommendations.urls")),
+    path("", include("apps.recommendations.urls")),
     # path("", include("apps.reviews.urls")),
     # path("", include("apps.tops.urls")),
     # path("", include("apps.utils.urls")),

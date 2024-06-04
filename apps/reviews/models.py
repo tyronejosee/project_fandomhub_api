@@ -26,6 +26,7 @@ class Review(BaseModel):
         _("rating"), validators=[MinValueValidator(1), MaxValueValidator(10)]
     )
     comment = models.TextField(_("comment"))
+    is_spoiler = models.BooleanField(_("is spoiler"), default=False)
     helpful_count = models.PositiveIntegerField(_("helpful count"), default=0)
     reported_count = models.PositiveIntegerField(_("reported count"), default=0)
 

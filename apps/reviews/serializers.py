@@ -15,8 +15,9 @@ class ReviewReadSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "user",
-            "comment",
             "rating",
+            "comment",
+            "is_spoiler",
             "created_at",
             "updated_at",
         ]
@@ -29,5 +30,6 @@ class ReviewWriteSerializer(serializers.ModelSerializer):
         model = Review
         fields = [
             "comment",
+            "is_spoiler",
             "rating",
         ]
