@@ -14,6 +14,8 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly, AllowAny
 from drf_spectacular.utils import extend_schema_view, extend_schema, OpenApiParameter
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
+from apps.utils.models import Picture
+from apps.utils.serializers import PictureReadSerializer
 from apps.users.permissions import IsMember, IsContributor
 from apps.users.choices import RoleChoices
 from apps.characters.models import Character, CharacterAnime
@@ -148,6 +150,96 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return Response(serializer.data)
         except Exception as e:
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="recommendations",
+    )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def get_recommendations(self, request, pk=None, *args, **kwargs):
+        """
+        Action retrieve recommendations associated with a anime.
+
+        Endpoints:
+        - GET api/v1/animes/{id}/recommendations/
+        """
+        try:
+            anime = self.get_object()
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": "Anime not found."}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            similar_anime = (
+                Anime.objects.filter(
+                    genres__in=anime.genres.all(),
+                    themes__in=anime.themes.all(),
+                )
+                .exclude(id=anime.id)
+                .distinct()[:25]
+            )
+            # TODO: Add manager, add tests
+            if similar_anime:
+                serializer = AnimeMinimalSerializer(similar_anime, many=True)
+                return Response(serializer.data)
+            return Response(
+                {"detail": "No recommendations found for this anime."},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="pictures",
+    )
+    def get_pictures(self, request, pk=None, *args, **kwargs):
+        """
+        Action retrieve pictures associated with a anime.
+
+        Endpoints:
+        - GET api/v1/animes/{id}/pictures/
+        """
+        try:
+            anime = self.get_object()
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": "Anime not found."}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            pictures = Picture.objects.filter(
+                content_type__model="anime", object_id=anime.id
+            )  # TODO: Add manager
+            if pictures:
+                serializer = PictureReadSerializer(pictures, many=True)
+                return Response(serializer.data)
+            return Response(
+                {"detail": "No pictures found for this anime."},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    # @action(
+    #     detail=True,
+    #     methods=["get"],
+    #     permission_classes=[AllowAny],
+    #     url_path="news",
+    # )
+    # def get_news(self, request, pk=None):
+    #     pass
+    #     # TODO: Pending
 
     @extend_schema(
         summary="Get Popular Animes",

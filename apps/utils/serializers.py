@@ -10,7 +10,11 @@ class PictureReadSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Picture
-        fields = ["id", "image"]
+        fields = [
+            "id",
+            "name",
+            "image",
+        ]
 
 
 class PictureWriteSerializer(serializers.ModelSerializer):
