@@ -11,7 +11,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from drf_spectacular.utils import extend_schema_view, extend_schema
 
-from apps.utils.mixins import LogicalDeleteMixin
+from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.pagination import LargeSetPagination
 from apps.users.permissions import IsContributor
 from apps.animes.models import Anime
@@ -22,7 +22,7 @@ from .schemas import studio_schemas
 
 
 @extend_schema_view(**studio_schemas)
-class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
+class StudioViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Studio instances.
 
@@ -54,11 +54,6 @@ class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
             return StudioWriteSerializer
         return super().get_serializer_class()
 
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
-
     @extend_schema(
         summary="Get Animes for Studio",
         description="Retrieve a list of animes for studio.",
@@ -68,7 +63,7 @@ class StudioViewSet(LogicalDeleteMixin, ModelViewSet):
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def anime_list(self, request, pk=None):
         """
-        Retrieve a list of animes for the specified studio.
+        Action retrieve a list of animes for the specified studio.
 
         Endpoints:
         - GET /api/v1/studios/{id}/animes/

@@ -13,7 +13,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticatedOrReadOnly, AllowAny
 from drf_spectacular.utils import extend_schema_view, extend_schema, OpenApiParameter
 
-from apps.utils.mixins import LogicalDeleteMixin
+from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.users.permissions import IsMember, IsContributor
 from apps.users.choices import RoleChoices
 from apps.reviews.models import Review
@@ -28,7 +28,7 @@ from .schemas import anime_schemas
 
 
 @extend_schema_view(**anime_schemas)
-class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
+class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Anime instances.
 
@@ -60,11 +60,6 @@ class AnimeViewSet(LogicalDeleteMixin, ModelViewSet):
         elif self.action == "retrieve":
             return AnimeReadSerializer
         return super().get_serializer_class()
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
 
     @extend_schema(
         summary="Get Popular Animes",

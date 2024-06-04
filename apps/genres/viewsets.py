@@ -11,7 +11,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from drf_spectacular.utils import extend_schema_view, extend_schema
 
-from apps.utils.mixins import LogicalDeleteMixin
+from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.pagination import LargeSetPagination, MediumSetPagination
 from apps.users.permissions import IsContributor
 from apps.animes.models import Anime
@@ -24,7 +24,7 @@ from .schemas import genre_schemas
 
 
 @extend_schema_view(**genre_schemas)
-class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
+class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Genre instances.
 
@@ -56,11 +56,6 @@ class GenreViewSet(LogicalDeleteMixin, ModelViewSet):
         if self.action in ["create", "update", "partial_update"]:
             return GenreWriteSerializer
         return super().get_serializer_class()
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
 
     @extend_schema(
         summary="Get Animes for Genre",

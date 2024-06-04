@@ -11,7 +11,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from drf_spectacular.utils import extend_schema_view
 
-from apps.utils.mixins import LogicalDeleteMixin
+from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.pagination import MediumSetPagination
 from apps.users.permissions import IsContributor
 from apps.animes.models import Anime
@@ -22,7 +22,7 @@ from .schemas import season_schemas
 
 
 @extend_schema_view(**season_schemas)
-class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
+class SeasonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Season instances.
 
@@ -53,11 +53,6 @@ class SeasonViewSet(LogicalDeleteMixin, ModelViewSet):
         if self.action in ["create", "update", "partial_update"]:
             return SeasonWriteSerializer
         return super().get_serializer_class()
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
 
     @action(detail=True, methods=["get"], url_path="animes")
     @method_decorator(cache_page(60 * 60 * 2))

@@ -11,7 +11,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
 
-from apps.utils.mixins import LogicalDeleteMixin
+from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.models import Picture
 from apps.utils.serializers import PictureReadSerializer, PictureWriteSerializer
 from apps.animes.serializers import AnimeMinimalSerializer
@@ -25,7 +25,7 @@ from .models import Character, CharacterAnime, CharacterManga
 from .serializers import CharacterReadSerializer, CharacterWriteSerializer
 
 
-class CharacterViewSet(LogicalDeleteMixin, ModelViewSet):
+class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Characters instances.
 
@@ -62,11 +62,6 @@ class CharacterViewSet(LogicalDeleteMixin, ModelViewSet):
         if self.action in ["list", "retrieve"]:
             return CharacterReadSerializer
         return super().get_serializer_class()
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))

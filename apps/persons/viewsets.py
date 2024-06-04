@@ -12,7 +12,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from drf_spectacular.utils import extend_schema_view, extend_schema
 
-from apps.utils.mixins import LogicalDeleteMixin
+from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.models import Picture
 from apps.utils.pagination import MediumSetPagination
 from apps.utils.serializers import PictureReadSerializer, PictureWriteSerializer
@@ -29,7 +29,7 @@ from .schemas import person_schemas
 
 
 @extend_schema_view(**person_schemas)
-class PersonViewSet(LogicalDeleteMixin, ModelViewSet):
+class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Person instances.
 
@@ -62,11 +62,6 @@ class PersonViewSet(LogicalDeleteMixin, ModelViewSet):
         elif self.action == "retrieve":
             return PersonReadSerializer
         return super().get_serializer_class()
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
 
     @extend_schema(
         summary="Get Mangas for Author",

@@ -1,13 +1,10 @@
 """Viewsets for Categories App."""
 
-from django.utils.decorators import method_decorator
-from django.views.decorators.cache import cache_page
-from django.views.decorators.vary import vary_on_headers
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import AllowAny
 from drf_spectacular.utils import extend_schema_view
 
-from apps.utils.mixins import LogicalDeleteMixin
+from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.users.permissions import IsContributor
 from .models import Theme, Demographic
 from .serializers import (
@@ -20,7 +17,7 @@ from .schemas import theme_schemas, demographic_schemas
 
 
 @extend_schema_view(**theme_schemas)
-class ThemeViewSet(LogicalDeleteMixin, ModelViewSet):
+class ThemeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Theme instances.
 
@@ -52,14 +49,9 @@ class ThemeViewSet(LogicalDeleteMixin, ModelViewSet):
             return ThemeWriteSerializer
         return super().get_serializer_class()
 
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
-
 
 @extend_schema_view(**demographic_schemas)
-class DemographicViewSet(LogicalDeleteMixin, ModelViewSet):
+class DemographicViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Demographic instances.
 
@@ -90,8 +82,3 @@ class DemographicViewSet(LogicalDeleteMixin, ModelViewSet):
         if self.action in ["create", "update", "partial_update"]:
             return DemographicWriteSerializer
         return super().get_serializer_class()
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)

@@ -9,6 +9,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import action
 
+from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.users.permissions import IsMember
 from apps.utils.pagination import LargeSetPagination
 from .models import Club, ClubMember
@@ -19,7 +20,7 @@ from .serializers import (
 )
 
 
-class ClubViewSet(ModelViewSet):
+class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Club instances.
 
@@ -50,11 +51,6 @@ class ClubViewSet(ModelViewSet):
         if self.action in ["list", "retrieve"]:
             return ClubReadSerializer
         return super().get_serializer_class()
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
 
     @action(detail=True, methods=["get"], url_path="members")
     @method_decorator(cache_page(60 * 60 * 2))

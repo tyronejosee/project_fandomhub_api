@@ -13,7 +13,7 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticatedOrReadOnly, AllowAny
 from drf_spectacular.utils import extend_schema_view, extend_schema, OpenApiParameter
 
-from apps.utils.mixins import LogicalDeleteMixin
+from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.pagination import MediumSetPagination
 from apps.users.permissions import IsContributor
 from apps.users.choices import RoleChoices
@@ -29,7 +29,7 @@ from .schemas import manga_schemas
 
 
 @extend_schema_view(**manga_schemas)
-class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
+class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Manga instances.
 
@@ -63,17 +63,13 @@ class MangaViewSet(LogicalDeleteMixin, ModelViewSet):
             return MangaReadSerializer
         return super().get_serializer_class()
 
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
-
     @extend_schema(
         summary="Get Popular Mangas",
         description="Retrieve a list of the 50 most popular mangas.",
     )
     @action(detail=False, methods=["get"], url_path="popular")
     @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def popular_list(self, request, pk=None):
         """
         Action return a list of the 50 most popular mangas.

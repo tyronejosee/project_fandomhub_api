@@ -1,11 +1,9 @@
 """ViewSets for News App."""
 
-from django.utils.decorators import method_decorator
-from django.views.decorators.cache import cache_page
-from django.views.decorators.vary import vary_on_headers
 from rest_framework.viewsets import ReadOnlyModelViewSet
 from drf_spectacular.utils import extend_schema_view
 
+from apps.utils.mixins import ListCacheMixin
 from apps.utils.permissions import IsStaffOrReadOnly
 from .models import New
 from .serializers import NewSerializer, NewListSerializer
@@ -13,7 +11,7 @@ from .schemas import new_schemas
 
 
 @extend_schema_view(**new_schemas)
-class NewViewSet(ReadOnlyModelViewSet):
+class NewViewSet(ListCacheMixin, ReadOnlyModelViewSet):
     """
     ViewSet for managing New instances.
 
@@ -35,8 +33,3 @@ class NewViewSet(ReadOnlyModelViewSet):
         if self.action == "list":
             return NewListSerializer
         return super().get_serializer_class()
-
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
