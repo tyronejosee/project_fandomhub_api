@@ -95,3 +95,38 @@ class Anime(BaseModel, SlugMixin):
 
     def __str__(self):
         return str(self.name)
+
+
+class AnimeStats(BaseModel):
+    """Model definition for AnimeStats."""
+
+    anime_id = models.OneToOneField(
+        Anime,
+        on_delete=models.CASCADE,
+        related_name="stats",
+    )
+    watching = models.PositiveIntegerField(default=0)
+    completed = models.PositiveIntegerField(default=0)
+    on_hold = models.PositiveIntegerField(default=0)
+    dropped = models.PositiveIntegerField(default=0)
+    plan_to_watch = models.PositiveIntegerField(default=0)
+    total = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ["pk"]
+        verbose_name = _("anime stats")
+        verbose_name_plural = _("anime stats")
+
+    def save(self, *args, **kwargs):
+        # Overridden the method to calculate the total
+        self.total = (
+            self.watching
+            + self.completed
+            + self.on_hold
+            + self.dropped
+            + self.plan_to_watch
+        )
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f"Stats for {self.anime_id}"

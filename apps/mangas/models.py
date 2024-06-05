@@ -90,3 +90,38 @@ class Manga(BaseModel, SlugMixin):
 
     def __str__(self):
         return str(self.name)
+
+
+class MangaStats(BaseModel):
+    """Model definition for MangaStats."""
+
+    manga_id = models.OneToOneField(
+        Manga,
+        on_delete=models.CASCADE,
+        related_name="stats",
+    )
+    reading = models.PositiveIntegerField(default=0)
+    completed = models.PositiveIntegerField(default=0)
+    on_hold = models.PositiveIntegerField(default=0)
+    dropped = models.PositiveIntegerField(default=0)
+    plan_to_read = models.PositiveIntegerField(default=0)
+    total = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ["pk"]
+        verbose_name = _("manga stats")
+        verbose_name_plural = _("manga stats")
+
+    def save(self, *args, **kwargs):
+        # Overridden the method to calculate the total
+        self.total = (
+            self.reading
+            + self.completed
+            + self.on_hold
+            + self.dropped
+            + self.plan_to_read
+        )
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f"Stats for {self.manga.name}"
