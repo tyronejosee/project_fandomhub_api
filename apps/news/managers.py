@@ -8,3 +8,10 @@ class NewsManager(Manager):
 
     def get_available(self):
         return self.filter(available=True)
+
+    def get_anime_news(self, anime):
+        return (
+            self.get_available()
+            .filter(anime_relations=anime)
+            .order_by("-created_at")[:25]
+        )

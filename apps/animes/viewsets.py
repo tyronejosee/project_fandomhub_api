@@ -22,6 +22,8 @@ from apps.characters.models import Character, CharacterAnime
 from apps.characters.serializers import CharacterMinimalSerializer
 from apps.persons.models import Person, StaffAnime
 from apps.persons.serializers import StaffMinimalSerializer
+from apps.news.models import News
+from apps.news.serializers import NewsMinimalSerializer
 from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer, ReviewWriteSerializer
 from .models import Anime
@@ -192,6 +194,37 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 {"detail": _("No recommendations found for this anime.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    @action(
+        detail=True,
+        methods=["GET"],
+        permission_classes=[AllowAny],
+        url_path="news",
+    )
+    def get_news(self, request, pk=None, *args, **kwargs):
+        """
+        Action retrieve news associated with a anime.
+
+        Endpoints:
+        - GET api/v1/animes/{id}/videos/
+        """
+        try:
+            anime = self.get_object()
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            news = News.objects.get_anime_news(anime)  # TODO: Optimize query 43.5 ms
+            if news:
+                serializer = NewsMinimalSerializer(news, many=True)
+                return Response(serializer.data)
+            return Response({"detail": _("No News found.")})
         except Exception as e:
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 

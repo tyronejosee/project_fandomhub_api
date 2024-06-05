@@ -27,8 +27,8 @@ class NewsViewSet(ListCacheMixin, ModelViewSet):
 
     permission_classes = [IsModerator]
     serializer_class = NewsWriteSerializer
-    search_fields = ["title", "author__username"]
-    ordering_fields = ["title", "created_at"]
+    search_fields = ["name", "author__username"]
+    ordering_fields = ["name", "created_at"]
     ordering = ["-created_at"]
 
     def get_queryset(self):

@@ -11,10 +11,10 @@ class NewsAdmin(admin.ModelAdmin):
 
     list_per_page = 25
     search_fields = [
-        "title",
+        "name",
     ]
     list_display = [
-        "title",
+        "name",
         "available",
     ]
     list_filter = [

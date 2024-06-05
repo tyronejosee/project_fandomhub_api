@@ -16,7 +16,7 @@ class NewsReadSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "author",
-            "title",
+            "name",
             "description",
             "content",
             "image",
@@ -43,7 +43,7 @@ class NewsWriteSerializer(serializers.ModelSerializer):
     class Meta:
         model = News
         fields = [
-            "title",
+            "name",
             "description",
             "content",
             "image",
@@ -65,7 +65,7 @@ class NewsMinimalSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "author",
-            "title",
+            "name",
             "description",
             "image",
             "tag",
@@ -74,7 +74,7 @@ class NewsMinimalSerializer(serializers.ModelSerializer):
     def get_author(self, obj):
         return obj.author.username
 
-    def to_representation(self, instance):
-        representation = super().to_representation(instance)
-        representation["image"] = representation.get("image", "") or ""
-        return representation
+    # def to_representation(self, instance):
+    #     representation = super().to_representation(instance)
+    #     representation["image"] = representation.get("image", "") or ""
+    #     return representation

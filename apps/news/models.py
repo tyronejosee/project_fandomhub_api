@@ -5,7 +5,7 @@ from django.db import models
 from django.utils.translation import gettext as _
 
 from apps.utils.models import BaseModel
-from apps.utils.paths import image_path
+from apps.utils.paths import picture_image_path
 from apps.animes.models import Anime
 from apps.mangas.models import Manga
 from .managers import NewsManager
@@ -18,10 +18,10 @@ class News(BaseModel):
     """Model definition for News."""
 
     author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("user"))
-    title = models.CharField(_("title"), max_length=100)
+    name = models.CharField(_("title"), max_length=100)
     description = models.CharField(_("description"), max_length=255)
     content = models.TextField(_("content"))
-    image = models.ImageField(_("image"), upload_to=image_path)
+    image = models.ImageField(_("image"), upload_to=picture_image_path)
     source = models.URLField(_("source"), max_length=255)
     tag = models.CharField(
         _("tag"),
@@ -39,9 +39,9 @@ class News(BaseModel):
         verbose_name = _("news")
         verbose_name_plural = _("news")
         indexes = [
-            models.Index(fields=["title"], name="title_idx"),
+            models.Index(fields=["name"], name="name_idx"),
             models.Index(fields=["tag"], name="tag_idx"),
         ]
 
     def __str__(self):
-        return str(self.title)
+        return str(self.name)
