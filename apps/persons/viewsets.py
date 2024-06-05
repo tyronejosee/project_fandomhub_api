@@ -133,7 +133,7 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return Response(serializer.data)
 
         return Response(
-            {"detail": "There is no pictures associated with this person."},
+            {"detail": _("There is no pictures associated with this person.")},
             status=status.HTTP_404_NOT_FOUND,
         )
 
@@ -159,7 +159,7 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 object_id=character.pk,
             )
             return Response(
-                {"detail": "Picture uploaded successfully."},
+                {"detail": _("Picture uploaded successfully.")},
                 status=status.HTTP_201_CREATED,
             )
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

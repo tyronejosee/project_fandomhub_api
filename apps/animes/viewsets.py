@@ -170,7 +170,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             anime = self.get_object()
         except Anime.DoesNotExist:
             return Response(
-                {"detail": "Anime not found."}, status=status.HTTP_404_NOT_FOUND
+                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
             )
         except Exception as e:
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
@@ -189,7 +189,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 serializer = AnimeMinimalSerializer(similar_anime, many=True)
                 return Response(serializer.data)
             return Response(
-                {"detail": "No recommendations found for this anime."},
+                {"detail": _("No recommendations found for this anime.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
@@ -214,7 +214,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             anime = self.get_object()
         except Anime.DoesNotExist:
             return Response(
-                {"detail": "Anime not found."}, status=status.HTTP_404_NOT_FOUND
+                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
             )
         except Exception as e:
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
@@ -227,7 +227,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 serializer = PictureReadSerializer(pictures, many=True)
                 return Response(serializer.data)
             return Response(
-                {"detail": "No pictures found for this anime."},
+                {"detail": _("No pictures found for this anime.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
@@ -252,7 +252,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             anime = self.get_object()
         except Anime.DoesNotExist:
             return Response(
-                {"detail": "Anime not found."}, status=status.HTTP_404_NOT_FOUND
+                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
             )
         except Exception as e:
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
@@ -265,7 +265,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 serializer = VideoReadSerializer(videos, many=True)
                 return Response(serializer.data)
             return Response(
-                {"detail": "No videos found for this anime."},
+                {"detail": _("No videos found for this anime.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:

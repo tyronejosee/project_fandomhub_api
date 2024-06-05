@@ -1,6 +1,7 @@
 """ViewSets for Profiles App."""
 
 from django.shortcuts import get_object_or_404
+from django.utils.translation import gettext as _
 from rest_framework.viewsets import ViewSet
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
@@ -24,7 +25,7 @@ class ProfileViewSet(ViewSet):
         profile = get_object_or_404(Profile, user=user)
         if profile.user != user:
             return Response(
-                {"detail": "You are not the owner of this profile."},
+                {"detail": _("You are not the owner of this profile.")},
                 status=status.HTTP_403_FORBIDDEN,
             )
         return profile

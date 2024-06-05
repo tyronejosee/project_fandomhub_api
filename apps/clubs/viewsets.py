@@ -3,6 +3,7 @@
 from django.utils.decorators import method_decorator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_headers
+from django.utils.translation import gettext as _
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
@@ -68,7 +69,7 @@ class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             serializer = ClubMemberReadSerializer(members, many=True)
             return Response(serializer.data)
         return Response(
-            {"detail": "No members found."}, status=status.HTTP_404_NOT_FOUND
+            {"detail": _("No members found.")}, status=status.HTTP_404_NOT_FOUND
         )
 
     # TODO: Add logic and list all the staff, GET clubs/{id}/staff

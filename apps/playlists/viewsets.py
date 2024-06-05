@@ -3,6 +3,7 @@
 from django.http import Http404
 from django.contrib.contenttypes.models import ContentType
 from django.shortcuts import get_object_or_404
+from django.utils.translation import gettext as _
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
@@ -46,7 +47,9 @@ class PlaylistViewSet(ModelViewSet):
 
     def perform_update(self, serializer):
         if serializer.instance.user != self.request.user:
-            raise PermissionDenied("You do not have permission to edit this playlist.")
+            raise PermissionDenied(
+                _("You do not have permission to edit this playlist.")
+            )
         serializer.save()
 
     @action(detail=True, methods=["get"])
@@ -71,10 +74,10 @@ class PlaylistViewSet(ModelViewSet):
             model_class = content_type.model_class()
             object_id = get_object_or_404(model_class, pk=uuid).pk
         except (ContentType.DoesNotExist, ValueError, model_class.DoesNotExist):
-            raise Http404("Invalid UUID")
+            raise Http404(_("Invalid UUID"))
 
         if model_class not in self.ALLOWED_MODELS:
-            raise Http404("Model not allowed")
+            raise Http404(_("Model not allowed"))
 
         playlist_item_data = {
             "playlist": playlist.pk,

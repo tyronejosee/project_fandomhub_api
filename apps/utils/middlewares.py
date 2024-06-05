@@ -1,5 +1,6 @@
 """Middlewares for Utils App."""
 
+from django.utils.translation import gettext as _
 from rest_framework.response import Response
 from rest_framework import status
 
@@ -25,7 +26,7 @@ class CensorshipMiddleware:
             for word in self.CENSORED_WORDS:
                 if word in text:
                     return Response(
-                        {"detail": f"Censored text: {word}"},
+                        {"detail": _(f"Censored text: {word}")},
                         status=status.HTTP_400_BAD_REQUEST,
                     )
 

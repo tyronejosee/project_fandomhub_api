@@ -136,7 +136,7 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 return Response(serializer.data)
 
             return Response(
-                {"detail": "No reviews for this manga."},
+                {"detail": _("No reviews for this manga.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
 
@@ -144,7 +144,7 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             # Create a review for manga
             if not request.user.role == RoleChoices.MEMBER:
                 return Response(
-                    {"detail": "You do not have permission to create reviews."},
+                    {"detail": _("You do not have permission to create reviews.")},
                     status=status.HTTP_403_FORBIDDEN,
                 )
             serializer = ReviewWriteSerializer(data=request.data)
@@ -182,7 +182,7 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         review = get_object_or_404(
             Review, id=review_id, content_type=content_type, object_id=manga.pk
         )
-        message = "You do not have permission to perform this action."
+        message = _("You do not have permission to perform this action.")
 
         if request.method == "GET":
             # Retrieve the review associated with the manga

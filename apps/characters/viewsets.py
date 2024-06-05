@@ -88,7 +88,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 return Response(serializer.data)
 
             return Response(
-                {"detail": "There is no pictures associated with this character."},
+                {"detail": _("There is no pictures associated with this character.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
 
@@ -110,7 +110,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                     object_id=character.pk,
                 )
                 return Response(
-                    {"detail": "Picture uploaded successfully."},
+                    {"detail": _("Picture uploaded successfully.")},
                     status=status.HTTP_201_CREATED,
                 )
 
@@ -129,7 +129,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return Response(serializer.data, status=status.HTTP_200_OK)
         except Character.DoesNotExist:
             return Response(
-                {"detail": "Character not found."}, status=status.HTTP_404_NOT_FOUND
+                {"detail": _("Character not found.")}, status=status.HTTP_404_NOT_FOUND
             )
 
     @method_decorator(cache_page(60 * 60 * 2))
@@ -154,13 +154,13 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 return Response(serializer.data)
 
             return Response(
-                {"detail": "There is no anime associated with this character."},
+                {"detail": _("There is no anime associated with this character.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
 
         except Character.DoesNotExist:
             return Response(
-                {"detail": "Character not found."}, status=status.HTTP_404_NOT_FOUND
+                {"detail": _("Character not found.")}, status=status.HTTP_404_NOT_FOUND
             )
 
     @method_decorator(cache_page(60 * 60 * 2))
@@ -185,11 +185,11 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 return Response(serializer.data)
 
             return Response(
-                {"detail": "There is no manga associated with this character."},
+                {"detail": _("There is no manga associated with this character.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
 
         except Character.DoesNotExist:
             return Response(
-                {"detail": "Character not found."}, status=status.HTTP_404_NOT_FOUND
+                {"detail": _("Character not found.")}, status=status.HTTP_404_NOT_FOUND
             )
