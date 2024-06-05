@@ -2,38 +2,17 @@
 
 from rest_framework import serializers
 
-from .models import New
+from .models import News
 
 
-class NewListSerializer(serializers.ModelSerializer):
-    """Serializer for New model (List).."""
+class NewsReadSerializer(serializers.ModelSerializer):
+    """Serializer for News model (List/retrieve)."""
 
-    tag = serializers.CharField(source="get_tag_display")
     author = serializers.SerializerMethodField()
-
-    class Meta:
-        model = New
-        fields = [
-            "id",
-            "author",
-            "title",
-            "description",
-            "image",
-            "tag",
-        ]
-        read_only_fields = ["author"]
-
-    def get_author(self, obj) -> str:
-        return obj.author.username
-
-
-class NewSerializer(serializers.ModelSerializer):
-    """Serializer for New model."""
-
     tag = serializers.CharField(source="get_tag_display")
 
     class Meta:
-        model = New
+        model = News
         fields = [
             "id",
             "author",
@@ -43,6 +22,59 @@ class NewSerializer(serializers.ModelSerializer):
             "image",
             "source",
             "tag",
+            "anime_relations",
+            "manga_relations",
             "created_at",
             "updated_at",
         ]
+
+    def get_author(self, obj):
+        return obj.author.username
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation["image"] = representation.get("image", "") or ""
+        return representation
+
+
+class NewsWriteSerializer(serializers.ModelSerializer):
+    """Serializer for News model (Create/update)."""
+
+    class Meta:
+        model = News
+        fields = [
+            "title",
+            "description",
+            "content",
+            "image",
+            "source",
+            "tag",
+            "anime_relations",
+            "manga_relations",
+        ]
+
+
+class NewsMinimalSerializer(serializers.ModelSerializer):
+    """Serializer for News model (Minimal)."""
+
+    author = serializers.SerializerMethodField()
+    tag = serializers.CharField(source="get_tag_display")
+
+    class Meta:
+        model = News
+        fields = [
+            "id",
+            "author",
+            "title",
+            "description",
+            "image",
+            "tag",
+        ]
+
+    def get_author(self, obj):
+        return obj.author.username
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation["image"] = representation.get("image", "") or ""
+        return representation

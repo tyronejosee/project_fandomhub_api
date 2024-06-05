@@ -3,13 +3,13 @@
 from drf_spectacular.utils import extend_schema
 
 
-new_schemas = {
+news_schemas = {
     "list": extend_schema(
         summary="Get Several News",
-        description="Retrieve a list of all new entries.",
+        description="Retrieve a list of all news entries.",
     ),
     "retrieve": extend_schema(
-        summary="Get New",
-        description="Get detailed information about a specific new entry.",
+        summary="Get News",
+        description="Get detailed information about a specific news entry.",
     ),
 }

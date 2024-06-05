@@ -2,12 +2,12 @@
 
 from django.contrib import admin
 
-from .models import New
+from .models import News
 
 
-@admin.register(New)
-class NewAdmin(admin.ModelAdmin):
-    """Admin for New model."""
+@admin.register(News)
+class NewsAdmin(admin.ModelAdmin):
+    """Admin for News model."""
 
     list_per_page = 25
     search_fields = [
@@ -15,6 +15,7 @@ class NewAdmin(admin.ModelAdmin):
     ]
     list_display = [
         "title",
+        "available",
     ]
     list_filter = [
         "available",

@@ -84,6 +84,6 @@ class StaffMinimalSerializer(serializers.ModelSerializer):
         ]
 
     def to_representation(self, instance):
-        data = super().to_representation(instance)
-        data["image"] = data.get("image", "") or ""
-        return data
+        representation = super().to_representation(instance)
+        representation["image"] = representation.get("image", "") or ""
+        return representation
