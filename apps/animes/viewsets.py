@@ -26,11 +26,12 @@ from apps.news.models import News
 from apps.news.serializers import NewsMinimalSerializer
 from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer, ReviewWriteSerializer
-from .models import Anime
+from .models import Anime, AnimeStats
 from .serializers import (
     AnimeReadSerializer,
     AnimeWriteSerializer,
     AnimeMinimalSerializer,
+    AnimeStatsReadSerializer,
 )
 from .schemas import anime_schemas
 
@@ -111,6 +112,15 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         except Exception as e:
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
+    # @action(
+    #     detail=True,
+    #     methods=["get"],
+    #     permission_classes=[AllowAny],
+    #     url_path="episodes",
+    # )
+    # def get_episodes(self, request, pk=None, *args, **kwargs):
+    #     pass
+
     @action(
         detail=True,
         methods=["get"],
@@ -155,93 +165,18 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
 
     @action(
         detail=True,
-        methods=["get"],
-        permission_classes=[AllowAny],
-        url_path="recommendations",
-    )
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_recommendations(self, request, pk=None, *args, **kwargs):
-        """
-        Action retrieve recommendations associated with a anime.
-
-        Endpoints:
-        - GET api/v1/animes/{id}/recommendations/
-        """
-        try:
-            anime = self.get_object()
-        except Anime.DoesNotExist:
-            return Response(
-                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-        try:
-            similar_anime = (
-                Anime.objects.filter(
-                    genres__in=anime.genres.all(),
-                    themes__in=anime.themes.all(),
-                )
-                .exclude(id=anime.id)
-                .distinct()[:25]
-            )
-            # TODO: Add manager, add tests
-            if similar_anime:
-                serializer = AnimeMinimalSerializer(similar_anime, many=True)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No recommendations found for this anime.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-    @action(
-        detail=True,
         methods=["GET"],
         permission_classes=[AllowAny],
-        url_path="news",
-    )
-    def get_news(self, request, pk=None, *args, **kwargs):
-        """
-        Action retrieve news associated with a anime.
-
-        Endpoints:
-        - GET api/v1/animes/{id}/videos/
-        """
-        try:
-            anime = self.get_object()
-        except Anime.DoesNotExist:
-            return Response(
-                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-        try:
-            news = News.objects.get_anime_news(anime)  # TODO: Optimize query 43.5 ms
-            if news:
-                serializer = NewsMinimalSerializer(news, many=True)
-                return Response(serializer.data)
-            return Response({"detail": _("No News found.")})
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-    @action(
-        detail=True,
-        methods=["get"],
-        permission_classes=[AllowAny],
-        url_path="pictures",
+        url_path="stats",
     )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_pictures(self, request, pk=None, *args, **kwargs):
+    def get_stats(self, request, *args, **kwargs):
         """
-        Action retrieve pictures associated with a anime.
+        Action retrieve stats associated with a anime.
 
         Endpoints:
-        - GET api/v1/animes/{id}/pictures/
+        - GET api/v1/animes/{id}/stats/
         """
         try:
             anime = self.get_object()
@@ -253,87 +188,17 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
         try:
-            pictures = Picture.objects.filter(
-                content_type__model="anime", object_id=anime.id
-            )  # TODO: Add manager
-            if pictures:
-                serializer = PictureReadSerializer(pictures, many=True)
-                return Response(serializer.data)
+            # stats = AnimeStats.objects.get(anime_id=anime.pk)
+            stats = anime.stats  # reverse relationship
+            serializer = AnimeStatsReadSerializer(stats)
+            return Response(serializer.data)
+        except AnimeStats.DoesNotExist:
             return Response(
-                {"detail": _("No pictures found for this anime.")},
+                {"detail": _("No stats found for this anime.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-    @action(
-        detail=True,
-        methods=["get"],
-        permission_classes=[AllowAny],
-        url_path="videos",
-    )
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_videos(self, request, pk=None, *args, **kwargs):
-        """
-        Action retrieve videos associated with a anime.
-
-        Endpoints:
-        - GET api/v1/animes/{id}/videos/
-        """
-        try:
-            anime = self.get_object()
-        except Anime.DoesNotExist:
-            return Response(
-                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-        try:
-            videos = Video.objects.filter(
-                content_type__model="anime", object_id=anime.id
-            )  # TODO: Add manager
-            if videos:
-                serializer = VideoReadSerializer(videos, many=True)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No videos found for this anime.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-    # @action(
-    #     detail=True,
-    #     methods=["get"],
-    #     permission_classes=[AllowAny],
-    #     url_path="news",
-    # )
-    # def get_news(self, request, pk=None):
-    #     pass
-    #     # TODO: Pending
-
-    @extend_schema(
-        summary="Get Popular Animes",
-        description="Retrieve a list of the 50 most popular anime.",
-    )
-    @action(detail=False, methods=["get"], url_path="popular")
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_populars(self, request, pk=None):
-        """
-        Action return a list of the 50 most popular anime.
-
-        Endpoints:
-        - GET /api/v1/animes/popular/
-        """
-        popular_list = Anime.objects.get_popular()[:50]
-
-        if not popular_list:
-            return Response(status=status.HTTP_204_NO_CONTENT)
-        serializer = AnimeMinimalSerializer(popular_list, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
 
     @action(
         detail=True,
@@ -435,3 +300,180 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 return Response({"detail": message}, status=status.HTTP_403_FORBIDDEN)
             review.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="recommendations",
+    )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def get_recommendations(self, request, pk=None, *args, **kwargs):
+        """
+        Action retrieve recommendations associated with a anime.
+
+        Endpoints:
+        - GET api/v1/animes/{id}/recommendations/
+        """
+        try:
+            anime = self.get_object()
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            similar_anime = (
+                Anime.objects.filter(
+                    genres__in=anime.genres.all(),
+                    themes__in=anime.themes.all(),
+                )
+                .exclude(id=anime.id)
+                .distinct()[:25]
+            )  # TODO: Add manager, add tests
+            serializer = AnimeMinimalSerializer(similar_anime, many=True)
+            return Response(serializer.data)
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": _("No recommendations found for this anime.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    # @action(
+    #     detail=True,
+    #     methods=["get"],
+    #     permission_classes=[AllowAny],
+    #     url_path="interest-stacks",
+    # )
+    # def get_interest_stacks(self, request, pk=None, *args, **kwargs):
+    #     pass
+
+    @action(
+        detail=True,
+        methods=["GET"],
+        permission_classes=[AllowAny],
+        url_path="news",
+    )
+    def get_news(self, request, pk=None, *args, **kwargs):
+        """
+        Action retrieve news associated with a anime.
+
+        Endpoints:
+        - GET api/v1/animes/{id}/news/
+        """
+        try:
+            anime = self.get_object()
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            news = News.objects.get_anime_news(anime)  # TODO: Optimize query 43.5 ms
+            serializer = NewsMinimalSerializer(news, many=True)
+            return Response(serializer.data)
+        except News.DoesNotExist:
+            return Response({"detail": _("No news found for this anime.")})
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    # @action(
+    #     detail=True,
+    #     methods=["get"],
+    #     permission_classes=[AllowAny],
+    #     url_path="forum",
+    # )
+    # def get_forum(self, request, pk=None, *args, **kwargs):
+    #     pass
+
+    # @action(
+    #     detail=True,
+    #     methods=["get"],
+    #     permission_classes=[AllowAny],
+    #     url_path="clubs",
+    # )
+    # def get_clubs(self, request, pk=None, *args, **kwargs):
+    #     pass
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="videos",
+    )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def get_videos(self, request, pk=None, *args, **kwargs):
+        """
+        Action retrieve videos associated with a anime.
+
+        Endpoints:
+        - GET api/v1/animes/{id}/videos/
+        """
+        try:
+            anime = self.get_object()
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            videos = Video.objects.filter(
+                content_type__model="anime", object_id=anime.id
+            )  # TODO: Add manager
+            serializer = VideoReadSerializer(videos, many=True)
+            return Response(serializer.data)
+        except Video.DoesNotExist:
+            return Response(
+                {"detail": _("No videos found for this anime.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="pictures",
+    )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def get_pictures(self, request, pk=None, *args, **kwargs):
+        """
+        Action retrieve pictures associated with a anime.
+
+        Endpoints:
+        - GET api/v1/animes/{id}/pictures/
+        """
+        try:
+            anime = self.get_object()
+        except Anime.DoesNotExist:
+            return Response(
+                {"detail": _("Anime not found.")}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            pictures = Picture.objects.filter(
+                content_type__model="anime", object_id=anime.id
+            )  # TODO: Add manager
+            serializer = PictureReadSerializer(pictures, many=True)
+            return Response(serializer.data)
+        except Picture.DoesNotExist:
+            return Response(
+                {"detail": _("No pictures found for this anime.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)

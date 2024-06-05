@@ -5,7 +5,7 @@ from rest_framework import serializers
 from apps.studios.serializers import StudioReadSerializer
 from apps.genres.serializers import GenreReadSerializer
 from apps.seasons.serializers import SeasonReadSerializer
-from .models import Anime
+from .models import Anime, AnimeStats
 
 
 class AnimeReadSerializer(serializers.ModelSerializer):
@@ -91,3 +91,20 @@ class AnimeMinimalSerializer(serializers.ModelSerializer):
 
     # def get_year(self, obj):
     #     return int(obj.season.year if obj.season else None)
+
+
+class AnimeStatsReadSerializer(serializers.ModelSerializer):
+    """Serializer for AnimeStats model (List/retrieve)."""
+
+    class Meta:
+        model = AnimeStats
+        fields = [
+            "id",
+            "watching",
+            "completed",
+            "on_hold",
+            "dropped",
+            "plan_to_watch",
+            "total",
+            "updated_at",
+        ]

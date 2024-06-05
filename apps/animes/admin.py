@@ -3,7 +3,7 @@
 from django.contrib import admin
 from import_export import resources
 
-from .models import Anime
+from .models import Anime, AnimeStats
 
 
 class BookResource(resources.ModelResource):
@@ -50,4 +50,29 @@ class AnimeAdmin(admin.ModelAdmin):
         "genres",
         "themes",
         "season",
+    ]
+
+
+@admin.register(AnimeStats)
+class AnimeStatsAdmin(admin.ModelAdmin):
+    """Admin for AnimeStats model."""
+
+    list_per_page = 25
+    search_fields = [
+        "anime_id",
+    ]
+    list_display = [
+        "anime_id",
+        "available",
+    ]
+    list_filter = [
+        "available",
+    ]
+    list_editable = [
+        "available",
+    ]
+    readonly_fields = [
+        "pk",
+        "created_at",
+        "updated_at",
     ]
