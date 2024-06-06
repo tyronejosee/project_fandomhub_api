@@ -17,14 +17,14 @@ class ReviewAdmin(admin.ModelAdmin):
     list_display = [
         "user",
         "comment",
-        "available",
+        "is_available",
     ]
     list_filter = [
         "rating",
         "is_spoiler",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",

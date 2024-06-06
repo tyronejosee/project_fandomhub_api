@@ -7,4 +7,4 @@ class PersonManager(Manager):
     """Manager for Person model."""
 
     def get_available(self):
-        return self.filter(available=True)
+        return self.filter(is_available=True)

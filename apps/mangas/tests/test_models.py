@@ -16,10 +16,10 @@ class MangaModelTestCase(TestCase):
     def setUp(self):
         # External models
         self.genre = Genre.objects.create(name="Action")
-        self.author = Person.objects.create(
+        self.author_id = Person.objects.create(
             name="Fujimoto Tatsuki"
         )  # TODO: Add new fields
-        self.demographic = Demographic.objects.create(name="Shounen")
+        self.demographic_id = Demographic.objects.create(name="Shounen")
 
     def test_manga_creation(self):
         """Test creation of a Manga instance."""
@@ -34,8 +34,8 @@ class MangaModelTestCase(TestCase):
             media_type=1,
             website="https://www.shonenjump.com/j/rensai/chainsaw.html",
             status=1,
-            author=self.author,
-            demographic=self.demographic,
+            author=self.author_id,
+            demographic=self.demographic_id,
             score=8.0,
             ranked=1,
             popularity=100,
@@ -43,7 +43,7 @@ class MangaModelTestCase(TestCase):
         )
 
         # Set ManyToManyField
-        manga.genres.set([self.genre])
+        manga.genres_id.set([self.genre])
 
         self.assertEqual(manga.name, "Chainsaw Man")
         self.assertEqual(manga.name_jpn, "チェンソーマン")
@@ -56,9 +56,9 @@ class MangaModelTestCase(TestCase):
             manga.website, "https://www.shonenjump.com/j/rensai/chainsaw.html"
         )
         self.assertEqual(manga.status, 1)
-        self.assertEqual(manga.author, self.author)
-        self.assertEqual(manga.demographic, self.demographic)
-        self.assertEqual(manga.genres.first(), self.genre)
+        self.assertEqual(manga.author_id, self.author_id)
+        self.assertEqual(manga.demographic_id, self.demographic_id)
+        self.assertEqual(manga.genres_id.first(), self.genre)
         self.assertEqual(manga.score, 8.0)
         self.assertEqual(manga.ranked, 1)
         self.assertEqual(manga.popularity, 100)
@@ -70,7 +70,7 @@ class MangaModelTestCase(TestCase):
             manga1 = Manga(
                 name="Fire Punch",
                 name_jpn="ファイアパンチ",
-                author=self.author,
+                author=self.author_id,
                 chapters=83,
             )
             manga1.save()
@@ -78,7 +78,7 @@ class MangaModelTestCase(TestCase):
             manga2 = Manga(
                 name="Fire Punch",
                 name_jpn="ファイアパンチ",
-                author=self.author,
+                author=self.author_id,
                 chapters=83,
             )
             manga2.full_clean()  # Error
@@ -86,7 +86,10 @@ class MangaModelTestCase(TestCase):
     def test_update_manga(self):
         """Test updating a manga."""
         manga = Manga(
-            name="Goodbye, Ery", name_jpn="さよなら絵梨", author=self.author, chapters=1
+            name="Goodbye, Ery",
+            name_jpn="さよなら絵梨",
+            author=self.author_id,
+            chapters=1,
         )
         manga.save()
 

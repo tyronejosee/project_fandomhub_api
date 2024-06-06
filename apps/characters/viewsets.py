@@ -137,7 +137,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             serializer = PersonMinimalSerializer(persons, many=True)
             return Response(serializer.data)
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     @action(
         detail=True,
@@ -169,7 +169,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     @action(
         detail=True,
@@ -201,4 +201,4 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

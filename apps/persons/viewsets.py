@@ -95,7 +95,7 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                     status=status.HTTP_400_BAD_REQUEST,
                 )
             manga_list = person.manga_set.all()
-            # manga_list = Manga.objects.filter(author=pk)
+            # manga_list = Manga.objects.filter(author_id=pk)
             if manga_list.exists():
                 paginator = MediumSetPagination()
                 paginated_data = paginator.paginate_queryset(manga_list, request)
@@ -106,7 +106,9 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
@@ -138,7 +140,9 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
     @action(
         detail=True,
@@ -168,4 +172,6 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 )
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )

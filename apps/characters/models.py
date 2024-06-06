@@ -70,7 +70,7 @@ class CharacterVoice(BaseModel):
         return str(f"{self.character_id} - {self.voice_id}")
 
 
-class CharacterAnime(models.Model):
+class CharacterAnime(BaseModel):
     """Model definition for CharacterAnime."""
 
     character_id = models.ForeignKey(
@@ -98,7 +98,7 @@ class CharacterAnime(models.Model):
         return str(f"{self.character_id} - {self.anime_id}")
 
 
-class CharacterManga(models.Model):
+class CharacterManga(BaseModel):
     """Model definition for CharacterManga."""
 
     character_id = models.ForeignKey(

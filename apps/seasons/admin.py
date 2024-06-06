@@ -17,10 +17,10 @@ class SeasonAdmin(admin.ModelAdmin):
     ]
     list_display = [
         "fullname",
-        "available",
+        "is_available",
     ]
     list_filter = [
-        "available",
+        "is_available",
         "year",
         "season",
     ]

@@ -14,7 +14,7 @@ class ReviewReadSerializer(serializers.ModelSerializer):
         model = Review
         fields = [
             "id",
-            "user",
+            "user_id",
             "rating",
             "comment",
             "is_spoiler",

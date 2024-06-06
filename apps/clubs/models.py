@@ -58,8 +58,8 @@ class Club(BaseModel, SlugMixin):
 class ClubMember(BaseModel):
     """Model definition for ClubMember."""
 
-    club = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=_("club"))
-    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("user"))
+    club_id = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=_("club"))
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("user"))
     joined_at = models.DateTimeField(_("joined_at"), auto_now_add=True)
 
     objects = ClubMemberManager()
@@ -69,7 +69,7 @@ class ClubMember(BaseModel):
         verbose_name = _("club member")
         verbose_name_plural = _("club members")
         constraints = [
-            UniqueConstraint(fields=["club", "user"], name="unique_club_user")
+            UniqueConstraint(fields=["club_id", "user_id"], name="unique_club_user")
         ]
 
     def __str__(self):
@@ -79,7 +79,7 @@ class ClubMember(BaseModel):
 class Event(BaseModel):
     """Model definition for Event."""
 
-    club = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=_("club"))
+    club_id = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=_("club"))
     name = models.CharField(_("name"), max_length=255)
     description = models.TextField(_("description"))
     date = models.DateTimeField(_("date"))
@@ -96,7 +96,7 @@ class Event(BaseModel):
 class Topic(BaseModel):
     """Model definition for Topic."""
 
-    club = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=_("topic"))
+    club_id = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=_("topic"))
     name = models.CharField(_("name"), max_length=255)
     created_by = models.ForeignKey(
         User,
@@ -117,7 +117,11 @@ class Topic(BaseModel):
 class Discussion(BaseModel):
     """Model definition for Discussion."""
 
-    topic = models.ForeignKey(Topic, on_delete=models.CASCADE, verbose_name=_("topic"))
+    topic_id = models.ForeignKey(
+        Topic,
+        on_delete=models.CASCADE,
+        verbose_name=_("topic"),
+    )
     content = models.TextField(_("content"))
     created_by = models.ForeignKey(
         User,

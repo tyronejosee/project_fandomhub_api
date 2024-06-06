@@ -20,7 +20,7 @@ class PictureAdmin(admin.ModelAdmin):
         "content_type",
     ]
     list_filter = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",
@@ -42,7 +42,7 @@ class VideoAdmin(admin.ModelAdmin):
         "content_type",
     ]
     list_filter = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",

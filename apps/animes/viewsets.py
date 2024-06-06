@@ -103,7 +103,9 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             serializer = CharacterMinimalSerializer(characters, many=True)
             return Response(serializer.data)
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
     # @action(
     #     detail=True,
@@ -147,7 +149,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             serializer = StaffMinimalSerializer(staff, many=True)
             return Response(serializer.data)
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     @action(
         detail=True,
@@ -177,7 +179,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     @action(
         detail=True,
@@ -300,8 +302,8 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         try:
             similar_anime = (
                 Anime.objects.filter(
-                    genres__in=anime.genres.all(),
-                    themes__in=anime.themes.all(),
+                    genres__in=anime.genres_id.all(),
+                    themes__in=anime.themes_id.all(),
                 )
                 .exclude(id=anime.id)
                 .distinct()[:25]
@@ -314,7 +316,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     # @action(
     #     detail=True,
@@ -347,7 +349,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 return Response(serializer.data)
             return Response({"detail": _("No news found for this anime.")})
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     # @action(
     #     detail=True,
@@ -396,7 +398,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     @action(
         detail=True,
@@ -427,4 +429,4 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

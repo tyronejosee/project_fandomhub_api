@@ -12,14 +12,14 @@ class ProfileAdmin(admin.ModelAdmin):
     list_per_page = 25
     ordering = ["created_at"]
     search_fields = [
-        "user",
+        "user_id",
     ]
     list_display = [
-        "user",
-        "available",
+        "user_id",
+        "is_available",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",

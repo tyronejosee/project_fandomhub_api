@@ -25,15 +25,15 @@ class AnimeAdmin(admin.ModelAdmin):
     ]
     list_display = [
         "name",
-        "available",
+        "is_available",
     ]
     list_filter = [
         "status",
-        "genres",
-        "studio",
+        "genres_id",
+        "studio_id",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",
@@ -47,10 +47,10 @@ class AnimeAdmin(admin.ModelAdmin):
         "updated_at",
     ]
     autocomplete_fields = [
-        "studio",
-        "genres",
-        "themes",
-        "season",
+        "studio_id",
+        "genres_id",
+        "themes_id",
+        "season_id",
     ]
 
 
@@ -64,13 +64,13 @@ class AnimeStatsAdmin(admin.ModelAdmin):
     ]
     list_display = [
         "anime_id",
-        "available",
+        "is_available",
     ]
     list_filter = [
-        "available",
+        "is_available",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",

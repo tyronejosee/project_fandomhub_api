@@ -4,9 +4,8 @@ from django.db.models import TextChoices
 from django.utils.translation import gettext_lazy as _
 
 
-class StatusChoices(TextChoices):  # TODO: AnimeStatus
+class AnimeStatusChoices(TextChoices):
 
-    PENDING = "pending", _("Pending")  # TODO: Remove
     WATCHING = "watching", _("Watching")
     COMPLETED = "completed", _("Completed")
     ON_HOLD = "on_hold", _("On Hold")

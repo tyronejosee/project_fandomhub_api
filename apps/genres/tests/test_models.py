@@ -12,7 +12,7 @@ class GenreModelTestCase(TestCase):
         """Test creating a studio."""
         genre = Genre.objects.create(name="Romance")
         self.assertEqual(genre.name, "Romance")
-        self.assertEqual(genre.available, True)
+        self.assertEqual(genre.is_available, True)
 
     def test_update_genre(self):
         """Test updating a genre."""

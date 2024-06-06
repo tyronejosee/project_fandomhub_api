@@ -9,12 +9,18 @@ from .models import Studio
 class StudioAdmin(admin.ModelAdmin):
     """Admin for Studio model."""
 
-    ordering = ["created_at"]
     list_per_page = 25
-    search_fields = ["name", "name_jpn"]
-    list_display = ["name", "available"]
+    ordering = ["created_at"]
+    search_fields = [
+        "name",
+        "name_jpn",
+    ]
+    list_display = [
+        "name",
+        "is_available",
+    ]
     list_filter = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",

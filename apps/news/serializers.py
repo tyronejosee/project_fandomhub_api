@@ -8,14 +8,14 @@ from .models import News
 class NewsReadSerializer(serializers.ModelSerializer):
     """Serializer for News model (List/retrieve)."""
 
-    author = serializers.SerializerMethodField()
+    author_id = serializers.SerializerMethodField()
     tag = serializers.CharField(source="get_tag_display")
 
     class Meta:
         model = News
         fields = [
             "id",
-            "author",
+            "author_id",
             "name",
             "description",
             "content",
@@ -29,7 +29,7 @@ class NewsReadSerializer(serializers.ModelSerializer):
         ]
 
     def get_author(self, obj):
-        return obj.author.username
+        return obj.author_id.username
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)
@@ -57,14 +57,14 @@ class NewsWriteSerializer(serializers.ModelSerializer):
 class NewsMinimalSerializer(serializers.ModelSerializer):
     """Serializer for News model (Minimal)."""
 
-    author = serializers.SerializerMethodField()
+    author_id = serializers.SerializerMethodField()
     tag = serializers.CharField(source="get_tag_display")
 
     class Meta:
         model = News
         fields = [
             "id",
-            "author",
+            "author_id",
             "name",
             "description",
             "image",
@@ -72,7 +72,7 @@ class NewsMinimalSerializer(serializers.ModelSerializer):
         ]
 
     def get_author(self, obj):
-        return obj.author.username
+        return obj.author_id.username
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)

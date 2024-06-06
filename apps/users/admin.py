@@ -9,8 +9,8 @@ from .models import User
 class UserAdmin(admin.ModelAdmin):
     """Admin for User model."""
 
-    ordering = ["username"]
     list_per_page = 25
+    ordering = ["username"]
     list_display = [
         "username",
         "email",

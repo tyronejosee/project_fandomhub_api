@@ -7,10 +7,10 @@ class MangaManager(Manager):
     """Manager for Manga model."""
 
     def get_available(self):
-        return self.filter(available=True)
+        return self.filter(is_available=True)
 
     def get_unavailable(self):
-        return self.filter(available=False)
+        return self.filter(is_available=False)
 
     def get_popular(self):
         return self.get_available().order_by("-popularity")
@@ -33,7 +33,7 @@ class MangaManager(Manager):
     def get_by_genre(self, genre):
         return (
             self.get_available()
-            .filter(genres=genre)
+            .filter(genres_id=genre)
             .only("id", "name", "image", "release", "media_type", "status")
         )
 
@@ -42,4 +42,4 @@ class MagazineManager(Manager):
     """Manager for Magazine model."""
 
     def get_available(self):
-        return self.filter(available=True)
+        return self.filter(is_available=True)

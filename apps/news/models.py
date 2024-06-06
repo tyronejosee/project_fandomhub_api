@@ -17,7 +17,6 @@ User = settings.AUTH_USER_MODEL
 class News(BaseModel):
     """Model definition for News."""
 
-    author = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("user"))
     name = models.CharField(_("title"), max_length=100)
     description = models.CharField(_("description"), max_length=255)
     content = models.TextField(_("content"))
@@ -31,6 +30,11 @@ class News(BaseModel):
     )
     anime_relations = models.ManyToManyField(Anime, blank=True)
     manga_relations = models.ManyToManyField(Manga, blank=True)
+    author_id = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        verbose_name=_("user"),
+    )
 
     objects = NewsManager()
 

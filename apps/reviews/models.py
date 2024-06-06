@@ -16,7 +16,7 @@ User = settings.AUTH_USER_MODEL
 class Review(BaseModel):
     """Model definition for Review."""
 
-    user = models.ForeignKey(
+    user_id = models.ForeignKey(
         User, on_delete=models.CASCADE, db_index=True, verbose_name=_("user")
     )
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)

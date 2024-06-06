@@ -11,9 +11,9 @@ from .models import Anime, AnimeStats
 class AnimeReadSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
 
-    studio = StudioReadSerializer()
-    genres = GenreReadSerializer(many=True)
-    season = SeasonReadSerializer()
+    studio_id = StudioReadSerializer()
+    genres_id = GenreReadSerializer(many=True)
+    season_id = SeasonReadSerializer()
     status = serializers.CharField(source="get_status_display")
     category = serializers.CharField(source="get_category_display")
 
@@ -33,11 +33,11 @@ class AnimeReadSerializer(serializers.ModelSerializer):
             "episodes",
             "status",
             "release",
-            "season",
-            "studio",
+            "season_id",
+            "studio_id",
             "source",
-            "genres",
-            "themes",
+            "genres_id",
+            "themes_id",
             "duration",
             "rating",
             "website",
@@ -67,11 +67,11 @@ class AnimeWriteSerializer(serializers.ModelSerializer):
             "episodes",
             "status",
             "release",
-            "season",
-            "studio",
+            "season_id",
+            "studio_id",
             "source",
-            "genres",
-            "themes",
+            "genres_id",
+            "themes_id",
             "duration",
             "rating",
             "website",

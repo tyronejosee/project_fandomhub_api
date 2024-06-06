@@ -12,9 +12,9 @@ class ThemeAdmin(admin.ModelAdmin):
     search_fields = [
         "name",
     ]
-    list_display = ["name", "available"]
+    list_display = ["name", "is_available"]
     list_filter = [
-        "available",
+        "is_available",
     ]
     list_per_page = 25
     readonly_fields = [
@@ -35,9 +35,9 @@ class DemographicAdmin(admin.ModelAdmin):
     search_fields = [
         "name",
     ]
-    list_display = ["name", "available"]
+    list_display = ["name", "is_available"]
     list_filter = [
-        "available",
+        "is_available",
     ]
     list_per_page = 25
     readonly_fields = [

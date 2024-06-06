@@ -10,9 +10,9 @@ from .models import Manga
 class MangaReadSerializer(serializers.ModelSerializer):
     """Serializer for Manga model (Retrieve)."""
 
-    author = serializers.CharField(source="author.name")
-    demographic = DemographicReadSerializer()
-    genres = GenreReadSerializer(many=True)
+    author_id = serializers.CharField(source="author.name")
+    demographic_id = DemographicReadSerializer()
+    genres_id = GenreReadSerializer(many=True)
     media_type = serializers.CharField(source="get_media_type_display")
     status = serializers.CharField(source="get_status_display")
 
@@ -32,11 +32,11 @@ class MangaReadSerializer(serializers.ModelSerializer):
             "chapters",
             "status",
             "release",
-            "genres",
-            "themes",
-            "demographic",
-            "serialization",
-            "author",
+            "genres_id",
+            "themes_id",
+            "demographic_id",
+            "serialization_id",
+            "author_id",
             "website",
             "is_recommended",
             "score",
@@ -66,11 +66,11 @@ class MangaWriteSerializer(serializers.ModelSerializer):
             "chapters",
             "status",
             "release",
-            "genres",
-            "themes",
-            "demographic",
-            "serialization",
-            "author",
+            "genres_id",
+            "themes_id",
+            "demographic_id",
+            "serialization_id",
+            "author_id",
             "website",
         ]
         extra_kwargs = {

@@ -15,10 +15,10 @@ class NewsAdmin(admin.ModelAdmin):
     ]
     list_display = [
         "name",
-        "available",
+        "is_available",
     ]
     list_filter = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",

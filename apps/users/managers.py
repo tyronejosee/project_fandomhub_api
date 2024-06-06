@@ -20,7 +20,7 @@ class UserManager(BaseUserManager):
 
         user.set_password(password)
         user.save()
-        profile = Profile.objects.create(user=user)
+        profile = Profile.objects.create(user_id=user)
         profile.save()
         return user
 

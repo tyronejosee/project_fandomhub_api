@@ -17,7 +17,6 @@ class Season(BaseModel):
         _("season"),
         max_length=10,
         choices=SeasonChoices.choices,
-        default=SeasonChoices.PENDING,
     )
     year = models.IntegerField(
         _("year"),

@@ -21,7 +21,7 @@ class StudioModelTestCase(TestCase):
         self.assertEqual(studio.name, "Studio Ghibli")
         self.assertEqual(studio.name_jpn, "スタジオジブリ")
         self.assertEqual(studio.established, "Jun, 1985")
-        self.assertEqual(studio.available, True)
+        self.assertEqual(studio.is_available, True)
         self.assertEqual(studio.image, None)
 
     def test_update_studio(self):

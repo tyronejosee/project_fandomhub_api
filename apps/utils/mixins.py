@@ -47,7 +47,7 @@ class LogicalDeleteMixin:
         """Deletes the instance logically by marking it as unavailable."""
         try:
             instance = self.get_object()
-            instance.available = False
+            instance.is_available = False
             instance.save()
             cache.clear()
             return Response(status=status.HTTP_204_NO_CONTENT)

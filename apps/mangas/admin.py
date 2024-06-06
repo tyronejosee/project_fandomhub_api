@@ -17,14 +17,14 @@ class MangaAdmin(admin.ModelAdmin):
     ]
     list_display = [
         "name",
-        "available",
+        "is_available",
     ]
     list_filter = [
         "status",
-        "genres",
+        "genres_id",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",
@@ -38,8 +38,9 @@ class MangaAdmin(admin.ModelAdmin):
         "updated_at",
     ]
     autocomplete_fields = [
-        "author",
-        "demographic",
-        "genres",
-        "themes",
+        "author_id",
+        "demographic_id",
+        "serialization_id",
+        "genres_id",
+        "themes_id",
     ]

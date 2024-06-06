@@ -49,7 +49,7 @@ class ClubMemberReadSerializer(serializers.ModelSerializer):
     class Meta:
         model = ClubMember
         fields = [
-            "user",
+            "user_id",
             "joined_at",
         ]
 
@@ -60,7 +60,7 @@ class ClubMemberWriteSerializer(serializers.ModelSerializer):
     class Meta:
         model = ClubMember
         fields = [
-            "user",
+            "user_id",
         ]
 
     def create(self, validated_data):

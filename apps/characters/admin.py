@@ -17,13 +17,13 @@ class CharacterAdmin(admin.ModelAdmin):
     ]
     list_display = [
         "name",
-        "available",
+        "is_available",
     ]
     list_filter = [
         "role",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",
@@ -46,13 +46,13 @@ class CharacterVoiceAdmin(admin.ModelAdmin):
     list_display = [
         "character_id",
         "voice_id",
-        "available",
+        "is_available",
     ]
     list_filter = [
         "character_id",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",
@@ -75,7 +75,7 @@ class CharacterMangaAdmin(admin.ModelAdmin):
         "manga_id",
     ]
     # list_editable = [
-    #     "available",
+    #     "is_available",
     # ]
     # readonly_fields = [
     #     "pk",
@@ -98,7 +98,7 @@ class CharacterAnimeAdmin(admin.ModelAdmin):
         "anime_id",
     ]
     # list_editable = [
-    #     "available",
+    #     "is_available",
     # ]
     # readonly_fields = [
     #     "pk",

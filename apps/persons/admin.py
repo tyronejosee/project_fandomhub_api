@@ -17,10 +17,10 @@ class PersonAdmin(admin.ModelAdmin):
     list_display = [
         "name",
         "category",
-        "available",
+        "is_available",
     ]
     list_filter = [
-        "available",
+        "is_available",
         "category",
     ]
     readonly_fields = [
@@ -43,13 +43,13 @@ class StaffAnimeAdmin(admin.ModelAdmin):
     list_display = [
         "person_id",
         "anime_id",
-        "available",
+        "is_available",
     ]
     list_filter = [
         "anime_id",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",

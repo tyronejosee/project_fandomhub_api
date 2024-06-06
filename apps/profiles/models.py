@@ -16,7 +16,7 @@ User = settings.AUTH_USER_MODEL
 class Profile(BaseModel):
     """Model definition for Profile."""
 
-    user = models.OneToOneField(
+    user_id = models.OneToOneField(
         User,
         on_delete=models.CASCADE,
         related_name="profile",

@@ -4,7 +4,7 @@
 
 Table Base {
   id uuid [pk]
-  available bool
+  is_available bool
   updated_at datetime
   created_at datetime
 }

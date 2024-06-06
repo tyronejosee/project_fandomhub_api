@@ -7,10 +7,10 @@ class AnimeManager(Manager):
     """Manager for Anime model."""
 
     def get_available(self):
-        return self.filter(available=True)
+        return self.filter(is_available=True)
 
     def get_unavailable(self):
-        return self.filter(available=False)
+        return self.filter(is_available=False)
 
     def get_popular(self):
         return self.get_available().order_by("-popularity")
@@ -34,7 +34,7 @@ class AnimeManager(Manager):
     def get_by_genre(self, genre):
         return (
             self.get_available()
-            .filter(genres=genre)
+            .filter(genres_id=genre)
             .only(
                 "id",
                 "name",
@@ -47,7 +47,7 @@ class AnimeManager(Manager):
         )  # TODO: Optimize 44.3 ms
 
     def get_by_season(self, season):
-        return self.get_available().filter(season=season)
+        return self.get_available().filter(season_id=season)
 
     def get_by_studio(self, studio):
-        return self.get_available().filter(studio=studio)
+        return self.get_available().filter(studio_id=studio)

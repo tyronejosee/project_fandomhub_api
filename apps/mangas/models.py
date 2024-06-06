@@ -73,23 +73,23 @@ class Manga(BaseModel, SlugMixin):
         default=StatusChoices.AIRING,
     )
     release = models.DateField(_("release"))
-    genres = models.ManyToManyField(Genre, verbose_name=_("genres"))
-    themes = models.ManyToManyField(Theme, verbose_name=_("themes"))
-    demographic = models.ForeignKey(
+    genres_id = models.ManyToManyField(Genre, verbose_name=_("genres"))
+    themes_id = models.ManyToManyField(Theme, verbose_name=_("themes"))
+    demographic_id = models.ForeignKey(
         Demographic,
         on_delete=models.CASCADE,
         blank=True,
         null=True,
         verbose_name=_("demographic"),
     )
-    serialization = models.ForeignKey(
+    serialization_id = models.ForeignKey(
         Magazine,
         on_delete=models.CASCADE,
         blank=True,
         null=True,
         verbose_name=_("serialization"),
     )
-    author = models.ForeignKey(
+    author_id = models.ForeignKey(
         Person,
         on_delete=models.CASCADE,
         verbose_name=_("author"),

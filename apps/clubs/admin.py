@@ -18,15 +18,15 @@ class ClubAdmin(admin.ModelAdmin):
         "name",
         "members",
         "is_public",
-        "available",
+        "is_available",
     ]
     list_filter = [
-        "available",
+        "is_available",
         "is_public",
         "category",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",
@@ -49,14 +49,14 @@ class ClubMemberAdmin(admin.ModelAdmin):
     list_display = [
         "club",
         "user",
-        "available",
+        "is_available",
     ]
     list_filter = [
-        "available",
+        "is_available",
         "club",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",
@@ -77,14 +77,14 @@ class EventAdmin(admin.ModelAdmin):
     list_display = [
         "club",
         "name",
-        "available",
+        "is_available",
     ]
     list_filter = [
-        "available",
+        "is_available",
         "club",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",
@@ -104,13 +104,13 @@ class TopicAdmin(admin.ModelAdmin):
     ]
     list_display = [
         "club",
-        "available",
+        "is_available",
     ]
     list_filter = [
-        "available",
+        "is_available",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",
@@ -131,14 +131,14 @@ class DiscussionAdmin(admin.ModelAdmin):
     list_display = [
         "topic",
         "content",
-        "available",
+        "is_available",
     ]
     list_filter = [
-        "available",
+        "is_available",
         "topic",
     ]
     list_editable = [
-        "available",
+        "is_available",
     ]
     readonly_fields = [
         "pk",

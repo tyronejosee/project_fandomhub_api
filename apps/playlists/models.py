@@ -87,7 +87,7 @@ class PlaylistItem(BaseModel):
     )
     is_watched = models.BooleanField(_("is watched"), default=False, db_index=True)
     is_favorite = models.BooleanField(_("is favorite"), default=False, db_index=True)
-    order = models.FloatField(default=0)
+    order = models.PositiveIntegerField(default=0)
 
     class Meta:
         ordering = ["pk"]

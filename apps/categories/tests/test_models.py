@@ -13,7 +13,7 @@ class ThemeModelTestCase(TestCase):
         """Test creating a theme."""
         theme = Theme.objects.create(name="Parody")
         self.assertEqual(theme.name, "Parody")
-        self.assertEqual(theme.available, True)
+        self.assertEqual(theme.is_available, True)
 
     def test_update_theme(self):
         """Test updating a theme."""

@@ -86,4 +86,4 @@ class StudioViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

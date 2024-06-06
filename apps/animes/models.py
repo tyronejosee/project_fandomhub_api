@@ -62,14 +62,14 @@ class Anime(BaseModel, SlugMixin):
         default=StatusChoices.AIRING,
     )
     release = models.DateField(_("release"))
-    season = models.ForeignKey(
+    season_id = models.ForeignKey(
         Season, on_delete=models.CASCADE, verbose_name=_("season")
     )  # Revition
     # premiered
     # broadcast
     # producers
     # licensors
-    studio = models.ForeignKey(
+    studio_id = models.ForeignKey(
         Studio,
         on_delete=models.CASCADE,
         verbose_name=_("studio"),
@@ -80,8 +80,8 @@ class Anime(BaseModel, SlugMixin):
         choices=SourceChoices.choices,
         default=SourceChoices.MANGA,
     )
-    genres = models.ManyToManyField(Genre, verbose_name=_("genres"))
-    themes = models.ManyToManyField(Theme, verbose_name=_("themes"))
+    genres_id = models.ManyToManyField(Genre, verbose_name=_("genres"))
+    themes_id = models.ManyToManyField(Theme, verbose_name=_("themes"))
     duration = models.CharField(_("duration"), max_length=20, blank=True)
     rating = models.CharField(
         _("rating"),

@@ -22,7 +22,7 @@ class ProfileViewSet(ViewSet):
     def get_object(self, request):
         # Get a profile instance by user
         user = request.user
-        profile = get_object_or_404(Profile, user=user)
+        profile = get_object_or_404(Profile, user_id=user)
         if profile.user != user:
             return Response(
                 {"detail": _("You are not the owner of this profile.")},

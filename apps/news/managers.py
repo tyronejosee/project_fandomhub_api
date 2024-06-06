@@ -7,7 +7,7 @@ class NewsManager(Manager):
     """Manager for News model."""
 
     def get_available(self):
-        return self.filter(available=True)
+        return self.filter(is_available=True)
 
     def get_anime_news(self, anime):
         return (
