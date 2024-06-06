@@ -2347,3 +2347,943 @@ AttributeError: 'News' object has no attribute 'name'
 2024-06-06 01:00:43,506:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
 2024-06-06 01:00:51,720:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
 2024-06-06 01:00:56,035:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:44:49,061:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:44:58,090:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 14:44:59,521:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 14:45:02,017:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 14:45:08,824:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 14:45:09,962:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 14:45:43,990:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:45:45,696:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:45:47,262:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:45:48,665:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:46:15,330:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:46:20,744:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:46:29,601:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:46:34,096:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:46:45,659:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:46:47,719:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:46:49,447:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:46:52,054:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:46:53,699:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:46:55,195:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:47:39,812:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:47:44,996:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:47:56,091:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:48:03,919:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:48:11,234:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:48:12,642:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:48:13,801:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:49:08,703:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:49:13,793:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:49:23,776:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:49:25,453:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/12346876543/mangas/)
+2024-06-06 14:49:41,059:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 14:50:00,084:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418708f7/mangas/)
+2024-06-06 14:50:01,570:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418708f7/mangas/)
+2024-06-06 14:50:03,289:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418708f7/mangas/)
+2024-06-06 14:50:04,724:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418708f7/mangas/)
+2024-06-06 14:50:47,232:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:50:55,511:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:51:01,809:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:51:09,635:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:51:14,517:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:51:21,422:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:51:26,448:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418708f7/mangas/)
+2024-06-06 14:51:29,980:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418708f7/mangas/)
+2024-06-06 14:51:40,792:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:51:41,944:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:51:43,544:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:51:52,990:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:52:02,102:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:52:10,459:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:52:18,167:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:52:27,387:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:52:34,968:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:52:40,183:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:52:41,664:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:52:42,887:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:52:44,516:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:52:45,810:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:52:54,934:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:53:01,895:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:53:26,939:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:53:28,177:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:53:30,980:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53dsf7/mangas/)
+2024-06-06 14:54:41,484:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 14:55:18,217:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:55:25,793:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:57:50,431:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:57:57,723:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:58:10,203:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:58:15,665:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:58:24,958:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 14:58:31,803:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 14:58:37,531:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 14:58:40,057:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 14:58:46,782:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 14:58:48,122:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 14:58:49,335:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:00:19,072:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:00:24,550:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:00:30,351:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:00:38,506:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:00:57,905:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:01:04,527:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:01:11,729:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2747, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2731, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2749, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“336cf880-53ce-43e3-” is not a valid UUID.']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/apps/genres/viewsets.py", line 120, in get_mangas
+    genre = self.get_object()
+            ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/genres/viewsets.py", line 130, in get_mangas
+    except Exception as e:
+           ^^^^^^^^^^^^^^^^
+NameError: name 'ObjectDoesNotExist' is not defined
+2024-06-06 15:01:14,883:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2747, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2731, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2749, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“336cf880-53ce-43e3-” is not a valid UUID.']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/apps/genres/viewsets.py", line 120, in get_mangas
+    genre = self.get_object()
+            ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/genres/viewsets.py", line 130, in get_mangas
+    except Exception as e:
+           ^^^^^^^^^^^^^^^^
+NameError: name 'ObjectDoesNotExist' is not defined
+2024-06-06 15:01:17,825:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2747, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2731, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2749, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“336cf880-53ce-43e3-” is not a valid UUID.']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/apps/genres/viewsets.py", line 120, in get_mangas
+    genre = self.get_object()
+            ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/genres/viewsets.py", line 130, in get_mangas
+    except Exception as e:
+           ^^^^^^^^^^^^^^^^
+NameError: name 'ObjectDoesNotExist' is not defined
+2024-06-06 15:01:22,426:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2747, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2731, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2749, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“336cf880-53ce-43e3-” is not a valid UUID.']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/apps/genres/viewsets.py", line 120, in get_mangas
+    genre = self.get_object()
+            ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/genres/viewsets.py", line 130, in get_mangas
+    except Exception as e:
+           ^^^^^^^^^^^^^^^^
+NameError: name 'ObjectDoesNotExist' is not defined
+2024-06-06 15:01:25,305:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2747, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2731, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2749, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“336cf880-53ce-43e3-” is not a valid UUID.']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/apps/genres/viewsets.py", line 120, in get_mangas
+    genre = self.get_object()
+            ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/genres/viewsets.py", line 130, in get_mangas
+    except Exception as e:
+           ^^^^^^^^^^^^^^^^
+NameError: name 'ObjectDoesNotExist' is not defined
+2024-06-06 15:01:38,434:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:01:45,148:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:02:12,744:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:02:14,502:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:02:16,195:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:02:33,385:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:02:38,733:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:03:26,837:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:03:28,089:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:03:29,344:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:04:29,497:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:04:31,209:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:04:41,135:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:04:50,162:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:04:54,317:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:04:55,716:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-/mangas/)
+2024-06-06 15:06:07,523:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/fad58fc3-3d53-4fde-a5ba-f439cb6f6bf7/mangas/w9w)
+2024-06-06 15:06:26,318:WARNING - django.request log.py (line 241. Not Found: /api/v1/genre/fad58fc3-3d53-4fde-a5ba-f439cb6f6bf7/mangas/)
+2024-06-06 15:07:24,102:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/fad58fc3-3d53-4fde-a5ba-f439cb/mangas/)
+2024-06-06 15:07:30,147:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/fad58fc3-3d53-4fde-a5ba-f439cb999/mangas/)
+2024-06-06 15:08:21,966:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:08:27,181:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:08:34,915:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:08:39,859:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:09:04,956:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:09:13,531:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:09:25,149:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:09:31,443:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:09:37,512:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/fad58fc3-3d53-4fde-a5ba-f439cb999/mangas/)
+2024-06-06 15:09:39,097:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/fad58fc3-3d53-4fde-a5ba-f439cb999/mangas/)
+2024-06-06 15:09:41,907:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/fad58fc3-3d53-4fde-a5ba-f439cb999/mangas/)
+2024-06-06 15:09:43,133:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/fad58fc3-3d53-4fde-a5ba-f439cb999/mangas/)
+2024-06-06 15:10:20,847:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:10:28,187:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:10:39,896:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:10:50,404:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:11:00,052:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/fad58fc3-3d53-4fde-a5ba-f439cb999/mangas/)
+2024-06-06 15:11:02,281:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/fad58fc3-3d53-4fde-a5ba-f439cb999/mangas/)
+2024-06-06 15:11:18,772:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:11:24,995:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:11:50,135:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:11:51,831:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:12:43,163:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:12:48,591:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:13:09,285:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:13:15,837:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:13:20,333:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:13:21,907:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:13:23,422:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:13:25,215:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:13:26,824:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:13:28,673:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:13:30,034:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:13:31,694:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:13:32,993:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:13:34,198:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:13:35,461:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:17:26,289:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:17:30,896:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:35:49,297:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:35:56,379:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:36:04,248:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:36:10,720:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:38:36,590:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/managers.py changed, reloading.)
+2024-06-06 15:38:43,935:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:39:34,255:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/managers.py changed, reloading.)
+2024-06-06 15:39:42,353:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:39:54,024:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:40:01,297:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:40:07,990:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:40:09,764:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:40:11,626:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:40:13,207:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/336cf880-53ce-43e3-bad7-b6a5418552f7/mangas/)
+2024-06-06 15:40:30,917:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/d9243071-b5f2-4431-917b-d39d1fb04c96/mangas/)
+2024-06-06 15:40:32,865:WARNING - django.request log.py (line 241. Not Found: /api/v1/genres/d9243071-b5f2-4431-917b-d39d1fb04c96/mangas/)
+2024-06-06 15:41:33,142:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/managers.py changed, reloading.)
+2024-06-06 15:41:41,531:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:42:00,226:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/managers.py changed, reloading.)
+2024-06-06 15:42:05,993:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:42:08,855:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/managers.py changed, reloading.)
+2024-06-06 15:42:16,080:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:42:32,088:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/fbbd0dd8-870a-4b59-933b-5ede5ba62211/mangas/)
+2024-06-06 15:42:34,376:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/fbbd0dd8-870a-4b59-933b-5ede5ba62211/mangas/)
+2024-06-06 15:42:35,889:WARNING - django.request log.py (line 241. Bad Request: /api/v1/genres/fbbd0dd8-870a-4b59-933b-5ede5ba62211/mangas/)
+2024-06-06 15:42:49,908:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/managers.py changed, reloading.)
+2024-06-06 15:42:57,967:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:44:13,421:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:44:20,328:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:45:05,066:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:45:10,341:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:45:13,719:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:45:18,617:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:45:23,143:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:45:29,585:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:45:32,011:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:45:36,455:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:45:40,552:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:45:46,233:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:45:51,101:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:45:56,913:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:46:00,972:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:46:06,067:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:46:11,236:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:46:15,875:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:46:30,005:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:46:35,096:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:47:20,397:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:47:27,788:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:50:09,453:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:50:15,031:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:51:57,690:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:52:04,813:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:52:18,237:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 15:52:29,160:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:52:52,780:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 15:52:58,101:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:53:11,066:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-06-06 15:53:17,272:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:53:28,002:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-06-06 15:53:35,613:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:54:48,822:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/managers.py changed, reloading.)
+2024-06-06 15:54:55,213:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:55:05,721:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/managers.py changed, reloading.)
+2024-06-06 15:55:11,803:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:55:30,622:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/models.py changed, reloading.)
+2024-06-06 15:55:35,776:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:57:08,967:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/models.py changed, reloading.)
+2024-06-06 15:57:13,807:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:57:19,736:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/models.py changed, reloading.)
+2024-06-06 15:57:24,811:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:57:45,470:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-06-06 15:57:55,547:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:58:05,565:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-06-06 15:58:13,406:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:58:18,504:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/viewsets.py changed, reloading.)
+2024-06-06 15:58:23,597:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 15:59:32,073:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 15:59:39,238:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:01:16,095:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:01:22,714:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:01:30,305:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:01:39,248:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:01:50,910:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:01:57,269:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:02:10,831:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:02:18,836:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:02:43,863:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:02:50,052:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:02:59,621:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:03:08,945:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:05:09,265:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:05:14,270:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:05:23,956:WARNING - django.request log.py (line 241. Bad Request: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/anime/)
+2024-06-06 16:05:30,135:WARNING - django.request log.py (line 241. Bad Request: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/anime/)
+2024-06-06 16:05:31,795:WARNING - django.request log.py (line 241. Bad Request: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/anime/)
+2024-06-06 16:05:49,198:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:05:54,968:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:06:17,860:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:06:26,883:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:06:34,635:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:06:40,426:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:06:51,826:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/viewsets.py changed, reloading.)
+2024-06-06 16:06:57,381:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:07:47,953:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:07:54,224:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:08:31,231:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:08:37,306:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:09:12,592:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:09:20,579:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:09:37,705:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:09:44,982:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:10:13,614:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:10:20,164:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:10:33,806:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:10:44,991:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:11:03,498:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:11:11,140:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:11:24,308:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:11:30,426:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:12:05,643:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:12:13,324:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:12:26,060:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:12:31,106:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:13:00,812:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:13:09,385:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:13:21,212:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:13:29,252:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:15:10,571:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:15:17,360:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:16:02,349:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:16:07,963:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:16:54,373:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:17:01,457:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:17:07,239:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/recommendations/)
+2024-06-06 16:17:09,242:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/recommendations/)
+2024-06-06 16:17:20,443:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/recommendations/)
+2024-06-06 16:17:21,902:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/recommendations/)
+2024-06-06 16:17:23,209:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/recommendations/)
+2024-06-06 16:17:31,250:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:17:38,150:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:17:48,540:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:17:55,662:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:18:02,799:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/recommendations/)
+2024-06-06 16:18:04,108:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/recommendations/)
+2024-06-06 16:18:05,547:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/recommendations/)
+2024-06-06 16:18:06,996:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/recommendations/)
+2024-06-06 16:18:08,369:WARNING - django.request log.py (line 241. Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/recommendations/)
+2024-06-06 16:19:26,540:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:19:32,883:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:19:40,968:WARNING - django.request log.py (line 241. Bad Request: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/stats/)
+2024-06-06 16:19:42,386:WARNING - django.request log.py (line 241. Bad Request: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/stats/)
+2024-06-06 16:19:44,362:WARNING - django.request log.py (line 241. Bad Request: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/stats/)
+2024-06-06 16:19:58,494:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-06 16:20:05,411:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:20:42,590:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/viewsets.py changed, reloading.)
+2024-06-06 16:20:47,667:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:22:46,102:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/viewsets.py changed, reloading.)
+2024-06-06 16:22:52,739:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:23:22,572:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/serializers.py changed, reloading.)
+2024-06-06 16:23:27,507:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:24:19,930:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:24:25,171:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:27:26,503:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/models.py changed, reloading.)
+2024-06-06 16:27:32,879:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:30:53,555:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:31:01,646:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:31:08,710:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:31:14,208:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:32:09,658:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:32:17,419:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:32:28,572:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:32:37,259:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:32:49,098:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:32:54,077:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:33:41,346:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:33:50,301:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:34:06,624:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:34:14,249:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:34:28,565:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:34:34,668:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:35:31,045:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:35:37,957:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:35:45,883:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:35:51,183:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:36:07,737:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:36:15,850:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:36:24,824:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:36:31,870:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:36:43,729:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:36:49,001:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:36:58,032:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:37:03,631:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:37:11,351:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:37:21,570:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:37:34,433:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
+2024-06-06 16:37:41,867:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:41:44,853:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/randoms/views.py changed, reloading.)
+2024-06-06 16:41:49,028:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:44:02,694:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:44:08,106:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:44:37,763:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:44:43,219:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:45:09,430:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:45:13,578:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:45:53,276:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 16:45:58,446:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:46:07,254:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 16:46:13,191:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:46:21,741:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 16:46:27,172:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:46:34,764:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-06 16:46:40,549:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:47:20,040:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:47:25,566:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:47:40,085:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:47:45,484:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:47:53,609:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:48:00,253:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:48:08,867:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:48:14,496:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:48:22,325:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:48:28,229:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:48:37,266:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:48:42,957:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:49:12,888:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:49:18,585:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:49:27,649:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:49:33,391:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:50:01,930:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/seasons/viewsets.py changed, reloading.)
+2024-06-06 16:50:06,685:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-06 16:51:19,147:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/genres/viewsets.py changed, reloading.)
+2024-06-06 16:51:24,549:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)

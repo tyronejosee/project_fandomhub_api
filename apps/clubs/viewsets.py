@@ -68,22 +68,13 @@ class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoints:
         - GET /api/v1/clubs/{id}/members/
         """
-        try:
-            club = self.get_object()
-        except Club.DoesNotExist:
-            return Response(
-                {"detail": _("Club not found.")}, status=status.HTTP_404_NOT_FOUND
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        club = self.get_object()
 
         try:
-            members = ClubMember.objects.filter(club=club).only(
-                "user", "joined_at"
-            )  # TODO: Add manager
-            serializer = ClubMemberReadSerializer(members, many=True)
-            return Response(serializer.data)
-        except ClubMember.DoesNotExist:
+            members = ClubMember.objects.get_by_club(club)
+            if members.exists():
+                serializer = ClubMemberReadSerializer(members, many=True)
+                return Response(serializer.data)
             return Response({"detail": _("No members found for this club.")})
         except Exception as e:
             return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)

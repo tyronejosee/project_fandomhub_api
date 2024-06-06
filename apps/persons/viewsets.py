@@ -46,7 +46,6 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     serializer_class = PersonWriteSerializer
     search_fields = ["name"]
     ordering_fields = ["name"]
-    ordering = ["id"]
 
     def get_queryset(self):
         return Person.objects.get_available()
@@ -75,37 +74,39 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def manga_list(self, request, pk=None, *args, **kwargs):
+    def get_mangas(self, request, pk=None, *args, **kwargs):
         """
-        Retrieve a list of mangas for the specified author.
+        Action retrieve mangas associated with a author.
 
         Endpoints:
         - GET api/v1/persons/{id}/mangas/
         """
         person = self.get_object()
-        category = person.category
 
-        if category != CategoryChoices.WRITER:
+        try:
+            category = person.category
+            if category != CategoryChoices.WRITER:
+                return Response(
+                    {
+                        "detail": _(
+                            f"This person is not a writer, current {category.upper()}."
+                        )
+                    },
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
+            manga_list = person.manga_set.all()
+            # manga_list = Manga.objects.filter(author=pk)
+            if manga_list.exists():
+                paginator = MediumSetPagination()
+                paginated_data = paginator.paginate_queryset(manga_list, request)
+                serializer = MangaMinimalSerializer(paginated_data, many=True)
+                return paginator.get_paginated_response(serializer.data)
             return Response(
-                {
-                    "detail": _(
-                        f"This person is not a writer, current {category.upper()}."
-                    )
-                },
-                status=status.HTTP_400_BAD_REQUEST,
+                {"detail": _("There are no mangas for this author.")},
+                status=status.HTTP_404_NOT_FOUND,
             )
-        manga_list = person.manga_set.all()
-        # manga_list = Manga.objects.filter(author=pk)
-        if manga_list.exists():
-            paginator = MediumSetPagination()
-            paginated_data = paginator.paginate_queryset(manga_list, request)
-            serializer = MangaMinimalSerializer(paginated_data, many=True)
-            return paginator.get_paginated_response(serializer.data)
-
-        return Response(
-            {"detail": _("There are no mangas for this author.")},
-            status=status.HTTP_404_NOT_FOUND,
-        )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
@@ -115,27 +116,29 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         permission_classes=[AllowAny],
         url_path="pictures",
     )
-    def picture_list(self, request, pk=None, *args, **kwargs):
+    def get_pictures(self, request, *args, **kwargs):
         """
-        Action get all the pictures of a person.
+        Action retrieve pictures associated with a person.
 
         Endpoints:
         - GET api/v1/persons/{id}/pictures/
         """
         person = self.get_object()
-        pictures = Picture.objects.filter(
-            content_type=ContentType.objects.get_for_model(Person),
-            object_id=person.id,
-        )
 
-        if pictures:
-            serializer = PictureReadSerializer(pictures, many=True)
-            return Response(serializer.data)
-
-        return Response(
-            {"detail": _("There is no pictures associated with this person.")},
-            status=status.HTTP_404_NOT_FOUND,
-        )
+        try:
+            pictures = Picture.objects.filter(
+                content_type=ContentType.objects.get_for_model(Person),
+                object_id=person.id,
+            )  # TODO: Add manager
+            if pictures:
+                serializer = PictureReadSerializer(pictures, many=True)
+                return Response(serializer.data)
+            return Response(
+                {"detail": _("No pictures found for this person.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
     @action(
         detail=True,
@@ -150,16 +153,19 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoints:
         - POST api/v1/persons/{id}/pictures/
         """
-        serializer = PictureWriteSerializer(data=request.data)
-        if serializer.is_valid():
-            character = self.get_object()
-            character_model = ContentType.objects.get_for_model(Person)
-            serializer.save(
-                content_type=character_model,
-                object_id=character.pk,
-            )
-            return Response(
-                {"detail": _("Picture uploaded successfully.")},
-                status=status.HTTP_201_CREATED,
-            )
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            serializer = PictureWriteSerializer(data=request.data)
+            if serializer.is_valid():
+                character = self.get_object()
+                character_model = ContentType.objects.get_for_model(Person)
+                serializer.save(
+                    content_type=character_model,
+                    object_id=character.pk,
+                )
+                return Response(
+                    {"detail": _("Picture uploaded successfully.")},
+                    status=status.HTTP_201_CREATED,
+                )
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)

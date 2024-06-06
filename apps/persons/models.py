@@ -64,10 +64,6 @@ class Person(BaseModel, SlugMixin):
     )
     favorites = models.PositiveIntegerField(_("favorites"), default=0)
 
-    # anime = models.JSONField(default=list)
-    # manga = models.JSONField(default=list)
-    # voices = models.JSONField(default=list)
-
     objects = PersonManager()
 
     class Meta:

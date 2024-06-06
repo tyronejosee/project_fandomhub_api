@@ -78,9 +78,8 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             pictures = Picture.objects.filter(
                 content_type=ContentType.objects.get_for_model(Character),
                 object_id=character.id,
-            )
+            )  # TODO: Add manager
 
-            # TODO: Add pagination
             if pictures:
                 serializer = PictureReadSerializer(pictures, many=True)
                 return Response(serializer.data)
@@ -129,14 +128,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoints:
         - GET api/v1/characters/{id}/voices/
         """
-        try:
-            character = self.get_object()
-        except Character.DoesNotExist:
-            return Response(
-                {"detail": _("Character not found.")}, status=status.HTTP_404_NOT_FOUND
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        character = self.get_object()
 
         try:
             character_anime = CharacterVoice.objects.filter(character_id=character)
@@ -162,23 +154,16 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoints:
         - GET api/v1/characters/{id}/anime/
         """
-        try:
-            character = self.get_object()
-        except Character.DoesNotExist:
-            return Response(
-                {"detail": _("Character not found.")}, status=status.HTTP_404_NOT_FOUND
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        character = self.get_object()
 
         try:
             character_anime = CharacterAnime.objects.filter(
                 character_id=character
-            ).first()
-            anime = character_anime.anime_id
-            serializer = AnimeMinimalSerializer(anime)
-            return Response(serializer.data)
-        except CharacterAnime.DoesNotExist:
+            ).first()  # TODO: Add manager
+            if character_anime:
+                anime = character_anime.anime_id
+                serializer = AnimeMinimalSerializer(anime)
+                return Response(serializer.data)
             return Response(
                 {"detail": _("No anime found for this character.")},
                 status=status.HTTP_404_NOT_FOUND,
@@ -201,23 +186,16 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoints:
         - GET api/v1/characters/{id}/manga/
         """
-        try:
-            character = self.get_object()
-        except Character.DoesNotExist:
-            return Response(
-                {"detail": _("Character not found.")}, status=status.HTTP_404_NOT_FOUND
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        character = self.get_object()
 
         try:
             character_manga = CharacterManga.objects.filter(
                 character_id=character
-            ).first()
-            manga = character_manga.manga_id
-            serializer = MangaMinimalSerializer(manga)
-            return Response(serializer.data)
-        except CharacterManga.DoesNotExist:
+            ).first()  # TODO: Add manager
+            if character_manga:
+                manga = character_manga.manga_id
+                serializer = MangaMinimalSerializer(manga)
+                return Response(serializer.data)
             return Response(
                 {"detail": _("No manga found for this character.")},
                 status=status.HTTP_404_NOT_FOUND,

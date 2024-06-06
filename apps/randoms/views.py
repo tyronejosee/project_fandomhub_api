@@ -18,11 +18,11 @@ class RandomContentView(APIView):
     """
 
     def get_queryset(self):
-        raise NotImplementedError(_("Subclasses must implement get_queryset method"))
+        raise NotImplementedError(_("Subclasses must implement get_queryset method."))
 
     def get_serializer_class(self):
         raise NotImplementedError(
-            _("Subclasses must implement get_serializer_class method")
+            _("Subclasses must implement get_serializer_class method.")
         )
 
     def get(self, request, *args, **kwargs):

@@ -10,7 +10,7 @@ from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.utils.paths import image_path
-from .managers import ClubManager
+from .managers import ClubManager, ClubMemberManager
 from .choices import CategoryChoices
 
 User = settings.AUTH_USER_MODEL
@@ -61,6 +61,8 @@ class ClubMember(BaseModel):
     club = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=_("club"))
     user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("user"))
     joined_at = models.DateTimeField(_("joined_at"), auto_now_add=True)
+
+    objects = ClubMemberManager()
 
     class Meta:
         ordering = ["-created_at"]

@@ -35,11 +35,10 @@ class SeasonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/seasons/{id}/
     """
 
-    serializer_class = SeasonReadSerializer
+    serializer_class = SeasonWriteSerializer
     permission_classes = [IsContributor]
     search_fields = ["name"]
     ordering_fields = ["name"]
-    ordering = ["id"]
 
     def get_queryset(self):
         return Season.objects.get_available()
@@ -50,28 +49,37 @@ class SeasonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         return super().get_permissions()
 
     def get_serializer_class(self):
-        if self.action in ["create", "update", "partial_update"]:
-            return SeasonWriteSerializer
+        if self.action in ["list", "retrieve"]:
+            return SeasonReadSerializer
         return super().get_serializer_class()
 
-    @action(detail=True, methods=["get"], url_path="animes")
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="animes",
+    )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def anime_list(self, request, pk=None):
+    def get_animes(self, request, *args, **kwargs):
         """
-        Action Retrieve a list of animes for the specified season.
+        Action retrieve animes associated with a season.
 
         Endpoints:
         - GET /api/v1/seasons/{id}/animes/
         """
         season = self.get_object()
-        anime_list = Anime.objects.filter(season=season)
-        if anime_list.exists():
-            paginator = MediumSetPagination()
-            result_page = paginator.paginate_queryset(anime_list, request)
-            serializer = AnimeMinimalSerializer(result_page, many=True)
-            return paginator.get_paginated_response(serializer.data)
-        return Response(
-            {"detail": _("There are no animes for this season.")},
-            status=status.HTTP_404_NOT_FOUND,
-        )
+
+        try:
+            animes = Anime.objects.get_by_season(season)
+            if animes.exists():
+                paginator = MediumSetPagination()
+                result_page = paginator.paginate_queryset(animes, request)
+                serializer = AnimeMinimalSerializer(result_page, many=True)
+                return paginator.get_paginated_response(serializer.data)
+            return Response(
+                {"detail": _("No animes found for this season.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)

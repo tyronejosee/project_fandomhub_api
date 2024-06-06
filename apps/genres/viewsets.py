@@ -75,22 +75,15 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoints:
         - GET /api/v1/genres/{id}/animes/
         """
-        try:
-            genre = self.get_object()
-        except Genre.DoesNotExist:
-            return Response(
-                {"detail": "Genre not found."}, status=status.HTTP_404_NOT_FOUND
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        genre = self.get_object()
 
         try:
-            animes = Anime.objects.filter(genres=genre)  # TODO: Add manager
-            if animes:
+            animes = Anime.objects.get_by_genre(genre)
+            if animes.exists():
                 serializer = AnimeMinimalSerializer(animes, many=True)
                 return Response(serializer.data)
             return Response(
-                {"detail": _("No animes found for this anime.")},
+                {"detail": _("No animes found for this genre.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
@@ -114,22 +107,15 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoints:
         - GET /api/v1/genres/{id}/mangas/
         """
-        try:
-            genre = self.get_object()
-        except Genre.DoesNotExist:
-            return Response(
-                {"detail": "Genre not found."}, status=status.HTTP_404_NOT_FOUND
-            )
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+        genre = self.get_object()
 
         try:
-            mangas = Manga.objects.filter(genres=genre)  # TODO: Add manager
-            if mangas:
+            mangas = Manga.objects.get_by_genre(genre)
+            if mangas.exists():
                 serializer = MangaMinimalSerializer(mangas, many=True)
                 return Response(serializer.data)
             return Response(
-                {"detail": _("No mangas found for this anime.")},
+                {"detail": _("No mangas found for this genre.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:

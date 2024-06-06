@@ -46,7 +46,6 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     serializer_class = MangaWriteSerializer
     search_fields = ["name"]
     ordering_fields = ["name"]
-    ordering = ["id"]
 
     def get_queryset(self):
         return Manga.objects.get_available()

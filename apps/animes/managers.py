@@ -30,3 +30,21 @@ class AnimeManager(Manager):
                 "num_list_users",
             )
         )
+
+    def get_by_genre(self, genre):
+        return (
+            self.get_available()
+            .filter(genres=genre)
+            .only(
+                "id",
+                "name",
+                "image",
+                "episodes",
+                "rank",
+                "popularity",
+                "num_list_users",
+            )
+        )  # TODO: Optimize 44.3 ms
+
+    def get_by_season(self, season):
+        return self.get_available().filter(season=season)
