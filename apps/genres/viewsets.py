@@ -12,7 +12,7 @@ from rest_framework import status
 from drf_spectacular.utils import extend_schema_view, extend_schema
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
-from apps.utils.pagination import LargeSetPagination, MediumSetPagination
+from apps.utils.pagination import LargeSetPagination
 from apps.users.permissions import IsContributor
 from apps.animes.models import Anime
 from apps.mangas.models import Manga
@@ -37,12 +37,11 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/genres/{id}/
     """
 
-    serializer_class = GenreReadSerializer
     permission_classes = [IsContributor]
+    serializer_class = GenreReadSerializer
     pagination_class = LargeSetPagination
     search_fields = ["name"]
     ordering_fields = ["name"]
-    ordering = ["id"]
 
     def get_queryset(self):
         return Genre.objects.get_available()
@@ -61,49 +60,77 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         summary="Get Animes for Genre",
         description="Retrieve a list of animes for genre.",
     )
-    @action(detail=True, methods=["get"], url_path="animes")
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="animes",
+    )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def anime_list(self, request, pk=None):
+    def get_animes(self, request, *args, **kwargs):
         """
-        Retrieve a list of animes for the specified genre.
+        Action retrieve animes associated with a genre.
 
         Endpoints:
         - GET /api/v1/genres/{id}/animes/
         """
-        genre = self.get_object()
-        anime_list = Anime.objects.filter(genres=genre)
-        if anime_list.exists():
-            paginator = MediumSetPagination()
-            result_page = paginator.paginate_queryset(anime_list, request)
-            serializer = AnimeMinimalSerializer(result_page, many=True)
-            return paginator.get_paginated_response(serializer.data)
-        return Response(
-            {"detail": _("There are no animes for this genre.")},
-            status=status.HTTP_404_NOT_FOUND,
-        )
+        try:
+            genre = self.get_object()
+        except Genre.DoesNotExist:
+            return Response(
+                {"detail": "Genre not found."}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            animes = Anime.objects.filter(genres=genre)  # TODO: Add manager
+            if animes:
+                serializer = AnimeMinimalSerializer(animes, many=True)
+                return Response(serializer.data)
+            return Response(
+                {"detail": _("No animes found for this anime.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
     @extend_schema(
         summary="Get Mangas for Genre", description="Retrieve a manga list for genre."
     )
-    @action(detail=True, methods=["get"], url_path="mangas")
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="mangas",
+    )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def manga_list(self, request, pk=None):
+    def get_mangas(self, request, *args, **kwargs):
         """
-        Retrieve a manga list for the specified genre.
+        Action retrieve mangas associated with a genre.
 
         Endpoints:
-        - GET /api/v1/studios/{id}/mangas/
+        - GET /api/v1/genres/{id}/mangas/
         """
-        genre = self.get_object()
-        manga_list = Manga.objects.filter(genres=genre)
-        if manga_list.exists():
-            paginator = MediumSetPagination()
-            result_page = paginator.paginate_queryset(manga_list, request)
-            serializer = MangaMinimalSerializer(result_page, many=True)
-            return paginator.get_paginated_response(serializer.data)
-        return Response(
-            {"detail": _("There are no mangas for this genre.")},
-            status=status.HTTP_404_NOT_FOUND,
-        )
+        try:
+            genre = self.get_object()
+        except Genre.DoesNotExist:
+            return Response(
+                {"detail": "Genre not found."}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            mangas = Manga.objects.filter(genres=genre)  # TODO: Add manager
+            if mangas:
+                serializer = MangaMinimalSerializer(mangas, many=True)
+                return Response(serializer.data)
+            return Response(
+                {"detail": _("No mangas found for this anime.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)

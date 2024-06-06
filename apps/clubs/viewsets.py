@@ -53,24 +53,40 @@ class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return ClubReadSerializer
         return super().get_serializer_class()
 
-    @action(detail=True, methods=["get"], url_path="members")
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="members",
+    )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def member_list(self, request, pk=None):
+    def get_members(self, request, *args, **kwargs):
         """
-        Retrieve a list of members for club.
+        Action retrieve members associated with a club.
 
         Endpoints:
         - GET /api/v1/clubs/{id}/members/
         """
-        club = self.get_object()
-        members = ClubMember.objects.filter(club=club).only("user", "joined_at")
-        if members.exists():
+        try:
+            club = self.get_object()
+        except Club.DoesNotExist:
+            return Response(
+                {"detail": _("Club not found.")}, status=status.HTTP_404_NOT_FOUND
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            members = ClubMember.objects.filter(club=club).only(
+                "user", "joined_at"
+            )  # TODO: Add manager
             serializer = ClubMemberReadSerializer(members, many=True)
             return Response(serializer.data)
-        return Response(
-            {"detail": _("No members found.")}, status=status.HTTP_404_NOT_FOUND
-        )
+        except ClubMember.DoesNotExist:
+            return Response({"detail": _("No members found for this club.")})
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
     # TODO: Add logic and list all the staff, GET clubs/{id}/staff
     # TODO: Add logic and list all relationships, GET clubs/{id}/relations

@@ -78,7 +78,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_characters(self, request, pk=None, *args, **kwargs):
+    def get_characters(self, request, *args, **kwargs):
         """
         Action retrieve characters associated with a anime.
 
@@ -129,7 +129,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_staff(self, request, pk=None, *args, **kwargs):
+    def get_staff(self, request, *args, **kwargs):
         """
         Action retrieve staff associated with a anime.
 
@@ -165,7 +165,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
 
     @action(
         detail=True,
-        methods=["GET"],
+        methods=["get"],
         permission_classes=[AllowAny],
         url_path="stats",
     )
@@ -202,7 +202,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
 
     @action(
         detail=True,
-        methods=["GET", "POST"],
+        methods=["get", "post"],
         permission_classes=[IsMember],
         url_path="reviews",
     )
@@ -256,7 +256,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     )
     @action(
         detail=True,
-        methods=["GET", "PATCH", "DELETE"],
+        methods=["get", "patch", "delete"],
         permission_classes=[IsAuthenticatedOrReadOnly],
         url_path="reviews/(?P<review_id>[^/.]+)",
     )
@@ -309,7 +309,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_recommendations(self, request, pk=None, *args, **kwargs):
+    def get_recommendations(self, request, *args, **kwargs):
         """
         Action retrieve recommendations associated with a anime.
 
@@ -355,11 +355,11 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
 
     @action(
         detail=True,
-        methods=["GET"],
+        methods=["get"],
         permission_classes=[AllowAny],
         url_path="news",
     )
-    def get_news(self, request, pk=None, *args, **kwargs):
+    def get_news(self, request, *args, **kwargs):
         """
         Action retrieve news associated with a anime.
 
@@ -410,7 +410,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_videos(self, request, pk=None, *args, **kwargs):
+    def get_videos(self, request, *args, **kwargs):
         """
         Action retrieve videos associated with a anime.
 
@@ -448,7 +448,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_pictures(self, request, pk=None, *args, **kwargs):
+    def get_pictures(self, request, *args, **kwargs):
         """
         Action retrieve pictures associated with a anime.
 
