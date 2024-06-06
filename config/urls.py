@@ -45,7 +45,7 @@ urlpatterns = [
     path("", include("apps.playlists.routers")),
     path("", include("apps.profiles.routers")),
     path("", include("apps.seasons.routers")),
-    path("", include("apps.studios.routers")),
+    path("", include("apps.producers.routers")),
     path("", include("apps.users.routers")),
     # Apps urls (URLs)
     path("", include("apps.randoms.urls")),

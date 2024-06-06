@@ -35,7 +35,7 @@ PROJECT_APPS = [
     "apps.recommendations",
     "apps.reviews",
     "apps.seasons",
-    "apps.studios",
+    "apps.producers",
     "apps.tops",
     "apps.users",
     "apps.utils",
