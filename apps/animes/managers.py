@@ -48,3 +48,6 @@ class AnimeManager(Manager):
 
     def get_by_season(self, season):
         return self.get_available().filter(season=season)
+
+    def get_by_studio(self, studio):
+        return self.get_available().filter(studio=studio)

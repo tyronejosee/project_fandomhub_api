@@ -35,11 +35,10 @@ class StudioViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/studios/{id}/
     """
 
-    serializer_class = StudioReadSerializer
     permission_classes = [IsContributor]
+    serializer_class = StudioWriteSerializer
     search_fields = ["name"]
     ordering_fields = ["name"]
-    ordering = ["id"]
 
     def get_queryset(self):
         return Studio.objects.get_available()
@@ -50,32 +49,41 @@ class StudioViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         return super().get_permissions()
 
     def get_serializer_class(self):
-        if self.action in ["create", "update", "partial_update"]:
-            return StudioWriteSerializer
+        if self.action in ["list", "retrieve"]:
+            return StudioReadSerializer
         return super().get_serializer_class()
 
     @extend_schema(
         summary="Get Animes for Studio",
         description="Retrieve a list of animes for studio.",
     )
-    @action(detail=True, methods=["get"], url_path="animes")
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="animes",
+    )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def anime_list(self, request, pk=None):
+    def get_animes(self, request, *args, **kwargs):
         """
-        Action retrieve a list of animes for the specified studio.
+        Action retrieve animes associated with a studio.
 
         Endpoints:
         - GET /api/v1/studios/{id}/animes/
         """
         studio = self.get_object()
-        anime_list = Anime.objects.filter(studio=studio)
-        if anime_list.exists():
-            paginator = LargeSetPagination()
-            result_page = paginator.paginate_queryset(anime_list, request)
-            serializer = AnimeMinimalSerializer(result_page, many=True)
-            return paginator.get_paginated_response(serializer.data)
-        return Response(
-            {"detail": _("There are no animes for this studio.")},
-            status=status.HTTP_404_NOT_FOUND,
-        )
+
+        try:
+            animes = Anime.objects.get_by_studio(studio)
+            if animes.exists():
+                paginator = LargeSetPagination()
+                result_page = paginator.paginate_queryset(animes, request)
+                serializer = AnimeMinimalSerializer(result_page, many=True)
+                return paginator.get_paginated_response(serializer.data)
+            return Response(
+                {"detail": _("No animes found for this studio.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)

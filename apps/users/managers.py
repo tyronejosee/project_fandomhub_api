@@ -13,7 +13,7 @@ class UserManager(BaseUserManager):
     def create_user(self, email, password=None, **kwargs):
         """Creates a user with the given email and password."""
         if not email:
-            raise ValueError(_("Users must have an email address"))
+            raise ValueError(_("Users must have an email address."))
 
         email = self.normalize_email(email)
         user = self.model(email=email, **kwargs)
