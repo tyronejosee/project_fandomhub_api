@@ -21,6 +21,7 @@ class AnimeAdmin(admin.ModelAdmin):
         "name",
         "name_jpn",
         "name_rom",
+        "alternative_names",
     ]
     list_display = [
         "name",
@@ -37,11 +38,11 @@ class AnimeAdmin(admin.ModelAdmin):
     readonly_fields = [
         "pk",
         "slug",
-        "mean",
-        "rank",
+        "score",
+        "ranked",
         "popularity",
         "favorites",
-        "num_list_users",
+        "members",
         "created_at",
         "updated_at",
     ]

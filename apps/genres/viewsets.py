@@ -38,7 +38,7 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
 
     permission_classes = [IsContributor]
-    serializer_class = GenreReadSerializer
+    serializer_class = GenreWriteSerializer
     pagination_class = LargeSetPagination
     search_fields = ["name"]
     ordering_fields = ["name"]
@@ -52,8 +52,8 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         return super().get_permissions()
 
     def get_serializer_class(self):
-        if self.action in ["create", "update", "partial_update"]:
-            return GenreWriteSerializer
+        if self.action in ["list", "retrieve"]:
+            return GenreReadSerializer
         return super().get_serializer_class()
 
     @extend_schema(
@@ -73,7 +73,7 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Action retrieve animes associated with a genre.
 
         Endpoints:
-        - GET /api/v1/genres/{id}/animes/
+        - GET api/v1/genres/{id}/animes/
         """
         genre = self.get_object()
 
@@ -105,7 +105,7 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Action retrieve mangas associated with a genre.
 
         Endpoints:
-        - GET /api/v1/genres/{id}/mangas/
+        - GET api/v1/genres/{id}/mangas/
         """
         genre = self.get_object()
 

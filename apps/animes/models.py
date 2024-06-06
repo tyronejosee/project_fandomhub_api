@@ -14,20 +14,22 @@ from apps.studios.models import Studio
 from apps.genres.models import Genre
 from apps.seasons.models import Season
 from .managers import AnimeManager
-from .choices import StatusChoices, CategoryChoices, RatingChoices
+from .choices import StatusChoices, MediaTypeChoices, RatingChoices, SourceChoices
 
 
 class Anime(BaseModel, SlugMixin):
     """Model definition for Anime."""
 
     name = models.CharField(_("name (eng)"), max_length=255, unique=True)
-    name_jpn = models.CharField(
-        _("name (jpn)"),
-        max_length=255,
-        unique=True,
-    )
+    name_jpn = models.CharField(_("name (jpn)"), max_length=255, unique=True)
     name_rom = models.CharField(
         _("name (rmj)"), max_length=255, unique=True, blank=True
+    )
+    alternative_names = models.JSONField(
+        _("alternative names"),
+        blank=True,
+        null=True,
+        default=list,
     )
     image = models.ImageField(
         _("image"),
@@ -40,46 +42,63 @@ class Anime(BaseModel, SlugMixin):
             FileSizeValidator(limit_mb=2),
         ],
     )
+    trailer = models.URLField(_("trailer"), max_length=255, blank=True)
     synopsis = models.TextField(_("synopsis"), blank=True, null=True)
+    media_type = models.CharField(
+        _("media type"),
+        max_length=10,
+        choices=MediaTypeChoices.choices,
+        default=MediaTypeChoices.TV,
+    )
     episodes = models.IntegerField(
         _("episodes"),
         default=0,
         validators=[MinValueValidator(0), MaxValueValidator(1500)],
     )
-    duration = models.CharField(_("duration"), max_length=20, blank=True, null=True)
-    release = models.DateField(_("release"), blank=True, null=True)
-    category = models.CharField(
-        _("category"),
-        max_length=10,
-        choices=CategoryChoices.choices,
-        default=CategoryChoices.PENDING,
-    )
-    website = models.URLField(max_length=255, blank=True)
-    trailer = models.URLField(max_length=255, blank=True)
     status = models.CharField(
         _("status"),
         max_length=10,
         choices=StatusChoices.choices,
-        default=StatusChoices.PENDING,
+        default=StatusChoices.AIRING,
     )
+    release = models.DateField(_("release"))
+    season = models.ForeignKey(
+        Season, on_delete=models.CASCADE, verbose_name=_("season")
+    )  # Revition
+    # premiered
+    # broadcast
+    # producers
+    # licensors
+    studio = models.ForeignKey(
+        Studio,
+        on_delete=models.CASCADE,
+        verbose_name=_("studio"),
+    )
+    source = models.CharField(
+        _("rating"),
+        max_length=10,
+        choices=SourceChoices.choices,
+        default=SourceChoices.MANGA,
+    )
+    genres = models.ManyToManyField(Genre, verbose_name=_("genres"))
+    themes = models.ManyToManyField(Theme, verbose_name=_("themes"))
+    duration = models.CharField(_("duration"), max_length=20, blank=True)
     rating = models.CharField(
         _("rating"),
         max_length=10,
         choices=RatingChoices.choices,
-        default=RatingChoices.PENDING,
+        default=RatingChoices.PG13,
     )
-    studio = models.ForeignKey(Studio, on_delete=models.CASCADE, blank=True, null=True)
-    genres = models.ManyToManyField(Genre, blank=True)
-    themes = models.ManyToManyField(Theme, blank=True)
-    season = models.ForeignKey(Season, on_delete=models.CASCADE, blank=True, null=True)
+    website = models.URLField(_("website"), max_length=255, blank=True)
     is_recommended = models.BooleanField(_("is recommended"), default=False)
-    mean = models.FloatField(_("mean"), blank=True, null=True)
-    rank = models.IntegerField(_("rank"), blank=True, null=True)
-    popularity = models.IntegerField(_("popularity"), blank=True, null=True)
-    favorites = models.IntegerField(_("favorites"), blank=True, null=True, default=0)
-    num_list_users = models.IntegerField(
-        _("number of list users"), blank=True, null=True, default=0
-    )
+
+    score = models.FloatField(_("mean"), blank=True, null=True)
+    ranked = models.PositiveIntegerField(_("ranked"), default=0)
+    popularity = models.PositiveIntegerField(_("popularity"), default=0)
+    members = models.PositiveIntegerField(_("members"), default=0)
+    favorites = models.PositiveIntegerField(_("favorites"), default=0)
+
+    # is_publishing = models.BooleanField(_("is recommended"), default=False)
 
     objects = AnimeManager()
 

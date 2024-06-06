@@ -36,10 +36,10 @@ class MangaModelTestCase(TestCase):
             status=1,
             author=self.author,
             demographic=self.demographic,
-            mean=8.0,
-            rank=1,
+            score=8.0,
+            ranked=1,
             popularity=100,
-            num_list_users=1000,
+            members=1000,
         )
 
         # Set ManyToManyField
@@ -59,10 +59,10 @@ class MangaModelTestCase(TestCase):
         self.assertEqual(manga.author, self.author)
         self.assertEqual(manga.demographic, self.demographic)
         self.assertEqual(manga.genres.first(), self.genre)
-        self.assertEqual(manga.mean, 8.0)
-        self.assertEqual(manga.rank, 1)
+        self.assertEqual(manga.score, 8.0)
+        self.assertEqual(manga.ranked, 1)
         self.assertEqual(manga.popularity, 100)
-        self.assertEqual(manga.num_list_users, 1000)
+        self.assertEqual(manga.members, 1000)
 
     def test_duplicate_manga_name(self):
         """Test for duplicate manga name."""

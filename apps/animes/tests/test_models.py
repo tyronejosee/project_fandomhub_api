@@ -33,7 +33,7 @@ class AnimeModelTestCase(TestCase):
             episodes=25,
             duration="23 min. per ep.",
             release=date(1997, 10, 8),
-            category="tv",
+            media_type="tv",
             website="https://www.vap.co.jp/berserk/tv.html",
             trailer="https://youtu.be/5g5uPsKDGYg",
             status="finished",
@@ -44,7 +44,7 @@ class AnimeModelTestCase(TestCase):
             rank=1,
             popularity=100,
             favorites=3,
-            num_list_users=1000,
+            members=1000,
         )
 
         # Set ManyToManyField
@@ -58,7 +58,7 @@ class AnimeModelTestCase(TestCase):
         self.assertEqual(anime.episodes, 25)
         self.assertEqual(anime.duration, "23 min. per ep.")
         self.assertEqual(anime.release, date(1997, 10, 8))
-        self.assertEqual(anime.category, "tv")
+        self.assertEqual(anime.media_type, "tv")
         self.assertEqual(anime.website, "https://www.vap.co.jp/berserk/tv.html")
         self.assertEqual(anime.trailer, "https://youtu.be/5g5uPsKDGYg")
         self.assertEqual(anime.status, "finished")
@@ -67,11 +67,11 @@ class AnimeModelTestCase(TestCase):
         self.assertEqual(anime.genres.first(), self.genre)
         self.assertEqual(anime.themes.first(), self.theme)
         self.assertEqual(anime.season, self.season)
-        self.assertEqual(anime.mean, 8.0)
-        self.assertEqual(anime.rank, 1)
+        self.assertEqual(anime.score, 8.0)
+        self.assertEqual(anime.ranked, 1)
         self.assertEqual(anime.popularity, 100)
         self.assertEqual(anime.favorites, 3)
-        self.assertEqual(anime.num_list_users, 1000)
+        self.assertEqual(anime.members, 1000)
 
     def test_duplicate_anime_name(self):
         """Test for duplicate anime name."""

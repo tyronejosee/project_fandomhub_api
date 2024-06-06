@@ -1,19 +1,35 @@
 """Models for Mangas App."""
 
 from django.db import models
-from django.core.validators import MinValueValidator
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
-from apps.utils.paths import image_path
+from apps.utils.paths import picture_image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.categories.models import Theme, Demographic
 from apps.genres.models import Genre
 from apps.persons.models import Person
-from .managers import MangaManager
+from .managers import MangaManager, MagazineManager
 from .choices import StatusChoices, MediaTypeChoices
+
+
+class Magazine(BaseModel, SlugMixin):
+    """Model definition for Magazine."""
+
+    name = models.CharField(_("name"), max_length=255)
+    count = models.PositiveIntegerField(_("count"), default=0)
+
+    class Meta:
+        ordering = ["pk"]
+        verbose_name = _("magazine")
+        verbose_name_plural = _("magazines")
+
+    objects = MagazineManager()
+
+    def __str__(self):
+        return self.name
 
 
 class Manga(BaseModel, SlugMixin):
@@ -24,9 +40,15 @@ class Manga(BaseModel, SlugMixin):
     name_rom = models.CharField(
         _("name (rmj)"), max_length=255, unique=True, blank=True
     )
+    alternative_names = models.JSONField(
+        _("alternative names"),
+        blank=True,
+        null=True,
+        default=list,
+    )
     image = models.ImageField(
         _("image"),
-        upload_to=image_path,
+        upload_to=picture_image_path,
         blank=True,
         null=True,
         validators=[
@@ -36,28 +58,23 @@ class Manga(BaseModel, SlugMixin):
         ],
     )
     synopsis = models.TextField(_("synopsis"), blank=True, null=True)
-    chapters = models.IntegerField(_("chapters"), validators=[MinValueValidator(0)])
-    release = models.DateField(_("release"), blank=True, null=True)
     media_type = models.CharField(
         _("media type"),
         max_length=10,
         choices=MediaTypeChoices.choices,
-        default=MediaTypeChoices.PENDING,
+        default=MediaTypeChoices.MANGA,
     )
-    website = models.URLField(_("website"), max_length=255, blank=True)
+    volumes = models.PositiveIntegerField(_("volumes"), default=1)
+    chapters = models.PositiveIntegerField(_("chapters"), default=1)
     status = models.CharField(
         _("status"),
         max_length=10,
         choices=StatusChoices.choices,
-        default=StatusChoices.PENDING,
+        default=StatusChoices.AIRING,
     )
-    author = models.ForeignKey(
-        Person,
-        on_delete=models.CASCADE,
-        blank=True,
-        null=True,
-        verbose_name=_("author"),
-    )
+    release = models.DateField(_("release"))
+    genres = models.ManyToManyField(Genre, verbose_name=_("genres"))
+    themes = models.ManyToManyField(Theme, verbose_name=_("themes"))
     demographic = models.ForeignKey(
         Demographic,
         on_delete=models.CASCADE,
@@ -65,16 +82,26 @@ class Manga(BaseModel, SlugMixin):
         null=True,
         verbose_name=_("demographic"),
     )
-    genres = models.ManyToManyField(Genre, blank=True, verbose_name=_("genres"))
-    themes = models.ManyToManyField(Theme, blank=True, verbose_name=_("themes"))
-    is_recommended = models.BooleanField(_("is recommended"), default=False)
-    mean = models.FloatField(_("mean"), blank=True, null=True)
-    rank = models.IntegerField(_("rank"), blank=True, null=True)
-    popularity = models.IntegerField(_("popularity"), blank=True, null=True)
-    favorites = models.IntegerField(_("favorites"), blank=True, null=True, default=0)
-    num_list_users = models.IntegerField(
-        _("number of list users"), blank=True, null=True, default=0
+    serialization = models.ForeignKey(
+        Magazine,
+        on_delete=models.CASCADE,
+        blank=True,
+        null=True,
+        verbose_name=_("serialization"),
     )
+    author = models.ForeignKey(
+        Person,
+        on_delete=models.CASCADE,
+        verbose_name=_("author"),
+    )
+    website = models.URLField(_("website"), max_length=255, blank=True)
+    is_recommended = models.BooleanField(_("is recommended"), default=False)
+
+    score = models.FloatField(_("score"), blank=True, null=True)
+    ranked = models.PositiveIntegerField(_("ranked"), default=0)
+    popularity = models.PositiveIntegerField(_("popularity"), default=0)
+    members = models.PositiveIntegerField(_("members"), default=0)
+    favorites = models.PositiveIntegerField(_("favorites"), default=0)
 
     objects = MangaManager()
 

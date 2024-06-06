@@ -36,3 +36,10 @@ class MangaManager(Manager):
             .filter(genres=genre)
             .only("id", "name", "image", "release", "media_type", "status")
         )
+
+
+class MagazineManager(Manager):
+    """Manager for Magazine model."""
+
+    def get_available(self):
+        return self.filter(available=True)

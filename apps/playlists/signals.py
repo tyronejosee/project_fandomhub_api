@@ -12,12 +12,12 @@
 #     """Update anime statistics when a playlist anime is marked as favorite."""
 #     if instance.is_favorite:
 #         anime = instance.anime
-#         anime.num_list_users += 1
+#         anime.members += 1
 #         anime.favorites += 1
 #         anime.save()
 #     else:
 #         anime = instance.anime
-#         anime.num_list_users -= 1
+#         anime.members -= 1
 #         anime.favorites -= 1
 #         anime.save()
 
@@ -27,11 +27,11 @@
 #     """Update manga statistics when a playlist manga is marked as favorite."""
 #     if instance.is_favorite:
 #         manga = instance.manga
-#         manga.num_list_users += 1
+#         manga.members += 1
 #         manga.favorites += 1
 #         manga.save()
 #     else:
 #         manga = instance.manga
-#         manga.num_list_users -= 1
+#         manga.members -= 1
 #         manga.favorites -= 1
 #         manga.save()

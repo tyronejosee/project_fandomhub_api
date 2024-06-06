@@ -6,15 +6,13 @@ from django.utils.translation import gettext as _
 
 class StatusChoices(TextChoices):
 
-    PENDING = "pending", _("Pending")
     FINISHED = "finished", _("Finished")
     AIRING = "airing", _("Airing")
     UPCOMING = "upcoming", _("Upcoming")
 
 
-class CategoryChoices(TextChoices):
+class MediaTypeChoices(TextChoices):
 
-    PENDING = "pending", _("Pending")
     TV = "tv", _("TV")
     OVA = "ova", _("OVA")
     MOVIE = "movie", _("Movie")
@@ -25,7 +23,6 @@ class CategoryChoices(TextChoices):
 
 class RatingChoices(TextChoices):
 
-    PENDING = "pending", _("Pending")
     G = "g", _("G - All Ages")
     PG = "pg", _("PG - Children")
     PG13 = "pg13", _("PG-13 - Teens 13 and Older")
@@ -36,7 +33,6 @@ class RatingChoices(TextChoices):
 
 class SourceChoices(TextChoices):
 
-    PENDING = "pending", _("Pending")
     ORIGINAL = "original", _("Original")
     MANGA = "manga", _("Manga")
     NOVEL = "novel", _("Novel")

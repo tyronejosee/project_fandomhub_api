@@ -29,10 +29,10 @@ class MangaAdmin(admin.ModelAdmin):
     readonly_fields = [
         "pk",
         "slug",
-        "mean",
-        "rank",
+        "score",
+        "ranked",
         "popularity",
-        "num_list_users",
+        "members",
         "favorites",
         "created_at",
         "updated_at",

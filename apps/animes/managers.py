@@ -25,9 +25,9 @@ class AnimeManager(Manager):
                 "name",
                 "image",
                 "episodes",
-                "rank",
+                "ranked",
                 "popularity",
-                "num_list_users",
+                "members",
             )
         )
 
@@ -40,9 +40,9 @@ class AnimeManager(Manager):
                 "name",
                 "image",
                 "episodes",
-                "rank",
+                "ranked",
                 "popularity",
-                "num_list_users",
+                "members",
             )
         )  # TODO: Optimize 44.3 ms
 
