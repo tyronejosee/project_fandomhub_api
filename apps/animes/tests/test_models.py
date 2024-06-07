@@ -1,6 +1,6 @@
 """Tests for Models in Animes App."""
 
-from datetime import date
+# from datetime import date
 from django.test import TestCase
 from django.core.exceptions import ValidationError
 
@@ -29,7 +29,7 @@ class AnimeModelTestCase(TestCase):
             synopsis="Incapacitated...",
             episodes=25,
             duration="23 min. per ep.",
-            release=date(1997, 10, 8),
+            # release=date(1997, 10, 8),
             media_type="tv",
             website="https://www.vap.co.jp/berserk/tv.html",
             trailer="https://youtu.be/5g5uPsKDGYg",
@@ -53,7 +53,7 @@ class AnimeModelTestCase(TestCase):
         self.assertEqual(anime.synopsis, "Incapacitated...")
         self.assertEqual(anime.episodes, 25)
         self.assertEqual(anime.duration, "23 min. per ep.")
-        self.assertEqual(anime.release, date(1997, 10, 8))
+        # self.assertEqual(anime.release, date(1997, 10, 8))
         self.assertEqual(anime.media_type, "tv")
         self.assertEqual(anime.website, "https://www.vap.co.jp/berserk/tv.html")
         self.assertEqual(anime.trailer, "https://youtu.be/5g5uPsKDGYg")

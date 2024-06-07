@@ -24,7 +24,8 @@ class MangaManager(Manager):
                 "id",
                 "name",
                 "image",
-                "release",
+                "published_from",
+                "published_to",
                 "media_type",
                 "status",
             )
@@ -34,7 +35,15 @@ class MangaManager(Manager):
         return (
             self.get_available()
             .filter(genres=genre)
-            .only("id", "name", "image", "release", "media_type", "status")
+            .only(
+                "id",
+                "name",
+                "image",
+                "published_from",
+                "published_to",
+                "media_type",
+                "status",
+            )
         )
 
 

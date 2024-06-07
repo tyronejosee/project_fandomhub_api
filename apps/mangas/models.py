@@ -65,15 +65,16 @@ class Manga(BaseModel, SlugMixin):
         choices=MediaTypeChoices.choices,
         default=MediaTypeChoices.MANGA,
     )
-    volumes = models.PositiveIntegerField(_("volumes"), default=1)
     chapters = models.PositiveIntegerField(_("chapters"), default=1)
+    volumes = models.PositiveIntegerField(_("volumes"), default=1)
     status = models.CharField(
         _("status"),
         max_length=10,
         choices=StatusChoices.choices,
         default=StatusChoices.AIRING,
     )
-    release = models.DateField(_("release"))
+    published_from = models.DateField(_("published from"))
+    published_to = models.DateField(_("published to"), blank=True, null=True)
     genres = models.ManyToManyField(Genre, verbose_name=_("genres"))
     themes = models.ManyToManyField(Theme, verbose_name=_("themes"))
     demographic_id = models.ForeignKey(
@@ -108,6 +109,8 @@ class Manga(BaseModel, SlugMixin):
     popularity = models.PositiveIntegerField(_("popularity"), default=0)
     members = models.PositiveIntegerField(_("members"), default=0)
     favorites = models.PositiveIntegerField(_("favorites"), default=0)
+
+    # published = published_from / published_to
 
     objects = MangaManager()
 

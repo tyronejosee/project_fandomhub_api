@@ -129,7 +129,8 @@ class Anime(BaseModel, SlugMixin):
         choices=StatusChoices.choices,
         default=StatusChoices.AIRING,
     )
-    release = models.DateField(_("release"))
+    aired_from = models.DateField(_("aired from"))
+    aired_to = models.DateField(_("aired to"), blank=True, null=True)
     producers = models.ManyToManyField(
         Producer,
         limit_choices_to={
@@ -178,6 +179,7 @@ class Anime(BaseModel, SlugMixin):
 
     # is_publishing = models.BooleanField(_("is_publishing"), default=False)
     # premiered = season + year
+    # aired = aired_from / aired_to
 
     objects = AnimeManager()
 

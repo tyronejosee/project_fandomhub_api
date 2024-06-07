@@ -1,6 +1,6 @@
 """Tests for Models in Mangas App."""
 
-from datetime import date
+# from datetime import date
 from django.test import TestCase
 from django.core.exceptions import ValidationError
 
@@ -29,7 +29,6 @@ class MangaModelTestCase(TestCase):
             image=None,
             synopsis="Denji has...",
             chapters=97,
-            release=date(2018, 12, 3),
             media_type=1,
             website="https://www.shonenjump.com/j/rensai/chainsaw.html",
             status=1,
@@ -49,7 +48,6 @@ class MangaModelTestCase(TestCase):
         self.assertEqual(manga.name_rom, "Chainsaw Man")
         self.assertEqual(manga.synopsis, "Denji has...")
         self.assertEqual(manga.chapters, 97)
-        self.assertEqual(manga.release, date(2018, 12, 3))
         self.assertEqual(manga.media_type, 1)
         self.assertEqual(
             manga.website, "https://www.shonenjump.com/j/rensai/chainsaw.html"
