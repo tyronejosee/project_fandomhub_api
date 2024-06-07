@@ -9,7 +9,6 @@ from rest_framework.permissions import AllowAny
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
-from drf_spectacular.utils import extend_schema_view, extend_schema
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.pagination import LargeSetPagination
@@ -18,10 +17,8 @@ from apps.animes.models import Anime
 from apps.animes.serializers import AnimeMinimalSerializer
 from .models import Producer
 from .serializers import ProducerReadSerializer, ProducerWriteSerializer
-from .schemas import producer_schemas
 
 
-@extend_schema_view(**producer_schemas)
 class ProducerViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Studio instances.
@@ -53,10 +50,6 @@ class ProducerViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return ProducerReadSerializer
         return super().get_serializer_class()
 
-    @extend_schema(
-        summary="Get Animes for Studio",
-        description="Retrieve a list of animes for studio.",
-    )
     @action(
         detail=True,
         methods=["get"],
@@ -70,7 +63,7 @@ class ProducerViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Action retrieve animes associated with a studio.
 
         Endpoints:
-        - GET /api/v1/studios/{id}/animes/
+        - GET /api/v1/producers/{id}/animes/
         """
         studio = self.get_object()
 

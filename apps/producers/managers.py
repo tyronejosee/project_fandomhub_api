@@ -1,4 +1,4 @@
-"""Managers for Studios App."""
+"""Managers for Producers App."""
 
 from django.db.models import Manager
 

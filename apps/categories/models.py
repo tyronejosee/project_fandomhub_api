@@ -11,7 +11,7 @@ from .managers import ThemeManager, DemographicManager
 class Theme(BaseModel, SlugMixin):
     """Model definition for Theme."""
 
-    name = models.CharField(_("name"), max_length=255, unique=True)
+    name = models.CharField(_("name"), max_length=50, unique=True)
 
     objects = ThemeManager()
 
@@ -24,7 +24,7 @@ class Theme(BaseModel, SlugMixin):
         return str(self.name)
 
 
-class Demographic(BaseModel):
+class Demographic(BaseModel, SlugMixin):
     """Model definition for Demographic."""
 
     name = models.CharField(_("name"), max_length=50, unique=True)

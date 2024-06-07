@@ -11,6 +11,7 @@ from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.categories.models import Theme, Demographic
 from apps.genres.models import Genre
 from apps.persons.models import Person
+from apps.persons.choices import CategoryChoices
 from .managers import MangaManager, MagazineManager
 from .choices import StatusChoices, MediaTypeChoices
 
@@ -73,13 +74,14 @@ class Manga(BaseModel, SlugMixin):
         default=StatusChoices.AIRING,
     )
     release = models.DateField(_("release"))
-    genres_id = models.ManyToManyField(Genre, verbose_name=_("genres"))
-    themes_id = models.ManyToManyField(Theme, verbose_name=_("themes"))
+    genres = models.ManyToManyField(Genre, verbose_name=_("genres"))
+    themes = models.ManyToManyField(Theme, verbose_name=_("themes"))
     demographic_id = models.ForeignKey(
         Demographic,
         on_delete=models.CASCADE,
         blank=True,
         null=True,
+        limit_choices_to={"is_available": True},
         verbose_name=_("demographic"),
     )
     serialization_id = models.ForeignKey(
@@ -92,6 +94,10 @@ class Manga(BaseModel, SlugMixin):
     author_id = models.ForeignKey(
         Person,
         on_delete=models.CASCADE,
+        limit_choices_to={
+            "category": CategoryChoices.ARTIST,
+            "is_available": True,
+        },
         verbose_name=_("author"),
     )
     website = models.URLField(_("website"), max_length=255, blank=True)

@@ -10,6 +10,7 @@ from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.utils.paths import image_path
 from apps.persons.models import Person
+from apps.persons.choices import CategoryChoices
 from apps.animes.models import Anime
 from apps.mangas.models import Manga
 from .managers import CharacterManager
@@ -21,7 +22,6 @@ class Character(BaseModel, SlugMixin):
 
     name = models.CharField(_("name"), max_length=255)
     name_kanji = models.CharField(_("name kanji"), max_length=255)
-    favorites = models.PositiveIntegerField(_("favorites"), default=0)
     about = models.TextField(_("about"), blank=True)
     role = models.CharField(_("role"), max_length=15, choices=RoleChoices.choices)
     image = models.ImageField(
@@ -30,11 +30,12 @@ class Character(BaseModel, SlugMixin):
         blank=True,
         null=True,
         validators=[
-            FileExtensionValidator(allowed_extensions=["webp"]),
+            FileExtensionValidator(allowed_extensions=["jpg", "webp"]),
             ImageSizeValidator(max_width=600, max_height=600),
             FileSizeValidator(limit_mb=1),
         ],
     )
+    favorites = models.PositiveIntegerField(_("favorites"), default=0)
 
     objects = CharacterManager()
 
@@ -53,11 +54,16 @@ class CharacterVoice(BaseModel):
     character_id = models.ForeignKey(
         Character,
         related_name="character_voice",
+        limit_choices_to={"is_available": True},
         on_delete=models.CASCADE,
     )
     voice_id = models.ForeignKey(
         Person,
         related_name="character_voice",
+        limit_choices_to={
+            "category": CategoryChoices.VOICE_ACTOR,
+            "is_available": True,
+        },
         on_delete=models.PROTECT,
     )
 
@@ -76,11 +82,13 @@ class CharacterAnime(BaseModel):
     character_id = models.ForeignKey(
         Character,
         related_name="character_anime",
+        limit_choices_to={"is_available": True},
         on_delete=models.CASCADE,
     )
     anime_id = models.ForeignKey(
         Anime,
         related_name="character_anime",
+        limit_choices_to={"is_available": True},
         on_delete=models.CASCADE,
     )
 
@@ -105,11 +113,13 @@ class CharacterManga(BaseModel):
         Character,
         related_name="character_manga",
         on_delete=models.CASCADE,
+        limit_choices_to={"is_available": True},
     )
     manga_id = models.ForeignKey(
         Manga,
         related_name="character_manga",
         on_delete=models.CASCADE,
+        limit_choices_to={"is_available": True},
     )
 
     class Meta:

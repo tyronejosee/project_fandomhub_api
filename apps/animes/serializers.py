@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 
-from apps.studios.serializers import StudioReadSerializer
+from apps.producers.serializers import StudioReadSerializer
 from apps.genres.serializers import GenreReadSerializer
 from apps.seasons.serializers import SeasonReadSerializer
 from .models import Anime, AnimeStats
@@ -12,7 +12,7 @@ class AnimeReadSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
 
     studio_id = StudioReadSerializer()
-    genres_id = GenreReadSerializer(many=True)
+    genres = GenreReadSerializer(many=True)
     season_id = SeasonReadSerializer()
     status = serializers.CharField(source="get_status_display")
     category = serializers.CharField(source="get_category_display")
@@ -36,8 +36,8 @@ class AnimeReadSerializer(serializers.ModelSerializer):
             "season_id",
             "studio_id",
             "source",
-            "genres_id",
-            "themes_id",
+            "genres",
+            "themes",
             "duration",
             "rating",
             "website",
@@ -70,8 +70,8 @@ class AnimeWriteSerializer(serializers.ModelSerializer):
             "season_id",
             "studio_id",
             "source",
-            "genres_id",
-            "themes_id",
+            "genres",
+            "themes",
             "duration",
             "rating",
             "website",

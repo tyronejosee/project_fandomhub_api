@@ -6,7 +6,7 @@ from django.core.exceptions import ValidationError
 
 from apps.animes.models import Anime
 from apps.categories.models import Theme, Demographic
-from apps.studios.models import Studio
+from apps.producers.models import Studio
 from apps.genres.models import Genre
 from apps.seasons.models import Season
 
@@ -38,9 +38,9 @@ class AnimeModelTestCase(TestCase):
             trailer="https://youtu.be/5g5uPsKDGYg",
             status="finished",
             rating=1,
-            studio=self.studio,
-            season=self.season,
-            mean=8.0,
+            studio_id=self.studio,
+            season_id=self.season,
+            score=8.0,
             rank=1,
             popularity=100,
             favorites=3,
@@ -63,10 +63,10 @@ class AnimeModelTestCase(TestCase):
         self.assertEqual(anime.trailer, "https://youtu.be/5g5uPsKDGYg")
         self.assertEqual(anime.status, "finished")
         self.assertEqual(anime.rating, 1)
-        self.assertEqual(anime.studio, self.studio)
+        self.assertEqual(anime.studio_id, self.studio)
         self.assertEqual(anime.genres.first(), self.genre)
         self.assertEqual(anime.themes.first(), self.theme)
-        self.assertEqual(anime.season, self.season)
+        self.assertEqual(anime.season_id, self.season)
         self.assertEqual(anime.score, 8.0)
         self.assertEqual(anime.ranked, 1)
         self.assertEqual(anime.popularity, 100)
@@ -95,7 +95,7 @@ class AnimeModelTestCase(TestCase):
         anime = Anime(
             name="Dark Gathering",
             name_jpn="ダークギャザリング",
-            studio=self.studio,
+            studio_id=self.studio,
             episodes=25,
         )
         anime.save()

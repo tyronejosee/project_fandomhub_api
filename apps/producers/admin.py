@@ -1,4 +1,4 @@
-"""Admin for Studios App."""
+"""Admin for Producers App."""
 
 from django.contrib import admin
 

@@ -29,7 +29,7 @@ class AnimeAdmin(admin.ModelAdmin):
     ]
     list_filter = [
         "status",
-        "genres_id",
+        "genres",
         "studio_id",
     ]
     list_editable = [
@@ -48,8 +48,8 @@ class AnimeAdmin(admin.ModelAdmin):
     ]
     autocomplete_fields = [
         "studio_id",
-        "genres_id",
-        "themes_id",
+        "genres",
+        "themes",
         "season_id",
     ]
 

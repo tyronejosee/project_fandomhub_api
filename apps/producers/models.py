@@ -8,7 +8,7 @@ from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.utils.mixins import SlugMixin
-from .managers import StudioManager
+from .managers import ProducerManager
 from .choices import TypeChoices
 
 
@@ -35,12 +35,12 @@ class Producer(BaseModel, SlugMixin):
     )
     favorites = models.PositiveIntegerField(_("favorites"), default=0)
 
-    objects = StudioManager()
+    objects = ProducerManager()
 
     class Meta:
         ordering = ["pk"]
-        verbose_name = _("studio")
-        verbose_name_plural = _("studios")
+        verbose_name = _("producer")
+        verbose_name_plural = _("producers")
 
     def __str__(self):
         return str(self.name)

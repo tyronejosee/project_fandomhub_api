@@ -21,7 +21,11 @@ class Tag(BaseModel):
 
     name = models.CharField(_("name"), max_length=100)
     user = models.ForeignKey(
-        User, on_delete=models.CASCADE, db_index=True, verbose_name=_("user")
+        User,
+        on_delete=models.CASCADE,
+        db_index=True,
+        limit_choices_to={"is_available": True},  # TODO: Add role
+        verbose_name=_("user"),
     )
 
     class Meta:
@@ -37,11 +41,15 @@ class Playlist(BaseModel):
     """Model definition for Playlist."""
 
     user = models.ForeignKey(
-        User, on_delete=models.CASCADE, db_index=True, verbose_name=_("user")
+        User,
+        on_delete=models.CASCADE,
+        db_index=True,
+        limit_choices_to={"is_available": True},  # TODO: Add role
+        verbose_name=_("user"),
     )
     name = models.CharField(_("name"), max_length=100, unique=True)
     description = models.TextField(_("description"), blank=True, null=True)
-    tags = models.ManyToManyField("Tag", verbose_name=_("tags"), blank=True)
+    tags = models.ManyToManyField(Tag, verbose_name=_("tags"), blank=True)
     number_items = models.IntegerField(_("number of items"), default=0)
     cover = models.ImageField(
         _("image"),
@@ -49,7 +57,7 @@ class Playlist(BaseModel):
         blank=True,
         null=True,
         validators=[
-            FileExtensionValidator(allowed_extensions=["jpg", "png", "webp"]),
+            FileExtensionValidator(allowed_extensions=["jpg", "webp"]),
             ImageSizeValidator(max_width=600, max_height=600),
             FileSizeValidator(limit_mb=1),
         ],
@@ -73,7 +81,11 @@ class PlaylistItem(BaseModel):
     """Model definition for PlaylistItem."""
 
     playlist = models.ForeignKey(
-        Playlist, on_delete=models.CASCADE, db_index=True, verbose_name=_("playlist")
+        Playlist,
+        on_delete=models.CASCADE,
+        db_index=True,
+        limit_choices_to={"is_available": True},
+        verbose_name=_("playlist"),
     )
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     object_id = models.UUIDField()

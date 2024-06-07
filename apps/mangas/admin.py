@@ -21,7 +21,7 @@ class MangaAdmin(admin.ModelAdmin):
     ]
     list_filter = [
         "status",
-        "genres_id",
+        "genres",
     ]
     list_editable = [
         "is_available",
@@ -41,6 +41,6 @@ class MangaAdmin(admin.ModelAdmin):
         "author_id",
         "demographic_id",
         "serialization_id",
-        "genres_id",
-        "themes_id",
+        "genres",
+        "themes",
     ]

@@ -30,11 +30,10 @@ class ThemeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/themes/{id}/
     """
 
-    serializer_class = ThemeReadSerializer
     permission_classes = [IsContributor]
+    serializer_class = ThemeWriteSerializer
     search_fields = ["name"]
     ordering_fields = ["name"]
-    ordering = ["id"]
 
     def get_queryset(self):
         return Theme.objects.get_available()
@@ -45,8 +44,8 @@ class ThemeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         return super().get_permissions()
 
     def get_serializer_class(self):
-        if self.action in ["create", "update", "partial_update"]:
-            return ThemeWriteSerializer
+        if self.action in ["list", "retrieve"]:
+            return ThemeReadSerializer
         return super().get_serializer_class()
 
 
@@ -64,11 +63,10 @@ class DemographicViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     - DELETE /api/v1/demographics/{id}/
     """
 
-    serializer_class = DemographicReadSerializer
     permission_classes = [IsContributor]
+    serializer_class = DemographicWriteSerializer
     search_fields = ["name"]
     ordering_fields = ["name"]
-    ordering = ["id"]
 
     def get_queryset(self):
         return Demographic.objects.get_available()
@@ -79,6 +77,6 @@ class DemographicViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         return super().get_permissions()
 
     def get_serializer_class(self):
-        if self.action in ["create", "update", "partial_update"]:
-            return DemographicWriteSerializer
+        if self.action in ["list", "retrieve"]:
+            return DemographicReadSerializer
         return super().get_serializer_class()

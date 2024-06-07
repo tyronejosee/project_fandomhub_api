@@ -33,7 +33,7 @@ class MangaManager(Manager):
     def get_by_genre(self, genre):
         return (
             self.get_available()
-            .filter(genres_id=genre)
+            .filter(genres=genre)
             .only("id", "name", "image", "release", "media_type", "status")
         )
 

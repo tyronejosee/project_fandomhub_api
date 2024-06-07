@@ -17,13 +17,18 @@ class Review(BaseModel):
     """Model definition for Review."""
 
     user_id = models.ForeignKey(
-        User, on_delete=models.CASCADE, db_index=True, verbose_name=_("user")
+        User,
+        on_delete=models.CASCADE,
+        db_index=True,
+        limit_choices_to={"is_available": True},  # TODO: Add role
+        verbose_name=_("user"),
     )
     content_type = models.ForeignKey(ContentType, on_delete=models.CASCADE)
     object_id = models.UUIDField()
     content_object = GenericForeignKey("content_type", "object_id")
     rating = models.IntegerField(
-        _("rating"), validators=[MinValueValidator(1), MaxValueValidator(10)]
+        _("rating"),
+        validators=[MinValueValidator(1), MaxValueValidator(10)],
     )
     comment = models.TextField(_("comment"))
     is_spoiler = models.BooleanField(_("is spoiler"), default=False)

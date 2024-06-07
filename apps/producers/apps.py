@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class StudiosConfig(AppConfig):
+class ProducersConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
     name = "apps.producers"

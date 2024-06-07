@@ -43,7 +43,7 @@ class MangaModelTestCase(TestCase):
         )
 
         # Set ManyToManyField
-        manga.genres_id.set([self.genre])
+        manga.genres.set([self.genre])
 
         self.assertEqual(manga.name, "Chainsaw Man")
         self.assertEqual(manga.name_jpn, "チェンソーマン")
@@ -58,7 +58,7 @@ class MangaModelTestCase(TestCase):
         self.assertEqual(manga.status, 1)
         self.assertEqual(manga.author_id, self.author_id)
         self.assertEqual(manga.demographic_id, self.demographic_id)
-        self.assertEqual(manga.genres_id.first(), self.genre)
+        self.assertEqual(manga.genres.first(), self.genre)
         self.assertEqual(manga.score, 8.0)
         self.assertEqual(manga.ranked, 1)
         self.assertEqual(manga.popularity, 100)

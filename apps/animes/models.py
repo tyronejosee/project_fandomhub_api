@@ -10,7 +10,8 @@ from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
 from apps.categories.models import Theme
-from apps.studios.models import Studio
+from apps.producers.models import Producer
+from apps.producers.choices import TypeChoices
 from apps.genres.models import Genre
 from apps.seasons.models import Season
 from .managers import AnimeManager
@@ -23,7 +24,10 @@ class Anime(BaseModel, SlugMixin):
     name = models.CharField(_("name (eng)"), max_length=255, unique=True)
     name_jpn = models.CharField(_("name (jpn)"), max_length=255, unique=True)
     name_rom = models.CharField(
-        _("name (rmj)"), max_length=255, unique=True, blank=True
+        _("name (rmj)"),
+        max_length=255,
+        unique=True,
+        blank=True,
     )
     alternative_names = models.JSONField(
         _("alternative names"),
@@ -63,25 +67,47 @@ class Anime(BaseModel, SlugMixin):
     )
     release = models.DateField(_("release"))
     season_id = models.ForeignKey(
-        Season, on_delete=models.CASCADE, verbose_name=_("season")
-    )  # Revition
-    # premiered
-    # broadcast
-    # producers
-    # licensors
-    studio_id = models.ForeignKey(
-        Studio,
+        Season,
         on_delete=models.CASCADE,
+        limit_choices_to={"is_available": True},
+        verbose_name=_("season"),
+    )
+    producers = models.ManyToManyField(
+        Producer,
+        limit_choices_to={
+            "type": TypeChoices.DISTRIBUTOR,
+            "is_available": True,
+        },
+        verbose_name=_("producers"),
+    )
+    licensors_id = models.ForeignKey(
+        Producer,
+        on_delete=models.CASCADE,
+        blank=True,
+        null=True,
+        limit_choices_to={
+            "type": TypeChoices.LICENSOR,
+            "is_available": True,
+        },
+        verbose_name=_("licensors"),
+    )
+    studio_id = models.ForeignKey(
+        Producer,
+        on_delete=models.CASCADE,
+        limit_choices_to={
+            "type": TypeChoices.STUDIO,
+            "is_available": True,
+        },
         verbose_name=_("studio"),
     )
     source = models.CharField(
-        _("rating"),
+        _("source"),
         max_length=10,
         choices=SourceChoices.choices,
         default=SourceChoices.MANGA,
     )
-    genres_id = models.ManyToManyField(Genre, verbose_name=_("genres"))
-    themes_id = models.ManyToManyField(Theme, verbose_name=_("themes"))
+    genres = models.ManyToManyField(Genre, verbose_name=_("genres"))
+    themes = models.ManyToManyField(Theme, verbose_name=_("themes"))
     duration = models.CharField(_("duration"), max_length=20, blank=True)
     rating = models.CharField(
         _("rating"),
@@ -92,13 +118,15 @@ class Anime(BaseModel, SlugMixin):
     website = models.URLField(_("website"), max_length=255, blank=True)
     is_recommended = models.BooleanField(_("is recommended"), default=False)
 
-    score = models.FloatField(_("mean"), blank=True, null=True)
+    score = models.FloatField(_("score"), blank=True, null=True)
     ranked = models.PositiveIntegerField(_("ranked"), default=0)
     popularity = models.PositiveIntegerField(_("popularity"), default=0)
     members = models.PositiveIntegerField(_("members"), default=0)
     favorites = models.PositiveIntegerField(_("favorites"), default=0)
 
-    # is_publishing = models.BooleanField(_("is recommended"), default=False)
+    # is_publishing = models.BooleanField(_("is_publishing"), default=False)
+    # premiered
+    # broadcast
 
     objects = AnimeManager()
 
@@ -123,6 +151,7 @@ class AnimeStats(BaseModel):
         Anime,
         on_delete=models.CASCADE,
         related_name="stats",
+        limit_choices_to={"is_available": True},
     )
     watching = models.PositiveIntegerField(default=0)
     completed = models.PositiveIntegerField(default=0)

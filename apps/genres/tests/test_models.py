@@ -9,7 +9,7 @@ class GenreModelTestCase(TestCase):
     """Test cases for Genre model."""
 
     def test_creation_genre(self):
-        """Test creating a studio."""
+        """Test creating a genre."""
         genre = Genre.objects.create(name="Romance")
         self.assertEqual(genre.name, "Romance")
         self.assertEqual(genre.is_available, True)

@@ -33,13 +33,16 @@ class Club(BaseModel, SlugMixin):
         ],
     )
     category = models.CharField(
-        _("category"), max_length=30, choices=CategoryChoices.choices
+        _("category"),
+        max_length=30,
+        choices=CategoryChoices.choices,
     )
     members = models.PositiveIntegerField(_("members"), default=0)
     created_by = models.OneToOneField(
         User,
         on_delete=models.CASCADE,
         db_index=True,
+        limit_choices_to={"is_available": True},
         verbose_name=_("creator"),
     )
     is_public = models.BooleanField(_("is public"))
@@ -58,8 +61,18 @@ class Club(BaseModel, SlugMixin):
 class ClubMember(BaseModel):
     """Model definition for ClubMember."""
 
-    club_id = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=_("club"))
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("user"))
+    club_id = models.ForeignKey(
+        Club,
+        on_delete=models.CASCADE,
+        limit_choices_to={"is_available": True},
+        verbose_name=_("club"),
+    )
+    user_id = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        limit_choices_to={"is_available": True},
+        verbose_name=_("user"),
+    )
     joined_at = models.DateTimeField(_("joined_at"), auto_now_add=True)
 
     objects = ClubMemberManager()
@@ -79,7 +92,12 @@ class ClubMember(BaseModel):
 class Event(BaseModel):
     """Model definition for Event."""
 
-    club_id = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=_("club"))
+    club_id = models.ForeignKey(
+        Club,
+        on_delete=models.CASCADE,
+        limit_choices_to={"is_available": True},
+        verbose_name=_("club"),
+    )
     name = models.CharField(_("name"), max_length=255)
     description = models.TextField(_("description"))
     date = models.DateTimeField(_("date"))
@@ -96,12 +114,18 @@ class Event(BaseModel):
 class Topic(BaseModel):
     """Model definition for Topic."""
 
-    club_id = models.ForeignKey(Club, on_delete=models.CASCADE, verbose_name=_("topic"))
     name = models.CharField(_("name"), max_length=255)
+    club_id = models.ForeignKey(
+        Club,
+        on_delete=models.CASCADE,
+        limit_choices_to={"is_available": True},
+        verbose_name=_("topic"),
+    )
     created_by = models.ForeignKey(
         User,
         on_delete=models.SET_NULL,
         null=True,
+        limit_choices_to={"is_available": True},
         verbose_name=_("created by"),
     )
 
@@ -120,6 +144,7 @@ class Discussion(BaseModel):
     topic_id = models.ForeignKey(
         Topic,
         on_delete=models.CASCADE,
+        limit_choices_to={"is_available": True},
         verbose_name=_("topic"),
     )
     content = models.TextField(_("content"))
@@ -127,6 +152,7 @@ class Discussion(BaseModel):
         User,
         on_delete=models.SET_NULL,
         null=True,
+        limit_choices_to={"is_available": True},
         verbose_name=_("created by"),
     )
 

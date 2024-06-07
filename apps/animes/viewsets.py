@@ -52,7 +52,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
 
     permission_classes = [IsContributor]
     serializer_class = AnimeWriteSerializer
-    search_fields = ["name", "studio__name"]
+    search_fields = ["name", "studio_id__name"]
     ordering_fields = ["name"]
 
     def get_queryset(self):
@@ -302,8 +302,8 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         try:
             similar_anime = (
                 Anime.objects.filter(
-                    genres__in=anime.genres_id.all(),
-                    themes__in=anime.themes_id.all(),
+                    genres__in=anime.genres.all(),
+                    themes__in=anime.themes.all(),
                 )
                 .exclude(id=anime.id)
                 .distinct()[:25]

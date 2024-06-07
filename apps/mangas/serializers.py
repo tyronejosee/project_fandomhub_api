@@ -12,7 +12,7 @@ class MangaReadSerializer(serializers.ModelSerializer):
 
     author_id = serializers.CharField(source="author.name")
     demographic_id = DemographicReadSerializer()
-    genres_id = GenreReadSerializer(many=True)
+    genres = GenreReadSerializer(many=True)
     media_type = serializers.CharField(source="get_media_type_display")
     status = serializers.CharField(source="get_status_display")
 
@@ -32,8 +32,8 @@ class MangaReadSerializer(serializers.ModelSerializer):
             "chapters",
             "status",
             "release",
-            "genres_id",
-            "themes_id",
+            "genres",
+            "themes",
             "demographic_id",
             "serialization_id",
             "author_id",
@@ -66,8 +66,8 @@ class MangaWriteSerializer(serializers.ModelSerializer):
             "chapters",
             "status",
             "release",
-            "genres_id",
-            "themes_id",
+            "genres",
+            "themes",
             "demographic_id",
             "serialization_id",
             "author_id",
