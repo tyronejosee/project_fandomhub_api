@@ -1,58 +1,58 @@
 """Serializers for Playlists App."""
 
-from rest_framework import serializers
+# from rest_framework import serializers
 
-from .models import Playlist, PlaylistItem
-
-
-class PlaylistReadSerializer(serializers.ModelSerializer):
-    """Serializer for Playlist model (List/retrieve)."""
-
-    # tags
-
-    class Meta:
-        model = Playlist
-        fields = [
-            "id",
-            "name",
-            "description",
-            "tags",
-            "number_items",
-            "cover",
-            "is_public",
-            "created_at",
-            "updated_at",
-        ]
+# from .models import Playlist, PlaylistItem
 
 
-class PlaylistWriteSerializer(serializers.ModelSerializer):
-    """Serializer for Playlist model (Create/update)."""
+# class PlaylistReadSerializer(serializers.ModelSerializer):
+#     """Serializer for Playlist model (List/retrieve)."""
 
-    class Meta:
-        model = Playlist
-        fields = [
-            "name",
-            "description",
-            "is_public",
-            "tags",
-            "cover",
-        ]
+#     # tags
 
-
-class PlaylistItemReadSerializer(serializers.ModelSerializer):
-    """Pending."""
-
-    class Meta:
-        model = PlaylistItem
-        fields = "__all__"
+#     class Meta:
+#         model = Playlist
+#         fields = [
+#             "id",
+#             "name",
+#             "description",
+#             "tags",
+#             "number_items",
+#             "cover",
+#             "is_public",
+#             "created_at",
+#             "updated_at",
+#         ]
 
 
-class PlaylistItemWriteSerializer(serializers.ModelSerializer):
-    """Pending."""
+# class PlaylistWriteSerializer(serializers.ModelSerializer):
+#     """Serializer for Playlist model (Create/update)."""
 
-    class Meta:
-        model = PlaylistItem
-        fields = "__all__"
+#     class Meta:
+#         model = Playlist
+#         fields = [
+#             "name",
+#             "description",
+#             "is_public",
+#             "tags",
+#             "cover",
+#         ]
+
+
+# class PlaylistItemReadSerializer(serializers.ModelSerializer):
+#     """Pending."""
+
+#     class Meta:
+#         model = PlaylistItem
+#         fields = "__all__"
+
+
+# class PlaylistItemWriteSerializer(serializers.ModelSerializer):
+#     """Pending."""
+
+#     class Meta:
+#         model = PlaylistItem
+#         fields = "__all__"
 
 
 # class PlaylistAnimeSerializer(serializers.ModelSerializer):
