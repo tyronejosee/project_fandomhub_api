@@ -9,10 +9,9 @@ from apps.utils.paths import picture_image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
-from apps.categories.models import Theme
 from apps.producers.models import Producer
 from apps.producers.choices import TypeChoices
-from apps.genres.models import Genre
+from apps.genres.models import Genre, Theme
 from .managers import AnimeManager
 from .choices import (
     DayChoices,

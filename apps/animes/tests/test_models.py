@@ -5,9 +5,8 @@ from django.test import TestCase
 from django.core.exceptions import ValidationError
 
 from apps.animes.models import Anime
-from apps.categories.models import Theme, Demographic
-from apps.producers.models import Studio
-from apps.genres.models import Genre
+from apps.producers.models import Producer
+from apps.genres.models import Genre, Theme, Demographic
 
 
 class AnimeModelTestCase(TestCase):
@@ -15,7 +14,7 @@ class AnimeModelTestCase(TestCase):
 
     def setUp(self):
         # External models
-        self.studio = Studio.objects.create(name="OLM")
+        self.studio = Producer.objects.create(name="OLM")
         self.genre = Genre.objects.create(name="Action")
         self.theme = Theme.objects.create(name="Gore")
         self.demographic = Demographic.objects.create(name="Seinen")

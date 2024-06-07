@@ -18,9 +18,16 @@ from apps.animes.models import Anime
 from apps.mangas.models import Manga
 from apps.animes.serializers import AnimeMinimalSerializer
 from apps.mangas.serializers import MangaMinimalSerializer
-from .models import Genre
-from .serializers import GenreReadSerializer, GenreWriteSerializer
-from .schemas import genre_schemas
+from .models import Genre, Theme, Demographic
+from .serializers import (
+    GenreReadSerializer,
+    GenreWriteSerializer,
+    ThemeReadSerializer,
+    ThemeWriteSerializer,
+    DemographicReadSerializer,
+    DemographicWriteSerializer,
+)
+from .schemas import genre_schemas, theme_schemas, demographic_schemas
 
 
 @extend_schema_view(**genre_schemas)
@@ -87,7 +94,9 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
     @extend_schema(
         summary="Get Mangas for Genre", description="Retrieve a manga list for genre."
@@ -119,4 +128,72 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+
+@extend_schema_view(**theme_schemas)
+class ThemeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
+    """
+    ViewSet for managing Theme instances.
+
+    Endpoints:
+    - GET /api/v1/themes/
+    - POST /api/v1/themes/
+    - GET /api/v1/themes/{id}/
+    - PUT /api/v1/themes/{id}/
+    - PATCH /api/v1/themes/{id}/
+    - DELETE /api/v1/themes/{id}/
+    """
+
+    permission_classes = [IsContributor]
+    serializer_class = ThemeWriteSerializer
+    search_fields = ["name"]
+    ordering_fields = ["name"]
+
+    def get_queryset(self):
+        return Theme.objects.get_available()
+
+    def get_permissions(self):
+        if self.action in ["list", "retrieve"]:
+            return [AllowAny()]
+        return super().get_permissions()
+
+    def get_serializer_class(self):
+        if self.action in ["list", "retrieve"]:
+            return ThemeReadSerializer
+        return super().get_serializer_class()
+
+
+@extend_schema_view(**demographic_schemas)
+class DemographicViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
+    """
+    ViewSet for managing Demographic instances.
+
+    Endpoints:
+    - GET /api/v1/demographics/
+    - POST /api/v1/demographics/
+    - GET /api/v1/demographics/{id}/
+    - PUT /api/v1/demographics/{id}/
+    - PATCH /api/v1/demographics/{id}/
+    - DELETE /api/v1/demographics/{id}/
+    """
+
+    permission_classes = [IsContributor]
+    serializer_class = DemographicWriteSerializer
+    search_fields = ["name"]
+    ordering_fields = ["name"]
+
+    def get_queryset(self):
+        return Demographic.objects.get_available()
+
+    def get_permissions(self):
+        if self.action in ["list", "retrieve"]:
+            return [AllowAny()]
+        return super().get_permissions()
+
+    def get_serializer_class(self):
+        if self.action in ["list", "retrieve"]:
+            return DemographicReadSerializer
+        return super().get_serializer_class()

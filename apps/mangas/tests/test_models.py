@@ -5,8 +5,7 @@ from django.test import TestCase
 from django.core.exceptions import ValidationError
 
 from apps.mangas.models import Manga
-from apps.categories.models import Demographic
-from apps.genres.models import Genre
+from apps.genres.models import Genre, Demographic
 from apps.persons.models import Person
 
 

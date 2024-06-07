@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 
-from apps.producers.serializers import StudioReadSerializer
+from apps.producers.serializers import ProducerReadSerializer
 from apps.genres.serializers import GenreReadSerializer
 from .models import Anime, AnimeStats
 
@@ -10,7 +10,7 @@ from .models import Anime, AnimeStats
 class AnimeReadSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
 
-    studio_id = StudioReadSerializer()
+    studio_id = ProducerReadSerializer()
     genres = GenreReadSerializer(many=True)
     status = serializers.CharField(source="get_status_display")
     category = serializers.CharField(source="get_category_display")

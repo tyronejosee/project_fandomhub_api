@@ -8,3 +8,17 @@ class GenreManager(Manager):
 
     def get_available(self):
         return self.filter(is_available=True)
+
+
+class ThemeManager(Manager):
+    """Manager for Theme model."""
+
+    def get_available(self):
+        return self.filter(is_available=True)
+
+
+class DemographicManager(Manager):
+    """Manager for Season model."""
+
+    def get_available(self):
+        return self.filter(is_available=True)

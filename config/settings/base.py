@@ -22,7 +22,6 @@ BASE_APPS = [
 
 PROJECT_APPS = [
     "apps.animes",
-    "apps.categories",
     "apps.characters",
     "apps.clubs",
     "apps.genres",
