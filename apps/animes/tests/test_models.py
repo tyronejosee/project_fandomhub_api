@@ -8,7 +8,6 @@ from apps.animes.models import Anime
 from apps.categories.models import Theme, Demographic
 from apps.producers.models import Studio
 from apps.genres.models import Genre
-from apps.seasons.models import Season
 
 
 class AnimeModelTestCase(TestCase):
@@ -19,7 +18,6 @@ class AnimeModelTestCase(TestCase):
         self.studio = Studio.objects.create(name="OLM")
         self.genre = Genre.objects.create(name="Action")
         self.theme = Theme.objects.create(name="Gore")
-        self.season = Season.objects.create(season="spring", year=1997)
         self.demographic = Demographic.objects.create(name="Seinen")
 
     def test_creation(self):
@@ -39,7 +37,6 @@ class AnimeModelTestCase(TestCase):
             status="finished",
             rating=1,
             studio_id=self.studio,
-            season_id=self.season,
             score=8.0,
             rank=1,
             popularity=100,
@@ -66,7 +63,6 @@ class AnimeModelTestCase(TestCase):
         self.assertEqual(anime.studio_id, self.studio)
         self.assertEqual(anime.genres.first(), self.genre)
         self.assertEqual(anime.themes.first(), self.theme)
-        self.assertEqual(anime.season_id, self.season)
         self.assertEqual(anime.score, 8.0)
         self.assertEqual(anime.ranked, 1)
         self.assertEqual(anime.popularity, 100)

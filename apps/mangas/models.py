@@ -59,6 +59,7 @@ class Manga(BaseModel, SlugMixin):
         ],
     )
     synopsis = models.TextField(_("synopsis"), blank=True, null=True)
+    background = models.TextField(_("background"), blank=True, null=True)
     media_type = models.CharField(
         _("media type"),
         max_length=10,

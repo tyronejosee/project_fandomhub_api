@@ -13,9 +13,47 @@ from apps.categories.models import Theme
 from apps.producers.models import Producer
 from apps.producers.choices import TypeChoices
 from apps.genres.models import Genre
-from apps.seasons.models import Season
 from .managers import AnimeManager
-from .choices import StatusChoices, MediaTypeChoices, RatingChoices, SourceChoices
+from .choices import (
+    DayChoices,
+    TimezoneChoices,
+    StatusChoices,
+    MediaTypeChoices,
+    RatingChoices,
+    SourceChoices,
+    SeasonChoices,
+)
+
+
+class Broadcast(BaseModel):
+    """Model definition for Broadcast."""
+
+    string = models.CharField(_("string"), max_length=50, blank=True)
+    day = models.CharField(
+        _("day"),
+        max_length=10,
+        choices=DayChoices.choices,
+    )
+    time = models.TimeField(_("time"))
+    timezone = models.CharField(
+        _("timezone"),
+        max_length=3,
+        choices=TimezoneChoices.choices,
+        default=TimezoneChoices.JST,
+    )
+
+    class Meta:
+        ordering = ["pk"]
+        verbose_name = _("broadcast")
+        verbose_name_plural = _("broadcasts")
+
+    def save(self, *args, **kwargs):
+        # Automatically generate the string field
+        self.string = f"{self.get_day_display()} at {self.time.strftime('%H:%M')} ({self.get_timezone_display()})"
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return str(self.string)
 
 
 class Anime(BaseModel, SlugMixin):
@@ -48,11 +86,38 @@ class Anime(BaseModel, SlugMixin):
     )
     trailer = models.URLField(_("trailer"), max_length=255, blank=True)
     synopsis = models.TextField(_("synopsis"), blank=True, null=True)
+    background = models.TextField(_("background"), blank=True, null=True)
+    season = models.CharField(
+        _("season"),
+        max_length=10,
+        db_index=True,
+        choices=SeasonChoices.choices,
+    )
+    year = models.IntegerField(
+        _("year"),
+        default=2010,
+        db_index=True,
+        validators=[MinValueValidator(1900), MaxValueValidator(2100)],
+    )
+    broadcast_id = models.ForeignKey(
+        Broadcast,
+        on_delete=models.SET_NULL,
+        blank=True,
+        null=True,
+        limit_choices_to={"is_available": True},
+        verbose_name=_("broadcast"),
+    )
     media_type = models.CharField(
         _("media type"),
         max_length=10,
         choices=MediaTypeChoices.choices,
         default=MediaTypeChoices.TV,
+    )
+    source = models.CharField(
+        _("source"),
+        max_length=10,
+        choices=SourceChoices.choices,
+        default=SourceChoices.MANGA,
     )
     episodes = models.IntegerField(
         _("episodes"),
@@ -66,12 +131,6 @@ class Anime(BaseModel, SlugMixin):
         default=StatusChoices.AIRING,
     )
     release = models.DateField(_("release"))
-    season_id = models.ForeignKey(
-        Season,
-        on_delete=models.CASCADE,
-        limit_choices_to={"is_available": True},
-        verbose_name=_("season"),
-    )
     producers = models.ManyToManyField(
         Producer,
         limit_choices_to={
@@ -100,12 +159,6 @@ class Anime(BaseModel, SlugMixin):
         },
         verbose_name=_("studio"),
     )
-    source = models.CharField(
-        _("source"),
-        max_length=10,
-        choices=SourceChoices.choices,
-        default=SourceChoices.MANGA,
-    )
     genres = models.ManyToManyField(Genre, verbose_name=_("genres"))
     themes = models.ManyToManyField(Theme, verbose_name=_("themes"))
     duration = models.CharField(_("duration"), max_length=20, blank=True)
@@ -125,8 +178,7 @@ class Anime(BaseModel, SlugMixin):
     favorites = models.PositiveIntegerField(_("favorites"), default=0)
 
     # is_publishing = models.BooleanField(_("is_publishing"), default=False)
-    # premiered
-    # broadcast
+    # premiered = season + year
 
     objects = AnimeManager()
 

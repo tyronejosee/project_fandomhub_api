@@ -46,8 +46,9 @@ class AnimeManager(Manager):
             )
         )  # TODO: Optimize 44.3 ms
 
-    def get_by_season(self, season):
-        return self.get_available().filter(season_id=season)
+    # def get_by_season(self, season):
+    #     return self.get_available().filter(season_id=season)
+    # TODO: IMPORTANT
 
     def get_by_studio(self, studio):
         return self.get_available().filter(studio_id=studio)

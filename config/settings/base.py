@@ -34,7 +34,6 @@ PROJECT_APPS = [
     "apps.randoms",
     "apps.recommendations",
     "apps.reviews",
-    "apps.seasons",
     "apps.producers",
     "apps.tops",
     "apps.users",

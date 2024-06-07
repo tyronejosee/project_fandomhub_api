@@ -4,6 +4,28 @@ from django.db.models import TextChoices
 from django.utils.translation import gettext as _
 
 
+class DayChoices(TextChoices):
+    MONDAY = "monday", _("Monday")
+    TUESDAY = "tuesday", _("Tuesday")
+    WEDNESDAY = "wednesday", _("Wednesday")
+    THURSDAY = "thursday", _("Thursday")
+    FRIDAY = "friday", _("Friday")
+    SATURDAY = "saturday", _("Saturday")
+    SUNDAY = "sunday", _("Sunday")
+
+
+class TimezoneChoices(TextChoices):
+
+    JST = "JST", _("Japan Standard Time")
+    PST = "PST", _("Pacific Standard Time")
+    EST = "EST", _("Eastern Standard Time")
+    CST = "CST", _("Central Standard Time")
+    GMT = "GMT", _("Greenwich Mean Time")
+    CET = "CET", _("Central European Time")
+
+    # TODO: Add more
+
+
 class StatusChoices(TextChoices):
 
     FINISHED = "finished", _("Finished")
@@ -42,3 +64,11 @@ class SourceChoices(TextChoices):
     BOOK = "book", _("Book")
     RADIO = "radio", _("Radio")
     MUSIC = "music", _("Music")
+
+
+class SeasonChoices(TextChoices):
+
+    WINTER = "winter", _("Winter")
+    SPRING = "spring", _("Spring")
+    SUMMER = "summer", _("Summer")
+    FALL = "fall", _("Fall")

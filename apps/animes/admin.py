@@ -50,7 +50,6 @@ class AnimeAdmin(admin.ModelAdmin):
         "studio_id",
         "genres",
         "themes",
-        "season_id",
     ]
 
 
