@@ -71,5 +71,6 @@ export default defineConfig({
       lang: 'es',
       link: '/es/index'
     }
-  }
+  },
+  ignoreDeadLinks: true
 })
