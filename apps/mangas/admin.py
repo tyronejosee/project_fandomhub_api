@@ -2,7 +2,22 @@
 
 from django.contrib import admin
 
-from .models import Manga
+from .models import Manga, Magazine
+
+
+@admin.register(Magazine)
+class MagazineAdmin(admin.ModelAdmin):
+    """Admin for Magazine model."""
+
+    list_per_page = 25
+    search_fields = [
+        "name",
+    ]
+    list_display = [
+        "name",
+        "count",
+        "is_available",
+    ]
 
 
 @admin.register(Manga)

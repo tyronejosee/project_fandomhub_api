@@ -33,22 +33,23 @@ class GenreAdmin(admin.ModelAdmin):
 class ThemeAdmin(admin.ModelAdmin):
     """Admin for Theme model."""
 
+    ordering = ["created_at"]
+    list_per_page = 25
     search_fields = [
         "name",
     ]
-    list_display = ["name", "is_available"]
+    list_display = [
+        "name",
+        "is_available",
+    ]
     list_filter = [
         "is_available",
     ]
-    list_per_page = 25
     readonly_fields = [
         "pk",
         "slug",
         "created_at",
         "updated_at",
-    ]
-    ordering = [
-        "created_at",
     ]
 
 
@@ -56,19 +57,20 @@ class ThemeAdmin(admin.ModelAdmin):
 class DemographicAdmin(admin.ModelAdmin):
     """Admin for Demographic model."""
 
+    ordering = ["pk"]
+    list_per_page = 25
     search_fields = [
         "name",
     ]
-    list_display = ["name", "is_available"]
+    list_display = [
+        "name",
+        "is_available",
+    ]
     list_filter = [
         "is_available",
     ]
-    list_per_page = 25
     readonly_fields = [
         "pk",
         "created_at",
         "updated_at",
-    ]
-    ordering = [
-        "pk",
     ]

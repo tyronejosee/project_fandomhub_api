@@ -137,6 +137,7 @@ class Anime(BaseModel, SlugMixin):
             "type": TypeChoices.DISTRIBUTOR,
             "is_available": True,
         },
+        related_name="produced_animes",
         verbose_name=_("producers"),
     )
     licensors_id = models.ForeignKey(
@@ -148,6 +149,7 @@ class Anime(BaseModel, SlugMixin):
             "type": TypeChoices.LICENSOR,
             "is_available": True,
         },
+        related_name="licensed_animes",
         verbose_name=_("licensors"),
     )
     studio_id = models.ForeignKey(
@@ -157,6 +159,7 @@ class Anime(BaseModel, SlugMixin):
             "type": TypeChoices.STUDIO,
             "is_available": True,
         },
+        related_name="studio_animes",
         verbose_name=_("studio"),
     )
     genres = models.ManyToManyField(Genre, verbose_name=_("genres"))

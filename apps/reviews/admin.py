@@ -9,13 +9,13 @@ from .models import Review
 class ReviewAdmin(admin.ModelAdmin):
     """Admin for Review model."""
 
-    ordering = ["user"]
+    ordering = ["user_id"]
     list_per_page = 25
     search_fields = [
-        "user",
+        "user_id",
     ]
     list_display = [
-        "user",
+        "user_id",
         "comment",
         "is_available",
     ]

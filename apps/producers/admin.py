@@ -2,10 +2,10 @@
 
 from django.contrib import admin
 
-from .models import Studio
+from .models import Producer
 
 
-@admin.register(Studio)
+@admin.register(Producer)
 class ProducerAdmin(admin.ModelAdmin):
     """Admin for Producer model."""
 

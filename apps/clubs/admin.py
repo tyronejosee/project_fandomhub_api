@@ -43,17 +43,17 @@ class ClubMemberAdmin(admin.ModelAdmin):
     ordering = ["-created_at"]
     list_per_page = 25
     search_fields = [
-        "club",
-        "user",
+        "club_id",
+        "user_id",
     ]
     list_display = [
-        "club",
-        "user",
+        "club_id",
+        "user_id",
         "is_available",
     ]
     list_filter = [
         "is_available",
-        "club",
+        "club_id",
     ]
     list_editable = [
         "is_available",
@@ -75,13 +75,13 @@ class EventAdmin(admin.ModelAdmin):
         "name",
     ]
     list_display = [
-        "club",
+        "club_id",
         "name",
         "is_available",
     ]
     list_filter = [
         "is_available",
-        "club",
+        "club_id",
     ]
     list_editable = [
         "is_available",
@@ -103,20 +103,20 @@ class TopicAdmin(admin.ModelAdmin):
         "name",
     ]
     list_display = [
-        "club",
+        "club_id",
         "is_available",
     ]
-    list_filter = [
-        "is_available",
-    ]
-    list_editable = [
-        "is_available",
-    ]
-    readonly_fields = [
-        "pk",
-        "created_at",
-        "updated_at",
-    ]
+    # list_filter = [
+    #     "is_available",
+    # ]
+    # list_editable = [
+    #     "is_available",
+    # ]
+    # readonly_fields = [
+    #     "pk",
+    #     "created_at",
+    #     "updated_at",
+    # ]
 
 
 @admin.register(Discussion)
@@ -126,16 +126,16 @@ class DiscussionAdmin(admin.ModelAdmin):
     ordering = ["-created_at"]
     list_per_page = 25
     search_fields = [
-        "topic",
+        "topic_id",
     ]
     list_display = [
-        "topic",
+        "topic_id",
         "content",
         "is_available",
     ]
     list_filter = [
         "is_available",
-        "topic",
+        "topic_id",
     ]
     list_editable = [
         "is_available",

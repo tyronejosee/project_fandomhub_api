@@ -5,6 +5,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class ScoreChoices(IntegerChoices):
+
     ONE = 1, _("1 - Appaling")
     TWO = 2, _("2 - Horrible")
     THREE = 3, _("3 - Very Bad")
