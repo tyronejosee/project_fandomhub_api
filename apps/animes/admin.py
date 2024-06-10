@@ -17,6 +17,7 @@ class AnimeAdmin(admin.ModelAdmin):
     """Admin for Anime model."""
 
     list_per_page = 25
+    empty_value_display = "unknown"
     search_fields = [
         "name",
         "name_jpn",
@@ -48,6 +49,9 @@ class AnimeAdmin(admin.ModelAdmin):
     ]
     autocomplete_fields = [
         "studio_id",
+    ]
+    filter_horizontal = [
+        "producers",
         "genres",
         "themes",
     ]

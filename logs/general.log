@@ -1,0 +1,478 @@
+2024-06-10 13:48:15,936:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:48:30,047:WARNING - django.request log.py (line 241. Not Found: /favicon.ico)
+2024-06-10 13:50:10,266:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 13:50:17,322:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:50:35,629:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 13:50:41,354:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:51:13,040:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 13:51:16,701:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:51:26,594:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 13:51:31,841:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:51:39,125:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 13:51:43,143:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:51:49,853:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 13:51:53,957:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:53:14,846:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/admin.py changed, reloading.)
+2024-06-10 13:53:18,103:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:53:23,639:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/admin.py changed, reloading.)
+2024-06-10 13:53:27,975:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:53:38,224:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/admin.py changed, reloading.)
+2024-06-10 13:53:41,731:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:53:46,206:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/admin.py changed, reloading.)
+2024-06-10 13:53:49,383:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:53:57,422:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/mangas/admin.py changed, reloading.)
+2024-06-10 13:54:01,232:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:54:48,330:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/admin.py changed, reloading.)
+2024-06-10 13:54:51,656:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:54:57,291:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/admin.py changed, reloading.)
+2024-06-10 13:55:00,704:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:55:05,771:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/admin.py changed, reloading.)
+2024-06-10 13:55:09,591:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:55:16,877:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/admin.py changed, reloading.)
+2024-06-10 13:55:21,165:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:55:26,490:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/admin.py changed, reloading.)
+2024-06-10 13:55:30,088:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:55:33,569:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/admin.py changed, reloading.)
+2024-06-10 13:55:37,150:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:55:46,196:ERROR - django.request log.py (line 241. Internal Server Error: /admin/news/news/add/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1869, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/forms/models.py", line 387, in __init__
+    apply_limit_choices_to_to_formfield(formfield)
+  File "/usr/local/lib/python3.12/site-packages/django/forms/models.py", line 133, in apply_limit_choices_to_to_formfield
+    Exists(formfield.queryset.model._base_manager.filter(complex_filter)),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1461, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_available' into field. Choices are: animelist, club, clubmember, created_at, discussion, email, groups, id, is_active, is_online, is_staff, is_superuser, last_login, logentry, mangalist, news, outstandingtoken, password, profile, review, role, social_auth, topic, updated_at, user_permissions, username
+2024-06-10 13:55:50,858:ERROR - django.request log.py (line 241. Internal Server Error: /admin/news/news/add/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1869, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/forms/models.py", line 387, in __init__
+    apply_limit_choices_to_to_formfield(formfield)
+  File "/usr/local/lib/python3.12/site-packages/django/forms/models.py", line 133, in apply_limit_choices_to_to_formfield
+    Exists(formfield.queryset.model._base_manager.filter(complex_filter)),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1461, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_available' into field. Choices are: animelist, club, clubmember, created_at, discussion, email, groups, id, is_active, is_online, is_staff, is_superuser, last_login, logentry, mangalist, news, outstandingtoken, password, profile, review, role, social_auth, topic, updated_at, user_permissions, username
+2024-06-10 13:56:25,620:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/models.py changed, reloading.)
+2024-06-10 13:56:28,950:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 13:57:03,351:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/models.py changed, reloading.)
+2024-06-10 13:57:07,772:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:01:19,658:ERROR - django.request log.py (line 241. Internal Server Error: /admin/clubs/clubmember/add/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1869, in _changeform_view
+    form = ModelForm(initial=initial)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/forms/models.py", line 387, in __init__
+    apply_limit_choices_to_to_formfield(formfield)
+  File "/usr/local/lib/python3.12/site-packages/django/forms/models.py", line 133, in apply_limit_choices_to_to_formfield
+    Exists(formfield.queryset.model._base_manager.filter(complex_filter)),
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1461, in build_filter
+    return self._add_q(
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'is_available' into field. Choices are: animelist, club, clubmember, created_at, discussion, email, groups, id, is_active, is_online, is_staff, is_superuser, last_login, logentry, mangalist, news, outstandingtoken, password, profile, review, role, social_auth, topic, updated_at, user_permissions, username
+2024-06-10 14:01:56,669:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/models.py changed, reloading.)
+2024-06-10 14:02:00,175:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:02:14,272:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/models.py changed, reloading.)
+2024-06-10 14:02:18,006:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:02:35,082:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/models.py changed, reloading.)
+2024-06-10 14:02:38,606:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:02:44,650:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/clubs/models.py changed, reloading.)
+2024-06-10 14:02:48,823:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:07:22,168:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 14:07:25,366:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:07:29,426:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 14:07:32,909:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:07:36,800:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 14:07:40,103:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:07:44,063:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 14:07:47,642:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:07:50,942:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 14:07:53,978:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:08:00,543:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 14:08:04,102:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:08:09,064:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 14:08:12,475:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:08:17,212:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/admin.py changed, reloading.)
+2024-06-10 14:08:21,240:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:11:19,166:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:11:23,880:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:11:30,612:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:11:33,814:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:17:00,774:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:17:04,441:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:17:42,669:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:17:46,256:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:18:01,762:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:18:05,574:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:18:30,651:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:18:34,402:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:18:39,775:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:18:42,957:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:19:07,377:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:19:10,926:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:19:15,992:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:19:19,475:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:19:23,589:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:19:27,512:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:19:30,829:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:19:33,971:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:19:41,929:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:19:45,064:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:19:53,327:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:19:57,375:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:20:01,160:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:20:05,587:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:20:11,099:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:20:14,655:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:20:36,908:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:20:40,058:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:20:46,283:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:20:49,611:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:20:54,267:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:20:57,731:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:21:07,805:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:21:11,589:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:21:22,382:ERROR - django.request log.py (line 241. Internal Server Error: /admin/persons/person/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'get_age'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Person has no field named 'get_age'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 319, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+TypeError: PersonAdmin.get_age() takes 1 positional argument but 2 were given
+2024-06-10 14:22:20,107:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:22:24,203:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:22:29,428:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/models.py changed, reloading.)
+2024-06-10 14:22:34,622:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:22:40,812:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:22:45,883:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:23:46,389:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:23:50,387:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:28:18,000:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/models.py changed, reloading.)
+2024-06-10 14:28:22,616:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:29:47,057:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:29:50,327:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:29:57,751:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:30:01,584:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:30:16,186:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:30:20,038:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:30:25,745:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:30:29,779:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:30:35,104:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:30:38,883:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:30:47,383:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:30:51,922:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:31:08,371:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:31:12,163:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:32:11,710:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/admin.py changed, reloading.)
+2024-06-10 14:32:14,986:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:34:26,619:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/models.py changed, reloading.)
+2024-06-10 14:34:29,983:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:34:43,793:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/models.py changed, reloading.)
+2024-06-10 14:34:48,045:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-10 14:35:04,380:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/models.py changed, reloading.)
+2024-06-10 14:35:09,223:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)

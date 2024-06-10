@@ -31,7 +31,6 @@ class PlaylistBase(BaseModel):
         User,
         on_delete=models.CASCADE,
         db_index=True,
-        limit_choices_to={"is_available": True},  # TODO: Add role
         verbose_name=_("user"),
     )
     banner = models.ImageField(

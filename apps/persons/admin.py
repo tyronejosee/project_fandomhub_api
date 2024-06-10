@@ -17,6 +17,7 @@ class PersonAdmin(admin.ModelAdmin):
     list_display = [
         "name",
         "category",
+        "get_age",
         "is_available",
     ]
     list_filter = [

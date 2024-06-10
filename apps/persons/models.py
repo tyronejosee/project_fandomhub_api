@@ -1,5 +1,6 @@
 """Models for Persons App."""
 
+from datetime import date
 from django.db import models
 from django.db.models import UniqueConstraint
 from django.core.validators import FileExtensionValidator
@@ -73,6 +74,16 @@ class Person(BaseModel, SlugMixin):
 
     def __str__(self):
         return self.name
+
+    def get_age(self):
+        today = date.today()
+        return (
+            today.year
+            - self.birthday.year
+            - ((today.month, today.day) < (self.birthday.month, self.birthday.day))
+        )
+
+    get_age.short_description = "age"
 
 
 class StaffAnime(BaseModel):

@@ -164,7 +164,7 @@ class Anime(BaseModel, SlugMixin):
     )
     genres = models.ManyToManyField(Genre, verbose_name=_("genres"))
     themes = models.ManyToManyField(Theme, verbose_name=_("themes"))
-    duration = models.CharField(_("duration"), max_length=20, blank=True)
+    duration = models.DurationField(_("duration"), blank=True)
     rating = models.CharField(
         _("rating"),
         max_length=10,

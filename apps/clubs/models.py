@@ -42,7 +42,6 @@ class Club(BaseModel, SlugMixin):
         User,
         on_delete=models.CASCADE,
         db_index=True,
-        limit_choices_to={"is_available": True},
         verbose_name=_("creator"),
     )
     is_public = models.BooleanField(_("is public"))
@@ -64,13 +63,11 @@ class ClubMember(BaseModel):
     club_id = models.ForeignKey(
         Club,
         on_delete=models.CASCADE,
-        limit_choices_to={"is_available": True},
         verbose_name=_("club"),
     )
     user_id = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        limit_choices_to={"is_available": True},
         verbose_name=_("user"),
     )
     joined_at = models.DateTimeField(_("joined_at"), auto_now_add=True)
@@ -125,7 +122,6 @@ class Topic(BaseModel):
         User,
         on_delete=models.SET_NULL,
         null=True,
-        limit_choices_to={"is_available": True},
         verbose_name=_("created by"),
     )
 
@@ -152,7 +148,6 @@ class Discussion(BaseModel):
         User,
         on_delete=models.SET_NULL,
         null=True,
-        limit_choices_to={"is_available": True},
         verbose_name=_("created by"),
     )
 

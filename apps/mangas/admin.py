@@ -56,6 +56,8 @@ class MangaAdmin(admin.ModelAdmin):
         "author_id",
         "demographic_id",
         "serialization_id",
+    ]
+    filter_horizontal = [
         "genres",
         "themes",
     ]

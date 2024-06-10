@@ -9,6 +9,9 @@ from .models import News
 class NewsAdmin(admin.ModelAdmin):
     """Admin for News model."""
 
+    ordering = [
+        "-created_at",
+    ]
     list_per_page = 25
     search_fields = [
         "name",
@@ -25,7 +28,7 @@ class NewsAdmin(admin.ModelAdmin):
         "created_at",
         "updated_at",
     ]
-    ordering = [
-        "-created_at",
-        "pk",
+    filter_horizontal = [
+        "anime_relations",
+        "manga_relations",
     ]

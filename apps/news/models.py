@@ -33,7 +33,6 @@ class News(BaseModel):
     author_id = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
-        limit_choices_to={"is_available": True},  # TODO: Add role
         verbose_name=_("user"),
     )
 
