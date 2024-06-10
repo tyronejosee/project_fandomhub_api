@@ -27,6 +27,7 @@ User = settings.AUTH_USER_MODEL
 class PlaylistBase(BaseModel):
     """Model definition for Playlist (Base)."""
 
+    # TODO: Update and migrate
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
