@@ -1,109 +1,94 @@
 """Serializers for Playlists App."""
 
-# from rest_framework import serializers
+from rest_framework import serializers
 
-# from .models import Playlist, PlaylistItem
-
-
-# class PlaylistReadSerializer(serializers.ModelSerializer):
-#     """Serializer for Playlist model (List/retrieve)."""
-
-#     # tags
-
-#     class Meta:
-#         model = Playlist
-#         fields = [
-#             "id",
-#             "name",
-#             "description",
-#             "tags",
-#             "number_items",
-#             "cover",
-#             "is_public",
-#             "created_at",
-#             "updated_at",
-#         ]
+from apps.animes.serializers import AnimeMinimalSerializer
+from .models import AnimeList, AnimeListItem
 
 
-# class PlaylistWriteSerializer(serializers.ModelSerializer):
-#     """Serializer for Playlist model (Create/update)."""
+class AnimeListReadSerializer(serializers.ModelSerializer):
+    """Serializer for AnimeList model (List/retrieve)."""
 
-#     class Meta:
-#         model = Playlist
-#         fields = [
-#             "name",
-#             "description",
-#             "is_public",
-#             "tags",
-#             "cover",
-#         ]
+    class Meta:
+        model = AnimeList
+        fields = [
+            "id",
+            "banner",
+            "is_public",
+            "created_at",
+            "updated_at",
+        ]
 
-
-# class PlaylistItemReadSerializer(serializers.ModelSerializer):
-#     """Pending."""
-
-#     class Meta:
-#         model = PlaylistItem
-#         fields = "__all__"
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        representation["banner"] = representation.get("banner", "") or ""
+        return representation
 
 
-# class PlaylistItemWriteSerializer(serializers.ModelSerializer):
-#     """Pending."""
+class AnimeListWriteSerializer(serializers.ModelSerializer):
+    """Serializer for AnimeList model (Create/update)."""
 
-#     class Meta:
-#         model = PlaylistItem
-#         fields = "__all__"
-
-
-# class PlaylistAnimeSerializer(serializers.ModelSerializer):
-#     """Serializer for PlaylistAnime model."""
-
-#     anime_id = serializers.UUIDField(write_only=True)
-#     anime = AnimeMinimumSerializer(read_only=True)
-
-#     class Meta:
-#         model = PlaylistAnime
-#         fields = [
-#             "id",
-#             "anime",
-#             "anime_id",
-#             "status",
-#             "is_watched",
-#             "is_favorite",
-#         ]  # Add order field
-
-#         def create(self, validated_data):
-#             anime_id = validated_data.pop("anime_id")
-#             anime = get_object_or_404(Anime, id=anime_id)
-#             playlist_anime = PlaylistAnime.objects.create(
-#                 anime=anime,
-#                 **validated_data,
-#             )
-#             return playlist_anime
+    class Meta:
+        model = AnimeList
+        fields = [
+            "banner",
+            "is_public",
+        ]
+        extra_kwargs = {
+            "banner": {"required": True},
+        }
 
 
-# class PlaylistMangaSerializer(serializers.ModelSerializer):
-#     """Serializer for PlaylistManga model."""
+class AnimeListItemReadSerializer(serializers.ModelSerializer):
+    """Serializer for AnimeList model (List/retrieve)."""
 
-#     manga_id = serializers.UUIDField(write_only=True)
-#     manga = MangaMinimumSerializer(read_only=True)
+    anime_id = AnimeMinimalSerializer()
+    status = serializers.CharField(source="get_status_display")
+    score = serializers.CharField(source="get_score_display")
+    priority = serializers.CharField(source="get_priority_display")
+    storage = serializers.CharField(source="get_storage_display")
 
-#     class Meta:
-#         model = PlaylistManga
-#         fields = [
-#             "id",
-#             "manga",
-#             "manga_id",
-#             "status",
-#             "is_watched",
-#             "is_favorite",
-#         ]  # Add order field
+    class Meta:
+        model = AnimeListItem
+        fields = [
+            "id",
+            "anime_id",
+            "status",
+            "episodes_watched",
+            "score",
+            "start_date",
+            "finish_date",
+            "tags",
+            "priority",
+            "storage",
+            "times_rewatched",
+            "notes",
+            "order",
+            "is_watched",
+            "is_favorite",
+            "created_at",
+            "updated_at",
+        ]
 
-#         def create(self, validated_data):
-#             manga_id = validated_data.pop("manga_id")
-#             manga = get_object_or_404(Manga, id=manga_id)
-#             playlist_manga = PlaylistManga.objects.create(
-#                 manga=manga,
-#                 **validated_data,
-#             )
-#             return playlist_manga
+
+class AnimeListItemWriteSerializer(serializers.ModelSerializer):
+    """Serializer for AnimeList model (Create/update)."""
+
+    class Meta:
+        model = AnimeListItem
+        fields = [
+            "anime_id",
+            "status",
+            "episodes_watched",
+            "score",
+            "start_date",
+            "finish_date",
+            "tags",
+            "priority",
+            "storage",
+            "times_rewatched",
+            "notes",
+            "order",
+            "is_watched",
+            "is_favorite",
+        ]

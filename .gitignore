@@ -3,6 +3,8 @@ db.sqlite3
 .env.dev
 .env.prod
 desktop.ini
+static/import_export/
+temp.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
