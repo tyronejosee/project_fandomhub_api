@@ -1,59 +1,33 @@
 """Admin for Persons App."""
 
 from django.contrib import admin
+from import_export.admin import ImportExportModelAdmin
 
 from .models import Person, StaffAnime
+from .resources import PersonResource, StaffAnimeResource
 
 
 @admin.register(Person)
-class PersonAdmin(admin.ModelAdmin):
+class PersonAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     """Admin for Person model."""
 
-    ordering = ["-created_at"]
+    search_fields = ["name"]
     list_per_page = 25
-    search_fields = [
-        "name",
-    ]
-    list_display = [
-        "name",
-        "category",
-        "get_age",
-        "is_available",
-    ]
-    list_filter = [
-        "is_available",
-        "category",
-    ]
-    readonly_fields = [
-        "pk",
-        "slug",
-        "created_at",
-        "updated_at",
-    ]
+    list_display = ["name", "category", "get_age", "is_available"]
+    list_filter = ["is_available", "category"]
+    readonly_fields = ["pk", "slug", "created_at", "updated_at"]
+    ordering = ["-created_at"]
+    resource_class = PersonResource
 
 
 @admin.register(StaffAnime)
-class StaffAnimeAdmin(admin.ModelAdmin):
+class StaffAnimeAdmin(ImportExportModelAdmin, admin.ModelAdmin):
     """Admin for StaffAnime model."""
 
+    search_fields = ["person_id", "anime_id"]
     list_per_page = 25
-    search_fields = [
-        "person_id",
-        "anime_id",
-    ]
-    list_display = [
-        "person_id",
-        "anime_id",
-        "is_available",
-    ]
-    list_filter = [
-        "anime_id",
-    ]
-    list_editable = [
-        "is_available",
-    ]
-    readonly_fields = [
-        "pk",
-        "created_at",
-        "updated_at",
-    ]
+    list_display = ["person_id", "anime_id", "is_available"]
+    list_filter = ["anime_id"]
+    list_editable = ["is_available"]
+    readonly_fields = ["pk", "created_at", "updated_at"]
+    resource_class = StaffAnimeResource
