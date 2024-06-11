@@ -1,8 +1,11 @@
 """Admin for Animes App."""
 
 from django.contrib import admin
+from django.contrib.contenttypes.admin import GenericTabularInline
 from import_export import resources
 
+from apps.utils.admin import BaseAdmin
+from apps.utils.models import Picture
 from .models import Broadcast, Anime, AnimeStats
 
 
@@ -12,11 +15,14 @@ class AnimeResource(resources.ModelResource):
         model = Anime
 
 
+class PictureInline(GenericTabularInline):
+    model = Picture
+
+
 @admin.register(Broadcast)
-class BroadcastAdmin(admin.ModelAdmin):
+class BroadcastAdmin(BaseAdmin):
     """Admin for Broadcast model."""
 
-    list_per_page = 25
     search_fields = ["string"]
     list_display = ["string", "is_available"]
     list_editable = ["is_available"]
@@ -24,29 +30,13 @@ class BroadcastAdmin(admin.ModelAdmin):
 
 
 @admin.register(Anime)
-class AnimeAdmin(admin.ModelAdmin):
+class AnimeAdmin(BaseAdmin):
     """Admin for Anime model."""
 
-    list_per_page = 25
-    # empty_value_display = "pending"
-    search_fields = [
-        "name",
-        "name_jpn",
-        "name_rom",
-        "alternative_names",
-    ]
-    list_display = [
-        "name",
-        "is_available",
-    ]
-    list_filter = [
-        "status",
-        "genres",
-        "studio_id",
-    ]
-    list_editable = [
-        "is_available",
-    ]
+    search_fields = ["name", "name_jpn", "name_rom", "alternative_names"]
+    list_display = ["name", "is_available"]
+    list_filter = ["status", "genres", "studio_id"]
+    list_editable = ["is_available"]
     readonly_fields = [
         "pk",
         "slug",
@@ -58,37 +48,17 @@ class AnimeAdmin(admin.ModelAdmin):
         "created_at",
         "updated_at",
     ]
-    autocomplete_fields = [
-        "studio_id",
-        "broadcast_id",
-    ]
-    filter_horizontal = [
-        "producers",
-        "genres",
-        "themes",
-    ]
+    autocomplete_fields = ["studio_id", "broadcast_id"]
+    filter_horizontal = ["producers", "genres", "themes"]
+    inlines = [PictureInline]
 
 
 @admin.register(AnimeStats)
-class AnimeStatsAdmin(admin.ModelAdmin):
+class AnimeStatsAdmin(BaseAdmin):
     """Admin for AnimeStats model."""
 
-    list_per_page = 25
-    search_fields = [
-        "anime_id",
-    ]
-    list_display = [
-        "anime_id",
-        "is_available",
-    ]
-    list_filter = [
-        "is_available",
-    ]
-    list_editable = [
-        "is_available",
-    ]
-    readonly_fields = [
-        "pk",
-        "created_at",
-        "updated_at",
-    ]
+    search_fields = ["anime_id"]
+    list_display = ["anime_id", "is_available"]
+    list_filter = ["is_available"]
+    list_editable = ["is_available"]
+    readonly_fields = ["pk", "created_at", "updated_at"]

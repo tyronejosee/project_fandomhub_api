@@ -1,6 +1,9 @@
 """Views for Playlists App."""
 
+import tempfile
+import zipfile
 from django.shortcuts import get_object_or_404
+from django.http import HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -308,3 +311,37 @@ class MangaListItemDetailView(APIView):
         item.is_available = False  # Logical deletion
         item.save()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class MangaListExportView(APIView):
+    """
+    View to export data as a ZIP file for the items within the MangaList.
+
+    Endpoint:
+    - GET /api/v1/playlists/mangalist/export/
+    """
+
+    permission_classes = [IsMember]
+
+    def get(self, request, *args, **kwargs):
+        # Retrieve all items from the mangalist
+        mangalist = MangaList.objects.get(user=self.request.user)
+        items = MangaListItem.objects.filter(mangalist_id=mangalist, is_available=True)
+
+        # TODO: Testing and validating the endpoint
+        if items.exists():
+            # Create a temporary file to write the JSON data
+            temp_file = tempfile.NamedTemporaryFile(delete=False)
+            with zipfile.ZipFile(temp_file, "w") as zip_file:
+                for item in items:
+                    data = MangaListItemReadSerializer(item).data
+                    zip_file.writestr(f"{item.id}.json", str(data))
+
+            # Read the temporary file and prepare the response
+            with open(temp_file.name, "rb") as file:
+                response = HttpResponse(file.read(), content_type="application/zip")
+                response["Content-Disposition"] = (
+                    'attachment; filename="mangalist_export.zip"'
+                )
+            return response
+        return Response({"detail": "Your mangalist is empty."})
