@@ -2,10 +2,17 @@
 
 from django.contrib import admin
 from django.contrib.contenttypes.admin import GenericTabularInline
+from import_export.admin import ImportExportModelAdmin
 
 from apps.utils.admin import BaseAdmin
 from apps.utils.models import Picture
 from .models import Character, CharacterVoice, CharacterAnime, CharacterManga
+from .resources import (
+    CharacterResource,
+    CharacterVoiceResource,
+    CharacterAnimeResource,
+    CharacterMangaResource,
+)
 
 
 class PictureInline(GenericTabularInline):
@@ -13,7 +20,7 @@ class PictureInline(GenericTabularInline):
 
 
 @admin.register(Character)
-class CharacterAdmin(BaseAdmin):
+class CharacterAdmin(ImportExportModelAdmin, BaseAdmin):
     """Admin for Character model."""
 
     search_fields = ["name", "name_kanji", "name_rom"]
@@ -22,10 +29,11 @@ class CharacterAdmin(BaseAdmin):
     list_editable = ["is_available"]
     readonly_fields = ["pk", "slug", "favorites", "created_at", "updated_at"]
     inlines = [PictureInline]
+    resource_class = CharacterResource
 
 
 @admin.register(CharacterVoice)
-class CharacterVoiceAdmin(BaseAdmin):
+class CharacterVoiceAdmin(ImportExportModelAdmin, BaseAdmin):
     """Admin for CharacterVoice model."""
 
     search_fields = ["character_id__name", "voice_id__name"]
@@ -33,23 +41,26 @@ class CharacterVoiceAdmin(BaseAdmin):
     list_filter = ["character_id"]
     list_editable = ["is_available"]
     readonly_fields = ["pk", "created_at", "updated_at"]
-
-
-@admin.register(CharacterManga)
-class CharacterMangaAdmin(BaseAdmin):
-    """Admin for CharacterManga model."""
-
-    search_fields = ["character_id__name", "manga_id__name"]
-    list_display = ["character_id", "manga_id", "is_available"]
-    list_editable = ["is_available"]
-    readonly_fields = ["pk", "created_at", "updated_at"]
+    resource_class = CharacterVoiceResource
 
 
 @admin.register(CharacterAnime)
-class CharacterAnimeAdmin(BaseAdmin):
+class CharacterAnimeAdmin(ImportExportModelAdmin, BaseAdmin):
     """Admin for CharacterAnime model."""
 
     search_fields = ["character_id__name", "anime_id__name"]
     list_display = ["character_id", "anime_id", "is_available"]
     list_editable = ["is_available"]
     readonly_fields = ["pk", "created_at", "updated_at"]
+    resource_class = CharacterAnimeResource
+
+
+@admin.register(CharacterManga)
+class CharacterMangaAdmin(ImportExportModelAdmin, BaseAdmin):
+    """Admin for CharacterManga model."""
+
+    search_fields = ["character_id__name", "manga_id__name"]
+    list_display = ["character_id", "manga_id", "is_available"]
+    list_editable = ["is_available"]
+    readonly_fields = ["pk", "created_at", "updated_at"]
+    resource_class = CharacterMangaResource

@@ -2,17 +2,12 @@
 
 from django.contrib import admin
 from django.contrib.contenttypes.admin import GenericTabularInline
-from import_export import resources
+from import_export.admin import ImportExportModelAdmin
 
 from apps.utils.admin import BaseAdmin
 from apps.utils.models import Picture
 from .models import Broadcast, Anime, AnimeStats
-
-
-class AnimeResource(resources.ModelResource):
-
-    class Meta:
-        model = Anime
+from .resources import BroadcastResource, AnimeResource, AnimeStatsResource
 
 
 class PictureInline(GenericTabularInline):
@@ -20,17 +15,18 @@ class PictureInline(GenericTabularInline):
 
 
 @admin.register(Broadcast)
-class BroadcastAdmin(BaseAdmin):
+class BroadcastAdmin(ImportExportModelAdmin, BaseAdmin):
     """Admin for Broadcast model."""
 
     search_fields = ["string"]
     list_display = ["string", "is_available"]
     list_editable = ["is_available"]
     readonly_fields = ["pk", "created_at", "updated_at"]
+    resource_class = BroadcastResource
 
 
 @admin.register(Anime)
-class AnimeAdmin(BaseAdmin):
+class AnimeAdmin(ImportExportModelAdmin, BaseAdmin):
     """Admin for Anime model."""
 
     search_fields = ["name", "name_jpn", "name_rom", "alternative_names"]
@@ -51,10 +47,11 @@ class AnimeAdmin(BaseAdmin):
     autocomplete_fields = ["studio_id", "broadcast_id"]
     filter_horizontal = ["producers", "genres", "themes"]
     inlines = [PictureInline]
+    resource_class = AnimeResource
 
 
 @admin.register(AnimeStats)
-class AnimeStatsAdmin(BaseAdmin):
+class AnimeStatsAdmin(ImportExportModelAdmin, BaseAdmin):
     """Admin for AnimeStats model."""
 
     search_fields = ["anime_id"]
@@ -62,3 +59,4 @@ class AnimeStatsAdmin(BaseAdmin):
     list_filter = ["is_available"]
     list_editable = ["is_available"]
     readonly_fields = ["pk", "created_at", "updated_at"]
+    resource_class = AnimeStatsResource
