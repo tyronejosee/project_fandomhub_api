@@ -2,20 +2,20 @@
 
 from django.urls import path
 
-from .views import MyAnimeListView, MyAnimeListItemsView, MyAnimeListItemsDetailView
+from .views import AnimeListView, AnimeListItemView, AnimeListItemDetailView
 
 
 urlpatterns = [
     path(
-        "api/v1/playlists/myanimelist/",
-        MyAnimeListView.as_view(),
+        "api/v1/playlists/animelist/",
+        AnimeListView.as_view(),
     ),
     path(
-        "api/v1/playlists/myanimelist/animes/",
-        MyAnimeListItemsView.as_view(),
+        "api/v1/playlists/animelist/animes/",
+        AnimeListItemView.as_view(),
     ),
     path(
-        "api/v1/playlists/myanimelist/animes/<uuid:item_id>/",
-        MyAnimeListItemsDetailView.as_view(),
+        "api/v1/playlists/animelist/animes/<uuid:item_id>/",
+        AnimeListItemDetailView.as_view(),
     ),
 ]

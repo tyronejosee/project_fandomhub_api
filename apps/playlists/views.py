@@ -5,6 +5,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 
+from apps.animes.models import Anime
 from apps.users.permissions import IsMember
 from .models import AnimeList, AnimeListItem
 from .serializers import (
@@ -15,13 +16,13 @@ from .serializers import (
 )
 
 
-class MyAnimeListView(APIView):
+class AnimeListView(APIView):
     """
     View for listing and adding from a playlist.
 
     Endpoints:
-    - GET /api/v1/playlists/myanimelist/
-    - PATCH /api/v1/playlists/myanimelist/
+    - GET /api/v1/playlists/animelist/
+    - PATCH /api/v1/playlists/animelist/
     """
 
     permission_classes = [IsMember]
@@ -32,15 +33,14 @@ class MyAnimeListView(APIView):
     def get(self, request):
         # Get the profile of the animelist
         animelist = self.get_queryset()
-        if animelist:
-            serializer = AnimeListReadSerializer(animelist)
-            return Response(serializer.data)
-        return Response({"detail": "No Animelist."}, status=status.HTTP_404_NOT_FOUND)
+        serializer = AnimeListReadSerializer(animelist)
+        return Response(serializer.data)
 
     def patch(self, request):
         # Update the profile of the animelist
         animelist = self.get_queryset()
-        if animelist:
+
+        try:
             serializer = AnimeListWriteSerializer(
                 animelist, data=request.data, partial=True
             )
@@ -48,17 +48,22 @@ class MyAnimeListView(APIView):
                 serializer.save()
                 return Response(serializer.data)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        return Response({"detail": "No Animelist."}, status=status.HTTP_404_NOT_FOUND)
+        except Exception as e:
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
 
-class MyAnimeListItemsView(APIView):
+class AnimeListItemView(APIView):
     """
     Pending.
 
     Endpoints:
-    - GET /api/v1/playlists/myanimelist/animes/
-    - POST /api/v1/playlists/myanimelist/animes/
+    - GET /api/v1/playlists/animelist/animes/
+    - POST /api/v1/playlists/animelist/animes/
     """
+
+    permission_classes = [IsMember]
 
     def get_queryset(self):
         return AnimeList.objects.get(user=self.request.user)
@@ -66,6 +71,7 @@ class MyAnimeListItemsView(APIView):
     def get(self, request, *args, **kwargs):
         # Retrieve all animes from the animelist
         animelist = self.get_queryset()
+
         items = AnimeListItem.objects.filter(animelist_id=animelist, is_available=True)
 
         if items.exists():
@@ -78,29 +84,46 @@ class MyAnimeListItemsView(APIView):
         animelist = self.get_queryset()
         anime_id = request.data.get("anime_id")
 
-        if AnimeListItem.objects.filter(
-            animelist_id=animelist, anime_id=anime_id
-        ).exists():
+        try:
+            anime = get_object_or_404(Anime, id=anime_id)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            item = AnimeListItem.objects.filter(
+                animelist_id=animelist, anime_id=anime
+            ).first()
+            if item:
+                if item.is_available:
+                    return Response(
+                        {"detail": "Anime already in animelist."},
+                        status=status.HTTP_400_BAD_REQUEST,
+                    )
+                else:
+                    item.is_available = True
+                    item.save()
+                    serializer = AnimeListItemWriteSerializer(item)
+                    return Response(serializer.data, status=status.HTTP_200_OK)
+
+            serializer = AnimeListItemWriteSerializer(data=request.data)
+            if serializer.is_valid():
+                serializer.save(animelist_id=animelist)
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
             return Response(
-                {"detail": "Anime already in animelist."},
-                status=status.HTTP_400_BAD_REQUEST,
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
 
-        serializer = AnimeListItemWriteSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save(animelist_id=animelist)
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
-class MyAnimeListItemsDetailView(APIView):
+class AnimeListItemDetailView(APIView):
     """
     Pending.
 
     Endpoints:
-    - GET /api/v1/playlists/myanimelist/animes/{id}/
-    - PATCH /api/v1/playlists/myanimelist/animes/{id}/
-    - DELETE /api/v1/playlists/myanimelist/animes/{id}/
+    - GET /api/v1/playlists/animelist/animes/{id}/
+    - PATCH /api/v1/playlists/animelist/animes/{id}/
+    - DELETE /api/v1/playlists/animelist/animes/{id}/
     """
 
     def get_object(self, item_id):

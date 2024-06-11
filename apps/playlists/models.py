@@ -138,6 +138,11 @@ class AnimeListItem(BaseModel):
         ordering = ["pk"]
         verbose_name = _("animelist item")
         verbose_name_plural = _("animelist items")
+        constraints = [
+            models.UniqueConstraint(
+                fields=["animelist_id", "anime_id"], name="unique_animelist_anime"
+            )
+        ]
 
     def __str__(self):
         return str(f"{self.animelist_id} - {self.anime_id}")
@@ -206,6 +211,11 @@ class MangaListItem(BaseModel):
         ordering = ["pk"]
         verbose_name = _("mangalist item")
         verbose_name_plural = _("mangalist items")
+        constraints = [
+            models.UniqueConstraint(
+                fields=["mangalist_id", "manga_id"], name="unique_mangalist_manga"
+            )
+        ]
 
     def __str__(self):
         return str(f"{self.mangalist_id} - {self.manga_id}")
