@@ -1,13 +1,15 @@
 """Admin for Users App."""
 
 from django.contrib import admin
+from import_export.admin import ImportExportModelAdmin
 
 from apps.utils.admin import BaseAdmin
 from .models import User
+from .resources import UserResource
 
 
 @admin.register(User)
-class UserAdmin(BaseAdmin):
+class UserAdmin(ImportExportModelAdmin, BaseAdmin):
     """Admin for User model."""
 
     ordering = ["username"]
@@ -16,3 +18,4 @@ class UserAdmin(BaseAdmin):
     search_fields = ["username", "email", "first_name", "last_name"]
     list_filter = ["is_staff", "is_superuser", "is_active"]
     readonly_fields = ["pk"]
+    resource_class = UserResource

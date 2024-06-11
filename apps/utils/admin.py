@@ -2,8 +2,10 @@
 
 from django.contrib import admin
 from django.utils.translation import gettext as _
+from import_export.admin import ImportExportModelAdmin
 
 from .models import Picture, Video
+from .resources import PictureResource, VideoResource
 
 
 class BaseAdmin(admin.ModelAdmin):
@@ -27,20 +29,22 @@ class BaseAdmin(admin.ModelAdmin):
 
 
 @admin.register(Picture)
-class PictureAdmin(BaseAdmin):
+class PictureAdmin(ImportExportModelAdmin, BaseAdmin):
     """Admin for Picture model."""
 
     search_fields = ["name", "object_id"]
     list_display = ["name", "image", "content_type"]
     list_filter = ["is_available"]
     readonly_fields = ["pk", "created_at", "updated_at"]
+    resource_class = PictureResource
 
 
 @admin.register(Video)
-class VideoAdmin(BaseAdmin):
+class VideoAdmin(ImportExportModelAdmin, BaseAdmin):
     """Admin for Video model."""
 
     search_fields = ["object_id"]
     list_display = ["object_id", "content_type"]
     list_filter = ["is_available"]
     readonly_fields = ["pk", "created_at", "updated_at"]
+    resource_class = VideoResource

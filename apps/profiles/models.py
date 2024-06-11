@@ -58,7 +58,7 @@ class Profile(BaseModel):
         verbose_name_plural = _("profiles")
 
     def __str__(self):
-        return str(self.user)
+        return str(self.user_id.username)
 
     @property
     def full_name(self):

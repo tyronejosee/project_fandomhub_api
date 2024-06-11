@@ -1546,3 +1546,246 @@ django.core.exceptions.ValidationError: ['“AnonymousUser” no es un UUID vál
 2024-06-11 21:48:58,796:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
 2024-06-11 21:52:32,963:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/__init__.py changed, reloading.)
 2024-06-11 21:52:37,520:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 21:57:57,314:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/admin.py changed, reloading.)
+2024-06-11 21:58:04,397:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 21:58:13,242:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/admin.py changed, reloading.)
+2024-06-11 21:58:18,935:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 21:58:41,127:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/admin.py changed, reloading.)
+2024-06-11 21:58:46,799:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 21:58:51,213:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/news/admin.py changed, reloading.)
+2024-06-11 21:58:56,765:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 21:59:26,726:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/resources.py changed, reloading.)
+2024-06-11 21:59:33,139:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 21:59:41,085:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/resources.py changed, reloading.)
+2024-06-11 21:59:47,306:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:02:51,973:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/admin.py changed, reloading.)
+2024-06-11 22:02:57,673:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:03:07,247:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/admin.py changed, reloading.)
+2024-06-11 22:03:13,516:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:03:22,541:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/admin.py changed, reloading.)
+2024-06-11 22:03:27,759:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:03:32,562:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/admin.py changed, reloading.)
+2024-06-11 22:03:38,897:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:03:46,319:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/admin.py changed, reloading.)
+2024-06-11 22:03:51,946:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:03:57,807:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/admin.py changed, reloading.)
+2024-06-11 22:04:03,252:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:04:19,054:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/admin.py changed, reloading.)
+2024-06-11 22:04:24,628:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:04:53,761:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/admin.py changed, reloading.)
+2024-06-11 22:04:59,405:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:05:23,414:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/admin.py changed, reloading.)
+2024-06-11 22:05:28,106:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:05:34,721:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/admin.py changed, reloading.)
+2024-06-11 22:05:40,417:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:08:47,879:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/producers/admin.py changed, reloading.)
+2024-06-11 22:08:55,108:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:09:04,251:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/producers/admin.py changed, reloading.)
+2024-06-11 22:09:10,130:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:09:14,970:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/producers/admin.py changed, reloading.)
+2024-06-11 22:09:19,598:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:10:49,963:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/producers/admin.py changed, reloading.)
+2024-06-11 22:10:55,534:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:12:11,493:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/admin.py changed, reloading.)
+2024-06-11 22:12:17,461:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:12:23,011:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/admin.py changed, reloading.)
+2024-06-11 22:12:28,873:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:12:33,442:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/admin.py changed, reloading.)
+2024-06-11 22:12:39,682:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:13:50,907:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/admin.py changed, reloading.)
+2024-06-11 22:13:57,095:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:14:03,849:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/admin.py changed, reloading.)
+2024-06-11 22:14:09,433:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:14:25,640:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/reviews/admin.py changed, reloading.)
+2024-06-11 22:14:31,294:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:16:58,845:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/admin.py changed, reloading.)
+2024-06-11 22:17:06,692:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:17:14,342:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/admin.py changed, reloading.)
+2024-06-11 22:17:21,068:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:17:26,032:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/admin.py changed, reloading.)
+2024-06-11 22:17:31,558:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:17:42,363:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/users/resources.py changed, reloading.)
+2024-06-11 22:17:48,682:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:19:57,824:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/admin.py changed, reloading.)
+2024-06-11 22:20:04,332:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:20:15,743:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/admin.py changed, reloading.)
+2024-06-11 22:20:22,105:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:20:38,678:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/admin.py changed, reloading.)
+2024-06-11 22:20:44,220:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:21:39,043:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/__init__.py changed, reloading.)
+2024-06-11 22:21:44,050:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:22:48,631:ERROR - django.request log.py (line 241. Internal Server Error: /admin/profiles/profile/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: Profile has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "/app/apps/profiles/models.py", line 61, in __str__
+    return str(self.user)
+               ^^^^^^^^^
+AttributeError: 'Profile' object has no attribute 'user'
+2024-06-11 22:23:47,366:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/models.py changed, reloading.)
+2024-06-11 22:23:53,448:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:24:21,373:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/models.py changed, reloading.)
+2024-06-11 22:24:27,179:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:24:51,343:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/models.py changed, reloading.)
+2024-06-11 22:24:56,125:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 22:25:15,159:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/profiles/models.py changed, reloading.)
+2024-06-11 22:25:23,985:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
