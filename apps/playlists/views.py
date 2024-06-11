@@ -6,19 +6,24 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from apps.animes.models import Anime
+from apps.mangas.models import Manga
 from apps.users.permissions import IsMember
-from .models import AnimeList, AnimeListItem
+from .models import AnimeList, AnimeListItem, MangaList, MangaListItem
 from .serializers import (
     AnimeListReadSerializer,
     AnimeListWriteSerializer,
     AnimeListItemReadSerializer,
     AnimeListItemWriteSerializer,
+    MangaListReadSerializer,
+    MangaListWriteSerializer,
+    MangaListItemReadSerializer,
+    MangaListItemWriteSerializer,
 )
 
 
 class AnimeListView(APIView):
     """
-    View for listing and adding from a playlist.
+    View to fetch and update the AnimeList profile.
 
     Endpoints:
     - GET /api/v1/playlists/animelist/
@@ -28,7 +33,12 @@ class AnimeListView(APIView):
     permission_classes = [IsMember]
 
     def get_queryset(self):
-        return AnimeList.objects.get(user=self.request.user)
+        try:
+            return AnimeList.objects.get(user=self.request.user)
+        except AnimeList.DoesNotExist:
+            return AnimeList.objects.create(user=self.request.user)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
     def get(self, request):
         # Get the profile of the animelist
@@ -56,7 +66,7 @@ class AnimeListView(APIView):
 
 class AnimeListItemView(APIView):
     """
-    Pending.
+    View to add an anime to AnimeList.
 
     Endpoints:
     - GET /api/v1/playlists/animelist/animes/
@@ -118,7 +128,7 @@ class AnimeListItemView(APIView):
 
 class AnimeListItemDetailView(APIView):
     """
-    Pending.
+    View to retrieve, update, and delete an anime from AnimeList.
 
     Endpoints:
     - GET /api/v1/playlists/animelist/animes/{id}/
@@ -148,6 +158,152 @@ class AnimeListItemDetailView(APIView):
 
     def delete(self, request, item_id):
         # Remove an anime from the animelist
+        item = self.get_object(item_id)
+        item.is_available = False  # Logical deletion
+        item.save()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+# MangaList
+
+
+class MangaListView(APIView):
+    """
+    View to fetch and update the MangaList profile.
+
+    Endpoints:
+    - GET /api/v1/playlists/mangalist/
+    - PATCH /api/v1/playlists/mangalist/
+    """
+
+    permission_classes = [IsMember]
+
+    def get_queryset(self):
+        try:
+            return MangaList.objects.get(user=self.request.user)
+        except MangaList.DoesNotExist:
+            return MangaList.objects.create(user=self.request.user)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    def get(self, request):
+        # Get the profile of the mangalist
+        mangalist = self.get_queryset()
+        serializer = MangaListReadSerializer(mangalist)
+        return Response(serializer.data)
+
+    def patch(self, request):
+        # Update the profile of the mangalist
+        mangalist = self.get_queryset()
+
+        try:
+            serializer = MangaListWriteSerializer(
+                mangalist, data=request.data, partial=True
+            )
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+
+class MangaListItemView(APIView):
+    """
+    View to add an manga to MangaList.
+
+    Endpoints:
+    - GET /api/v1/playlists/mangalist/mangas/
+    - POST /api/v1/playlists/mangalist/mangas/
+    """
+
+    permission_classes = [IsMember]
+
+    def get_queryset(self):
+        return MangaList.objects.get(user=self.request.user)
+
+    def get(self, request, *args, **kwargs):
+        # Retrieve all mangas from the mangalist
+        mangalist = self.get_queryset()
+
+        items = MangaListItem.objects.filter(mangalist_id=mangalist, is_available=True)
+
+        if items.exists():
+            serializer = MangaListItemReadSerializer(items, many=True)
+            return Response(serializer.data)
+        return Response({"detail": "Your mangalist is empty."})
+
+    def post(self, request, *args, **kwargs):
+        # Add an manga to the mangalist
+        mangalist = self.get_queryset()
+        manga_id = request.data.get("manga_id")
+
+        try:
+            manga = get_object_or_404(Manga, id=manga_id)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            item = MangaListItem.objects.filter(
+                mangalist_id=mangalist, manga_id=manga
+            ).first()
+            if item:
+                if item.is_available:
+                    return Response(
+                        {"detail": "Manga already in mangalist."},
+                        status=status.HTTP_400_BAD_REQUEST,
+                    )
+                else:
+                    item.is_available = True
+                    item.save()
+                    serializer = MangaListItemWriteSerializer(item)
+                    return Response(serializer.data, status=status.HTTP_200_OK)
+
+            serializer = MangaListItemWriteSerializer(data=request.data)
+            if serializer.is_valid():
+                serializer.save(mangalist_id=mangalist)
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+
+class MangaListItemDetailView(APIView):
+    """
+    View to retrieve, update, and delete an manga from MangaList.
+
+    Endpoints:
+    - GET /api/v1/playlists/mangalist/mangas/{id}/
+    - PATCH /api/v1/playlists/mangalist/mangas/{id}/
+    - DELETE /api/v1/playlists/mangalist/mangas/{id}/
+    """
+
+    def get_object(self, item_id):
+        return get_object_or_404(MangaListItem, pk=item_id)
+
+    def get(self, request, item_id):
+        # Retrieve an manga from the mangalist
+        manga = self.get_object(item_id)
+        serializer = MangaListItemReadSerializer(manga)
+        return Response(serializer.data)
+
+    def patch(self, request, item_id):
+        # Update an manga in the mangalist
+        manga = self.get_object(item_id)
+        serializer = MangaListItemWriteSerializer(
+            manga, data=request.data, partial=True
+        )
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request, item_id):
+        # Remove an manga from the mangalist
         item = self.get_object(item_id)
         item.is_available = False  # Logical deletion
         item.save()

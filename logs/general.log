@@ -677,3 +677,403 @@ django.core.exceptions.ValidationError: ['“c051ea9c-b39d-4946-a5cf-2659a295”
 2024-06-11 17:05:37,424:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
 2024-06-11 17:05:42,306:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
 2024-06-11 17:05:46,112:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:24:22,582:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:24:25,978:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:24:30,900:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:24:33,987:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:25:46,572:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:25:50,355:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:26:36,608:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:26:40,196:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:27:03,475:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:27:08,285:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:27:15,588:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:27:20,449:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:27:27,569:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:27:32,620:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:27:39,425:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:27:44,045:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:27:58,161:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:28:01,723:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:28:27,357:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:28:32,058:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:28:39,957:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:28:43,847:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:28:50,338:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:28:54,250:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:29:11,008:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:29:15,464:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:29:22,969:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:29:27,765:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:29:48,434:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:29:51,877:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:30:03,919:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:30:09,105:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:30:16,085:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:30:20,797:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:30:24,436:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:30:29,196:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:30:41,584:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:30:45,755:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:30:52,840:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:30:57,673:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:31:06,724:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:31:11,456:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:32:05,770:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 17:32:09,674:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:32:15,919:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 17:32:20,342:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:32:26,399:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 17:32:31,413:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:32:39,909:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 17:32:44,038:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:32:51,149:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 17:32:55,861:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:33:45,897:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/playlists/mangalist/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/playlists/views.py", line 180, in get
+    mangalist = self.get_queryset()
+                ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/playlists/views.py", line 176, in get_queryset
+    return MangaList.objects.get(user=self.request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.playlists.models.MangaList.DoesNotExist: MangaList matching query does not exist.
+2024-06-11 17:35:46,622:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:35:49,783:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:35:55,623:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/playlists/mangalist/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/playlists/views.py", line 180, in get
+    mangalist = self.get_queryset()
+                ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/playlists/views.py", line 176, in get_queryset
+    return MangaList.objects.get(user=self.request.user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.playlists.models.MangaList.DoesNotExist: MangaList matching query does not exist.
+2024-06-11 17:36:54,873:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:36:58,262:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:37:03,391:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:37:06,570:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:37:41,725:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:37:46,252:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:37:58,051:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:38:03,364:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:38:10,432:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:38:15,357:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:38:41,635:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:38:45,533:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:38:52,879:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:38:58,722:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:39:53,695:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:39:57,847:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:40:01,772:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:40:06,264:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:41:06,910:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:41:10,801:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:43:03,502:WARNING - django.request log.py (line 241. Not Found: /api/v1/playlists/mangalist/mangas/)
+2024-06-11 17:43:22,318:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:43:27,797:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:43:35,574:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:43:42,533:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:45:06,445:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:45:12,371:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:45:20,054:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:45:24,995:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:45:34,383:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:45:38,710:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:46:11,511:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:46:16,310:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:46:26,414:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:46:31,722:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:46:42,185:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:46:46,968:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:48:37,195:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:48:40,464:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:49:25,928:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:49:30,758:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:50:06,532:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:50:10,225:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:50:16,944:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:50:21,824:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:50:30,328:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:50:35,154:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:50:44,221:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:50:47,587:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:50:55,236:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:50:59,362:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:51:06,068:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:51:10,874:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:51:18,654:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:51:23,025:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:51:29,625:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:51:33,928:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:51:40,493:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:51:44,769:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:51:52,801:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:51:57,306:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:52:23,368:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:52:28,399:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:52:44,086:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:52:48,571:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:52:56,818:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:53:01,037:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:53:35,323:WARNING - django.request log.py (line 241. Not Found: /api/v1/playlists/mangalist/mangas/)
+2024-06-11 17:53:54,323:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 17:53:58,313:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:54:05,238:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 17:54:10,095:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:54:13,841:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 17:54:17,954:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:54:24,315:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 17:54:27,995:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:54:31,843:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/playlists/mangalist/mangas/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/playlists/views.py", line 231, in get
+    items = AnimeListItem.objects.filter(mangalist_id=mangalist, is_available=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'mangalist_id' into field. Choices are: anime_id, anime_id_id, animelist_id, animelist_id_id, created_at, episodes_watched, finish_date, id, is_available, is_favorite, is_watched, notes, order, priority, score, start_date, status, storage, tags, times_rewatched, updated_at
+2024-06-11 17:55:05,323:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/playlists/mangalist/mangas/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/playlists/views.py", line 231, in get
+    items = AnimeListItem.objects.filter(mangalist_id=mangalist, is_available=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'mangalist_id' into field. Choices are: anime_id, anime_id_id, animelist_id, animelist_id_id, created_at, episodes_watched, finish_date, id, is_available, is_favorite, is_watched, notes, order, priority, score, start_date, status, storage, tags, times_rewatched, updated_at
+2024-06-11 17:55:08,410:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/playlists/mangalist/mangas/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/playlists/views.py", line 231, in get
+    items = AnimeListItem.objects.filter(mangalist_id=mangalist, is_available=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'mangalist_id' into field. Choices are: anime_id, anime_id_id, animelist_id, animelist_id_id, created_at, episodes_watched, finish_date, id, is_available, is_favorite, is_watched, notes, order, priority, score, start_date, status, storage, tags, times_rewatched, updated_at
+2024-06-11 17:55:43,507:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:55:48,440:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 17:56:33,355:WARNING - django.request log.py (line 241. Bad Request: /api/v1/playlists/animelist/animes/)
+2024-06-11 17:56:57,529:WARNING - django.request log.py (line 241. Bad Request: /api/v1/playlists/mangalist/mangas/)
+2024-06-11 17:57:42,080:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 17:57:45,413:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:15:35,627:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/playlists/mangalist/mangas/)
+2024-06-11 18:15:50,999:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/playlists/mangalist/mangas/)
+2024-06-11 18:16:10,470:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:16:15,312:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:16:23,009:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:16:27,385:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:16:36,469:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:16:40,757:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:19:15,889:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:19:21,549:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:19:28,193:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:19:33,312:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:19:40,250:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:19:44,709:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:19:51,416:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:19:56,036:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:20:02,263:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:20:06,396:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:20:14,639:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:20:20,084:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:20:27,590:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:20:31,688:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:20:43,736:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/views.py changed, reloading.)
+2024-06-11 18:20:47,375:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:23:01,667:WARNING - django.request log.py (line 241. Not Found: /api/v1/playlists/animelist/animes/ba834e1c-ec18-403b-9771-c357cbdbc2b9/)
+2024-06-11 18:23:03,300:WARNING - django.request log.py (line 241. Not Found: /api/v1/playlists/animelist/animes/ba834e1c-ec18-403b-9771-c357cbdbc2b9/)
+2024-06-11 18:23:32,268:WARNING - django.request log.py (line 241. Not Found: /api/v1/playlists/animelist/animes/ba834e1c-ec18-403b-9771-c357cbdbc2b9/)
+2024-06-11 18:23:33,443:WARNING - django.request log.py (line 241. Not Found: /api/v1/playlists/animelist/animes/ba834e1c-ec18-403b-9771-c357cbdbc2b9/)
+2024-06-11 18:23:56,149:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 18:23:59,972:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:24:13,857:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 18:24:18,376:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:24:22,257:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 18:24:27,766:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-11 18:24:36,462:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/playlists/urls.py changed, reloading.)
+2024-06-11 18:24:40,405:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
