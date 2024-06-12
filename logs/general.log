@@ -2350,3 +2350,1103 @@ Original exception text was: 'Character' object has no attribute 'get_language_d
 2024-06-12 19:44:15,569:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/persons/viewsets.py changed, reloading.)
 2024-06-12 19:44:20,528:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
 2024-06-12 19:47:28,600:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/serializers.py changed, reloading.)
+2024-06-12 19:47:33,808:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:52:55,812:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:53:09,332:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:53:14,663:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:53:25,471:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:53:31,247:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:53:43,942:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:53:49,213:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:53:57,949:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:54:04,251:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:54:27,320:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:54:33,251:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:54:41,882:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:54:45,966:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:55:05,211:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:55:10,585:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:55:19,256:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:55:23,494:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:56:17,912:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 19:56:22,050:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:56:28,639:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 19:56:33,785:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:56:38,728:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 19:56:43,840:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:56:50,142:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 19:56:55,180:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:57:22,170:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:57:28,470:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:57:32,409:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:57:40,240:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 19:57:46,990:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/viewsets.py changed, reloading.)
+2024-06-12 19:57:51,901:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:00:22,907:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 20:00:26,792:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:00:31,545:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 20:00:36,389:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:00:40,498:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 20:00:45,273:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:00:51,305:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 20:00:55,446:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:02:19,215:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/1996/spring/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 278, in get_permissions
+    return [permission() for permission in self.permission_classes]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'BasePermissionMetaclass' object is not iterable
+2024-06-12 20:05:50,746:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/2004/spring/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 278, in get_permissions
+    return [permission() for permission in self.permission_classes]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'BasePermissionMetaclass' object is not iterable
+2024-06-12 20:06:01,270:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/2004/Spring/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 331, in check_permissions
+    for permission in self.get_permissions():
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 278, in get_permissions
+    return [permission() for permission in self.permission_classes]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'BasePermissionMetaclass' object is not iterable
+2024-06-12 20:06:43,297:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:06:48,652:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:08:43,097:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:08:48,464:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:08:54,462:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:08:59,026:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:09:07,107:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:09:13,154:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:10:24,007:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:10:28,592:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:10:38,746:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:10:44,365:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:10:47,722:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:10:51,941:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:10:58,915:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:11:03,691:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:11:10,438:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:11:15,666:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:11:23,480:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:11:29,545:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:11:37,410:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:11:41,755:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:11:46,509:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/2002/SPRING/)
+2024-06-12 20:11:47,925:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/2002/SPRING/)
+2024-06-12 20:11:49,192:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/2002/SPRING/)
+2024-06-12 20:11:58,022:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/2005/SPRING/)
+2024-06-12 20:14:20,728:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:14:25,914:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:15:12,390:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:15:17,321:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:15:25,646:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:15:31,491:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:15:43,402:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:15:49,280:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:16:08,579:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:16:13,424:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:16:18,897:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:16:24,422:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:16:31,059:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:16:36,168:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:16:48,711:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/2002/SPRING/)
+2024-06-12 20:17:17,971:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:17:22,646:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:18:27,719:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:18:32,791:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:18:54,829:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:18:59,119:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:19:36,132:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/2002/summer/)
+2024-06-12 20:20:06,089:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:20:11,171:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:20:18,657:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:20:23,867:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:21:30,131:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:21:35,190:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:21:42,247:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:21:47,981:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:21:57,340:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:22:01,965:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:22:42,255:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:22:47,147:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:22:54,016:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:22:58,508:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:25:14,989:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:25:20,000:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:25:29,041:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:25:33,339:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:27:31,183:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 20:27:36,198:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:27:44,431:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 20:27:49,075:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:28:26,350:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/now/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 34, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 26, in get_queryset
+    year = int(self.kwargs.get("year"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+2024-06-12 20:29:52,164:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:29:57,478:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:30:04,922:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:30:09,735:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:30:16,730:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:30:22,358:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:30:25,104:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:30:30,286:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:30:31,290:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:30:32,189:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:30:33,103:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:30:34,104:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:31:03,314:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:31:08,204:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:31:16,744:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:31:21,789:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:31:45,804:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:32:07,300:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:32:11,303:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:32:15,481:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:32:16,786:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:32:36,778:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:32:42,413:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:32:50,285:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:32:55,147:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:33:11,899:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:33:16,299:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:33:25,713:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:33:31,543:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:33:38,317:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:33:43,694:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:33:50,836:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:33:55,257:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:34:02,008:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:34:06,751:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:34:13,597:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:34:19,592:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:34:23,282:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:34:24,552:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:34:34,771:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:34:38,942:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:37:40,217:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:37:45,746:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:41:31,478:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:41:36,729:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:41:40,674:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:41:45,478:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:41:53,621:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:41:59,452:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:42:16,592:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:42:21,973:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:42:28,446:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:42:32,655:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:42:47,327:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:42:48,580:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:42:54,791:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:43:22,328:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 20:43:52,583:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:43:58,084:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:44:04,720:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:44:08,686:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:45:53,993:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 20:45:58,842:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:46:06,063:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 20:46:12,560:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:46:21,525:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 20:46:31,856:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/routers.py changed, reloading.)
+2024-06-12 20:46:39,640:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:46:43,344:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 20:46:44,122:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 20:47:06,388:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:47:11,845:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:47:15,653:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 20:47:16,925:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 20:47:18,409:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 20:48:28,606:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:48:33,209:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:48:45,250:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:48:50,075:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:48:54,415:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:48:59,275:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:49:06,391:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:49:11,118:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:49:47,016:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:49:54,271:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:50:36,576:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:50:42,725:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:50:52,378:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:50:56,986:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:51:08,564:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:51:13,079:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:51:30,650:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:51:35,195:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:51:42,840:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:51:47,304:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:52:11,112:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 20:52:15,533:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:52:36,875:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:52:42,006:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:52:49,221:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:52:54,611:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:56:15,360:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:56:20,438:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:56:24,020:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 20:57:38,682:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:57:43,056:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:57:53,530:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:57:58,368:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:58:32,509:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:58:37,606:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:58:46,130:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:58:50,972:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:58:57,546:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:59:02,197:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:59:15,855:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:59:20,168:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:59:41,659:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 20:59:46,269:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 20:59:54,598:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:00:02,284:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:00:10,018:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:00:14,304:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:01:15,360:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:01:20,617:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:02:01,650:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:02:06,178:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:02:35,966:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:02:41,079:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:02:48,492:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:02:52,740:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:03:33,294:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:03:38,074:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:03:45,291:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:03:50,089:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:03:57,114:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 21:04:43,009:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:04:48,974:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:04:57,131:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:05:02,148:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:06:40,486:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:06:46,181:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:06:54,372:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:06:59,007:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:07:14,560:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:07:21,307:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:07:32,044:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 21:09:35,919:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:09:40,136:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:10:00,954:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:10:05,805:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:10:13,079:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:10:19,756:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:10:30,854:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:10:35,765:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:10:47,429:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:10:53,050:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:11:20,287:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:11:24,768:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:11:47,366:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:11:53,629:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:12:47,744:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:12:52,165:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:13:04,691:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:13:09,706:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:15:48,948:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:15:55,246:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:18:46,154:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:18:51,201:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:19:01,629:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:19:05,825:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:19:19,624:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:19:25,198:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:20:13,705:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:20:17,026:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:20:41,029:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:20:45,399:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:21:17,002:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:21:20,535:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:21:41,093:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:21:45,847:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:21:49,407:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:21:54,566:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:22:22,750:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:22:26,520:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:22:34,746:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:22:38,746:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:22:46,344:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:22:52,618:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:24:20,370:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:24:26,801:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:24:40,159:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-12 21:24:45,705:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:24:54,632:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-12 21:24:59,728:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:25:09,880:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-12 21:25:14,785:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:25:22,503:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:25:27,295:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:25:34,923:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:25:40,010:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:25:56,768:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:26:02,175:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:26:08,995:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:26:15,256:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:26:22,665:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:26:28,373:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:26:36,412:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/upcoming/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'summer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 80, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 77, in get_queryset
+    return Anime.objects.get_by_year_and_season(season, year)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/managers.py", line 50, in get_by_year_and_season
+    return self.get_available().filter(year=year, season=season)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'year' expected a number but got 'summer'.
+2024-06-12 21:26:49,653:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/upcoming/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'summer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 80, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 77, in get_queryset
+    return Anime.objects.get_by_year_and_season(season, year)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/managers.py", line 50, in get_by_year_and_season
+    return self.get_available().filter(year=year, season=season)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'year' expected a number but got 'summer'.
+2024-06-12 21:27:47,050:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/now/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'spring'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 55, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 52, in get_queryset
+    return Anime.objects.get_by_year_and_season(season, year)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/managers.py", line 50, in get_by_year_and_season
+    return self.get_available().filter(year=year, season=season)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'year' expected a number but got 'spring'.
+2024-06-12 21:29:23,780:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:29:28,058:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:30:16,157:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:30:20,275:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:30:27,706:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/now/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'spring'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 55, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 52, in get_queryset
+    return Anime.objects.get_by_year_and_season(season, year)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/managers.py", line 50, in get_by_year_and_season
+    return self.get_available().filter(year=year, season=season)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'year' expected a number but got 'spring'.
+2024-06-12 21:31:43,108:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-12 21:31:50,370:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:31:53,906:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/now/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'spring'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 55, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 52, in get_queryset
+    return Anime.objects.get_by_year_and_season(season, year)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/managers.py", line 50, in get_by_year_and_season
+    return self.filter(year=year, season=season)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'year' expected a number but got 'spring'.
+2024-06-12 21:31:55,109:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/now/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'spring'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 55, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 52, in get_queryset
+    return Anime.objects.get_by_year_and_season(season, year)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/managers.py", line 50, in get_by_year_and_season
+    return self.filter(year=year, season=season)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'year' expected a number but got 'spring'.
+2024-06-12 21:32:08,991:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:32:14,756:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:32:21,664:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:32:26,984:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:32:41,169:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 21:32:43,148:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 21:32:44,723:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 21:33:02,312:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:33:07,377:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:33:15,559:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-12 21:33:21,883:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:33:29,540:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:33:35,960:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:33:39,487:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/now/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'spring'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 57, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 54, in get_queryset
+    return Anime.objects.get_by_year_and_season(season, year)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/managers.py", line 50, in get_by_year_and_season
+    return self.filter(season=season, year=year)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'year' expected a number but got 'spring'.
+2024-06-12 21:33:40,659:ERROR - django.request log.py (line 241. Internal Server Error: /api/v1/seasons/now/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'spring'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 57, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 54, in get_queryset
+    return Anime.objects.get_by_year_and_season(season, year)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/managers.py", line 50, in get_by_year_and_season
+    return self.filter(season=season, year=year)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'year' expected a number but got 'spring'.
+2024-06-12 21:34:24,338:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/managers.py changed, reloading.)
+2024-06-12 21:34:30,078:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:34:33,726:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 21:34:35,206:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 21:34:36,425:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 21:34:38,043:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/now/)
+2024-06-12 21:34:47,615:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:34:53,746:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:34:58,681:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 21:35:00,391:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 21:35:02,341:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 21:35:03,833:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 21:35:05,363:WARNING - django.request log.py (line 241. Not Found: /api/v1/seasons/upcoming/)
+2024-06-12 21:35:22,501:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:35:27,825:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:35:35,872:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:35:40,482:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:36:02,621:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:36:07,664:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:36:56,783:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/views.py changed, reloading.)
+2024-06-12 21:37:02,253:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-12 21:37:10,780:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/animes/functions.py changed, reloading.)
+2024-06-12 21:37:14,941:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
