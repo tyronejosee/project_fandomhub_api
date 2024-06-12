@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 
-from .models import Character
+from .models import Character, CharacterVoice
 
 
 class CharacterReadSerializer(serializers.ModelSerializer):
@@ -52,4 +52,17 @@ class CharacterMinimalSerializer(serializers.ModelSerializer):
             "name",
             "role",
             "image",
+        ]
+
+
+class CharacterVoiceReadSerializer(serializers.ModelSerializer):
+    """Serializer for CharacterVoice model (List/Retrieve)."""
+
+    character_id = CharacterMinimalSerializer()
+
+    class Meta:
+        model = CharacterVoice
+        fields = [
+            "id",
+            "character_id",
         ]

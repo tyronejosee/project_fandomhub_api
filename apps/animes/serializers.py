@@ -13,7 +13,6 @@ class AnimeReadSerializer(serializers.ModelSerializer):
     studio_id = ProducerReadSerializer()
     genres = GenreReadSerializer(many=True)
     status = serializers.CharField(source="get_status_display")
-    category = serializers.CharField(source="get_category_display")
 
     class Meta:
         model = Anime

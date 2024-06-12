@@ -42,6 +42,8 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     serializer_class = CharacterWriteSerializer
     search_fields = ["name", "name_kanji"]
     ordering_fields = ["name", "role"]
+    # lookup_field = "slug"
+    # lookup_url_kwarg = "character_id"
 
     def get_queryset(self):
         return Character.objects.get_available()
@@ -137,7 +139,9 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             serializer = PersonMinimalSerializer(persons, many=True)
             return Response(serializer.data)
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
     @action(
         detail=True,
@@ -156,6 +160,8 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         """
         character = self.get_object()
 
+        # TODO: Remover characteranime, replace for characterelations
+
         try:
             character_anime = CharacterAnime.objects.filter(
                 character_id=character
@@ -169,7 +175,9 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
 
     @action(
         detail=True,
@@ -201,4 +209,6 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_404_NOT_FOUND,
             )
         except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )

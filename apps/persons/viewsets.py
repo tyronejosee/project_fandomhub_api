@@ -18,6 +18,8 @@ from apps.utils.pagination import MediumSetPagination
 from apps.utils.serializers import PictureReadSerializer, PictureWriteSerializer
 from apps.users.permissions import IsContributor
 from apps.mangas.serializers import MangaMinimalSerializer
+from apps.characters.models import CharacterVoice
+from apps.characters.serializers import CharacterVoiceReadSerializer
 from .models import Person
 from .serializers import (
     PersonReadSerializer,
@@ -171,6 +173,35 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                     status=status.HTTP_201_CREATED,
                 )
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            return Response(
+                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="voices",
+    )
+    def get_voices(self, request, *args, **kwargs):
+        """
+        Action retrieve characters associated with a voice actor.
+
+        Endpoints:
+        - GET api/v1/persons/{id}/voices/
+        """
+        author = self.get_object()
+
+        try:
+            characters = CharacterVoice.objects.filter(voice_id=author.pk)
+            if characters.exists():
+                serializer = CharacterVoiceReadSerializer(characters, many=True)
+                return Response(serializer.data)
+            return Response(
+                {"detail": "No relations found for this person."},
+                status=status.HTTP_404_NOT_FOUND,
+            )
         except Exception as e:
             return Response(
                 {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR

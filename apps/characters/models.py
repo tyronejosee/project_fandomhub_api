@@ -71,6 +71,12 @@ class CharacterVoice(BaseModel):
         ordering = ["pk"]
         verbose_name = _("character voice")
         verbose_name_plural = _("character voices")
+        constraints = [
+            models.UniqueConstraint(
+                fields=["character_id", "voice_id"],
+                name="unique_character_voices",
+            )
+        ]
 
     def __str__(self):
         return str(f"{self.character_id} - {self.voice_id}")
@@ -91,6 +97,7 @@ class CharacterAnime(BaseModel):
         limit_choices_to={"is_available": True},
         on_delete=models.CASCADE,
     )
+    # TODO: Remove
 
     class Meta:
         ordering = ["pk"]
@@ -121,6 +128,7 @@ class CharacterManga(BaseModel):
         on_delete=models.CASCADE,
         limit_choices_to={"is_available": True},
     )
+    # TODO: Remove
 
     class Meta:
         ordering = ["pk"]

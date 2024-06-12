@@ -36,7 +36,12 @@ class CharacterAdmin(ImportExportModelAdmin, BaseAdmin):
 class CharacterVoiceAdmin(ImportExportModelAdmin, BaseAdmin):
     """Admin for CharacterVoice model."""
 
-    search_fields = ["character_id__name", "voice_id__name"]
+    search_fields = [
+        "character_id__name",
+        "voice_id__name",
+        "anime_id__name",
+        "manga_id__name",
+    ]
     list_display = ["character_id", "voice_id", "is_available"]
     list_filter = ["character_id"]
     list_editable = ["is_available"]
