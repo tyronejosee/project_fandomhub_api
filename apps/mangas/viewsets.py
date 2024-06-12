@@ -19,13 +19,47 @@ from apps.users.permissions import IsContributor
 from apps.users.choices import RoleChoices
 from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer, ReviewWriteSerializer
-from .models import Manga
+from .models import Magazine, Manga
 from .serializers import (
+    MagazineReadSerializer,
+    MagazineWriteSerializer,
     MangaReadSerializer,
     MangaWriteSerializer,
     MangaMinimalSerializer,
 )
 from .schemas import manga_schemas
+
+
+class MagazineViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
+    """
+    ViewSet for managing Magazine instances.
+
+    Endpoints:
+    - GET /api/v1/magazines/
+    - POST /api/v1/magazines/
+    - GET /api/v1/magazines/{id}/
+    - PUT /api/v1/magazines/{id}/
+    - PATCH /api/v1/magazines/{id}/
+    - DELETE /api/v1/magazines/{id}/
+    """
+
+    permission_classes = [IsContributor]
+    serializer_class = MagazineWriteSerializer
+    search_fields = ["name"]
+    ordering_fields = ["name"]
+
+    def get_queryset(self):
+        return Magazine.objects.get_available()
+
+    def get_permissions(self):
+        if self.action in ["list", "retrieve"]:
+            return [AllowAny()]
+        return super().get_permissions()
+
+    def get_serializer_class(self):
+        if self.action in ["list", "retrieve"]:
+            return MagazineReadSerializer
+        return super().get_serializer_class()
 
 
 @extend_schema_view(**manga_schemas)

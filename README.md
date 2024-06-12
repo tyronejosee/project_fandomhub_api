@@ -8,7 +8,7 @@
 </div>
 <div align="center">
   <h1><strong>FandomHub - API</strong></h1>
-  <a href="#"><strong>📚 Documentation</strong></a>
+  <a href="https://project-fandomhub-docs.pages.dev/"><strong>📚 Documentation</strong></a>
 </div>
 <br>
 <p align="center">

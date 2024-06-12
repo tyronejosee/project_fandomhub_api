@@ -3,7 +3,32 @@
 from rest_framework import serializers
 
 from apps.genres.serializers import GenreReadSerializer, DemographicReadSerializer
-from .models import Manga
+from .models import Magazine, Manga
+
+
+class MagazineReadSerializer(serializers.ModelSerializer):
+    """Serializer for Magazine model (List/retrieve)."""
+
+    class Meta:
+        model = Magazine
+        fields = [
+            "id",
+            "name",
+            "slug",
+            "count",
+            "created_at",
+            "updated_at",
+        ]
+
+
+class MagazineWriteSerializer(serializers.ModelSerializer):
+    """Serializer for Magazine model (Create/update)."""
+
+    class Meta:
+        model = Magazine
+        fields = [
+            "name",
+        ]
 
 
 class MangaReadSerializer(serializers.ModelSerializer):
