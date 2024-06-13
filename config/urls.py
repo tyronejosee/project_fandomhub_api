@@ -51,7 +51,7 @@ urlpatterns = [
     # path("", include("apps.reviews.urls")),
     # path("", include("apps.tops.urls")),
     # path("", include("apps.utils.urls")),
-    path("metrics/", include("django_prometheus.urls")),
+    # path("metrics/", include("django_prometheus.urls")),
 ]
 
 

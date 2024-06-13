@@ -3,51 +3,64 @@
 from django.test import TestCase
 from django.core.exceptions import ValidationError
 
-from ..models import Studio
+from ..models import Producer
+from ..choices import TypeChoices
 
 
-class StudioModelTestCase(TestCase):
+class ProducerModelTestCase(TestCase):
     """Test cases for Studio model."""
 
-    def test_creation_studio(self):
-        """Test creating a studio."""
+    def test_creation_producer(self):
+        """Test creating a producer."""
 
-        studio = Studio.objects.create(
+        producer = Producer.objects.create(
             name="Studio Ghibli",
             name_jpn="スタジオジブリ",
             established="Jun, 1985",
+            type=TypeChoices.STUDIO,
             image=None,
+            favorites=123,
         )
-        self.assertEqual(studio.name, "Studio Ghibli")
-        self.assertEqual(studio.name_jpn, "スタジオジブリ")
-        self.assertEqual(studio.established, "Jun, 1985")
-        self.assertEqual(studio.is_available, True)
-        self.assertEqual(studio.image, None)
+        self.assertEqual(producer.name, "Studio Ghibli")
+        self.assertEqual(producer.name_jpn, "スタジオジブリ")
+        self.assertEqual(producer.established, "Jun, 1985")
+        self.assertEqual(producer.type, TypeChoices.STUDIO)
+        self.assertEqual(producer.image, None)
+        self.assertEqual(producer.favorites, 123)
+        self.assertEqual(producer.is_available, True)
 
     def test_update_studio(self):
         """Test updating a studio."""
-        studio = Studio(name="MAPPA", name_jpn="MAPPA")
-        studio.save()
+        producer = Producer(
+            name="MAPPA",
+            name_jpn="MAPPA",
+            type=TypeChoices.STUDIO,
+        )
+        producer.save()
 
-        studio.name = "A-1 Pictures"
-        studio.full_clean()
-        studio.save()
-        updated_studio = Studio.objects.get(pk=studio.pk)
-        self.assertEqual(updated_studio.name, "A-1 Pictures")
+        producer.name = "A-1 Pictures"
+        producer.full_clean()
+        producer.save()
+        updated_producer = Producer.objects.get(pk=producer.pk)
+        self.assertEqual(updated_producer.name, "A-1 Pictures")
 
-    def test_delete_studio(self):
-        """Test deleting a studio."""
-        studio = Studio(name="Bones", name_jpn="ボンズ")
-        studio.save()
-        studio.delete()
-        with self.assertRaises(Studio.DoesNotExist):
-            Studio.objects.get(pk=studio.pk)
+    def test_delete_producer(self):
+        """Test deleting a producer."""
+        producer = Producer.objects.create(
+            name="Bones",
+            name_jpn="ボンズ",
+            type=TypeChoices.STUDIO,
+        )
+        producer.save()
+        producer.delete()
+        with self.assertRaises(Producer.DoesNotExist):
+            Producer.objects.get(pk=producer.pk)
 
     def test_validate_name_field(self):
         """Test name field validation."""
         with self.assertRaises(ValidationError):
-            studio1 = Studio(name="Studio Ghibli", name_jpn="スタジオジブリ")
-            studio1.save()
+            producer1 = Producer(name="Studio Ghibli", name_jpn="スタジオジブリ")
+            producer1.save()
 
-            studio2 = Studio(name="Studio Ghibli", name_jpn="Another Name")
-            studio2.full_clean()  # Error
+            producer2 = Producer(name="Studio Ghibli", name_jpn="Another Name")
+            producer2.full_clean()  # Error

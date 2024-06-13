@@ -355,3 +355,440 @@ django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You
 [2024-06-13 22:14:10,064]    WARNING - Not Found: /metrics
 [2024-06-13 22:14:25,036]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 19.4 ms
 [2024-06-13 22:14:25,038]    WARNING - Not Found: /metrics
+[2024-06-13 22:14:40,037]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 23.4 ms
+[2024-06-13 22:14:40,039]    WARNING - Not Found: /metrics
+[2024-06-13 22:14:55,032]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 19.0 ms
+[2024-06-13 22:14:55,034]    WARNING - Not Found: /metrics
+[2024-06-13 22:15:10,031]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 21.9 ms
+[2024-06-13 22:15:10,032]    WARNING - Not Found: /metrics
+[2024-06-13 22:15:25,032]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 20.3 ms
+[2024-06-13 22:15:25,033]    WARNING - Not Found: /metrics
+[2024-06-13 22:15:40,022]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 16.2 ms
+[2024-06-13 22:15:40,023]    WARNING - Not Found: /metrics
+[2024-06-13 22:15:55,031]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 25.5 ms
+[2024-06-13 22:15:55,033]    WARNING - Not Found: /metrics
+[2024-06-13 22:16:10,086]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 90.4 ms
+[2024-06-13 22:16:10,091]    WARNING - Not Found: /metrics
+[2024-06-13 22:17:05,336]    INFO - Watching for file changes with StatReloader
+[2024-06-13 22:17:10,072]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 57.9 ms
+[2024-06-13 22:17:10,074]    WARNING - Not Found: /metrics
+[2024-06-13 22:17:18,733]    INFO - /app/config/urls.py changed, reloading.
+[2024-06-13 22:17:23,076]    INFO - Watching for file changes with StatReloader
+[2024-06-13 22:17:40,058]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 39.3 ms
+[2024-06-13 22:17:40,059]    WARNING - Not Found: /metrics
+[2024-06-13 22:17:55,009]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.6 ms
+[2024-06-13 22:17:55,011]    WARNING - Not Found: /metrics
+[2024-06-13 22:18:10,018]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 29.7 ms
+[2024-06-13 22:18:10,020]    WARNING - Not Found: /metrics
+[2024-06-13 22:18:25,036]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 43.1 ms
+[2024-06-13 22:18:25,038]    WARNING - Not Found: /metrics
+[2024-06-13 22:18:40,018]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 28.9 ms
+[2024-06-13 22:18:40,022]    WARNING - Not Found: /metrics
+[2024-06-13 22:18:55,004]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 18.1 ms
+[2024-06-13 22:18:55,006]    WARNING - Not Found: /metrics
+[2024-06-13 22:19:10,031]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 41.7 ms
+[2024-06-13 22:19:10,032]    WARNING - Not Found: /metrics
+[2024-06-13 22:19:25,010]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 25.5 ms
+[2024-06-13 22:19:25,012]    WARNING - Not Found: /metrics
+[2024-06-13 22:19:40,008]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 24.9 ms
+[2024-06-13 22:19:40,011]    WARNING - Not Found: /metrics
+[2024-06-13 22:19:55,006]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 23.6 ms
+[2024-06-13 22:19:55,009]    WARNING - Not Found: /metrics
+[2024-06-13 22:20:10,023]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 38.1 ms
+[2024-06-13 22:20:10,028]    WARNING - Not Found: /metrics
+[2024-06-13 22:20:25,000]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.1 ms
+[2024-06-13 22:20:25,002]    WARNING - Not Found: /metrics
+[2024-06-13 22:20:40,030]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 43.8 ms
+[2024-06-13 22:20:40,031]    WARNING - Not Found: /metrics
+[2024-06-13 22:20:54,995]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 16.6 ms
+[2024-06-13 22:20:54,997]    WARNING - Not Found: /metrics
+[2024-06-13 22:21:09,993]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 16.5 ms
+[2024-06-13 22:21:09,995]    WARNING - Not Found: /metrics
+[2024-06-13 22:21:25,030]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 45.9 ms
+[2024-06-13 22:21:25,031]    WARNING - Not Found: /metrics
+[2024-06-13 22:21:40,024]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 46.7 ms
+[2024-06-13 22:21:40,025]    WARNING - Not Found: /metrics
+[2024-06-13 22:21:54,992]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.9 ms
+[2024-06-13 22:21:54,994]    WARNING - Not Found: /metrics
+[2024-06-13 22:22:09,993]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.7 ms
+[2024-06-13 22:22:09,996]    WARNING - Not Found: /metrics
+[2024-06-13 22:22:24,997]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 21.3 ms
+[2024-06-13 22:22:24,998]    WARNING - Not Found: /metrics
+[2024-06-13 22:22:40,018]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 47.6 ms
+[2024-06-13 22:22:40,022]    WARNING - Not Found: /metrics
+[2024-06-13 22:22:54,995]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 18.9 ms
+[2024-06-13 22:22:54,997]    WARNING - Not Found: /metrics
+[2024-06-13 22:23:09,997]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 27.4 ms
+[2024-06-13 22:23:10,002]    WARNING - Not Found: /metrics
+[2024-06-13 22:23:25,002]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 31.1 ms
+[2024-06-13 22:23:25,004]    WARNING - Not Found: /metrics
+[2024-06-13 22:23:40,011]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 37.0 ms
+[2024-06-13 22:23:40,012]    WARNING - Not Found: /metrics
+[2024-06-13 22:23:54,988]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.0 ms
+[2024-06-13 22:23:54,989]    WARNING - Not Found: /metrics
+[2024-06-13 22:24:09,982]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 18.0 ms
+[2024-06-13 22:24:09,984]    WARNING - Not Found: /metrics
+[2024-06-13 22:24:24,986]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 20.8 ms
+[2024-06-13 22:24:24,987]    WARNING - Not Found: /metrics
+[2024-06-13 22:24:39,995]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 28.0 ms
+[2024-06-13 22:24:39,996]    WARNING - Not Found: /metrics
+[2024-06-13 22:24:54,983]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 20.7 ms
+[2024-06-13 22:24:54,984]    WARNING - Not Found: /metrics
+[2024-06-13 22:25:10,090]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 128.8 ms
+[2024-06-13 22:25:10,115]    WARNING - Not Found: /metrics
+[2024-06-13 22:25:24,983]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.4 ms
+[2024-06-13 22:25:24,985]    WARNING - Not Found: /metrics
+[2024-06-13 22:25:39,997]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 33.7 ms
+[2024-06-13 22:25:40,000]    WARNING - Not Found: /metrics
+[2024-06-13 22:25:54,980]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 18.1 ms
+[2024-06-13 22:25:54,982]    WARNING - Not Found: /metrics
+[2024-06-13 22:26:10,002]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 43.0 ms
+[2024-06-13 22:26:10,003]    WARNING - Not Found: /metrics
+[2024-06-13 22:26:24,988]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 29.0 ms
+[2024-06-13 22:26:24,990]    WARNING - Not Found: /metrics
+[2024-06-13 22:26:40,000]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 41.1 ms
+[2024-06-13 22:26:40,017]    WARNING - Not Found: /metrics
+[2024-06-13 22:26:54,993]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 36.9 ms
+[2024-06-13 22:26:54,994]    WARNING - Not Found: /metrics
+[2024-06-13 22:27:09,993]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 35.7 ms
+[2024-06-13 22:27:09,994]    WARNING - Not Found: /metrics
+[2024-06-13 22:27:24,971]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.0 ms
+[2024-06-13 22:27:24,972]    WARNING - Not Found: /metrics
+[2024-06-13 22:27:39,987]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 40.7 ms
+[2024-06-13 22:27:39,989]    WARNING - Not Found: /metrics
+[2024-06-13 22:27:54,953]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 12.0 ms
+[2024-06-13 22:27:54,954]    WARNING - Not Found: /metrics
+[2024-06-13 22:28:09,964]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.2 ms
+[2024-06-13 22:28:09,965]    WARNING - Not Found: /metrics
+[2024-06-13 22:28:24,989]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 38.7 ms
+[2024-06-13 22:28:24,991]    WARNING - Not Found: /metrics
+[2024-06-13 22:28:39,974]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 28.4 ms
+[2024-06-13 22:28:39,977]    WARNING - Not Found: /metrics
+[2024-06-13 22:28:54,962]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 16.2 ms
+[2024-06-13 22:28:54,966]    WARNING - Not Found: /metrics
+[2024-06-13 22:29:09,971]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 23.5 ms
+[2024-06-13 22:29:09,973]    WARNING - Not Found: /metrics
+[2024-06-13 22:29:24,972]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 25.6 ms
+[2024-06-13 22:29:24,975]    WARNING - Not Found: /metrics
+[2024-06-13 22:29:39,966]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 23.7 ms
+[2024-06-13 22:29:39,973]    WARNING - Not Found: /metrics
+[2024-06-13 22:29:54,975]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 31.1 ms
+[2024-06-13 22:29:54,981]    WARNING - Not Found: /metrics
+[2024-06-13 22:30:09,959]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.9 ms
+[2024-06-13 22:30:09,960]    WARNING - Not Found: /metrics
+[2024-06-13 22:30:24,970]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 27.4 ms
+[2024-06-13 22:30:24,971]    WARNING - Not Found: /metrics
+[2024-06-13 22:30:39,961]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 21.1 ms
+[2024-06-13 22:30:39,964]    WARNING - Not Found: /metrics
+[2024-06-13 22:30:54,970]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 26.8 ms
+[2024-06-13 22:30:54,971]    WARNING - Not Found: /metrics
+[2024-06-13 22:31:09,958]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 20.4 ms
+[2024-06-13 22:31:09,959]    WARNING - Not Found: /metrics
+[2024-06-13 22:31:24,978]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 32.2 ms
+[2024-06-13 22:31:24,980]    WARNING - Not Found: /metrics
+[2024-06-13 22:31:39,992]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 50.9 ms
+[2024-06-13 22:31:39,994]    WARNING - Not Found: /metrics
+[2024-06-13 22:31:54,960]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 20.4 ms
+[2024-06-13 22:31:54,962]    WARNING - Not Found: /metrics
+[2024-06-13 22:32:09,986]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 45.6 ms
+[2024-06-13 22:32:09,987]    WARNING - Not Found: /metrics
+[2024-06-13 22:32:24,952]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 18.2 ms
+[2024-06-13 22:32:24,953]    WARNING - Not Found: /metrics
+[2024-06-13 22:32:39,965]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 32.0 ms
+[2024-06-13 22:32:39,966]    WARNING - Not Found: /metrics
+[2024-06-13 22:32:54,964]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 27.3 ms
+[2024-06-13 22:32:54,965]    WARNING - Not Found: /metrics
+[2024-06-13 22:33:09,980]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 42.3 ms
+[2024-06-13 22:33:09,981]    WARNING - Not Found: /metrics
+[2024-06-13 22:33:24,954]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 23.6 ms
+[2024-06-13 22:33:24,955]    WARNING - Not Found: /metrics
+[2024-06-13 22:33:39,956]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 25.1 ms
+[2024-06-13 22:33:39,957]    WARNING - Not Found: /metrics
+[2024-06-13 22:33:54,978]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 46.2 ms
+[2024-06-13 22:33:54,982]    WARNING - Not Found: /metrics
+[2024-06-13 22:34:09,945]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.0 ms
+[2024-06-13 22:34:09,946]    WARNING - Not Found: /metrics
+[2024-06-13 22:34:24,982]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 55.2 ms
+[2024-06-13 22:34:24,983]    WARNING - Not Found: /metrics
+[2024-06-13 22:34:39,944]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 21.2 ms
+[2024-06-13 22:34:39,946]    WARNING - Not Found: /metrics
+[2024-06-13 22:34:54,954]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 29.8 ms
+[2024-06-13 22:34:54,958]    WARNING - Not Found: /metrics
+[2024-06-13 22:35:09,944]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.4 ms
+[2024-06-13 22:35:09,945]    WARNING - Not Found: /metrics
+[2024-06-13 22:35:24,936]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 15.4 ms
+[2024-06-13 22:35:24,937]    WARNING - Not Found: /metrics
+[2024-06-13 22:35:39,935]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.2 ms
+[2024-06-13 22:35:39,936]    WARNING - Not Found: /metrics
+[2024-06-13 22:35:54,937]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.5 ms
+[2024-06-13 22:35:54,939]    WARNING - Not Found: /metrics
+[2024-06-13 22:36:09,932]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 13.4 ms
+[2024-06-13 22:36:09,933]    WARNING - Not Found: /metrics
+[2024-06-13 22:36:24,934]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.2 ms
+[2024-06-13 22:36:24,935]    WARNING - Not Found: /metrics
+[2024-06-13 22:36:39,944]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 25.6 ms
+[2024-06-13 22:36:39,946]    WARNING - Not Found: /metrics
+[2024-06-13 22:36:54,959]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 37.5 ms
+[2024-06-13 22:36:54,960]    WARNING - Not Found: /metrics
+[2024-06-13 22:37:09,966]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 42.5 ms
+[2024-06-13 22:37:09,967]    WARNING - Not Found: /metrics
+[2024-06-13 22:37:24,931]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.2 ms
+[2024-06-13 22:37:24,932]    WARNING - Not Found: /metrics
+[2024-06-13 22:37:39,929]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 12.7 ms
+[2024-06-13 22:37:39,930]    WARNING - Not Found: /metrics
+[2024-06-13 22:37:54,927]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 11.6 ms
+[2024-06-13 22:37:54,928]    WARNING - Not Found: /metrics
+[2024-06-13 22:38:09,928]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 13.8 ms
+[2024-06-13 22:38:09,929]    WARNING - Not Found: /metrics
+[2024-06-13 22:38:24,931]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 16.2 ms
+[2024-06-13 22:38:24,933]    WARNING - Not Found: /metrics
+[2024-06-13 22:38:39,930]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 15.0 ms
+[2024-06-13 22:38:39,931]    WARNING - Not Found: /metrics
+[2024-06-13 22:38:54,933]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.1 ms
+[2024-06-13 22:38:54,935]    WARNING - Not Found: /metrics
+[2024-06-13 22:39:09,932]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.2 ms
+[2024-06-13 22:39:09,933]    WARNING - Not Found: /metrics
+[2024-06-13 22:39:24,932]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 15.3 ms
+[2024-06-13 22:39:24,933]    WARNING - Not Found: /metrics
+[2024-06-13 22:39:39,932]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 22.7 ms
+[2024-06-13 22:39:39,933]    WARNING - Not Found: /metrics
+[2024-06-13 22:39:54,956]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 41.1 ms
+[2024-06-13 22:39:54,957]    WARNING - Not Found: /metrics
+[2024-06-13 22:40:09,955]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 43.8 ms
+[2024-06-13 22:40:09,956]    WARNING - Not Found: /metrics
+[2024-06-13 22:40:24,953]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 38.4 ms
+[2024-06-13 22:40:24,954]    WARNING - Not Found: /metrics
+[2024-06-13 22:40:39,948]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 38.4 ms
+[2024-06-13 22:40:39,949]    WARNING - Not Found: /metrics
+[2024-06-13 22:40:54,946]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 30.0 ms
+[2024-06-13 22:40:54,948]    WARNING - Not Found: /metrics
+[2024-06-13 22:41:09,922]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 15.3 ms
+[2024-06-13 22:41:09,924]    WARNING - Not Found: /metrics
+[2024-06-13 22:41:24,920]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 15.8 ms
+[2024-06-13 22:41:24,922]    WARNING - Not Found: /metrics
+[2024-06-13 22:41:39,915]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 11.5 ms
+[2024-06-13 22:41:39,915]    WARNING - Not Found: /metrics
+[2024-06-13 22:41:54,917]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 13.7 ms
+[2024-06-13 22:41:54,918]    WARNING - Not Found: /metrics
+[2024-06-13 22:42:09,913]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 13.5 ms
+[2024-06-13 22:42:09,914]    WARNING - Not Found: /metrics
+[2024-06-13 22:42:24,944]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 40.1 ms
+[2024-06-13 22:42:24,945]    WARNING - Not Found: /metrics
+[2024-06-13 22:42:39,961]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 58.2 ms
+[2024-06-13 22:42:39,963]    WARNING - Not Found: /metrics
+[2024-06-13 22:42:54,923]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 26.3 ms
+[2024-06-13 22:42:54,924]    WARNING - Not Found: /metrics
+[2024-06-13 22:43:09,964]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 63.4 ms
+[2024-06-13 22:43:09,965]    WARNING - Not Found: /metrics
+[2024-06-13 22:43:24,913]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.6 ms
+[2024-06-13 22:43:24,914]    WARNING - Not Found: /metrics
+[2024-06-13 22:43:39,919]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 25.8 ms
+[2024-06-13 22:43:39,921]    WARNING - Not Found: /metrics
+[2024-06-13 22:43:54,941]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 43.1 ms
+[2024-06-13 22:43:54,946]    WARNING - Not Found: /metrics
+[2024-06-13 22:44:09,907]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.5 ms
+[2024-06-13 22:44:09,908]    WARNING - Not Found: /metrics
+[2024-06-13 22:44:24,907]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.2 ms
+[2024-06-13 22:44:24,908]    WARNING - Not Found: /metrics
+[2024-06-13 22:44:39,927]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 34.2 ms
+[2024-06-13 22:44:39,928]    WARNING - Not Found: /metrics
+[2024-06-13 22:44:54,913]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 25.5 ms
+[2024-06-13 22:44:54,914]    WARNING - Not Found: /metrics
+[2024-06-13 22:45:09,903]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.0 ms
+[2024-06-13 22:45:09,904]    WARNING - Not Found: /metrics
+[2024-06-13 22:45:24,901]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.0 ms
+[2024-06-13 22:45:24,905]    WARNING - Not Found: /metrics
+[2024-06-13 22:45:39,920]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 33.9 ms
+[2024-06-13 22:45:39,922]    WARNING - Not Found: /metrics
+[2024-06-13 22:45:54,920]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 37.1 ms
+[2024-06-13 22:45:54,925]    WARNING - Not Found: /metrics
+[2024-06-13 22:46:09,905]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 26.0 ms
+[2024-06-13 22:46:09,977]    WARNING - Not Found: /metrics
+[2024-06-13 22:46:24,897]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.0 ms
+[2024-06-13 22:46:24,898]    WARNING - Not Found: /metrics
+[2024-06-13 22:46:39,888]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 16.1 ms
+[2024-06-13 22:46:39,890]    WARNING - Not Found: /metrics
+[2024-06-13 22:46:54,895]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.1 ms
+[2024-06-13 22:46:54,896]    WARNING - Not Found: /metrics
+[2024-06-13 22:47:09,899]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 21.7 ms
+[2024-06-13 22:47:09,900]    WARNING - Not Found: /metrics
+[2024-06-13 22:47:24,909]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 34.2 ms
+[2024-06-13 22:47:24,911]    WARNING - Not Found: /metrics
+[2024-06-13 22:47:39,930]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 52.7 ms
+[2024-06-13 22:47:39,931]    WARNING - Not Found: /metrics
+[2024-06-13 22:47:54,896]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 23.1 ms
+[2024-06-13 22:47:54,897]    WARNING - Not Found: /metrics
+[2024-06-13 22:48:09,916]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 41.1 ms
+[2024-06-13 22:48:09,917]    WARNING - Not Found: /metrics
+[2024-06-13 22:48:24,938]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 64.0 ms
+[2024-06-13 22:48:24,940]    WARNING - Not Found: /metrics
+[2024-06-13 22:48:39,880]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 16.6 ms
+[2024-06-13 22:48:39,881]    WARNING - Not Found: /metrics
+[2024-06-13 22:48:54,955]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 62.4 ms
+[2024-06-13 22:48:54,957]    WARNING - Not Found: /metrics
+[2024-06-13 22:49:09,882]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 20.1 ms
+[2024-06-13 22:49:09,884]    WARNING - Not Found: /metrics
+[2024-06-13 22:49:24,877]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 15.0 ms
+[2024-06-13 22:49:24,879]    WARNING - Not Found: /metrics
+[2024-06-13 22:49:39,875]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.8 ms
+[2024-06-13 22:49:39,876]    WARNING - Not Found: /metrics
+[2024-06-13 22:49:54,871]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 12.0 ms
+[2024-06-13 22:49:54,872]    WARNING - Not Found: /metrics
+[2024-06-13 22:50:09,871]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.6 ms
+[2024-06-13 22:50:09,873]    WARNING - Not Found: /metrics
+[2024-06-13 22:50:24,897]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 36.8 ms
+[2024-06-13 22:50:24,898]    WARNING - Not Found: /metrics
+[2024-06-13 22:50:39,885]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 26.4 ms
+[2024-06-13 22:50:39,886]    WARNING - Not Found: /metrics
+[2024-06-13 22:50:54,875]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 20.0 ms
+[2024-06-13 22:50:54,876]    WARNING - Not Found: /metrics
+[2024-06-13 22:51:09,874]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 15.7 ms
+[2024-06-13 22:51:09,875]    WARNING - Not Found: /metrics
+[2024-06-13 22:51:24,873]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 16.6 ms
+[2024-06-13 22:51:24,875]    WARNING - Not Found: /metrics
+[2024-06-13 22:51:39,888]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 46.5 ms
+[2024-06-13 22:51:39,890]    WARNING - Not Found: /metrics
+[2024-06-13 22:51:54,861]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 20.1 ms
+[2024-06-13 22:51:54,863]    WARNING - Not Found: /metrics
+[2024-06-13 22:52:09,895]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 64.8 ms
+[2024-06-13 22:52:09,897]    WARNING - Not Found: /metrics
+[2024-06-13 22:52:24,874]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 43.7 ms
+[2024-06-13 22:52:24,876]    WARNING - Not Found: /metrics
+[2024-06-13 22:52:39,850]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 16.0 ms
+[2024-06-13 22:52:39,852]    WARNING - Not Found: /metrics
+[2024-06-13 22:52:54,863]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 25.8 ms
+[2024-06-13 22:52:54,865]    WARNING - Not Found: /metrics
+[2024-06-13 22:53:09,871]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 32.2 ms
+[2024-06-13 22:53:09,873]    WARNING - Not Found: /metrics
+[2024-06-13 22:53:24,864]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 24.7 ms
+[2024-06-13 22:53:24,867]    WARNING - Not Found: /metrics
+[2024-06-13 22:53:39,858]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 23.2 ms
+[2024-06-13 22:53:39,860]    WARNING - Not Found: /metrics
+[2024-06-13 22:53:54,899]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 51.7 ms
+[2024-06-13 22:53:54,901]    WARNING - Not Found: /metrics
+[2024-06-13 22:54:09,859]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 21.6 ms
+[2024-06-13 22:54:09,861]    WARNING - Not Found: /metrics
+[2024-06-13 22:54:24,874]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 41.0 ms
+[2024-06-13 22:54:24,875]    WARNING - Not Found: /metrics
+[2024-06-13 22:54:39,871]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 47.1 ms
+[2024-06-13 22:54:39,873]    WARNING - Not Found: /metrics
+[2024-06-13 22:54:54,849]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 26.4 ms
+[2024-06-13 22:54:54,850]    WARNING - Not Found: /metrics
+[2024-06-13 22:55:09,882]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 56.8 ms
+[2024-06-13 22:55:09,883]    WARNING - Not Found: /metrics
+[2024-06-13 22:55:24,845]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 25.3 ms
+[2024-06-13 22:55:24,851]    WARNING - Not Found: /metrics
+[2024-06-13 22:55:39,852]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 33.5 ms
+[2024-06-13 22:55:39,854]    WARNING - Not Found: /metrics
+[2024-06-13 22:55:54,845]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 23.8 ms
+[2024-06-13 22:55:54,849]    WARNING - Not Found: /metrics
+[2024-06-13 22:56:09,878]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 23.7 ms
+[2024-06-13 22:56:09,883]    WARNING - Not Found: /metrics
+[2024-06-13 22:56:24,841]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 24.8 ms
+[2024-06-13 22:56:24,842]    WARNING - Not Found: /metrics
+[2024-06-13 22:56:39,833]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.6 ms
+[2024-06-13 22:56:39,836]    WARNING - Not Found: /metrics
+[2024-06-13 22:56:54,836]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 18.6 ms
+[2024-06-13 22:56:54,842]    WARNING - Not Found: /metrics
+[2024-06-13 22:57:09,873]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 53.0 ms
+[2024-06-13 22:57:09,874]    WARNING - Not Found: /metrics
+[2024-06-13 22:57:24,860]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 38.5 ms
+[2024-06-13 22:57:24,861]    WARNING - Not Found: /metrics
+[2024-06-13 22:57:39,849]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 33.2 ms
+[2024-06-13 22:57:39,851]    WARNING - Not Found: /metrics
+[2024-06-13 22:57:54,876]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 57.9 ms
+[2024-06-13 22:57:54,878]    WARNING - Not Found: /metrics
+[2024-06-13 22:58:09,840]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 24.2 ms
+[2024-06-13 22:58:09,841]    WARNING - Not Found: /metrics
+[2024-06-13 22:58:24,831]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 15.2 ms
+[2024-06-13 22:58:24,832]    WARNING - Not Found: /metrics
+[2024-06-13 22:58:39,849]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 30.2 ms
+[2024-06-13 22:58:39,851]    WARNING - Not Found: /metrics
+[2024-06-13 22:58:54,837]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 22.3 ms
+[2024-06-13 22:58:54,839]    WARNING - Not Found: /metrics
+[2024-06-13 22:59:09,840]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 29.8 ms
+[2024-06-13 22:59:09,842]    WARNING - Not Found: /metrics
+[2024-06-13 22:59:24,825]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 15.3 ms
+[2024-06-13 22:59:24,827]    WARNING - Not Found: /metrics
+[2024-06-13 22:59:39,838]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 30.0 ms
+[2024-06-13 22:59:39,841]    WARNING - Not Found: /metrics
+[2024-06-13 22:59:54,827]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.1 ms
+[2024-06-13 22:59:54,829]    WARNING - Not Found: /metrics
+[2024-06-13 23:00:09,852]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 45.3 ms
+[2024-06-13 23:00:09,854]    WARNING - Not Found: /metrics
+[2024-06-13 23:00:24,824]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 18.9 ms
+[2024-06-13 23:00:24,826]    WARNING - Not Found: /metrics
+[2024-06-13 23:00:39,870]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 58.0 ms
+[2024-06-13 23:00:39,872]    WARNING - Not Found: /metrics
+[2024-06-13 23:00:54,863]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 56.6 ms
+[2024-06-13 23:00:54,864]    WARNING - Not Found: /metrics
+[2024-06-13 23:01:09,828]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 26.7 ms
+[2024-06-13 23:01:09,829]    WARNING - Not Found: /metrics
+[2024-06-13 23:01:24,854]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 49.3 ms
+[2024-06-13 23:01:24,856]    WARNING - Not Found: /metrics
+[2024-06-13 23:01:39,825]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.6 ms
+[2024-06-13 23:01:39,826]    WARNING - Not Found: /metrics
+[2024-06-13 23:01:54,851]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 46.2 ms
+[2024-06-13 23:01:54,852]    WARNING - Not Found: /metrics
+[2024-06-13 23:02:09,828]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 28.9 ms
+[2024-06-13 23:02:09,830]    WARNING - Not Found: /metrics
+[2024-06-13 23:02:24,850]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 50.1 ms
+[2024-06-13 23:02:24,851]    WARNING - Not Found: /metrics
+[2024-06-13 23:02:39,854]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 54.9 ms
+[2024-06-13 23:02:39,855]    WARNING - Not Found: /metrics
+[2024-06-13 23:02:54,814]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 21.2 ms
+[2024-06-13 23:02:54,816]    WARNING - Not Found: /metrics
+[2024-06-13 23:03:09,807]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 18.0 ms
+[2024-06-13 23:03:09,808]    WARNING - Not Found: /metrics
+[2024-06-13 23:03:24,838]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 42.6 ms
+[2024-06-13 23:03:24,841]    WARNING - Not Found: /metrics
+[2024-06-13 23:03:39,846]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 49.8 ms
+[2024-06-13 23:03:39,856]    WARNING - Not Found: /metrics
+[2024-06-13 23:03:54,819]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 22.8 ms
+[2024-06-13 23:03:54,820]    WARNING - Not Found: /metrics
+[2024-06-13 23:04:09,804]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.9 ms
+[2024-06-13 23:04:09,809]    WARNING - Not Found: /metrics
+[2024-06-13 23:04:24,801]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.0 ms
+[2024-06-13 23:04:24,802]    WARNING - Not Found: /metrics
+[2024-06-13 23:04:39,824]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 40.4 ms
+[2024-06-13 23:04:39,826]    WARNING - Not Found: /metrics
+[2024-06-13 23:04:54,824]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 38.7 ms
+[2024-06-13 23:04:54,830]    WARNING - Not Found: /metrics
+[2024-06-13 23:05:09,847]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 60.5 ms
+[2024-06-13 23:05:09,849]    WARNING - Not Found: /metrics
+[2024-06-13 23:05:24,802]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.7 ms
+[2024-06-13 23:05:24,804]    WARNING - Not Found: /metrics
+[2024-06-13 23:05:39,822]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 36.5 ms
+[2024-06-13 23:05:39,824]    WARNING - Not Found: /metrics
+[2024-06-13 23:05:54,845]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 60.7 ms
+[2024-06-13 23:05:54,847]    WARNING - Not Found: /metrics
+[2024-06-13 23:06:09,821]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 38.6 ms
+[2024-06-13 23:06:09,822]    WARNING - Not Found: /metrics
+[2024-06-13 23:06:24,934]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 156.4 ms
+[2024-06-13 23:06:24,938]    WARNING - Not Found: /metrics
+[2024-06-13 23:06:39,839]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 61.1 ms
+[2024-06-13 23:06:39,841]    WARNING - Not Found: /metrics
+[2024-06-13 23:06:54,792]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 15.8 ms
+[2024-06-13 23:06:54,795]    WARNING - Not Found: /metrics
+[2024-06-13 23:07:09,789]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 18.6 ms
+[2024-06-13 23:07:09,791]    WARNING - Not Found: /metrics
+[2024-06-13 23:07:24,810]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 33.2 ms
+[2024-06-13 23:07:24,811]    WARNING - Not Found: /metrics
+[2024-06-13 23:07:39,807]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 38.2 ms
+[2024-06-13 23:07:39,808]    WARNING - Not Found: /metrics
+[2024-06-13 23:07:54,786]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 16.8 ms
+[2024-06-13 23:07:54,787]    WARNING - Not Found: /metrics
+[2024-06-13 23:08:09,802]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 34.2 ms
+[2024-06-13 23:08:09,804]    WARNING - Not Found: /metrics
+[2024-06-13 23:08:24,779]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 13.1 ms
+[2024-06-13 23:08:24,780]    WARNING - Not Found: /metrics
+[2024-06-13 23:08:39,778]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.3 ms
+[2024-06-13 23:08:39,779]    WARNING - Not Found: /metrics
+[2024-06-13 23:08:54,820]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 56.6 ms
+[2024-06-13 23:08:54,822]    WARNING - Not Found: /metrics
+[2024-06-13 23:09:09,771]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.3 ms
+[2024-06-13 23:09:09,772]    WARNING - Not Found: /metrics
+[2024-06-13 23:09:24,785]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 23.1 ms
+[2024-06-13 23:09:24,787]    WARNING - Not Found: /metrics
+[2024-06-13 23:09:39,765]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.2 ms
+[2024-06-13 23:09:39,766]    WARNING - Not Found: /metrics
