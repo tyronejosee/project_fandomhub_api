@@ -43,6 +43,7 @@ THIRD_APPS = [
     "corsheaders",
     "rest_framework",
     "djoser",
+    "django_prometheus",
     "import_export",
     "social_django",
     "rest_framework_simplejwt",
@@ -235,16 +236,16 @@ LOGGING = {
         "": {
             "level": "INFO",
             "handlers": ["file"],  # "console"
-            # "propagate": True,
+            "propagate": True,
         }
     },
     "formatters": {
         "simple": {
-            "format": "[{asctime}] {levelname} {message}",
+            "format": "[{asctime}]    {levelname} - {message}",
             "style": "{",
         },
         "verbose": {
-            "format": "{asctime} {levelname} - {name} {module}.py (line {lineno:d}. {message})",
+            "format": "[{asctime}]    {levelname} - {name} {module}.py (line {lineno:d}. {message})",
             "style": "{",
         },
     },

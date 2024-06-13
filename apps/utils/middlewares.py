@@ -16,10 +16,13 @@ class RequestLoggingMiddleware:
         self.get_response = get_response
 
     def __call__(self, request):
+        # Get client IP
+        client_ip = request.META.get("REMOTE_ADDR", "UNKNOWN")
+        print(client_ip)  # Remove
         # Get the response time between the request and the response
         start_time = time.time()
         response = self.get_response(request)
-        duration = time.time() - start_time
+        duration_ms = (time.time() - start_time) * 1000
 
         # Calculate the content length if available
         content_length = (
@@ -27,8 +30,10 @@ class RequestLoggingMiddleware:
         )
 
         logger.info(
-            f"Request: {request.method} {request.path} {request.META.get('SERVER_PROTOCOL')} {response.status_code} {content_length} {duration:.3f}s"
+            f"Request: '{request.method} {request.path} {request.META.get('SERVER_PROTOCOL')}' {response.status_code} {content_length} B {duration_ms:.1f} ms"
         )
+
+        # TODO: Add {client_ip} in production
 
         return response
 

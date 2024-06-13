@@ -8,7 +8,7 @@ DEBUG = True
 
 SECRET_KEY = env("SECRET_KEY")
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "web"]
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
@@ -65,6 +65,7 @@ CACHES = {
 }
 
 MIDDLEWARE = [
+    "django_prometheus.middleware.PrometheusBeforeMiddleware",
     "social_django.middleware.SocialAuthExceptionMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
@@ -80,6 +81,7 @@ MIDDLEWARE = [
     "django.middleware.locale.LocaleMiddleware",
     "apps.utils.middlewares.RequestLoggingMiddleware",
     # "apps.utils.middlewares.CensorshipMiddleware"
+    "django_prometheus.middleware.PrometheusAfterMiddleware",
 ]
 
 # APPEND_SLASH = False

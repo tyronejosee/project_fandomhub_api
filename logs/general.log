@@ -1,147 +1,357 @@
-2024-06-13 18:25:16,554:INFO Request: GET /api/v1/seasons/now/
-2024-06-13 18:26:07,105:INFO Request: GET /api/v1/characters/
-2024-06-13 18:26:09,980:INFO Request: GET /api/v1/characters/
-2024-06-13 18:26:11,193:INFO Request: GET /api/v1/characters/
-2024-06-13 18:26:12,296:INFO Request: GET /api/v1/characters/
-2024-06-13 18:26:13,430:INFO Request: GET /api/v1/characters/
-2024-06-13 18:26:14,431:INFO Request: GET /api/v1/characters/
-2024-06-13 18:26:15,490:INFO Request: GET /api/v1/characters/
-2024-06-13 18:26:16,650:INFO Request: GET /api/v1/characters/
-2024-06-13 18:26:17,700:INFO Request: GET /api/v1/characters/
-2024-06-13 18:28:50,699:INFO /app/config/settings/base.py changed, reloading.
-2024-06-13 18:29:52,985 INFO Watching for file changes with StatReloader
-2024-06-13 18:30:57,117 INFO Request: GET /api/v1/characters/
-2024-06-13 18:30:59,728 INFO Request: GET /api/v1/characters/
-2024-06-13 18:31:01,635 INFO Request: GET /api/v1/characters/
-2024-06-13 18:31:14,224 INFO /app/config/settings/base.py changed, reloading.
-2024-06-13 18:31:16,035 INFO Watching for file changes with StatReloader
-2024-06-13 18:31:37,994 INFO /app/config/settings/base.py changed, reloading.
-2024-06-13 18:31:41,569 INFO Watching for file changes with StatReloader
-2024-06-13 18:31:47,761 INFO Request: GET /api/v1/characters/
-2024-06-13 18:34:48,048 INFO /app/config/settings/base.py changed, reloading.
-2024-06-13 18:34:49,658 INFO Watching for file changes with StatReloader
-2024-06-13 18:34:52,814 INFO /app/config/settings/base.py changed, reloading.
-2024-06-13 18:34:56,909 INFO Watching for file changes with StatReloader
-2024-06-13 18:35:04,960 INFO Request: GET /api/v1/characters/
-2024-06-13 18:35:10,538 INFO Request: GET /api/v1/characters/
-2024-06-13 18:35:53,326 INFO /app/config/settings/base.py changed, reloading.
-2024-06-13 18:35:58,060 INFO Watching for file changes with StatReloader
-2024-06-13 18:36:05,443 INFO /app/config/settings/base.py changed, reloading.
-2024-06-13 18:36:09,490 INFO Watching for file changes with StatReloader
-2024-06-13 18:39:50,522 INFO /app/config/settings/base.py changed, reloading.
-2024-06-13 18:39:54,062 INFO autoreload.run_with_reloader:668 - Watching for file changes with StatReloader
-2024-06-13 18:39:59,554 INFO middlewares.__call__:19 - Request: GET /api/v1/characters/
-2024-06-13 18:47:10,839 INFO autoreload.trigger_reload:266 - /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:47:15,170 INFO autoreload.run_with_reloader:668 - Watching for file changes with StatReloader
-2024-06-13 18:47:30,514 INFO autoreload.trigger_reload:266 - /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:47:34,073 INFO autoreload.run_with_reloader:668 - Watching for file changes with StatReloader
-2024-06-13 18:47:43,422 ERROR log.log_response:241 - Internal Server Error: /api/v1/characters/
+[2024-06-13 21:07:29,155]    INFO - Watching for file changes with StatReloader
+[2024-06-13 21:07:45,747]    INFO - /app/apps/utils/middlewares.py changed, reloading.
+[2024-06-13 21:07:50,639]    INFO - Watching for file changes with StatReloader
+[2024-06-13 21:08:06,278]    INFO - Request: 'GET /api/v1/characters/ HTTP/1.1' 200 1234B 18.4ms
+[2024-06-13 21:08:10,355]    INFO - Request: 'GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/ HTTP/1.1' 404 23B 35.8ms
+[2024-06-13 21:08:10,360]    WARNING - Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/
+[2024-06-13 21:08:11,772]    INFO - Request: 'GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/ HTTP/1.1' 404 23B 23.0ms
+[2024-06-13 21:08:11,773]    WARNING - Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/
+[2024-06-13 21:08:13,564]    INFO - Request: 'GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/ HTTP/1.1' 404 23B 25.9ms
+[2024-06-13 21:08:13,565]    WARNING - Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/
+[2024-06-13 21:09:08,275]    INFO - /app/apps/utils/middlewares.py changed, reloading.
+[2024-06-13 21:09:13,767]    INFO - Watching for file changes with StatReloader
+[2024-06-13 21:09:25,726]    INFO - Request: 'GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/ HTTP/1.1' 404 23 B 40.7 ms
+[2024-06-13 21:09:25,728]    WARNING - Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/
+[2024-06-13 21:09:30,093]    INFO - Request: 'GET /api/v1/characters/ HTTP/1.1' 200 1234 B 5.5 ms
+[2024-06-13 21:10:45,300]    INFO - /app/config/settings/base.py changed, reloading.
+[2024-06-13 21:10:50,000]    INFO - Watching for file changes with StatReloader
+[2024-06-13 21:34:08,781]    INFO - /app/config/settings/base.py changed, reloading.
+[2024-06-13 21:34:13,076]    INFO - Watching for file changes with StatReloader
+[2024-06-13 21:34:35,795]    INFO - /app/config/settings/local.py changed, reloading.
+[2024-06-13 21:34:38,424]    INFO - Watching for file changes with StatReloader
+[2024-06-13 21:34:43,800]    INFO - /app/config/settings/local.py changed, reloading.
+[2024-06-13 21:34:46,415]    INFO - Watching for file changes with StatReloader
+[2024-06-13 21:52:11,489]    INFO - Watching for file changes with StatReloader
+[2024-06-13 21:52:25,013]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
 Traceback (most recent call last):
   File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
     response = get_response(request)
                ^^^^^^^^^^^^^^^^^^^^^
-  File "/app/apps/utils/middlewares.py", line 19, in __call__
-    logger.info(f"Request: {request.method} {request.path} {request.status_code}")
-                                                            ^^^^^^^^^^^^^^^^^^^
-AttributeError: 'WSGIRequest' object has no attribute 'status_code'
-2024-06-13 18:47:51,914 INFO autoreload.trigger_reload:266 - /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:47:56,477 INFO autoreload.run_with_reloader:668 - Watching for file changes with StatReloader
-2024-06-13 18:50:18,417 INFO autoreload.trigger_reload:266 - /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:50:21,864 INFO autoreload.run_with_reloader:668 - Watching for file changes with StatReloader
-2024-06-13 18:50:38,780 INFO middlewares.__call__:19 - Request: GET /api/v1/characters/
-2024-06-13 18:50:38,799 INFO middlewares.__call__:21 - Response status code: 200
-2024-06-13 18:51:38,034 INFO autoreload.trigger_reload:266 - /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:51:42,277 INFO autoreload.run_with_reloader:668 - Watching for file changes with StatReloader
-2024-06-13 18:51:53,314 INFO middlewares.__call__:19 - Request: GET /api/v1/characters/
-2024-06-13 18:51:53,325 INFO middlewares.__call__:21 - TEST: GET /api/v1/characters/ 200
-2024-06-13 18:53:17,935 INFO autoreload.trigger_reload:266 - /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:53:23,026 INFO autoreload.run_with_reloader:668 - Watching for file changes with StatReloader
-2024-06-13 18:53:31,937 INFO middlewares.__call__:19 - Request: GET /api/v1/characters/
-2024-06-13 18:53:31,950 INFO middlewares.__call__:21 - TEST: HTTP/HTTP/1.1 GET /api/v1/characters/ 200
-2024-06-13 18:53:50,110 INFO autoreload.trigger_reload:266 - /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:53:54,666 INFO autoreload.run_with_reloader:668 - Watching for file changes with StatReloader
-2024-06-13 18:54:25,528 INFO autoreload.trigger_reload:266 - /app/config/settings/base.py changed, reloading.
-2024-06-13 18:54:29,688 INFO Watching for file changes with StatReloader
-2024-06-13 18:54:43,738 INFO Request: GET /api/v1/characters/
-2024-06-13 18:54:43,764 INFO TEST: HTTP/1.1 GET /api/v1/characters/ 200
-2024-06-13 18:56:22,077 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:56:25,998 INFO Watching for file changes with StatReloader
-2024-06-13 18:56:35,508 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:56:39,044 INFO Watching for file changes with StatReloader
-2024-06-13 18:56:56,259 INFO Request: GET /api/v1/characters/
-2024-06-13 18:56:56,270 INFO Response: /api/v1/characters/ 200 HTTP/1.1 GET
-2024-06-13 18:57:00,778 INFO Request: GET /api/v1/characters/
-2024-06-13 18:57:00,782 INFO Response: /api/v1/characters/ 200 HTTP/1.1 GET
-2024-06-13 18:57:12,265 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:57:16,711 INFO Watching for file changes with StatReloader
-2024-06-13 18:57:27,216 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:57:32,179 INFO Watching for file changes with StatReloader
-2024-06-13 18:57:41,717 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:57:46,166 INFO Watching for file changes with StatReloader
-2024-06-13 18:57:51,826 INFO Request: GET /api/v1/characters/
-2024-06-13 18:57:51,847 INFO Response: GET /api/v1/characters/ HTTP/1.1 200
-2024-06-13 18:59:27,337 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:59:32,226 INFO Watching for file changes with StatReloader
-2024-06-13 18:59:40,171 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 18:59:44,286 INFO Watching for file changes with StatReloader
-2024-06-13 19:00:00,633 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 19:00:04,439 INFO Watching for file changes with StatReloader
-2024-06-13 19:00:19,206 INFO Request: GET /api/v1/characters/
-2024-06-13 19:00:19,216 INFO Response: GET /api/v1/characters/ HTTP/1.1 200 0.010s
-2024-06-13 19:00:21,074 INFO Request: GET /api/v1/characters/
-2024-06-13 19:00:21,080 INFO Response: GET /api/v1/characters/ HTTP/1.1 200 0.006s
-2024-06-13 19:01:42,482 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 19:01:47,284 INFO Watching for file changes with StatReloader
-2024-06-13 19:01:58,289 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 19:02:03,723 INFO Watching for file changes with StatReloader
-2024-06-13 19:02:16,916 INFO Request: GET /api/v1/characters/
-2024-06-13 19:02:16,983 INFO Response: GET /api/v1/characters/ HTTP/1.1 200 N/A 0.068s
-2024-06-13 19:02:37,023 INFO Request: GET /api/v1/characters/
-2024-06-13 19:02:37,029 INFO Response: GET /api/v1/characters/ HTTP/1.1 200 N/A 0.006s
-2024-06-13 19:02:43,634 INFO Request: GET /api/v1/characters/
-2024-06-13 19:02:43,639 INFO Response: GET /api/v1/characters/ HTTP/1.1 200 N/A 0.005s
-2024-06-13 19:03:43,369 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 19:03:47,459 INFO Watching for file changes with StatReloader
-2024-06-13 19:04:11,903 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 19:04:16,406 INFO Watching for file changes with StatReloader
-2024-06-13 19:04:35,784 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 19:04:40,358 INFO Watching for file changes with StatReloader
-2024-06-13 19:04:50,047 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 19:04:54,813 INFO Watching for file changes with StatReloader
-2024-06-13 19:05:02,711 INFO GET /api/v1/characters/ HTTP/1.1 200 N/A 0.013s
-2024-06-13 19:05:04,136 INFO GET /api/v1/characters/ HTTP/1.1 200 N/A 0.004s
-2024-06-13 19:05:05,588 INFO GET /api/v1/characters/ HTTP/1.1 200 N/A 0.006s
-2024-06-13 19:05:44,062 INFO GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/voices/ HTTP/1.1 404 N/A 0.020s
-2024-06-13 19:05:44,063 WARNING Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/voices/
-2024-06-13 19:05:46,348 INFO GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/voices/ HTTP/1.1 404 N/A 0.020s
-2024-06-13 19:05:46,349 WARNING Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/voices/
-2024-06-13 19:06:18,601 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 19:06:24,702 INFO Watching for file changes with StatReloader
-2024-06-13 19:06:31,845 INFO Request: GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/voices/ HTTP/1.1 404 N/A 0.067s
-2024-06-13 19:06:31,846 WARNING Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/voices/
-2024-06-13 19:07:53,874 INFO /app/apps/utils/middlewares.py changed, reloading.
-2024-06-13 19:07:58,280 INFO Watching for file changes with StatReloader
-2024-06-13 19:08:01,298 INFO Request: GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/voices/ HTTP/1.1 404 23 0.045s
-2024-06-13 19:08:01,302 WARNING Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/voices/
-2024-06-13 19:08:51,530 INFO /app/config/settings/base.py changed, reloading.
-2024-06-13 19:08:56,106 INFO Watching for file changes with StatReloader
-2024-06-13 19:09:24,771 INFO Request: GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/ HTTP/1.1 404 23 0.019s
-2024-06-13 19:09:24,772 WARNING Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/
-2024-06-13 19:09:51,363 INFO /app/config/settings/base.py changed, reloading.
-2024-06-13 19:09:56,253    INFO Watching for file changes with StatReloader
-2024-06-13 19:10:03,060    INFO /app/config/settings/base.py changed, reloading.
-[2024-06-13 19:10:07,175] INFO Watching for file changes with StatReloader
-[2024-06-13 19:10:12,937] INFO Request: GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/ HTTP/1.1 404 23 0.042s
-[2024-06-13 19:10:12,938] WARNING Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/
-[2024-06-13 19:11:58,862] INFO /app/apps/utils/middlewares.py changed, reloading.
-[2024-06-13 19:12:03,055] INFO Watching for file changes with StatReloader
-[2024-06-13 19:12:14,371] INFO /app/apps/utils/middlewares.py changed, reloading.
-[2024-06-13 19:12:19,266] INFO Watching for file changes with StatReloader
-[2024-06-13 19:12:33,647] INFO /app/apps/utils/middlewares.py changed, reloading.
-[2024-06-13 19:12:37,905] INFO Watching for file changes with StatReloader
-[2024-06-13 19:13:30,192] INFO /app/apps/utils/middlewares.py changed, reloading.
-[2024-06-13 19:13:34,690] INFO Watching for file changes with StatReloader
-[2024-06-13 19:14:18,566] INFO /app/apps/utils/middlewares.py changed, reloading.
-[2024-06-13 19:14:22,661] INFO Watching for file changes with StatReloader
-[2024-06-13 19:14:33,778] INFO /app/apps/utils/middlewares.py changed, reloading.
-[2024-06-13 19:14:38,184] INFO Watching for file changes with StatReloader
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:52:25,084]    WARNING - Bad Request: /metrics
+[2024-06-13 21:52:40,061]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:52:40,130]    WARNING - Bad Request: /metrics
+[2024-06-13 21:52:55,020]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:52:55,177]    WARNING - Bad Request: /metrics
+[2024-06-13 21:53:10,014]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:53:10,181]    WARNING - Bad Request: /metrics
+[2024-06-13 21:53:25,020]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:53:25,129]    WARNING - Bad Request: /metrics
+[2024-06-13 21:53:40,010]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:53:40,074]    WARNING - Bad Request: /metrics
+[2024-06-13 21:53:55,025]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:53:55,204]    WARNING - Bad Request: /metrics
+[2024-06-13 21:54:10,008]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:54:10,151]    WARNING - Bad Request: /metrics
+[2024-06-13 21:54:13,373]    INFO - /app/config/settings/local.py changed, reloading.
+[2024-06-13 21:56:52,908]    INFO - Watching for file changes with StatReloader
+[2024-06-13 21:57:10,044]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:57:10,281]    WARNING - Bad Request: /metrics
+[2024-06-13 21:57:25,034]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:57:25,191]    WARNING - Bad Request: /metrics
+[2024-06-13 21:57:40,032]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:57:40,201]    WARNING - Bad Request: /metrics
+[2024-06-13 21:57:55,048]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:57:55,196]    WARNING - Bad Request: /metrics
+[2024-06-13 21:58:10,025]    ERROR - Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/http/request.py", line 151, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'web:8000'. You may need to add 'web' to ALLOWED_HOSTS.
+[2024-06-13 21:58:10,104]    WARNING - Bad Request: /metrics
+[2024-06-13 21:58:21,211]    INFO - /app/config/settings/local.py changed, reloading.
+[2024-06-13 21:58:30,746]    INFO - Watching for file changes with StatReloader
+[2024-06-13 21:58:40,092]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 58.5 ms
+[2024-06-13 21:58:40,094]    WARNING - Not Found: /metrics
+[2024-06-13 21:58:55,042]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 20.7 ms
+[2024-06-13 21:58:55,044]    WARNING - Not Found: /metrics
+[2024-06-13 21:59:10,055]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 38.0 ms
+[2024-06-13 21:59:10,057]    WARNING - Not Found: /metrics
+[2024-06-13 21:59:25,064]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 42.0 ms
+[2024-06-13 21:59:25,065]    WARNING - Not Found: /metrics
+[2024-06-13 21:59:40,055]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 39.4 ms
+[2024-06-13 21:59:40,067]    WARNING - Not Found: /metrics
+[2024-06-13 21:59:55,053]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 35.6 ms
+[2024-06-13 21:59:55,065]    WARNING - Not Found: /metrics
+[2024-06-13 22:00:10,030]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 15.1 ms
+[2024-06-13 22:00:10,031]    WARNING - Not Found: /metrics
+[2024-06-13 22:00:25,055]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 39.9 ms
+[2024-06-13 22:00:25,058]    WARNING - Not Found: /metrics
+[2024-06-13 22:00:40,060]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 44.6 ms
+[2024-06-13 22:00:40,062]    WARNING - Not Found: /metrics
+[2024-06-13 22:00:55,097]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 84.1 ms
+[2024-06-13 22:00:55,108]    WARNING - Not Found: /metrics
+[2024-06-13 22:01:10,031]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 21.4 ms
+[2024-06-13 22:01:10,032]    WARNING - Not Found: /metrics
+[2024-06-13 22:01:25,049]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 41.5 ms
+[2024-06-13 22:01:25,078]    WARNING - Not Found: /metrics
+[2024-06-13 22:01:40,032]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 26.4 ms
+[2024-06-13 22:01:40,035]    WARNING - Not Found: /metrics
+[2024-06-13 22:01:55,032]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 24.2 ms
+[2024-06-13 22:01:55,033]    WARNING - Not Found: /metrics
+[2024-06-13 22:02:10,035]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 30.7 ms
+[2024-06-13 22:02:10,047]    WARNING - Not Found: /metrics
+[2024-06-13 22:02:25,021]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 19.6 ms
+[2024-06-13 22:02:25,023]    WARNING - Not Found: /metrics
+[2024-06-13 22:02:40,055]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 59.5 ms
+[2024-06-13 22:02:40,056]    WARNING - Not Found: /metrics
+[2024-06-13 22:02:47,111]    INFO - Request: 'GET / HTTP/1.1' 302 0 B 1.2 ms
+[2024-06-13 22:02:48,622]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 35549 B 1500.4 ms
+[2024-06-13 22:02:49,860]    INFO - Request: 'GET /favicon.ico HTTP/1.1' 404 7342 B 26.3 ms
+[2024-06-13 22:02:49,862]    WARNING - Not Found: /favicon.ico
+[2024-06-13 22:02:55,028]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 30.7 ms
+[2024-06-13 22:02:55,035]    WARNING - Not Found: /metrics
+[2024-06-13 22:02:56,947]    INFO - Request: 'GET /admin/persons/person/ HTTP/1.1' 200 32854 B 408.8 ms
+[2024-06-13 22:02:57,179]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 123.8 ms
+[2024-06-13 22:02:57,949]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 93.6 ms
+[2024-06-13 22:03:10,017]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 20.7 ms
+[2024-06-13 22:03:10,019]    WARNING - Not Found: /metrics
+[2024-06-13 22:03:25,062]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 62.1 ms
+[2024-06-13 22:03:25,064]    WARNING - Not Found: /metrics
+[2024-06-13 22:03:40,042]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 41.9 ms
+[2024-06-13 22:03:40,043]    WARNING - Not Found: /metrics
+[2024-06-13 22:03:55,084]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 88.2 ms
+[2024-06-13 22:03:55,088]    WARNING - Not Found: /metrics
+[2024-06-13 22:04:10,029]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 32.5 ms
+[2024-06-13 22:04:10,031]    WARNING - Not Found: /metrics
+[2024-06-13 22:04:25,017]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 23.8 ms
+[2024-06-13 22:04:25,018]    WARNING - Not Found: /metrics
+[2024-06-13 22:04:40,042]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 50.8 ms
+[2024-06-13 22:04:40,044]    WARNING - Not Found: /metrics
+[2024-06-13 22:04:55,015]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 16.1 ms
+[2024-06-13 22:04:55,016]    WARNING - Not Found: /metrics
+[2024-06-13 22:05:10,010]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 18.2 ms
+[2024-06-13 22:05:10,012]    WARNING - Not Found: /metrics
+[2024-06-13 22:05:25,035]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 45.6 ms
+[2024-06-13 22:05:25,040]    WARNING - Not Found: /metrics
+[2024-06-13 22:05:40,009]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 17.2 ms
+[2024-06-13 22:05:40,017]    WARNING - Not Found: /metrics
+[2024-06-13 22:05:55,013]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 23.7 ms
+[2024-06-13 22:05:55,015]    WARNING - Not Found: /metrics
+[2024-06-13 22:06:10,125]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 139.0 ms
+[2024-06-13 22:06:10,146]    WARNING - Not Found: /metrics
+[2024-06-13 22:06:18,950]    INFO - /app/config/settings/base.py changed, reloading.
+[2024-06-13 22:06:23,168]    INFO - Watching for file changes with StatReloader
+[2024-06-13 22:06:29,628]    INFO - /app/config/settings/base.py changed, reloading.
+[2024-06-13 22:06:34,966]    INFO - Watching for file changes with StatReloader
+[2024-06-13 22:06:40,041]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 57.0 ms
+[2024-06-13 22:06:40,043]    WARNING - Not Found: /metrics
+[2024-06-13 22:06:54,999]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 22.4 ms
+[2024-06-13 22:06:55,000]    WARNING - Not Found: /metrics
+[2024-06-13 22:07:10,007]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 25.5 ms
+[2024-06-13 22:07:10,009]    WARNING - Not Found: /metrics
+[2024-06-13 22:07:10,132]    INFO - /app/config/urls.py changed, reloading.
+[2024-06-13 22:07:14,919]    INFO - Watching for file changes with StatReloader
+[2024-06-13 22:07:25,099]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 96.5 ms
+[2024-06-13 22:07:25,103]    WARNING - Not Found: /metrics
+[2024-06-13 22:07:31,074]    INFO - Request: 'GET /metrics/ HTTP/1.1' 404 7421 B 26.8 ms
+[2024-06-13 22:07:31,075]    WARNING - Not Found: /metrics/
+[2024-06-13 22:07:40,016]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 36.4 ms
+[2024-06-13 22:07:40,044]    WARNING - Not Found: /metrics
+[2024-06-13 22:07:55,022]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 41.7 ms
+[2024-06-13 22:07:55,024]    WARNING - Not Found: /metrics
+[2024-06-13 22:08:10,014]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 36.0 ms
+[2024-06-13 22:08:10,018]    WARNING - Not Found: /metrics
+[2024-06-13 22:08:25,034]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 54.7 ms
+[2024-06-13 22:08:25,056]    WARNING - Not Found: /metrics
+[2024-06-13 22:08:40,001]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 23.7 ms
+[2024-06-13 22:08:40,012]    WARNING - Not Found: /metrics
+[2024-06-13 22:08:54,995]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 16.2 ms
+[2024-06-13 22:08:54,996]    WARNING - Not Found: /metrics
+[2024-06-13 22:09:09,973]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 21.5 ms
+[2024-06-13 22:09:09,974]    WARNING - Not Found: /metrics
+[2024-06-13 22:09:24,968]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 19.2 ms
+[2024-06-13 22:09:24,974]    WARNING - Not Found: /metrics
+[2024-06-13 22:09:39,964]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 20.0 ms
+[2024-06-13 22:09:39,965]    WARNING - Not Found: /metrics
+[2024-06-13 22:09:54,955]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 16.1 ms
+[2024-06-13 22:09:54,957]    WARNING - Not Found: /metrics
+[2024-06-13 22:10:09,967]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 38.6 ms
+[2024-06-13 22:10:10,002]    WARNING - Not Found: /metrics
+[2024-06-13 22:10:24,967]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 40.7 ms
+[2024-06-13 22:10:24,979]    WARNING - Not Found: /metrics
+[2024-06-13 22:10:39,942]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 22.2 ms
+[2024-06-13 22:10:39,943]    WARNING - Not Found: /metrics
+[2024-06-13 22:10:54,946]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 24.7 ms
+[2024-06-13 22:10:54,950]    WARNING - Not Found: /metrics
+[2024-06-13 22:11:09,961]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 47.0 ms
+[2024-06-13 22:11:09,963]    WARNING - Not Found: /metrics
+[2024-06-13 22:12:51,762]    INFO - Watching for file changes with StatReloader
+[2024-06-13 22:13:10,069]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 37.5 ms
+[2024-06-13 22:13:10,071]    WARNING - Not Found: /metrics
+[2024-06-13 22:13:25,110]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 74.8 ms
+[2024-06-13 22:13:25,150]    WARNING - Not Found: /metrics
+[2024-06-13 22:13:27,995]    INFO - Request: 'GET /metrics/ HTTP/1.1' 404 7421 B 35.1 ms
+[2024-06-13 22:13:27,997]    WARNING - Not Found: /metrics/
+[2024-06-13 22:13:30,893]    INFO - Request: 'GET /metrics/ HTTP/1.1' 404 7421 B 55.2 ms
+[2024-06-13 22:13:30,895]    WARNING - Not Found: /metrics/
+[2024-06-13 22:13:40,124]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 101.7 ms
+[2024-06-13 22:13:40,133]    WARNING - Not Found: /metrics
+[2024-06-13 22:13:55,108]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 87.0 ms
+[2024-06-13 22:13:55,137]    WARNING - Not Found: /metrics
+[2024-06-13 22:13:56,399]    INFO - Request: 'GET /metrics/ HTTP/1.1' 404 7421 B 77.6 ms
+[2024-06-13 22:13:56,411]    WARNING - Not Found: /metrics/
+[2024-06-13 22:14:10,061]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 42.0 ms
+[2024-06-13 22:14:10,064]    WARNING - Not Found: /metrics
+[2024-06-13 22:14:25,036]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7324 B 19.4 ms
+[2024-06-13 22:14:25,038]    WARNING - Not Found: /metrics
