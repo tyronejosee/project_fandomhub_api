@@ -223,25 +223,28 @@ LOGGING = {
             "class": "logging.FileHandler",
             "filename": os.path.join(LOG_DIR, "general.log"),
             "level": "INFO",
-            "formatter": "verbose",
+            "formatter": "simple",  # verbose
         },
-        "console": {
-            "class": "logging.StreamHandler",
-            "level": "INFO",
-            "formatter": "simple",
-        },
+        # "console": {
+        #     "class": "logging.StreamHandler",
+        #     "level": "INFO",
+        #     "formatter": "simple",
+        # },
     },
     "loggers": {
         "": {
             "level": "INFO",
-            "handlers": ["file", "console"],
+            "handlers": ["file"],  # "console"
             # "propagate": True,
         }
     },
     "formatters": {
-        "simple": {"format": "{asctime}:{levelname} {message}", "style": "{"},
+        "simple": {
+            "format": "[{asctime}] {levelname} {message}",
+            "style": "{",
+        },
         "verbose": {
-            "format": "{asctime}:{levelname} - {name} {module}.py (line {lineno:d}. {message})",
+            "format": "{asctime} {levelname} - {name} {module}.py (line {lineno:d}. {message})",
             "style": "{",
         },
     },

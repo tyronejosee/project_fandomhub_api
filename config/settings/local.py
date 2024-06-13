@@ -8,10 +8,7 @@ DEBUG = True
 
 SECRET_KEY = env("SECRET_KEY")
 
-ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1"
-]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 
 CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
@@ -81,6 +78,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.locale.LocaleMiddleware",
+    "apps.utils.middlewares.RequestLoggingMiddleware",
     # "apps.utils.middlewares.CensorshipMiddleware"
 ]
 
