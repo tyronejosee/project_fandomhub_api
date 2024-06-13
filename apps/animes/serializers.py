@@ -3,7 +3,7 @@
 from rest_framework import serializers
 
 from apps.producers.serializers import ProducerReadSerializer
-from apps.genres.serializers import GenreReadSerializer
+from apps.genres.serializers import GenreReadSerializer, GenreMinimalSerializer
 from .models import Anime, AnimeStats
 
 
@@ -89,6 +89,8 @@ class AnimeWriteSerializer(serializers.ModelSerializer):
 class AnimeMinimalSerializer(serializers.ModelSerializer):
     """Serializer for Anime model (Minimal)."""
 
+    genres = GenreMinimalSerializer(many=True)
+
     class Meta:
         model = Anime
         fields = [
@@ -96,8 +98,11 @@ class AnimeMinimalSerializer(serializers.ModelSerializer):
             "name",
             "image",
             "episodes",
-            "ranked",
-            "popularity",
+            "aired_from",
+            "year",
+            "genres",
+            "duration",
+            "score",
             "members",
         ]
 

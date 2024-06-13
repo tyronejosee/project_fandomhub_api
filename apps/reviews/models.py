@@ -40,7 +40,15 @@ class Review(BaseModel):
         ordering = ["-created_at"]
         verbose_name = _("review")
         verbose_name_plural = _("reviews")
-        unique_together = ["content_type", "object_id", "user_id"]
+        indexes = [
+            models.Index(fields=["content_type", "object_id"]),
+        ]
+        constraints = [
+            models.UniqueConstraint(
+                fields=["content_type", "object_id", "user_id"],
+                name="unique_content_user",
+            )
+        ]
 
     def __str__(self):
         return str(f"{self.user} - {self.content_object}")

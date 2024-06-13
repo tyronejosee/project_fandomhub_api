@@ -15,6 +15,24 @@ from .resources import (
 )
 
 
+class CharacterVoiceInline(admin.TabularInline):
+    model = CharacterVoice
+    extra = 1
+    autocomplete_fields = ["voice_id"]
+
+
+class CharacterAnimeInline(admin.TabularInline):
+    model = CharacterAnime
+    extra = 1
+    autocomplete_fields = ["anime_id"]
+
+
+class CharacterMangaInline(admin.TabularInline):
+    model = CharacterManga
+    extra = 1
+    autocomplete_fields = ["manga_id"]
+
+
 class PictureInline(GenericTabularInline):
     model = Picture
 
@@ -28,7 +46,12 @@ class CharacterAdmin(ImportExportModelAdmin, BaseAdmin):
     list_filter = ["role"]
     list_editable = ["is_available"]
     readonly_fields = ["pk", "slug", "favorites", "created_at", "updated_at"]
-    inlines = [PictureInline]
+    inlines = [
+        PictureInline,
+        CharacterVoiceInline,
+        CharacterAnimeInline,
+        CharacterMangaInline,
+    ]
     resource_class = CharacterResource
 
 

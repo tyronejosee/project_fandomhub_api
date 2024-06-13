@@ -52,6 +52,9 @@ class Picture(BaseModel):
         ordering = ["pk"]
         verbose_name = _("picture")
         verbose_name_plural = _("pictures")
+        indexes = [
+            models.Index(fields=["content_type", "object_id"]),
+        ]
 
     def __str__(self):
         return str(self.content_object)
@@ -79,6 +82,9 @@ class Video(BaseModel):
         ordering = ["pk"]
         verbose_name = _("video")
         verbose_name_plural = _("videos")
+        indexes = [
+            models.Index(fields=["content_type", "object_id"]),
+        ]
 
     def __str__(self):
         return str(self.content_object)

@@ -14,10 +14,14 @@ class PersonAdmin(ImportExportModelAdmin, BaseAdmin):
 
     ordering = ["-created_at"]
     search_fields = ["name"]
-    list_display = ["name", "category", "get_age", "is_available"]
+    list_display = ["name", "category", "age", "is_available"]
     list_filter = ["is_available", "category"]
     readonly_fields = ["pk", "slug", "created_at", "updated_at"]
     resource_class = PersonResource
+
+    @admin.display(description="Age")
+    def get_age(self, obj):
+        return obj.age
 
 
 @admin.register(StaffAnime)

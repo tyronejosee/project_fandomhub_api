@@ -35,6 +35,9 @@ class Character(BaseModel, SlugMixin):
             FileSizeValidator(limit_mb=1),
         ],
     )
+    voices = models.ManyToManyField(Person, through="CharacterVoice", blank=True)
+    animes = models.ManyToManyField(Anime, through="CharacterAnime", blank=True)
+    mangas = models.ManyToManyField(Manga, through="CharacterManga", blank=True)
     favorites = models.PositiveIntegerField(_("favorites"), default=0)
 
     objects = CharacterManager()
@@ -64,7 +67,7 @@ class CharacterVoice(BaseModel):
             "category": CategoryChoices.VOICE_ACTOR,
             "is_available": True,
         },
-        on_delete=models.PROTECT,
+        on_delete=models.CASCADE,
     )
 
     class Meta:

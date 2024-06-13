@@ -32,6 +32,17 @@ class GenreWriteSerializer(serializers.ModelSerializer):
         ]
 
 
+class GenreMinimalSerializer(serializers.ModelSerializer):
+    """Serializer for Genre model (Minimal)."""
+
+    class Meta:
+        model = Genre
+        fields = [
+            "id",
+            "name",
+        ]
+
+
 class ThemeReadSerializer(serializers.ModelSerializer):
     """Serializer for Theme model (List/Retrieve)."""
 

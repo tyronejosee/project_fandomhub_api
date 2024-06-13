@@ -75,15 +75,14 @@ class Person(BaseModel, SlugMixin):
     def __str__(self):
         return self.name
 
-    def get_age(self):
+    @property
+    def age(self):
         today = date.today()
         return (
             today.year
             - self.birthday.year
             - ((today.month, today.day) < (self.birthday.month, self.birthday.day))
         )
-
-    get_age.short_description = "age"
 
 
 class StaffAnime(BaseModel):

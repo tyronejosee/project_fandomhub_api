@@ -7,7 +7,7 @@ from rest_framework import status
 
 from .models import Anime
 from .functions import get_current_season, get_upcoming_season
-from .serializers import AnimeReadSerializer
+from .serializers import AnimeMinimalSerializer
 
 
 class SeasonAnimeView(ListAPIView):
@@ -19,7 +19,7 @@ class SeasonAnimeView(ListAPIView):
     """
 
     permission_classes = [AllowAny]
-    serializer_class = AnimeReadSerializer
+    serializer_class = AnimeMinimalSerializer
 
     def get_queryset(self):
         year = int(self.kwargs.get("year"))
@@ -47,7 +47,7 @@ class CurrentSeasonAnimeView(ListAPIView):
     """
 
     permission_classes = [AllowAny]
-    serializer_class = AnimeReadSerializer
+    serializer_class = AnimeMinimalSerializer
 
     def get_queryset(self):
         season, year = get_current_season()
@@ -72,7 +72,7 @@ class UpcomingSeasonAnimeView(ListAPIView):
     """
 
     permission_classes = [AllowAny]
-    serializer_class = AnimeReadSerializer
+    serializer_class = AnimeMinimalSerializer
 
     def get_queryset(self):
         season, year = get_upcoming_season()
