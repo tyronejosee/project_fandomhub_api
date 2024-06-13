@@ -4947,3 +4947,136 @@ TypeError: PersonAdmin.get_formatted_text() takes 1 positional argument but 2 we
 2024-06-13 16:24:57,147:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
 2024-06-13 16:25:04,345:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/admin.py changed, reloading.)
 2024-06-13 16:25:08,446:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 16:30:40,341:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/models.py changed, reloading.)
+2024-06-13 16:30:44,893:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 16:30:51,590:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/characters/models.py changed, reloading.)
+2024-06-13 16:30:56,322:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:18:35,856:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/apps.py changed, reloading.)
+2024-06-13 17:18:41,692:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:28:20,119:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/__init__.py changed, reloading.)
+2024-06-13 17:28:24,051:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:28:52,935:ERROR - django.request log.py (line 241. Internal Server Error: /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1944, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1853, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1257, in save_model
+    obj.save()
+  File "/app/apps/animes/models.py", line 197, in save
+    super(SlugMixin, self).save(*args, **kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 924, in save_base
+    post_save.send(
+  File "/usr/local/lib/python3.12/site-packages/django/dispatch/dispatcher.py", line 189, in send
+    response = receiver(signal=self, sender=sender, **named)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/utils/signals.py", line 32, in set_imagen
+    image = Image.open(instance.imagen)
+                       ^^^^^^^^^^^^^^^
+AttributeError: 'Anime' object has no attribute 'imagen'. Did you mean: 'image'?
+2024-06-13 17:29:21,275:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:29:25,539:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:29:32,389:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:29:37,226:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:29:55,912:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:30:00,829:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:31:42,864:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:31:48,340:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:34:32,252:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:34:36,478:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:34:42,347:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:34:48,097:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:35:01,442:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:35:05,054:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:36:12,123:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:36:15,514:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:36:29,722:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:36:33,795:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:37:08,236:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:37:12,972:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:37:29,010:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:37:33,721:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:37:41,456:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:37:47,624:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:37:54,014:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:38:00,075:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:38:13,609:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:38:17,601:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:38:32,402:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:38:36,736:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:40:51,479:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:40:55,662:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:41:05,748:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:41:09,489:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:42:27,211:ERROR - apps.utils.signals signals.py (line 71. Error al procesar la imagen: Las dimensiones de la imagen son muy pequeñas. Debe ser al menos 100x100 píxeles.)
+2024-06-13 17:44:04,987:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:44:08,846:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:44:17,186:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:44:21,621:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:48:43,630:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:48:47,490:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:48:56,910:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:49:01,403:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:49:08,010:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:49:12,726:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:49:29,318:WARNING - apps.utils.signals signals.py (line 40. Imagen muy pequeña)
+2024-06-13 17:51:44,509:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:51:48,280:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:51:56,310:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:52:01,477:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:52:09,316:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:52:14,358:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:52:31,619:WARNING - apps.utils.signals signals.py (line 40. Calidad de imagen baja: 140362.webp)
+2024-06-13 17:52:54,729:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:53:00,375:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:53:17,679:WARNING - apps.utils.signals signals.py (line 40. Calidad de imagen baja: Unnamed Memory)
+2024-06-13 17:53:43,424:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:53:49,926:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:59:07,406:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:59:11,916:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:59:19,730:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:59:25,092:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:59:33,604:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:59:38,258:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 17:59:45,338:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 17:59:49,547:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 18:00:11,254:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 18:00:15,210:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)
+2024-06-13 18:00:27,254:INFO - django.utils.autoreload autoreload.py (line 266. /app/apps/utils/signals.py changed, reloading.)
+2024-06-13 18:00:31,299:INFO - django.utils.autoreload autoreload.py (line 668. Watching for file changes with StatReloader)

@@ -40,6 +40,8 @@ class Character(BaseModel, SlugMixin):
     mangas = models.ManyToManyField(Manga, through="CharacterManga", blank=True)
     favorites = models.PositiveIntegerField(_("favorites"), default=0)
 
+    # TODO: Check for possible errors
+
     objects = CharacterManager()
 
     class Meta:
