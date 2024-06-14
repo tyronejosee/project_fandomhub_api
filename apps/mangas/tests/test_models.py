@@ -1,12 +1,14 @@
 """Tests for Models in Mangas App."""
 
-# from datetime import date
+from datetime import date
 from django.test import TestCase
 from django.core.exceptions import ValidationError
 
-from apps.mangas.models import Manga
 from apps.genres.models import Genre, Demographic
 from apps.persons.models import Person
+from apps.persons.models import CategoryChoices
+from ..models import Magazine, Manga
+from ..choices import MediaTypeChoices, StatusChoices
 
 
 class MangaModelTestCase(TestCase):
@@ -14,11 +16,12 @@ class MangaModelTestCase(TestCase):
 
     def setUp(self):
         # External models
-        self.genre = Genre.objects.create(name="Action")
+        self.genre = Genre.objects.create(name="Generic")
         self.author_id = Person.objects.create(
-            name="Fujimoto Tatsuki"
-        )  # TODO: Add new fields
-        self.demographic_id = Demographic.objects.create(name="Shounen")
+            name="Generic Artist", category=CategoryChoices.ARTIST, is_available=True
+        )
+        self.demographic_id = Demographic.objects.create(name="Generic")
+        self.serialization_id = Magazine.objects.create(name="Generic")
 
     def test_manga_creation(self):
         """Test creation of a Manga instance."""
@@ -26,18 +29,26 @@ class MangaModelTestCase(TestCase):
             name="Chainsaw Man",
             name_jpn="チェンソーマン",
             name_rom="Chainsaw Man",
+            alternative_names=["Chainsaw-man", "CSM"],
             image=None,
             synopsis="Denji has...",
+            background="As part of the JUMP START...",
+            media_type=MediaTypeChoices.MANGA,
             chapters=97,
-            media_type=1,
+            volumes=11,
+            status=StatusChoices.FINISHED,
+            published_from=date(2018, 12, 3),
+            published_to=date(2020, 12, 14),
+            demographic_id=self.demographic_id,
+            serialization_id=self.serialization_id,
+            author_id=self.author_id,
             website="https://www.shonenjump.com/j/rensai/chainsaw.html",
-            status=1,
-            author=self.author_id,
-            demographic=self.demographic_id,
-            score=8.0,
-            ranked=1,
-            popularity=100,
-            members=1000,
+            is_recommended=True,
+            score=8.7,
+            ranked=50,
+            popularity=4,
+            members=623310,
+            favorites=82439,
         )
 
         # Set ManyToManyField
@@ -46,20 +57,29 @@ class MangaModelTestCase(TestCase):
         self.assertEqual(manga.name, "Chainsaw Man")
         self.assertEqual(manga.name_jpn, "チェンソーマン")
         self.assertEqual(manga.name_rom, "Chainsaw Man")
+        self.assertEqual(manga.alternative_names, ["Chainsaw-man", "CSM"])
+        self.assertEqual(manga.image, None),
         self.assertEqual(manga.synopsis, "Denji has...")
+        self.assertEqual(manga.background, "As part of the JUMP START...")
+        self.assertEqual(manga.media_type, MediaTypeChoices.MANGA)
         self.assertEqual(manga.chapters, 97)
-        self.assertEqual(manga.media_type, 1)
+        self.assertEqual(manga.volumes, 11)
+        self.assertEqual(manga.status, StatusChoices.FINISHED)
+        self.assertEqual(manga.published_from, date(2018, 12, 3))
+        self.assertEqual(manga.published_to, date(2020, 12, 14))
+        self.assertEqual(manga.demographic_id, self.demographic_id)
+        self.assertEqual(manga.serialization_id, self.serialization_id)
+        self.assertEqual(manga.author_id, self.author_id)
         self.assertEqual(
             manga.website, "https://www.shonenjump.com/j/rensai/chainsaw.html"
         )
-        self.assertEqual(manga.status, 1)
-        self.assertEqual(manga.author_id, self.author_id)
-        self.assertEqual(manga.demographic_id, self.demographic_id)
+        self.assertTrue(manga.is_recommended)
+        self.assertEqual(manga.score, 8.7)
+        self.assertEqual(manga.ranked, 50)
+        self.assertEqual(manga.popularity, 4)
+        self.assertEqual(manga.members, 623310)
+        self.assertEqual(manga.favorites, 82439)
         self.assertEqual(manga.genres.first(), self.genre)
-        self.assertEqual(manga.score, 8.0)
-        self.assertEqual(manga.ranked, 1)
-        self.assertEqual(manga.popularity, 100)
-        self.assertEqual(manga.members, 1000)
 
     def test_duplicate_manga_name(self):
         """Test for duplicate manga name."""
@@ -67,16 +87,21 @@ class MangaModelTestCase(TestCase):
             manga1 = Manga(
                 name="Fire Punch",
                 name_jpn="ファイアパンチ",
-                author=self.author_id,
                 chapters=83,
+                volumes=8,
+                status=StatusChoices.FINISHED,
+                published_from=date(2016, 1, 18),
+                author_id=self.author_id,
             )
             manga1.save()
 
             manga2 = Manga(
                 name="Fire Punch",
                 name_jpn="ファイアパンチ",
-                author=self.author_id,
                 chapters=83,
+                volumes=8,
+                published_from=date(2016, 1, 18),
+                author_id=self.author_id,
             )
             manga2.full_clean()  # Error
 
@@ -85,8 +110,11 @@ class MangaModelTestCase(TestCase):
         manga = Manga(
             name="Goodbye, Ery",
             name_jpn="さよなら絵梨",
-            author=self.author_id,
             chapters=1,
+            volumes=1,
+            status=StatusChoices.FINISHED,
+            published_from=date(2022, 4, 11),
+            author_id=self.author_id,
         )
         manga.save()
 
@@ -102,6 +130,10 @@ class MangaModelTestCase(TestCase):
             name="Chainsaw Man: Buddy Stories",
             name_jpn="チェンソーマンバディ・ストーリーズ",
             chapters=4,
+            volumes=1,
+            status=StatusChoices.FINISHED,
+            published_from=date(2021, 11, 4),
+            author_id=self.author_id,
         )
         manga.save()
         manga.delete()
@@ -112,7 +144,13 @@ class MangaModelTestCase(TestCase):
         """Test chapters field validation."""
         with self.assertRaises(ValidationError):
             manga = Manga(
-                name="Look Back", name_jpn="ルックバック", chapters=-1  # Negative
+                name="Look Back",
+                name_jpn="ルックバック",
+                chapters=-1,  # Negative
+                volumes=1,
+                status=StatusChoices.FINISHED,
+                published_from=date(2021, 7, 19),
+                author_id=self.author_id,
             )
             manga.full_clean()
 
@@ -122,8 +160,12 @@ class MangaModelTestCase(TestCase):
             name="Monogatari Series First Season",
             name_jpn="〈物語〉シリーズ ファーストシーズン",
             name_rom="",  # Empty
-            chapters=4,
+            chapters=107,
+            volumes=6,
+            status=StatusChoices.FINISHED,
+            published_from=date(2009, 7, 3),
+            author_id=self.author_id,
         )
         self.assertEqual(manga.name_rom, "Monogatari Series First Season")
         self.assertEqual(manga.name, manga.name_rom)
-        self.assertEqual(manga.chapters, 4)
+        self.assertEqual(manga.chapters, 107)

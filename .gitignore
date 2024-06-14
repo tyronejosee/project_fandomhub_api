@@ -5,6 +5,7 @@ db.sqlite3
 desktop.ini
 static/import_export/
 logs/
+logs/general.log
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
