@@ -3808,3 +3808,462 @@ TypeError: '>' not supported between instances of 'str' and 'int'
 [2024-06-14 21:49:38,270]    WARNING - Not Found: /metrics
 [2024-06-14 21:49:53,269]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 21.6 ms
 [2024-06-14 21:49:53,271]    WARNING - Not Found: /metrics
+[2024-06-14 21:50:16,092]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:50:23,289]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 33.9 ms
+[2024-06-14 21:50:23,293]    WARNING - Not Found: /metrics
+[2024-06-14 21:50:54,055]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:50:58,600]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:51:03,778]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:51:08,311]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 50.3 ms
+[2024-06-14 21:51:08,322]    WARNING - Not Found: /metrics
+[2024-06-14 21:51:11,149]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:51:16,007]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:51:23,270]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 26.1 ms
+[2024-06-14 21:51:23,272]    WARNING - Not Found: /metrics
+[2024-06-14 21:51:32,812]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:51:38,222]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:51:53,051]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:51:58,710]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:52:06,837]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:52:12,880]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:52:22,464]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:52:28,216]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:52:38,303]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 44.9 ms
+[2024-06-14 21:52:38,305]    WARNING - Not Found: /metrics
+[2024-06-14 21:52:53,252]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.6 ms
+[2024-06-14 21:52:53,253]    WARNING - Not Found: /metrics
+[2024-06-14 21:53:08,281]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 40.9 ms
+[2024-06-14 21:53:08,282]    WARNING - Not Found: /metrics
+[2024-06-14 21:53:23,266]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 31.7 ms
+[2024-06-14 21:53:23,268]    WARNING - Not Found: /metrics
+[2024-06-14 21:53:30,402]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:53:34,925]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:53:38,299]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 50.4 ms
+[2024-06-14 21:53:38,300]    WARNING - Not Found: /metrics
+[2024-06-14 21:53:52,614]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:53:56,790]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:54:08,308]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 74.0 ms
+[2024-06-14 21:54:08,310]    WARNING - Not Found: /metrics
+[2024-06-14 21:54:11,230]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:54:15,846]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:55:19,673]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:55:25,935]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:55:33,127]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:55:39,090]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:55:44,216]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:55:50,049]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:55:53,275]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 46.7 ms
+[2024-06-14 21:55:53,278]    WARNING - Not Found: /metrics
+[2024-06-14 21:55:58,791]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:56:04,762]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:56:08,279]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 56.7 ms
+[2024-06-14 21:56:08,281]    WARNING - Not Found: /metrics
+[2024-06-14 21:56:12,402]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:56:17,881]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:56:23,266]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 42.0 ms
+[2024-06-14 21:56:23,268]    WARNING - Not Found: /metrics
+[2024-06-14 21:56:27,027]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:56:33,509]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:57:06,663]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:57:12,277]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:57:25,931]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:57:30,872]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:57:42,112]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:57:47,268]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:57:53,259]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 38.3 ms
+[2024-06-14 21:57:53,261]    WARNING - Not Found: /metrics
+[2024-06-14 21:58:08,227]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 20.2 ms
+[2024-06-14 21:58:08,228]    WARNING - Not Found: /metrics
+[2024-06-14 21:58:23,228]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 23.5 ms
+[2024-06-14 21:58:23,230]    WARNING - Not Found: /metrics
+[2024-06-14 21:58:38,224]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.6 ms
+[2024-06-14 21:58:38,225]    WARNING - Not Found: /metrics
+[2024-06-14 21:58:41,158]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:58:46,610]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:58:53,276]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 63.0 ms
+[2024-06-14 21:58:53,279]    WARNING - Not Found: /metrics
+[2024-06-14 21:58:57,738]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:59:02,033]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:59:08,244]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 33.3 ms
+[2024-06-14 21:59:08,246]    WARNING - Not Found: /metrics
+[2024-06-14 21:59:13,879]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:59:19,568]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:59:23,409]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 200.8 ms
+[2024-06-14 21:59:23,412]    WARNING - Not Found: /metrics
+[2024-06-14 21:59:27,663]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:59:31,984]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:59:38,242]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 34.0 ms
+[2024-06-14 21:59:38,244]    WARNING - Not Found: /metrics
+[2024-06-14 21:59:42,377]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:59:47,132]    INFO - Watching for file changes with StatReloader
+[2024-06-14 21:59:53,264]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 51.6 ms
+[2024-06-14 21:59:53,269]    WARNING - Not Found: /metrics
+[2024-06-14 21:59:54,295]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 21:59:58,725]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:00:06,084]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:00:10,694]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:00:23,251]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 33.4 ms
+[2024-06-14 22:00:23,253]    WARNING - Not Found: /metrics
+[2024-06-14 22:00:38,210]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 16.7 ms
+[2024-06-14 22:00:38,211]    WARNING - Not Found: /metrics
+[2024-06-14 22:00:52,348]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 22:00:57,736]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:01:04,830]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 22:01:10,159]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:01:23,261]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 57.9 ms
+[2024-06-14 22:01:23,264]    WARNING - Not Found: /metrics
+[2024-06-14 22:01:26,489]    INFO - Request: 'GET /api/v1/top/mangas/ HTTP/1.1' 200 206 B 533.8 ms
+[2024-06-14 22:01:38,209]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 20.0 ms
+[2024-06-14 22:01:38,211]    WARNING - Not Found: /metrics
+[2024-06-14 22:01:53,226]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 38.6 ms
+[2024-06-14 22:01:53,228]    WARNING - Not Found: /metrics
+[2024-06-14 22:01:56,301]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:02:00,886]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:02:08,241]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 39.7 ms
+[2024-06-14 22:02:08,242]    WARNING - Not Found: /metrics
+[2024-06-14 22:02:23,222]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 35.0 ms
+[2024-06-14 22:02:23,223]    WARNING - Not Found: /metrics
+[2024-06-14 22:02:38,217]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 28.0 ms
+[2024-06-14 22:02:38,218]    WARNING - Not Found: /metrics
+[2024-06-14 22:02:53,265]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 83.1 ms
+[2024-06-14 22:02:53,266]    WARNING - Not Found: /metrics
+[2024-06-14 22:03:08,212]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 30.3 ms
+[2024-06-14 22:03:08,217]    WARNING - Not Found: /metrics
+[2024-06-14 22:03:17,474]    INFO - Request: 'GET /admin/mangas/manga/ HTTP/1.1' 200 33165 B 517.2 ms
+[2024-06-14 22:03:17,602]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 62.9 ms
+[2024-06-14 22:03:18,278]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 37.3 ms
+[2024-06-14 22:03:23,219]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 39.3 ms
+[2024-06-14 22:03:23,221]    WARNING - Not Found: /metrics
+[2024-06-14 22:03:36,503]    INFO - Request: 'GET /admin/mangas/manga/4256d784-9699-47ad-8515-397f401ba584/change/ HTTP/1.1' 200 64310 B 725.1 ms
+[2024-06-14 22:03:36,633]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 53.2 ms
+[2024-06-14 22:03:37,170]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 31.2 ms
+[2024-06-14 22:03:38,197]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 17.9 ms
+[2024-06-14 22:03:38,198]    WARNING - Not Found: /metrics
+[2024-06-14 22:03:38,806]    INFO - Request: 'GET /admin/mangas/manga/ HTTP/1.1' 200 33165 B 191.8 ms
+[2024-06-14 22:03:53,220]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 39.0 ms
+[2024-06-14 22:03:53,221]    WARNING - Not Found: /metrics
+[2024-06-14 22:03:55,005]    INFO - Request: 'GET /admin/characters/character/ HTTP/1.1' 200 32039 B 286.0 ms
+[2024-06-14 22:03:55,101]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 32.3 ms
+[2024-06-14 22:03:55,155]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 36.6 ms
+[2024-06-14 22:03:56,894]    INFO - Request: 'GET /admin/characters/character/5a247eb7-95d8-4813-9511-b5dc39cd0bda/change/ HTTP/1.1' 200 65715 B 549.2 ms
+[2024-06-14 22:03:57,020]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 54.8 ms
+[2024-06-14 22:04:08,197]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 22.4 ms
+[2024-06-14 22:04:08,198]    WARNING - Not Found: /metrics
+[2024-06-14 22:04:23,219]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 41.8 ms
+[2024-06-14 22:04:23,220]    WARNING - Not Found: /metrics
+[2024-06-14 22:04:32,452]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:04:38,761]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:04:50,085]    INFO - Request: 'POST /admin/characters/character/5a247eb7-95d8-4813-9511-b5dc39cd0bda/change/ HTTP/1.1' 302 0 B 509.1 ms
+[2024-06-14 22:04:50,417]    INFO - Request: 'GET /admin/characters/character/ HTTP/1.1' 200 32286 B 316.5 ms
+[2024-06-14 22:04:50,554]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 63.4 ms
+[2024-06-14 22:04:53,196]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 24.8 ms
+[2024-06-14 22:04:53,197]    WARNING - Not Found: /metrics
+[2024-06-14 22:04:55,155]    INFO - Request: 'POST /admin/characters/character/ HTTP/1.1' 302 0 B 99.0 ms
+[2024-06-14 22:04:55,279]    INFO - Request: 'GET /admin/characters/character/ HTTP/1.1' 200 32184 B 109.3 ms
+[2024-06-14 22:04:55,388]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 44.5 ms
+[2024-06-14 22:05:07,036]    INFO - Request: 'GET /admin/mangas/manga/ HTTP/1.1' 200 33165 B 127.7 ms
+[2024-06-14 22:05:07,442]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 184.4 ms
+[2024-06-14 22:05:08,332]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 163.5 ms
+[2024-06-14 22:05:08,334]    WARNING - Not Found: /metrics
+[2024-06-14 22:05:10,730]    WARNING - Low image quality: Chainsaw Man's image
+[2024-06-14 22:05:10,893]    INFO - Request: 'POST /admin/mangas/manga/ HTTP/1.1' 302 0 B 239.6 ms
+[2024-06-14 22:05:11,016]    INFO - Request: 'GET /admin/mangas/manga/ HTTP/1.1' 200 33298 B 105.8 ms
+[2024-06-14 22:05:11,124]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 35.8 ms
+[2024-06-14 22:05:14,600]    INFO - Request: 'GET /api/v1/top/mangas/ HTTP/1.1' 204 24 B 103.3 ms
+[2024-06-14 22:05:23,184]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 25.3 ms
+[2024-06-14 22:05:23,186]    WARNING - Not Found: /metrics
+[2024-06-14 22:05:38,200]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 37.5 ms
+[2024-06-14 22:05:38,202]    WARNING - Not Found: /metrics
+[2024-06-14 22:05:53,211]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 46.1 ms
+[2024-06-14 22:05:53,219]    WARNING - Not Found: /metrics
+[2024-06-14 22:05:57,257]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:06:03,643]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:06:08,236]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 52.5 ms
+[2024-06-14 22:06:08,244]    WARNING - Not Found: /metrics
+[2024-06-14 22:06:08,477]    INFO - Request: 'GET /api/v1/top/mangas/ HTTP/1.1' 204 0 B 86.9 ms
+[2024-06-14 22:06:23,208]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 42.9 ms
+[2024-06-14 22:06:23,211]    WARNING - Not Found: /metrics
+[2024-06-14 22:06:25,506]    WARNING - Low image quality: Chainsaw Man's image
+[2024-06-14 22:06:25,640]    INFO - Request: 'POST /admin/mangas/manga/ HTTP/1.1' 302 0 B 457.0 ms
+[2024-06-14 22:06:26,209]    INFO - Request: 'GET /admin/mangas/manga/ HTTP/1.1' 200 33306 B 548.6 ms
+[2024-06-14 22:06:26,345]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 29.3 ms
+[2024-06-14 22:06:28,832]    INFO - Request: 'GET /api/v1/top/mangas/ HTTP/1.1' 200 214 B 60.8 ms
+[2024-06-14 22:06:38,450]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 285.5 ms
+[2024-06-14 22:06:38,479]    WARNING - Not Found: /metrics
+[2024-06-14 22:06:44,099]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:06:48,842]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:06:53,205]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 35.0 ms
+[2024-06-14 22:06:53,206]    WARNING - Not Found: /metrics
+[2024-06-14 22:06:58,414]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:07:03,709]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:07:08,293]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 112.0 ms
+[2024-06-14 22:07:08,299]    WARNING - Not Found: /metrics
+[2024-06-14 22:07:12,705]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:07:18,539]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:07:23,203]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 32.9 ms
+[2024-06-14 22:07:23,205]    WARNING - Not Found: /metrics
+[2024-06-14 22:07:24,788]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:07:30,101]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:07:38,095]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:07:43,744]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:07:49,444]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:07:55,363]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:08:04,323]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:08:08,655]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:08:23,232]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 52.6 ms
+[2024-06-14 22:08:23,233]    WARNING - Not Found: /metrics
+[2024-06-14 22:08:32,978]    INFO - Request: 'GET /api/v1/top/characters/ HTTP/1.1' 404 43719 B 235.0 ms
+[2024-06-14 22:08:32,980]    WARNING - Not Found: /api/v1/top/characters/
+[2024-06-14 22:08:38,172]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 18.3 ms
+[2024-06-14 22:08:38,174]    WARNING - Not Found: /metrics
+[2024-06-14 22:08:53,187]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 30.6 ms
+[2024-06-14 22:08:53,188]    WARNING - Not Found: /metrics
+[2024-06-14 22:09:08,186]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 31.8 ms
+[2024-06-14 22:09:08,187]    WARNING - Not Found: /metrics
+[2024-06-14 22:09:23,164]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 18.0 ms
+[2024-06-14 22:09:23,167]    WARNING - Not Found: /metrics
+[2024-06-14 22:09:38,169]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 21.8 ms
+[2024-06-14 22:09:38,170]    WARNING - Not Found: /metrics
+[2024-06-14 22:09:53,160]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 14.4 ms
+[2024-06-14 22:09:53,161]    WARNING - Not Found: /metrics
+[2024-06-14 22:10:08,165]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 17.9 ms
+[2024-06-14 22:10:08,166]    WARNING - Not Found: /metrics
+[2024-06-14 22:10:23,167]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 21.1 ms
+[2024-06-14 22:10:23,168]    WARNING - Not Found: /metrics
+[2024-06-14 22:10:24,139]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:10:30,020]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:10:38,179]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 29.6 ms
+[2024-06-14 22:10:38,181]    WARNING - Not Found: /metrics
+[2024-06-14 22:10:53,181]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 32.7 ms
+[2024-06-14 22:10:53,182]    WARNING - Not Found: /metrics
+[2024-06-14 22:11:01,605]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:11:05,917]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:11:08,210]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 27.0 ms
+[2024-06-14 22:11:08,212]    WARNING - Not Found: /metrics
+[2024-06-14 22:11:23,162]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7546 B 20.1 ms
+[2024-06-14 22:11:23,164]    WARNING - Not Found: /metrics
+[2024-06-14 22:11:31,921]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 22:11:37,401]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:11:45,365]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 22:11:51,691]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:11:56,567]    INFO - Request: 'GET /api/v1/top/characters/ HTTP/1.1' 200 149 B 198.4 ms
+[2024-06-14 22:11:57,876]    INFO - Request: 'GET /api/v1/top/characters/ HTTP/1.1' 200 149 B 37.4 ms
+[2024-06-14 22:12:00,814]    INFO - Request: 'GET /api/v1/top/characters/ HTTP/1.1' 200 149 B 32.1 ms
+[2024-06-14 22:12:02,163]    INFO - Request: 'GET /api/v1/top/characters/ HTTP/1.1' 200 149 B 33.1 ms
+[2024-06-14 22:12:08,353]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 207.3 ms
+[2024-06-14 22:12:08,390]    WARNING - Not Found: /metrics
+[2024-06-14 22:12:23,163]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 23.3 ms
+[2024-06-14 22:12:23,165]    WARNING - Not Found: /metrics
+[2024-06-14 22:12:38,180]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 39.1 ms
+[2024-06-14 22:12:38,183]    WARNING - Not Found: /metrics
+[2024-06-14 22:12:53,169]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 27.8 ms
+[2024-06-14 22:12:53,170]    WARNING - Not Found: /metrics
+[2024-06-14 22:13:08,159]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 19.0 ms
+[2024-06-14 22:13:08,160]    WARNING - Not Found: /metrics
+[2024-06-14 22:13:23,156]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 19.4 ms
+[2024-06-14 22:13:23,157]    WARNING - Not Found: /metrics
+[2024-06-14 22:13:38,158]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 24.0 ms
+[2024-06-14 22:13:38,160]    WARNING - Not Found: /metrics
+[2024-06-14 22:13:53,161]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 22.4 ms
+[2024-06-14 22:13:53,162]    WARNING - Not Found: /metrics
+[2024-06-14 22:14:08,184]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 45.9 ms
+[2024-06-14 22:14:08,186]    WARNING - Not Found: /metrics
+[2024-06-14 22:14:23,179]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 40.2 ms
+[2024-06-14 22:14:23,181]    WARNING - Not Found: /metrics
+[2024-06-14 22:14:38,162]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 23.8 ms
+[2024-06-14 22:14:38,164]    WARNING - Not Found: /metrics
+[2024-06-14 22:14:39,555]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:14:45,219]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:14:53,177]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 31.2 ms
+[2024-06-14 22:14:53,179]    WARNING - Not Found: /metrics
+[2024-06-14 22:14:54,632]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:15:00,979]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:15:08,302]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 159.4 ms
+[2024-06-14 22:15:08,331]    WARNING - Not Found: /metrics
+[2024-06-14 22:15:13,953]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:15:20,420]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:15:28,022]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:15:33,095]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:15:38,211]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 60.3 ms
+[2024-06-14 22:15:38,213]    WARNING - Not Found: /metrics
+[2024-06-14 22:15:41,549]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:15:47,755]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:15:53,223]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 71.9 ms
+[2024-06-14 22:15:53,226]    WARNING - Not Found: /metrics
+[2024-06-14 22:15:55,463]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:16:00,857]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:16:08,191]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 43.8 ms
+[2024-06-14 22:16:08,194]    WARNING - Not Found: /metrics
+[2024-06-14 22:16:13,906]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:16:17,899]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:16:23,159]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 28.4 ms
+[2024-06-14 22:16:23,160]    WARNING - Not Found: /metrics
+[2024-06-14 22:16:29,912]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:16:35,265]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:16:44,553]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:16:50,415]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:16:53,258]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7715 B 78.0 ms
+[2024-06-14 22:16:53,260]    WARNING - Not Found: /metrics
+[2024-06-14 22:16:57,253]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 22:17:02,483]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:17:08,227]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7884 B 80.3 ms
+[2024-06-14 22:17:08,239]    WARNING - Not Found: /metrics
+[2024-06-14 22:17:09,645]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 22:17:14,344]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:17:23,184]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 50.6 ms
+[2024-06-14 22:17:23,186]    WARNING - Not Found: /metrics
+[2024-06-14 22:17:34,812]    ERROR - Internal Server Error: /api/v1/top/artists/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Person' object has no attribute 'get_role_display'. Did you mean: '_get_FIELD_display'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/tops/views.py", line 124, in get
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `role` on serializer `CharacterMinimalSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Person` instance.
+Original exception text was: 'Person' object has no attribute 'get_role_display'.
+[2024-06-14 22:17:34,842]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 500 124571 B 379.8 ms
+[2024-06-14 22:17:38,144]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 20.7 ms
+[2024-06-14 22:17:38,146]    WARNING - Not Found: /metrics
+[2024-06-14 22:17:51,044]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:17:55,382]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:18:00,280]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 71.2 ms
+[2024-06-14 22:18:01,431]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 42.6 ms
+[2024-06-14 22:18:02,559]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 53.5 ms
+[2024-06-14 22:18:05,333]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 57.4 ms
+[2024-06-14 22:18:06,686]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 29.8 ms
+[2024-06-14 22:18:07,804]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 25.9 ms
+[2024-06-14 22:18:08,159]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 35.5 ms
+[2024-06-14 22:18:08,161]    WARNING - Not Found: /metrics
+[2024-06-14 22:18:08,906]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 43.3 ms
+[2024-06-14 22:18:09,996]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 32.5 ms
+[2024-06-14 22:18:11,013]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 32.4 ms
+[2024-06-14 22:18:11,955]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 39.4 ms
+[2024-06-14 22:18:13,769]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 54.8 ms
+[2024-06-14 22:18:23,142]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 24.0 ms
+[2024-06-14 22:18:23,144]    WARNING - Not Found: /metrics
+[2024-06-14 22:18:38,156]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 33.1 ms
+[2024-06-14 22:18:38,157]    WARNING - Not Found: /metrics
+[2024-06-14 22:18:53,151]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 40.7 ms
+[2024-06-14 22:18:53,154]    WARNING - Not Found: /metrics
+[2024-06-14 22:18:53,886]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 33.1 ms
+[2024-06-14 22:18:54,930]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 30.6 ms
+[2024-06-14 22:18:56,061]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 36.2 ms
+[2024-06-14 22:18:57,163]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 149 B 61.1 ms
+[2024-06-14 22:19:08,149]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 38.8 ms
+[2024-06-14 22:19:08,151]    WARNING - Not Found: /metrics
+[2024-06-14 22:19:23,123]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 20.2 ms
+[2024-06-14 22:19:23,125]    WARNING - Not Found: /metrics
+[2024-06-14 22:19:38,148]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 38.4 ms
+[2024-06-14 22:19:38,149]    WARNING - Not Found: /metrics
+[2024-06-14 22:19:53,129]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 25.4 ms
+[2024-06-14 22:19:53,131]    WARNING - Not Found: /metrics
+[2024-06-14 22:20:00,790]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:20:05,148]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:20:08,148]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 39.0 ms
+[2024-06-14 22:20:08,152]    WARNING - Not Found: /metrics
+[2024-06-14 22:20:16,699]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:20:22,519]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:20:33,122]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:20:38,562]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:20:48,245]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:20:53,980]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:21:02,892]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:21:08,304]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:22:31,032]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:22:36,884]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:22:53,116]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 38.1 ms
+[2024-06-14 22:22:53,119]    WARNING - Not Found: /metrics
+[2024-06-14 22:23:08,095]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 21.8 ms
+[2024-06-14 22:23:08,099]    WARNING - Not Found: /metrics
+[2024-06-14 22:23:10,265]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:23:16,339]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:23:23,162]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 63.4 ms
+[2024-06-14 22:23:23,165]    WARNING - Not Found: /metrics
+[2024-06-14 22:23:32,115]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:23:38,207]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:23:47,891]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:23:53,143]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:24:08,125]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 43.8 ms
+[2024-06-14 22:24:08,127]    WARNING - Not Found: /metrics
+[2024-06-14 22:24:22,947]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 22:24:27,377]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:24:38,093]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7881 B 28.2 ms
+[2024-06-14 22:24:38,098]    WARNING - Not Found: /metrics
+[2024-06-14 22:24:51,345]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 22:24:56,700]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:25:03,847]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 22:25:09,061]    INFO - Watching for file changes with StatReloader
+[2024-06-14 22:25:23,138]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 41.9 ms
+[2024-06-14 22:25:23,140]    WARNING - Not Found: /metrics
+[2024-06-14 22:25:26,319]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 204 0 B 234.9 ms
+[2024-06-14 22:25:38,101]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.4 ms
+[2024-06-14 22:25:38,103]    WARNING - Not Found: /metrics
+[2024-06-14 22:25:53,071]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.0 ms
+[2024-06-14 22:25:53,072]    WARNING - Not Found: /metrics
+[2024-06-14 22:26:08,076]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.8 ms
+[2024-06-14 22:26:08,078]    WARNING - Not Found: /metrics
+[2024-06-14 22:26:23,060]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.1 ms
+[2024-06-14 22:26:23,062]    WARNING - Not Found: /metrics
+[2024-06-14 22:26:38,059]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.5 ms
+[2024-06-14 22:26:38,060]    WARNING - Not Found: /metrics
+[2024-06-14 22:26:53,074]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 37.3 ms
+[2024-06-14 22:26:53,076]    WARNING - Not Found: /metrics
+[2024-06-14 22:27:08,081]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 42.8 ms
+[2024-06-14 22:27:08,083]    WARNING - Not Found: /metrics
+[2024-06-14 22:27:23,056]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.7 ms
+[2024-06-14 22:27:23,058]    WARNING - Not Found: /metrics
+[2024-06-14 22:27:38,102]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 64.8 ms
+[2024-06-14 22:27:38,104]    WARNING - Not Found: /metrics
+[2024-06-14 22:27:53,049]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.7 ms
+[2024-06-14 22:27:53,050]    WARNING - Not Found: /metrics
+[2024-06-14 22:28:08,097]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 65.6 ms
+[2024-06-14 22:28:08,101]    WARNING - Not Found: /metrics
+[2024-06-14 22:28:23,048]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.2 ms
+[2024-06-14 22:28:23,050]    WARNING - Not Found: /metrics
+[2024-06-14 22:28:32,877]    INFO - /app/apps/tops/urls.py changed, reloading.
