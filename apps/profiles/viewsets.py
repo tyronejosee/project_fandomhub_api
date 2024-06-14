@@ -1,44 +1,78 @@
 """ViewSets for Profiles App."""
 
-from django.shortcuts import get_object_or_404
-from django.utils.translation import gettext as _
-from rest_framework.viewsets import ViewSet
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
 
-from apps.utils.permissions import IsOwner
+from apps.users.permissions import IsAdministrator, IsMember
 from .models import Profile
-from .serializers import ProfileReadSerializer, ProfileWriteSerializer
+from .serializers import (
+    ProfileReadSerializer,
+    ProfileWriteSerializer,
+    ProfileMinimalSerializer,
+)
 
 
-class ProfileViewSet(ViewSet):
+class ProfileViewset(ModelViewSet):
     """
-    ViewSet for retrieving and updating user profiles.
+    ViewSet for managing Profiles instances.
+
+    Endpoints:
+    - GET /api/v1/profiles/
+    - POST /api/v1/profiles/
+    - GET /api/v1/profiles/{id}/
+    - PUT /api/v1/profiles/{id}/
+    - PATCH /api/v1/profiles/{id}/
+    - DELETE /api/v1/profiles/{id}/
     """
 
-    permission_classes = [IsAuthenticated, IsOwner]
+    permission_classes = [IsAdministrator]
+    serializer_class = ProfileWriteSerializer
+    search_fields = ["user_id__username", "first_name", "last_name"]
+    ordering_fields = ["first_name"]
 
-    def get_object(self, request):
-        # Get a profile instance by user
-        user = request.user
-        profile = get_object_or_404(Profile, user_id=user)
-        if profile.user != user:
-            return Response(
-                {"detail": _("You are not the owner of this profile.")},
-                status=status.HTTP_403_FORBIDDEN,
-            )
-        return profile
+    def get_queryset(self):
+        return Profile.objects.get_available()
 
-    def retrieve(self, request, *args, **kwargs):
-        # Retrieve profile of the user
-        profile = self.get_object(request)
+    def get_serializer_class(self):
+        if self.action == "list":
+            return ProfileMinimalSerializer
+        elif self.action == "retrieve":
+            return ProfileReadSerializer
+        return super().get_serializer_class()
+
+    @action(
+        detail=False,
+        methods=["get"],
+        permission_classes=[IsMember],
+        url_path="my-profile",
+    )
+    def get_my_profile(self, request):
+        """
+        Action to retrieve the profile of the current user.
+
+        Endpoints:
+        - GET api/v1/profiles/my-profile/
+        """
+        profile = self.request.user.profile
         serializer = ProfileReadSerializer(profile)
         return Response(serializer.data)
 
-    def update(self, request, *args, **kwargs):
-        #  Update profile of the user
-        profile = self.get_object(request)
+    @action(
+        detail=False,
+        methods=["patch"],
+        permission_classes=[IsMember],
+        url_path="update-profile",
+    )
+    def update_user_profile(self, request, *args, **kwargs):
+        """
+        Action to update the profile of the current user.
+
+        Endpoints:
+        - PATCH api/v1/profiles/update-profile/
+        """
+        profile = self.request.user.profile
         serializer = ProfileWriteSerializer(profile, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
