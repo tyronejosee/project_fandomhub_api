@@ -2214,3 +2214,638 @@ TypeError: GenericAPIView.get_object() takes 1 positional argument but 2 were gi
 [2024-06-14 19:01:10,509]    INFO - Watching for file changes with StatReloader
 [2024-06-14 19:01:23,993]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 34.0 ms
 [2024-06-14 19:01:23,995]    WARNING - Not Found: /metrics
+[2024-06-14 19:01:39,250]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 299.6 ms
+[2024-06-14 19:01:39,303]    WARNING - Not Found: /metrics
+[2024-06-14 19:01:54,001]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 41.8 ms
+[2024-06-14 19:01:54,004]    WARNING - Not Found: /metrics
+[2024-06-14 19:02:08,970]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 17.8 ms
+[2024-06-14 19:02:08,971]    WARNING - Not Found: /metrics
+[2024-06-14 19:02:23,965]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 18.0 ms
+[2024-06-14 19:02:23,966]    WARNING - Not Found: /metrics
+[2024-06-14 19:02:38,970]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 19.4 ms
+[2024-06-14 19:02:38,971]    WARNING - Not Found: /metrics
+[2024-06-14 19:02:53,963]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7216 B 14.3 ms
+[2024-06-14 19:02:53,964]    WARNING - Not Found: /metrics
+[2024-06-14 19:50:18,119]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:50:23,996]    ERROR - Internal Server Error: /api/v1/top/animes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: APIView.as_view() takes 1 positional argument but 2 were given
+[2024-06-14 19:50:24,016]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 500 58825 B 440.2 ms
+[2024-06-14 19:50:24,029]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 121.2 ms
+[2024-06-14 19:50:24,039]    WARNING - Not Found: /metrics
+[2024-06-14 19:50:38,775]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 51.8 ms
+[2024-06-14 19:50:38,776]    WARNING - Not Found: /metrics
+[2024-06-14 19:50:41,213]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 19:50:45,877]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:50:53,761]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7382 B 35.2 ms
+[2024-06-14 19:50:53,763]    WARNING - Not Found: /metrics
+[2024-06-14 19:51:02,211]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 19:51:07,576]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:51:42,068]    INFO - /app/apps/tops/__init__.py changed, reloading.
+[2024-06-14 19:51:48,422]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:51:51,195]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 404 43543 B 56.2 ms
+[2024-06-14 19:51:51,196]    WARNING - Not Found: /api/v1/top/animes/
+[2024-06-14 19:51:53,738]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7382 B 19.6 ms
+[2024-06-14 19:51:53,739]    WARNING - Not Found: /metrics
+[2024-06-14 19:52:08,737]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7382 B 20.7 ms
+[2024-06-14 19:52:08,739]    WARNING - Not Found: /metrics
+[2024-06-14 19:52:15,247]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 19:52:22,168]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:52:29,628]    ERROR - Internal Server Error: /api/v1/top/animes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: APIView.as_view() takes 1 positional argument but 2 were given
+[2024-06-14 19:52:29,631]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 500 58823 B 105.1 ms
+[2024-06-14 19:52:38,758]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 34.6 ms
+[2024-06-14 19:52:38,760]    WARNING - Not Found: /metrics
+[2024-06-14 19:52:52,777]    INFO - /app/apps/tops/urls.py changed, reloading.
+[2024-06-14 19:52:58,404]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:53:02,692]    ERROR - Internal Server Error: /api/v1/top/animes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/tops/views.py", line 23, in get
+    top_animes = Anime.objects.filter("-popularity")[:100]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1481, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+[2024-06-14 19:53:02,705]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 500 122881 B 548.7 ms
+[2024-06-14 19:53:07,210]    ERROR - Internal Server Error: /api/v1/top/animes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/tops/views.py", line 23, in get
+    top_animes = Anime.objects.filter("-popularity")[:100]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1481, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+[2024-06-14 19:53:07,218]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 500 122881 B 238.9 ms
+[2024-06-14 19:53:08,743]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 27.9 ms
+[2024-06-14 19:53:08,745]    WARNING - Not Found: /metrics
+[2024-06-14 19:53:23,742]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 32.1 ms
+[2024-06-14 19:53:23,744]    WARNING - Not Found: /metrics
+[2024-06-14 19:53:38,765]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 34.2 ms
+[2024-06-14 19:53:38,774]    WARNING - Not Found: /metrics
+[2024-06-14 19:53:53,744]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 36.6 ms
+[2024-06-14 19:53:53,747]    WARNING - Not Found: /metrics
+[2024-06-14 19:54:08,750]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 41.0 ms
+[2024-06-14 19:54:08,753]    WARNING - Not Found: /metrics
+[2024-06-14 19:54:08,868]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 19:54:14,903]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:54:21,547]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 19:54:25,923]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:54:38,366]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1087 B 350.7 ms
+[2024-06-14 19:54:38,740]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 33.4 ms
+[2024-06-14 19:54:38,747]    WARNING - Not Found: /metrics
+[2024-06-14 19:54:53,740]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 34.2 ms
+[2024-06-14 19:54:53,742]    WARNING - Not Found: /metrics
+[2024-06-14 19:54:57,379]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 34890 B 1137.5 ms
+[2024-06-14 19:54:57,559]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 98.1 ms
+[2024-06-14 19:54:58,271]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 42.0 ms
+[2024-06-14 19:55:00,094]    INFO - Request: 'GET /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 200 70308 B 837.6 ms
+[2024-06-14 19:55:00,379]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 86.4 ms
+[2024-06-14 19:55:01,173]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 54.7 ms
+[2024-06-14 19:55:08,379]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 34890 B 177.3 ms
+[2024-06-14 19:55:08,593]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 66.2 ms
+[2024-06-14 19:55:08,757]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 111.8 ms
+[2024-06-14 19:55:08,765]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 60.2 ms
+[2024-06-14 19:55:08,804]    WARNING - Not Found: /metrics
+[2024-06-14 19:55:10,298]    INFO - Request: 'GET /admin/animes/anime/c051ea9c-b39d-4946-a5cf-2659a295e283/change/ HTTP/1.1' 200 69963 B 275.5 ms
+[2024-06-14 19:55:10,446]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 65.7 ms
+[2024-06-14 19:55:10,570]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 43.9 ms
+[2024-06-14 19:55:22,881]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 34890 B 108.6 ms
+[2024-06-14 19:55:23,007]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 67.3 ms
+[2024-06-14 19:55:23,748]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 46.4 ms
+[2024-06-14 19:55:23,750]    WARNING - Not Found: /metrics
+[2024-06-14 19:55:24,764]    INFO - Request: 'GET /admin/animes/anime/d459d7ad-5180-4028-8ecb-b575d6d4dc46/change/ HTTP/1.1' 200 69287 B 328.1 ms
+[2024-06-14 19:55:24,903]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 68.4 ms
+[2024-06-14 19:55:38,728]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 25.2 ms
+[2024-06-14 19:55:38,730]    WARNING - Not Found: /metrics
+[2024-06-14 19:55:53,736]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 37.2 ms
+[2024-06-14 19:55:53,738]    WARNING - Not Found: /metrics
+[2024-06-14 19:55:55,017]    INFO - /app/apps/animes/admin.py changed, reloading.
+[2024-06-14 19:56:00,112]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:56:03,423]    INFO - Request: 'GET /admin/animes/anime/d459d7ad-5180-4028-8ecb-b575d6d4dc46/change/ HTTP/1.1' 200 69402 B 845.3 ms
+[2024-06-14 19:56:03,626]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 83.3 ms
+[2024-06-14 19:56:08,728]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 30.4 ms
+[2024-06-14 19:56:08,729]    WARNING - Not Found: /metrics
+[2024-06-14 19:56:11,498]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 34890 B 212.8 ms
+[2024-06-14 19:56:11,595]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 37.2 ms
+[2024-06-14 19:56:23,738]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 40.7 ms
+[2024-06-14 19:56:23,740]    WARNING - Not Found: /metrics
+[2024-06-14 19:56:36,560]    INFO - Request: 'GET /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 200 70423 B 332.2 ms
+[2024-06-14 19:56:36,739]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 67.2 ms
+[2024-06-14 19:56:38,802]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 107.1 ms
+[2024-06-14 19:56:38,819]    WARNING - Not Found: /metrics
+[2024-06-14 19:56:52,304]    INFO - /app/apps/animes/admin.py changed, reloading.
+[2024-06-14 19:56:57,577]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:57:08,318]    WARNING - Low image quality: Unnamed Memory's image
+[2024-06-14 19:57:08,608]    INFO - Request: 'POST /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 302 0 B 806.2 ms
+[2024-06-14 19:57:08,794]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 88.3 ms
+[2024-06-14 19:57:08,797]    WARNING - Not Found: /metrics
+[2024-06-14 19:57:08,967]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 35130 B 342.6 ms
+[2024-06-14 19:57:09,096]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 58.0 ms
+[2024-06-14 19:57:11,899]    INFO - Request: 'GET /admin/animes/anime/c051ea9c-b39d-4946-a5cf-2659a295e283/change/ HTTP/1.1' 200 70078 B 265.4 ms
+[2024-06-14 19:57:12,000]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 46.4 ms
+[2024-06-14 19:57:23,710]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.1 ms
+[2024-06-14 19:57:23,712]    WARNING - Not Found: /metrics
+[2024-06-14 19:57:28,934]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 153.6 ms
+[2024-06-14 19:57:30,710]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 59.9 ms
+[2024-06-14 19:57:32,433]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 35.4 ms
+[2024-06-14 19:57:38,722]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 32.3 ms
+[2024-06-14 19:57:38,724]    WARNING - Not Found: /metrics
+[2024-06-14 19:57:53,713]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 21.7 ms
+[2024-06-14 19:57:53,715]    WARNING - Not Found: /metrics
+[2024-06-14 19:58:08,718]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 27.4 ms
+[2024-06-14 19:58:08,720]    WARNING - Not Found: /metrics
+[2024-06-14 19:58:23,716]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 27.7 ms
+[2024-06-14 19:58:23,717]    WARNING - Not Found: /metrics
+[2024-06-14 19:58:38,721]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 31.6 ms
+[2024-06-14 19:58:38,725]    WARNING - Not Found: /metrics
+[2024-06-14 19:58:53,731]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 40.3 ms
+[2024-06-14 19:58:53,733]    WARNING - Not Found: /metrics
+[2024-06-14 19:59:08,714]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 27.2 ms
+[2024-06-14 19:59:08,716]    WARNING - Not Found: /metrics
+[2024-06-14 19:59:08,853]    INFO - /app/apps/animes/admin.py changed, reloading.
+[2024-06-14 19:59:15,221]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:59:23,674]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 19:59:28,022]    INFO - Watching for file changes with StatReloader
+[2024-06-14 19:59:38,738]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 48.9 ms
+[2024-06-14 19:59:38,740]    WARNING - Not Found: /metrics
+[2024-06-14 19:59:53,715]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 33.4 ms
+[2024-06-14 19:59:53,716]    WARNING - Not Found: /metrics
+[2024-06-14 19:59:55,665]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:00:02,445]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:00:08,728]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 39.0 ms
+[2024-06-14 20:00:08,729]    WARNING - Not Found: /metrics
+[2024-06-14 20:00:10,371]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:00:14,673]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:00:23,736]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 49.0 ms
+[2024-06-14 20:00:23,739]    WARNING - Not Found: /metrics
+[2024-06-14 20:00:38,696]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 17.4 ms
+[2024-06-14 20:00:38,698]    WARNING - Not Found: /metrics
+[2024-06-14 20:00:53,727]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 47.4 ms
+[2024-06-14 20:00:53,729]    WARNING - Not Found: /metrics
+[2024-06-14 20:01:08,730]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 51.2 ms
+[2024-06-14 20:01:08,732]    WARNING - Not Found: /metrics
+[2024-06-14 20:01:23,700]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 27.0 ms
+[2024-06-14 20:01:23,702]    WARNING - Not Found: /metrics
+[2024-06-14 20:01:38,748]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 70.5 ms
+[2024-06-14 20:01:38,749]    WARNING - Not Found: /metrics
+[2024-06-14 20:01:53,704]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 29.8 ms
+[2024-06-14 20:01:53,705]    WARNING - Not Found: /metrics
+[2024-06-14 20:02:08,685]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 14.6 ms
+[2024-06-14 20:02:08,687]    WARNING - Not Found: /metrics
+[2024-06-14 20:02:23,682]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 14.2 ms
+[2024-06-14 20:02:23,684]    WARNING - Not Found: /metrics
+[2024-06-14 20:02:38,724]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 55.2 ms
+[2024-06-14 20:02:38,726]    WARNING - Not Found: /metrics
+[2024-06-14 20:02:53,736]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 65.4 ms
+[2024-06-14 20:02:53,739]    WARNING - Not Found: /metrics
+[2024-06-14 20:03:08,722]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 50.4 ms
+[2024-06-14 20:03:08,724]    WARNING - Not Found: /metrics
+[2024-06-14 20:03:23,677]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 13.8 ms
+[2024-06-14 20:03:23,679]    WARNING - Not Found: /metrics
+[2024-06-14 20:03:38,701]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 36.1 ms
+[2024-06-14 20:03:38,702]    WARNING - Not Found: /metrics
+[2024-06-14 20:03:53,677]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 15.7 ms
+[2024-06-14 20:03:53,679]    WARNING - Not Found: /metrics
+[2024-06-14 20:04:08,707]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 40.2 ms
+[2024-06-14 20:04:08,708]    WARNING - Not Found: /metrics
+[2024-06-14 20:04:23,685]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 25.6 ms
+[2024-06-14 20:04:23,694]    WARNING - Not Found: /metrics
+[2024-06-14 20:04:38,674]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 14.7 ms
+[2024-06-14 20:04:38,675]    WARNING - Not Found: /metrics
+[2024-06-14 20:04:53,691]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 32.7 ms
+[2024-06-14 20:04:53,695]    WARNING - Not Found: /metrics
+[2024-06-14 20:05:08,683]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 24.0 ms
+[2024-06-14 20:05:08,684]    WARNING - Not Found: /metrics
+[2024-06-14 20:05:23,669]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 14.5 ms
+[2024-06-14 20:05:23,670]    WARNING - Not Found: /metrics
+[2024-06-14 20:05:38,679]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 25.4 ms
+[2024-06-14 20:05:38,681]    WARNING - Not Found: /metrics
+[2024-06-14 20:05:53,673]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 19.8 ms
+[2024-06-14 20:05:53,677]    WARNING - Not Found: /metrics
+[2024-06-14 20:06:08,670]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 17.3 ms
+[2024-06-14 20:06:08,672]    WARNING - Not Found: /metrics
+[2024-06-14 20:06:23,683]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 31.6 ms
+[2024-06-14 20:06:23,686]    WARNING - Not Found: /metrics
+[2024-06-14 20:06:38,669]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 19.9 ms
+[2024-06-14 20:06:38,671]    WARNING - Not Found: /metrics
+[2024-06-14 20:06:53,663]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 17.3 ms
+[2024-06-14 20:06:53,664]    WARNING - Not Found: /metrics
+[2024-06-14 20:07:08,691]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 41.2 ms
+[2024-06-14 20:07:08,694]    WARNING - Not Found: /metrics
+[2024-06-14 20:07:14,538]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:07:20,901]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:07:28,577]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:07:34,000]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:07:38,720]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 51.1 ms
+[2024-06-14 20:07:38,721]    WARNING - Not Found: /metrics
+[2024-06-14 20:07:42,168]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:07:47,649]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:07:53,710]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 48.4 ms
+[2024-06-14 20:07:53,713]    WARNING - Not Found: /metrics
+[2024-06-14 20:07:55,109]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:08:00,146]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:08:08,691]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 32.5 ms
+[2024-06-14 20:08:08,693]    WARNING - Not Found: /metrics
+[2024-06-14 20:08:23,701]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 52.5 ms
+[2024-06-14 20:08:23,703]    WARNING - Not Found: /metrics
+[2024-06-14 20:08:38,669]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 27.1 ms
+[2024-06-14 20:08:38,671]    WARNING - Not Found: /metrics
+[2024-06-14 20:08:44,811]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:08:49,295]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:08:53,698]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 43.5 ms
+[2024-06-14 20:08:53,700]    WARNING - Not Found: /metrics
+[2024-06-14 20:08:56,327]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:09:00,488]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:09:08,697]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 41.6 ms
+[2024-06-14 20:09:08,699]    WARNING - Not Found: /metrics
+[2024-06-14 20:09:23,670]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 30.4 ms
+[2024-06-14 20:09:23,671]    WARNING - Not Found: /metrics
+[2024-06-14 20:09:38,659]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 20.9 ms
+[2024-06-14 20:09:38,660]    WARNING - Not Found: /metrics
+[2024-06-14 20:09:53,681]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 44.8 ms
+[2024-06-14 20:09:53,683]    WARNING - Not Found: /metrics
+[2024-06-14 20:10:01,927]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:10:06,859]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:10:20,742]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:10:26,425]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:10:38,669]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 29.3 ms
+[2024-06-14 20:10:38,671]    WARNING - Not Found: /metrics
+[2024-06-14 20:10:52,349]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:10:56,790]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:11:20,152]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:11:24,131]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:11:31,343]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 324.7 ms
+[2024-06-14 20:11:33,671]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 25.6 ms
+[2024-06-14 20:11:35,095]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 23.4 ms
+[2024-06-14 20:11:36,355]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 26.1 ms
+[2024-06-14 20:11:37,718]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 30.7 ms
+[2024-06-14 20:11:38,712]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 75.1 ms
+[2024-06-14 20:11:38,714]    WARNING - Not Found: /metrics
+[2024-06-14 20:11:38,984]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 25.8 ms
+[2024-06-14 20:11:40,357]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 26.2 ms
+[2024-06-14 20:11:41,457]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 21.1 ms
+[2024-06-14 20:11:45,848]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 19.1 ms
+[2024-06-14 20:11:47,162]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 24.8 ms
+[2024-06-14 20:11:48,258]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 23.4 ms
+[2024-06-14 20:11:49,737]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 28.2 ms
+[2024-06-14 20:11:53,648]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 21.9 ms
+[2024-06-14 20:11:53,650]    WARNING - Not Found: /metrics
+[2024-06-14 20:12:08,645]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.0 ms
+[2024-06-14 20:12:08,647]    WARNING - Not Found: /metrics
+[2024-06-14 20:12:23,642]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.3 ms
+[2024-06-14 20:12:23,644]    WARNING - Not Found: /metrics
+[2024-06-14 20:12:38,671]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 43.1 ms
+[2024-06-14 20:12:38,672]    WARNING - Not Found: /metrics
+[2024-06-14 20:12:53,641]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.8 ms
+[2024-06-14 20:12:53,643]    WARNING - Not Found: /metrics
+[2024-06-14 20:13:08,645]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 21.6 ms
+[2024-06-14 20:13:08,646]    WARNING - Not Found: /metrics
+[2024-06-14 20:13:23,641]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 20.0 ms
+[2024-06-14 20:13:23,643]    WARNING - Not Found: /metrics
+[2024-06-14 20:13:31,840]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 144.5 ms
+[2024-06-14 20:13:36,691]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 25.4 ms
+[2024-06-14 20:13:38,403]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 33.1 ms
+[2024-06-14 20:13:38,656]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 37.5 ms
+[2024-06-14 20:13:38,659]    WARNING - Not Found: /metrics
+[2024-06-14 20:13:53,637]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.9 ms
+[2024-06-14 20:13:53,639]    WARNING - Not Found: /metrics
+[2024-06-14 20:14:08,784]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 154.7 ms
+[2024-06-14 20:14:08,820]    WARNING - Not Found: /metrics
+[2024-06-14 20:14:23,653]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 35.7 ms
+[2024-06-14 20:14:23,655]    WARNING - Not Found: /metrics
+[2024-06-14 20:14:38,634]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 17.6 ms
+[2024-06-14 20:14:38,636]    WARNING - Not Found: /metrics
+[2024-06-14 20:14:53,734]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 118.8 ms
+[2024-06-14 20:14:53,744]    WARNING - Not Found: /metrics
+[2024-06-14 20:15:08,634]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 21.7 ms
+[2024-06-14 20:15:08,635]    WARNING - Not Found: /metrics
+[2024-06-14 20:15:14,616]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:15:19,078]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:15:23,669]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 52.1 ms
+[2024-06-14 20:15:23,672]    WARNING - Not Found: /metrics
+[2024-06-14 20:15:26,102]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:15:30,779]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:15:38,693]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 67.8 ms
+[2024-06-14 20:15:38,695]    WARNING - Not Found: /metrics
+[2024-06-14 20:15:53,627]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 17.5 ms
+[2024-06-14 20:15:53,629]    WARNING - Not Found: /metrics
+[2024-06-14 20:16:08,640]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 29.9 ms
+[2024-06-14 20:16:08,645]    WARNING - Not Found: /metrics
+[2024-06-14 20:16:23,626]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.5 ms
+[2024-06-14 20:16:23,628]    WARNING - Not Found: /metrics
+[2024-06-14 20:16:38,627]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 20.2 ms
+[2024-06-14 20:16:38,629]    WARNING - Not Found: /metrics
+[2024-06-14 20:16:53,626]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 21.2 ms
+[2024-06-14 20:16:53,630]    WARNING - Not Found: /metrics
+[2024-06-14 20:17:02,580]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:17:06,930]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:17:19,989]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:17:24,594]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:17:33,593]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:17:39,202]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:17:46,874]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:17:51,452]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:17:59,678]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:18:04,590]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:18:08,643]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 35.7 ms
+[2024-06-14 20:18:08,646]    WARNING - Not Found: /metrics
+[2024-06-14 20:18:23,616]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.8 ms
+[2024-06-14 20:18:23,617]    WARNING - Not Found: /metrics
+[2024-06-14 20:18:30,668]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:18:35,197]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:18:39,424]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:18:45,718]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:18:52,735]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:18:57,550]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:19:08,680]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 74.9 ms
+[2024-06-14 20:19:08,685]    WARNING - Not Found: /metrics
+[2024-06-14 20:19:09,419]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:19:16,608]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:19:23,690]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:19:29,603]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:19:35,800]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:19:40,932]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:19:48,682]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:19:54,130]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:20:02,238]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:20:07,531]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:20:14,163]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:20:19,446]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:20:23,736]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 129.9 ms
+[2024-06-14 20:20:23,739]    WARNING - Not Found: /metrics
+[2024-06-14 20:20:28,563]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:20:34,472]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:20:38,652]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 55.3 ms
+[2024-06-14 20:20:38,654]    WARNING - Not Found: /metrics
+[2024-06-14 20:20:43,949]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:20:49,147]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:20:53,635]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 42.3 ms
+[2024-06-14 20:20:53,636]    WARNING - Not Found: /metrics
+[2024-06-14 20:21:01,469]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:21:06,580]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:21:14,864]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:21:20,091]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:21:23,675]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 56.5 ms
+[2024-06-14 20:21:23,677]    WARNING - Not Found: /metrics
+[2024-06-14 20:21:30,779]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 137.0 ms
+[2024-06-14 20:21:32,530]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1095 B 31.5 ms
+[2024-06-14 20:21:38,631]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 44.1 ms
+[2024-06-14 20:21:38,632]    WARNING - Not Found: /metrics
+[2024-06-14 20:21:51,369]    ERROR - Internal Server Error: /api/v1/top/animes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ListSerializer is not JSON serializable
+[2024-06-14 20:21:51,375]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 500 108684 B 129.0 ms
+[2024-06-14 20:21:53,601]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.0 ms
+[2024-06-14 20:21:53,602]    WARNING - Not Found: /metrics
+[2024-06-14 20:22:08,624]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 38.0 ms
+[2024-06-14 20:22:08,626]    WARNING - Not Found: /metrics
+[2024-06-14 20:22:23,598]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 20.6 ms
+[2024-06-14 20:22:23,602]    WARNING - Not Found: /metrics
+[2024-06-14 20:22:27,453]    ERROR - Internal Server Error: /api/v1/top/animes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ListSerializer is not JSON serializable
+[2024-06-14 20:22:27,460]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 500 108684 B 116.2 ms
+[2024-06-14 20:22:30,276]    ERROR - Internal Server Error: /api/v1/top/animes/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/response.py", line 70, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 99, in render
+    ret = json.dumps(
+          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/utils/json.py", line 25, in dumps
+    return json.dumps(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 200, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 258, in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/utils/encoders.py", line 67, in default
+    return super().default(obj)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type ListSerializer is not JSON serializable
+[2024-06-14 20:22:30,285]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 500 108684 B 123.2 ms
+[2024-06-14 20:22:38,599]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 21.7 ms
+[2024-06-14 20:22:38,602]    WARNING - Not Found: /metrics
+[2024-06-14 20:22:53,619]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 41.2 ms
+[2024-06-14 20:22:53,621]    WARNING - Not Found: /metrics
+[2024-06-14 20:23:08,626]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 44.5 ms
+[2024-06-14 20:23:08,628]    WARNING - Not Found: /metrics
+[2024-06-14 20:23:23,620]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 43.9 ms
+[2024-06-14 20:23:23,641]    WARNING - Not Found: /metrics
+[2024-06-14 20:23:38,597]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 22.6 ms
+[2024-06-14 20:23:38,600]    WARNING - Not Found: /metrics
+[2024-06-14 20:23:53,604]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 30.6 ms
+[2024-06-14 20:23:53,606]    WARNING - Not Found: /metrics
+[2024-06-14 20:24:08,591]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 18.4 ms
+[2024-06-14 20:24:08,593]    WARNING - Not Found: /metrics
+[2024-06-14 20:24:16,529]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:24:20,834]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:24:23,627]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 48.5 ms
+[2024-06-14 20:24:23,630]    WARNING - Not Found: /metrics
+[2024-06-14 20:24:30,645]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1145 B 182.4 ms
+[2024-06-14 20:24:32,364]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1145 B 31.7 ms
+[2024-06-14 20:24:33,964]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1145 B 40.7 ms
+[2024-06-14 20:24:35,130]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1145 B 21.1 ms
+[2024-06-14 20:24:36,662]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1145 B 19.6 ms
+[2024-06-14 20:24:38,891]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 320.2 ms
+[2024-06-14 20:24:38,895]    WARNING - Not Found: /metrics
+[2024-06-14 20:24:53,585]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 17.5 ms
+[2024-06-14 20:24:53,587]    WARNING - Not Found: /metrics
+[2024-06-14 20:25:08,622]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 48.0 ms
+[2024-06-14 20:25:08,623]    WARNING - Not Found: /metrics
+[2024-06-14 20:25:23,613]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 43.9 ms
+[2024-06-14 20:25:23,614]    WARNING - Not Found: /metrics
+[2024-06-14 20:25:38,617]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 47.7 ms
+[2024-06-14 20:25:38,618]    WARNING - Not Found: /metrics
+[2024-06-14 20:25:53,578]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 15.4 ms
+[2024-06-14 20:25:53,581]    WARNING - Not Found: /metrics
+[2024-06-14 20:26:08,616]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 49.5 ms
+[2024-06-14 20:26:08,622]    WARNING - Not Found: /metrics
+[2024-06-14 20:26:23,589]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 27.4 ms
+[2024-06-14 20:26:23,592]    WARNING - Not Found: /metrics
+[2024-06-14 20:26:38,601]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 39.9 ms
+[2024-06-14 20:26:38,605]    WARNING - Not Found: /metrics
+[2024-06-14 20:26:53,574]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 23.5 ms
+[2024-06-14 20:26:53,577]    WARNING - Not Found: /metrics
+[2024-06-14 20:27:08,609]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 43.2 ms
+[2024-06-14 20:27:08,611]    WARNING - Not Found: /metrics
+[2024-06-14 20:27:23,572]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 20.6 ms
+[2024-06-14 20:27:23,574]    WARNING - Not Found: /metrics
+[2024-06-14 20:27:37,835]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:27:43,461]    INFO - Watching for file changes with StatReloader
+[2024-06-14 20:27:53,590]    INFO - Request: 'GET /metrics HTTP/1.1' 404 7381 B 34.2 ms
+[2024-06-14 20:27:53,592]    WARNING - Not Found: /metrics
+[2024-06-14 20:27:59,949]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-14 20:28:04,190]    INFO - Watching for file changes with StatReloader

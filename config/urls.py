@@ -48,8 +48,8 @@ urlpatterns = [
     path("", include("apps.playlists.urls")),
     path("", include("apps.randoms.urls")),
     path("", include("apps.recommendations.urls")),
+    path("", include("apps.tops.urls")),
     # path("", include("apps.reviews.urls")),
-    # path("", include("apps.tops.urls")),
     # path("", include("apps.utils.urls")),
     # path("metrics/", include("django_prometheus.urls")),
 ]
