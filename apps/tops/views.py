@@ -11,8 +11,10 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from apps.animes.models import Anime
+from apps.animes.filters import AnimeMinimalFilter
 from apps.animes.serializers import AnimeMinimalSerializer
 from apps.mangas.models import Manga
+from apps.mangas.filters import MangaMinimalFilter
 from apps.mangas.serializers import MangaMinimalSerializer
 from apps.characters.models import Character
 from apps.characters.filters import CharacterFilter
@@ -24,43 +26,35 @@ from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer
 
 
-class TopAnimeView(APIView):
+class TopAnimeView(ListAPIView):
     """
     View lists the most popular animes.
 
     Endpoints:
     - GET api/v1/top/animes/
-    - PARAMS ?type=tv&filter=upcoming&limit=20
     """
 
     permission_classes = [AllowAny]
     serializer_class = AnimeMinimalSerializer
+    search_fields = ["name", "name_jpn", "name_rom"]
+    filterset_class = AnimeMinimalFilter
+
+    def get_queryset(self):
+        return Anime.objects.get_available().order_by("-favorites")
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get(self, request, *args, **kwargs):
-        # Query params
-        type_param = request.query_params.get("type")
-        filter_param = request.query_params.get("filter")
-        limit_param = request.query_params.get("limit", 50)
-
-        if limit_param > 100:
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        if not queryset.exists():
             return Response(
-                {"detail": _("Limit exceeds maximum allowed value of 100.")},
-                status=status.HTTP_400_BAD_REQUEST,
+                {"detail": _("No anime found.")},
+                status=status.HTTP_404_NOT_FOUND,
             )
-
-        top_animes = Anime.objects.filter_by_params(
-            type_param, filter_param, limit_param
-        )
-
-        if top_animes.exists():
-            serializer = self.serializer_class(top_animes, many=True)
-            return Response(serializer.data)
-        return Response(status=status.HTTP_204_NO_CONTENT)
+        return super().list(request, *args, **kwargs)
 
 
-class TopMangaView(APIView):
+class TopMangaView(ListAPIView):
     """
     View lists the most popular mangas.
 
@@ -68,14 +62,24 @@ class TopMangaView(APIView):
     - GET api/v1/top/mangas/
     """
 
-    def get(self, request, *args, **kwargs):
-        top_mangas = Manga.objects.get_available().order_by("-favorites")
-        if top_mangas.exists():
-            serializer = MangaMinimalSerializer(top_mangas, many=True)
-            return Response(serializer.data)
-        return Response(status=status.HTTP_204_NO_CONTENT)
+    permission_classes = [AllowAny]
+    serializer_class = MangaMinimalSerializer
+    search_fields = ["name", "name_jpn", "name_rom"]
+    filterset_class = MangaMinimalFilter
 
-    # TODO: Add query params and limit
+    def get_queryset(self):
+        return Manga.objects.get_available().order_by("-favorites")
+
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        if not queryset.exists():
+            return Response(
+                {"detail": _("No manga found.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        return super().list(request, *args, **kwargs)
 
 
 class TopCharacterView(ListAPIView):
@@ -88,7 +92,6 @@ class TopCharacterView(ListAPIView):
 
     permission_classes = [AllowAny]
     serializer_class = CharacterMinimalSerializer
-    search_fields = ["name", "name_kanji" "created_at"]
     search_fields = ["name", "name_kanji"]
     filterset_class = CharacterFilter
 
@@ -99,7 +102,7 @@ class TopCharacterView(ListAPIView):
         queryset = self.filter_queryset(self.get_queryset())
         if not queryset.exists():
             return Response(
-                {"detail": "No character found."},
+                {"detail": _("No character found.")},
                 status=status.HTTP_404_NOT_FOUND,
             )
         return super().list(request, *args, **kwargs)

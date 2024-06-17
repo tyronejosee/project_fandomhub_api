@@ -49,24 +49,5 @@ class AnimeManager(Manager):
     def get_by_year_and_season(self, season, year):
         return self.filter(season=season, year=year)
 
-    def filter_by_params(self, type_param=None, filter_param=None, limit_param=50):
-        query = self.get_available()
-
-        if type_param:
-            # Media Type: tv, ova, etc
-            query = query.filter(media_type=type_param)
-
-        if filter_param:
-            if filter_param == "airing":
-                query = query.filter(status="airing")
-            elif filter_param == "upcoming":
-                query = query.filter(status="upcoming")
-            elif filter_param == "popularity":
-                query = query.order_by("-popularity")
-            elif filter_param == "favorite":
-                query = query.order_by("-favorites")
-
-        return query[:limit_param]
-
     def get_by_studio(self, studio):
         return self.get_available().filter(studio_id=studio)
