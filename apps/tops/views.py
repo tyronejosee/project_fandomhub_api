@@ -5,7 +5,6 @@ from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_headers
 from django.utils.translation import gettext as _
 from rest_framework.generics import ListAPIView
-from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework import status
@@ -23,6 +22,7 @@ from apps.persons.models import Person
 from apps.persons.choices import CategoryChoices
 from apps.persons.serializers import PersonMinimalSerializer
 from apps.reviews.models import Review
+from apps.reviews.filters import ReviewFilter
 from apps.reviews.serializers import ReviewReadSerializer
 
 
@@ -98,6 +98,8 @@ class TopCharacterView(ListAPIView):
     def get_queryset(self):
         return Character.objects.get_available().order_by("-favorites")
 
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def list(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
         if not queryset.exists():
@@ -108,7 +110,7 @@ class TopCharacterView(ListAPIView):
         return super().list(request, *args, **kwargs)
 
 
-class TopArtistView(APIView):
+class TopArtistView(ListAPIView):
     """
     View lists the most popular artists.
 
@@ -116,21 +118,30 @@ class TopArtistView(APIView):
     - GET api/v1/top/artists/
     """
 
-    def get(self, request, *args, **kwargs):
-        top_artists = (
+    permission_classes = [AllowAny]
+    serializer_class = PersonMinimalSerializer
+    search_fields = ["name", "given_name", "family_name"]
+
+    def get_queryset(self):
+        return (
             Person.objects.get_available()
             .filter(category=CategoryChoices.ARTIST)
             .order_by("-favorites")
         )
-        if top_artists.exists():
-            serializer = PersonMinimalSerializer(top_artists, many=True)
-            return Response(serializer.data)
-        return Response(status=status.HTTP_204_NO_CONTENT)
 
-    # TODO: Add query params and limit
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        if not queryset.exists():
+            return Response(
+                {"detail": _("No artists found.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        return super().list(request, *args, **kwargs)
 
 
-class TopReviewView(APIView):
+class TopReviewView(ListAPIView):
     """
     View lists the most popular reviews.
 
@@ -138,11 +149,21 @@ class TopReviewView(APIView):
     - GET api/v1/top/reviews/
     """
 
-    def get(self, request, *args, **kwargs):
-        top_reviews = Review.objects.get_available().order_by("-helpful_count")
-        if top_reviews.exists():
-            serializer = ReviewReadSerializer(top_reviews, many=True)
-            return Response(serializer.data)
-        return Response(status=status.HTTP_204_NO_CONTENT)
+    permission_classes = [AllowAny]
+    serializer_class = ReviewReadSerializer
+    search_fields = ["user__username", "name_kanji"]
+    filterset_class = ReviewFilter
 
-    # TODO: Add query params and limit
+    def get_queryset(self):
+        return Review.objects.get_available().order_by("-helpful_count")
+
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def list(self, request, *args, **kwargs):
+        queryset = self.filter_queryset(self.get_queryset())
+        if not queryset.exists():
+            return Response(
+                {"detail": _("No reviews found.")},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        return super().list(request, *args, **kwargs)

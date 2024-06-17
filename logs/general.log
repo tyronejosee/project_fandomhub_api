@@ -18923,3 +18923,892 @@ AttributeError: type object 'MangaMinimalSerializer' has no attribute '_meta'. D
 [2024-06-17 19:23:38,979]    WARNING - Not Found: /metrics
 [2024-06-17 19:23:46,738]    INFO - /app/apps/tops/views.py changed, reloading.
 [2024-06-17 19:23:53,017]    INFO - Watching for file changes with StatReloader
+[2024-06-17 19:24:09,011]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 46.6 ms
+[2024-06-17 19:24:09,013]    WARNING - Not Found: /metrics
+[2024-06-17 19:24:24,024]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 66.4 ms
+[2024-06-17 19:24:24,025]    WARNING - Not Found: /metrics
+[2024-06-17 19:24:38,971]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.5 ms
+[2024-06-17 19:24:38,972]    WARNING - Not Found: /metrics
+[2024-06-17 19:24:53,975]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.4 ms
+[2024-06-17 19:24:53,976]    WARNING - Not Found: /metrics
+[2024-06-17 19:25:08,962]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.8 ms
+[2024-06-17 19:25:08,963]    WARNING - Not Found: /metrics
+[2024-06-17 19:25:23,987]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.4 ms
+[2024-06-17 19:25:23,989]    WARNING - Not Found: /metrics
+[2024-06-17 19:25:38,958]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.3 ms
+[2024-06-17 19:25:38,960]    WARNING - Not Found: /metrics
+[2024-06-17 19:25:53,989]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.1 ms
+[2024-06-17 19:25:53,990]    WARNING - Not Found: /metrics
+[2024-06-17 19:26:08,962]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.4 ms
+[2024-06-17 19:26:08,967]    WARNING - Not Found: /metrics
+[2024-06-17 19:27:54,211]    INFO - Watching for file changes with StatReloader
+[2024-06-17 19:28:08,983]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 33.2 ms
+[2024-06-17 19:28:08,984]    WARNING - Not Found: /metrics
+[2024-06-17 19:28:23,961]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.8 ms
+[2024-06-17 19:28:23,962]    WARNING - Not Found: /metrics
+[2024-06-17 19:28:38,955]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.2 ms
+[2024-06-17 19:28:38,957]    WARNING - Not Found: /metrics
+[2024-06-17 19:28:53,970]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.3 ms
+[2024-06-17 19:28:53,971]    WARNING - Not Found: /metrics
+[2024-06-17 19:29:08,982]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 41.3 ms
+[2024-06-17 19:29:08,983]    WARNING - Not Found: /metrics
+[2024-06-17 19:29:23,982]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 43.6 ms
+[2024-06-17 19:29:23,983]    WARNING - Not Found: /metrics
+[2024-06-17 19:29:38,976]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 42.2 ms
+[2024-06-17 19:29:38,977]    WARNING - Not Found: /metrics
+[2024-06-17 19:29:53,950]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.9 ms
+[2024-06-17 19:29:53,951]    WARNING - Not Found: /metrics
+[2024-06-17 19:30:08,947]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.1 ms
+[2024-06-17 19:30:08,948]    WARNING - Not Found: /metrics
+[2024-06-17 19:30:23,967]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.3 ms
+[2024-06-17 19:30:23,968]    WARNING - Not Found: /metrics
+[2024-06-17 19:30:38,935]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 13.8 ms
+[2024-06-17 19:30:38,936]    WARNING - Not Found: /metrics
+[2024-06-17 19:30:53,958]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.6 ms
+[2024-06-17 19:30:53,959]    WARNING - Not Found: /metrics
+[2024-06-17 19:31:08,977]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 54.4 ms
+[2024-06-17 19:31:08,979]    WARNING - Not Found: /metrics
+[2024-06-17 19:31:23,959]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.9 ms
+[2024-06-17 19:31:23,960]    WARNING - Not Found: /metrics
+[2024-06-17 19:31:38,932]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.9 ms
+[2024-06-17 19:31:38,933]    WARNING - Not Found: /metrics
+[2024-06-17 19:31:53,948]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.3 ms
+[2024-06-17 19:31:53,949]    WARNING - Not Found: /metrics
+[2024-06-17 19:32:08,953]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 39.5 ms
+[2024-06-17 19:32:08,954]    WARNING - Not Found: /metrics
+[2024-06-17 19:32:23,937]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.0 ms
+[2024-06-17 19:32:23,938]    WARNING - Not Found: /metrics
+[2024-06-17 19:32:38,918]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.3 ms
+[2024-06-17 19:32:38,920]    WARNING - Not Found: /metrics
+[2024-06-17 19:32:53,945]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.6 ms
+[2024-06-17 19:32:53,947]    WARNING - Not Found: /metrics
+[2024-06-17 19:33:08,932]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.0 ms
+[2024-06-17 19:33:08,933]    WARNING - Not Found: /metrics
+[2024-06-17 19:33:23,917]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.4 ms
+[2024-06-17 19:33:23,918]    WARNING - Not Found: /metrics
+[2024-06-17 19:33:38,912]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.9 ms
+[2024-06-17 19:33:38,914]    WARNING - Not Found: /metrics
+[2024-06-17 19:33:53,908]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.9 ms
+[2024-06-17 19:33:53,910]    WARNING - Not Found: /metrics
+[2024-06-17 19:34:08,903]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.4 ms
+[2024-06-17 19:34:08,905]    WARNING - Not Found: /metrics
+[2024-06-17 19:34:23,902]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.4 ms
+[2024-06-17 19:34:23,904]    WARNING - Not Found: /metrics
+[2024-06-17 19:34:38,896]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.2 ms
+[2024-06-17 19:34:38,897]    WARNING - Not Found: /metrics
+[2024-06-17 19:34:53,908]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.7 ms
+[2024-06-17 19:34:53,909]    WARNING - Not Found: /metrics
+[2024-06-17 19:35:08,917]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 34.3 ms
+[2024-06-17 19:35:08,918]    WARNING - Not Found: /metrics
+[2024-06-17 19:35:23,939]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 58.0 ms
+[2024-06-17 19:35:23,941]    WARNING - Not Found: /metrics
+[2024-06-17 19:35:38,891]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.3 ms
+[2024-06-17 19:35:38,892]    WARNING - Not Found: /metrics
+[2024-06-17 19:35:53,911]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 33.7 ms
+[2024-06-17 19:35:53,913]    WARNING - Not Found: /metrics
+[2024-06-17 19:36:08,908]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 35.4 ms
+[2024-06-17 19:36:08,909]    WARNING - Not Found: /metrics
+[2024-06-17 19:36:23,922]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 49.0 ms
+[2024-06-17 19:36:23,923]    WARNING - Not Found: /metrics
+[2024-06-17 19:36:38,911]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 42.1 ms
+[2024-06-17 19:36:38,913]    WARNING - Not Found: /metrics
+[2024-06-17 19:36:53,884]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.6 ms
+[2024-06-17 19:36:53,886]    WARNING - Not Found: /metrics
+[2024-06-17 19:37:08,905]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 39.5 ms
+[2024-06-17 19:37:08,906]    WARNING - Not Found: /metrics
+[2024-06-17 19:37:23,906]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 37.7 ms
+[2024-06-17 19:37:23,907]    WARNING - Not Found: /metrics
+[2024-06-17 19:37:38,907]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 43.3 ms
+[2024-06-17 19:37:38,908]    WARNING - Not Found: /metrics
+[2024-06-17 19:37:53,884]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.4 ms
+[2024-06-17 19:37:53,886]    WARNING - Not Found: /metrics
+[2024-06-17 19:38:08,878]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.4 ms
+[2024-06-17 19:38:08,880]    WARNING - Not Found: /metrics
+[2024-06-17 19:38:23,877]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.3 ms
+[2024-06-17 19:38:23,878]    WARNING - Not Found: /metrics
+[2024-06-17 19:38:38,874]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.0 ms
+[2024-06-17 19:38:38,880]    WARNING - Not Found: /metrics
+[2024-06-17 19:38:53,872]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.8 ms
+[2024-06-17 19:38:53,874]    WARNING - Not Found: /metrics
+[2024-06-17 19:39:08,870]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.4 ms
+[2024-06-17 19:39:08,872]    WARNING - Not Found: /metrics
+[2024-06-17 19:39:23,875]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.5 ms
+[2024-06-17 19:39:23,876]    WARNING - Not Found: /metrics
+[2024-06-17 19:39:38,884]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.7 ms
+[2024-06-17 19:39:38,885]    WARNING - Not Found: /metrics
+[2024-06-17 19:39:53,882]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 30.9 ms
+[2024-06-17 19:39:53,883]    WARNING - Not Found: /metrics
+[2024-06-17 19:40:08,913]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 62.1 ms
+[2024-06-17 19:40:08,914]    WARNING - Not Found: /metrics
+[2024-06-17 19:40:23,867]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.5 ms
+[2024-06-17 19:40:23,868]    WARNING - Not Found: /metrics
+[2024-06-17 19:40:38,857]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.6 ms
+[2024-06-17 19:40:38,859]    WARNING - Not Found: /metrics
+[2024-06-17 19:40:53,860]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.1 ms
+[2024-06-17 19:40:53,861]    WARNING - Not Found: /metrics
+[2024-06-17 19:41:08,859]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.5 ms
+[2024-06-17 19:41:08,860]    WARNING - Not Found: /metrics
+[2024-06-17 19:41:23,859]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.5 ms
+[2024-06-17 19:41:23,866]    WARNING - Not Found: /metrics
+[2024-06-17 19:41:38,857]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.2 ms
+[2024-06-17 19:41:38,858]    WARNING - Not Found: /metrics
+[2024-06-17 19:41:53,862]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.7 ms
+[2024-06-17 19:41:53,863]    WARNING - Not Found: /metrics
+[2024-06-17 19:42:08,856]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.2 ms
+[2024-06-17 19:42:08,857]    WARNING - Not Found: /metrics
+[2024-06-17 19:42:23,851]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.1 ms
+[2024-06-17 19:42:23,852]    WARNING - Not Found: /metrics
+[2024-06-17 19:42:38,852]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.4 ms
+[2024-06-17 19:42:38,853]    WARNING - Not Found: /metrics
+[2024-06-17 19:42:53,876]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.9 ms
+[2024-06-17 19:42:53,877]    WARNING - Not Found: /metrics
+[2024-06-17 19:43:08,858]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.7 ms
+[2024-06-17 19:43:08,859]    WARNING - Not Found: /metrics
+[2024-06-17 19:43:23,901]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 63.6 ms
+[2024-06-17 19:43:23,902]    WARNING - Not Found: /metrics
+[2024-06-17 19:43:38,845]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.9 ms
+[2024-06-17 19:43:38,846]    WARNING - Not Found: /metrics
+[2024-06-17 19:43:53,843]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.0 ms
+[2024-06-17 19:43:53,844]    WARNING - Not Found: /metrics
+[2024-06-17 19:44:08,841]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.6 ms
+[2024-06-17 19:44:08,842]    WARNING - Not Found: /metrics
+[2024-06-17 19:44:23,849]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.4 ms
+[2024-06-17 19:44:23,850]    WARNING - Not Found: /metrics
+[2024-06-17 19:44:38,871]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 42.9 ms
+[2024-06-17 19:44:38,872]    WARNING - Not Found: /metrics
+[2024-06-17 19:44:53,872]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 43.2 ms
+[2024-06-17 19:44:53,873]    WARNING - Not Found: /metrics
+[2024-06-17 19:45:08,841]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.0 ms
+[2024-06-17 19:45:08,842]    WARNING - Not Found: /metrics
+[2024-06-17 19:45:23,841]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.7 ms
+[2024-06-17 19:45:23,843]    WARNING - Not Found: /metrics
+[2024-06-17 19:45:38,837]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.0 ms
+[2024-06-17 19:45:38,838]    WARNING - Not Found: /metrics
+[2024-06-17 19:45:53,838]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.5 ms
+[2024-06-17 19:45:53,839]    WARNING - Not Found: /metrics
+[2024-06-17 19:46:08,834]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.3 ms
+[2024-06-17 19:46:08,835]    WARNING - Not Found: /metrics
+[2024-06-17 19:46:23,856]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 35.7 ms
+[2024-06-17 19:46:23,857]    WARNING - Not Found: /metrics
+[2024-06-17 19:46:38,852]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 37.6 ms
+[2024-06-17 19:46:38,853]    WARNING - Not Found: /metrics
+[2024-06-17 19:46:53,832]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.2 ms
+[2024-06-17 19:46:53,833]    WARNING - Not Found: /metrics
+[2024-06-17 19:47:08,851]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 37.0 ms
+[2024-06-17 19:47:08,852]    WARNING - Not Found: /metrics
+[2024-06-17 19:47:23,846]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.5 ms
+[2024-06-17 19:47:23,848]    WARNING - Not Found: /metrics
+[2024-06-17 19:47:38,841]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.5 ms
+[2024-06-17 19:47:38,842]    WARNING - Not Found: /metrics
+[2024-06-17 19:47:53,838]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 30.4 ms
+[2024-06-17 19:47:53,839]    WARNING - Not Found: /metrics
+[2024-06-17 19:48:08,819]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 13.8 ms
+[2024-06-17 19:48:08,820]    WARNING - Not Found: /metrics
+[2024-06-17 19:48:23,819]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.8 ms
+[2024-06-17 19:48:23,821]    WARNING - Not Found: /metrics
+[2024-06-17 19:48:38,822]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.8 ms
+[2024-06-17 19:48:38,823]    WARNING - Not Found: /metrics
+[2024-06-17 19:48:53,818]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.2 ms
+[2024-06-17 19:48:53,819]    WARNING - Not Found: /metrics
+[2024-06-17 19:49:08,841]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 37.4 ms
+[2024-06-17 19:49:08,842]    WARNING - Not Found: /metrics
+[2024-06-17 19:49:23,820]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.4 ms
+[2024-06-17 19:49:23,821]    WARNING - Not Found: /metrics
+[2024-06-17 19:49:38,830]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.7 ms
+[2024-06-17 19:49:38,831]    WARNING - Not Found: /metrics
+[2024-06-17 19:49:53,812]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.9 ms
+[2024-06-17 19:49:53,813]    WARNING - Not Found: /metrics
+[2024-06-17 19:50:08,817]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.3 ms
+[2024-06-17 19:50:08,819]    WARNING - Not Found: /metrics
+[2024-06-17 19:50:23,814]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.3 ms
+[2024-06-17 19:50:23,815]    WARNING - Not Found: /metrics
+[2024-06-17 19:50:38,817]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.5 ms
+[2024-06-17 19:50:38,846]    WARNING - Not Found: /metrics
+[2024-06-17 19:50:53,808]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.9 ms
+[2024-06-17 19:50:53,809]    WARNING - Not Found: /metrics
+[2024-06-17 19:51:08,849]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 56.5 ms
+[2024-06-17 19:51:08,850]    WARNING - Not Found: /metrics
+[2024-06-17 19:51:23,805]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.8 ms
+[2024-06-17 19:51:23,807]    WARNING - Not Found: /metrics
+[2024-06-17 19:51:38,805]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.5 ms
+[2024-06-17 19:51:38,806]    WARNING - Not Found: /metrics
+[2024-06-17 19:51:53,822]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.5 ms
+[2024-06-17 19:51:53,824]    WARNING - Not Found: /metrics
+[2024-06-17 19:52:08,821]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 34.0 ms
+[2024-06-17 19:52:08,822]    WARNING - Not Found: /metrics
+[2024-06-17 19:52:23,819]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.9 ms
+[2024-06-17 19:52:23,820]    WARNING - Not Found: /metrics
+[2024-06-17 19:52:38,822]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.7 ms
+[2024-06-17 19:52:38,823]    WARNING - Not Found: /metrics
+[2024-06-17 19:52:53,826]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 39.8 ms
+[2024-06-17 19:52:53,827]    WARNING - Not Found: /metrics
+[2024-06-17 19:53:08,818]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 34.6 ms
+[2024-06-17 19:53:08,819]    WARNING - Not Found: /metrics
+[2024-06-17 19:53:23,796]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.0 ms
+[2024-06-17 19:53:23,797]    WARNING - Not Found: /metrics
+[2024-06-17 19:53:38,827]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 47.3 ms
+[2024-06-17 19:53:38,829]    WARNING - Not Found: /metrics
+[2024-06-17 19:53:53,791]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.4 ms
+[2024-06-17 19:53:53,794]    WARNING - Not Found: /metrics
+[2024-06-17 19:54:08,793]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.2 ms
+[2024-06-17 19:54:08,795]    WARNING - Not Found: /metrics
+[2024-06-17 19:54:23,788]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.7 ms
+[2024-06-17 19:54:23,789]    WARNING - Not Found: /metrics
+[2024-06-17 19:54:38,833]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 57.3 ms
+[2024-06-17 19:54:38,834]    WARNING - Not Found: /metrics
+[2024-06-17 19:54:53,786]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.3 ms
+[2024-06-17 19:54:53,787]    WARNING - Not Found: /metrics
+[2024-06-17 19:55:08,803]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.5 ms
+[2024-06-17 19:55:08,804]    WARNING - Not Found: /metrics
+[2024-06-17 19:55:23,816]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 42.2 ms
+[2024-06-17 19:55:23,817]    WARNING - Not Found: /metrics
+[2024-06-17 19:55:38,783]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.3 ms
+[2024-06-17 19:55:38,784]    WARNING - Not Found: /metrics
+[2024-06-17 19:55:53,813]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.7 ms
+[2024-06-17 19:55:53,815]    WARNING - Not Found: /metrics
+[2024-06-17 19:56:08,778]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.2 ms
+[2024-06-17 19:56:08,779]    WARNING - Not Found: /metrics
+[2024-06-17 19:56:23,779]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.8 ms
+[2024-06-17 19:56:23,780]    WARNING - Not Found: /metrics
+[2024-06-17 19:56:38,792]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 28.7 ms
+[2024-06-17 19:56:38,793]    WARNING - Not Found: /metrics
+[2024-06-17 19:56:53,798]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 35.6 ms
+[2024-06-17 19:56:53,799]    WARNING - Not Found: /metrics
+[2024-06-17 19:57:08,792]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.7 ms
+[2024-06-17 19:57:08,793]    WARNING - Not Found: /metrics
+[2024-06-17 19:57:23,771]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.3 ms
+[2024-06-17 19:57:23,772]    WARNING - Not Found: /metrics
+[2024-06-17 19:57:38,767]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 13.9 ms
+[2024-06-17 19:57:38,769]    WARNING - Not Found: /metrics
+[2024-06-17 19:57:53,798]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 40.8 ms
+[2024-06-17 19:57:53,799]    WARNING - Not Found: /metrics
+[2024-06-17 19:58:08,792]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.5 ms
+[2024-06-17 19:58:08,793]    WARNING - Not Found: /metrics
+[2024-06-17 19:58:23,793]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.8 ms
+[2024-06-17 19:58:23,794]    WARNING - Not Found: /metrics
+[2024-06-17 19:58:38,791]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.7 ms
+[2024-06-17 19:58:38,793]    WARNING - Not Found: /metrics
+[2024-06-17 19:58:53,770]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.6 ms
+[2024-06-17 19:58:53,771]    WARNING - Not Found: /metrics
+[2024-06-17 19:59:08,797]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 48.9 ms
+[2024-06-17 19:59:08,798]    WARNING - Not Found: /metrics
+[2024-06-17 19:59:23,792]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 40.7 ms
+[2024-06-17 19:59:23,794]    WARNING - Not Found: /metrics
+[2024-06-17 19:59:38,765]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.1 ms
+[2024-06-17 19:59:38,766]    WARNING - Not Found: /metrics
+[2024-06-17 19:59:53,762]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.3 ms
+[2024-06-17 19:59:53,763]    WARNING - Not Found: /metrics
+[2024-06-17 20:00:08,757]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.5 ms
+[2024-06-17 20:00:08,758]    WARNING - Not Found: /metrics
+[2024-06-17 20:00:23,758]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.3 ms
+[2024-06-17 20:00:23,759]    WARNING - Not Found: /metrics
+[2024-06-17 20:00:38,758]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.3 ms
+[2024-06-17 20:00:38,759]    WARNING - Not Found: /metrics
+[2024-06-17 20:00:53,784]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 41.6 ms
+[2024-06-17 20:00:53,785]    WARNING - Not Found: /metrics
+[2024-06-17 20:01:08,778]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.5 ms
+[2024-06-17 20:01:08,779]    WARNING - Not Found: /metrics
+[2024-06-17 20:01:23,799]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 57.8 ms
+[2024-06-17 20:01:23,800]    WARNING - Not Found: /metrics
+[2024-06-17 20:01:38,780]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 41.5 ms
+[2024-06-17 20:01:38,781]    WARNING - Not Found: /metrics
+[2024-06-17 20:01:53,776]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.9 ms
+[2024-06-17 20:01:53,777]    WARNING - Not Found: /metrics
+[2024-06-17 20:02:08,745]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.5 ms
+[2024-06-17 20:02:08,746]    WARNING - Not Found: /metrics
+[2024-06-17 20:02:23,763]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 30.3 ms
+[2024-06-17 20:02:23,764]    WARNING - Not Found: /metrics
+[2024-06-17 20:02:38,777]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 45.4 ms
+[2024-06-17 20:02:38,779]    WARNING - Not Found: /metrics
+[2024-06-17 20:02:53,758]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 28.9 ms
+[2024-06-17 20:02:53,759]    WARNING - Not Found: /metrics
+[2024-06-17 20:03:08,766]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 35.7 ms
+[2024-06-17 20:03:08,767]    WARNING - Not Found: /metrics
+[2024-06-17 20:03:23,747]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.9 ms
+[2024-06-17 20:03:23,748]    WARNING - Not Found: /metrics
+[2024-06-17 20:03:38,743]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.1 ms
+[2024-06-17 20:03:38,744]    WARNING - Not Found: /metrics
+[2024-06-17 20:03:53,769]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 40.0 ms
+[2024-06-17 20:03:53,771]    WARNING - Not Found: /metrics
+[2024-06-17 20:04:08,764]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 35.8 ms
+[2024-06-17 20:04:08,765]    WARNING - Not Found: /metrics
+[2024-06-17 20:04:23,762]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 35.5 ms
+[2024-06-17 20:04:23,763]    WARNING - Not Found: /metrics
+[2024-06-17 20:04:38,744]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.0 ms
+[2024-06-17 20:04:38,745]    WARNING - Not Found: /metrics
+[2024-06-17 20:04:53,769]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 48.1 ms
+[2024-06-17 20:04:53,779]    WARNING - Not Found: /metrics
+[2024-06-17 20:05:08,734]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.9 ms
+[2024-06-17 20:05:08,739]    WARNING - Not Found: /metrics
+[2024-06-17 20:05:23,784]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 70.0 ms
+[2024-06-17 20:05:23,787]    WARNING - Not Found: /metrics
+[2024-06-17 22:02:34,967]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:03:42,817]    INFO - /app/apps/tops/__init__.py changed, reloading.
+[2024-06-17 22:03:47,553]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:04:49,418]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-17 22:04:54,990]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:05:07,728]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-17 22:05:12,763]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:05:25,432]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 293.6 ms
+[2024-06-17 22:05:25,434]    WARNING - Not Found: /metrics
+[2024-06-17 22:05:30,741]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 401 183 B 747.6 ms
+[2024-06-17 22:05:30,742]    WARNING - Unauthorized: /api/v1/top/reviews/
+[2024-06-17 22:05:40,097]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 62.4 ms
+[2024-06-17 22:05:40,102]    WARNING - Not Found: /metrics
+[2024-06-17 22:05:43,444]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 401 183 B 3.7 ms
+[2024-06-17 22:05:43,446]    WARNING - Unauthorized: /api/v1/top/reviews/
+[2024-06-17 22:05:55,055]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.6 ms
+[2024-06-17 22:05:55,058]    WARNING - Not Found: /metrics
+[2024-06-17 22:06:00,671]    INFO - Request: 'POST /api/v1/tokens/jwt/create/ HTTP/1.1' 200 582 B 2128.4 ms
+[2024-06-17 22:06:10,060]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.3 ms
+[2024-06-17 22:06:10,064]    WARNING - Not Found: /metrics
+[2024-06-17 22:06:25,054]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 28.5 ms
+[2024-06-17 22:06:25,056]    WARNING - Not Found: /metrics
+[2024-06-17 22:06:30,876]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 404 30 B 230.9 ms
+[2024-06-17 22:06:30,876]    WARNING - Not Found: /api/v1/top/reviews/
+[2024-06-17 22:06:32,899]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 404 30 B 43.3 ms
+[2024-06-17 22:06:32,902]    WARNING - Not Found: /api/v1/top/reviews/
+[2024-06-17 22:06:40,044]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.3 ms
+[2024-06-17 22:06:40,046]    WARNING - Not Found: /metrics
+[2024-06-17 22:06:55,051]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.4 ms
+[2024-06-17 22:06:55,053]    WARNING - Not Found: /metrics
+[2024-06-17 22:06:55,313]    INFO - Request: 'GET / HTTP/1.1' 302 0 B 1.0 ms
+[2024-06-17 22:06:56,002]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 35582 B 675.8 ms
+[2024-06-17 22:06:56,919]    INFO - Request: 'GET /favicon.ico HTTP/1.1' 404 8065 B 47.9 ms
+[2024-06-17 22:06:56,920]    WARNING - Not Found: /favicon.ico
+[2024-06-17 22:07:01,994]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 29981 B 669.6 ms
+[2024-06-17 22:07:02,240]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 172.0 ms
+[2024-06-17 22:07:02,528]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 116.6 ms
+[2024-06-17 22:07:08,052]    INFO - Request: 'GET /admin/reviews/review/add/ HTTP/1.1' 200 39164 B 193.8 ms
+[2024-06-17 22:07:08,172]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 61.3 ms
+[2024-06-17 22:07:08,312]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 63.3 ms
+[2024-06-17 22:07:10,046]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.9 ms
+[2024-06-17 22:07:10,047]    WARNING - Not Found: /metrics
+[2024-06-17 22:07:25,039]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.9 ms
+[2024-06-17 22:07:25,041]    WARNING - Not Found: /metrics
+[2024-06-17 22:07:29,802]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 34890 B 472.6 ms
+[2024-06-17 22:07:29,901]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 32.2 ms
+[2024-06-17 22:07:29,965]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 33.0 ms
+[2024-06-17 22:07:32,793]    INFO - Request: 'GET /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 200 70325 B 645.7 ms
+[2024-06-17 22:07:32,950]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 76.4 ms
+[2024-06-17 22:07:33,259]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 80.9 ms
+[2024-06-17 22:07:40,041]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.9 ms
+[2024-06-17 22:07:40,043]    WARNING - Not Found: /metrics
+[2024-06-17 22:07:47,908]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 29981 B 65.7 ms
+[2024-06-17 22:07:47,992]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 29.4 ms
+[2024-06-17 22:07:49,531]    INFO - Request: 'GET /admin/reviews/review/add/ HTTP/1.1' 200 39164 B 73.6 ms
+[2024-06-17 22:07:49,623]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 28.2 ms
+[2024-06-17 22:07:55,043]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.8 ms
+[2024-06-17 22:07:55,045]    WARNING - Not Found: /metrics
+[2024-06-17 22:08:10,071]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 48.8 ms
+[2024-06-17 22:08:10,072]    WARNING - Not Found: /metrics
+[2024-06-17 22:08:25,037]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.0 ms
+[2024-06-17 22:08:25,038]    WARNING - Not Found: /metrics
+[2024-06-17 22:08:28,552]    ERROR - Internal Server Error: /admin/reviews/review/add/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 714, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/sites.py", line 240, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1941, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1802, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 1859, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 952, in log_addition
+    object_repr=str(obj),
+                ^^^^^^^^
+  File "/app/apps/reviews/models.py", line 54, in __str__
+    return str(f"{self.user} - {self.content_object}")
+                  ^^^^^^^^^
+AttributeError: 'Review' object has no attribute 'user'
+[2024-06-17 22:08:28,561]    INFO - Request: 'POST /admin/reviews/review/add/ HTTP/1.1' 500 128100 B 492.7 ms
+[2024-06-17 22:08:40,034]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.5 ms
+[2024-06-17 22:08:40,036]    WARNING - Not Found: /metrics
+[2024-06-17 22:08:55,386]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 367.7 ms
+[2024-06-17 22:08:55,391]    WARNING - Not Found: /metrics
+[2024-06-17 22:09:10,053]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.4 ms
+[2024-06-17 22:09:10,056]    WARNING - Not Found: /metrics
+[2024-06-17 22:09:10,186]    INFO - /app/apps/reviews/models.py changed, reloading.
+[2024-06-17 22:09:16,376]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:09:21,371]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 29981 B 598.4 ms
+[2024-06-17 22:09:21,545]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 55.2 ms
+[2024-06-17 22:09:22,376]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 49.4 ms
+[2024-06-17 22:09:24,153]    INFO - Request: 'GET /admin/reviews/review/add/ HTTP/1.1' 200 39164 B 719.1 ms
+[2024-06-17 22:09:24,355]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 68.6 ms
+[2024-06-17 22:09:24,823]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 46.6 ms
+[2024-06-17 22:09:25,066]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 56.3 ms
+[2024-06-17 22:09:25,068]    WARNING - Not Found: /metrics
+[2024-06-17 22:09:32,064]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 34890 B 130.0 ms
+[2024-06-17 22:09:32,173]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 34.3 ms
+[2024-06-17 22:09:32,287]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 63.5 ms
+[2024-06-17 22:09:33,797]    INFO - Request: 'GET /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 200 70325 B 383.6 ms
+[2024-06-17 22:09:33,924]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 49.4 ms
+[2024-06-17 22:09:34,613]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 52.8 ms
+[2024-06-17 22:09:39,318]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 34890 B 123.8 ms
+[2024-06-17 22:09:40,039]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.5 ms
+[2024-06-17 22:09:40,041]    WARNING - Not Found: /metrics
+[2024-06-17 22:09:40,483]    INFO - Request: 'GET /admin/reviews/review/add/ HTTP/1.1' 200 39164 B 112.3 ms
+[2024-06-17 22:09:55,062]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 50.3 ms
+[2024-06-17 22:09:55,066]    WARNING - Not Found: /metrics
+[2024-06-17 22:09:57,735]    INFO - Request: 'POST /admin/reviews/review/add/ HTTP/1.1' 302 0 B 247.6 ms
+[2024-06-17 22:09:57,848]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 32666 B 96.1 ms
+[2024-06-17 22:09:57,947]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 32.5 ms
+[2024-06-17 22:10:07,339]    ERROR - Internal Server Error: /api/v1/top/reviews/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/tops/views.py", line 179, in list
+    return super().list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 43, in list
+    return self.get_paginated_response(serializer.data)
+                                       ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 507, in to_representation
+    for field in fields:
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 368, in _readable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1052, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 1148, in get_field_names
+    assert field_name in fields, (
+AssertionError: The field 'user' was declared on serializer ReviewReadSerializer, but has not been included in the 'fields' option.
+[2024-06-17 22:10:07,373]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 500 144313 B 448.1 ms
+[2024-06-17 22:10:10,050]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.4 ms
+[2024-06-17 22:10:10,052]    WARNING - Not Found: /metrics
+[2024-06-17 22:10:25,053]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 40.8 ms
+[2024-06-17 22:10:25,056]    WARNING - Not Found: /metrics
+[2024-06-17 22:10:40,088]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 75.8 ms
+[2024-06-17 22:10:40,090]    WARNING - Not Found: /metrics
+[2024-06-17 22:10:40,617]    INFO - /app/apps/reviews/serializers.py changed, reloading.
+[2024-06-17 22:10:45,196]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:10:49,918]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 193.9 ms
+[2024-06-17 22:10:52,575]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 42.6 ms
+[2024-06-17 22:10:54,211]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 54.2 ms
+[2024-06-17 22:10:55,100]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 90.4 ms
+[2024-06-17 22:10:55,103]    WARNING - Not Found: /metrics
+[2024-06-17 22:11:10,026]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.2 ms
+[2024-06-17 22:11:10,027]    WARNING - Not Found: /metrics
+[2024-06-17 22:11:25,077]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 72.5 ms
+[2024-06-17 22:11:25,079]    WARNING - Not Found: /metrics
+[2024-06-17 22:11:40,041]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.1 ms
+[2024-06-17 22:11:40,043]    WARNING - Not Found: /metrics
+[2024-06-17 22:11:45,246]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 404 30 B 43.4 ms
+[2024-06-17 22:11:45,247]    WARNING - Not Found: /api/v1/top/reviews/
+[2024-06-17 22:11:49,167]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 87.5 ms
+[2024-06-17 22:11:55,038]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.9 ms
+[2024-06-17 22:11:55,039]    WARNING - Not Found: /metrics
+[2024-06-17 22:12:10,035]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.5 ms
+[2024-06-17 22:12:10,037]    WARNING - Not Found: /metrics
+[2024-06-17 22:12:17,273]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-17 22:12:22,216]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:12:31,528]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-17 22:12:37,387]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:12:44,490]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-17 22:12:48,793]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:12:55,050]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.7 ms
+[2024-06-17 22:12:55,052]    WARNING - Not Found: /metrics
+[2024-06-17 22:13:10,016]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.7 ms
+[2024-06-17 22:13:10,017]    WARNING - Not Found: /metrics
+[2024-06-17 22:13:25,047]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 46.2 ms
+[2024-06-17 22:13:25,048]    WARNING - Not Found: /metrics
+[2024-06-17 22:13:40,016]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.3 ms
+[2024-06-17 22:13:40,017]    WARNING - Not Found: /metrics
+[2024-06-17 22:13:55,035]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 37.1 ms
+[2024-06-17 22:13:55,036]    WARNING - Not Found: /metrics
+[2024-06-17 22:14:10,022]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.1 ms
+[2024-06-17 22:14:10,023]    WARNING - Not Found: /metrics
+[2024-06-17 22:14:25,050]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 55.9 ms
+[2024-06-17 22:14:25,051]    WARNING - Not Found: /metrics
+[2024-06-17 22:14:40,008]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.1 ms
+[2024-06-17 22:14:40,010]    WARNING - Not Found: /metrics
+[2024-06-17 22:14:55,006]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.5 ms
+[2024-06-17 22:14:55,007]    WARNING - Not Found: /metrics
+[2024-06-17 22:15:10,011]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.7 ms
+[2024-06-17 22:15:10,012]    WARNING - Not Found: /metrics
+[2024-06-17 22:15:25,015]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 28.1 ms
+[2024-06-17 22:15:25,018]    WARNING - Not Found: /metrics
+[2024-06-17 22:15:39,999]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 13.2 ms
+[2024-06-17 22:15:40,000]    WARNING - Not Found: /metrics
+[2024-06-17 22:15:55,001]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.2 ms
+[2024-06-17 22:15:55,003]    WARNING - Not Found: /metrics
+[2024-06-17 22:16:10,013]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.7 ms
+[2024-06-17 22:16:10,015]    WARNING - Not Found: /metrics
+[2024-06-17 22:16:25,003]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.5 ms
+[2024-06-17 22:16:25,004]    WARNING - Not Found: /metrics
+[2024-06-17 22:16:40,009]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.5 ms
+[2024-06-17 22:16:40,011]    WARNING - Not Found: /metrics
+[2024-06-17 22:16:55,008]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.2 ms
+[2024-06-17 22:16:55,010]    WARNING - Not Found: /metrics
+[2024-06-17 22:17:10,012]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.4 ms
+[2024-06-17 22:17:10,015]    WARNING - Not Found: /metrics
+[2024-06-17 22:17:24,998]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.7 ms
+[2024-06-17 22:17:24,999]    WARNING - Not Found: /metrics
+[2024-06-17 22:17:40,008]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.1 ms
+[2024-06-17 22:17:40,009]    WARNING - Not Found: /metrics
+[2024-06-17 22:17:55,006]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.5 ms
+[2024-06-17 22:17:55,008]    WARNING - Not Found: /metrics
+[2024-06-17 22:18:09,999]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.3 ms
+[2024-06-17 22:18:10,001]    WARNING - Not Found: /metrics
+[2024-06-17 22:18:25,000]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.0 ms
+[2024-06-17 22:18:25,001]    WARNING - Not Found: /metrics
+[2024-06-17 22:18:40,003]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.7 ms
+[2024-06-17 22:18:40,004]    WARNING - Not Found: /metrics
+[2024-06-17 22:18:54,996]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.7 ms
+[2024-06-17 22:18:54,998]    WARNING - Not Found: /metrics
+[2024-06-17 22:19:09,995]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.6 ms
+[2024-06-17 22:19:09,997]    WARNING - Not Found: /metrics
+[2024-06-17 22:19:24,997]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.2 ms
+[2024-06-17 22:19:24,998]    WARNING - Not Found: /metrics
+[2024-06-17 22:19:39,994]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.6 ms
+[2024-06-17 22:19:39,995]    WARNING - Not Found: /metrics
+[2024-06-17 22:19:54,990]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.8 ms
+[2024-06-17 22:19:54,991]    WARNING - Not Found: /metrics
+[2024-06-17 22:20:09,990]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.6 ms
+[2024-06-17 22:20:09,992]    WARNING - Not Found: /metrics
+[2024-06-17 22:20:24,994]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.8 ms
+[2024-06-17 22:20:24,996]    WARNING - Not Found: /metrics
+[2024-06-17 22:20:39,987]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.4 ms
+[2024-06-17 22:20:39,989]    WARNING - Not Found: /metrics
+[2024-06-17 22:20:54,986]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.0 ms
+[2024-06-17 22:20:54,988]    WARNING - Not Found: /metrics
+[2024-06-17 22:21:09,992]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 25.3 ms
+[2024-06-17 22:21:09,993]    WARNING - Not Found: /metrics
+[2024-06-17 22:21:24,992]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.8 ms
+[2024-06-17 22:21:24,993]    WARNING - Not Found: /metrics
+[2024-06-17 22:21:39,990]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 25.4 ms
+[2024-06-17 22:21:39,992]    WARNING - Not Found: /metrics
+[2024-06-17 22:21:54,997]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 33.5 ms
+[2024-06-17 22:21:54,999]    WARNING - Not Found: /metrics
+[2024-06-17 22:22:09,980]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.4 ms
+[2024-06-17 22:22:09,981]    WARNING - Not Found: /metrics
+[2024-06-17 22:22:24,987]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 25.4 ms
+[2024-06-17 22:22:24,988]    WARNING - Not Found: /metrics
+[2024-06-17 22:22:39,981]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.3 ms
+[2024-06-17 22:22:39,982]    WARNING - Not Found: /metrics
+[2024-06-17 22:22:54,984]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.6 ms
+[2024-06-17 22:22:54,987]    WARNING - Not Found: /metrics
+[2024-06-17 22:23:10,014]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 55.0 ms
+[2024-06-17 22:23:10,023]    WARNING - Not Found: /metrics
+[2024-06-17 22:23:15,959]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 404 30 B 120.6 ms
+[2024-06-17 22:23:15,960]    WARNING - Not Found: /api/v1/top/reviews/
+[2024-06-17 22:23:20,558]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 70.8 ms
+[2024-06-17 22:23:24,982]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 25.9 ms
+[2024-06-17 22:23:24,984]    WARNING - Not Found: /metrics
+[2024-06-17 22:23:40,002]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 43.2 ms
+[2024-06-17 22:23:40,003]    WARNING - Not Found: /metrics
+[2024-06-17 22:23:54,981]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 25.7 ms
+[2024-06-17 22:23:54,983]    WARNING - Not Found: /metrics
+[2024-06-17 22:24:10,009]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 53.5 ms
+[2024-06-17 22:24:10,011]    WARNING - Not Found: /metrics
+[2024-06-17 22:24:24,972]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.2 ms
+[2024-06-17 22:24:24,975]    WARNING - Not Found: /metrics
+[2024-06-17 22:24:40,007]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 52.9 ms
+[2024-06-17 22:24:40,011]    WARNING - Not Found: /metrics
+[2024-06-17 22:24:54,970]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.3 ms
+[2024-06-17 22:24:54,971]    WARNING - Not Found: /metrics
+[2024-06-17 22:25:09,966]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.7 ms
+[2024-06-17 22:25:09,968]    WARNING - Not Found: /metrics
+[2024-06-17 22:25:20,057]    INFO - Request: 'GET /admin/reviews/review/3b862cd4-1ccf-4e3a-9e7f-72acd08b640f/change/ HTTP/1.1' 200 39603 B 383.3 ms
+[2024-06-17 22:25:20,203]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 62.9 ms
+[2024-06-17 22:25:21,458]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 78.0 ms
+[2024-06-17 22:25:24,982]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 35.2 ms
+[2024-06-17 22:25:24,984]    WARNING - Not Found: /metrics
+[2024-06-17 22:25:39,970]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.5 ms
+[2024-06-17 22:25:39,972]    WARNING - Not Found: /metrics
+[2024-06-17 22:25:50,708]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:25:56,508]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:26:05,597]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:26:10,182]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:26:21,672]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:26:26,170]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:26:40,087]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 110.2 ms
+[2024-06-17 22:26:40,090]    WARNING - Not Found: /metrics
+[2024-06-17 22:26:40,180]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 225.7 ms
+[2024-06-17 22:26:50,878]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 51.8 ms
+[2024-06-17 22:26:54,972]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.0 ms
+[2024-06-17 22:26:54,974]    WARNING - Not Found: /metrics
+[2024-06-17 22:27:05,431]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 33.1 ms
+[2024-06-17 22:27:07,928]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 40.0 ms
+[2024-06-17 22:27:10,020]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 72.2 ms
+[2024-06-17 22:27:10,031]    WARNING - Not Found: /metrics
+[2024-06-17 22:27:14,310]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 32408 B 552.2 ms
+[2024-06-17 22:27:15,003]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 38.0 ms
+[2024-06-17 22:27:21,724]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 34890 B 226.1 ms
+[2024-06-17 22:27:21,833]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 27.6 ms
+[2024-06-17 22:27:21,898]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 39.9 ms
+[2024-06-17 22:27:23,671]    INFO - Request: 'GET /admin/animes/anime/d459d7ad-5180-4028-8ecb-b575d6d4dc46/change/ HTTP/1.1' 200 69287 B 348.7 ms
+[2024-06-17 22:27:23,802]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 60.5 ms
+[2024-06-17 22:27:24,052]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 30.7 ms
+[2024-06-17 22:27:24,964]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.2 ms
+[2024-06-17 22:27:24,965]    WARNING - Not Found: /metrics
+[2024-06-17 22:27:39,958]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.0 ms
+[2024-06-17 22:27:39,959]    WARNING - Not Found: /metrics
+[2024-06-17 22:27:40,134]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 32408 B 65.8 ms
+[2024-06-17 22:27:40,214]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 25.1 ms
+[2024-06-17 22:27:40,316]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 53.3 ms
+[2024-06-17 22:27:41,955]    INFO - Request: 'GET /admin/reviews/review/add/ HTTP/1.1' 200 39164 B 106.1 ms
+[2024-06-17 22:27:42,046]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 30.6 ms
+[2024-06-17 22:27:54,962]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.0 ms
+[2024-06-17 22:27:54,963]    WARNING - Not Found: /metrics
+[2024-06-17 22:28:04,821]    INFO - Request: 'POST /admin/reviews/review/add/ HTTP/1.1' 302 0 B 98.2 ms
+[2024-06-17 22:28:04,956]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33361 B 112.5 ms
+[2024-06-17 22:28:05,101]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 36.8 ms
+[2024-06-17 22:28:09,971]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 30.3 ms
+[2024-06-17 22:28:09,974]    WARNING - Not Found: /metrics
+[2024-06-17 22:28:13,619]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 61.3 ms
+[2024-06-17 22:28:24,962]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.6 ms
+[2024-06-17 22:28:24,964]    WARNING - Not Found: /metrics
+[2024-06-17 22:28:26,293]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 404 30 B 29.4 ms
+[2024-06-17 22:28:26,294]    WARNING - Not Found: /api/v1/top/reviews/
+[2024-06-17 22:28:39,967]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.1 ms
+[2024-06-17 22:28:39,969]    WARNING - Not Found: /metrics
+[2024-06-17 22:28:52,883]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 404 30 B 82.5 ms
+[2024-06-17 22:28:52,883]    WARNING - Not Found: /api/v1/top/reviews/
+[2024-06-17 22:28:54,957]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.4 ms
+[2024-06-17 22:28:54,959]    WARNING - Not Found: /metrics
+[2024-06-17 22:28:56,144]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 80.7 ms
+[2024-06-17 22:29:09,988]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 47.9 ms
+[2024-06-17 22:29:09,989]    WARNING - Not Found: /metrics
+[2024-06-17 22:29:21,873]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:29:26,172]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:29:39,996]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 33.0 ms
+[2024-06-17 22:29:39,997]    WARNING - Not Found: /metrics
+[2024-06-17 22:29:54,956]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.4 ms
+[2024-06-17 22:29:54,958]    WARNING - Not Found: /metrics
+[2024-06-17 22:30:09,950]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.9 ms
+[2024-06-17 22:30:09,951]    WARNING - Not Found: /metrics
+[2024-06-17 22:30:24,952]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.4 ms
+[2024-06-17 22:30:24,954]    WARNING - Not Found: /metrics
+[2024-06-17 22:30:39,958]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.4 ms
+[2024-06-17 22:30:39,960]    WARNING - Not Found: /metrics
+[2024-06-17 22:30:40,123]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 123.1 ms
+[2024-06-17 22:30:41,485]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 36.7 ms
+[2024-06-17 22:30:42,898]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 41.5 ms
+[2024-06-17 22:30:47,225]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 60.1 ms
+[2024-06-17 22:30:54,945]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.9 ms
+[2024-06-17 22:30:54,946]    WARNING - Not Found: /metrics
+[2024-06-17 22:31:06,039]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 400 78 B 23.7 ms
+[2024-06-17 22:31:06,040]    WARNING - Bad Request: /api/v1/top/reviews/
+[2024-06-17 22:31:07,820]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 400 78 B 24.0 ms
+[2024-06-17 22:31:07,821]    WARNING - Bad Request: /api/v1/top/reviews/
+[2024-06-17 22:31:09,459]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 400 78 B 21.9 ms
+[2024-06-17 22:31:09,460]    WARNING - Bad Request: /api/v1/top/reviews/
+[2024-06-17 22:31:09,965]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 35.1 ms
+[2024-06-17 22:31:09,971]    WARNING - Not Found: /metrics
+[2024-06-17 22:31:16,900]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 42.3 ms
+[2024-06-17 22:31:24,956]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 28.1 ms
+[2024-06-17 22:31:24,958]    WARNING - Not Found: /metrics
+[2024-06-17 22:31:26,145]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 70.9 ms
+[2024-06-17 22:31:30,849]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 61.1 ms
+[2024-06-17 22:31:39,981]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 51.2 ms
+[2024-06-17 22:31:39,983]    WARNING - Not Found: /metrics
+[2024-06-17 22:31:54,958]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.8 ms
+[2024-06-17 22:31:54,959]    WARNING - Not Found: /metrics
+[2024-06-17 22:32:09,949]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.9 ms
+[2024-06-17 22:32:09,951]    WARNING - Not Found: /metrics
+[2024-06-17 22:32:24,947]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.0 ms
+[2024-06-17 22:32:24,949]    WARNING - Not Found: /metrics
+[2024-06-17 22:32:26,563]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-17 22:32:34,775]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:32:39,020]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 160.5 ms
+[2024-06-17 22:32:40,017]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 88.6 ms
+[2024-06-17 22:32:40,019]    WARNING - Not Found: /metrics
+[2024-06-17 22:32:41,243]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 65.5 ms
+[2024-06-17 22:32:45,390]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 55.5 ms
+[2024-06-17 22:32:50,307]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 55.9 ms
+[2024-06-17 22:32:54,959]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 34.7 ms
+[2024-06-17 22:32:54,961]    WARNING - Not Found: /metrics
+[2024-06-17 22:32:58,712]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 224 B 33.0 ms
+[2024-06-17 22:33:04,603]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 64.2 ms
+[2024-06-17 22:33:09,954]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.5 ms
+[2024-06-17 22:33:09,956]    WARNING - Not Found: /metrics
+[2024-06-17 22:33:11,575]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 224 B 81.9 ms
+[2024-06-17 22:33:18,323]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-17 22:33:24,514]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:33:39,982]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 49.6 ms
+[2024-06-17 22:33:39,984]    WARNING - Not Found: /metrics
+[2024-06-17 22:33:54,954]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 33.8 ms
+[2024-06-17 22:33:54,956]    WARNING - Not Found: /metrics
+[2024-06-17 22:34:02,243]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-17 22:34:09,129]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:34:21,005]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:34:26,552]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:34:39,969]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.7 ms
+[2024-06-17 22:34:39,972]    WARNING - Not Found: /metrics
+[2024-06-17 22:34:54,962]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 46.7 ms
+[2024-06-17 22:34:54,978]    WARNING - Not Found: /metrics
+[2024-06-17 22:35:09,949]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.6 ms
+[2024-06-17 22:35:09,950]    WARNING - Not Found: /metrics
+[2024-06-17 22:35:24,941]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 28.2 ms
+[2024-06-17 22:35:24,943]    WARNING - Not Found: /metrics
+[2024-06-17 22:35:32,360]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:35:38,148]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:35:52,147]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:35:57,369]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:36:06,219]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:36:11,439]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:36:24,946]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 30.9 ms
+[2024-06-17 22:36:24,948]    WARNING - Not Found: /metrics
+[2024-06-17 22:36:33,542]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:36:38,610]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:36:54,959]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.1 ms
+[2024-06-17 22:36:54,961]    WARNING - Not Found: /metrics
+[2024-06-17 22:37:04,514]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:37:10,946]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:37:24,968]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 51.6 ms
+[2024-06-17 22:37:24,970]    WARNING - Not Found: /metrics
+[2024-06-17 22:37:31,112]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:37:36,725]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:37:46,655]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:37:53,521]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:38:02,791]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:38:07,924]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:38:24,969]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 56.6 ms
+[2024-06-17 22:38:24,972]    WARNING - Not Found: /metrics
+[2024-06-17 22:38:39,926]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 28.1 ms
+[2024-06-17 22:38:39,929]    WARNING - Not Found: /metrics
+[2024-06-17 22:38:54,926]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 25.0 ms
+[2024-06-17 22:38:54,928]    WARNING - Not Found: /metrics
+[2024-06-17 22:39:09,936]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.1 ms
+[2024-06-17 22:39:09,945]    WARNING - Not Found: /metrics
+[2024-06-17 22:39:24,956]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 53.8 ms
+[2024-06-17 22:39:24,958]    WARNING - Not Found: /metrics
+[2024-06-17 22:39:39,970]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 65.4 ms
+[2024-06-17 22:39:39,972]    WARNING - Not Found: /metrics
+[2024-06-17 22:39:43,709]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:39:49,664]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:39:54,931]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.7 ms
+[2024-06-17 22:39:54,932]    WARNING - Not Found: /metrics
+[2024-06-17 22:39:57,878]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:40:03,600]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:40:13,390]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:40:20,104]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:40:24,941]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.7 ms
+[2024-06-17 22:40:24,943]    WARNING - Not Found: /metrics
+[2024-06-17 22:40:33,181]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:40:40,033]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:40:54,979]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 76.7 ms
+[2024-06-17 22:40:54,982]    WARNING - Not Found: /metrics
+[2024-06-17 22:41:09,918]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.4 ms
+[2024-06-17 22:41:09,920]    WARNING - Not Found: /metrics
+[2024-06-17 22:41:24,910]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.0 ms
+[2024-06-17 22:41:24,912]    WARNING - Not Found: /metrics
+[2024-06-17 22:41:29,379]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 224 B 89.3 ms
+[2024-06-17 22:41:30,714]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 224 B 46.0 ms
+[2024-06-17 22:41:32,005]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 224 B 27.5 ms
+[2024-06-17 22:41:36,395]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 84.4 ms
+[2024-06-17 22:41:39,744]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 29.8 ms
+[2024-06-17 22:41:39,945]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 53.3 ms
+[2024-06-17 22:41:39,948]    WARNING - Not Found: /metrics
+[2024-06-17 22:41:40,837]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 22.6 ms
+[2024-06-17 22:41:42,014]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 24.1 ms
+[2024-06-17 22:41:45,724]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 91.4 ms
+[2024-06-17 22:41:47,028]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 38.7 ms
+[2024-06-17 22:41:48,168]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 46.9 ms
+[2024-06-17 22:41:49,324]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 41.0 ms
+[2024-06-17 22:41:54,918]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 28.2 ms
+[2024-06-17 22:41:54,919]    WARNING - Not Found: /metrics
+[2024-06-17 22:42:09,915]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.2 ms
+[2024-06-17 22:42:09,916]    WARNING - Not Found: /metrics
+[2024-06-17 22:42:19,504]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 38.2 ms
+[2024-06-17 22:42:22,834]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 66.1 ms
+[2024-06-17 22:42:24,908]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.4 ms
+[2024-06-17 22:42:24,910]    WARNING - Not Found: /metrics
+[2024-06-17 22:42:33,003]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:42:38,515]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:42:47,858]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:42:52,533]    INFO - Watching for file changes with StatReloader
+[2024-06-17 22:42:54,963]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 61.2 ms
+[2024-06-17 22:42:54,967]    WARNING - Not Found: /metrics
+[2024-06-17 22:43:02,083]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 76.6 ms
+[2024-06-17 22:43:03,239]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 51.4 ms
+[2024-06-17 22:43:04,480]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 42.6 ms
+[2024-06-17 22:43:05,540]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 26.4 ms
+[2024-06-17 22:43:06,945]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 23.3 ms
+[2024-06-17 22:43:08,180]    INFO - Request: 'GET /api/v1/top/artists/ HTTP/1.1' 200 220 B 22.7 ms
+[2024-06-17 22:43:09,908]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.6 ms
+[2024-06-17 22:43:09,909]    WARNING - Not Found: /metrics
+[2024-06-17 22:43:24,918]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 30.0 ms
+[2024-06-17 22:43:24,920]    WARNING - Not Found: /metrics
+[2024-06-17 22:43:39,912]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.1 ms
+[2024-06-17 22:43:39,914]    WARNING - Not Found: /metrics
+[2024-06-17 22:43:54,903]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.2 ms
+[2024-06-17 22:43:54,904]    WARNING - Not Found: /metrics
+[2024-06-17 22:44:09,936]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 46.8 ms
+[2024-06-17 22:44:09,937]    WARNING - Not Found: /metrics
+[2024-06-17 22:44:24,936]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 49.9 ms
+[2024-06-17 22:44:24,937]    WARNING - Not Found: /metrics
+[2024-06-17 22:44:39,914]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.9 ms
+[2024-06-17 22:44:39,917]    WARNING - Not Found: /metrics
+[2024-06-17 22:44:49,055]    INFO - /app/apps/tops/views.py changed, reloading.
+[2024-06-17 22:44:53,288]    INFO - Watching for file changes with StatReloader
