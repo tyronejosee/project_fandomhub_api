@@ -1,0 +1,45 @@
+{
+  "Create Django Model": {
+    "prefix": ".model",
+    "body": [
+      "from django.db import models",
+      "",
+      "",
+      "class ${1:ModelName}(models.Model):",
+      "    '''Model definition for ${1:ModelName} model.'''",
+      "",
+      "    pass",
+      "",
+      "    class Meta:",
+      "        ordering = ['pk']",
+      "        verbose_name = '${1:ModelName}'",
+      "        verbose_name_plural = '${1:ModelNames}s'",
+      "",
+      "    def __str__(self):",
+      "        return str(self.PENDING)"
+    ],
+    "description": "Create a Django model"
+  },
+  "Create Django Model (Tranlate)": {
+    "prefix": ".model_trans",
+    "body": [
+      "from django.db import models",
+      "from django.utils.translation import gettext as _",
+      "",
+      "",
+      "class ${1:ModelName}(models.Model):",
+      "    '''Model definition for ${1:ModelName} model.'''",
+      "",
+      "    pass",
+      "",
+      "    class Meta:",
+      "        ordering = ['pk']",
+      "        verbose_name = _('${1:ModelName}')",
+      "        verbose_name_plural = _('${1:ModelNames}s')",
+      "",
+      "    def __str__(self):",
+      "        return str(self.PENDING)"
+    ],
+    "description": "Create a Django model (Translate)"
+  }
+}

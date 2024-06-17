@@ -52,6 +52,7 @@ class CharacterMinimalSerializer(serializers.ModelSerializer):
             "name",
             "role",
             "image",
+            "created_at",
         ]
 
 
