@@ -22,3 +22,490 @@
 [2024-06-18 20:29:03,983]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18654 B 9.8 ms
 [2024-06-18 20:29:18,974]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 3.9 ms
 [2024-06-18 20:29:55,883]    INFO - Watching for file changes with StatReloader
+[2024-06-18 20:30:03,993]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 14.4 ms
+[2024-06-18 21:00:22,141]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:00:31,060]    INFO - /app/apps/producers/viewsets.py changed, reloading.
+[2024-06-18 21:00:35,121]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:00:48,850]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 3.6 ms
+[2024-06-18 21:01:03,838]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18565 B 5.3 ms
+[2024-06-18 21:01:18,856]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 19.0 ms
+[2024-06-18 21:01:33,853]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 17.5 ms
+[2024-06-18 21:01:41,623]    INFO - /app/apps/producers/viewsets.py changed, reloading.
+[2024-06-18 21:01:46,890]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:02:03,854]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 6.2 ms
+[2024-06-18 21:02:18,838]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 10.6 ms
+[2024-06-18 21:02:33,843]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 14.0 ms
+[2024-06-18 21:02:48,840]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 10.2 ms
+[2024-06-18 21:02:52,724]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 289.7 ms
+[2024-06-18 21:02:56,825]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 7.1 ms
+[2024-06-18 21:03:03,841]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21524 B 13.1 ms
+[2024-06-18 21:03:18,838]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21525 B 10.9 ms
+[2024-06-18 21:03:33,823]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21524 B 3.0 ms
+[2024-06-18 21:03:41,883]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 665 B 35.4 ms
+[2024-06-18 21:03:48,826]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21594 B 4.5 ms
+[2024-06-18 21:03:49,463]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 428 B 23.5 ms
+[2024-06-18 21:03:55,466]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 29.6 ms
+[2024-06-18 21:04:03,837]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21598 B 13.8 ms
+[2024-06-18 21:04:18,830]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21600 B 10.8 ms
+[2024-06-18 21:04:28,993]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 3.0 ms
+[2024-06-18 21:04:30,143]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 3.3 ms
+[2024-06-18 21:04:31,102]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 6.1 ms
+[2024-06-18 21:04:32,483]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 3.6 ms
+[2024-06-18 21:04:33,829]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21628 B 10.5 ms
+[2024-06-18 21:04:36,956]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 5.5 ms
+[2024-06-18 21:04:40,229]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 5.3 ms
+[2024-06-18 21:04:48,819]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21648 B 5.1 ms
+[2024-06-18 21:05:03,816]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21638 B 4.5 ms
+[2024-06-18 21:05:18,822]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21637 B 10.7 ms
+[2024-06-18 21:05:32,062]    INFO - /app/apps/producers/viewsets.py changed, reloading.
+[2024-06-18 21:05:37,455]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:05:46,236]    INFO - /app/apps/producers/viewsets.py changed, reloading.
+[2024-06-18 21:05:51,652]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:05:54,766]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 88.2 ms
+[2024-06-18 21:05:56,505]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 98.8 ms
+[2024-06-18 21:05:57,818]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 27.0 ms
+[2024-06-18 21:05:59,236]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 28.8 ms
+[2024-06-18 21:06:00,540]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 18.8 ms
+[2024-06-18 21:06:01,736]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 29.7 ms
+[2024-06-18 21:06:03,281]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 29.9 ms
+[2024-06-18 21:06:03,818]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 5.7 ms
+[2024-06-18 21:06:04,729]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 25.2 ms
+[2024-06-18 21:06:06,117]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 24.2 ms
+[2024-06-18 21:06:07,329]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 19.2 ms
+[2024-06-18 21:06:08,518]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 24.5 ms
+[2024-06-18 21:06:10,054]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 25.5 ms
+[2024-06-18 21:06:11,414]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 18.9 ms
+[2024-06-18 21:06:12,845]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 20.4 ms
+[2024-06-18 21:06:18,830]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21287 B 15.6 ms
+[2024-06-18 21:06:27,783]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 31.4 ms
+[2024-06-18 21:06:28,955]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 31.8 ms
+[2024-06-18 21:06:30,246]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 22.0 ms
+[2024-06-18 21:06:32,248]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 24.0 ms
+[2024-06-18 21:06:33,810]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21288 B 4.2 ms
+[2024-06-18 21:06:34,176]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 24.6 ms
+[2024-06-18 21:06:35,810]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 21.2 ms
+[2024-06-18 21:06:37,606]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 32.3 ms
+[2024-06-18 21:06:39,086]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 23.2 ms
+[2024-06-18 21:06:40,987]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 25.9 ms
+[2024-06-18 21:06:42,506]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 19.7 ms
+[2024-06-18 21:06:48,812]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21288 B 4.5 ms
+[2024-06-18 21:06:59,411]    INFO - /app/apps/producers/viewsets.py changed, reloading.
+[2024-06-18 21:07:05,077]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:07:11,575]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 11.4 ms
+[2024-06-18 21:07:13,305]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 5.6 ms
+[2024-06-18 21:07:14,535]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 5.7 ms
+[2024-06-18 21:07:16,117]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 5.0 ms
+[2024-06-18 21:07:17,413]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 5.7 ms
+[2024-06-18 21:07:18,729]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 4.8 ms
+[2024-06-18 21:07:18,819]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18536 B 13.3 ms
+[2024-06-18 21:07:19,958]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 4.9 ms
+[2024-06-18 21:07:21,459]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 5.5 ms
+[2024-06-18 21:07:22,805]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 3.5 ms
+[2024-06-18 21:07:24,168]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 3.7 ms
+[2024-06-18 21:07:25,328]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 4.6 ms
+[2024-06-18 21:07:33,822]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21287 B 15.7 ms
+[2024-06-18 21:07:43,957]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 6.8 ms
+[2024-06-18 21:07:48,817]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21288 B 14.1 ms
+[2024-06-18 21:08:03,805]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21288 B 3.9 ms
+[2024-06-18 21:08:18,807]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21291 B 5.5 ms
+[2024-06-18 21:08:19,953]    INFO - /app/apps/producers/viewsets.py changed, reloading.
+[2024-06-18 21:08:26,958]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:08:33,807]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 3.3 ms
+[2024-06-18 21:08:48,810]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 7.4 ms
+[2024-06-18 21:09:03,804]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 5.9 ms
+[2024-06-18 21:09:18,805]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 6.8 ms
+[2024-06-18 21:09:21,997]    INFO - /app/apps/utils/filters.py changed, reloading.
+[2024-06-18 21:09:26,954]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:09:33,842]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 12.1 ms
+[2024-06-18 21:09:42,066]    INFO - /app/apps/utils/filters.py changed, reloading.
+[2024-06-18 21:09:48,906]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:09:56,898]    INFO - /app/apps/utils/filters.py changed, reloading.
+[2024-06-18 21:10:02,279]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:10:11,617]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 10.2 ms
+[2024-06-18 21:10:13,164]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 6.7 ms
+[2024-06-18 21:10:14,344]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 7.7 ms
+[2024-06-18 21:10:15,866]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 3.6 ms
+[2024-06-18 21:10:18,809]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18533 B 9.4 ms
+[2024-06-18 21:10:20,582]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 665 B 4.4 ms
+[2024-06-18 21:10:25,181]    ERROR - Internal Server Error: /api/v1/producers/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/producers/viewsets.py", line 59, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/rest_framework/backends.py", line 74, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 230, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 213, in filter_queryset
+    queryset = self.filters[name].filter(queryset, value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filters.py", line 820, in __call__
+    return self.method(qs, self.f.field_name, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/utils/filters.py", line 21, in filter_letter
+    raise APIException(
+          ^^^^^^^^^^^^^
+TypeError: APIException.__init__() got an unexpected keyword argument 'status_code'
+[2024-06-18 21:10:25,200]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 500 146092 B 180.8 ms
+[2024-06-18 21:10:33,797]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22170 B 7.3 ms
+[2024-06-18 21:10:48,792]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22172 B 5.3 ms
+[2024-06-18 21:11:03,792]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22209 B 3.3 ms
+[2024-06-18 21:11:18,817]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22250 B 24.4 ms
+[2024-06-18 21:11:33,788]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22258 B 3.8 ms
+[2024-06-18 21:11:48,787]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22245 B 3.3 ms
+[2024-06-18 21:11:54,544]    INFO - /app/apps/utils/filters.py changed, reloading.
+[2024-06-18 21:11:58,941]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:12:03,799]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 5.5 ms
+[2024-06-18 21:12:06,552]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 500 56 B 60.9 ms
+[2024-06-18 21:12:06,588]    ERROR - Internal Server Error: /api/v1/producers/
+[2024-06-18 21:12:13,011]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 500 56 B 20.6 ms
+[2024-06-18 21:12:13,012]    ERROR - Internal Server Error: /api/v1/producers/
+[2024-06-18 21:12:14,216]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 500 56 B 26.9 ms
+[2024-06-18 21:12:14,217]    ERROR - Internal Server Error: /api/v1/producers/
+[2024-06-18 21:12:15,636]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 500 56 B 20.2 ms
+[2024-06-18 21:12:15,637]    ERROR - Internal Server Error: /api/v1/producers/
+[2024-06-18 21:12:18,802]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21673 B 14.0 ms
+[2024-06-18 21:12:25,367]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 665 B 4.7 ms
+[2024-06-18 21:12:29,806]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 50.4 ms
+[2024-06-18 21:12:33,786]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21923 B 4.0 ms
+[2024-06-18 21:12:48,797]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21946 B 11.6 ms
+[2024-06-18 21:13:03,457]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 8.4 ms
+[2024-06-18 21:13:03,799]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21977 B 15.9 ms
+[2024-06-18 21:13:17,004]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 1364 B 37.9 ms
+[2024-06-18 21:13:18,788]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21993 B 8.8 ms
+[2024-06-18 21:13:20,940]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 4.6 ms
+[2024-06-18 21:13:27,615]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 500 56 B 36.4 ms
+[2024-06-18 21:13:27,616]    ERROR - Internal Server Error: /api/v1/producers/
+[2024-06-18 21:13:33,781]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21999 B 3.6 ms
+[2024-06-18 21:13:43,485]    INFO - /app/apps/utils/filters.py changed, reloading.
+[2024-06-18 21:13:48,980]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:14:00,926]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 500 56 B 76.3 ms
+[2024-06-18 21:14:00,927]    ERROR - Internal Server Error: /api/v1/producers/
+[2024-06-18 21:14:03,785]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18861 B 5.0 ms
+[2024-06-18 21:14:18,778]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21668 B 3.9 ms
+[2024-06-18 21:14:33,784]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21667 B 7.8 ms
+[2024-06-18 21:14:48,811]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21667 B 32.2 ms
+[2024-06-18 21:14:55,201]    INFO - /app/apps/utils/filters.py changed, reloading.
+[2024-06-18 21:15:01,857]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:15:18,803]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 10.3 ms
+[2024-06-18 21:15:22,305]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 31.4 ms
+[2024-06-18 21:15:25,253]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 7.1 ms
+[2024-06-18 21:15:26,718]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 6.9 ms
+[2024-06-18 21:15:33,774]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21198 B 5.5 ms
+[2024-06-18 21:15:38,394]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 665 B 4.3 ms
+[2024-06-18 21:15:44,212]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 5.8 ms
+[2024-06-18 21:15:48,779]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21197 B 8.0 ms
+[2024-06-18 21:15:50,026]    ERROR - Internal Server Error: /api/v1/producers/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/producers/viewsets.py", line 59, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/rest_framework/backends.py", line 74, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 230, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 213, in filter_queryset
+    queryset = self.filters[name].filter(queryset, value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filters.py", line 820, in __call__
+    return self.method(qs, self.f.field_name, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/utils/filters.py", line 22, in filter_letter
+    return filtered_queryset
+              ^^^^^^^^
+NameError: name 'NotFound' is not defined
+[2024-06-18 21:15:50,049]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 500 145946 B 300.1 ms
+[2024-06-18 21:16:03,788]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22211 B 17.7 ms
+[2024-06-18 21:16:18,769]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22239 B 4.6 ms
+[2024-06-18 21:16:23,627]    INFO - /app/apps/utils/filters.py changed, reloading.
+[2024-06-18 21:16:28,273]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:16:33,785]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 4.9 ms
+[2024-06-18 21:16:33,979]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 37.3 ms
+[2024-06-18 21:16:33,980]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:16:36,472]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 24.7 ms
+[2024-06-18 21:16:36,473]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:16:40,440]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 5.3 ms
+[2024-06-18 21:16:44,179]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 5.3 ms
+[2024-06-18 21:16:48,771]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21908 B 7.6 ms
+[2024-06-18 21:16:49,712]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 5.0 ms
+[2024-06-18 21:17:03,778]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21908 B 12.1 ms
+[2024-06-18 21:17:13,235]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 34.3 ms
+[2024-06-18 21:17:17,927]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 5.6 ms
+[2024-06-18 21:17:18,767]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21979 B 4.8 ms
+[2024-06-18 21:17:33,763]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21978 B 4.2 ms
+[2024-06-18 21:17:40,247]    INFO - /app/apps/utils/filters.py changed, reloading.
+[2024-06-18 21:17:44,509]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:17:48,773]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 7.3 ms
+[2024-06-18 21:17:49,949]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 18.9 ms
+[2024-06-18 21:17:51,281]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 7.8 ms
+[2024-06-18 21:17:52,503]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 5.0 ms
+[2024-06-18 21:17:53,788]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 6.6 ms
+[2024-06-18 21:17:56,897]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 47.9 ms
+[2024-06-18 21:17:56,899]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:18:02,005]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 6.2 ms
+[2024-06-18 21:18:03,764]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21906 B 4.7 ms
+[2024-06-18 21:18:14,559]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 372 B 50.0 ms
+[2024-06-18 21:18:18,079]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 40.0 ms
+[2024-06-18 21:18:18,086]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:18:18,760]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21975 B 3.2 ms
+[2024-06-18 21:18:22,870]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 33.5 ms
+[2024-06-18 21:18:22,871]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:18:25,921]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 52 B 4.9 ms
+[2024-06-18 21:18:33,755]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21996 B 2.5 ms
+[2024-06-18 21:18:48,758]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22010 B 5.2 ms
+[2024-06-18 21:19:03,763]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21997 B 9.7 ms
+[2024-06-18 21:19:11,210]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 53.6 ms
+[2024-06-18 21:19:18,753]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21997 B 3.8 ms
+[2024-06-18 21:19:23,065]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 19.0 ms
+[2024-06-18 21:19:23,066]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:19:27,768]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 19.8 ms
+[2024-06-18 21:19:27,770]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:19:31,745]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 344 B 83.0 ms
+[2024-06-18 21:19:33,765]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22006 B 13.0 ms
+[2024-06-18 21:19:36,464]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 355 B 36.7 ms
+[2024-06-18 21:19:40,049]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 19.6 ms
+[2024-06-18 21:19:40,050]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:19:48,757]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22019 B 6.1 ms
+[2024-06-18 21:19:52,122]    INFO - /app/apps/utils/filters.py changed, reloading.
+[2024-06-18 21:19:57,597]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:20:03,780]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 15.2 ms
+[2024-06-18 21:20:18,493]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 42.8 ms
+[2024-06-18 21:20:18,753]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21539 B 5.9 ms
+[2024-06-18 21:20:20,482]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 9.3 ms
+[2024-06-18 21:20:21,937]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 3.8 ms
+[2024-06-18 21:20:30,883]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 22.2 ms
+[2024-06-18 21:20:30,884]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:20:33,749]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21909 B 4.9 ms
+[2024-06-18 21:20:37,325]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 19.9 ms
+[2024-06-18 21:20:37,326]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:20:45,296]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 404 56 B 39.9 ms
+[2024-06-18 21:20:45,297]    WARNING - Not Found: /api/v1/producers/
+[2024-06-18 21:20:48,749]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21945 B 4.7 ms
+[2024-06-18 21:20:54,175]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 355 B 46.7 ms
+[2024-06-18 21:21:03,750]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21979 B 8.5 ms
+[2024-06-18 21:21:18,760]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21980 B 14.4 ms
+[2024-06-18 21:21:33,743]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21982 B 3.3 ms
+[2024-06-18 21:21:48,744]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21983 B 3.1 ms
+[2024-06-18 21:22:03,741]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21982 B 5.4 ms
+[2024-06-18 21:22:18,741]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21997 B 3.5 ms
+[2024-06-18 21:22:33,738]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21996 B 2.6 ms
+[2024-06-18 21:22:48,742]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22001 B 5.5 ms
+[2024-06-18 21:22:49,213]    INFO - /app/apps/utils/filters.py changed, reloading.
+[2024-06-18 21:22:53,608]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:23:03,740]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 4.3 ms
+[2024-06-18 21:23:18,732]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18544 B 2.8 ms
+[2024-06-18 21:23:33,731]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18546 B 2.9 ms
+[2024-06-18 21:23:48,733]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18546 B 3.8 ms
+[2024-06-18 21:24:03,734]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 5.7 ms
+[2024-06-18 21:24:18,730]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18559 B 2.9 ms
+[2024-06-18 21:24:33,727]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 2.7 ms
+[2024-06-18 21:24:48,726]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 2.2 ms
+[2024-06-18 21:25:03,726]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 3.2 ms
+[2024-06-18 21:25:18,725]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18599 B 2.2 ms
+[2024-06-18 21:25:33,722]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18654 B 2.1 ms
+[2024-06-18 21:25:48,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 5.7 ms
+[2024-06-18 21:26:03,719]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 2.1 ms
+[2024-06-18 21:26:18,719]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 2.3 ms
+[2024-06-18 21:26:33,718]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 2.1 ms
+[2024-06-18 21:26:48,720]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 3.8 ms
+[2024-06-18 21:27:03,717]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 4.0 ms
+[2024-06-18 21:27:18,718]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 3.6 ms
+[2024-06-18 21:27:33,718]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 5.2 ms
+[2024-06-18 21:27:48,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 14.6 ms
+[2024-06-18 21:28:03,717]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 6.6 ms
+[2024-06-18 21:28:18,718]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 6.0 ms
+[2024-06-18 21:28:33,715]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 6.4 ms
+[2024-06-18 21:28:48,714]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 4.1 ms
+[2024-06-18 21:29:03,709]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 4.2 ms
+[2024-06-18 21:29:18,713]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 6.2 ms
+[2024-06-18 21:29:33,711]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 6.3 ms
+[2024-06-18 21:29:48,714]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 9.2 ms
+[2024-06-18 21:30:03,710]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 6.0 ms
+[2024-06-18 21:30:18,712]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 8.2 ms
+[2024-06-18 21:30:33,707]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 4.4 ms
+[2024-06-18 21:30:34,651]    INFO - /app/apps/producers/viewsets.py changed, reloading.
+[2024-06-18 21:30:42,096]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:30:48,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 15.2 ms
+[2024-06-18 21:31:03,709]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 4.8 ms
+[2024-06-18 21:31:18,705]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 5.2 ms
+[2024-06-18 21:31:33,703]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 5.7 ms
+[2024-06-18 21:31:44,157]    INFO - /app/apps/persons/viewsets.py changed, reloading.
+[2024-06-18 21:31:57,897]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:32:03,768]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 18.4 ms
+[2024-06-18 21:32:11,897]    INFO - /app/apps/persons/viewsets.py changed, reloading.
+[2024-06-18 21:32:20,115]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:32:29,044]    INFO - /app/apps/persons/viewsets.py changed, reloading.
+[2024-06-18 21:32:35,177]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:32:48,238]    INFO - /app/apps/persons/viewsets.py changed, reloading.
+[2024-06-18 21:32:56,431]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:33:03,713]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14926 B 5.4 ms
+[2024-06-18 21:33:08,846]    INFO - /app/apps/producers/filters.py changed, reloading.
+[2024-06-18 21:33:15,083]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:33:33,709]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 9.4 ms
+[2024-06-18 21:33:48,696]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 4.8 ms
+[2024-06-18 21:34:03,693]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 5.1 ms
+[2024-06-18 21:34:18,695]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 4.8 ms
+[2024-06-18 21:34:19,035]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-18 21:34:25,067]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:34:31,788]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-18 21:34:39,398]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:37:12,469]    INFO - /app/apps/animes/__init__.py changed, reloading.
+[2024-06-18 21:37:17,563]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:37:31,012]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 246.3 ms
+[2024-06-18 21:37:33,683]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18806 B 6.2 ms
+[2024-06-18 21:37:34,051]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 5.2 ms
+[2024-06-18 21:37:48,431]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 77.2 ms
+[2024-06-18 21:37:48,684]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21450 B 6.4 ms
+[2024-06-18 21:38:03,682]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21451 B 5.6 ms
+[2024-06-18 21:38:18,335]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 90.1 ms
+[2024-06-18 21:38:18,679]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21453 B 5.0 ms
+[2024-06-18 21:38:29,812]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 44.2 ms
+[2024-06-18 21:38:33,679]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21489 B 5.1 ms
+[2024-06-18 21:38:48,691]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21522 B 14.3 ms
+[2024-06-18 21:38:50,988]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-18 21:38:56,560]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:39:03,740]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 31.4 ms
+[2024-06-18 21:39:11,445]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 19.6 ms
+[2024-06-18 21:39:18,678]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21120 B 4.6 ms
+[2024-06-18 21:39:33,675]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21119 B 5.1 ms
+[2024-06-18 21:39:48,677]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21119 B 5.8 ms
+[2024-06-18 21:39:59,636]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-06-18 21:40:08,745]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:40:18,690]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14906 B 14.1 ms
+[2024-06-18 21:40:33,671]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 4.9 ms
+[2024-06-18 21:40:47,592]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-06-18 21:40:56,179]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:41:03,097]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 16.9 ms
+[2024-06-18 21:41:03,672]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18457 B 7.5 ms
+[2024-06-18 21:41:11,470]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 7.7 ms
+[2024-06-18 21:41:18,667]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21120 B 6.2 ms
+[2024-06-18 21:41:25,323]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 404 43 B 61.2 ms
+[2024-06-18 21:41:25,325]    WARNING - Not Found: /api/v1/animes/
+[2024-06-18 21:41:31,106]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 4.8 ms
+[2024-06-18 21:41:33,667]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21826 B 7.4 ms
+[2024-06-18 21:41:48,663]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21828 B 5.4 ms
+[2024-06-18 21:42:03,664]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21827 B 6.1 ms
+[2024-06-18 21:42:16,977]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 103.4 ms
+[2024-06-18 21:42:18,669]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21897 B 11.4 ms
+[2024-06-18 21:42:19,997]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 4.6 ms
+[2024-06-18 21:42:30,233]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 501 B 48.9 ms
+[2024-06-18 21:42:33,672]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21912 B 9.3 ms
+[2024-06-18 21:42:36,487]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 404 43 B 38.8 ms
+[2024-06-18 21:42:36,488]    WARNING - Not Found: /api/v1/animes/
+[2024-06-18 21:42:41,184]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 404 43 B 33.3 ms
+[2024-06-18 21:42:41,186]    WARNING - Not Found: /api/v1/animes/
+[2024-06-18 21:42:47,805]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 501 B 2.8 ms
+[2024-06-18 21:42:48,658]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21917 B 5.2 ms
+[2024-06-18 21:43:03,657]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21918 B 4.5 ms
+[2024-06-18 21:43:18,396]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 83.3 ms
+[2024-06-18 21:43:18,665]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21916 B 12.4 ms
+[2024-06-18 21:43:27,148]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 501 B 83.1 ms
+[2024-06-18 21:43:33,666]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21936 B 13.4 ms
+[2024-06-18 21:43:48,657]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21936 B 5.9 ms
+[2024-06-18 21:44:03,661]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 10.4 ms
+[2024-06-18 21:44:18,653]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21937 B 4.3 ms
+[2024-06-18 21:44:33,652]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21951 B 4.6 ms
+[2024-06-18 21:44:48,671]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 19.1 ms
+[2024-06-18 21:45:03,648]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21939 B 3.3 ms
+[2024-06-18 21:45:18,648]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21952 B 3.2 ms
+[2024-06-18 21:45:33,646]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 3.1 ms
+[2024-06-18 21:45:48,648]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21939 B 6.9 ms
+[2024-06-18 21:46:03,645]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 4.1 ms
+[2024-06-18 21:46:18,647]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21951 B 5.2 ms
+[2024-06-18 21:46:33,646]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21950 B 6.1 ms
+[2024-06-18 21:46:48,646]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21939 B 5.2 ms
+[2024-06-18 21:47:03,638]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 3.1 ms
+[2024-06-18 21:47:18,649]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 11.0 ms
+[2024-06-18 21:47:33,629]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21939 B 5.0 ms
+[2024-06-18 21:47:48,627]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 3.3 ms
+[2024-06-18 21:48:03,626]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 6.9 ms
+[2024-06-18 21:48:18,622]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21939 B 3.5 ms
+[2024-06-18 21:48:33,619]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 3.9 ms
+[2024-06-18 21:48:40,359]    INFO - /app/apps/producers/filters.py changed, reloading.
+[2024-06-18 21:48:47,167]    INFO - Watching for file changes with StatReloader
+[2024-06-18 21:49:02,190]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-18 21:49:08,059]    INFO - Watching for file changes with StatReloader

@@ -17,6 +17,7 @@ from apps.animes.models import Anime
 from apps.animes.serializers import AnimeMinimalSerializer
 from .models import Producer
 from .serializers import ProducerReadSerializer, ProducerWriteSerializer
+from .filters import ProducerFilter
 
 
 class ProducerViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
@@ -36,6 +37,7 @@ class ProducerViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     serializer_class = ProducerWriteSerializer
     search_fields = ["name"]
     ordering_fields = ["name"]
+    filterset_class = ProducerFilter
 
     def get_queryset(self):
         return Producer.objects.get_available()

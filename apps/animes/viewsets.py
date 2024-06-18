@@ -33,6 +33,7 @@ from .serializers import (
     AnimeMinimalSerializer,
     AnimeStatsReadSerializer,
 )
+from .filters import AnimeFilter
 from .schemas import anime_schemas
 
 
@@ -54,6 +55,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     serializer_class = AnimeWriteSerializer
     search_fields = ["name", "studio_id__name"]
     ordering_fields = ["name"]
+    filterset_class = AnimeFilter
     # lookup_field = "slug"
     # lookup_url_kwarg = "anime_id"
 

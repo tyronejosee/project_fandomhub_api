@@ -2,25 +2,22 @@
 
 from django_filters import rest_framework as filters
 
+from apps.utils.filters import BaseFilter
 from .models import Anime
 from .choices import MediaTypeChoices, StatusChoices, RatingChoices
 
 
-class AnimeFilter(filters.FilterSet):
+class AnimeFilter(BaseFilter):
     """Filter for Anime model."""
 
     genre = filters.CharFilter(field_name="genres__name", lookup_expr="icontains")
     theme = filters.CharFilter(field_name="themes__name", lookup_expr="icontains")
     min_score = filters.NumberFilter(field_name="score", lookup_expr="gte")
     max_score = filters.NumberFilter(field_name="score", lookup_expr="lte")
-    letter = filters.CharFilter(field_name="name", method="filter_letter")
 
     class Meta:
         model = Anime
-        fields = []
-
-    def filter_letter(self, queryset, name, value):
-        return queryset.filter(name__istartswith=value)
+        fields = ["sort", "letter"]
 
 
 class AnimeMinimalFilter(filters.FilterSet):

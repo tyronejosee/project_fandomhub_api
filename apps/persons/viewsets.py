@@ -86,33 +86,27 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/persons/{id}/mangas/
         """
         person = self.get_object()
-
-        try:
-            category = person.category
-            if category != CategoryChoices.WRITER:
-                return Response(
-                    {
-                        "detail": _(
-                            f"This person is not a writer, current {category.upper()}."
-                        )
-                    },
-                    status=status.HTTP_400_BAD_REQUEST,
-                )
-            manga_list = person.manga_set.all()
-            # manga_list = Manga.objects.filter(author_id=pk)
-            if manga_list.exists():
-                paginator = MediumSetPagination()
-                paginated_data = paginator.paginate_queryset(manga_list, request)
-                serializer = MangaMinimalSerializer(paginated_data, many=True)
-                return paginator.get_paginated_response(serializer.data)
+        category = person.category
+        if category != CategoryChoices.WRITER:
             return Response(
-                {"detail": _("There are no mangas for this author.")},
-                status=status.HTTP_404_NOT_FOUND,
+                {
+                    "detail": _(
+                        f"This person is not a writer, current {category.upper()}."
+                    )
+                },
+                status=status.HTTP_400_BAD_REQUEST,
             )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        manga_list = person.manga_set.all()
+        # manga_list = Manga.objects.filter(author_id=pk)
+        if manga_list.exists():
+            paginator = MediumSetPagination()
+            paginated_data = paginator.paginate_queryset(manga_list, request)
+            serializer = MangaMinimalSerializer(paginated_data, many=True)
+            return paginator.get_paginated_response(serializer.data)
+        return Response(
+            {"detail": _("There are no mangas for this author.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
@@ -130,23 +124,17 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/persons/{id}/pictures/
         """
         person = self.get_object()
-
-        try:
-            pictures = Picture.objects.filter(
-                content_type=ContentType.objects.get_for_model(Person),
-                object_id=person.id,
-            )  # TODO: Add manager
-            if pictures:
-                serializer = PictureReadSerializer(pictures, many=True)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No pictures found for this person.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        pictures = Picture.objects.filter(
+            content_type=ContentType.objects.get_for_model(Person),
+            object_id=person.id,
+        )  # TODO: Add manager
+        if pictures:
+            serializer = PictureReadSerializer(pictures, many=True)
+            return Response(serializer.data)
+        return Response(
+            {"detail": _("No pictures found for this person.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     @action(
         detail=True,
@@ -161,24 +149,19 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoints:
         - POST api/v1/persons/{id}/pictures/
         """
-        try:
-            serializer = PictureWriteSerializer(data=request.data)
-            if serializer.is_valid():
-                character = self.get_object()
-                character_model = ContentType.objects.get_for_model(Person)
-                serializer.save(
-                    content_type=character_model,
-                    object_id=character.pk,
-                )
-                return Response(
-                    {"detail": _("Picture uploaded successfully.")},
-                    status=status.HTTP_201_CREATED,
-                )
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+        serializer = PictureWriteSerializer(data=request.data)
+        if serializer.is_valid():
+            character = self.get_object()
+            character_model = ContentType.objects.get_for_model(Person)
+            serializer.save(
+                content_type=character_model,
+                object_id=character.pk,
             )
+            return Response(
+                {"detail": _("Picture uploaded successfully.")},
+                status=status.HTTP_201_CREATED,
+            )
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     @action(
         detail=True,
@@ -194,17 +177,11 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/persons/{id}/voices/
         """
         author = self.get_object()
-
-        try:
-            characters = CharacterVoice.objects.filter(voice_id=author.pk)
-            if characters.exists():
-                serializer = CharacterVoiceReadSerializer(characters, many=True)
-                return Response(serializer.data)
-            return Response(
-                {"detail": "No relations found for this person."},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        characters = CharacterVoice.objects.filter(voice_id=author.pk)
+        if characters.exists():
+            serializer = CharacterVoiceReadSerializer(characters, many=True)
+            return Response(serializer.data)
+        return Response(
+            {"detail": "No relations found for this person."},
+            status=status.HTTP_404_NOT_FOUND,
+        )
