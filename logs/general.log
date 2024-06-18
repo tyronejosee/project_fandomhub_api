@@ -21173,3 +21173,797 @@ TypeError: 'CharacterManga' object is not iterable
 [2024-06-18 17:10:39,771]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 51.5 ms
 [2024-06-18 17:10:39,773]    WARNING - Not Found: /metrics
 [2024-06-18 17:10:59,286]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:11:09,786]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 59.6 ms
+[2024-06-18 17:11:09,789]    WARNING - Not Found: /metrics
+[2024-06-18 17:11:24,741]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.3 ms
+[2024-06-18 17:11:24,742]    WARNING - Not Found: /metrics
+[2024-06-18 17:13:46,787]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:13:54,746]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.5 ms
+[2024-06-18 17:13:54,747]    WARNING - Not Found: /metrics
+[2024-06-18 17:13:54,773]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:14:00,563]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:14:09,804]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 88.1 ms
+[2024-06-18 17:14:09,805]    WARNING - Not Found: /metrics
+[2024-06-18 17:14:15,762]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:14:22,084]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:14:24,766]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 60.0 ms
+[2024-06-18 17:14:24,769]    WARNING - Not Found: /metrics
+[2024-06-18 17:14:39,794]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 100.9 ms
+[2024-06-18 17:14:39,802]    WARNING - Not Found: /metrics
+[2024-06-18 17:14:54,759]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 61.7 ms
+[2024-06-18 17:14:54,761]    WARNING - Not Found: /metrics
+[2024-06-18 17:15:09,720]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 28.4 ms
+[2024-06-18 17:15:09,724]    WARNING - Not Found: /metrics
+[2024-06-18 17:15:18,743]    INFO - /app/apps/mangas/serializers.py changed, reloading.
+[2024-06-18 17:15:24,653]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:15:34,214]    INFO - /app/apps/mangas/serializers.py changed, reloading.
+[2024-06-18 17:15:41,042]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:15:47,933]    INFO - /app/apps/mangas/serializers.py changed, reloading.
+[2024-06-18 17:15:53,758]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:16:08,443]    INFO - /app/apps/mangas/serializers.py changed, reloading.
+[2024-06-18 17:16:15,548]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:16:23,466]    INFO - /app/apps/mangas/serializers.py changed, reloading.
+[2024-06-18 17:16:27,977]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:16:39,755]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 61.9 ms
+[2024-06-18 17:16:39,763]    WARNING - Not Found: /metrics
+[2024-06-18 17:16:54,778]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 92.4 ms
+[2024-06-18 17:16:54,805]    WARNING - Not Found: /metrics
+[2024-06-18 17:17:09,706]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.2 ms
+[2024-06-18 17:17:09,707]    WARNING - Not Found: /metrics
+[2024-06-18 17:17:24,699]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.7 ms
+[2024-06-18 17:17:24,700]    WARNING - Not Found: /metrics
+[2024-06-18 17:17:39,697]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.5 ms
+[2024-06-18 17:17:39,698]    WARNING - Not Found: /metrics
+[2024-06-18 17:17:54,704]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.4 ms
+[2024-06-18 17:17:54,709]    WARNING - Not Found: /metrics
+[2024-06-18 17:17:58,352]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:18:04,647]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:18:09,739]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 42.0 ms
+[2024-06-18 17:18:09,740]    WARNING - Not Found: /metrics
+[2024-06-18 17:18:13,458]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:18:18,730]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:18:24,753]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 64.3 ms
+[2024-06-18 17:18:24,755]    WARNING - Not Found: /metrics
+[2024-06-18 17:18:26,826]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:18:33,574]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:18:39,714]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.3 ms
+[2024-06-18 17:18:39,716]    WARNING - Not Found: /metrics
+[2024-06-18 17:18:54,709]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.7 ms
+[2024-06-18 17:18:54,711]    WARNING - Not Found: /metrics
+[2024-06-18 17:19:09,699]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.1 ms
+[2024-06-18 17:19:09,703]    WARNING - Not Found: /metrics
+[2024-06-18 17:19:19,741]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/stats/ HTTP/1.1' 200 148 B 757.6 ms
+[2024-06-18 17:19:24,701]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.8 ms
+[2024-06-18 17:19:24,702]    WARNING - Not Found: /metrics
+[2024-06-18 17:19:39,695]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.4 ms
+[2024-06-18 17:19:39,696]    WARNING - Not Found: /metrics
+[2024-06-18 17:19:54,696]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.9 ms
+[2024-06-18 17:19:54,697]    WARNING - Not Found: /metrics
+[2024-06-18 17:20:09,690]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.3 ms
+[2024-06-18 17:20:09,691]    WARNING - Not Found: /metrics
+[2024-06-18 17:20:24,723]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 51.3 ms
+[2024-06-18 17:20:24,724]    WARNING - Not Found: /metrics
+[2024-06-18 17:20:39,718]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 47.5 ms
+[2024-06-18 17:20:39,722]    WARNING - Not Found: /metrics
+[2024-06-18 17:20:44,683]    INFO - Request: 'GET / HTTP/1.1' 302 0 B 1.1 ms
+[2024-06-18 17:20:44,966]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 35651 B 266.8 ms
+[2024-06-18 17:20:51,470]    ERROR - Internal Server Error: /admin/mangas/mangastats/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: MangaStats has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "/app/apps/mangas/models.py", line 163, in __str__
+    return f"Stats for {self.manga.name}"
+                        ^^^^^^^^^^
+AttributeError: 'MangaStats' object has no attribute 'manga'
+[2024-06-18 17:20:51,493]    INFO - Request: 'GET /admin/mangas/mangastats/ HTTP/1.1' 500 558459 B 863.5 ms
+[2024-06-18 17:20:54,689]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.8 ms
+[2024-06-18 17:20:54,691]    WARNING - Not Found: /metrics
+[2024-06-18 17:21:09,688]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.5 ms
+[2024-06-18 17:21:09,689]    WARNING - Not Found: /metrics
+[2024-06-18 17:21:24,691]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.1 ms
+[2024-06-18 17:21:24,692]    WARNING - Not Found: /metrics
+[2024-06-18 17:21:39,728]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 57.8 ms
+[2024-06-18 17:21:39,730]    WARNING - Not Found: /metrics
+[2024-06-18 17:21:54,702]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 33.6 ms
+[2024-06-18 17:21:54,703]    WARNING - Not Found: /metrics
+[2024-06-18 17:22:09,697]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.9 ms
+[2024-06-18 17:22:09,699]    WARNING - Not Found: /metrics
+[2024-06-18 17:22:24,731]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 40.0 ms
+[2024-06-18 17:22:24,732]    WARNING - Not Found: /metrics
+[2024-06-18 17:22:39,687]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.9 ms
+[2024-06-18 17:22:39,688]    WARNING - Not Found: /metrics
+[2024-06-18 17:22:54,690]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.1 ms
+[2024-06-18 17:22:54,692]    WARNING - Not Found: /metrics
+[2024-06-18 17:23:09,701]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.3 ms
+[2024-06-18 17:23:09,703]    WARNING - Not Found: /metrics
+[2024-06-18 17:23:24,702]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 41.9 ms
+[2024-06-18 17:23:24,703]    WARNING - Not Found: /metrics
+[2024-06-18 17:23:39,673]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.4 ms
+[2024-06-18 17:23:39,674]    WARNING - Not Found: /metrics
+[2024-06-18 17:23:54,684]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.1 ms
+[2024-06-18 17:23:54,686]    WARNING - Not Found: /metrics
+[2024-06-18 17:23:57,066]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 35651 B 107.6 ms
+[2024-06-18 17:23:59,548]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 35651 B 80.5 ms
+[2024-06-18 17:24:02,417]    ERROR - Internal Server Error: /admin/mangas/mangastats/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: MangaStats has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "/app/apps/mangas/models.py", line 163, in __str__
+    return f"Stats for {self.manga.name}"
+                        ^^^^^^^^^^
+AttributeError: 'MangaStats' object has no attribute 'manga'
+[2024-06-18 17:24:02,428]    INFO - Request: 'GET /admin/mangas/mangastats/ HTTP/1.1' 500 558459 B 415.6 ms
+[2024-06-18 17:24:09,676]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.3 ms
+[2024-06-18 17:24:09,677]    WARNING - Not Found: /metrics
+[2024-06-18 17:24:24,675]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.2 ms
+[2024-06-18 17:24:24,676]    WARNING - Not Found: /metrics
+[2024-06-18 17:24:39,695]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 39.7 ms
+[2024-06-18 17:24:39,696]    WARNING - Not Found: /metrics
+[2024-06-18 17:24:41,688]    INFO - /app/apps/mangas/admin.py changed, reloading.
+[2024-06-18 17:24:47,206]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:24:52,154]    ERROR - Internal Server Error: /admin/mangas/mangastats/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/options.py", line 681, in get_field
+    return self.fields_map[field_name]
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^
+KeyError: 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 289, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 322, in _get_non_gfk_field
+    field = opts.get_field(name)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/options.py", line 683, in get_field
+    raise FieldDoesNotExist(
+django.core.exceptions.FieldDoesNotExist: MangaStats has no field named 'action_checkbox'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/base.py", line 45, in render
+    return super().render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/template/library.py", line 258, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 343, in result_list
+    "results": list(results(cl)),
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 316, in results
+    yield ResultList(form, items_for_result(cl, res, form))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 310, in __init__
+    super().__init__(*items)
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/templatetags/admin_list.py", line 217, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/utils.py", line 298, in lookup_field
+    value = attr(obj)
+            ^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/contrib/admin/options.py", line 997, in action_checkbox
+    "aria-label": format_html(_("Select this object for an action - {}"), obj),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 135, in format_html
+    return mark_safe(format_string.format(*args_safe, **kwargs_safe))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 117, in conditional_escape
+    return escape(text)
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/functional.py", line 231, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/html.py", line 50, in escape
+    return SafeString(html.escape(str(text)))
+                                  ^^^^^^^^^
+  File "/app/apps/mangas/models.py", line 163, in __str__
+    return f"Stats for {self.manga.name}"
+                        ^^^^^^^^^^
+AttributeError: 'MangaStats' object has no attribute 'manga'
+[2024-06-18 17:24:52,178]    INFO - Request: 'GET /admin/mangas/mangastats/ HTTP/1.1' 500 558596 B 1281.1 ms
+[2024-06-18 17:24:54,687]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.7 ms
+[2024-06-18 17:24:54,688]    WARNING - Not Found: /metrics
+[2024-06-18 17:25:09,666]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.7 ms
+[2024-06-18 17:25:09,667]    WARNING - Not Found: /metrics
+[2024-06-18 17:25:24,693]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 41.7 ms
+[2024-06-18 17:25:24,695]    WARNING - Not Found: /metrics
+[2024-06-18 17:25:39,683]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.3 ms
+[2024-06-18 17:25:39,684]    WARNING - Not Found: /metrics
+[2024-06-18 17:25:54,687]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.0 ms
+[2024-06-18 17:25:54,689]    WARNING - Not Found: /metrics
+[2024-06-18 17:26:09,666]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.6 ms
+[2024-06-18 17:26:09,667]    WARNING - Not Found: /metrics
+[2024-06-18 17:26:24,675]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.5 ms
+[2024-06-18 17:26:24,677]    WARNING - Not Found: /metrics
+[2024-06-18 17:26:27,978]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 285 B 46.9 ms
+[2024-06-18 17:26:39,658]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.5 ms
+[2024-06-18 17:26:39,660]    WARNING - Not Found: /metrics
+[2024-06-18 17:26:54,662]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.6 ms
+[2024-06-18 17:26:54,664]    WARNING - Not Found: /metrics
+[2024-06-18 17:27:09,780]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.5 ms
+[2024-06-18 17:27:09,783]    WARNING - Not Found: /metrics
+[2024-06-18 17:27:24,662]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.0 ms
+[2024-06-18 17:27:24,663]    WARNING - Not Found: /metrics
+[2024-06-18 17:27:29,686]    INFO - /app/apps/mangas/models.py changed, reloading.
+[2024-06-18 17:27:35,236]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:27:39,676]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.7 ms
+[2024-06-18 17:27:39,683]    WARNING - Not Found: /metrics
+[2024-06-18 17:27:44,270]    INFO - Request: 'GET /admin/mangas/mangastats/ HTTP/1.1' 200 32514 B 703.9 ms
+[2024-06-18 17:27:44,445]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 63.7 ms
+[2024-06-18 17:27:45,798]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 32.1 ms
+[2024-06-18 17:27:54,665]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.7 ms
+[2024-06-18 17:27:54,666]    WARNING - Not Found: /metrics
+[2024-06-18 17:28:09,656]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.3 ms
+[2024-06-18 17:28:09,657]    WARNING - Not Found: /metrics
+[2024-06-18 17:28:24,651]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.1 ms
+[2024-06-18 17:28:24,652]    WARNING - Not Found: /metrics
+[2024-06-18 17:28:39,657]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.5 ms
+[2024-06-18 17:28:39,659]    WARNING - Not Found: /metrics
+[2024-06-18 17:28:54,658]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.0 ms
+[2024-06-18 17:28:54,660]    WARNING - Not Found: /metrics
+[2024-06-18 17:29:09,649]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.3 ms
+[2024-06-18 17:29:09,651]    WARNING - Not Found: /metrics
+[2024-06-18 17:29:24,649]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.7 ms
+[2024-06-18 17:29:24,652]    WARNING - Not Found: /metrics
+[2024-06-18 17:29:39,650]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.4 ms
+[2024-06-18 17:29:39,653]    WARNING - Not Found: /metrics
+[2024-06-18 17:29:54,660]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.5 ms
+[2024-06-18 17:29:54,670]    WARNING - Not Found: /metrics
+[2024-06-18 17:30:09,671]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 37.1 ms
+[2024-06-18 17:30:09,675]    WARNING - Not Found: /metrics
+[2024-06-18 17:30:24,675]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 42.1 ms
+[2024-06-18 17:30:24,677]    WARNING - Not Found: /metrics
+[2024-06-18 17:30:39,646]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.7 ms
+[2024-06-18 17:30:39,647]    WARNING - Not Found: /metrics
+[2024-06-18 17:30:54,644]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 14.3 ms
+[2024-06-18 17:30:54,645]    WARNING - Not Found: /metrics
+[2024-06-18 17:31:09,643]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.3 ms
+[2024-06-18 17:31:09,644]    WARNING - Not Found: /metrics
+[2024-06-18 17:31:24,667]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 39.0 ms
+[2024-06-18 17:31:24,669]    WARNING - Not Found: /metrics
+[2024-06-18 17:31:39,640]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.9 ms
+[2024-06-18 17:31:39,642]    WARNING - Not Found: /metrics
+[2024-06-18 17:31:54,648]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.3 ms
+[2024-06-18 17:31:54,650]    WARNING - Not Found: /metrics
+[2024-06-18 17:32:09,639]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.2 ms
+[2024-06-18 17:32:09,641]    WARNING - Not Found: /metrics
+[2024-06-18 17:32:24,690]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 66.8 ms
+[2024-06-18 17:32:24,692]    WARNING - Not Found: /metrics
+[2024-06-18 17:32:39,634]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.3 ms
+[2024-06-18 17:32:39,636]    WARNING - Not Found: /metrics
+[2024-06-18 17:32:54,638]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.5 ms
+[2024-06-18 17:32:54,640]    WARNING - Not Found: /metrics
+[2024-06-18 17:32:57,831]    INFO - Request: 'GET /admin/mangas/mangastats/f427c60b-ba10-42f3-ae2c-b4820bc92c22/change/ HTTP/1.1' 200 36527 B 378.2 ms
+[2024-06-18 17:32:58,022]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 96.4 ms
+[2024-06-18 17:33:09,645]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.9 ms
+[2024-06-18 17:33:09,650]    WARNING - Not Found: /metrics
+[2024-06-18 17:33:10,847]    INFO - Request: 'POST /admin/mangas/mangastats/f427c60b-ba10-42f3-ae2c-b4820bc92c22/change/ HTTP/1.1' 302 0 B 179.5 ms
+[2024-06-18 17:33:11,086]    INFO - Request: 'GET /admin/mangas/mangastats/ HTTP/1.1' 200 32774 B 220.1 ms
+[2024-06-18 17:33:11,398]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 46.2 ms
+[2024-06-18 17:33:11,807]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 38.4 ms
+[2024-06-18 17:33:19,810]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/stats/ HTTP/1.1' 200 149 B 78.0 ms
+[2024-06-18 17:33:24,653]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.5 ms
+[2024-06-18 17:33:24,655]    WARNING - Not Found: /metrics
+[2024-06-18 17:33:39,640]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 28.5 ms
+[2024-06-18 17:33:39,641]    WARNING - Not Found: /metrics
+[2024-06-18 17:33:42,585]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:33:47,804]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:33:53,013]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/stats/ HTTP/1.1' 200 149 B 226.9 ms
+[2024-06-18 17:33:54,675]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 62.9 ms
+[2024-06-18 17:33:54,677]    WARNING - Not Found: /metrics
+[2024-06-18 17:33:54,814]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/stats/ HTTP/1.1' 200 149 B 25.9 ms
+[2024-06-18 17:33:56,264]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/stats/ HTTP/1.1' 200 149 B 29.5 ms
+[2024-06-18 17:33:58,684]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/stats/ HTTP/1.1' 200 149 B 29.2 ms
+[2024-06-18 17:33:59,896]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/stats/ HTTP/1.1' 200 149 B 19.9 ms
+[2024-06-18 17:34:09,633]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.5 ms
+[2024-06-18 17:34:09,634]    WARNING - Not Found: /metrics
+[2024-06-18 17:34:24,638]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.0 ms
+[2024-06-18 17:34:24,640]    WARNING - Not Found: /metrics
+[2024-06-18 17:34:39,618]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.9 ms
+[2024-06-18 17:34:39,620]    WARNING - Not Found: /metrics
+[2024-06-18 17:34:54,639]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 40.0 ms
+[2024-06-18 17:34:54,641]    WARNING - Not Found: /metrics
+[2024-06-18 17:35:09,609]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.1 ms
+[2024-06-18 17:35:09,610]    WARNING - Not Found: /metrics
+[2024-06-18 17:35:24,605]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 15.2 ms
+[2024-06-18 17:35:24,606]    WARNING - Not Found: /metrics
+[2024-06-18 17:35:39,628]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.7 ms
+[2024-06-18 17:35:39,630]    WARNING - Not Found: /metrics
+[2024-06-18 17:35:54,606]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.8 ms
+[2024-06-18 17:35:54,607]    WARNING - Not Found: /metrics
+[2024-06-18 17:36:09,608]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.5 ms
+[2024-06-18 17:36:09,610]    WARNING - Not Found: /metrics
+[2024-06-18 17:36:24,625]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.8 ms
+[2024-06-18 17:36:24,626]    WARNING - Not Found: /metrics
+[2024-06-18 17:36:39,636]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 46.7 ms
+[2024-06-18 17:36:39,637]    WARNING - Not Found: /metrics
+[2024-06-18 17:36:54,616]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.0 ms
+[2024-06-18 17:36:54,617]    WARNING - Not Found: /metrics
+[2024-06-18 17:37:04,798]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:37:11,781]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:37:24,642]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 47.2 ms
+[2024-06-18 17:37:24,644]    WARNING - Not Found: /metrics
+[2024-06-18 17:37:39,614]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.4 ms
+[2024-06-18 17:37:39,616]    WARNING - Not Found: /metrics
+[2024-06-18 17:37:41,559]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:37:46,366]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:38:19,082]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:38:26,421]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:38:39,640]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 52.1 ms
+[2024-06-18 17:38:39,644]    WARNING - Not Found: /metrics
+[2024-06-18 17:38:54,607]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.9 ms
+[2024-06-18 17:38:54,609]    WARNING - Not Found: /metrics
+[2024-06-18 17:39:09,621]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 42.5 ms
+[2024-06-18 17:39:09,622]    WARNING - Not Found: /metrics
+[2024-06-18 17:39:24,611]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 35.1 ms
+[2024-06-18 17:39:24,612]    WARNING - Not Found: /metrics
+[2024-06-18 17:39:39,587]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.3 ms
+[2024-06-18 17:39:39,588]    WARNING - Not Found: /metrics
+[2024-06-18 17:39:54,593]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.0 ms
+[2024-06-18 17:39:54,595]    WARNING - Not Found: /metrics
+[2024-06-18 17:40:09,588]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 25.4 ms
+[2024-06-18 17:40:09,590]    WARNING - Not Found: /metrics
+[2024-06-18 17:40:13,103]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:40:18,777]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:40:24,598]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 30.1 ms
+[2024-06-18 17:40:24,600]    WARNING - Not Found: /metrics
+[2024-06-18 17:40:39,586]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.0 ms
+[2024-06-18 17:40:39,587]    WARNING - Not Found: /metrics
+[2024-06-18 17:40:54,638]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 77.5 ms
+[2024-06-18 17:40:54,639]    WARNING - Not Found: /metrics
+[2024-06-18 17:41:09,594]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.8 ms
+[2024-06-18 17:41:09,596]    WARNING - Not Found: /metrics
+[2024-06-18 17:41:16,108]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:41:21,789]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:41:30,148]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:41:37,032]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:41:54,617]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 45.6 ms
+[2024-06-18 17:41:54,619]    WARNING - Not Found: /metrics
+[2024-06-18 17:41:59,120]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:42:04,225]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:42:09,587]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.6 ms
+[2024-06-18 17:42:09,589]    WARNING - Not Found: /metrics
+[2024-06-18 17:42:16,799]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:42:21,318]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:42:24,675]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 47.7 ms
+[2024-06-18 17:42:24,677]    WARNING - Not Found: /metrics
+[2024-06-18 17:42:39,586]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.1 ms
+[2024-06-18 17:42:39,588]    WARNING - Not Found: /metrics
+[2024-06-18 17:42:54,577]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 34.1 ms
+[2024-06-18 17:42:54,578]    WARNING - Not Found: /metrics
+[2024-06-18 17:43:09,694]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 161.2 ms
+[2024-06-18 17:43:09,696]    WARNING - Not Found: /metrics
+[2024-06-18 17:43:09,870]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:43:16,061]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:43:24,576]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 37.6 ms
+[2024-06-18 17:43:24,578]    WARNING - Not Found: /metrics
+[2024-06-18 17:43:31,942]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:43:36,861]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:43:44,923]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 17:43:49,393]    INFO - Watching for file changes with StatReloader

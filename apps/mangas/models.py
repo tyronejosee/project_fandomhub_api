@@ -160,4 +160,4 @@ class MangaStats(BaseModel):
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f"Stats for {self.manga.name}"
+        return f"Stats for {self.manga_id}"

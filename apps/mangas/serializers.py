@@ -3,7 +3,7 @@
 from rest_framework import serializers
 
 from apps.genres.serializers import GenreReadSerializer, DemographicReadSerializer
-from .models import Magazine, Manga
+from .models import Magazine, Manga, MangaStats
 
 
 class MagazineReadSerializer(serializers.ModelSerializer):
@@ -122,4 +122,21 @@ class MangaMinimalSerializer(serializers.ModelSerializer):
             "published_to",
             "media_type",
             "status",
+        ]
+
+
+class MangaStatsReadSerializer(serializers.ModelSerializer):
+    """Serializer for MangaStats model (List/retrieve)."""
+
+    class Meta:
+        model = MangaStats
+        fields = [
+            "id",
+            "reading",
+            "completed",
+            "on_hold",
+            "dropped",
+            "plan_to_read",
+            "total",
+            "updated_at",
         ]
