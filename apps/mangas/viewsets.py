@@ -14,9 +14,10 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly, AllowAny
 from drf_spectacular.utils import extend_schema_view, extend_schema, OpenApiParameter
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
-from apps.utils.pagination import MediumSetPagination
 from apps.users.permissions import IsContributor
 from apps.users.choices import RoleChoices
+from apps.characters.models import Character, CharacterManga
+from apps.characters.serializers import CharacterMinimalSerializer
 from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer, ReviewWriteSerializer
 from .models import Magazine, Manga
@@ -95,33 +96,6 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         elif self.action == "retrieve":
             return MangaReadSerializer
         return super().get_serializer_class()
-
-    @extend_schema(
-        summary="Get Popular Mangas",
-        description="Retrieve a list of the 50 most popular mangas.",
-    )
-    @action(detail=False, methods=["get"], url_path="popular")
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def popular_list(self, request, pk=None):
-        """
-        Action return a list of the 50 most popular mangas.
-
-        Endpoints:
-        - GET /api/v1/mangas/popular/
-        """
-        popular_list = Manga.objects.get_popular()[:50]
-        paginator = MediumSetPagination()
-
-        result_page = paginator.paginate_queryset(popular_list, request)
-        if result_page is not None:
-            serializer = MangaMinimalSerializer(result_page, many=True).data
-            return paginator.get_paginated_response(serializer)
-
-        return Response(
-            {"detail": _("There are no popular mangas available.")},
-            status=status.HTTP_204_NO_CONTENT,
-        )
 
     # @extend_schema(
     #     summary="Get all review for a manga",
@@ -238,3 +212,34 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 return Response({"detail": message}, status=status.HTTP_403_FORBIDDEN)
             review.delete()
             return Response(status=status.HTTP_204_NO_CONTENT)
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="characters",
+    )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def get_characters(self, request, *args, **kwargs):
+        """
+        Action retrieve characters associated with a manga.
+
+        Endpoints:
+        - GET api/v1/mangas/{id}/characters/
+        """
+        manga = self.get_object()
+        relations = CharacterManga.objects.filter(manga_id=manga)
+        if not relations.exists():
+            return Response(
+                {"detail": "No characters found for this manga."},
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        character_ids = relations.values_list("character_id", flat=True)
+        characters = Character.objects.filter(id__in=character_ids)
+        if not characters.exists():
+            return Response(
+                {"detail": "No characters found."}, status=status.HTTP_404_NOT_FOUND
+            )
+        serializer = CharacterMinimalSerializer(characters, many=True)
+        return Response(serializer.data)

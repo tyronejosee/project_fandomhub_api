@@ -88,26 +88,20 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/characters/
         """
         anime = self.get_object()
-
-        try:
-            relations = CharacterAnime.objects.filter(anime_id=anime)
-            if not relations.exists():
-                return Response(
-                    {"detail": "No characters found for this anime."},
-                    status=status.HTTP_404_NOT_FOUND,
-                )
-            character_ids = relations.values_list("character_id", flat=True)
-            characters = Character.objects.filter(id__in=character_ids)
-            if not characters.exists():
-                return Response(
-                    {"detail": "No characters found."}, status=status.HTTP_404_NOT_FOUND
-                )
-            serializer = CharacterMinimalSerializer(characters, many=True)
-            return Response(serializer.data)
-        except Exception as e:
+        relations = CharacterAnime.objects.filter(anime_id=anime)
+        if not relations.exists():
             return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+                {"detail": "No characters found for this anime."},
+                status=status.HTTP_404_NOT_FOUND,
             )
+        character_ids = relations.values_list("character_id", flat=True)
+        characters = Character.objects.filter(id__in=character_ids)
+        if not characters.exists():
+            return Response(
+                {"detail": "No characters found."}, status=status.HTTP_404_NOT_FOUND
+            )
+        serializer = CharacterMinimalSerializer(characters, many=True)
+        return Response(serializer.data)
 
     # @action(
     #     detail=True,
@@ -134,26 +128,20 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/characters/
         """
         anime = self.get_object()
-
-        try:
-            relations = StaffAnime.objects.filter(anime_id=anime)
-            if not relations.exists():
-                return Response(
-                    {"detail": "No staff found for this anime."},
-                    status=status.HTTP_404_NOT_FOUND,
-                )
-            staff_ids = relations.values_list("person_id", flat=True)
-            staff = Person.objects.filter(id__in=staff_ids)
-            if not staff.exists():
-                return Response(
-                    {"detail": "No staff found."}, status=status.HTTP_404_NOT_FOUND
-                )
-            serializer = StaffMinimalSerializer(staff, many=True)
-            return Response(serializer.data)
-        except Exception as e:
+        relations = StaffAnime.objects.filter(anime_id=anime)
+        if not relations.exists():
             return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
+                {"detail": "No staff found for this anime."},
+                status=status.HTTP_404_NOT_FOUND,
             )
+        staff_ids = relations.values_list("person_id", flat=True)
+        staff = Person.objects.filter(id__in=staff_ids)
+        if not staff.exists():
+            return Response(
+                {"detail": "No staff found."}, status=status.HTTP_404_NOT_FOUND
+            )
+        serializer = StaffMinimalSerializer(staff, many=True)
+        return Response(serializer.data)
 
     @action(
         detail=True,
@@ -171,21 +159,15 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/stats/
         """
         anime = self.get_object()
-
-        try:
-            # stats = AnimeStats.objects.get(anime_id=anime.pk)
-            stats = anime.stats  # reverse relationship
-            if stats:
-                serializer = AnimeStatsReadSerializer(stats)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No stats found for this anime.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        # stats = AnimeStats.objects.get(anime_id=anime.pk)
+        stats = anime.stats  # reverse relationship
+        if stats:
+            serializer = AnimeStatsReadSerializer(stats)
+            return Response(serializer.data)
+        return Response(
+            {"detail": _("No stats found for this anime.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     @action(
         detail=True,
@@ -304,27 +286,21 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/recommendations/
         """
         anime = self.get_object()
-
-        try:
-            similar_anime = (
-                Anime.objects.filter(
-                    genres__in=anime.genres.all(),
-                    themes__in=anime.themes.all(),
-                )
-                .exclude(id=anime.id)
-                .distinct()[:25]
-            )  # TODO: Add manager, add tests
-            if similar_anime:
-                serializer = AnimeMinimalSerializer(similar_anime, many=True)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No recommendations found for this anime.")},
-                status=status.HTTP_404_NOT_FOUND,
+        similar_anime = (
+            Anime.objects.filter(
+                genres__in=anime.genres.all(),
+                themes__in=anime.themes.all(),
             )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+            .exclude(id=anime.id)
+            .distinct()[:25]
+        )  # TODO: Add manager, add tests
+        if similar_anime:
+            serializer = AnimeMinimalSerializer(similar_anime, many=True)
+            return Response(serializer.data)
+        return Response(
+            {"detail": _("No recommendations found for this anime.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     # @action(
     #     detail=True,
@@ -349,17 +325,11 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/news/
         """
         anime = self.get_object()
-
-        try:
-            news = News.objects.get_anime_news(anime)  # TODO: Optimize query 43.5 ms
-            if news.exists():
-                serializer = NewsMinimalSerializer(news, many=True)
-                return Response(serializer.data)
-            return Response({"detail": _("No news found for this anime.")})
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        news = News.objects.get_anime_news(anime)  # TODO: Optimize query 43.5 ms
+        if news.exists():
+            serializer = NewsMinimalSerializer(news, many=True)
+            return Response(serializer.data)
+        return Response({"detail": _("No news found for this anime.")})
 
     # @action(
     #     detail=True,
@@ -395,22 +365,16 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/videos/
         """
         anime = self.get_object()
-
-        try:
-            videos = Video.objects.filter(
-                content_type__model="anime", object_id=anime.id
-            )  # TODO: Add manager
-            if videos.exists():
-                serializer = VideoReadSerializer(videos, many=True)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No videos found for this anime.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        videos = Video.objects.filter(
+            content_type__model="anime", object_id=anime.id
+        )  # TODO: Add manager
+        if videos.exists():
+            serializer = VideoReadSerializer(videos, many=True)
+            return Response(serializer.data)
+        return Response(
+            {"detail": _("No videos found for this anime.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     @action(
         detail=True,
@@ -428,19 +392,13 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/pictures/
         """
         anime = self.get_object()
-
-        try:
-            pictures = Picture.objects.filter(
-                content_type__model="anime", object_id=anime.id
-            )  # TODO: Add manager
-            if pictures.exists():
-                serializer = PictureReadSerializer(pictures, many=True)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No pictures found for this anime.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        pictures = Picture.objects.filter(
+            content_type__model="anime", object_id=anime.id
+        )  # TODO: Add manager
+        if pictures.exists():
+            serializer = PictureReadSerializer(pictures, many=True)
+            return Response(serializer.data)
+        return Response(
+            {"detail": _("No pictures found for this anime.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )

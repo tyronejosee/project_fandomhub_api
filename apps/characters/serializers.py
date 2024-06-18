@@ -57,7 +57,7 @@ class CharacterMinimalSerializer(serializers.ModelSerializer):
 
 
 class CharacterVoiceReadSerializer(serializers.ModelSerializer):
-    """Serializer for CharacterVoice model (List/Retrieve)."""
+    """Serializer for CharacterVoice model (List)."""
 
     character_id = CharacterMinimalSerializer()
 
