@@ -21967,3 +21967,410 @@ AttributeError: 'MangaStats' object has no attribute 'manga'
 [2024-06-18 17:43:36,861]    INFO - Watching for file changes with StatReloader
 [2024-06-18 17:43:44,923]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
 [2024-06-18 17:43:49,393]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:43:54,587]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 35.7 ms
+[2024-06-18 17:43:54,588]    WARNING - Not Found: /metrics
+[2024-06-18 17:44:09,653]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 125.8 ms
+[2024-06-18 17:44:09,656]    WARNING - Not Found: /metrics
+[2024-06-18 17:44:24,549]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.9 ms
+[2024-06-18 17:44:24,550]    WARNING - Not Found: /metrics
+[2024-06-18 17:44:35,762]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/recommendations/ HTTP/1.1' 404 53 B 380.1 ms
+[2024-06-18 17:44:35,765]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/recommendations/
+[2024-06-18 17:44:39,546]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.3 ms
+[2024-06-18 17:44:39,547]    WARNING - Not Found: /metrics
+[2024-06-18 17:44:54,562]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.7 ms
+[2024-06-18 17:44:54,574]    WARNING - Not Found: /metrics
+[2024-06-18 17:45:09,539]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.2 ms
+[2024-06-18 17:45:09,541]    WARNING - Not Found: /metrics
+[2024-06-18 17:45:16,023]    INFO - Request: 'GET /admin/mangas/manga/ HTTP/1.1' 200 33194 B 312.0 ms
+[2024-06-18 17:45:16,136]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 45.7 ms
+[2024-06-18 17:45:16,915]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 40.7 ms
+[2024-06-18 17:45:20,974]    INFO - Request: 'GET /admin/mangas/manga/4256d784-9699-47ad-8515-397f401ba584/change/ HTTP/1.1' 200 64355 B 769.9 ms
+[2024-06-18 17:45:21,114]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 49.8 ms
+[2024-06-18 17:45:21,528]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 33.0 ms
+[2024-06-18 17:45:24,540]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.8 ms
+[2024-06-18 17:45:24,541]    WARNING - Not Found: /metrics
+[2024-06-18 17:45:39,557]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.6 ms
+[2024-06-18 17:45:39,559]    WARNING - Not Found: /metrics
+[2024-06-18 17:45:54,535]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.9 ms
+[2024-06-18 17:45:54,537]    WARNING - Not Found: /metrics
+[2024-06-18 17:46:09,736]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 220.5 ms
+[2024-06-18 17:46:09,747]    WARNING - Not Found: /metrics
+[2024-06-18 17:46:14,704]    INFO - Request: 'GET /admin/mangas/manga/ HTTP/1.1' 200 33194 B 84.4 ms
+[2024-06-18 17:46:16,829]    INFO - Request: 'GET /admin/mangas/manga/add/ HTTP/1.1' 200 61578 B 211.9 ms
+[2024-06-18 17:46:16,983]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 55.0 ms
+[2024-06-18 17:46:17,077]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 46.6 ms
+[2024-06-18 17:46:24,544]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 29.7 ms
+[2024-06-18 17:46:24,546]    WARNING - Not Found: /metrics
+[2024-06-18 17:46:39,536]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.0 ms
+[2024-06-18 17:46:39,537]    WARNING - Not Found: /metrics
+[2024-06-18 17:46:54,553]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 41.3 ms
+[2024-06-18 17:46:54,557]    WARNING - Not Found: /metrics
+[2024-06-18 17:47:09,527]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.9 ms
+[2024-06-18 17:47:09,528]    WARNING - Not Found: /metrics
+[2024-06-18 17:47:24,524]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.3 ms
+[2024-06-18 17:47:24,526]    WARNING - Not Found: /metrics
+[2024-06-18 17:47:39,539]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 32.8 ms
+[2024-06-18 17:47:39,541]    WARNING - Not Found: /metrics
+[2024-06-18 17:47:54,567]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 54.3 ms
+[2024-06-18 17:47:54,568]    WARNING - Not Found: /metrics
+[2024-06-18 17:48:09,547]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 39.1 ms
+[2024-06-18 17:48:09,549]    WARNING - Not Found: /metrics
+[2024-06-18 17:48:24,523]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.6 ms
+[2024-06-18 17:48:24,524]    WARNING - Not Found: /metrics
+[2024-06-18 17:48:35,782]    INFO - Request: 'GET /admin/genres/genre/add/ HTTP/1.1' 200 14018 B 76.6 ms
+[2024-06-18 17:48:35,909]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 55.1 ms
+[2024-06-18 17:48:36,030]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 40.8 ms
+[2024-06-18 17:48:39,519]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.4 ms
+[2024-06-18 17:48:39,521]    WARNING - Not Found: /metrics
+[2024-06-18 17:48:41,706]    INFO - Request: 'POST /admin/genres/genre/add/ HTTP/1.1' 200 374 B 208.2 ms
+[2024-06-18 17:48:54,521]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.6 ms
+[2024-06-18 17:48:54,523]    WARNING - Not Found: /metrics
+[2024-06-18 17:48:54,818]    INFO - Request: 'GET /admin/autocomplete/ HTTP/1.1' 200 111 B 36.7 ms
+[2024-06-18 17:48:56,716]    INFO - Request: 'GET /admin/genres/demographic/add/ HTTP/1.1' 200 14111 B 48.9 ms
+[2024-06-18 17:48:56,798]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 32.5 ms
+[2024-06-18 17:49:03,288]    INFO - Request: 'POST /admin/genres/demographic/add/ HTTP/1.1' 200 374 B 72.1 ms
+[2024-06-18 17:49:05,677]    INFO - Request: 'GET /admin/autocomplete/ HTTP/1.1' 200 195 B 30.7 ms
+[2024-06-18 17:49:09,519]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.7 ms
+[2024-06-18 17:49:09,520]    WARNING - Not Found: /metrics
+[2024-06-18 17:49:14,298]    INFO - Request: 'GET /admin/mangas/magazine/add/ HTTP/1.1' 200 13088 B 177.7 ms
+[2024-06-18 17:49:14,408]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 52.1 ms
+[2024-06-18 17:49:24,522]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.2 ms
+[2024-06-18 17:49:24,524]    WARNING - Not Found: /metrics
+[2024-06-18 17:49:25,788]    INFO - Request: 'POST /admin/mangas/magazine/add/ HTTP/1.1' 200 374 B 113.4 ms
+[2024-06-18 17:49:39,523]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 25.5 ms
+[2024-06-18 17:49:39,525]    WARNING - Not Found: /metrics
+[2024-06-18 17:49:53,322]    INFO - Request: 'GET /admin/persons/person/add/ HTTP/1.1' 200 21497 B 184.6 ms
+[2024-06-18 17:49:53,415]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 41.5 ms
+[2024-06-18 17:49:54,515]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 17.0 ms
+[2024-06-18 17:49:54,516]    WARNING - Not Found: /metrics
+[2024-06-18 17:50:09,544]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 46.5 ms
+[2024-06-18 17:50:09,546]    WARNING - Not Found: /metrics
+[2024-06-18 17:50:24,515]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.2 ms
+[2024-06-18 17:50:24,516]    WARNING - Not Found: /metrics
+[2024-06-18 17:50:39,561]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.7 ms
+[2024-06-18 17:50:39,563]    WARNING - Not Found: /metrics
+[2024-06-18 17:50:54,515]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.6 ms
+[2024-06-18 17:50:54,516]    WARNING - Not Found: /metrics
+[2024-06-18 17:51:09,512]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.1 ms
+[2024-06-18 17:51:09,513]    WARNING - Not Found: /metrics
+[2024-06-18 17:51:24,557]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 59.1 ms
+[2024-06-18 17:51:24,558]    WARNING - Not Found: /metrics
+[2024-06-18 17:51:39,512]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 20.7 ms
+[2024-06-18 17:51:39,513]    WARNING - Not Found: /metrics
+[2024-06-18 17:51:53,177]    INFO - Request: 'POST /admin/persons/person/add/ HTTP/1.1' 200 379 B 646.3 ms
+[2024-06-18 17:51:54,513]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.9 ms
+[2024-06-18 17:51:54,515]    WARNING - Not Found: /metrics
+[2024-06-18 17:52:09,532]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 43.1 ms
+[2024-06-18 17:52:09,537]    WARNING - Not Found: /metrics
+[2024-06-18 17:52:24,545]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 50.9 ms
+[2024-06-18 17:52:24,547]    WARNING - Not Found: /metrics
+[2024-06-18 17:52:25,891]    WARNING - Low image quality: Dorohedoro's image
+[2024-06-18 17:52:26,876]    INFO - Request: 'POST /admin/mangas/manga/add/ HTTP/1.1' 302 0 B 1117.5 ms
+[2024-06-18 17:52:26,977]    INFO - Request: 'GET /admin/mangas/manga/ HTTP/1.1' 200 34193 B 84.0 ms
+[2024-06-18 17:52:27,087]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 39.0 ms
+[2024-06-18 17:52:38,123]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/recommendations/ HTTP/1.1' 200 212 B 105.8 ms
+[2024-06-18 17:52:39,503]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.1 ms
+[2024-06-18 17:52:39,505]    WARNING - Not Found: /metrics
+[2024-06-18 17:52:39,675]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/recommendations/ HTTP/1.1' 200 212 B 17.8 ms
+[2024-06-18 17:52:54,510]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.9 ms
+[2024-06-18 17:52:54,512]    WARNING - Not Found: /metrics
+[2024-06-18 17:53:09,508]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.7 ms
+[2024-06-18 17:53:09,509]    WARNING - Not Found: /metrics
+[2024-06-18 17:53:24,516]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 31.4 ms
+[2024-06-18 17:53:24,518]    WARNING - Not Found: /metrics
+[2024-06-18 17:53:39,509]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 25.1 ms
+[2024-06-18 17:53:39,510]    WARNING - Not Found: /metrics
+[2024-06-18 17:53:54,525]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.4 ms
+[2024-06-18 17:53:54,526]    WARNING - Not Found: /metrics
+[2024-06-18 17:54:09,505]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.4 ms
+[2024-06-18 17:54:09,507]    WARNING - Not Found: /metrics
+[2024-06-18 17:54:24,510]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 27.8 ms
+[2024-06-18 17:54:24,512]    WARNING - Not Found: /metrics
+[2024-06-18 17:54:39,500]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.8 ms
+[2024-06-18 17:54:39,502]    WARNING - Not Found: /metrics
+[2024-06-18 17:54:54,502]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.5 ms
+[2024-06-18 17:54:54,504]    WARNING - Not Found: /metrics
+[2024-06-18 17:59:51,415]    INFO - Watching for file changes with StatReloader
+[2024-06-18 17:59:54,504]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.5 ms
+[2024-06-18 17:59:54,506]    WARNING - Not Found: /metrics
+[2024-06-18 17:59:59,369]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:00:05,498]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:00:09,748]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 286.7 ms
+[2024-06-18 18:00:09,751]    WARNING - Not Found: /metrics
+[2024-06-18 18:00:24,503]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 42.8 ms
+[2024-06-18 18:00:24,504]    WARNING - Not Found: /metrics
+[2024-06-18 18:00:24,544]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:00:29,341]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:00:39,647]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 184.6 ms
+[2024-06-18 18:00:39,649]    WARNING - Not Found: /metrics
+[2024-06-18 18:00:43,020]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:00:47,998]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:00:54,579]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 115.1 ms
+[2024-06-18 18:00:54,586]    WARNING - Not Found: /metrics
+[2024-06-18 18:01:09,493]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 39.9 ms
+[2024-06-18 18:01:09,495]    WARNING - Not Found: /metrics
+[2024-06-18 18:01:19,219]    INFO - /app/apps/news/managers.py changed, reloading.
+[2024-06-18 18:01:25,485]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:01:33,122]    INFO - /app/apps/news/managers.py changed, reloading.
+[2024-06-18 18:01:39,380]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:01:48,746]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:01:53,423]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:02:09,475]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 34.0 ms
+[2024-06-18 18:02:09,476]    WARNING - Not Found: /metrics
+[2024-06-18 18:02:24,456]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.5 ms
+[2024-06-18 18:02:24,458]    WARNING - Not Found: /metrics
+[2024-06-18 18:02:39,454]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.7 ms
+[2024-06-18 18:02:39,456]    WARNING - Not Found: /metrics
+[2024-06-18 18:02:54,448]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.3 ms
+[2024-06-18 18:02:54,449]    WARNING - Not Found: /metrics
+[2024-06-18 18:02:56,897]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:03:01,768]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:03:09,481]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.7 ms
+[2024-06-18 18:03:09,485]    WARNING - Not Found: /metrics
+[2024-06-18 18:03:24,471]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.2 ms
+[2024-06-18 18:03:24,473]    WARNING - Not Found: /metrics
+[2024-06-18 18:03:39,444]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.3 ms
+[2024-06-18 18:03:39,445]    WARNING - Not Found: /metrics
+[2024-06-18 18:03:49,599]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 42 B 257.4 ms
+[2024-06-18 18:03:51,605]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 42 B 38.3 ms
+[2024-06-18 18:03:52,928]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 42 B 40.6 ms
+[2024-06-18 18:03:54,462]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 38.6 ms
+[2024-06-18 18:03:54,464]    WARNING - Not Found: /metrics
+[2024-06-18 18:03:54,482]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 42 B 47.5 ms
+[2024-06-18 18:04:09,441]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 22.2 ms
+[2024-06-18 18:04:09,443]    WARNING - Not Found: /metrics
+[2024-06-18 18:04:24,488]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 62.7 ms
+[2024-06-18 18:04:24,490]    WARNING - Not Found: /metrics
+[2024-06-18 18:04:28,149]    INFO - Request: 'GET /admin/news/news/ HTTP/1.1' 200 29375 B 372.3 ms
+[2024-06-18 18:04:28,303]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 66.8 ms
+[2024-06-18 18:04:29,521]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 55.0 ms
+[2024-06-18 18:04:30,150]    INFO - Request: 'GET /admin/news/news/add/ HTTP/1.1' 200 39706 B 258.3 ms
+[2024-06-18 18:04:30,333]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 87.1 ms
+[2024-06-18 18:04:30,623]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 48.8 ms
+[2024-06-18 18:04:39,461]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.4 ms
+[2024-06-18 18:04:39,464]    WARNING - Not Found: /metrics
+[2024-06-18 18:04:54,432]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 16.4 ms
+[2024-06-18 18:04:54,434]    WARNING - Not Found: /metrics
+[2024-06-18 18:05:09,455]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 39.8 ms
+[2024-06-18 18:05:09,456]    WARNING - Not Found: /metrics
+[2024-06-18 18:05:24,432]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 19.2 ms
+[2024-06-18 18:05:24,434]    WARNING - Not Found: /metrics
+[2024-06-18 18:05:39,549]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 141.0 ms
+[2024-06-18 18:05:39,553]    WARNING - Not Found: /metrics
+[2024-06-18 18:05:54,459]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 47.3 ms
+[2024-06-18 18:05:54,461]    WARNING - Not Found: /metrics
+[2024-06-18 18:06:09,430]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 23.9 ms
+[2024-06-18 18:06:09,431]    WARNING - Not Found: /metrics
+[2024-06-18 18:06:24,431]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 26.7 ms
+[2024-06-18 18:06:24,433]    WARNING - Not Found: /metrics
+[2024-06-18 18:06:39,423]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.0 ms
+[2024-06-18 18:06:39,425]    WARNING - Not Found: /metrics
+[2024-06-18 18:06:54,423]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.0 ms
+[2024-06-18 18:06:54,426]    WARNING - Not Found: /metrics
+[2024-06-18 18:07:09,425]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.8 ms
+[2024-06-18 18:07:09,427]    WARNING - Not Found: /metrics
+[2024-06-18 18:07:16,422]    INFO - Request: 'POST /admin/news/news/add/ HTTP/1.1' 302 0 B 382.4 ms
+[2024-06-18 18:07:16,563]    INFO - Request: 'GET /admin/news/news/ HTTP/1.1' 200 31674 B 127.1 ms
+[2024-06-18 18:07:16,692]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 40.5 ms
+[2024-06-18 18:07:16,767]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 43.3 ms
+[2024-06-18 18:07:21,938]    ERROR - Internal Server Error: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/mangas/viewsets.py", line 324, in get_news
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/news/serializers.py", line 78, in to_representation
+    representation = super().to_representation(instance)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 522, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 1837, in to_representation
+    method = getattr(self.parent, self.method_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NewsMinimalSerializer' object has no attribute 'get_author_id'. Did you mean: 'get_author'?
+[2024-06-18 18:07:21,962]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 500 119872 B 177.6 ms
+[2024-06-18 18:07:24,423]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.5 ms
+[2024-06-18 18:07:24,425]    WARNING - Not Found: /metrics
+[2024-06-18 18:07:39,440]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.4 ms
+[2024-06-18 18:07:39,443]    WARNING - Not Found: /metrics
+[2024-06-18 18:07:54,469]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 69.3 ms
+[2024-06-18 18:07:54,471]    WARNING - Not Found: /metrics
+[2024-06-18 18:08:06,289]    INFO - /app/apps/news/serializers.py changed, reloading.
+[2024-06-18 18:08:10,757]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:08:24,444]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 46.2 ms
+[2024-06-18 18:08:24,447]    WARNING - Not Found: /metrics
+[2024-06-18 18:08:39,402]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 18.4 ms
+[2024-06-18 18:08:39,404]    WARNING - Not Found: /metrics
+[2024-06-18 18:08:42,916]    INFO - /app/apps/news/serializers.py changed, reloading.
+[2024-06-18 18:08:49,948]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:08:54,696]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 265.1 ms
+[2024-06-18 18:08:54,715]    WARNING - Not Found: /metrics
+[2024-06-18 18:08:58,776]    INFO - /app/apps/news/serializers.py changed, reloading.
+[2024-06-18 18:09:03,382]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:09:07,757]    ERROR - Internal Server Error: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'News' object has no attribute 'get_author_id_display'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/mangas/viewsets.py", line 324, in get_news
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 687, in to_representation
+    self.child.to_representation(item) for item in iterable
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/news/serializers.py", line 75, in to_representation
+    representation = super().to_representation(instance)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `author_id` on serializer `NewsMinimalSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `News` instance.
+Original exception text was: 'News' object has no attribute 'get_author_id_display'.
+[2024-06-18 18:09:07,789]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 500 131145 B 428.6 ms
+[2024-06-18 18:09:09,423]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 37.2 ms
+[2024-06-18 18:09:09,433]    WARNING - Not Found: /metrics
+[2024-06-18 18:09:16,440]    INFO - /app/apps/news/serializers.py changed, reloading.
+[2024-06-18 18:09:22,168]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:09:24,433]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 44.0 ms
+[2024-06-18 18:09:24,437]    WARNING - Not Found: /metrics
+[2024-06-18 18:09:25,442]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 425 B 105.3 ms
+[2024-06-18 18:09:28,806]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 425 B 58.5 ms
+[2024-06-18 18:09:29,986]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 425 B 31.4 ms
+[2024-06-18 18:09:31,293]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 425 B 47.2 ms
+[2024-06-18 18:09:39,402]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 21.3 ms
+[2024-06-18 18:09:39,404]    WARNING - Not Found: /metrics
+[2024-06-18 18:09:54,405]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 24.0 ms
+[2024-06-18 18:09:54,412]    WARNING - Not Found: /metrics
+[2024-06-18 18:10:09,421]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 41.0 ms
+[2024-06-18 18:10:09,423]    WARNING - Not Found: /metrics
+[2024-06-18 18:10:22,460]    INFO - /app/apps/news/serializers.py changed, reloading.
+[2024-06-18 18:10:28,768]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:10:39,666]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 254.0 ms
+[2024-06-18 18:10:39,672]    WARNING - Not Found: /metrics
+[2024-06-18 18:10:43,191]    INFO - /app/apps/news/serializers.py changed, reloading.
+[2024-06-18 18:10:48,954]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:10:55,825]    INFO - /app/apps/news/serializers.py changed, reloading.
+[2024-06-18 18:11:01,108]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:11:06,234]    INFO - /app/apps/news/serializers.py changed, reloading.
+[2024-06-18 18:11:10,892]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:11:17,386]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 241.4 ms
+[2024-06-18 18:11:19,803]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 57.0 ms
+[2024-06-18 18:11:21,221]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 42.9 ms
+[2024-06-18 18:11:22,439]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 48.1 ms
+[2024-06-18 18:11:23,632]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 47.2 ms
+[2024-06-18 18:11:24,412]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 39.0 ms
+[2024-06-18 18:11:24,414]    WARNING - Not Found: /metrics
+[2024-06-18 18:11:24,794]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 51.7 ms
+[2024-06-18 18:11:25,846]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 62.5 ms
+[2024-06-18 18:11:27,084]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 33.8 ms
+[2024-06-18 18:11:28,236]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 38.8 ms
+[2024-06-18 18:11:29,517]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 42.2 ms
+[2024-06-18 18:11:30,633]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 35.6 ms
+[2024-06-18 18:11:31,880]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 37.5 ms
+[2024-06-18 18:11:33,219]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/news/ HTTP/1.1' 200 455 B 35.0 ms
+[2024-06-18 18:11:39,108]    INFO - /app/apps/news/serializers.py changed, reloading.
+[2024-06-18 18:11:45,113]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:11:54,463]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 71.3 ms
+[2024-06-18 18:11:54,466]    WARNING - Not Found: /metrics
+[2024-06-18 18:12:09,556]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 185.1 ms
+[2024-06-18 18:12:09,577]    WARNING - Not Found: /metrics
+[2024-06-18 18:12:24,408]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 39.6 ms
+[2024-06-18 18:12:24,410]    WARNING - Not Found: /metrics
+[2024-06-18 18:12:36,459]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:12:41,217]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:12:54,405]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 36.6 ms
+[2024-06-18 18:12:54,410]    WARNING - Not Found: /metrics
+[2024-06-18 18:12:57,981]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:13:02,318]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:13:09,400]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 34.4 ms
+[2024-06-18 18:13:09,402]    WARNING - Not Found: /metrics
+[2024-06-18 18:13:13,289]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:13:18,927]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:13:24,448]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 66.0 ms
+[2024-06-18 18:13:24,449]    WARNING - Not Found: /metrics
+[2024-06-18 18:13:39,420]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 59.7 ms
+[2024-06-18 18:13:39,423]    WARNING - Not Found: /metrics
+[2024-06-18 18:13:43,904]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:13:50,265]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:13:54,490]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 123.6 ms
+[2024-06-18 18:13:54,493]    WARNING - Not Found: /metrics
+[2024-06-18 18:14:09,414]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 54.8 ms
+[2024-06-18 18:14:09,416]    WARNING - Not Found: /metrics
+[2024-06-18 18:14:24,388]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 33.4 ms
+[2024-06-18 18:14:24,390]    WARNING - Not Found: /metrics
+[2024-06-18 18:14:26,735]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:14:34,124]    INFO - Watching for file changes with StatReloader
+[2024-06-18 18:14:39,412]    INFO - Request: 'GET /metrics HTTP/1.1' 404 8047 B 52.0 ms
+[2024-06-18 18:14:39,415]    WARNING - Not Found: /metrics
+[2024-06-18 18:14:41,906]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-18 18:14:46,155]    INFO - Watching for file changes with StatReloader

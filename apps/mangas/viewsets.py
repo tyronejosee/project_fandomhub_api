@@ -14,10 +14,14 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly, AllowAny
 from drf_spectacular.utils import extend_schema_view, extend_schema, OpenApiParameter
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
+from apps.utils.models import Picture
+from apps.utils.serializers import PictureReadSerializer
 from apps.users.permissions import IsMember, IsContributor
 from apps.users.choices import RoleChoices
 from apps.characters.models import Character, CharacterManga
 from apps.characters.serializers import CharacterMinimalSerializer
+from apps.news.models import News
+from apps.news.serializers import NewsMinimalSerializer
 from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer, ReviewWriteSerializer
 from .models import Magazine, Manga
@@ -299,5 +303,63 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return Response(serializer.data)
         return Response(
             {"detail": _("No recommendations found for this manga.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="news",
+    )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def get_news(self, request, *args, **kwargs):
+        """
+        Action retrieve news associated with a manga.
+
+        Endpoints:
+        - GET api/v1/mangas/{id}/news/
+        """
+        manga = self.get_object()
+        news = News.objects.get_manga_news(manga)  # TODO: Optimize query 43.5 ms
+        if news.exists():
+            serializer = NewsMinimalSerializer(news, many=True)
+            return Response(serializer.data)
+        return Response({"detail": _("No news found for this manga.")})
+
+    # @action(
+    #     detail=True,
+    #     methods=["get"],
+    #     permission_classes=[AllowAny],
+    #     url_path="forum",
+    # )
+    # def get_forum(self, request, pk=None, *args, **kwargs):
+    #     pass
+
+    @action(
+        detail=True,
+        methods=["get"],
+        permission_classes=[AllowAny],
+        url_path="pictures",
+    )
+    # @method_decorator(cache_page(60 * 60 * 2))
+    # @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    def get_pictures(self, request, *args, **kwargs):
+        """
+        Action retrieve pictures associated with a manga.
+
+        Endpoints:
+        - GET api/v1/mangas/{id}/pictures/
+        """
+        manga = self.get_object()
+        pictures = Picture.objects.filter(
+            content_type__model="manga", object_id=manga.id
+        )  # TODO: Add manager
+        if pictures.exists():
+            serializer = PictureReadSerializer(pictures, many=True)
+            return Response(serializer.data)
+        return Response(
+            {"detail": _("No pictures found for this anime.")},
             status=status.HTTP_404_NOT_FOUND,
         )

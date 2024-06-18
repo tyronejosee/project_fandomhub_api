@@ -2,6 +2,7 @@
 
 from rest_framework import serializers
 
+from apps.users.serializers import UserMinimumSerializer
 from .models import News
 
 
@@ -57,22 +58,19 @@ class NewsWriteSerializer(serializers.ModelSerializer):
 class NewsMinimalSerializer(serializers.ModelSerializer):
     """Serializer for News model (Minimal)."""
 
-    author_id = serializers.SerializerMethodField()
     tag = serializers.CharField(source="get_tag_display")
+    author_id = UserMinimumSerializer()
 
     class Meta:
         model = News
         fields = [
             "id",
-            "author_id",
             "name",
             "description",
             "image",
             "tag",
+            "author_id",
         ]
-
-    def get_author(self, obj):
-        return obj.author_id.username
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)

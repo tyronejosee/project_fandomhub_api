@@ -15,3 +15,10 @@ class NewsManager(Manager):
             .filter(anime_relations=anime)
             .order_by("-created_at")[:25]
         )
+
+    def get_manga_news(self, manga):
+        return (
+            self.get_available()
+            .filter(manga_relations=manga)
+            .order_by("-created_at")[:25]
+        )
