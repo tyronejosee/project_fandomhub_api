@@ -343,8 +343,8 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         permission_classes=[AllowAny],
         url_path="pictures",
     )
-    # @method_decorator(cache_page(60 * 60 * 2))
-    # @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def get_pictures(self, request, *args, **kwargs):
         """
         Action retrieve pictures associated with a manga.
@@ -360,6 +360,6 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             serializer = PictureReadSerializer(pictures, many=True)
             return Response(serializer.data)
         return Response(
-            {"detail": _("No pictures found for this anime.")},
+            {"detail": _("No pictures found for this manga.")},
             status=status.HTTP_404_NOT_FOUND,
         )

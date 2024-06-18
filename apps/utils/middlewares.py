@@ -17,8 +17,7 @@ class RequestLoggingMiddleware:
 
     def __call__(self, request):
         # Get client IP
-        client_ip = request.META.get("REMOTE_ADDR", "UNKNOWN")
-        print(client_ip)  # Remove
+        # client_ip = request.META.get("REMOTE_ADDR", "UNKNOWN")
         # Get the response time between the request and the response
         start_time = time.time()
         response = self.get_response(request)

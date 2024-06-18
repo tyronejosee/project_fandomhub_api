@@ -69,6 +69,7 @@ MIDDLEWARE = [
     "social_django.middleware.SocialAuthExceptionMiddleware",
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
+    "django_prometheus.middleware.PrometheusAfterMiddleware",
     # "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     # "django.middleware.cache.UpdateCacheMiddleware",
@@ -81,7 +82,6 @@ MIDDLEWARE = [
     "django.middleware.locale.LocaleMiddleware",
     "apps.utils.middlewares.RequestLoggingMiddleware",
     # "apps.utils.middlewares.CensorshipMiddleware"
-    "django_prometheus.middleware.PrometheusAfterMiddleware",
 ]
 
 # APPEND_SLASH = False

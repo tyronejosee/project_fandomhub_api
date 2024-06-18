@@ -35,6 +35,7 @@ services:
       - redis
 
   grafana:
+    container_name: fandomhub_grafana
     image: grafana/grafana:latest
     ports:
       - 3000:3000
@@ -42,6 +43,7 @@ services:
       - grafana_data:/var/lib/grafana
 
   prometheus:
+    container_name: fandomhub_prometheus
     image: prom/prometheus:latest
     ports:
       - 9090:9090

@@ -27,6 +27,7 @@ from .serializers import (
     PersonMinimalSerializer,
 )
 from .choices import CategoryChoices
+from .filters import PersonFilter
 from .schemas import person_schemas
 
 
@@ -46,8 +47,9 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
 
     permission_classes = [IsContributor]
     serializer_class = PersonWriteSerializer
-    search_fields = ["name"]
+    search_fields = ["name", "given_name", "family_name"]
     ordering_fields = ["name"]
+    filterset_class = PersonFilter
 
     def get_queryset(self):
         return Person.objects.get_available()
