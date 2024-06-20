@@ -33,6 +33,7 @@ from .serializers import (
     MangaMinimalSerializer,
     MangaStatsReadSerializer,
 )
+from .filters import MagazineFilter
 from .schemas import manga_schemas
 
 
@@ -52,7 +53,7 @@ class MagazineViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsContributor]
     serializer_class = MagazineWriteSerializer
     search_fields = ["name"]
-    ordering_fields = ["name"]
+    filterset_class = MagazineFilter
 
     def get_queryset(self):
         return Magazine.objects.get_available()

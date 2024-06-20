@@ -19,3 +19,13 @@ class MediaTypeChoices(TextChoices):
     DOUJINSHI = "doujinshi", _("Doujinshi")
     MANHWA = "manhwa", _("Manhwa")
     OEL = "oel", _("OEL")
+
+
+# Filters
+
+
+class OrderByChoices(TextChoices):
+
+    ID = "id", _("UUID")
+    NAME = "name", _("Name")
+    COUNT = "count", _("Count")
