@@ -23,6 +23,7 @@ from apps.users.permissions import IsContributor
 from apps.users.choices import RoleChoices
 from .models import Character, CharacterAnime, CharacterManga
 from .serializers import CharacterReadSerializer, CharacterWriteSerializer
+from .filters import CharacterFilter
 
 
 class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
@@ -41,7 +42,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsContributor]
     serializer_class = CharacterWriteSerializer
     search_fields = ["name", "name_kanji"]
-    ordering_fields = ["name", "role"]
+    filterset_class = CharacterFilter
     # lookup_field = "slug"
     # lookup_url_kwarg = "character_id"
 

@@ -5,6 +5,7 @@ from django.utils.translation import gettext as _
 
 
 class DayChoices(TextChoices):
+
     MONDAY = "monday", _("Monday")
     TUESDAY = "tuesday", _("Tuesday")
     WEDNESDAY = "wednesday", _("Wednesday")
