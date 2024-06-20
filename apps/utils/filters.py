@@ -8,11 +8,15 @@ class BaseFilter(filters.FilterSet):
     """Base filter class with common filters."""
 
     sort = filters.ChoiceFilter(
-        label="Sort",
+        label="Search query sort direction",
         choices=[("asc", "Ascending"), ("desc", "Descending")],
         method="filter_by_order",
     )
-    letter = filters.CharFilter(field_name="name", method="filter_letter")
+    letter = filters.CharFilter(
+        field_name="name",
+        label="Return entries starting with the given letter",
+        method="filter_letter",
+    )
 
     def filter_letter(self, queryset, name, value):
         filtered_queryset = queryset.filter(name__istartswith=value)
