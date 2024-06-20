@@ -2,7 +2,7 @@
 
 {% block extrastyle %}{{ block.super }}
 <style>
-html[data-theme="light"], :root {
+html[data-theme="dark"], :root {
   --primary: #ff135b;
   --secondary: #e7084b;
   --accent: #ffffff;
@@ -368,6 +368,24 @@ div.breadcrumbs a:focus, div.breadcrumbs a:hover {
 
 #nav-sidebar table {
     width: 100%;
+}
+
+/* FORM DEFAULTS */
+
+input, textarea, select, .form-row p, form .button {
+    margin: 2px 0;
+    padding: 2px 3px;
+    vertical-align: middle;
+    font-family: var(--font-family-primary);
+    font-weight: normal;
+    font-size: 0.8125rem;
+}
+.form-row div.help {
+    padding: 2px 3px;
+}
+
+textarea {
+    vertical-align: top;
 }
 </style>
 {% endblock %}
