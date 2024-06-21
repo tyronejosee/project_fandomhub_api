@@ -1,15 +1,22 @@
 """Filters for Mangas App."""
 
+from django.db.models import TextChoices
 from django.utils.translation import gettext as _
 from django_filters import rest_framework as filters
 
 from apps.utils.filters import BaseFilter
 from .models import Magazine, Manga
-from .choices import OrderByChoices, MediaTypeChoices, StatusChoices
+from .choices import MediaTypeChoices, StatusChoices
 
 
 class MagazineFilter(BaseFilter):
     """Filter for Magazine model."""
+
+    class OrderByChoices(TextChoices):
+
+        ID = "id", _("UUID")
+        NAME = "name", _("Name")
+        COUNT = "count", _("Count")
 
     order_by = filters.ChoiceFilter(
         choices=OrderByChoices.choices,

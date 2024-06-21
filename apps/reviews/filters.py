@@ -10,14 +10,13 @@ from apps.mangas.models import Manga
 from .models import Review
 
 
-class TypeChoices(TextChoices):
-
-    ANIME = "anime", _("Anime")
-    MANGA = "manga", _("Manga")
-
-
 class ReviewFilter(filters.FilterSet):
     """Filter for Anime model."""
+
+    class TypeChoices(TextChoices):
+
+        ANIME = "anime", _("Anime")
+        MANGA = "manga", _("Manga")
 
     type = filters.ChoiceFilter(
         choices=TypeChoices.choices,
@@ -49,6 +48,32 @@ class ReviewFilter(filters.FilterSet):
         else:
             return queryset
         return queryset.filter(content_type=content_type)
+
+    def filter_spoilers(self, queryset, name, value):
+        if value:
+            return queryset
+        else:
+            return queryset.filter(is_spoiler=False)
+
+
+class ReviewMinimalFilter(filters.FilterSet):
+    """Filter for Review model (Animes)."""
+
+    spoilers = filters.BooleanFilter(
+        field_name="is_spoiler",
+        initial=True,
+        method="filter_spoilers",
+        label=_(
+            "Whether the results include reviews with spoilers or not. Defaults to true"
+        ),
+    )
+    # preliminary (boolean)
+
+    class Meta:
+        model = Review
+        fields = [
+            "spoilers",
+        ]
 
     def filter_spoilers(self, queryset, name, value):
         if value:

@@ -26,6 +26,7 @@ from apps.news.models import News
 from apps.news.serializers import NewsMinimalSerializer
 from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer, ReviewWriteSerializer
+from apps.reviews.filters import ReviewMinimalFilter
 from .models import Anime
 from .serializers import (
     AnimeReadSerializer,
@@ -194,6 +195,14 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             reviews = Review.objects.filter(
                 content_type=content_type, object_id=anime.pk
             )
+
+            # Apply filter
+            filterset = ReviewMinimalFilter(request.GET, queryset=reviews)
+            if filterset.is_valid():
+                reviews = filterset.qs
+            else:
+                return Response(filterset.errors, status=status.HTTP_400_BAD_REQUEST)
+
             if reviews.exists():
                 serializer = ReviewReadSerializer(reviews, many=True)
                 return Response(serializer.data)

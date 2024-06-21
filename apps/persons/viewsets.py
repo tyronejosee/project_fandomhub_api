@@ -48,7 +48,6 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsContributor]
     serializer_class = PersonWriteSerializer
     search_fields = ["name", "given_name", "family_name"]
-    ordering_fields = ["name"]
     filterset_class = PersonFilter
 
     def get_queryset(self):

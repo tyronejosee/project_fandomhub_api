@@ -13,11 +13,3 @@ class TypeChoices(TextChoices):
     NETWORK = "network", _("Network")
     SPONSOR = "sponsor", _("Sponsor")
     PLATFORM = "platform", _("Platform")
-
-
-class OrderByChoices(TextChoices):
-
-    ID = "id", _("UUID")
-    NAME = "name", _("Name")
-    ESTABLISHED = "established", _("Established")
-    FAVORITES = "favorites", _("Favorites")

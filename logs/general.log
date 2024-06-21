@@ -2391,3 +2391,215 @@ AssertionError: Expected parent FilterSet 'apps.producers.filters.ProducerFilter
 [2024-06-21 17:26:53,576]    INFO - Watching for file changes with StatReloader
 [2024-06-21 17:27:11,266]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 3.8 ms
 [2024-06-21 17:27:15,228]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-21 17:27:20,573]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:43:33,221]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:43:44,323]    INFO - /app/apps/persons/filters.py changed, reloading.
+[2024-06-21 17:43:49,031]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:43:56,176]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 4.2 ms
+[2024-06-21 17:44:11,189]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 21.9 ms
+[2024-06-21 17:44:22,840]    INFO - /app/apps/persons/viewsets.py changed, reloading.
+[2024-06-21 17:44:27,356]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:44:41,174]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 3.8 ms
+[2024-06-21 17:44:46,546]    INFO - /app/apps/persons/filters.py changed, reloading.
+[2024-06-21 17:44:52,392]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:45:04,128]    INFO - /app/apps/persons/filters.py changed, reloading.
+[2024-06-21 17:45:09,497]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:45:25,803]    INFO - /app/apps/persons/filters.py changed, reloading.
+[2024-06-21 17:45:30,674]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:50:25,523]    INFO - /app/apps/characters/choices.py changed, reloading.
+[2024-06-21 17:50:31,326]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:50:40,086]    INFO - /app/apps/characters/filters.py changed, reloading.
+[2024-06-21 17:50:46,874]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:50:52,123]    INFO - /app/apps/characters/filters.py changed, reloading.
+[2024-06-21 17:50:56,732]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:51:11,122]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14914 B 5.0 ms
+[2024-06-21 17:51:26,122]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 13.1 ms
+[2024-06-21 17:51:41,116]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 8.8 ms
+[2024-06-21 17:51:56,102]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 2.2 ms
+[2024-06-21 17:52:11,113]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 9.1 ms
+[2024-06-21 17:52:26,105]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 9.9 ms
+[2024-06-21 17:52:41,096]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 2.6 ms
+[2024-06-21 17:52:56,094]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 4.6 ms
+[2024-06-21 17:53:11,095]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 5.3 ms
+[2024-06-21 17:53:16,273]    INFO - /app/apps/mangas/choices.py changed, reloading.
+[2024-06-21 17:53:21,713]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:53:36,767]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-06-21 17:53:42,617]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:53:56,086]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 4.4 ms
+[2024-06-21 17:54:11,088]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18562 B 8.1 ms
+[2024-06-21 17:54:26,084]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 10.4 ms
+[2024-06-21 17:54:41,086]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 8.6 ms
+[2024-06-21 17:54:47,566]    INFO - /app/apps/producers/choices.py changed, reloading.
+[2024-06-21 17:54:55,229]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:55:04,416]    INFO - /app/apps/producers/filters.py changed, reloading.
+[2024-06-21 17:55:08,806]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:12:03,779]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-21 18:12:09,602]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:12:15,487]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-21 18:12:19,962]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:12:57,430]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-21 18:13:02,538]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:13:07,405]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-21 18:13:12,501]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:13:21,693]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-21 18:13:26,590]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:13:36,236]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-21 18:13:41,923]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:14:28,739]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-21 18:14:33,609]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:14:40,939]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 5.4 ms
+[2024-06-21 18:14:46,468]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-21 18:14:52,010]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:17:20,367]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:17:28,057]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:17:38,143]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:17:43,034]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:17:55,911]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 2.9 ms
+[2024-06-21 18:18:04,134]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:18:10,284]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:18:20,233]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:18:25,365]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:18:40,913]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 8.4 ms
+[2024-06-21 18:18:48,023]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:18:54,667]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:19:02,868]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:19:07,458]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:19:10,893]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 3.0 ms
+[2024-06-21 18:19:25,868]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 4.0 ms
+[2024-06-21 18:19:40,869]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 3.7 ms
+[2024-06-21 18:19:55,861]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.5 ms
+[2024-06-21 18:20:10,862]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 4.2 ms
+[2024-06-21 18:20:25,854]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 3.4 ms
+[2024-06-21 18:20:31,736]    INFO - Request: 'GET /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/reviews/ HTTP/1.1' 401 58 B 1.7 ms
+[2024-06-21 18:20:31,737]    WARNING - Unauthorized: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/reviews/
+[2024-06-21 18:20:40,856]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21763 B 3.8 ms
+[2024-06-21 18:20:52,800]    INFO - Request: 'GET /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/reviews/ HTTP/1.1' 404 23 B 159.7 ms
+[2024-06-21 18:20:52,802]    WARNING - Not Found: /api/v1/animes/46bb9419-f070-4b99-90ec-cd0a445e63a1/reviews/
+[2024-06-21 18:20:55,851]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22192 B 4.9 ms
+[2024-06-21 18:21:10,866]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22221 B 15.5 ms
+[2024-06-21 18:21:25,846]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22229 B 4.6 ms
+[2024-06-21 18:21:40,846]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22262 B 4.2 ms
+[2024-06-21 18:21:55,957]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22250 B 6.9 ms
+[2024-06-21 18:22:10,841]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22248 B 3.7 ms
+[2024-06-21 18:22:19,607]    INFO - Request: 'GET / HTTP/1.1' 302 0 B 0.3 ms
+[2024-06-21 18:22:19,907]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 35934 B 287.4 ms
+[2024-06-21 18:22:20,612]    INFO - Request: 'GET /favicon.ico HTTP/1.1' 404 8442 B 48.7 ms
+[2024-06-21 18:22:20,615]    WARNING - Not Found: /favicon.ico
+[2024-06-21 18:22:23,806]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33451 B 398.0 ms
+[2024-06-21 18:22:24,269]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 286.8 ms
+[2024-06-21 18:22:24,683]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 89.1 ms
+[2024-06-21 18:22:25,862]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36800 B 28.9 ms
+[2024-06-21 18:22:27,845]    INFO - Request: 'GET /admin/reviews/review/3b862cd4-1ccf-4e3a-9e7f-72acd08b640f/change/ HTTP/1.1' 200 39999 B 243.6 ms
+[2024-06-21 18:22:28,008]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 90.9 ms
+[2024-06-21 18:22:28,600]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 34.2 ms
+[2024-06-21 18:22:40,840]    INFO - Request: 'GET /metrics HTTP/1.1' 200 40144 B 7.8 ms
+[2024-06-21 18:22:41,780]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 35342 B 153.3 ms
+[2024-06-21 18:22:41,885]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 43.4 ms
+[2024-06-21 18:22:41,961]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 44.4 ms
+[2024-06-21 18:22:44,607]    INFO - Request: 'GET /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 200 70751 B 712.3 ms
+[2024-06-21 18:22:44,916]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 103.6 ms
+[2024-06-21 18:22:45,705]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 71.2 ms
+[2024-06-21 18:22:53,803]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 35342 B 78.9 ms
+[2024-06-21 18:22:53,884]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 28.9 ms
+[2024-06-21 18:22:55,126]    INFO - Request: 'GET /admin/animes/anime/c051ea9c-b39d-4946-a5cf-2659a295e283/change/ HTTP/1.1' 200 70389 B 189.6 ms
+[2024-06-21 18:22:55,247]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 35.5 ms
+[2024-06-21 18:22:55,834]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46489 B 6.9 ms
+[2024-06-21 18:23:00,958]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 35342 B 74.4 ms
+[2024-06-21 18:23:01,045]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 29.1 ms
+[2024-06-21 18:23:02,962]    INFO - Request: 'GET /admin/animes/anime/d459d7ad-5180-4028-8ecb-b575d6d4dc46/change/ HTTP/1.1' 200 69713 B 248.7 ms
+[2024-06-21 18:23:03,054]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 34.3 ms
+[2024-06-21 18:23:10,610]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 35342 B 100.7 ms
+[2024-06-21 18:23:10,715]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 24.9 ms
+[2024-06-21 18:23:10,847]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46479 B 19.5 ms
+[2024-06-21 18:23:13,377]    INFO - Request: 'GET /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 200 70751 B 308.4 ms
+[2024-06-21 18:23:13,500]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 39.0 ms
+[2024-06-21 18:23:25,831]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46481 B 11.2 ms
+[2024-06-21 18:23:30,794]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 44.4 ms
+[2024-06-21 18:23:40,849]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46739 B 23.8 ms
+[2024-06-21 18:23:55,832]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46739 B 22.5 ms
+[2024-06-21 18:23:58,717]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 68.0 ms
+[2024-06-21 18:24:10,822]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46724 B 7.9 ms
+[2024-06-21 18:24:17,489]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 30.6 ms
+[2024-06-21 18:24:22,550]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 82.4 ms
+[2024-06-21 18:24:25,822]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46740 B 8.6 ms
+[2024-06-21 18:24:37,250]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 64.7 ms
+[2024-06-21 18:24:40,821]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46737 B 8.9 ms
+[2024-06-21 18:24:44,171]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 66.4 ms
+[2024-06-21 18:24:49,475]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 26.1 ms
+[2024-06-21 18:24:51,231]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 25.6 ms
+[2024-06-21 18:24:55,835]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46747 B 25.9 ms
+[2024-06-21 18:25:10,813]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46746 B 6.7 ms
+[2024-06-21 18:25:25,811]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46745 B 9.2 ms
+[2024-06-21 18:25:31,315]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-21 18:25:36,416]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:25:40,816]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 5.6 ms
+[2024-06-21 18:25:55,818]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 16.6 ms
+[2024-06-21 18:26:06,075]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:26:11,621]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:26:20,200]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:26:26,124]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:26:40,811]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 4.4 ms
+[2024-06-21 18:26:44,800]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-06-21 18:26:49,645]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:26:55,805]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14907 B 4.3 ms
+[2024-06-21 18:26:58,187]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-06-21 18:27:06,052]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:27:21,864]    INFO - /app/apps/animes/__init__.py changed, reloading.
+[2024-06-21 18:27:26,278]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:27:40,792]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 183.3 ms
+[2024-06-21 18:27:40,806]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18959 B 8.4 ms
+[2024-06-21 18:27:55,790]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21622 B 6.1 ms
+[2024-06-21 18:27:59,888]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 47.4 ms
+[2024-06-21 18:28:10,801]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21621 B 14.4 ms
+[2024-06-21 18:28:25,786]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21622 B 6.0 ms
+[2024-06-21 18:28:39,365]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-06-21 18:28:44,815]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:28:55,785]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 2.4 ms
+[2024-06-21 18:28:56,793]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 114.2 ms
+[2024-06-21 18:29:10,780]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21617 B 3.8 ms
+[2024-06-21 18:29:25,792]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21618 B 14.7 ms
+[2024-06-21 18:29:30,217]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 176 B 55.7 ms
+[2024-06-21 18:29:40,778]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21617 B 4.4 ms
+[2024-06-21 18:29:54,889]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33451 B 673.7 ms
+[2024-06-21 18:29:55,018]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 51.2 ms
+[2024-06-21 18:29:55,782]    INFO - Request: 'GET /metrics HTTP/1.1' 200 27572 B 9.9 ms
+[2024-06-21 18:29:56,105]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 27.6 ms
+[2024-06-21 18:29:57,507]    INFO - Request: 'GET /admin/reviews/review/3b862cd4-1ccf-4e3a-9e7f-72acd08b640f/change/ HTTP/1.1' 200 39999 B 217.4 ms
+[2024-06-21 18:29:57,628]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 40.9 ms
+[2024-06-21 18:29:57,791]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 49.2 ms
+[2024-06-21 18:30:01,973]    INFO - Request: 'POST /admin/reviews/review/3b862cd4-1ccf-4e3a-9e7f-72acd08b640f/change/ HTTP/1.1' 302 0 B 243.0 ms
+[2024-06-21 18:30:02,125]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33707 B 107.4 ms
+[2024-06-21 18:30:02,259]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 34.2 ms
+[2024-06-21 18:30:02,363]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 57.6 ms
+[2024-06-21 18:30:09,085]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 404 39 B 44.3 ms
+[2024-06-21 18:30:09,086]    WARNING - Not Found: /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/
+[2024-06-21 18:30:10,784]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34674 B 11.2 ms
+[2024-06-21 18:30:12,121]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 404 39 B 26.2 ms
+[2024-06-21 18:30:12,121]    WARNING - Not Found: /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/
+[2024-06-21 18:30:16,633]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 175 B 63.0 ms
+[2024-06-21 18:30:25,777]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34689 B 7.3 ms
+[2024-06-21 18:30:33,895]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 404 39 B 47.9 ms
+[2024-06-21 18:30:33,897]    WARNING - Not Found: /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/
+[2024-06-21 18:30:40,785]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34675 B 18.2 ms
+[2024-06-21 18:30:55,775]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34674 B 8.3 ms
+[2024-06-21 18:31:04,268]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-21 18:31:09,107]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:31:25,790]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 7.2 ms
+[2024-06-21 18:31:34,355]    INFO - /app/apps/reviews/filters.py changed, reloading.
+[2024-06-21 18:31:41,746]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:32:03,125]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-06-21 18:32:10,460]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:32:25,776]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 5.5 ms
+[2024-06-21 18:32:34,699]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 200 175 B 89.4 ms
+[2024-06-21 18:32:38,205]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 404 39 B 43.9 ms
+[2024-06-21 18:32:38,207]    WARNING - Not Found: /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/
+[2024-06-21 18:32:40,779]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22026 B 13.2 ms
+[2024-06-21 18:32:55,778]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22012 B 15.1 ms
+[2024-06-21 18:33:10,774]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22011 B 7.8 ms
+[2024-06-21 18:33:18,533]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:33:25,798]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:33:33,022]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:33:37,300]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:33:40,788]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14928 B 14.4 ms
+[2024-06-21 18:33:46,858]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-06-21 18:33:52,244]    INFO - Watching for file changes with StatReloader
