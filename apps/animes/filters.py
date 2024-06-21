@@ -1,5 +1,6 @@
 """Filters for Animes App."""
 
+from django.utils.translation import gettext as _
 from django_filters import rest_framework as filters
 
 from apps.utils.filters import BaseFilter
@@ -13,40 +14,40 @@ class AnimeFilter(BaseFilter):
     min_score = filters.NumberFilter(
         field_name="score",
         lookup_expr="gte",
-        label="Set a minimum score for results",
+        label=_("Set a minimum score for results"),
     )
     max_score = filters.NumberFilter(
         field_name="score",
         lookup_expr="lte",
-        label="Set a maximum score for results",
+        label=_("Set a maximum score for results"),
     )
     rating = filters.ChoiceFilter(
         choices=RatingChoices.choices,
-        label="Available Anime audience ratings",
+        label=_("Available Anime audience ratings"),
     )
     status = filters.ChoiceFilter(
         choices=StatusChoices.choices,
-        label="Available Anime status",
+        label=_("Available Anime status"),
     )
     genre = filters.CharFilter(
         field_name="genres__name",
         lookup_expr="icontains",
+        label=_("Filter by genre(s), e.g /?genre=gore"),
     )
     theme = filters.CharFilter(
         field_name="themes__name",
         lookup_expr="icontains",
+        label=_("Filter by theme(s), e.g /?theme=shounen"),
     )
     start_date = filters.DateFilter(
         field_name="aired_from",
-        label="Filter by starting date",
         lookup_expr="gte",
-        help_text="Format: YYYY-MM-DD. e.g 2005-01-01",
+        label=_("Filter by starting date, Format: YYYY-MM-DD. e.g 2005-01-01"),
     )
     end_date = filters.DateFilter(
         field_name="aired_from",
-        label="Filter by ending date",
         lookup_expr="lte",
-        help_text="Format: YYYY-MM-DD. e.g 2005-01-01",
+        label=_("Filter by ending date, Format: YYYY-MM-DD. e.g 2005-01-01"),
     )
 
     class Meta:
@@ -87,4 +88,22 @@ class AnimeMinimalFilter(filters.FilterSet):
             "type",
             "status",
             "rating",
+        ]
+
+
+class AnimeSeasonFilter(filters.FilterSet):
+    """Filter for Anime model (Season)."""
+
+    type = filters.ChoiceFilter(
+        choices=MediaTypeChoices.choices,
+        label=_("Available Anime types"),
+    )
+
+    # sfw (boolean)
+    # unapproved (boolean)
+
+    class Meta:
+        model = Anime
+        fields = [
+            "type",
         ]

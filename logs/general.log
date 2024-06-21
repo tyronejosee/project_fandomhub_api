@@ -2376,3 +2376,18 @@ AssertionError: Expected parent FilterSet 'apps.producers.filters.ProducerFilter
 [2024-06-21 17:12:41,367]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21908 B 11.0 ms
 [2024-06-21 17:12:48,674]    INFO - /app/apps/reviews/filters.py changed, reloading.
 [2024-06-21 17:12:53,759]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:12:57,919]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 226 B 74.6 ms
+[2024-06-21 17:13:02,757]    INFO - Request: 'GET /api/v1/top/reviews/ HTTP/1.1' 200 399 B 63.0 ms
+[2024-06-21 17:13:11,375]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19250 B 9.9 ms
+[2024-06-21 17:13:26,354]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21924 B 5.5 ms
+[2024-06-21 17:13:41,352]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21912 B 4.4 ms
+[2024-06-21 17:13:56,352]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21912 B 4.4 ms
+[2024-06-21 17:14:11,352]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21910 B 5.1 ms
+[2024-06-21 17:14:26,345]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21913 B 3.2 ms
+[2024-06-21 17:14:41,343]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21911 B 2.5 ms
+[2024-06-21 17:14:56,341]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21961 B 4.3 ms
+[2024-06-21 17:15:11,341]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21984 B 4.3 ms
+[2024-06-21 17:15:26,345]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21985 B 7.7 ms
+[2024-06-21 17:26:53,576]    INFO - Watching for file changes with StatReloader
+[2024-06-21 17:27:11,266]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 3.8 ms
+[2024-06-21 17:27:15,228]    INFO - /app/apps/animes/filters.py changed, reloading.
