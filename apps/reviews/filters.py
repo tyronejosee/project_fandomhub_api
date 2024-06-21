@@ -1,5 +1,7 @@
 """Filters for Reviews App."""
 
+from django.db.models import TextChoices
+from django.utils.translation import gettext as _
 from django.contrib.contenttypes.models import ContentType
 import django_filters as filters
 
@@ -8,15 +10,27 @@ from apps.mangas.models import Manga
 from .models import Review
 
 
+class TypeChoices(TextChoices):
+
+    ANIME = "anime", _("Anime")
+    MANGA = "manga", _("Manga")
+
+
 class ReviewFilter(filters.FilterSet):
     """Filter for Anime model."""
 
     type = filters.ChoiceFilter(
-        choices=[
-            ("anime", "Anime"),
-            ("manga", "Manga"),
-        ],
+        choices=TypeChoices.choices,
         method="filter_by_type",
+        label=_("The type of reviews to filter by"),
+    )
+    spoilers = filters.BooleanFilter(
+        field_name="is_spoiler",
+        initial=True,
+        method="filter_spoilers",
+        label=_(
+            "Whether the results include reviews with spoilers or not. Defaults to true"
+        ),
     )
 
     class Meta:
@@ -24,7 +38,7 @@ class ReviewFilter(filters.FilterSet):
         fields = [
             "type",
             "rating",
-            "is_spoiler",
+            "spoilers",
         ]
 
     def filter_by_type(self, queryset, name, value):
@@ -34,5 +48,10 @@ class ReviewFilter(filters.FilterSet):
             content_type = ContentType.objects.get_for_model(Manga)
         else:
             return queryset
-
         return queryset.filter(content_type=content_type)
+
+    def filter_spoilers(self, queryset, name, value):
+        if value:
+            return queryset
+        else:
+            return queryset.filter(is_spoiler=False)

@@ -32,7 +32,7 @@ class MagazineFilter(BaseFilter):
 class MangaMinimalFilter(filters.FilterSet):
     """Filter for Anime model (Minimal)."""
 
-    media_type = filters.ChoiceFilter(
+    type = filters.ChoiceFilter(
         choices=MediaTypeChoices.choices,
         label=_("Available sorting properties by manga type"),
     )
@@ -44,6 +44,6 @@ class MangaMinimalFilter(filters.FilterSet):
     class Meta:
         model = Manga
         fields = [
-            "media_type",
+            "type",
             "status",
         ]

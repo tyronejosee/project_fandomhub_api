@@ -29,4 +29,6 @@ class CharacterFilter(BaseFilter):
         fields = [
             "order_by",
             "role",
+            "sort",
+            "letter",
         ]
