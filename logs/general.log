@@ -2603,3 +2603,883 @@ AssertionError: Expected parent FilterSet 'apps.producers.filters.ProducerFilter
 [2024-06-21 18:33:40,788]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14928 B 14.4 ms
 [2024-06-21 18:33:46,858]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
 [2024-06-21 18:33:52,244]    INFO - Watching for file changes with StatReloader
+[2024-06-21 18:33:55,775]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 5.9 ms
+[2024-06-21 18:34:10,773]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 12.8 ms
+[2024-06-21 18:34:25,755]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 3.9 ms
+[2024-06-21 18:34:40,762]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18562 B 6.5 ms
+[2024-06-21 18:34:55,765]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 11.6 ms
+[2024-06-21 18:35:10,774]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 16.4 ms
+[2024-06-21 18:35:25,753]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 4.0 ms
+[2024-06-21 18:35:26,928]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/ HTTP/1.1' 404 39 B 149.1 ms
+[2024-06-21 18:35:26,928]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/
+[2024-06-21 18:35:40,755]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21763 B 4.7 ms
+[2024-06-21 18:35:47,128]    INFO - Request: 'GET /admin/mangas/manga/ HTTP/1.1' 200 34280 B 987.4 ms
+[2024-06-21 18:35:47,270]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 56.4 ms
+[2024-06-21 18:35:48,068]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 30.0 ms
+[2024-06-21 18:35:48,988]    INFO - Request: 'GET /admin/mangas/manga/4256d784-9699-47ad-8515-397f401ba584/change/ HTTP/1.1' 200 74012 B 743.6 ms
+[2024-06-21 18:35:49,197]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 63.8 ms
+[2024-06-21 18:35:50,062]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 39.0 ms
+[2024-06-21 18:35:55,756]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31047 B 7.8 ms
+[2024-06-21 18:36:02,027]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33451 B 133.7 ms
+[2024-06-21 18:36:02,202]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 47.8 ms
+[2024-06-21 18:36:02,572]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 46.4 ms
+[2024-06-21 18:36:04,145]    INFO - Request: 'GET /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 200 40025 B 189.8 ms
+[2024-06-21 18:36:04,347]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 43.7 ms
+[2024-06-21 18:36:04,481]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 63.4 ms
+[2024-06-21 18:36:10,754]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37455 B 8.1 ms
+[2024-06-21 18:36:12,303]    INFO - Request: 'POST /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 302 0 B 200.5 ms
+[2024-06-21 18:36:12,514]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33679 B 173.3 ms
+[2024-06-21 18:36:12,696]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 50.8 ms
+[2024-06-21 18:36:25,746]    INFO - Request: 'GET /metrics HTTP/1.1' 200 40764 B 7.2 ms
+[2024-06-21 18:36:26,810]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/ HTTP/1.1' 404 39 B 31.2 ms
+[2024-06-21 18:36:26,813]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/
+[2024-06-21 18:36:39,272]    INFO - Request: 'GET /admin/mangas/manga/ HTTP/1.1' 200 34280 B 163.9 ms
+[2024-06-21 18:36:39,395]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 44.8 ms
+[2024-06-21 18:36:40,748]    INFO - Request: 'GET /metrics HTTP/1.1' 200 40781 B 8.3 ms
+[2024-06-21 18:36:41,750]    INFO - Request: 'GET /admin/mangas/manga/4256d784-9699-47ad-8515-397f401ba584/change/ HTTP/1.1' 200 74012 B 368.6 ms
+[2024-06-21 18:36:41,879]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 62.0 ms
+[2024-06-21 18:36:55,753]    INFO - Request: 'GET /metrics HTTP/1.1' 200 40781 B 11.3 ms
+[2024-06-21 18:37:06,408]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/ HTTP/1.1' 404 39 B 53.5 ms
+[2024-06-21 18:37:06,410]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/
+[2024-06-21 18:37:08,402]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/ HTTP/1.1' 404 39 B 24.2 ms
+[2024-06-21 18:37:08,403]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/
+[2024-06-21 18:37:10,750]    INFO - Request: 'GET /metrics HTTP/1.1' 200 40779 B 8.2 ms
+[2024-06-21 18:37:22,415]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/ HTTP/1.1' 404 39 B 24.8 ms
+[2024-06-21 18:37:22,416]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/
+[2024-06-21 18:37:25,749]    INFO - Request: 'GET /metrics HTTP/1.1' 200 40780 B 10.7 ms
+[2024-06-21 18:37:36,206]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33434 B 301.5 ms
+[2024-06-21 18:37:36,345]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 67.4 ms
+[2024-06-21 18:37:38,065]    INFO - Request: 'GET /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 200 39974 B 134.8 ms
+[2024-06-21 18:37:38,189]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 50.5 ms
+[2024-06-21 18:37:40,755]    INFO - Request: 'GET /metrics HTTP/1.1' 200 40777 B 16.4 ms
+[2024-06-21 18:37:55,743]    INFO - Request: 'GET /metrics HTTP/1.1' 200 40780 B 6.1 ms
+[2024-06-21 18:37:59,887]    INFO - Request: 'POST /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 302 0 B 95.4 ms
+[2024-06-21 18:38:00,038]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33695 B 113.0 ms
+[2024-06-21 18:38:00,127]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 33.3 ms
+[2024-06-21 18:38:03,863]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/ HTTP/1.1' 200 174 B 36.6 ms
+[2024-06-21 18:38:10,749]    INFO - Request: 'GET /metrics HTTP/1.1' 200 41032 B 10.4 ms
+[2024-06-21 18:38:16,746]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/ HTTP/1.1' 404 39 B 59.1 ms
+[2024-06-21 18:38:16,781]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/
+[2024-06-21 18:38:25,760]    INFO - Request: 'GET /metrics HTTP/1.1' 200 41044 B 19.2 ms
+[2024-06-21 18:38:40,760]    INFO - Request: 'GET /metrics HTTP/1.1' 200 41032 B 18.8 ms
+[2024-06-21 18:38:55,743]    INFO - Request: 'GET /metrics HTTP/1.1' 200 41043 B 8.5 ms
+[2024-06-21 18:39:10,769]    INFO - Request: 'GET /metrics HTTP/1.1' 200 41030 B 28.0 ms
+[2024-06-21 18:39:25,739]    INFO - Request: 'GET /metrics HTTP/1.1' 200 41031 B 8.8 ms
+[2024-06-21 18:39:40,780]    INFO - Request: 'GET /metrics HTTP/1.1' 200 41032 B 43.3 ms
+[2024-06-21 18:39:55,735]    INFO - Request: 'GET /metrics HTTP/1.1' 200 41031 B 6.8 ms
+[2024-06-21 18:40:10,735]    INFO - Request: 'GET /metrics HTTP/1.1' 200 41032 B 6.3 ms
+[2024-06-24 16:53:34,420]    INFO - Watching for file changes with StatReloader
+[2024-06-24 16:54:04,068]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14914 B 4.6 ms
+[2024-06-24 16:54:19,015]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 12.4 ms
+[2024-06-24 16:54:34,003]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 2.7 ms
+[2024-06-24 16:54:49,023]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 19.0 ms
+[2024-06-24 16:55:04,008]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 9.2 ms
+[2024-06-24 16:55:16,606]    INFO - /app/apps/utils/pagination.py changed, reloading.
+[2024-06-24 16:55:22,780]    INFO - Watching for file changes with StatReloader
+[2024-06-24 16:55:34,018]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14927 B 4.6 ms
+[2024-06-24 16:55:48,992]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.6 ms
+[2024-06-24 16:56:03,991]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.2 ms
+[2024-06-24 16:56:19,065]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 31.7 ms
+[2024-06-24 16:56:33,992]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18565 B 4.3 ms
+[2024-06-24 16:56:48,989]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 6.4 ms
+[2024-06-24 16:57:03,992]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18567 B 9.1 ms
+[2024-06-24 16:57:18,991]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 17.1 ms
+[2024-06-24 16:57:33,987]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18567 B 9.8 ms
+[2024-06-24 16:57:48,980]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18590 B 5.2 ms
+[2024-06-24 16:58:03,981]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 3.2 ms
+[2024-06-24 16:58:18,977]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18658 B 3.2 ms
+[2024-06-24 16:58:33,978]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 3.5 ms
+[2024-06-24 16:58:48,974]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 2.3 ms
+[2024-06-24 16:59:03,985]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 8.6 ms
+[2024-06-24 16:59:19,000]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 7.1 ms
+[2024-06-24 16:59:34,064]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 5.4 ms
+[2024-06-24 16:59:48,976]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 5.7 ms
+[2024-06-24 17:00:03,974]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 4.9 ms
+[2024-06-24 17:00:18,972]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 7.2 ms
+[2024-06-24 17:00:33,990]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 5.0 ms
+[2024-06-24 17:00:48,971]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18661 B 6.0 ms
+[2024-06-24 17:01:03,975]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 6.8 ms
+[2024-06-24 17:01:18,975]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 15.1 ms
+[2024-06-24 17:01:33,971]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 8.5 ms
+[2024-06-24 17:01:48,966]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 5.9 ms
+[2024-06-24 17:02:03,979]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 16.1 ms
+[2024-06-24 17:02:18,965]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 5.5 ms
+[2024-06-24 17:02:33,971]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 7.1 ms
+[2024-06-24 17:02:45,978]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 909.7 ms
+[2024-06-24 17:02:48,963]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21550 B 6.9 ms
+[2024-06-24 17:03:03,960]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21550 B 3.6 ms
+[2024-06-24 17:03:04,194]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 977 B 37.5 ms
+[2024-06-24 17:03:15,613]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 6.0 ms
+[2024-06-24 17:03:18,861]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 6.6 ms
+[2024-06-24 17:03:18,966]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21550 B 5.0 ms
+[2024-06-24 17:03:28,734]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 5098 B 154.7 ms
+[2024-06-24 17:03:33,960]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24193 B 4.5 ms
+[2024-06-24 17:03:48,603]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 4186 B 20.8 ms
+[2024-06-24 17:03:48,966]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24193 B 14.0 ms
+[2024-06-24 17:03:52,644]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 4186 B 5.2 ms
+[2024-06-24 17:03:54,010]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 4186 B 4.0 ms
+[2024-06-24 17:03:55,408]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 4186 B 3.4 ms
+[2024-06-24 17:04:03,957]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24192 B 5.8 ms
+[2024-06-24 17:04:09,724]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 11446 B 396.0 ms
+[2024-06-24 17:04:10,451]    INFO - Request: 'GET /favicon.ico HTTP/1.1' 404 8442 B 41.9 ms
+[2024-06-24 17:04:10,453]    WARNING - Not Found: /favicon.ico
+[2024-06-24 17:04:18,951]    INFO - Request: 'GET /metrics HTTP/1.1' 200 26754 B 5.0 ms
+[2024-06-24 17:04:25,251]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 19449 B 54.9 ms
+[2024-06-24 17:04:33,958]    INFO - Request: 'GET /metrics HTTP/1.1' 200 26755 B 7.8 ms
+[2024-06-24 17:04:39,452]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 9830 B 293.1 ms
+[2024-06-24 17:04:47,040]    INFO - Request: 'GET /api/v1/ HTTP/1.1' 200 5318 B 10.6 ms
+[2024-06-24 17:04:48,950]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29292 B 4.4 ms
+[2024-06-24 17:04:49,270]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 12517 B 66.4 ms
+[2024-06-24 17:05:03,960]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29279 B 11.2 ms
+[2024-06-24 17:05:16,822]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 12591 B 53.8 ms
+[2024-06-24 17:05:18,962]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29295 B 18.0 ms
+[2024-06-24 17:05:22,948]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 1187 B 66.3 ms
+[2024-06-24 17:05:33,965]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29281 B 18.3 ms
+[2024-06-24 17:05:48,972]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29294 B 28.8 ms
+[2024-06-24 17:06:03,952]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29281 B 9.7 ms
+[2024-06-24 17:06:18,940]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29285 B 3.9 ms
+[2024-06-24 17:06:33,961]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29285 B 20.2 ms
+[2024-06-24 17:06:48,944]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29286 B 4.4 ms
+[2024-06-24 17:07:03,940]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29285 B 3.7 ms
+[2024-06-24 17:07:18,943]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29285 B 8.7 ms
+[2024-06-24 17:07:33,955]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29286 B 16.3 ms
+[2024-06-24 17:07:48,950]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29281 B 15.3 ms
+[2024-06-24 17:08:03,957]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29285 B 20.0 ms
+[2024-06-24 17:08:18,934]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29285 B 4.6 ms
+[2024-06-24 17:08:33,935]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29286 B 6.0 ms
+[2024-06-24 17:08:48,932]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29286 B 6.2 ms
+[2024-06-24 17:09:03,946]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29285 B 15.2 ms
+[2024-06-24 17:09:18,932]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29286 B 6.9 ms
+[2024-06-24 17:09:33,930]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29285 B 4.4 ms
+[2024-06-24 17:09:48,931]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29299 B 6.8 ms
+[2024-06-24 17:10:03,941]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29299 B 12.6 ms
+[2024-06-24 17:10:18,933]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29282 B 8.9 ms
+[2024-06-24 17:10:33,939]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29298 B 12.9 ms
+[2024-06-24 17:10:48,929]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29284 B 8.6 ms
+[2024-06-24 17:11:03,926]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29283 B 5.5 ms
+[2024-06-24 17:11:18,941]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29285 B 18.8 ms
+[2024-06-24 17:11:33,927]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29284 B 7.8 ms
+[2024-06-24 17:11:48,920]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29282 B 4.1 ms
+[2024-06-24 17:12:03,940]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29284 B 16.4 ms
+[2024-06-24 17:12:18,921]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29284 B 6.3 ms
+[2024-06-24 17:12:33,921]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29284 B 5.1 ms
+[2024-06-24 17:12:48,928]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29295 B 12.1 ms
+[2024-06-24 17:13:03,938]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29281 B 20.4 ms
+[2024-06-24 17:13:18,929]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29283 B 16.3 ms
+[2024-06-24 17:13:33,913]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29284 B 3.8 ms
+[2024-06-24 17:13:48,913]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29296 B 5.8 ms
+[2024-06-24 17:14:03,928]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29283 B 14.5 ms
+[2024-06-24 17:14:18,909]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29295 B 3.5 ms
+[2024-06-24 17:14:33,914]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29283 B 5.7 ms
+[2024-06-24 17:14:48,906]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29283 B 6.1 ms
+[2024-06-24 17:15:03,911]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29283 B 6.2 ms
+[2024-06-24 17:15:18,907]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29282 B 5.5 ms
+[2024-06-24 17:15:33,929]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29283 B 20.5 ms
+[2024-06-24 17:15:48,905]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29283 B 5.5 ms
+[2024-06-24 17:16:03,902]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29319 B 3.5 ms
+[2024-06-24 17:16:18,900]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29350 B 3.5 ms
+[2024-06-24 17:16:33,902]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29352 B 3.9 ms
+[2024-06-24 17:16:48,895]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29352 B 3.5 ms
+[2024-06-24 17:17:03,940]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29353 B 42.6 ms
+[2024-06-24 17:17:18,896]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29356 B 3.5 ms
+[2024-06-24 17:17:33,900]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29356 B 4.6 ms
+[2024-06-24 17:17:48,910]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29368 B 16.3 ms
+[2024-06-24 17:18:03,898]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29355 B 6.8 ms
+[2024-06-24 17:18:18,895]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29355 B 5.4 ms
+[2024-06-24 17:18:33,916]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29369 B 22.1 ms
+[2024-06-24 17:18:48,889]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29356 B 3.4 ms
+[2024-06-24 17:19:03,892]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29368 B 5.1 ms
+[2024-06-24 17:19:18,890]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29355 B 3.8 ms
+[2024-06-24 17:19:33,906]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29358 B 14.8 ms
+[2024-06-24 17:19:48,891]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29369 B 6.6 ms
+[2024-06-24 17:20:03,892]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29355 B 7.1 ms
+[2024-06-24 17:20:18,889]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29359 B 7.0 ms
+[2024-06-24 17:20:19,905]    INFO - /app/apps/utils/functions.py changed, reloading.
+[2024-06-24 17:20:26,777]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:20:33,894]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14923 B 3.1 ms
+[2024-06-24 17:20:38,544]    INFO - /app/apps/utils/functions.py changed, reloading.
+[2024-06-24 17:20:43,909]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:20:48,910]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 15.5 ms
+[2024-06-24 17:21:03,885]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 3.7 ms
+[2024-06-24 17:21:18,880]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18546 B 2.4 ms
+[2024-06-24 17:21:23,922]    INFO - /app/apps/utils/functions.py changed, reloading.
+[2024-06-24 17:21:29,138]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:21:33,904]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 5.6 ms
+[2024-06-24 17:21:48,877]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 2.6 ms
+[2024-06-24 17:22:03,888]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 12.4 ms
+[2024-06-24 17:22:18,892]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18562 B 15.0 ms
+[2024-06-24 17:22:33,876]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 2.8 ms
+[2024-06-24 17:22:48,872]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.7 ms
+[2024-06-24 17:23:03,874]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 4.8 ms
+[2024-06-24 17:23:18,882]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 14.4 ms
+[2024-06-24 17:23:33,890]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 19.9 ms
+[2024-06-24 17:23:48,881]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18600 B 17.5 ms
+[2024-06-24 17:24:03,866]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 3.7 ms
+[2024-06-24 17:24:11,150]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:24:17,304]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:24:23,168]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:24:29,734]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:24:37,916]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:24:43,247]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:24:48,866]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 3.7 ms
+[2024-06-24 17:24:58,862]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:25:04,251]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:25:11,844]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:25:18,101]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:25:27,626]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:25:32,415]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:25:48,860]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14924 B 3.1 ms
+[2024-06-24 17:26:00,956]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:26:06,892]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:26:18,868]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14926 B 4.5 ms
+[2024-06-24 17:26:33,850]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.2 ms
+[2024-06-24 17:26:48,842]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.6 ms
+[2024-06-24 17:26:49,579]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:26:54,498]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:27:03,602]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:27:08,802]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:27:18,860]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 6.8 ms
+[2024-06-24 17:27:33,842]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 3.5 ms
+[2024-06-24 17:27:36,268]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:27:41,930]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:27:48,860]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 3.6 ms
+[2024-06-24 17:27:49,835]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:27:54,492]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:28:03,854]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 8.4 ms
+[2024-06-24 17:28:18,840]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 6.5 ms
+[2024-06-24 17:28:21,486]    INFO - /app/apps/animes/routers.py changed, reloading.
+[2024-06-24 17:28:26,984]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:28:33,844]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 4.4 ms
+[2024-06-24 17:28:34,077]    INFO - /app/apps/animes/routers.py changed, reloading.
+[2024-06-24 17:28:39,058]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:28:48,838]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 3.5 ms
+[2024-06-24 17:28:55,418]    INFO - /app/apps/animes/routers.py changed, reloading.
+[2024-06-24 17:29:00,973]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:29:09,762]    INFO - /app/apps/animes/routers.py changed, reloading.
+[2024-06-24 17:29:15,043]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:29:18,842]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 3.9 ms
+[2024-06-24 17:29:33,829]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.3 ms
+[2024-06-24 17:29:48,838]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 11.4 ms
+[2024-06-24 17:29:49,527]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 99.6 ms
+[2024-06-24 17:29:51,833]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 26.8 ms
+[2024-06-24 17:30:03,828]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21933 B 2.5 ms
+[2024-06-24 17:30:18,835]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21933 B 8.5 ms
+[2024-06-24 17:30:33,839]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21946 B 13.8 ms
+[2024-06-24 17:30:48,822]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21934 B 2.6 ms
+[2024-06-24 17:31:03,824]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21970 B 2.5 ms
+[2024-06-24 17:31:18,829]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22003 B 10.6 ms
+[2024-06-24 17:31:31,092]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:31:36,914]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:31:48,825]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 3.3 ms
+[2024-06-24 17:31:58,003]    ERROR - Internal Server Error: /api/v1/schedules/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/views.py", line 24, in get_queryset
+    return Anime.objects.filter(season=season)
+                                       ^^^^^^^^
+NameError: name 'current_season' is not defined. Did you mean: 'get_current_season'?
+[2024-06-24 17:31:58,019]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 500 98133 B 150.0 ms
+[2024-06-24 17:32:03,826]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22375 B 8.2 ms
+[2024-06-24 17:32:18,821]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22376 B 7.7 ms
+[2024-06-24 17:32:33,819]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22376 B 5.7 ms
+[2024-06-24 17:32:36,993]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:32:42,659]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:32:48,820]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 4.1 ms
+[2024-06-24 17:32:51,935]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:32:57,459]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:33:03,828]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 10.4 ms
+[2024-06-24 17:33:05,693]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:33:09,966]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:33:18,820]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14924 B 6.9 ms
+[2024-06-24 17:33:19,440]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 1187 B 90.0 ms
+[2024-06-24 17:33:33,810]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21932 B 3.2 ms
+[2024-06-24 17:33:48,809]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21944 B 4.8 ms
+[2024-06-24 17:33:56,414]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:34:02,826]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:34:08,381]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 48.8 ms
+[2024-06-24 17:34:18,811]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19273 B 3.3 ms
+[2024-06-24 17:34:33,825]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21937 B 17.3 ms
+[2024-06-24 17:34:48,803]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21936 B 2.4 ms
+[2024-06-24 17:35:03,820]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21949 B 12.8 ms
+[2024-06-24 17:35:18,799]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21935 B 2.4 ms
+[2024-06-24 17:35:33,814]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21937 B 11.7 ms
+[2024-06-24 17:35:48,800]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21936 B 3.1 ms
+[2024-06-24 17:36:03,819]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21937 B 14.4 ms
+[2024-06-24 17:36:18,810]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21986 B 12.8 ms
+[2024-06-24 17:36:33,797]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22009 B 2.5 ms
+[2024-06-24 17:36:48,804]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22028 B 9.2 ms
+[2024-06-24 17:37:03,802]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22042 B 3.6 ms
+[2024-06-24 17:37:18,793]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22029 B 3.1 ms
+[2024-06-24 17:37:33,795]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22027 B 2.5 ms
+[2024-06-24 17:37:48,803]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22028 B 14.6 ms
+[2024-06-24 17:37:51,410]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:37:56,627]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:38:03,164]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:38:08,147]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:38:15,332]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:38:20,338]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:38:29,105]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:38:33,742]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:38:39,626]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 17:38:44,873]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:38:48,812]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 9.6 ms
+[2024-06-24 17:38:49,127]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 121.1 ms
+[2024-06-24 17:39:03,793]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21934 B 6.9 ms
+[2024-06-24 17:39:16,652]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 41.7 ms
+[2024-06-24 17:39:18,438]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 29.2 ms
+[2024-06-24 17:39:18,788]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21947 B 5.2 ms
+[2024-06-24 17:39:31,002]    INFO - Request: 'GET / HTTP/1.1' 302 0 B 0.4 ms
+[2024-06-24 17:39:31,410]    INFO - Request: 'GET /admin/ HTTP/1.1' 302 0 B 391.7 ms
+[2024-06-24 17:39:31,642]    INFO - Request: 'GET /admin/login/ HTTP/1.1' 200 11434 B 180.7 ms
+[2024-06-24 17:39:33,793]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30749 B 8.6 ms
+[2024-06-24 17:39:35,017]    INFO - Request: 'POST /admin/login/ HTTP/1.1' 302 0 B 740.2 ms
+[2024-06-24 17:39:35,279]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 35963 B 203.0 ms
+[2024-06-24 17:39:40,939]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 35342 B 233.7 ms
+[2024-06-24 17:39:41,250]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 201.3 ms
+[2024-06-24 17:39:41,869]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 46.3 ms
+[2024-06-24 17:39:44,345]    INFO - Request: 'GET /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 200 70751 B 592.3 ms
+[2024-06-24 17:39:44,580]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 160.0 ms
+[2024-06-24 17:39:45,334]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 48.7 ms
+[2024-06-24 17:39:48,787]    INFO - Request: 'GET /metrics HTTP/1.1' 200 43171 B 7.2 ms
+[2024-06-24 17:39:54,979]    WARNING - Low image quality: Unnamed Memory's image
+[2024-06-24 17:39:55,265]    INFO - Request: 'POST /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 302 0 B 795.4 ms
+[2024-06-24 17:39:55,374]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 35582 B 95.4 ms
+[2024-06-24 17:39:55,497]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 47.0 ms
+[2024-06-24 17:39:55,572]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 57.2 ms
+[2024-06-24 17:39:59,755]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 27.5 ms
+[2024-06-24 17:40:01,541]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 22.7 ms
+[2024-06-24 17:40:03,341]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 22.5 ms
+[2024-06-24 17:40:03,799]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46147 B 17.5 ms
+[2024-06-24 17:40:18,808]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46135 B 24.8 ms
+[2024-06-24 17:40:33,787]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46136 B 8.1 ms
+[2024-06-24 17:40:48,810]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46135 B 29.4 ms
+[2024-06-24 17:41:03,787]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46135 B 7.7 ms
+[2024-06-24 17:41:18,785]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46153 B 11.3 ms
+[2024-06-24 17:41:33,448]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:41:38,634]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:41:46,883]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:41:52,111]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:41:59,502]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:42:05,740]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:42:11,815]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:42:16,511]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:42:31,288]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:42:36,782]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:43:01,832]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:43:06,817]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:43:12,134]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:43:16,736]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:43:46,051]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:43:50,225]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:48:32,736]    INFO - /app/apps/animes/__init__.py changed, reloading.
+[2024-06-24 17:48:36,726]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:48:43,013]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 66.0 ms
+[2024-06-24 17:48:44,697]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 29.7 ms
+[2024-06-24 17:48:46,653]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 33.2 ms
+[2024-06-24 17:48:48,753]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19275 B 12.6 ms
+[2024-06-24 17:49:03,758]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21937 B 13.5 ms
+[2024-06-24 17:49:08,009]    INFO - Request: 'GET /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 200 70751 B 567.2 ms
+[2024-06-24 17:49:08,134]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 48.3 ms
+[2024-06-24 17:49:08,424]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 53.0 ms
+[2024-06-24 17:49:18,752]    INFO - Request: 'GET /metrics HTTP/1.1' 200 27846 B 13.5 ms
+[2024-06-24 17:49:18,962]    WARNING - Low image quality: Unnamed Memory's image
+[2024-06-24 17:49:19,089]    INFO - Request: 'POST /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 302 0 B 293.4 ms
+[2024-06-24 17:49:19,260]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 35582 B 156.8 ms
+[2024-06-24 17:49:19,379]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 40.4 ms
+[2024-06-24 17:49:19,504]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 51.1 ms
+[2024-06-24 17:49:25,042]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 35.3 ms
+[2024-06-24 17:49:33,741]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34455 B 4.8 ms
+[2024-06-24 17:49:48,739]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34454 B 4.2 ms
+[2024-06-24 17:49:49,967]    ERROR - Internal Server Error: /api/v1/schedules/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/rest_framework/backends.py", line 74, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 230, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 213, in filter_queryset
+    queryset = self.filters[name].filter(queryset, value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filters.py", line 820, in __call__
+    return self.method(qs, self.f.field_name, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/filters.py", line 133, in filter_day
+    return queryset.filter(value)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1481, in build_filter
+    arg, value = filter_expr
+    ^^^^^^^^^^
+ValueError: too many values to unpack (expected 2)
+[2024-06-24 17:49:49,980]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 500 148557 B 149.2 ms
+[2024-06-24 17:50:03,752]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35516 B 12.4 ms
+[2024-06-24 17:50:18,742]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35503 B 7.8 ms
+[2024-06-24 17:50:33,757]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35504 B 17.6 ms
+[2024-06-24 17:50:48,744]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35517 B 9.4 ms
+[2024-06-24 17:51:03,743]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35505 B 8.6 ms
+[2024-06-24 17:51:04,440]    INFO - Request: 'GET /admin/animes/anime/32f15eba-c69d-4778-95dc-f4c8e1f93f41/change/ HTTP/1.1' 200 70751 B 266.1 ms
+[2024-06-24 17:51:04,620]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 70.1 ms
+[2024-06-24 17:51:05,924]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 30.3 ms
+[2024-06-24 17:51:07,454]    INFO - Request: 'GET /admin/autocomplete/ HTTP/1.1' 200 242 B 54.9 ms
+[2024-06-24 17:51:11,350]    INFO - Request: 'GET /admin/animes/broadcast/add/ HTTP/1.1' 200 16434 B 132.0 ms
+[2024-06-24 17:51:11,479]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 52.2 ms
+[2024-06-24 17:51:11,574]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 50.5 ms
+[2024-06-24 17:51:18,737]    INFO - Request: 'GET /metrics HTTP/1.1' 200 41607 B 6.2 ms
+[2024-06-24 17:51:25,871]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:51:32,207]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:51:41,075]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:51:46,789]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:52:03,743]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 2.8 ms
+[2024-06-24 17:52:18,731]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 2.5 ms
+[2024-06-24 17:52:33,743]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 12.0 ms
+[2024-06-24 17:52:46,092]    ERROR - Internal Server Error: /api/v1/schedules/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/rest_framework/backends.py", line 74, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 230, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 213, in filter_queryset
+    queryset = self.filters[name].filter(queryset, value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filters.py", line 820, in __call__
+    return self.method(qs, self.f.field_name, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/filters.py", line 133, in filter_day
+    return queryset.filter(broadcast_id__day=value)
+                                             ^^^^^^^
+NameError: name 'brovalue' is not defined
+[2024-06-24 17:52:46,104]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 500 119860 B 146.4 ms
+[2024-06-24 17:52:48,731]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22371 B 3.6 ms
+[2024-06-24 17:52:56,125]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:53:00,333]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:53:03,761]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14922 B 6.0 ms
+[2024-06-24 17:53:18,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18562 B 3.6 ms
+[2024-06-24 17:53:22,408]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 32.0 ms
+[2024-06-24 17:53:25,083]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 34.8 ms
+[2024-06-24 17:53:33,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21945 B 3.4 ms
+[2024-06-24 17:53:37,564]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 58.5 ms
+[2024-06-24 17:53:48,735]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21932 B 19.2 ms
+[2024-06-24 17:54:03,699]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21932 B 2.5 ms
+[2024-06-24 17:54:18,725]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21945 B 3.9 ms
+[2024-06-24 17:54:30,617]    INFO - Request: 'GET /admin/autocomplete/ HTTP/1.1' 200 242 B 49.3 ms
+[2024-06-24 17:54:33,050]    INFO - Request: 'GET /admin/animes/broadcast/add/ HTTP/1.1' 200 16434 B 360.8 ms
+[2024-06-24 17:54:33,178]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 64.7 ms
+[2024-06-24 17:54:33,601]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 62.3 ms
+[2024-06-24 17:54:33,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30702 B 5.4 ms
+[2024-06-24 17:54:36,383]    INFO - Request: 'GET /admin/autocomplete/ HTTP/1.1' 200 242 B 49.8 ms
+[2024-06-24 17:54:48,737]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30717 B 15.2 ms
+[2024-06-24 17:54:51,256]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 126.8 ms
+[2024-06-24 17:54:54,460]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 61.6 ms
+[2024-06-24 17:55:02,796]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 400 74 B 5.3 ms
+[2024-06-24 17:55:02,798]    WARNING - Bad Request: /api/v1/schedules/
+[2024-06-24 17:55:03,732]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31136 B 9.1 ms
+[2024-06-24 17:55:10,064]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 33.4 ms
+[2024-06-24 17:55:18,725]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31124 B 5.3 ms
+[2024-06-24 17:55:33,735]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31155 B 11.4 ms
+[2024-06-24 17:55:48,746]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31142 B 19.4 ms
+[2024-06-24 17:56:03,721]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31142 B 3.8 ms
+[2024-06-24 17:56:18,719]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31143 B 4.1 ms
+[2024-06-24 17:56:33,725]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31142 B 7.1 ms
+[2024-06-24 17:56:48,715]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31143 B 5.3 ms
+[2024-06-24 17:57:03,716]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31144 B 5.6 ms
+[2024-06-24 17:57:18,713]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31145 B 3.5 ms
+[2024-06-24 17:57:33,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31145 B 11.6 ms
+[2024-06-24 17:57:48,731]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31144 B 17.9 ms
+[2024-06-24 17:58:03,715]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31145 B 5.7 ms
+[2024-06-24 17:58:18,705]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31144 B 3.6 ms
+[2024-06-24 17:58:33,731]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31145 B 24.9 ms
+[2024-06-24 17:58:48,703]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31145 B 4.4 ms
+[2024-06-24 17:59:03,704]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31144 B 5.8 ms
+[2024-06-24 17:59:10,906]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:59:15,733]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:59:18,708]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 3.2 ms
+[2024-06-24 17:59:23,808]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:59:29,986]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:59:33,711]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 4.8 ms
+[2024-06-24 17:59:39,200]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:59:45,446]    INFO - Watching for file changes with StatReloader
+[2024-06-24 17:59:48,743]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 14.4 ms
+[2024-06-24 17:59:53,600]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 17:59:59,753]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:00:03,711]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 6.9 ms
+[2024-06-24 18:00:18,686]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 6.2 ms
+[2024-06-24 18:00:25,344]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 18:00:30,177]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:00:50,430]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 18:00:55,940]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:01:03,692]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 3.6 ms
+[2024-06-24 18:01:14,096]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 18:01:19,228]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:01:27,039]    ERROR - Internal Server Error: /api/v1/schedules/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/rest_framework/backends.py", line 74, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 230, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 214, in filter_queryset
+    assert isinstance(
+AssertionError: Expected 'SchedulesFilter.day' to return a QuerySet, but got a Response instead.
+[2024-06-24 18:01:27,044]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 500 112223 B 198.7 ms
+[2024-06-24 18:01:33,681]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19595 B 3.5 ms
+[2024-06-24 18:01:48,695]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22385 B 16.2 ms
+[2024-06-24 18:02:03,698]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22386 B 17.1 ms
+[2024-06-24 18:02:13,901]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 18:02:17,982]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:02:24,031]    ERROR - Internal Server Error: /api/v1/schedules/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/rest_framework/backends.py", line 74, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 230, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 214, in filter_queryset
+    assert isinstance(
+AssertionError: Expected 'SchedulesFilter.day' to return a QuerySet, but got a Response instead.
+[2024-06-24 18:02:24,048]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 500 112223 B 327.6 ms
+[2024-06-24 18:02:33,699]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19590 B 7.9 ms
+[2024-06-24 18:02:48,682]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22380 B 7.9 ms
+[2024-06-24 18:03:03,696]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22378 B 15.7 ms
+[2024-06-24 18:03:18,689]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22378 B 13.7 ms
+[2024-06-24 18:03:25,547]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 18:03:30,306]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:03:42,697]    ERROR - Internal Server Error: /api/v1/schedules/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/rest_framework/backends.py", line 74, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 230, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 214, in filter_queryset
+    assert isinstance(
+AssertionError: Expected 'SchedulesFilter.day' to return a QuerySet, but got a NoneType instead.
+[2024-06-24 18:03:42,700]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 500 112157 B 118.7 ms
+[2024-06-24 18:03:48,695]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19597 B 8.1 ms
+[2024-06-24 18:03:50,313]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 18:03:54,748]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:04:03,700]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 7.0 ms
+[2024-06-24 18:04:06,061]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 49.6 ms
+[2024-06-24 18:04:08,533]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 89.0 ms
+[2024-06-24 18:04:18,674]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21937 B 3.3 ms
+[2024-06-24 18:04:33,681]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21937 B 5.7 ms
+[2024-06-24 18:04:48,688]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 13.9 ms
+[2024-06-24 18:05:03,675]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 4.3 ms
+[2024-06-24 18:05:18,685]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21936 B 13.0 ms
+[2024-06-24 18:05:33,677]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21938 B 2.8 ms
+[2024-06-24 18:05:48,685]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21975 B 16.7 ms
+[2024-06-24 18:06:03,669]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22008 B 3.1 ms
+[2024-06-24 18:06:18,663]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22011 B 2.5 ms
+[2024-06-24 18:06:33,666]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22043 B 3.5 ms
+[2024-06-24 18:06:48,662]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22031 B 3.5 ms
+[2024-06-24 18:07:03,666]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22031 B 4.4 ms
+[2024-06-24 18:07:18,673]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22043 B 15.4 ms
+[2024-06-24 18:07:33,672]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22031 B 12.3 ms
+[2024-06-24 18:07:48,669]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22031 B 12.6 ms
+[2024-06-24 18:08:03,655]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22031 B 2.9 ms
+[2024-06-24 18:08:18,657]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22045 B 6.7 ms
+[2024-06-24 18:08:33,652]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22032 B 2.8 ms
+[2024-06-24 18:08:48,664]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22046 B 12.2 ms
+[2024-06-24 18:08:55,043]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 18:08:58,712]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:09:03,660]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 2.8 ms
+[2024-06-24 18:09:18,652]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 2.3 ms
+[2024-06-24 18:09:33,654]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 4.9 ms
+[2024-06-24 18:09:48,659]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 13.7 ms
+[2024-06-24 18:09:49,946]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 18:09:55,183]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:10:03,668]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 4.4 ms
+[2024-06-24 18:10:18,654]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 11.1 ms
+[2024-06-24 18:10:33,643]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 3.7 ms
+[2024-06-24 18:10:48,277]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 26.1 ms
+[2024-06-24 18:10:48,641]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21933 B 4.8 ms
+[2024-06-24 18:10:49,814]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 23.1 ms
+[2024-06-24 18:11:02,848]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 44.1 ms
+[2024-06-24 18:11:03,641]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21945 B 4.4 ms
+[2024-06-24 18:11:04,897]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 20.4 ms
+[2024-06-24 18:11:06,582]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 28.3 ms
+[2024-06-24 18:11:13,950]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 46.8 ms
+[2024-06-24 18:11:18,640]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22004 B 2.9 ms
+[2024-06-24 18:11:33,640]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22004 B 4.0 ms
+[2024-06-24 18:11:48,634]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22020 B 5.4 ms
+[2024-06-24 18:12:03,649]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22007 B 15.0 ms
+[2024-06-24 18:12:18,629]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22008 B 3.1 ms
+[2024-06-24 18:12:33,631]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22026 B 4.1 ms
+[2024-06-24 18:12:48,632]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22027 B 4.2 ms
+[2024-06-24 18:13:03,644]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22027 B 16.0 ms
+[2024-06-24 18:13:18,623]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22027 B 2.7 ms
+[2024-06-24 18:13:33,625]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22024 B 3.6 ms
+[2024-06-24 18:13:48,622]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22027 B 4.5 ms
+[2024-06-24 18:14:03,627]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22029 B 3.5 ms
+[2024-06-24 18:14:18,617]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22040 B 3.9 ms
+[2024-06-24 18:14:33,619]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22041 B 3.5 ms
+[2024-06-24 18:14:48,616]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22029 B 3.8 ms
+[2024-06-24 18:15:03,618]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22027 B 3.2 ms
+[2024-06-24 18:15:18,630]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22028 B 18.8 ms
+[2024-06-24 18:15:33,629]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22029 B 15.5 ms
+[2024-06-24 18:15:48,609]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22028 B 2.8 ms
+[2024-06-24 18:16:03,611]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22041 B 3.2 ms
+[2024-06-24 18:16:18,607]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22028 B 3.7 ms
+[2024-06-24 18:16:33,613]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22028 B 7.2 ms
+[2024-06-24 18:16:48,606]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22027 B 4.6 ms
+[2024-06-24 18:16:58,315]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 60.8 ms
+[2024-06-24 18:17:03,607]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22026 B 5.5 ms
+[2024-06-24 18:17:18,601]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22027 B 3.3 ms
+[2024-06-24 18:17:33,603]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22027 B 4.6 ms
+[2024-06-24 18:17:48,602]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22026 B 6.0 ms
+[2024-06-24 18:18:03,601]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22040 B 4.9 ms
+[2024-06-24 18:18:04,473]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 18:18:09,496]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:18:18,620]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 6.8 ms
+[2024-06-24 18:18:19,096]    INFO - /app/apps/animes/filters.py changed, reloading.
+[2024-06-24 18:18:27,507]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:18:33,668]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 12.8 ms
+[2024-06-24 18:18:48,594]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 4.5 ms
+[2024-06-24 18:18:50,933]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 42.1 ms
+[2024-06-24 18:18:53,491]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 35.0 ms
+[2024-06-24 18:19:03,031]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 52 B 46.1 ms
+[2024-06-24 18:19:03,597]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21932 B 5.5 ms
+[2024-06-24 18:19:09,684]    INFO - Request: 'GET /api/v1/schedules/ HTTP/1.1' 200 501 B 41.7 ms
+[2024-06-24 18:19:18,616]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21933 B 22.9 ms
+[2024-06-24 18:19:33,603]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21933 B 11.4 ms
+[2024-06-24 18:19:48,600]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21982 B 13.9 ms
+[2024-06-24 18:20:03,593]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22005 B 6.5 ms
+[2024-06-24 18:20:18,585]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22017 B 3.8 ms
+[2024-06-24 18:20:33,593]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22004 B 9.2 ms
+[2024-06-24 18:20:48,584]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22005 B 5.1 ms
+[2024-06-24 18:21:03,611]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22022 B 25.8 ms
+[2024-06-24 18:21:18,581]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22022 B 4.7 ms
+[2024-06-24 18:21:33,584]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22019 B 6.5 ms
+[2024-06-24 18:21:48,591]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22025 B 12.6 ms
+[2024-06-24 18:22:03,597]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22037 B 15.8 ms
+[2024-06-24 18:22:18,579]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22024 B 6.0 ms
+[2024-06-24 18:22:26,454]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 18:22:31,643]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:22:40,382]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 18:22:45,409]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:22:48,587]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 7.6 ms
+[2024-06-24 18:23:03,589]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 13.3 ms
+[2024-06-24 18:23:07,563]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 18:23:12,741]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:23:18,581]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 5.1 ms
+[2024-06-24 18:23:33,585]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 13.1 ms
+[2024-06-24 18:23:36,626]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 18:23:40,988]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:23:48,580]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 2.5 ms
+[2024-06-24 18:24:03,570]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 3.7 ms
+[2024-06-24 18:24:18,564]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 2.1 ms
+[2024-06-24 18:24:33,567]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 3.3 ms
+[2024-06-24 18:24:48,567]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 5.2 ms
+[2024-06-24 18:25:02,587]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 18:25:07,999]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:25:20,883]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 18:25:26,280]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:25:33,572]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14907 B 4.9 ms
+[2024-06-24 18:25:43,168]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-06-24 18:25:50,612]    INFO - Watching for file changes with StatReloader
+[2024-06-24 18:26:03,573]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14921 B 3.3 ms
+[2024-06-24 18:26:18,583]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 24.8 ms
+[2024-06-24 18:26:33,557]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18560 B 2.6 ms
+[2024-06-24 18:26:48,569]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18560 B 15.6 ms
+[2024-06-24 18:27:03,582]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18558 B 26.2 ms
+[2024-06-24 18:27:18,558]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18546 B 7.4 ms
+[2024-06-24 18:32:42,010]    INFO - Watching for file changes with StatReloader

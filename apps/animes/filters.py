@@ -4,8 +4,12 @@ from django.utils.translation import gettext as _
 from django_filters import rest_framework as filters
 
 from apps.utils.filters import BaseFilter
+
+from .choices import DayChoices
+from .choices import MediaTypeChoices
+from .choices import RatingChoices
+from .choices import StatusChoices
 from .models import Anime
-from .choices import MediaTypeChoices, StatusChoices, RatingChoices
 
 
 class AnimeFilter(BaseFilter):
@@ -107,3 +111,20 @@ class AnimeSeasonFilter(filters.FilterSet):
         fields = [
             "type",
         ]
+
+
+class SchedulesFilter(filters.FilterSet):
+    """Filter for Animes model (Schedules)."""
+
+    day = filters.ChoiceFilter(
+        choices=DayChoices.choices,
+        method="filter_day",
+        label=_("Filter by day"),
+    )
+
+    def filter_day(self, queryset, name, value):
+        return queryset.filter(broadcast_id__day=value)
+
+    class Meta:
+        model = Anime
+        fields = ["day"]
