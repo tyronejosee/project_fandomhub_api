@@ -199,6 +199,24 @@ class Anime(BaseModel, SlugMixin):
     def __str__(self):
         return str(self.name)
 
+    def calculate_score(self, user_score):
+        # Calculate the new score based on the existing score and the user's score
+        if self.members >= 2:
+            self.score = (self.score + user_score) / self.members
+        else:
+            self.score = user_score
+
+    def calculate_ranked(self):
+        # Calculate the ranking of the anime based on its score compared to all other animes
+        all_animes = Anime.objects.all().order_by("-score")
+        print(all_animes)
+        self.ranked = list(all_animes).index(self) + 1
+
+    def calculate_popularity(self):
+        # Calculate the popularity of the anime based on the number of members who have it in their list
+        all_animes = Anime.objects.all().order_by("-members")
+        self.popularity = list(all_animes).index(self) + 1
+
 
 class AnimeStats(BaseModel):
     """Model definition for AnimeStats."""

@@ -36,11 +36,6 @@ class AnimeAdmin(ImportExportModelAdmin, BaseAdmin):
     readonly_fields = [
         "pk",
         "slug",
-        "score",
-        "ranked",
-        "popularity",
-        "favorites",
-        "members",
         "created_at",
         "updated_at",
     ]

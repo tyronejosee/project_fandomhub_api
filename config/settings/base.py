@@ -11,6 +11,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 env = environ.Env()
 environ.Env.read_env(".env.dev")
 
+ADMINS = [
+    (env("ADMIN_NAME"), env("ADMIN_EMAIL")),
+]
+
 BASE_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
