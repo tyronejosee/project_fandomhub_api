@@ -127,6 +127,23 @@ class Manga(BaseModel, SlugMixin):
     def __str__(self):
         return str(self.name)
 
+    def calculate_score(self, user_score):
+        # Calculate score based on the existing score and the user's score
+        if self.members >= 2:
+            self.score = (self.score + user_score) / self.members
+        else:
+            self.score = user_score
+
+    def calculate_ranked(self):
+        # Calculate ranking of manga based on its score compared to all other mangas
+        all_mangas = Manga.objects.all().order_by("-score")
+        self.ranked = list(all_mangas).index(self) + 1
+
+    def calculate_popularity(self):
+        # Calculate popularity of manga based on number of members who have it in list
+        all_mangas = Manga.objects.all().order_by("-members")
+        self.popularity = list(all_mangas).index(self) + 1
+
 
 class MangaStats(BaseModel):
     """Model definition for MangaStats."""

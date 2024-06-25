@@ -34,11 +34,6 @@ class MangaAdmin(ImportExportModelAdmin, BaseAdmin):
     readonly_fields = [
         "pk",
         "slug",
-        "score",
-        "ranked",
-        "popularity",
-        "members",
-        "favorites",
         "created_at",
         "updated_at",
     ]
