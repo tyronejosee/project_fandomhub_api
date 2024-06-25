@@ -5533,3 +5533,12 @@ DETAIL:  Failing row contains (32f15eba-c69d-4778-95dc-f4c8e1f93f41, t, 2024-06-
 [2024-06-25 18:06:48,435]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 11.2 ms
 [2024-06-25 18:07:03,423]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 2.1 ms
 [2024-06-25 18:07:18,422]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18588 B 2.6 ms
+[2024-06-25 18:07:33,422]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 3.1 ms
+[2024-06-25 18:07:48,421]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 4.0 ms
+[2024-06-25 18:08:03,430]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 10.2 ms
+[2024-06-25 18:08:18,442]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18656 B 22.1 ms
+[2024-06-25 18:08:33,431]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 12.7 ms
+[2024-06-25 18:08:48,420]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 5.7 ms
+[2024-06-25 18:09:03,424]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 9.2 ms
+[2024-06-25 18:09:18,427]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 12.8 ms
+[2024-06-25 18:11:07,563]    INFO - Watching for file changes with StatReloader
