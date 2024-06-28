@@ -43,7 +43,7 @@ class ClubWriteSerializer(serializers.ModelSerializer):
 class ClubMemberReadSerializer(serializers.ModelSerializer):
     """Serializer for ClubMember model (List/retrieve)."""
 
-    user = serializers.StringRelatedField()
+    user_id = serializers.StringRelatedField()
     joined_at = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
 
     class Meta:

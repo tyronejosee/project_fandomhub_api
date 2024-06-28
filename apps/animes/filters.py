@@ -36,22 +36,22 @@ class AnimeFilter(BaseFilter):
     genre = filters.CharFilter(
         field_name="genres__name",
         lookup_expr="icontains",
-        label=_("Filter by genre(s), e.g /?genre=gore"),
+        label=_("Filter by genre(s), ex `/?genre=gore`"),
     )
     theme = filters.CharFilter(
         field_name="themes__name",
         lookup_expr="icontains",
-        label=_("Filter by theme(s), e.g /?theme=shounen"),
+        label=_("Filter by theme(s), ex `/?theme=shounen`"),
     )
     start_date = filters.DateFilter(
         field_name="aired_from",
         lookup_expr="gte",
-        label=_("Filter by starting date, Format: YYYY-MM-DD. e.g 2005-01-01"),
+        label=_("Filter by starting date, Format: `YYYY-MM-DD`. ex `2005-01-01`"),
     )
     end_date = filters.DateFilter(
         field_name="aired_from",
         lookup_expr="lte",
-        label=_("Filter by ending date, Format: YYYY-MM-DD. e.g 2005-01-01"),
+        label=_("Filter by ending date, Format: `YYYY-MM-DD`. ex `2005-01-01`"),
     )
 
     class Meta:

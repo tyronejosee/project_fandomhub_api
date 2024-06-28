@@ -9,6 +9,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.decorators import action
+from drf_spectacular.utils import extend_schema_view
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.users.permissions import IsMember
@@ -19,8 +20,10 @@ from .serializers import (
     ClubWriteSerializer,
     ClubMemberReadSerializer,
 )
+from .schemas import club_schemas
 
 
+@extend_schema_view(**club_schemas)
 class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Club instances.
@@ -69,15 +72,11 @@ class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET /api/v1/clubs/{id}/members/
         """
         club = self.get_object()
+        members = ClubMember.objects.get_by_club(club)
+        if members.exists():
+            serializer = ClubMemberReadSerializer(members, many=True)
+            return Response(serializer.data)
+        return Response({"detail": _("No members found for this club.")}, status=status.HTTP_404_NOT_FOUND)
 
-        try:
-            members = ClubMember.objects.get_by_club(club)
-            if members.exists():
-                serializer = ClubMemberReadSerializer(members, many=True)
-                return Response(serializer.data)
-            return Response({"detail": _("No members found for this club.")})
-        except Exception as e:
-            return Response({"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-    # TODO: Add logic and list all the staff, GET clubs/{id}/staff
-    # TODO: Add logic and list all relationships, GET clubs/{id}/relations
+    # TODO: Add GET clubs/{id}/staff
+    # TODO: Add GET clubs/{id}/relations

@@ -12,12 +12,12 @@ class BaseFilter(filters.FilterSet):
     sort = filters.ChoiceFilter(
         choices=SortChoices.choices,
         method="filter_by_order",
-        label="Search query sort direction",
+        label="Search query sort direction, ex `/?=sort=asc`",
     )
     letter = filters.CharFilter(
         field_name="name",
         method="filter_by_letter",
-        label="Return entries starting with the given letter",
+        label="Return entries starting with the given letter, ex `/?=letter=b`",
     )
 
     def filter_by_letter(self, queryset, name, value):
