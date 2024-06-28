@@ -68,6 +68,8 @@ character_schemas = {
         responses={
             204: OpenApiResponse(description="No Content"),
             400: OpenApiResponse(description="Bad request"),
+            401: OpenApiResponse(description="Unauthorized"),
+            403: OpenApiResponse(description="Forbidden"),
             404: OpenApiResponse(description="Not Found"),
         },
     ),

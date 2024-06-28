@@ -1,24 +1,15 @@
 """Managers for Genres App."""
 
-from django.db.models import Manager
+from apps.utils.managers import BaseManager
 
 
-class GenreManager(Manager):
+class GenreManager(BaseManager):
     """Manager for Genre model."""
 
-    def get_available(self):
-        return self.filter(is_available=True)
 
-
-class ThemeManager(Manager):
+class ThemeManager(BaseManager):
     """Manager for Theme model."""
 
-    def get_available(self):
-        return self.filter(is_available=True)
 
-
-class DemographicManager(Manager):
+class DemographicManager(BaseManager):
     """Manager for Season model."""
-
-    def get_available(self):
-        return self.filter(is_available=True)

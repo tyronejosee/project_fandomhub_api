@@ -42,7 +42,7 @@ club_schemas = {
     ),
     "update": extend_schema(
         summary="Update Club",
-        description="Update all fields of a specific character, only for `IsMember` or `IsAdministrator` users.",
+        description="Update all fields of a specific club, only for `IsMember` or `IsAdministrator` users.",
         responses={
             200: OpenApiResponse(ClubWriteSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
@@ -68,6 +68,8 @@ club_schemas = {
         responses={
             204: OpenApiResponse(description="No Content"),
             400: OpenApiResponse(description="Bad request"),
+            401: OpenApiResponse(description="Unauthorized"),
+            403: OpenApiResponse(description="Forbidden"),
             404: OpenApiResponse(description="Not Found"),
         },
     ),

@@ -9,7 +9,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
-from drf_spectacular.utils import extend_schema_view, extend_schema
+from drf_spectacular.utils import extend_schema_view
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.pagination import LargeSetPagination
@@ -63,10 +63,6 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return GenreReadSerializer
         return super().get_serializer_class()
 
-    @extend_schema(
-        summary="Get Animes for Genre",
-        description="Retrieve a list of animes for genre.",
-    )
     @action(
         detail=True,
         methods=["get"],
@@ -83,24 +79,15 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/genres/{id}/animes/
         """
         genre = self.get_object()
+        animes = Anime.objects.get_by_genre(genre)
+        if animes.exists():
+            serializer = AnimeMinimalSerializer(animes, many=True)
+            return Response(serializer.data)
+        return Response(
+            {"detail": _("No animes found for this genre.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
-        try:
-            animes = Anime.objects.get_by_genre(genre)
-            if animes.exists():
-                serializer = AnimeMinimalSerializer(animes, many=True)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No animes found for this genre.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
-
-    @extend_schema(
-        summary="Get Mangas for Genre", description="Retrieve a manga list for genre."
-    )
     @action(
         detail=True,
         methods=["get"],
@@ -117,20 +104,14 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/genres/{id}/mangas/
         """
         genre = self.get_object()
-
-        try:
-            mangas = Manga.objects.get_by_genre(genre)
-            if mangas.exists():
-                serializer = MangaMinimalSerializer(mangas, many=True)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No mangas found for this genre.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        mangas = Manga.objects.get_by_genre(genre)
+        if mangas.exists():
+            serializer = MangaMinimalSerializer(mangas, many=True)
+            return Response(serializer.data)
+        return Response(
+            {"detail": _("No mangas found for this genre.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
 
 @extend_schema_view(**theme_schemas)
