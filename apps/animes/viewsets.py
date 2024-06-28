@@ -57,8 +57,6 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     search_fields = ["name", "studio_id__name"]
     ordering_fields = ["name"]
     filterset_class = AnimeFilter
-    # lookup_field = "slug"
-    # lookup_url_kwarg = "anime_id"
 
     def get_queryset(self):
         return Anime.objects.get_available()

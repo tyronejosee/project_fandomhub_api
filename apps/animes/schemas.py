@@ -1,31 +1,165 @@
 """Schemas for Animes App."""
 
-from drf_spectacular.utils import extend_schema
+from drf_spectacular.utils import extend_schema, OpenApiResponse
+
+from apps.utils.serializers import PictureReadSerializer, VideoReadSerializer
+from apps.characters.serializers import CharacterMinimalSerializer
+from apps.persons.serializers import StaffMinimalSerializer
+from apps.news.serializers import NewsMinimalSerializer
+from .serializers import (
+    AnimeReadSerializer,
+    AnimeWriteSerializer,
+    AnimeMinimalSerializer,
+    AnimeStatsReadSerializer,
+)
 
 
 anime_schemas = {
     "list": extend_schema(
         summary="Get Several Animes",
-        description="Retrieve a list of all anime entries.",
+        description="Get a list of the entire catalog of available anime.",
+        responses={
+            200: OpenApiResponse(AnimeMinimalSerializer(many=True), description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found")
+        },
+        auth=[]
     ),
     "create": extend_schema(
         summary="Create Anime",
-        description="Create a new anime entry.",
+        description="Create a new anime, only for `IsContributor` or `IsAdministrator` users.",
+        responses={
+            201: OpenApiResponse(AnimeWriteSerializer, description="Created"),
+            400: OpenApiResponse(description="Bad request"),
+            401: OpenApiResponse(description="Unauthorized"),
+            403: OpenApiResponse(description="Forbidden"),
+        },
     ),
     "retrieve": extend_schema(
         summary="Get Anime",
-        description="Get detailed information about a specific anime entry.",
+        description="Get detailed information about a specific anime.",
+        responses={
+            200: OpenApiResponse(AnimeReadSerializer, description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found")
+        },
+        auth=[]
+
     ),
     "update": extend_schema(
-        summary="Change Anime",
-        description="Change all fields of a specific anime entry.",
+        summary="Update Anime",
+        description="Update all fields of a specific anime, only for `IsContributor` or `IsAdministrator` users.",
+        responses={
+            200: OpenApiResponse(AnimeWriteSerializer, description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            401: OpenApiResponse(description="Unauthorized"),
+            403: OpenApiResponse(description="Forbidden"),
+            404: OpenApiResponse(description="Not Found"),
+        },
     ),
     "partial_update": extend_schema(
-        summary="Update Anime",
-        description="Update some fields of a specific anime entry.",
+        summary="Partial Update Anime",
+        description="Update some fields of a specific anime, only for `IsContributor` or `IsAdministrator` users.",
+        responses={
+            200: OpenApiResponse(AnimeWriteSerializer, description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            401: OpenApiResponse(description="Unauthorized"),
+            403: OpenApiResponse(description="Forbidden"),
+            404: OpenApiResponse(description="Not Found"),
+        },
     ),
     "destroy": extend_schema(
         summary="Remove Anime",
-        description="Remove a specific anime entry.",
+        description="Remove a specific anime, only for `IsContributor` or `IsAdministrator` users.",
+        responses={
+            204: OpenApiResponse(description="No Content"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not Found"),
+        },
+    ),
+    "get_characters": extend_schema(
+        summary="Get Anime Characters",
+        description="Get all characters of the anime passed as param (UUID).",
+        responses={
+            200: OpenApiResponse(CharacterMinimalSerializer, description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found")
+        },
+        auth=[]
+    ),
+    # "get_episodes": extend_schema(),
+    "get_staff": extend_schema(
+        summary="Get Anime Staff",
+        description="Get all staff of the anime passed as param (UUID).",
+        responses={
+            200: OpenApiResponse(StaffMinimalSerializer, description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found")
+        },
+        auth=[]
+    ),
+    "get_stats": extend_schema(
+        summary="Get Anime Stats",
+        description="Get statistics of the anime passed as param (UUID).",
+        responses={
+            200: OpenApiResponse(AnimeStatsReadSerializer, description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found")
+        },
+        auth=[]
+    ),
+    # TODO: Add all methods, refactor
+    # "get_reviews": extend_schema(
+    #     summary="Get Anime Reviews",
+    #     description="Get reviews of the anime passed as param (UUID).",
+    #     responses={
+    #         200: OpenApiResponse(AnimeStatsReadSerializer, description="OK"),
+    #         400: OpenApiResponse(description="Bad request"),
+    #         404: OpenApiResponse(description="Not found")
+    #     },
+    #     auth=[]
+    # ),
+    "get_recommendations": extend_schema(
+        summary="Get Anime Recommendations",
+        description="Get recommendations of the anime passed as param (UUID).",
+        responses={
+            200: OpenApiResponse(AnimeMinimalSerializer, description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found")
+        },
+        auth=[]
+    ),
+    # "get_interest_stacks": extend_schema(),
+    "get_news": extend_schema(
+        summary="Get Anime News",
+        description="Get news of the anime passed as param (UUID).",
+        responses={
+            200: OpenApiResponse(NewsMinimalSerializer, description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found")
+        },
+        auth=[]
+    ),
+    # "get_forum": extend_schema(),
+    # "get_clubs": extend_schema(),
+    "get_videos": extend_schema(
+        summary="Get Anime Videos",
+        description="Get videos of the anime passed as param (UUID).",
+        responses={
+            200: OpenApiResponse(VideoReadSerializer, description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found")
+        },
+        auth=[]
+    ),
+    "get_pictures": extend_schema(
+        summary="Get Anime Pictures",
+        description="Get pictures of the anime passed as param (UUID).",
+        responses={
+            200: OpenApiResponse(PictureReadSerializer, description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found")
+        },
+        auth=[]
     ),
 }

@@ -1,16 +1,10 @@
 """Managers for Animes App."""
 
-from django.db.models import Manager
+from apps.utils.managers import BaseManager
 
 
-class AnimeManager(Manager):
+class AnimeManager(BaseManager):
     """Manager for Anime model."""
-
-    def get_available(self):
-        return self.filter(is_available=True)
-
-    def get_unavailable(self):
-        return self.filter(is_available=False)
 
     def get_popular(self):
         return self.get_available().order_by("-popularity")

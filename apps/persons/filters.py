@@ -24,6 +24,9 @@ class PersonFilter(BaseFilter):
         label=_("Available Person order_by properties"),
     )
 
+    def filter_order_by(self, queryset, name, value):
+        return queryset.order_by(value)
+
     class Meta:
         model = Person
         fields = [
