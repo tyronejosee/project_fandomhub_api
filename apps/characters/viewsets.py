@@ -10,6 +10,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
+from drf_spectacular.utils import extend_schema_view
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.models import Picture
@@ -24,8 +25,10 @@ from apps.users.choices import RoleChoices
 from .models import Character, CharacterAnime, CharacterManga
 from .serializers import CharacterReadSerializer, CharacterWriteSerializer
 from .filters import CharacterFilter
+from .schemas import character_schemas
 
 
+@extend_schema_view(**character_schemas)
 class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Characters instances.
@@ -43,8 +46,6 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     serializer_class = CharacterWriteSerializer
     search_fields = ["name", "name_kanji"]
     filterset_class = CharacterFilter
-    # lookup_field = "slug"
-    # lookup_url_kwarg = "character_id"
 
     def get_queryset(self):
         return Character.objects.get_available()
@@ -152,7 +153,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_anime_by_character(self, request, *args, **kwargs):
+    def get_anime(self, request, *args, **kwargs):
         """
         Action retrieve the anime associated with a character.
 
@@ -160,25 +161,17 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/characters/{id}/anime/
         """
         character = self.get_object()
-
-        # TODO: Remover characteranime, replace for characterelations
-
-        try:
-            character_anime = CharacterAnime.objects.filter(
-                character_id=character
-            ).first()  # TODO: Add manager
-            if character_anime:
-                anime = character_anime.anime_id
-                serializer = AnimeMinimalSerializer(anime)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No anime found for this character.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        character_anime = CharacterAnime.objects.filter(
+            character_id=character
+        ).first()  # TODO: Add manager
+        if character_anime:
+            anime = character_anime.anime_id
+            serializer = AnimeMinimalSerializer(anime)
+            return Response(serializer.data)
+        return Response(
+            {"detail": _("No anime found for this character.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     @action(
         detail=True,
@@ -188,7 +181,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def get_manga_by_character(self, request, *args, **kwargs):
+    def get_manga(self, request, *args, **kwargs):
         """
         Action retrieve the manga associated with a character.
 
@@ -196,20 +189,14 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/characters/{id}/manga/
         """
         character = self.get_object()
-
-        try:
-            character_manga = CharacterManga.objects.filter(
-                character_id=character
-            ).first()  # TODO: Add manager
-            if character_manga:
-                manga = character_manga.manga_id
-                serializer = MangaMinimalSerializer(manga)
-                return Response(serializer.data)
-            return Response(
-                {"detail": _("No manga found for this character.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        character_manga = CharacterManga.objects.filter(
+            character_id=character
+        ).first()  # TODO: Add manager
+        if character_manga:
+            manga = character_manga.manga_id
+            serializer = MangaMinimalSerializer(manga)
+            return Response(serializer.data)
+        return Response(
+            {"detail": _("No manga found for this character.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )

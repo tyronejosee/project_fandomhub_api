@@ -79,7 +79,7 @@ anime_schemas = {
     ),
     "get_characters": extend_schema(
         summary="Get Anime Characters",
-        description="Get all characters of the anime passed as param (UUID).",
+        description="Get all characters of the anime passed as param (`uuid`).",
         responses={
             200: OpenApiResponse(CharacterMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
@@ -90,7 +90,7 @@ anime_schemas = {
     # "get_episodes": extend_schema(),
     "get_staff": extend_schema(
         summary="Get Anime Staff",
-        description="Get all staff of the anime passed as param (UUID).",
+        description="Get all staff of the anime passed as param (`uuid`).",
         responses={
             200: OpenApiResponse(StaffMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
@@ -100,7 +100,7 @@ anime_schemas = {
     ),
     "get_stats": extend_schema(
         summary="Get Anime Stats",
-        description="Get statistics of the anime passed as param (UUID).",
+        description="Get statistics of the anime passed as param (`uuid`).",
         responses={
             200: OpenApiResponse(AnimeStatsReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
@@ -111,7 +111,7 @@ anime_schemas = {
     # TODO: Add all methods, refactor
     # "get_reviews": extend_schema(
     #     summary="Get Anime Reviews",
-    #     description="Get reviews of the anime passed as param (UUID).",
+    #     description="Get reviews of the anime passed as param (`uuid`).",
     #     responses={
     #         200: OpenApiResponse(AnimeStatsReadSerializer, description="OK"),
     #         400: OpenApiResponse(description="Bad request"),
@@ -121,7 +121,7 @@ anime_schemas = {
     # ),
     "get_recommendations": extend_schema(
         summary="Get Anime Recommendations",
-        description="Get recommendations of the anime passed as param (UUID).",
+        description="Get recommendations of the anime passed as param (`uuid`).",
         responses={
             200: OpenApiResponse(AnimeMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
@@ -132,7 +132,7 @@ anime_schemas = {
     # "get_interest_stacks": extend_schema(),
     "get_news": extend_schema(
         summary="Get Anime News",
-        description="Get news of the anime passed as param (UUID).",
+        description="Get news of the anime passed as param (`uuid`).",
         responses={
             200: OpenApiResponse(NewsMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
@@ -144,7 +144,7 @@ anime_schemas = {
     # "get_clubs": extend_schema(),
     "get_videos": extend_schema(
         summary="Get Anime Videos",
-        description="Get videos of the anime passed as param (UUID).",
+        description="Get videos of the anime passed as param (`uuid`).",
         responses={
             200: OpenApiResponse(VideoReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
@@ -154,7 +154,7 @@ anime_schemas = {
     ),
     "get_pictures": extend_schema(
         summary="Get Anime Pictures",
-        description="Get pictures of the anime passed as param (UUID).",
+        description="Get pictures of the anime passed as param (`uuid`).",
         responses={
             200: OpenApiResponse(PictureReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),

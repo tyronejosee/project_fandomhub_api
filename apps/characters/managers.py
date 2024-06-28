@@ -1,10 +1,7 @@
 """Managers for Characters App."""
 
-from django.db.models import Manager
+from apps.utils.managers import BaseManager
 
 
-class CharacterManager(Manager):
+class CharacterManager(BaseManager):
     """Manager for Character model."""
-
-    def get_available(self):
-        return self.filter(is_available=True)
