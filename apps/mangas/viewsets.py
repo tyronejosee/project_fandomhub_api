@@ -35,9 +35,10 @@ from .serializers import (
     MangaStatsReadSerializer,
 )
 from .filters import MagazineFilter
-from .schemas import manga_schemas
+from .schemas import magazine_schemas, manga_schemas
 
 
+@extend_schema_view(**magazine_schemas)
 class MagazineViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Magazine instances.
@@ -87,7 +88,8 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsContributor]
     serializer_class = MangaWriteSerializer
     search_fields = ["name"]
-    ordering_fields = ["name"]
+    # filterset_class = MangaFilter
+    # TODO: Add filter
 
     def get_queryset(self):
         return Manga.objects.get_available()
@@ -160,24 +162,6 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             status=status.HTTP_404_NOT_FOUND,
         )
 
-    # @extend_schema(
-    #     summary="Get all review for a manga",
-    #     description="Pending description.",
-    #     responses={
-    #         200: ReviewReadSerializer(many=True),
-    #         404: None
-    #     },
-    #     methods=["GET"],
-    # )
-    # @extend_schema(
-    #     summary="Create review for a manga",
-    #     description="Pending description.",
-    #     responses={
-    #         201: ReviewReadSerializer(),
-    #         404: None
-    #     },
-    #     methods=["POST"],
-    # )
     @action(
         detail=True,
         methods=["GET", "POST"],
