@@ -8804,3 +8804,392 @@ AssertionError: The field 'user' was declared on serializer ClubMemberReadSerial
 [2024-06-28 22:48:17,140]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 2.6 ms
 [2024-06-28 22:48:25,005]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
 [2024-06-28 22:48:33,788]    INFO - Watching for file changes with StatReloader
+[2024-06-28 22:48:47,145]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 8.0 ms
+[2024-06-28 22:48:55,705]    INFO - Request: 'GET /api/schema/redoc/ HTTP/1.1' 200 727 B 256.9 ms
+[2024-06-28 22:48:58,562]    INFO - Request: 'GET /api/schema/ HTTP/1.1' 200 208878 B 2521.7 ms
+[2024-06-28 22:49:02,127]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24017 B 4.3 ms
+[2024-06-28 22:49:17,128]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24032 B 5.5 ms
+[2024-06-28 22:49:20,701]    INFO - Request: 'GET /api/schema/swagger/ HTTP/1.1' 200 4441 B 20.1 ms
+[2024-06-28 22:49:22,206]    INFO - Request: 'GET /api/schema/ HTTP/1.1' 200 422610 B 1081.0 ms
+[2024-06-28 22:49:32,127]    INFO - Request: 'GET /metrics HTTP/1.1' 200 26746 B 7.8 ms
+[2024-06-28 22:49:47,126]    INFO - Request: 'GET /metrics HTTP/1.1' 200 26746 B 7.9 ms
+[2024-06-28 22:50:02,120]    INFO - Request: 'GET /metrics HTTP/1.1' 200 26781 B 3.9 ms
+[2024-06-28 22:50:17,150]    INFO - Request: 'GET /metrics HTTP/1.1' 200 26805 B 31.2 ms
+[2024-06-28 22:50:32,134]    INFO - Request: 'GET /metrics HTTP/1.1' 200 26807 B 18.6 ms
+[2024-06-28 22:50:47,132]    INFO - Request: 'GET /metrics HTTP/1.1' 200 26826 B 19.1 ms
+[2024-06-28 22:51:20,797]    INFO - Watching for file changes with StatReloader
+[2024-06-28 22:51:24,314]    INFO - /app/apps/mangas/managers.py changed, reloading.
+[2024-06-28 22:51:30,925]    INFO - Watching for file changes with StatReloader
+[2024-06-28 22:51:37,028]    INFO - /app/apps/mangas/managers.py changed, reloading.
+[2024-06-28 22:51:44,353]    INFO - Watching for file changes with StatReloader
+[2024-06-28 22:51:49,771]    INFO - /app/apps/mangas/managers.py changed, reloading.
+[2024-06-28 22:51:56,077]    INFO - Watching for file changes with StatReloader
+[2024-06-28 22:52:02,147]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 3.5 ms
+[2024-06-28 22:52:06,028]    INFO - /app/apps/mangas/managers.py changed, reloading.
+[2024-06-28 22:52:11,129]    INFO - Watching for file changes with StatReloader
+[2024-06-28 22:52:17,117]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 6.9 ms
+[2024-06-28 22:52:32,104]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 3.8 ms
+[2024-06-28 22:52:36,353]    INFO - /app/apps/mangas/managers.py changed, reloading.
+[2024-06-28 22:52:48,165]    INFO - Watching for file changes with StatReloader
+[2024-06-28 22:52:56,887]    INFO - /app/apps/mangas/managers.py changed, reloading.
+[2024-06-28 22:53:02,948]    INFO - Watching for file changes with StatReloader
+[2024-06-28 22:53:17,107]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 4.3 ms
+[2024-06-28 22:53:32,097]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 3.8 ms
+[2024-06-28 22:53:47,106]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18546 B 13.5 ms
+[2024-06-28 22:54:02,097]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18546 B 6.6 ms
+[2024-06-28 22:54:17,094]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18559 B 3.4 ms
+[2024-06-28 22:54:32,105]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 16.5 ms
+[2024-06-28 22:54:47,089]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 3.9 ms
+[2024-06-28 22:55:02,088]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 3.0 ms
+[2024-06-28 22:55:17,089]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 4.7 ms
+[2024-06-28 22:55:32,081]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18584 B 3.2 ms
+[2024-06-28 22:55:47,082]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18637 B 3.5 ms
+[2024-06-28 22:56:02,082]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18652 B 6.0 ms
+[2024-06-28 22:56:17,078]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18653 B 2.9 ms
+[2024-06-28 22:56:32,076]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18638 B 3.0 ms
+[2024-06-28 22:56:47,078]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 5.1 ms
+[2024-06-28 22:57:02,078]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 6.6 ms
+[2024-06-28 22:57:17,073]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18639 B 3.1 ms
+[2024-06-28 22:57:32,070]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 2.3 ms
+[2024-06-28 22:57:47,087]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 16.0 ms
+[2024-06-28 22:58:02,069]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 2.6 ms
+[2024-06-28 22:58:17,074]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 7.3 ms
+[2024-06-28 22:58:32,076]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18653 B 9.2 ms
+[2024-06-28 22:58:47,069]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 3.9 ms
+[2024-06-28 22:59:02,077]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 11.2 ms
+[2024-06-28 22:59:17,066]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 2.4 ms
+[2024-06-28 22:59:32,067]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 4.0 ms
+[2024-06-28 22:59:47,068]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18639 B 5.5 ms
+[2024-06-28 23:00:02,065]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 3.8 ms
+[2024-06-28 23:00:17,064]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 3.3 ms
+[2024-06-28 23:00:32,084]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18654 B 21.5 ms
+[2024-06-28 23:00:47,061]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18639 B 3.2 ms
+[2024-06-28 23:01:02,074]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 15.2 ms
+[2024-06-28 23:01:17,060]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 4.2 ms
+[2024-06-28 23:01:32,080]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 17.1 ms
+[2024-06-28 23:01:47,061]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18639 B 7.0 ms
+[2024-06-28 23:02:02,056]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 4.7 ms
+[2024-06-28 23:02:17,054]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18654 B 3.0 ms
+[2024-06-28 23:02:32,064]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 13.2 ms
+[2024-06-28 23:02:47,054]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 4.7 ms
+[2024-06-28 23:03:02,065]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 16.6 ms
+[2024-06-28 23:03:17,050]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 3.0 ms
+[2024-06-28 23:03:32,049]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 3.9 ms
+[2024-06-28 23:03:47,057]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 9.6 ms
+[2024-06-28 23:04:02,050]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 7.3 ms
+[2024-06-28 23:04:17,048]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 5.8 ms
+[2024-06-28 23:04:32,045]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 3.0 ms
+[2024-06-28 23:04:47,045]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 3.3 ms
+[2024-06-28 23:05:02,042]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 2.8 ms
+[2024-06-28 23:05:17,051]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18654 B 10.4 ms
+[2024-06-28 23:05:32,042]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18653 B 5.5 ms
+[2024-06-28 23:05:47,039]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18639 B 2.8 ms
+[2024-06-28 23:06:02,043]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 7.5 ms
+[2024-06-28 23:06:17,039]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18653 B 3.1 ms
+[2024-06-28 23:06:32,038]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 4.8 ms
+[2024-06-28 23:06:47,034]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 2.9 ms
+[2024-06-28 23:07:02,049]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 15.2 ms
+[2024-06-28 23:07:17,031]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 3.1 ms
+[2024-06-28 23:07:32,030]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 4.5 ms
+[2024-06-28 23:07:47,030]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 4.4 ms
+[2024-06-28 23:08:02,029]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 5.2 ms
+[2024-06-28 23:08:17,034]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18657 B 10.7 ms
+[2024-06-28 23:08:32,043]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 24.7 ms
+[2024-06-28 23:08:47,016]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 3.2 ms
+[2024-06-28 23:09:02,012]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 3.1 ms
+[2024-06-28 23:09:17,036]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 21.8 ms
+[2024-06-28 23:09:32,009]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 3.9 ms
+[2024-06-28 23:09:47,043]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 34.0 ms
+[2024-06-28 23:10:02,004]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 2.1 ms
+[2024-06-28 23:10:17,003]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18657 B 2.1 ms
+[2024-06-28 23:10:32,001]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18656 B 2.9 ms
+[2024-06-28 23:10:47,004]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 5.5 ms
+[2024-06-28 23:11:01,997]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 3.6 ms
+[2024-06-28 23:11:16,999]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 3.5 ms
+[2024-06-28 23:11:31,994]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 3.4 ms
+[2024-06-28 23:11:47,017]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 19.5 ms
+[2024-06-28 23:12:01,991]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 3.3 ms
+[2024-06-28 23:12:16,992]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 4.2 ms
+[2024-06-28 23:12:31,985]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 3.3 ms
+[2024-06-28 23:12:46,985]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 2.9 ms
+[2024-06-28 23:13:01,984]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 4.2 ms
+[2024-06-28 23:13:16,980]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 2.1 ms
+[2024-06-28 23:13:31,994]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 17.2 ms
+[2024-06-28 23:13:46,975]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 2.1 ms
+[2024-06-28 23:14:01,982]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 10.5 ms
+[2024-06-28 23:14:16,982]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 9.8 ms
+[2024-06-28 23:14:32,006]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 27.4 ms
+[2024-06-28 23:14:46,996]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 22.3 ms
+[2024-06-28 23:15:01,972]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 7.1 ms
+[2024-06-28 23:15:16,998]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 24.8 ms
+[2024-06-28 23:15:31,981]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 16.2 ms
+[2024-06-28 23:15:46,961]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 2.2 ms
+[2024-06-28 23:16:01,962]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 4.1 ms
+[2024-06-28 23:16:16,987]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 23.8 ms
+[2024-06-28 23:16:31,955]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 2.1 ms
+[2024-06-28 23:16:46,973]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 17.8 ms
+[2024-06-28 23:17:01,972]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 16.6 ms
+[2024-06-28 23:17:16,972]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 17.8 ms
+[2024-06-28 23:17:31,948]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 2.1 ms
+[2024-06-28 23:17:46,970]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 18.0 ms
+[2024-06-28 23:18:01,969]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18684 B 21.5 ms
+[2024-06-28 23:18:16,973]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18737 B 24.2 ms
+[2024-06-28 23:18:31,961]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18737 B 12.6 ms
+[2024-06-28 23:18:46,944]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18737 B 2.7 ms
+[2024-06-28 23:19:01,949]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18736 B 7.5 ms
+[2024-06-28 23:19:16,942]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18738 B 2.7 ms
+[2024-06-28 23:19:31,938]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18738 B 2.7 ms
+[2024-06-28 23:19:46,937]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18749 B 2.2 ms
+[2024-06-28 23:20:01,953]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18737 B 15.2 ms
+[2024-06-28 23:20:16,940]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18738 B 4.1 ms
+[2024-06-28 23:20:31,939]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18738 B 4.7 ms
+[2024-06-28 23:20:46,936]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18739 B 2.1 ms
+[2024-06-28 23:21:01,933]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18737 B 2.2 ms
+[2024-06-28 23:21:16,956]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18740 B 19.6 ms
+[2024-06-28 23:21:31,933]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18739 B 2.9 ms
+[2024-06-28 23:21:46,945]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18740 B 13.3 ms
+[2024-06-28 23:22:01,932]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18740 B 3.2 ms
+[2024-06-28 23:22:16,933]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18740 B 4.3 ms
+[2024-06-28 23:22:31,929]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18740 B 2.6 ms
+[2024-06-28 23:22:46,933]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18751 B 4.7 ms
+[2024-06-28 23:23:01,937]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18738 B 7.8 ms
+[2024-06-28 23:23:16,933]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18740 B 5.9 ms
+[2024-06-28 23:23:31,942]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18740 B 13.5 ms
+[2024-06-28 23:23:46,931]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18741 B 5.5 ms
+[2024-06-28 23:24:01,930]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18740 B 6.9 ms
+[2024-06-28 23:24:16,945]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18752 B 18.0 ms
+[2024-06-28 23:24:31,938]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18741 B 20.4 ms
+[2024-06-28 23:24:46,921]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18741 B 5.7 ms
+[2024-06-28 23:25:01,918]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18741 B 12.0 ms
+[2024-06-28 23:25:16,911]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18741 B 5.0 ms
+[2024-06-28 23:25:25,569]    INFO - Request: 'GET /api/schema/ HTTP/1.1' 200 208878 B 3359.9 ms
+[2024-06-28 23:25:31,905]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21558 B 5.6 ms
+[2024-06-28 23:25:46,903]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21558 B 3.8 ms
+[2024-06-28 23:26:01,898]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 3.6 ms
+[2024-06-28 23:26:16,909]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21545 B 13.0 ms
+[2024-06-28 23:26:31,906]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21559 B 22.8 ms
+[2024-06-28 23:26:46,891]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 7.5 ms
+[2024-06-28 23:27:01,912]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 33.8 ms
+[2024-06-28 23:27:16,877]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21558 B 3.7 ms
+[2024-06-28 23:27:31,882]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 14.7 ms
+[2024-06-28 23:27:46,875]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 7.1 ms
+[2024-06-28 23:28:01,862]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 3.6 ms
+[2024-06-28 23:28:16,866]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 7.0 ms
+[2024-06-28 23:28:31,872]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 18.2 ms
+[2024-06-28 23:28:46,864]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 11.2 ms
+[2024-06-28 23:29:01,862]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 14.5 ms
+[2024-06-28 23:29:16,849]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 4.7 ms
+[2024-06-28 23:29:31,841]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 4.9 ms
+[2024-06-28 23:29:46,841]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 4.1 ms
+[2024-06-28 23:30:01,832]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 3.2 ms
+[2024-06-28 23:30:16,857]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21544 B 25.5 ms
+[2024-06-28 23:30:31,837]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21545 B 12.1 ms
+[2024-06-28 23:30:46,844]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 17.2 ms
+[2024-06-28 23:31:01,820]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 3.9 ms
+[2024-06-28 23:31:16,833]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21545 B 13.3 ms
+[2024-06-28 23:31:31,823]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21559 B 14.4 ms
+[2024-06-28 23:31:46,822]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 12.6 ms
+[2024-06-28 23:32:01,821]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 16.8 ms
+[2024-06-28 23:32:16,804]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 3.7 ms
+[2024-06-28 23:32:31,795]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 3.6 ms
+[2024-06-28 23:32:46,803]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21559 B 9.6 ms
+[2024-06-28 23:33:01,789]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 3.0 ms
+[2024-06-28 23:33:16,811]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 3.2 ms
+[2024-06-28 23:33:31,784]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 3.9 ms
+[2024-06-28 23:33:46,799]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 13.7 ms
+[2024-06-28 23:34:01,789]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 11.3 ms
+[2024-06-28 23:34:16,776]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 3.6 ms
+[2024-06-28 23:34:31,772]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 3.7 ms
+[2024-06-28 23:34:46,781]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 10.8 ms
+[2024-06-28 23:35:01,779]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 12.0 ms
+[2024-06-28 23:35:16,781]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 13.7 ms
+[2024-06-28 23:35:31,772]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21549 B 10.8 ms
+[2024-06-28 23:35:46,771]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 11.7 ms
+[2024-06-28 23:36:01,755]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 2.5 ms
+[2024-06-28 23:36:16,756]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 3.3 ms
+[2024-06-28 23:36:31,754]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 5.2 ms
+[2024-06-28 23:36:46,764]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 13.5 ms
+[2024-06-28 23:37:01,747]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 2.8 ms
+[2024-06-28 23:37:16,760]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21559 B 11.6 ms
+[2024-06-28 23:37:31,753]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 12.0 ms
+[2024-06-28 23:37:46,757]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 16.1 ms
+[2024-06-28 23:38:01,740]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 3.6 ms
+[2024-06-28 23:38:16,752]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 12.9 ms
+[2024-06-28 23:38:31,746]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 10.9 ms
+[2024-06-28 23:38:46,736]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 3.3 ms
+[2024-06-28 23:39:01,748]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 13.8 ms
+[2024-06-28 23:39:16,748]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21561 B 13.2 ms
+[2024-06-28 23:39:31,732]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21549 B 3.6 ms
+[2024-06-28 23:39:46,735]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 5.9 ms
+[2024-06-28 23:40:01,733]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 5.5 ms
+[2024-06-28 23:40:16,731]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 4.3 ms
+[2024-06-28 23:40:31,730]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 3.5 ms
+[2024-06-28 23:40:46,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21561 B 3.3 ms
+[2024-06-28 23:41:01,730]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 5.5 ms
+[2024-06-28 23:41:16,731]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 5.9 ms
+[2024-06-28 23:41:31,731]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 7.3 ms
+[2024-06-28 23:41:46,727]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21557 B 4.6 ms
+[2024-06-28 23:42:01,724]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 2.5 ms
+[2024-06-28 23:42:16,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 6.0 ms
+[2024-06-28 23:42:31,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 8.0 ms
+[2024-06-28 23:42:46,722]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21558 B 2.8 ms
+[2024-06-28 23:43:01,722]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 3.7 ms
+[2024-06-28 23:43:16,728]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 7.9 ms
+[2024-06-28 23:43:31,733]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 13.0 ms
+[2024-06-28 23:43:46,720]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 4.0 ms
+[2024-06-28 23:44:01,720]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 4.0 ms
+[2024-06-28 23:44:16,716]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 3.7 ms
+[2024-06-28 23:44:31,726]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 10.3 ms
+[2024-06-28 23:44:46,719]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 5.4 ms
+[2024-06-28 23:45:01,723]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 10.2 ms
+[2024-06-28 23:45:16,715]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 3.3 ms
+[2024-06-28 23:45:31,727]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 13.9 ms
+[2024-06-28 23:45:46,713]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 4.6 ms
+[2024-06-28 23:46:01,715]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 5.3 ms
+[2024-06-28 23:46:16,715]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 4.6 ms
+[2024-06-28 23:46:31,717]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 11.5 ms
+[2024-06-28 23:46:46,710]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 3.7 ms
+[2024-06-28 23:47:01,711]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 4.4 ms
+[2024-06-28 23:47:16,710]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 3.7 ms
+[2024-06-28 23:47:31,706]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 2.5 ms
+[2024-06-28 23:47:46,707]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 3.6 ms
+[2024-06-28 23:48:01,719]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21559 B 13.4 ms
+[2024-06-28 23:48:16,705]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 3.6 ms
+[2024-06-28 23:48:31,708]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 7.2 ms
+[2024-06-28 23:48:46,709]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 5.9 ms
+[2024-06-28 23:49:01,705]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 5.5 ms
+[2024-06-28 23:49:16,701]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21548 B 2.5 ms
+[2024-06-28 23:49:31,704]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21559 B 5.9 ms
+[2024-06-28 23:49:46,703]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 4.5 ms
+[2024-06-28 23:50:01,699]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 4.0 ms
+[2024-06-28 23:50:16,703]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21559 B 7.3 ms
+[2024-06-28 23:50:31,703]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21547 B 7.3 ms
+[2024-06-28 23:50:46,705]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21546 B 8.6 ms
+[2024-06-28 23:51:01,717]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21560 B 12.3 ms
+[2024-06-28 23:51:16,699]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21559 B 4.2 ms
+[2024-06-28 23:51:26,673]    INFO - /app/apps/news/managers.py changed, reloading.
+[2024-06-28 23:51:35,262]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:51:38,179]    INFO - /app/apps/news/managers.py changed, reloading.
+[2024-06-28 23:51:44,908]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:52:01,757]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14914 B 50.1 ms
+[2024-06-28 23:52:16,693]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 2.9 ms
+[2024-06-28 23:52:28,665]    INFO - /app/apps/news/viewsets.py changed, reloading.
+[2024-06-28 23:52:36,142]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:52:46,698]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14915 B 3.1 ms
+[2024-06-28 23:52:59,959]    INFO - /app/apps/news/viewsets.py changed, reloading.
+[2024-06-28 23:53:04,364]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:53:11,495]    INFO - /app/apps/news/viewsets.py changed, reloading.
+[2024-06-28 23:53:15,879]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:53:23,786]    INFO - /app/apps/news/viewsets.py changed, reloading.
+[2024-06-28 23:53:29,173]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:53:40,451]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-06-28 23:53:47,392]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:54:01,705]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 6.8 ms
+[2024-06-28 23:54:10,147]    INFO - /app/apps/clubs/viewsets.py changed, reloading.
+[2024-06-28 23:54:16,687]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:54:26,192]    INFO - /app/apps/clubs/viewsets.py changed, reloading.
+[2024-06-28 23:54:32,488]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:54:44,693]    INFO - /app/apps/genres/viewsets.py changed, reloading.
+[2024-06-28 23:54:49,768]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:54:59,496]    INFO - /app/apps/genres/viewsets.py changed, reloading.
+[2024-06-28 23:55:03,954]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:55:13,342]    INFO - /app/apps/genres/viewsets.py changed, reloading.
+[2024-06-28 23:55:19,422]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:55:27,141]    INFO - /app/apps/genres/viewsets.py changed, reloading.
+[2024-06-28 23:55:32,821]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:55:46,690]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 4.2 ms
+[2024-06-28 23:56:01,683]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18560 B 9.0 ms
+[2024-06-28 23:56:16,698]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 6.4 ms
+[2024-06-28 23:56:23,520]    INFO - /app/apps/news/viewsets.py changed, reloading.
+[2024-06-28 23:56:30,705]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:56:39,062]    INFO - /app/apps/news/viewsets.py changed, reloading.
+[2024-06-28 23:56:44,037]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:57:01,720]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 14.3 ms
+[2024-06-28 23:57:07,522]    INFO - /app/apps/producers/viewsets.py changed, reloading.
+[2024-06-28 23:57:14,208]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:57:16,686]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14924 B 5.3 ms
+[2024-06-28 23:57:31,672]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 4.7 ms
+[2024-06-28 23:57:37,992]    INFO - /app/apps/profiles/viewsets.py changed, reloading.
+[2024-06-28 23:57:43,439]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:57:46,682]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 6.7 ms
+[2024-06-28 23:58:01,679]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 15.5 ms
+[2024-06-28 23:58:16,497]    INFO - /app/apps/recommendations/views.py changed, reloading.
+[2024-06-28 23:58:20,757]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:58:27,363]    INFO - /app/apps/recommendations/views.py changed, reloading.
+[2024-06-28 23:58:33,127]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:58:46,669]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 3.5 ms
+[2024-06-28 23:58:46,683]    INFO - /app/apps/profiles/viewsets.py changed, reloading.
+[2024-06-28 23:58:51,989]    INFO - Watching for file changes with StatReloader
+[2024-06-28 23:59:01,687]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 11.4 ms
+[2024-06-28 23:59:16,659]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 4.1 ms
+[2024-06-28 23:59:31,653]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 3.2 ms
+[2024-06-28 23:59:46,654]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 2.7 ms
+[2024-06-29 00:00:01,655]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 5.4 ms
+[2024-06-29 00:00:16,655]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 5.8 ms
+[2024-06-29 00:00:31,652]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18567 B 4.4 ms
+[2024-06-29 00:00:46,651]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 4.1 ms
+[2024-06-29 00:01:01,649]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 4.0 ms
+[2024-06-29 00:01:16,647]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18603 B 4.1 ms
+[2024-06-29 00:01:31,647]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18657 B 6.5 ms
+[2024-06-29 00:01:46,646]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 5.5 ms
+[2024-06-29 00:02:01,639]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18660 B 2.8 ms
+[2024-06-29 00:02:16,674]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 14.6 ms
+[2024-06-29 00:02:28,852]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:02:34,301]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:02:49,049]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:02:55,028]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:03:00,055]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:03:04,736]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:03:11,530]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:03:16,711]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:04:00,583]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:04:05,382]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:04:20,205]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:04:25,809]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:04:39,578]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:04:44,518]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:04:50,614]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:04:54,977]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:07:48,863]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:07:52,859]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:08:01,613]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14923 B 4.5 ms
+[2024-06-29 00:08:16,602]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 2.2 ms
+[2024-06-29 00:08:17,638]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:08:21,579]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:08:31,608]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 3.6 ms
+[2024-06-29 00:08:46,612]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 11.2 ms
+[2024-06-29 00:09:01,598]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18567 B 2.9 ms
+[2024-06-29 00:09:16,599]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 4.0 ms
+[2024-06-29 00:09:31,592]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 2.2 ms
+[2024-06-29 00:09:46,605]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 12.1 ms
+[2024-06-29 00:10:01,605]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18567 B 12.5 ms
+[2024-06-29 00:10:16,607]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 13.5 ms
+[2024-06-29 00:10:31,597]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 6.8 ms
+[2024-06-29 00:10:46,588]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18590 B 2.2 ms
+[2024-06-29 00:11:01,602]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 11.3 ms
+[2024-06-29 00:11:16,592]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18658 B 8.2 ms
+[2024-06-29 00:11:31,584]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 2.8 ms
+[2024-06-29 00:11:46,588]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 7.0 ms
+[2024-06-29 00:12:01,660]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 5.3 ms
+[2024-06-29 00:12:12,725]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:12:29,313]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:12:46,597]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 2.9 ms
+[2024-06-29 00:12:49,169]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:12:57,947]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:13:16,600]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 13.2 ms
+[2024-06-29 00:13:31,577]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 5.0 ms
+[2024-06-29 00:13:33,524]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:13:46,560]    INFO - Watching for file changes with StatReloader
+[2024-06-29 00:14:01,607]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14914 B 16.8 ms
+[2024-06-29 00:14:11,735]    INFO - Request: 'GET /api/schema/swagger/ HTTP/1.1' 200 4441 B 782.8 ms
+[2024-06-29 00:14:16,592]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21684 B 25.0 ms
+[2024-06-29 00:14:18,316]    INFO - Request: 'GET /api/schema/ HTTP/1.1' 200 423969 B 4613.8 ms
+[2024-06-29 00:14:31,580]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24084 B 15.9 ms
+[2024-06-29 00:14:46,568]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24082 B 4.1 ms
+[2024-06-29 00:15:01,568]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24083 B 5.6 ms
+[2024-06-29 00:15:16,581]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24083 B 14.8 ms
+[2024-06-29 00:15:31,562]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24083 B 3.7 ms
+[2024-06-29 00:15:46,576]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24119 B 16.7 ms
+[2024-06-29 00:16:01,581]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24143 B 20.3 ms
+[2024-06-29 00:16:10,823]    INFO - /app/apps/news/schemas.py changed, reloading.
+[2024-06-29 00:16:16,535]    INFO - Watching for file changes with StatReloader

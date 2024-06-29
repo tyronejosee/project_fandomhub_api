@@ -21,7 +21,6 @@ class AnimeRecommendationView(ListCacheMixin, ListAPIView):
     permission_classes = [AllowAny]
     serializer_class = AnimeMinimalSerializer
     search_fields = ["name"]
-    ordering_fields = ["name"]
 
     def get_queryset(self):
         return Anime.objects.get_recommendations()
@@ -38,7 +37,6 @@ class MangaRecommendationView(ListCacheMixin, ListAPIView):
     permission_classes = [AllowAny]
     serializer_class = MangaMinimalSerializer
     search_fields = ["name"]
-    ordering_fields = ["name"]
 
     def get_queryset(self):
         return Manga.objects.get_recommendations()

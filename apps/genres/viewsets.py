@@ -48,7 +48,8 @@ class GenreViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     serializer_class = GenreWriteSerializer
     pagination_class = LargeSetPagination
     search_fields = ["name"]
-    ordering_fields = ["name"]
+    # filterset_class = GenreFilter
+    # TODO: Add filter
 
     def get_queryset(self):
         return Genre.objects.get_available()
@@ -131,7 +132,8 @@ class ThemeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsContributor]
     serializer_class = ThemeWriteSerializer
     search_fields = ["name"]
-    ordering_fields = ["name"]
+    # filterset_class = ThemeFilter
+    # TODO: Add filter
 
     def get_queryset(self):
         return Theme.objects.get_available()
@@ -164,7 +166,8 @@ class DemographicViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsContributor]
     serializer_class = DemographicWriteSerializer
     search_fields = ["name"]
-    ordering_fields = ["name"]
+    # filterset_class = DemographicFilter
+    # TODO: Add filter
 
     def get_queryset(self):
         return Demographic.objects.get_available()

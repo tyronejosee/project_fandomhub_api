@@ -41,7 +41,8 @@ class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     serializer_class = ClubWriteSerializer
     pagination_class = LargeSetPagination
     search_fields = ["name", "category"]
-    ordering_fields = ["name", "category", "members"]
+    # filterset_class = ClubFilter
+    # TODO: Add filter
 
     def get_queryset(self):
         return Club.objects.get_available()
@@ -76,7 +77,10 @@ class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         if members.exists():
             serializer = ClubMemberReadSerializer(members, many=True)
             return Response(serializer.data)
-        return Response({"detail": _("No members found for this club.")}, status=status.HTTP_404_NOT_FOUND)
+        return Response(
+            {"detail": _("No members found for this club.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     # TODO: Add GET clubs/{id}/staff
     # TODO: Add GET clubs/{id}/relations

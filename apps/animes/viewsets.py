@@ -55,7 +55,6 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsContributor]
     serializer_class = AnimeWriteSerializer
     search_fields = ["name", "studio_id__name"]
-    ordering_fields = ["name"]
     filterset_class = AnimeFilter
 
     def get_queryset(self):

@@ -36,7 +36,8 @@ class ProducerViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsContributor]
     serializer_class = ProducerWriteSerializer
     search_fields = ["name"]
-    ordering_fields = ["name"]
+    # filterset_class = ProducerFilter
+    # TODO: Add filter
     filterset_class = ProducerFilter
 
     def get_queryset(self):
