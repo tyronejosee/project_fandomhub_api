@@ -1,13 +1,10 @@
 """Managers for Reviews App."""
 
-from django.db.models import Manager
+from apps.utils.managers import BaseManager
 
 
-class ReviewManager(Manager):
+class ReviewManager(BaseManager):
     """Manager for Review model."""
-
-    def get_available(self):
-        return self.filter(is_available=True)
 
     def get_reviews_for_anime(self, anime):
         return self.get_available().filter(anime=anime).order_by("-created_at")

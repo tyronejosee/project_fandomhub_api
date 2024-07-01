@@ -16,6 +16,7 @@ random_anime_schemas = {
             200: OpenApiResponse(AnimeMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
         },
+        auth=[],
     ),
 }
 
@@ -28,6 +29,7 @@ random_manga_schemas = {
             200: OpenApiResponse(MangaMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
         },
+        auth=[],
     ),
 }
 
@@ -40,6 +42,7 @@ random_character_schemas = {
             200: OpenApiResponse(CharacterReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
         },
+        auth=[],
     ),
 }
 
@@ -52,5 +55,6 @@ random_person_schemas = {
             200: OpenApiResponse(PersonReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
         },
+        auth=[],
     ),
 }
