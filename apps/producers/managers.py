@@ -1,10 +1,7 @@
 """Managers for Producers App."""
 
-from django.db.models import Manager
+from apps.utils.managers import BaseManager
 
 
-class ProducerManager(Manager):
+class ProducerManager(BaseManager):
     """Manager for Producer model."""
-
-    def get_available(self):
-        return self.filter(is_available=True)

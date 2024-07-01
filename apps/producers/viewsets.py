@@ -9,6 +9,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
+from drf_spectacular.utils import extend_schema_view
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.pagination import LargeSetPagination
@@ -18,8 +19,10 @@ from apps.animes.serializers import AnimeMinimalSerializer
 from .models import Producer
 from .serializers import ProducerReadSerializer, ProducerWriteSerializer
 from .filters import ProducerFilter
+from .schemas import producer_schemas
 
 
+@extend_schema_view(**producer_schemas)
 class ProducerViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing Studio instances.
@@ -36,8 +39,6 @@ class ProducerViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsContributor]
     serializer_class = ProducerWriteSerializer
     search_fields = ["name"]
-    # filterset_class = ProducerFilter
-    # TODO: Add filter
     filterset_class = ProducerFilter
 
     def get_queryset(self):
@@ -69,19 +70,13 @@ class ProducerViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET /api/v1/producers/{id}/animes/
         """
         studio = self.get_object()
-
-        try:
-            animes = Anime.objects.get_by_studio(studio)
-            if animes.exists():
-                paginator = LargeSetPagination()
-                result_page = paginator.paginate_queryset(animes, request)
-                serializer = AnimeMinimalSerializer(result_page, many=True)
-                return paginator.get_paginated_response(serializer.data)
-            return Response(
-                {"detail": _("No animes found for this studio.")},
-                status=status.HTTP_404_NOT_FOUND,
-            )
-        except Exception as e:
-            return Response(
-                {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
-            )
+        animes = Anime.objects.get_by_studio(studio)
+        if animes.exists():
+            paginator = LargeSetPagination()
+            result_page = paginator.paginate_queryset(animes, request)
+            serializer = AnimeMinimalSerializer(result_page, many=True)
+            return paginator.get_paginated_response(serializer.data)
+        return Response(
+            {"detail": _("No animes found for this studio.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
