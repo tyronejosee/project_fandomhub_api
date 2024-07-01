@@ -4,6 +4,7 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework import status
+from drf_spectacular.utils import extend_schema_view
 
 from apps.users.permissions import IsAdministrator, IsMember
 from .models import Profile
@@ -12,8 +13,10 @@ from .serializers import (
     ProfileWriteSerializer,
     ProfileMinimalSerializer,
 )
+from .schemas import profile_schemas
 
 
+@extend_schema_view(**profile_schemas)
 class ProfileViewset(ModelViewSet):
     """
     ViewSet for managing Profiles instances.
