@@ -1,6 +1,7 @@
 """Serializers for News App."""
 
 from rest_framework import serializers
+from drf_spectacular.utils import extend_schema_field
 
 from apps.users.serializers import UserMinimumSerializer
 from .models import News
@@ -29,7 +30,8 @@ class NewsReadSerializer(serializers.ModelSerializer):
             "updated_at",
         ]
 
-    def get_author(self, obj):
+    @extend_schema_field(str)
+    def get_author_id(self, obj) -> str:
         return obj.author_id.username
 
     def to_representation(self, instance):

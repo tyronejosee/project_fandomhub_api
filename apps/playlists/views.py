@@ -7,6 +7,7 @@ from django.http import HttpResponse
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+from drf_spectacular.utils import extend_schema_view
 
 from apps.animes.models import Anime
 from apps.mangas.models import Manga
@@ -22,8 +23,17 @@ from .serializers import (
     MangaListItemReadSerializer,
     MangaListItemWriteSerializer,
 )
+from .schemas import (
+    animelist_schemas,
+    animelist_item_schemas,
+    animelist_item_detail_schemas,
+    mangalist_schemas,
+    mangalist_item_schemas,
+    mangalist_item_detail_schemas,
+)
 
 
+@extend_schema_view(**animelist_schemas)
 class AnimeListView(APIView):
     """
     View to fetch and update the AnimeList profile.
@@ -67,6 +77,7 @@ class AnimeListView(APIView):
             )
 
 
+@extend_schema_view(**animelist_item_schemas)
 class AnimeListItemView(APIView):
     """
     View to add an anime to AnimeList.
@@ -90,7 +101,10 @@ class AnimeListItemView(APIView):
         if items.exists():
             serializer = AnimeListItemReadSerializer(items, many=True)
             return Response(serializer.data)
-        return Response({"detail": "Your animelist is empty."})
+        return Response(
+            {"detail": "Your animelist is empty."},
+            status=status.HTTP_204_NO_CONTENT,
+        )
 
     def post(self, request, *args, **kwargs):
         # Add an anime to the animelist
@@ -129,6 +143,7 @@ class AnimeListItemView(APIView):
             )
 
 
+@extend_schema_view(**animelist_item_detail_schemas)
 class AnimeListItemDetailView(APIView):
     """
     View to retrieve, update, and delete an anime from AnimeList.
@@ -170,6 +185,7 @@ class AnimeListItemDetailView(APIView):
 # MangaList
 
 
+@extend_schema_view(**mangalist_schemas)
 class MangaListView(APIView):
     """
     View to fetch and update the MangaList profile.
@@ -213,6 +229,7 @@ class MangaListView(APIView):
             )
 
 
+@extend_schema_view(**mangalist_item_schemas)
 class MangaListItemView(APIView):
     """
     View to add an manga to MangaList.
@@ -236,7 +253,10 @@ class MangaListItemView(APIView):
         if items.exists():
             serializer = MangaListItemReadSerializer(items, many=True)
             return Response(serializer.data)
-        return Response({"detail": "Your mangalist is empty."})
+        return Response(
+            {"detail": "Your mangalist is empty."},
+            status=status.HTTP_204_NO_CONTENT,
+        )
 
     def post(self, request, *args, **kwargs):
         # Add an manga to the mangalist
@@ -275,6 +295,7 @@ class MangaListItemView(APIView):
             )
 
 
+@extend_schema_view(**mangalist_item_detail_schemas)
 class MangaListItemDetailView(APIView):
     """
     View to retrieve, update, and delete an manga from MangaList.
@@ -313,6 +334,7 @@ class MangaListItemDetailView(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
 
+# TODO: Remove or refactor, verify schemas
 class MangaListExportView(APIView):
     """
     View to export data as a ZIP file for the items within the MangaList.
