@@ -96,14 +96,13 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
                 status=status.HTTP_400_BAD_REQUEST,
             )
         manga_list = person.manga_set.all()
-        # manga_list = Manga.objects.filter(author_id=pk)
         if manga_list.exists():
             paginator = MediumSetPagination()
             paginated_data = paginator.paginate_queryset(manga_list, request)
             serializer = MangaMinimalSerializer(paginated_data, many=True)
             return paginator.get_paginated_response(serializer.data)
         return Response(
-            {"detail": _("There are no mangas for this author.")},
+            {"detail": _("No mangas found for this person.")},
             status=status.HTTP_404_NOT_FOUND,
         )
 
@@ -181,6 +180,6 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             serializer = CharacterVoiceReadSerializer(characters, many=True)
             return Response(serializer.data)
         return Response(
-            {"detail": "No relations found for this person."},
+            {"detail": _("No relations found for this person.")},
             status=status.HTTP_404_NOT_FOUND,
         )

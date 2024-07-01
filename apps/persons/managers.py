@@ -1,10 +1,7 @@
 """Managers for Persons App."""
 
-from django.db.models import Manager
+from apps.utils.managers import BaseManager
 
 
-class PersonManager(Manager):
+class PersonManager(BaseManager):
     """Manager for Person model."""
-
-    def get_available(self):
-        return self.filter(is_available=True)
