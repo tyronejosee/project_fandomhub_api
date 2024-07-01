@@ -8,6 +8,7 @@ from rest_framework.generics import ListAPIView
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework import status
+from drf_spectacular.utils import extend_schema_view
 
 from apps.animes.models import Anime
 from apps.animes.filters import AnimeMinimalFilter
@@ -24,8 +25,16 @@ from apps.persons.serializers import PersonMinimalSerializer
 from apps.reviews.models import Review
 from apps.reviews.filters import ReviewFilter
 from apps.reviews.serializers import ReviewReadSerializer
+from .schemas import (
+    top_anime_schemas,
+    top_manga_schemas,
+    top_character_schemas,
+    top_artist_schemas,
+    top_review_schemas,
+)
 
 
+@extend_schema_view(**top_anime_schemas)
 class TopAnimeView(ListAPIView):
     """
     View lists the most popular animes.
@@ -54,6 +63,7 @@ class TopAnimeView(ListAPIView):
         return super().list(request, *args, **kwargs)
 
 
+@extend_schema_view(**top_manga_schemas)
 class TopMangaView(ListAPIView):
     """
     View lists the most popular mangas.
@@ -82,6 +92,7 @@ class TopMangaView(ListAPIView):
         return super().list(request, *args, **kwargs)
 
 
+@extend_schema_view(**top_character_schemas)
 class TopCharacterView(ListAPIView):
     """
     View lists the most popular characters.
@@ -110,6 +121,7 @@ class TopCharacterView(ListAPIView):
         return super().list(request, *args, **kwargs)
 
 
+@extend_schema_view(**top_artist_schemas)
 class TopArtistView(ListAPIView):
     """
     View lists the most popular artists.
@@ -141,6 +153,7 @@ class TopArtistView(ListAPIView):
         return super().list(request, *args, **kwargs)
 
 
+@extend_schema_view(**top_review_schemas)
 class TopReviewView(ListAPIView):
     """
     View lists the most popular reviews.

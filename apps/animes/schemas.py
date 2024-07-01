@@ -21,9 +21,9 @@ anime_schemas = {
         responses={
             200: OpenApiResponse(AnimeMinimalSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "create": extend_schema(
         summary="Create Anime",
@@ -41,10 +41,9 @@ anime_schemas = {
         responses={
             200: OpenApiResponse(AnimeReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
-
+        auth=[],
     ),
     "update": extend_schema(
         summary="Update Anime",
@@ -85,9 +84,9 @@ anime_schemas = {
         responses={
             200: OpenApiResponse(CharacterMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     # "get_episodes": extend_schema(),
     "get_staff": extend_schema(
@@ -96,9 +95,9 @@ anime_schemas = {
         responses={
             200: OpenApiResponse(StaffMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "get_stats": extend_schema(
         summary="Get Anime Stats",
@@ -106,9 +105,9 @@ anime_schemas = {
         responses={
             200: OpenApiResponse(AnimeStatsReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     # TODO: Add all methods, refactor
     # "get_reviews": extend_schema(
@@ -127,9 +126,9 @@ anime_schemas = {
         responses={
             200: OpenApiResponse(AnimeMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     # "get_interest_stacks": extend_schema(),
     "get_news": extend_schema(
@@ -138,9 +137,9 @@ anime_schemas = {
         responses={
             200: OpenApiResponse(NewsMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     # "get_forum": extend_schema(),
     # "get_clubs": extend_schema(),
@@ -150,9 +149,9 @@ anime_schemas = {
         responses={
             200: OpenApiResponse(VideoReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "get_pictures": extend_schema(
         summary="Get Anime Pictures",
@@ -160,8 +159,8 @@ anime_schemas = {
         responses={
             200: OpenApiResponse(PictureReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
 }
