@@ -4,7 +4,7 @@ from django.db import models
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
-from apps.utils.paths import picture_image_path
+from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
@@ -32,7 +32,7 @@ class Magazine(BaseModel, SlugMixin):
         return self.name
 
 
-class Manga(BaseModel, SlugMixin):
+class Manga(SlugMixin, BaseModel):
     """Model definition for Manga."""
 
     name = models.CharField(_("name (eng)"), max_length=255, unique=True)
@@ -48,7 +48,7 @@ class Manga(BaseModel, SlugMixin):
     )
     image = models.ImageField(
         _("image"),
-        upload_to=picture_image_path,
+        upload_to=image_path,
         blank=True,
         null=True,
         validators=[
@@ -119,13 +119,17 @@ class Manga(BaseModel, SlugMixin):
         verbose_name = _("manga")
         verbose_name_plural = _("mangas")
 
-    def save(self, *args, **kwargs):
-        if not self.name_rom:
-            self.name_rom = self.name
-        super(SlugMixin, self).save(*args, **kwargs)
-
     def __str__(self):
         return str(self.name)
+
+    def save(self, *args, **kwargs):
+        self.set_name_rom()
+        self.set_slug()
+        super().save(*args, **kwargs)
+
+    def set_name_rom(self):
+        if not self.name_rom:
+            self.name_rom = self.name
 
     def calculate_score(self, user_score):
         # Calculate score based on the existing score and the user's score

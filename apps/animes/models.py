@@ -5,7 +5,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.validators import FileExtensionValidator
 from django.utils.translation import gettext as _
 
-from apps.utils.paths import picture_image_path
+from apps.utils.paths import image_path
 from apps.utils.models import BaseModel
 from apps.utils.mixins import SlugMixin
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
@@ -55,7 +55,7 @@ class Broadcast(BaseModel):
         return str(self.string)
 
 
-class Anime(BaseModel, SlugMixin):
+class Anime(SlugMixin, BaseModel):
     """Model definition for Anime."""
 
     name = models.CharField(_("name (eng)"), max_length=255, unique=True)
@@ -74,7 +74,7 @@ class Anime(BaseModel, SlugMixin):
     )
     image = models.ImageField(
         _("image"),
-        upload_to=picture_image_path,
+        upload_to=image_path,
         blank=True,
         null=True,
         validators=[
@@ -191,13 +191,17 @@ class Anime(BaseModel, SlugMixin):
         verbose_name = _("anime")
         verbose_name_plural = _("animes")
 
-    def save(self, *args, **kwargs):
-        if not self.name_rom:
-            self.name_rom = self.name
-        super(SlugMixin, self).save(*args, **kwargs)
-
     def __str__(self):
         return str(self.name)
+
+    def save(self, *args, **kwargs):
+        self.set_name_rom()
+        self.set_slug()
+        super().save(*args, **kwargs)
+
+    def set_name_rom(self):
+        if not self.name_rom:
+            self.name_rom = self.name
 
     def calculate_score(self, user_score):
         # Calculate new score based on the existing score and the user's score

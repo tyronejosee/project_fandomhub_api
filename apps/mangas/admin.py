@@ -33,7 +33,6 @@ class MangaAdmin(ImportExportModelAdmin, BaseAdmin):
     list_editable = ["is_available"]
     readonly_fields = [
         "pk",
-        "slug",
         "created_at",
         "updated_at",
     ]

@@ -17,7 +17,7 @@ from .managers import CharacterManager
 from .choices import RoleChoices
 
 
-class Character(BaseModel, SlugMixin):
+class Character(SlugMixin, BaseModel):
     """Model definition for Character."""
 
     name = models.CharField(_("name"), max_length=255)
@@ -40,14 +40,16 @@ class Character(BaseModel, SlugMixin):
     mangas = models.ManyToManyField(Manga, through="CharacterManga", blank=True)
     favorites = models.PositiveIntegerField(_("favorites"), default=0)
 
-    # TODO: Check for possible errors
-
     objects = CharacterManager()
 
     class Meta:
         ordering = ["pk"]
         verbose_name = _("character")
         verbose_name_plural = _("characters")
+
+    def save(self, *args, **kwargs):
+        self.set_slug()
+        super().save(*args, **kwargs)
 
     def __str__(self):
         return str(self.name)
@@ -102,7 +104,6 @@ class CharacterAnime(BaseModel):
         limit_choices_to={"is_available": True},
         on_delete=models.CASCADE,
     )
-    # TODO: Remove
 
     class Meta:
         ordering = ["pk"]
@@ -133,7 +134,6 @@ class CharacterManga(BaseModel):
         on_delete=models.CASCADE,
         limit_choices_to={"is_available": True},
     )
-    # TODO: Remove
 
     class Meta:
         ordering = ["pk"]

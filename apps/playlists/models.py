@@ -7,7 +7,6 @@ from django.utils.translation import gettext as _
 
 from apps.utils.models import BaseModel
 from apps.utils.validators import FileSizeValidator, ImageSizeValidator
-from apps.utils.paths import image_path
 from apps.animes.models import Anime
 from apps.mangas.models import Manga
 from .choices import (
@@ -19,9 +18,6 @@ from .choices import (
 )
 
 User = settings.AUTH_USER_MODEL
-
-
-# TODO: Add PlaylistItemBase model
 
 
 class PlaylistBase(BaseModel):
@@ -36,7 +32,7 @@ class PlaylistBase(BaseModel):
     )
     banner = models.ImageField(
         _("banner"),
-        upload_to=image_path,
+        upload_to="playlists/",
         blank=True,
         null=True,
         validators=[

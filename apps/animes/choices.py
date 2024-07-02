@@ -24,8 +24,6 @@ class TimezoneChoices(TextChoices):
     GMT = "GMT", _("Greenwich Mean Time")
     CET = "CET", _("Central European Time")
 
-    # TODO: Add more
-
 
 class StatusChoices(TextChoices):
 

@@ -33,8 +33,6 @@ class ProfileViewset(ModelViewSet):
     permission_classes = [IsAdministrator]
     serializer_class = ProfileWriteSerializer
     search_fields = ["user_id__username", "first_name", "last_name"]
-    # filterset_class = ProfileFilter
-    # TODO: Add filter
 
     def get_queryset(self):
         return Profile.objects.get_available()

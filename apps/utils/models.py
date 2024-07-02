@@ -8,9 +8,10 @@ from django.core.validators import FileExtensionValidator
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext as _
 
+from apps.utils.mixins import SlugMixin
 from .validators import FileSizeValidator, ImageSizeValidator
 from .functions import generate_random_code
-from .paths import picture_image_path
+from .paths import image_path
 
 
 class BaseModel(models.Model):
@@ -25,7 +26,7 @@ class BaseModel(models.Model):
         abstract = True
 
 
-class Picture(BaseModel):
+class Picture(BaseModel, SlugMixin):
     """Model definition for Picture."""
 
     content_type = models.ForeignKey(
@@ -40,7 +41,7 @@ class Picture(BaseModel):
         _("image"),
         blank=True,
         null=True,
-        upload_to=picture_image_path,
+        upload_to=image_path,
         validators=[
             FileExtensionValidator(allowed_extensions=["jpg", "png", "webp"]),
             ImageSizeValidator(max_width=3000, max_height=3000),
@@ -61,6 +62,7 @@ class Picture(BaseModel):
 
     def save(self, *args, **kwargs):
         # Override the method to validate the limit of polymorphic tables
+        self.set_slug()
         if self.content_type.model not in ["anime", "manga", "character", "person"]:
             raise ValidationError(_("Invalid model relationship"))
         super(Picture, self).save(*args, **kwargs)

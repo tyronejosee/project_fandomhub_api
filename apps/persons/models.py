@@ -15,7 +15,7 @@ from .managers import PersonManager
 from .choices import CategoryChoices, LanguageChoices
 
 
-class Person(BaseModel, SlugMixin):
+class Person(SlugMixin, BaseModel):
     """Model definition for Person."""
 
     name = models.CharField(_("name"), max_length=255, unique=True)
@@ -74,6 +74,10 @@ class Person(BaseModel, SlugMixin):
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        self.set_slug()
+        super().save(*args, **kwargs)
 
     @property
     def age(self):

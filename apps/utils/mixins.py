@@ -17,15 +17,9 @@ class SlugMixin(models.Model):
 
     slug = models.SlugField(_("Slug"), unique=True, blank=True, null=True)
 
-    def generate_slug(self, field_name="name"):
-        """Generate a slug based on the content of the instance."""
-        content = getattr(self, field_name)
-        self.slug = slugify(content)
-
-    def save(self, *args, **kwargs):
+    def set_slug(self):
         if not self.slug or self.slug != self.name:
-            self.generate_slug()
-        super().save(*args, **kwargs)
+            self.slug = slugify(self.name)
 
     class Meta:
         abstract = True

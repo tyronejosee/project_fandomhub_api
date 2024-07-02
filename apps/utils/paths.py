@@ -21,6 +21,7 @@ def profile_image_path(instance, filename):
     return f"{appname}/{filename}"
 
 
+# TODO: Remove
 def picture_image_path(instance, filename):
     """Generates storage path for associated model Picture model images."""
     appname = instance.__class__.__module__.split(".")[1]

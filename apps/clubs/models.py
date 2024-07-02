@@ -56,6 +56,10 @@ class Club(BaseModel, SlugMixin):
     def __str__(self):
         return str(self.name)
 
+    def save(self, *args, **kwargs):
+        self.set_slug()
+        super().save(*args, **kwargs)
+
 
 class ClubMember(BaseModel):
     """Model definition for ClubMember."""
