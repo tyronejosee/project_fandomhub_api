@@ -6,6 +6,7 @@ from apps.utils.serializers import PictureReadSerializer, VideoReadSerializer
 from apps.characters.serializers import CharacterMinimalSerializer
 from apps.persons.serializers import StaffMinimalSerializer
 from apps.news.serializers import NewsMinimalSerializer
+from apps.reviews.serializers import ReviewReadSerializer, ReviewWriteSerializer
 from .serializers import (
     AnimeReadSerializer,
     AnimeWriteSerializer,
@@ -109,17 +110,39 @@ anime_schemas = {
         },
         auth=[],
     ),
-    # TODO: Add all methods, refactor
-    # "get_reviews": extend_schema(
-    #     summary="Get Anime Reviews",
-    #     description="Get reviews of the anime passed as param (`uuid`).",
-    #     responses={
-    #         200: OpenApiResponse(AnimeStatsReadSerializer, description="OK"),
-    #         400: OpenApiResponse(description="Bad request"),
-    #         404: OpenApiResponse(description="Not found")
-    #     },
-    #     auth=[]
-    # ),
+    "get_reviews": extend_schema(
+        summary="Get Anime Reviews",
+        description="Get reviews of the anime passed as param (`uuid`).",
+        responses={
+            200: OpenApiResponse(ReviewReadSerializer(many=True), description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found"),
+        },
+        auth=[],
+    ),
+    "create_review": extend_schema(
+        summary="Create Anime Review",
+        description="Create a new review for anime, only for `IsMember`",
+        responses={
+            201: OpenApiResponse(ReviewWriteSerializer, description="Created"),
+            400: OpenApiResponse(description="Bad request"),
+            401: OpenApiResponse(description="Unauthorized"),
+            403: OpenApiResponse(description="Forbidden"),
+        },
+    ),
+    "update_or_delete_review": extend_schema(
+        summary="Partial Update or Remove Anime",
+        description="Update some fields or delete of a anime, only for `IsMember` or `IsAdministrator` users.",
+        responses={
+            200: OpenApiResponse(ReviewWriteSerializer, description="OK"),
+            204: OpenApiResponse(description="No Content"),
+            400: OpenApiResponse(description="Bad request"),
+            401: OpenApiResponse(description="Unauthorized"),
+            403: OpenApiResponse(description="Forbidden"),
+            404: OpenApiResponse(description="Not Found"),
+        },
+        methods=["PATCH", "DELETE"],
+    ),
     "get_recommendations": extend_schema(
         summary="Get Anime Recommendations",
         description="Get recommendations of the anime passed as param (`uuid`).",

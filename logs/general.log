@@ -12832,3 +12832,1718 @@ django.core.exceptions.FieldError: Cannot resolve keyword 'type' into field. Cho
 [2024-07-03 18:53:51,183]    INFO - Watching for file changes with StatReloader
 [2024-07-03 18:58:27,785]    INFO - /app/apps/clubs/__init__.py changed, reloading.
 [2024-07-03 18:58:31,158]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:58:48,513]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 2.8 ms
+[2024-07-03 18:59:03,509]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 3.5 ms
+[2024-07-03 18:59:18,504]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.7 ms
+[2024-07-03 18:59:33,504]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 3.2 ms
+[2024-07-03 18:59:34,155]    INFO - Request: 'GET /api/v1/clubs/ HTTP/1.1' 200 52 B 268.3 ms
+[2024-07-03 18:59:36,389]    INFO - Request: 'GET /api/v1/clubs/ HTTP/1.1' 200 52 B 5.5 ms
+[2024-07-03 18:59:38,539]    INFO - Request: 'GET /api/v1/clubs/ HTTP/1.1' 200 52 B 3.6 ms
+[2024-07-03 18:59:48,506]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21424 B 5.1 ms
+[2024-07-03 19:00:03,505]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21426 B 4.1 ms
+[2024-07-03 19:00:18,501]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21463 B 2.9 ms
+[2024-07-03 19:00:33,500]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21495 B 2.5 ms
+[2024-07-03 19:50:30,781]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:50:33,278]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14907 B 4.5 ms
+[2024-07-03 19:50:48,276]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 10.9 ms
+[2024-07-03 19:51:03,264]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 3.5 ms
+[2024-07-03 19:51:18,264]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 4.4 ms
+[2024-07-03 19:51:33,263]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 4.4 ms
+[2024-07-03 19:51:48,282]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 20.5 ms
+[2024-07-03 19:52:03,260]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 4.2 ms
+[2024-07-03 19:52:18,262]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18545 B 5.9 ms
+[2024-07-03 19:52:33,259]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 4.7 ms
+[2024-07-03 19:52:48,257]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18585 B 5.4 ms
+[2024-07-03 19:53:03,256]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18651 B 3.6 ms
+[2024-07-03 19:53:18,264]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 10.9 ms
+[2024-07-03 19:53:33,268]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 14.5 ms
+[2024-07-03 19:53:48,254]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18639 B 5.4 ms
+[2024-07-03 19:53:52,813]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:53:57,858]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:54:03,264]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14923 B 4.7 ms
+[2024-07-03 19:54:18,249]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 3.6 ms
+[2024-07-03 19:54:33,248]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.5 ms
+[2024-07-03 19:54:46,373]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:54:52,433]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:55:04,980]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:55:09,461]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:55:18,263]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 3.8 ms
+[2024-07-03 19:55:21,553]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:55:27,267]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:55:33,254]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 4.6 ms
+[2024-07-03 19:55:34,272]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:55:39,674]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:55:49,237]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:55:53,350]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:56:03,333]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 13.4 ms
+[2024-07-03 19:56:17,409]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:56:22,764]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:56:29,365]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:56:33,890]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:56:41,033]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:56:45,844]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:57:03,247]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 3.7 ms
+[2024-07-03 19:57:18,240]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 5.2 ms
+[2024-07-03 19:57:20,529]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:57:26,897]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:57:33,254]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14907 B 4.8 ms
+[2024-07-03 19:57:37,066]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:57:42,962]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:57:48,255]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 14.1 ms
+[2024-07-03 19:57:54,969]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 19:58:00,433]    INFO - Watching for file changes with StatReloader
+[2024-07-03 19:58:03,245]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 7.2 ms
+[2024-07-03 19:58:18,237]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 5.9 ms
+[2024-07-03 19:58:33,232]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.1 ms
+[2024-07-03 19:58:48,235]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 5.9 ms
+[2024-07-03 19:58:49,621]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 401 183 B 845.1 ms
+[2024-07-03 19:58:49,623]    WARNING - Unauthorized: /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/
+[2024-07-03 19:59:03,240]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21764 B 10.6 ms
+[2024-07-03 19:59:18,242]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21765 B 13.2 ms
+[2024-07-03 19:59:33,232]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21766 B 6.5 ms
+[2024-07-03 19:59:48,228]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21766 B 6.0 ms
+[2024-07-03 20:00:03,228]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21802 B 4.6 ms
+[2024-07-03 20:00:18,229]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21843 B 6.5 ms
+[2024-07-03 20:00:33,229]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21871 B 6.0 ms
+[2024-07-03 20:00:48,226]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21858 B 6.1 ms
+[2024-07-03 20:00:48,949]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 401 183 B 1.9 ms
+[2024-07-03 20:00:48,950]    WARNING - Unauthorized: /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/
+[2024-07-03 20:01:03,228]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21871 B 4.6 ms
+[2024-07-03 20:01:09,821]    INFO - Request: 'POST /api/v1/tokens/jwt/create/ HTTP/1.1' 200 582 B 1192.9 ms
+[2024-07-03 20:01:18,227]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24603 B 5.2 ms
+[2024-07-03 20:01:33,223]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24603 B 5.5 ms
+[2024-07-03 20:01:48,225]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24603 B 8.5 ms
+[2024-07-03 20:02:03,223]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24603 B 5.8 ms
+[2024-07-03 20:02:03,411]    INFO - Request: 'GET /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/ HTTP/1.1' 404 23 B 58.7 ms
+[2024-07-03 20:02:03,413]    WARNING - Not Found: /api/v1/animes/32f15eba-c69d-4778-95dc-f4c8e1f93f41/reviews/
+[2024-07-03 20:02:18,224]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24991 B 10.4 ms
+[2024-07-03 20:02:33,223]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24992 B 9.1 ms
+[2024-07-03 20:02:41,957]    INFO - Request: 'GET /admin/news/news/ HTTP/1.1' 200 32354 B 449.7 ms
+[2024-07-03 20:02:42,128]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 73.0 ms
+[2024-07-03 20:02:42,957]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 27.4 ms
+[2024-07-03 20:02:48,217]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30831 B 7.1 ms
+[2024-07-03 20:03:03,227]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30828 B 18.4 ms
+[2024-07-03 20:03:07,753]    INFO - Request: 'GET /admin/news/news/b8d91104-6a74-4eef-a405-4dd926a17606/change/ HTTP/1.1' 200 43494 B 303.1 ms
+[2024-07-03 20:03:07,907]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 53.0 ms
+[2024-07-03 20:03:08,680]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 50.8 ms
+[2024-07-03 20:03:15,355]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33432 B 260.1 ms
+[2024-07-03 20:03:15,485]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 62.9 ms
+[2024-07-03 20:03:15,605]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 60.3 ms
+[2024-07-03 20:03:18,217]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37113 B 7.3 ms
+[2024-07-03 20:03:19,070]    INFO - Request: 'GET /admin/reviews/review/3b862cd4-1ccf-4e3a-9e7f-72acd08b640f/change/ HTTP/1.1' 200 39977 B 154.1 ms
+[2024-07-03 20:03:19,183]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 50.2 ms
+[2024-07-03 20:03:19,297]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 63.9 ms
+[2024-07-03 20:03:25,108]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 34769 B 251.4 ms
+[2024-07-03 20:03:25,250]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 72.6 ms
+[2024-07-03 20:03:25,386]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 63.7 ms
+[2024-07-03 20:03:28,062]    INFO - Request: 'GET /admin/reviews/review/3b862cd4-1ccf-4e3a-9e7f-72acd08b640f/change/ HTTP/1.1' 200 39977 B 114.9 ms
+[2024-07-03 20:03:33,216]    INFO - Request: 'GET /metrics HTTP/1.1' 200 43497 B 7.1 ms
+[2024-07-03 20:03:38,233]    INFO - Request: 'GET /admin/animes/anime/ HTTP/1.1' 200 34769 B 142.9 ms
+[2024-07-03 20:03:38,359]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 56.4 ms
+[2024-07-03 20:03:38,561]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 56.6 ms
+[2024-07-03 20:03:41,480]    INFO - Request: 'GET /admin/animes/anime/c051ea9c-b39d-4946-a5cf-2659a295e283/change/ HTTP/1.1' 200 71936 B 690.9 ms
+[2024-07-03 20:03:41,735]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 75.2 ms
+[2024-07-03 20:03:48,215]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46791 B 7.3 ms
+[2024-07-03 20:03:57,798]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33432 B 65.9 ms
+[2024-07-03 20:03:57,889]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 25.0 ms
+[2024-07-03 20:03:59,118]    INFO - Request: 'GET /admin/reviews/review/3b862cd4-1ccf-4e3a-9e7f-72acd08b640f/change/ HTTP/1.1' 200 39977 B 86.2 ms
+[2024-07-03 20:03:59,223]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 30.0 ms
+[2024-07-03 20:04:03,215]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46793 B 8.0 ms
+[2024-07-03 20:04:07,665]    INFO - Request: 'POST /admin/reviews/review/3b862cd4-1ccf-4e3a-9e7f-72acd08b640f/change/ HTTP/1.1' 302 0 B 142.6 ms
+[2024-07-03 20:04:07,747]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33684 B 70.1 ms
+[2024-07-03 20:04:07,848]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 39.3 ms
+[2024-07-03 20:04:09,544]    INFO - Request: 'GET /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 200 39998 B 100.5 ms
+[2024-07-03 20:04:09,646]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 33.9 ms
+[2024-07-03 20:04:13,597]    INFO - Request: 'POST /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 302 0 B 91.7 ms
+[2024-07-03 20:04:13,739]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33672 B 111.4 ms
+[2024-07-03 20:04:13,912]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 36.4 ms
+[2024-07-03 20:04:18,238]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49941 B 33.0 ms
+[2024-07-03 20:04:33,267]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49940 B 60.4 ms
+[2024-07-03 20:04:39,551]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 175 B 77.9 ms
+[2024-07-03 20:04:41,906]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 175 B 39.2 ms
+[2024-07-03 20:04:43,021]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 175 B 53.1 ms
+[2024-07-03 20:04:43,960]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 175 B 33.2 ms
+[2024-07-03 20:04:45,233]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 175 B 34.4 ms
+[2024-07-03 20:04:46,258]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 175 B 56.1 ms
+[2024-07-03 20:04:48,245]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50191 B 39.8 ms
+[2024-07-03 20:04:59,646]    INFO - Request: 'GET /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 200 39973 B 131.5 ms
+[2024-07-03 20:04:59,745]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 41.4 ms
+[2024-07-03 20:05:03,167]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33427 B 133.2 ms
+[2024-07-03 20:05:03,253]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50189 B 49.7 ms
+[2024-07-03 20:05:05,193]    INFO - Request: 'GET /admin/reviews/review/3b862cd4-1ccf-4e3a-9e7f-72acd08b640f/change/ HTTP/1.1' 200 39985 B 110.5 ms
+[2024-07-03 20:05:05,335]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 71.4 ms
+[2024-07-03 20:05:06,421]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33427 B 82.8 ms
+[2024-07-03 20:05:07,426]    INFO - Request: 'GET /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 200 39973 B 98.8 ms
+[2024-07-03 20:05:07,542]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 52.5 ms
+[2024-07-03 20:05:18,216]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50193 B 16.9 ms
+[2024-07-03 20:05:19,515]    INFO - Request: 'POST /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 302 0 B 82.9 ms
+[2024-07-03 20:05:19,691]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33678 B 158.8 ms
+[2024-07-03 20:05:19,795]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 43.9 ms
+[2024-07-03 20:05:32,618]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 348 B 47.7 ms
+[2024-07-03 20:05:33,212]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50201 B 10.7 ms
+[2024-07-03 20:05:33,577]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 348 B 65.2 ms
+[2024-07-03 20:05:34,630]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 348 B 32.6 ms
+[2024-07-03 20:05:35,984]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 348 B 38.1 ms
+[2024-07-03 20:05:36,954]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 348 B 56.9 ms
+[2024-07-03 20:05:48,208]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50211 B 9.9 ms
+[2024-07-03 20:06:03,224]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50211 B 21.3 ms
+[2024-07-03 20:06:18,227]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50210 B 27.7 ms
+[2024-07-03 20:06:33,201]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50223 B 6.8 ms
+[2024-07-03 20:06:48,202]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50224 B 7.9 ms
+[2024-07-03 20:07:03,206]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50208 B 12.0 ms
+[2024-07-03 20:07:18,199]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50211 B 6.4 ms
+[2024-07-03 20:07:33,232]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50211 B 35.7 ms
+[2024-07-03 20:07:48,211]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50208 B 20.0 ms
+[2024-07-03 20:08:03,195]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50250 B 7.6 ms
+[2024-07-03 20:08:18,194]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50264 B 7.2 ms
+[2024-07-03 20:08:33,211]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50264 B 18.9 ms
+[2024-07-03 20:08:48,195]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50266 B 10.9 ms
+[2024-07-03 20:09:03,258]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50290 B 67.8 ms
+[2024-07-03 20:09:18,192]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50278 B 9.2 ms
+[2024-07-03 20:09:33,200]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50290 B 17.1 ms
+[2024-07-03 20:09:48,202]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50290 B 19.9 ms
+[2024-07-03 20:10:03,192]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50291 B 11.0 ms
+[2024-07-03 20:10:18,193]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50280 B 15.5 ms
+[2024-07-03 20:10:33,183]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50280 B 6.6 ms
+[2024-07-03 20:10:48,204]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50279 B 27.2 ms
+[2024-07-03 20:11:03,186]    INFO - Request: 'GET /metrics HTTP/1.1' 200 50279 B 9.9 ms
+[2024-07-03 20:11:12,662]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 404 47267 B 68.9 ms
+[2024-07-03 20:11:12,664]    WARNING - Not Found: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:11:18,185]    INFO - Request: 'GET /metrics HTTP/1.1' 200 52734 B 13.4 ms
+[2024-07-03 20:11:33,199]    INFO - Request: 'GET /metrics HTTP/1.1' 200 52719 B 23.3 ms
+[2024-07-03 20:11:48,174]    INFO - Request: 'GET /metrics HTTP/1.1' 200 52720 B 6.8 ms
+[2024-07-03 20:12:03,196]    INFO - Request: 'GET /metrics HTTP/1.1' 200 52720 B 23.1 ms
+[2024-07-03 20:12:18,174]    INFO - Request: 'GET /metrics HTTP/1.1' 200 52733 B 7.9 ms
+[2024-07-03 20:12:27,918]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 404 47267 B 36.4 ms
+[2024-07-03 20:12:27,920]    WARNING - Not Found: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:12:33,190]    INFO - Request: 'GET /metrics HTTP/1.1' 200 52722 B 23.5 ms
+[2024-07-03 20:12:34,658]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:12:41,872]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:12:48,172]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 3.4 ms
+[2024-07-03 20:12:50,676]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 401 183 B 62.3 ms
+[2024-07-03 20:12:50,677]    WARNING - Unauthorized: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/
+[2024-07-03 20:13:03,169]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21930 B 6.6 ms
+[2024-07-03 20:13:16,489]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 405 41 B 6.9 ms
+[2024-07-03 20:13:16,491]    WARNING - Method Not Allowed: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/
+[2024-07-03 20:13:18,165]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22323 B 4.3 ms
+[2024-07-03 20:13:31,514]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 405 41 B 26.6 ms
+[2024-07-03 20:13:31,515]    WARNING - Method Not Allowed: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/
+[2024-07-03 20:13:33,179]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22323 B 15.2 ms
+[2024-07-03 20:13:40,199]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:13:44,399]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:13:48,169]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 3.9 ms
+[2024-07-03 20:14:01,841]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/ HTTP/1.1' 404 47237 B 108.1 ms
+[2024-07-03 20:14:01,843]    WARNING - Not Found: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/
+[2024-07-03 20:14:03,163]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21280 B 4.8 ms
+[2024-07-03 20:14:18,157]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21279 B 2.5 ms
+[2024-07-03 20:14:29,582]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:14:33,791]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:14:39,011]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 675, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Review() got unexpected keyword arguments: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 223, in create_review
+    serializer.save(
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Review.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Review.objects.create()`. You may need to make the field read-only, or override the ReviewWriteSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 675, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Review() got unexpected keyword arguments: 'user'
+
+[2024-07-03 20:14:39,023]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/ HTTP/1.1' 500 144536 B 412.6 ms
+[2024-07-03 20:14:48,161]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19455 B 5.8 ms
+[2024-07-03 20:15:03,156]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22262 B 3.3 ms
+[2024-07-03 20:15:18,154]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22259 B 3.4 ms
+[2024-07-03 20:15:21,783]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/ HTTP/1.1' 400 76 B 71.8 ms
+[2024-07-03 20:15:21,819]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/
+[2024-07-03 20:15:29,986]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/ HTTP/1.1' 400 76 B 23.5 ms
+[2024-07-03 20:15:29,988]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/
+[2024-07-03 20:15:31,140]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/ HTTP/1.1' 400 76 B 18.5 ms
+[2024-07-03 20:15:31,141]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/
+[2024-07-03 20:15:32,110]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/ HTTP/1.1' 400 76 B 29.7 ms
+[2024-07-03 20:15:32,112]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviewse/
+[2024-07-03 20:15:33,157]    INFO - Request: 'GET /metrics HTTP/1.1' 200 23001 B 6.5 ms
+[2024-07-03 20:15:48,156]    INFO - Request: 'GET /metrics HTTP/1.1' 200 23015 B 7.4 ms
+[2024-07-03 20:15:48,414]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:15:54,549]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:16:03,161]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 4.5 ms
+[2024-07-03 20:16:03,892]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 76 B 116.4 ms
+[2024-07-03 20:16:03,894]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:16:05,202]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 76 B 25.3 ms
+[2024-07-03 20:16:05,203]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:16:06,327]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 76 B 23.1 ms
+[2024-07-03 20:16:06,329]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:16:07,636]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 76 B 35.5 ms
+[2024-07-03 20:16:07,639]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:16:09,385]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 76 B 20.6 ms
+[2024-07-03 20:16:09,386]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:16:16,723]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:16:21,152]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:16:25,722]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 404 47267 B 84.8 ms
+[2024-07-03 20:16:25,724]    WARNING - Not Found: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:16:27,473]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 404 47267 B 106.2 ms
+[2024-07-03 20:16:27,475]    WARNING - Not Found: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:16:33,165]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18476 B 13.8 ms
+[2024-07-03 20:16:38,298]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:16:44,933]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:16:48,152]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 3.5 ms
+[2024-07-03 20:16:49,651]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 76 B 84.8 ms
+[2024-07-03 20:16:49,653]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:16:50,829]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 76 B 65.0 ms
+[2024-07-03 20:16:50,851]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:17:03,147]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21984 B 4.8 ms
+[2024-07-03 20:17:18,145]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21983 B 4.0 ms
+[2024-07-03 20:17:33,146]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21982 B 6.2 ms
+[2024-07-03 20:17:48,142]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21981 B 4.3 ms
+[2024-07-03 20:18:03,176]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21983 B 34.7 ms
+[2024-07-03 20:18:17,403]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:18:21,668]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:18:33,140]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 2.0 ms
+[2024-07-03 20:18:48,129]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 2.4 ms
+[2024-07-03 20:19:03,129]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 2.3 ms
+[2024-07-03 20:19:18,133]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.0 ms
+[2024-07-03 20:19:33,137]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 6.8 ms
+[2024-07-03 20:19:48,129]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.4 ms
+[2024-07-03 20:20:03,131]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.7 ms
+[2024-07-03 20:20:18,130]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 2.1 ms
+[2024-07-03 20:20:33,125]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18565 B 2.5 ms
+[2024-07-03 20:20:48,126]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18590 B 3.0 ms
+[2024-07-03 20:21:03,138]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 11.6 ms
+[2024-07-03 20:21:18,122]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 3.6 ms
+[2024-07-03 20:21:33,124]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 5.0 ms
+[2024-07-03 20:21:48,120]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 4.2 ms
+[2024-07-03 20:22:03,120]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 3.0 ms
+[2024-07-03 20:22:11,852]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 675, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Review() got unexpected keyword arguments: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 223, in create_review
+    serializer.save(
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Review.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Review.objects.create()`. You may need to make the field read-only, or override the ReviewWriteSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 675, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Review() got unexpected keyword arguments: 'user'
+
+[2024-07-03 20:22:11,865]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 144626 B 285.0 ms
+[2024-07-03 20:22:18,132]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22357 B 16.8 ms
+[2024-07-03 20:22:33,118]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22355 B 3.0 ms
+[2024-07-03 20:22:48,118]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22357 B 5.3 ms
+[2024-07-03 20:23:03,113]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22358 B 3.1 ms
+[2024-07-03 20:23:18,112]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22357 B 4.5 ms
+[2024-07-03 20:23:33,110]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22371 B 2.9 ms
+[2024-07-03 20:23:48,121]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22356 B 13.7 ms
+[2024-07-03 20:24:03,122]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22356 B 13.2 ms
+[2024-07-03 20:24:18,112]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22370 B 8.4 ms
+[2024-07-03 20:24:28,578]    INFO - Request: 'GET /admin/reviews/review/3b862cd4-1ccf-4e3a-9e7f-72acd08b640f/change/ HTTP/1.1' 200 39985 B 668.4 ms
+[2024-07-03 20:24:28,710]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 54.2 ms
+[2024-07-03 20:24:29,494]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 25.0 ms
+[2024-07-03 20:24:33,129]    INFO - Request: 'GET /metrics HTTP/1.1' 200 29101 B 23.4 ms
+[2024-07-03 20:24:33,778]    INFO - Request: 'GET /admin/users/user/ace95205-f9b1-4611-bce3-b75adcfa7838/change/ HTTP/1.1' 200 33622 B 1202.8 ms
+[2024-07-03 20:24:33,884]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 44.6 ms
+[2024-07-03 20:24:34,118]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 37.4 ms
+[2024-07-03 20:24:40,382]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33430 B 179.7 ms
+[2024-07-03 20:24:41,694]    INFO - Request: 'GET /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 200 39982 B 113.8 ms
+[2024-07-03 20:24:41,809]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 32.9 ms
+[2024-07-03 20:24:41,887]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 37.7 ms
+[2024-07-03 20:24:46,551]    INFO - Request: 'GET /admin/users/user/7b3cccf5-fdf1-49fd-ac1b-657aa765b803/change/ HTTP/1.1' 200 33578 B 643.9 ms
+[2024-07-03 20:24:46,668]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 61.7 ms
+[2024-07-03 20:24:46,771]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 53.7 ms
+[2024-07-03 20:24:48,114]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35054 B 13.2 ms
+[2024-07-03 20:24:53,950]    INFO - Request: 'POST /admin/users/user/7b3cccf5-fdf1-49fd-ac1b-657aa765b803/change/ HTTP/1.1' 200 490 B 86.1 ms
+[2024-07-03 20:24:57,310]    INFO - Request: 'GET /admin/reviews/review/311dda84-93c4-45fd-ae9b-060ede9efbdb/change/ HTTP/1.1' 200 39982 B 126.1 ms
+[2024-07-03 20:24:57,395]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 32.0 ms
+[2024-07-03 20:24:57,478]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 43.8 ms
+[2024-07-03 20:25:03,138]    INFO - Request: 'GET /metrics HTTP/1.1' 200 38349 B 30.9 ms
+[2024-07-03 20:25:05,781]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 675, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Review() got unexpected keyword arguments: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 223, in create_review
+    serializer.save(
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Review.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Review.objects.create()`. You may need to make the field read-only, or override the ReviewWriteSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 675, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Review() got unexpected keyword arguments: 'user'
+
+[2024-07-03 20:25:05,789]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 144626 B 185.7 ms
+[2024-07-03 20:25:07,439]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 675, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Review() got unexpected keyword arguments: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 223, in create_review
+    serializer.save(
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Review.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Review.objects.create()`. You may need to make the field read-only, or override the ReviewWriteSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 675, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Review() got unexpected keyword arguments: 'user'
+
+[2024-07-03 20:25:07,456]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 144626 B 366.4 ms
+[2024-07-03 20:25:18,103]    INFO - Request: 'GET /metrics HTTP/1.1' 200 38364 B 6.2 ms
+[2024-07-03 20:25:33,117]    INFO - Request: 'GET /metrics HTTP/1.1' 200 38363 B 16.2 ms
+[2024-07-03 20:25:48,131]    INFO - Request: 'GET /metrics HTTP/1.1' 200 38350 B 31.9 ms
+[2024-07-03 20:26:03,102]    INFO - Request: 'GET /metrics HTTP/1.1' 200 38349 B 6.1 ms
+[2024-07-03 20:26:18,098]    INFO - Request: 'GET /metrics HTTP/1.1' 200 38350 B 6.0 ms
+[2024-07-03 20:26:33,130]    INFO - Request: 'GET /metrics HTTP/1.1' 200 38351 B 33.0 ms
+[2024-07-03 20:26:39,421]    INFO - /app/apps/reviews/serializers.py changed, reloading.
+[2024-07-03 20:26:43,620]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:26:48,168]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 14.0 ms
+[2024-07-03 20:26:50,631]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 39 B 142.5 ms
+[2024-07-03 20:26:50,634]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:27:03,094]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21984 B 4.1 ms
+[2024-07-03 20:27:18,111]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21985 B 18.3 ms
+[2024-07-03 20:27:33,091]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21982 B 4.0 ms
+[2024-07-03 20:27:48,093]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21983 B 3.7 ms
+[2024-07-03 20:28:03,107]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21984 B 19.8 ms
+[2024-07-03 20:28:18,086]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21984 B 3.9 ms
+[2024-07-03 20:28:33,103]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21998 B 15.6 ms
+[2024-07-03 20:28:34,825]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:28:40,555]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:28:48,112]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 10.2 ms
+[2024-07-03 20:29:02,439]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:29:07,865]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:29:15,823]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:29:21,006]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:29:33,109]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14914 B 14.0 ms
+[2024-07-03 20:29:34,496]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:29:40,401]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:29:48,093]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 6.5 ms
+[2024-07-03 20:29:58,868]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:30:05,122]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:30:13,902]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:30:18,093]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:30:33,082]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14927 B 2.4 ms
+[2024-07-03 20:30:48,074]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 4.4 ms
+[2024-07-03 20:30:53,688]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 46 B 246.2 ms
+[2024-07-03 20:30:53,690]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:31:03,086]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21985 B 14.4 ms
+[2024-07-03 20:31:18,070]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21986 B 4.5 ms
+[2024-07-03 20:31:33,073]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21983 B 6.2 ms
+[2024-07-03 20:31:44,856]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 675, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Review() got unexpected keyword arguments: 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 231, in create_review
+    serializer.save(
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 981, in create
+    raise TypeError(msg)
+TypeError: Got a `TypeError` when calling `Review.objects.create()`. This may be because you have a writable field on the serializer class that is not a valid argument to `Review.objects.create()`. You may need to make the field read-only, or override the ReviewWriteSerializer.create() method to handle this correctly.
+Original exception was:
+ Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 675, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 567, in __init__
+    raise TypeError(
+TypeError: Review() got unexpected keyword arguments: 'user'
+
+[2024-07-03 20:31:44,868]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 146117 B 181.1 ms
+[2024-07-03 20:31:48,067]    INFO - Request: 'GET /metrics HTTP/1.1' 200 23002 B 3.8 ms
+[2024-07-03 20:32:03,069]    INFO - Request: 'GET /metrics HTTP/1.1' 200 23004 B 5.7 ms
+[2024-07-03 20:32:18,066]    INFO - Request: 'GET /metrics HTTP/1.1' 200 23016 B 5.4 ms
+[2024-07-03 20:32:22,675]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:32:28,717]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:32:33,070]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14927 B 3.1 ms
+[2024-07-03 20:32:48,069]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 7.5 ms
+[2024-07-03 20:32:50,312]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:32:54,989]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:33:02,128]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 52 B 188.5 ms
+[2024-07-03 20:33:02,130]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:33:03,067]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19179 B 5.7 ms
+[2024-07-03 20:33:18,063]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21998 B 5.6 ms
+[2024-07-03 20:33:19,456]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:33:24,795]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:33:28,613]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 732, in execute
+    raise ex.with_traceback(None)
+psycopg.errors.UniqueViolation: duplicate key value violates unique constraint "unique_content_user"
+DETAIL:  Key (content_type_id, object_id, user_id_id)=(15, c051ea9c-b39d-4946-a5cf-2659a295e283, 7b3cccf5-fdf1-49fd-ac1b-657aa765b803) already exists.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 232, in create_review
+    serializer.save(
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/psycopg/cursor.py", line 732, in execute
+    raise ex.with_traceback(None)
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "unique_content_user"
+DETAIL:  Key (content_type_id, object_id, user_id_id)=(15, c051ea9c-b39d-4946-a5cf-2659a295e283, 7b3cccf5-fdf1-49fd-ac1b-657aa765b803) already exists.
+[2024-07-03 20:33:28,628]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 205873 B 245.6 ms
+[2024-07-03 20:33:33,324]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19463 B 138.0 ms
+[2024-07-03 20:33:48,058]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22277 B 3.7 ms
+[2024-07-03 20:33:51,348]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:33:56,467]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:34:05,834]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:34:10,237]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:34:17,414]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:34:23,341]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:34:57,352]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:35:02,746]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:35:16,195]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:35:21,910]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:35:31,712]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 235 B 73.4 ms
+[2024-07-03 20:35:31,715]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:35:33,052]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19176 B 4.5 ms
+[2024-07-03 20:35:35,230]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 235 B 29.6 ms
+[2024-07-03 20:35:35,233]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:35:48,050]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21982 B 5.1 ms
+[2024-07-03 20:36:03,048]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21982 B 3.9 ms
+[2024-07-03 20:36:18,048]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21981 B 4.4 ms
+[2024-07-03 20:36:33,050]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21981 B 5.9 ms
+[2024-07-03 20:36:42,341]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:36:47,432]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:36:56,401]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:37:00,867]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:37:18,054]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 5.7 ms
+[2024-07-03 20:37:20,959]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 247 B 87.9 ms
+[2024-07-03 20:37:20,961]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:37:22,989]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 247 B 28.3 ms
+[2024-07-03 20:37:22,990]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:37:24,363]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 247 B 32.4 ms
+[2024-07-03 20:37:24,364]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:37:33,056]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21984 B 13.5 ms
+[2024-07-03 20:37:41,161]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 247 B 40.7 ms
+[2024-07-03 20:37:41,163]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:37:42,226]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 247 B 33.2 ms
+[2024-07-03 20:37:42,228]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:37:48,054]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21983 B 14.1 ms
+[2024-07-03 20:38:03,056]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21984 B 14.1 ms
+[2024-07-03 20:38:18,039]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22010 B 4.5 ms
+[2024-07-03 20:38:33,051]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22043 B 6.3 ms
+[2024-07-03 20:38:35,853]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:38:39,960]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:38:47,711]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:38:54,444]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:39:03,046]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14914 B 3.7 ms
+[2024-07-03 20:39:06,006]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 247 B 189.8 ms
+[2024-07-03 20:39:06,008]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:39:07,411]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 247 B 43.0 ms
+[2024-07-03 20:39:07,412]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:39:08,899]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 247 B 38.6 ms
+[2024-07-03 20:39:08,900]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:39:18,038]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21990 B 8.0 ms
+[2024-07-03 20:39:25,598]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:39:32,621]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:39:44,757]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 223, in create_review
+    existing_review = Review.objects.filter(user=request.user).exists()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: comment, content_object, content_type, content_type_id, created_at, helpful_count, id, is_available, is_spoiler, object_id, rating, reported_count, updated_at, user_id, user_id_id
+[2024-07-03 20:39:44,767]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 139057 B 264.0 ms
+[2024-07-03 20:39:48,032]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19458 B 3.3 ms
+[2024-07-03 20:40:03,055]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22261 B 23.8 ms
+[2024-07-03 20:40:18,036]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22262 B 11.1 ms
+[2024-07-03 20:40:33,027]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22259 B 4.9 ms
+[2024-07-03 20:40:48,021]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22262 B 2.6 ms
+[2024-07-03 20:40:56,639]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:41:01,992]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:41:06,728]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 223, in create_review
+    existing_review = Review.objects.filter(user=request.user).exists()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: comment, content_object, content_type, content_type_id, created_at, helpful_count, id, is_available, is_spoiler, object_id, rating, reported_count, updated_at, user_id, user_id_id
+[2024-07-03 20:41:06,746]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 139057 B 282.8 ms
+[2024-07-03 20:41:08,107]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 223, in create_review
+    existing_review = Review.objects.filter(user=request.user).exists()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: comment, content_object, content_type, content_type_id, created_at, helpful_count, id, is_available, is_spoiler, object_id, rating, reported_count, updated_at, user_id, user_id_id
+[2024-07-03 20:41:08,123]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 139057 B 324.7 ms
+[2024-07-03 20:41:18,054]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19467 B 5.3 ms
+[2024-07-03 20:41:26,914]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:41:32,630]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:41:48,038]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 4.9 ms
+[2024-07-03 20:42:03,018]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.4 ms
+[2024-07-03 20:42:10,031]    INFO - /app/apps/reviews/serializers.py changed, reloading.
+[2024-07-03 20:42:14,201]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:42:18,032]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 5.2 ms
+[2024-07-03 20:42:33,013]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18546 B 3.1 ms
+[2024-07-03 20:42:48,014]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 5.3 ms
+[2024-07-03 20:43:03,014]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18559 B 7.0 ms
+[2024-07-03 20:43:18,017]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18560 B 9.9 ms
+[2024-07-03 20:43:32,271]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:43:37,541]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:43:48,024]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 13.5 ms
+[2024-07-03 20:43:51,241]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:43:56,148]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:44:03,015]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 5.6 ms
+[2024-07-03 20:44:04,789]    INFO - /app/apps/reviews/serializers.py changed, reloading.
+[2024-07-03 20:44:10,334]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:44:15,758]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 223, in create_review
+    existing_review = Review.objects.filter(user=request.user).exists()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: comment, content_object, content_type, content_type_id, created_at, helpful_count, id, is_available, is_spoiler, object_id, rating, reported_count, updated_at, user_id, user_id_id
+[2024-07-03 20:44:15,772]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 139057 B 328.7 ms
+[2024-07-03 20:44:18,005]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19457 B 5.6 ms
+[2024-07-03 20:44:33,013]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22260 B 13.1 ms
+[2024-07-03 20:44:48,004]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22259 B 4.6 ms
+[2024-07-03 20:45:02,999]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22258 B 3.9 ms
+[2024-07-03 20:45:14,493]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:45:18,635]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:45:24,568]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 223, in create_review
+    existing_review = Review.objects.filter(user=request.user).exists()
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: comment, content_object, content_type, content_type_id, created_at, helpful_count, id, is_available, is_spoiler, object_id, rating, reported_count, updated_at, user_id, user_id_id
+[2024-07-03 20:45:24,585]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 500 139057 B 462.1 ms
+[2024-07-03 20:45:33,002]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19458 B 7.5 ms
+[2024-07-03 20:45:47,997]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22275 B 8.2 ms
+[2024-07-03 20:46:02,995]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22262 B 5.6 ms
+[2024-07-03 20:46:17,989]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22262 B 4.1 ms
+[2024-07-03 20:46:32,998]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22260 B 8.4 ms
+[2024-07-03 20:46:48,011]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22262 B 20.8 ms
+[2024-07-03 20:46:51,052]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:46:55,559]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:47:01,667]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 175.0 ms
+[2024-07-03 20:47:01,669]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:47:02,739]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 39.1 ms
+[2024-07-03 20:47:02,740]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:47:03,002]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19174 B 16.0 ms
+[2024-07-03 20:47:04,441]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 37.9 ms
+[2024-07-03 20:47:04,442]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:47:06,549]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 47.2 ms
+[2024-07-03 20:47:06,550]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:47:17,981]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21996 B 3.3 ms
+[2024-07-03 20:47:26,216]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:47:32,203]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:47:47,715]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:47:52,233]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:48:02,998]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 4.7 ms
+[2024-07-03 20:48:17,982]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 5.7 ms
+[2024-07-03 20:48:32,980]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 5.7 ms
+[2024-07-03 20:48:34,518]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 20:48:40,990]    INFO - Watching for file changes with StatReloader
+[2024-07-03 20:48:47,997]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 15.1 ms
+[2024-07-03 20:48:48,365]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 144.6 ms
+[2024-07-03 20:48:48,371]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:49:02,975]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21985 B 4.0 ms
+[2024-07-03 20:49:17,975]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21985 B 5.0 ms
+[2024-07-03 20:49:32,972]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21983 B 3.1 ms
+[2024-07-03 20:49:47,972]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21984 B 5.0 ms
+[2024-07-03 20:50:02,969]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21985 B 3.0 ms
+[2024-07-03 20:50:17,965]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21985 B 3.0 ms
+[2024-07-03 20:50:32,966]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21986 B 2.9 ms
+[2024-07-03 20:50:47,960]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22012 B 2.9 ms
+[2024-07-03 20:51:02,964]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22055 B 3.6 ms
+[2024-07-03 20:51:17,976]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22089 B 18.3 ms
+[2024-07-03 20:51:32,972]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22077 B 16.1 ms
+[2024-07-03 20:51:47,955]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22077 B 5.0 ms
+[2024-07-03 20:52:02,952]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22092 B 3.0 ms
+[2024-07-03 20:52:17,953]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22080 B 3.8 ms
+[2024-07-03 20:52:32,964]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22080 B 15.5 ms
+[2024-07-03 20:52:47,944]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22079 B 3.0 ms
+[2024-07-03 20:53:02,944]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22079 B 2.9 ms
+[2024-07-03 20:53:17,957]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22092 B 14.8 ms
+[2024-07-03 20:53:32,945]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22080 B 4.6 ms
+[2024-07-03 20:53:47,951]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22080 B 12.8 ms
+[2024-07-03 20:54:02,938]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22080 B 2.8 ms
+[2024-07-03 20:54:17,950]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22092 B 13.6 ms
+[2024-07-03 20:54:32,936]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22080 B 4.5 ms
+[2024-07-03 20:54:47,931]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22079 B 2.9 ms
+[2024-07-03 20:55:02,932]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22079 B 3.7 ms
+[2024-07-03 20:55:17,929]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22092 B 4.3 ms
+[2024-07-03 20:55:32,929]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22078 B 2.9 ms
+[2024-07-03 20:55:47,917]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22079 B 2.9 ms
+[2024-07-03 20:56:02,920]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22091 B 5.5 ms
+[2024-07-03 20:56:17,923]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22092 B 4.1 ms
+[2024-07-03 20:56:32,938]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22078 B 15.7 ms
+[2024-07-03 20:56:47,919]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22079 B 3.9 ms
+[2024-07-03 20:57:02,920]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22093 B 4.1 ms
+[2024-07-03 20:57:17,918]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22091 B 3.8 ms
+[2024-07-03 20:57:32,920]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22092 B 3.3 ms
+[2024-07-03 20:57:47,913]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22077 B 3.5 ms
+[2024-07-03 20:58:02,914]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22092 B 4.4 ms
+[2024-07-03 20:58:17,911]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22078 B 4.0 ms
+[2024-07-03 20:58:32,914]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22092 B 4.3 ms
+[2024-07-03 20:58:47,911]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22078 B 6.6 ms
+[2024-07-03 20:59:02,016]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 65.6 ms
+[2024-07-03 20:59:02,037]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:59:02,912]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22079 B 8.1 ms
+[2024-07-03 20:59:03,031]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 35.6 ms
+[2024-07-03 20:59:03,031]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:59:03,933]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 25.5 ms
+[2024-07-03 20:59:03,934]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:59:04,799]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 36.7 ms
+[2024-07-03 20:59:04,799]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:59:05,699]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 52.2 ms
+[2024-07-03 20:59:05,710]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 20:59:17,911]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22093 B 7.9 ms
+[2024-07-03 20:59:32,924]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22080 B 17.9 ms
+[2024-07-03 20:59:47,903]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22077 B 4.5 ms
+[2024-07-03 21:00:02,904]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22079 B 5.1 ms
+[2024-07-03 21:00:17,918]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22084 B 17.5 ms
+[2024-07-03 21:00:32,901]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22097 B 4.6 ms
+[2024-07-03 21:00:47,898]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22084 B 4.3 ms
+[2024-07-03 21:01:01,627]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:01:06,325]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:01:17,638]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 70.4 ms
+[2024-07-03 21:01:17,639]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:17,904]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19178 B 10.8 ms
+[2024-07-03 21:01:19,037]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 63.7 ms
+[2024-07-03 21:01:19,058]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:20,128]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 33.9 ms
+[2024-07-03 21:01:20,129]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:21,140]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 55.8 ms
+[2024-07-03 21:01:21,165]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:22,135]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 30.5 ms
+[2024-07-03 21:01:22,136]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:22,976]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 28.4 ms
+[2024-07-03 21:01:22,978]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:23,822]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 34.8 ms
+[2024-07-03 21:01:23,823]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:24,762]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 47.6 ms
+[2024-07-03 21:01:24,763]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:25,666]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 30.3 ms
+[2024-07-03 21:01:25,667]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:26,764]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 58.5 ms
+[2024-07-03 21:01:26,765]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:27,627]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 32.4 ms
+[2024-07-03 21:01:27,628]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:30,073]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 34.1 ms
+[2024-07-03 21:01:30,075]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:30,965]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 38.7 ms
+[2024-07-03 21:01:30,966]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:31,898]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 400 50 B 35.4 ms
+[2024-07-03 21:01:31,899]    WARNING - Bad Request: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/
+[2024-07-03 21:01:32,915]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22076 B 18.8 ms
+[2024-07-03 21:01:47,889]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22076 B 3.1 ms
+[2024-07-03 21:01:49,917]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33430 B 440.6 ms
+[2024-07-03 21:01:57,473]    INFO - Request: 'POST /admin/reviews/review/ HTTP/1.1' 200 28707 B 157.7 ms
+[2024-07-03 21:01:58,658]    INFO - Request: 'POST /admin/reviews/review/ HTTP/1.1' 302 0 B 150.1 ms
+[2024-07-03 21:01:58,854]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 32901 B 173.6 ms
+[2024-07-03 21:01:59,003]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 45.0 ms
+[2024-07-03 21:01:59,084]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 30.3 ms
+[2024-07-03 21:02:02,895]    INFO - Request: 'GET /metrics HTTP/1.1' 200 32018 B 8.1 ms
+[2024-07-03 21:02:14,557]    INFO - Request: 'POST /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/create/ HTTP/1.1' 201 54 B 110.1 ms
+[2024-07-03 21:02:17,894]    INFO - Request: 'GET /metrics HTTP/1.1' 200 32415 B 6.5 ms
+[2024-07-03 21:02:23,689]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33476 B 74.1 ms
+[2024-07-03 21:02:23,818]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 26.7 ms
+[2024-07-03 21:02:23,907]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 33.3 ms
+[2024-07-03 21:02:25,245]    INFO - Request: 'GET /admin/reviews/review/0188f9d0-2483-4187-8a25-46e8c62423fc/change/ HTTP/1.1' 200 39981 B 225.6 ms
+[2024-07-03 21:02:25,415]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 35.6 ms
+[2024-07-03 21:02:25,655]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 42.8 ms
+[2024-07-03 21:02:32,902]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35767 B 12.6 ms
+[2024-07-03 21:02:47,907]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35779 B 21.8 ms
+[2024-07-03 21:03:02,889]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35768 B 4.6 ms
+[2024-07-03 21:03:17,888]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35769 B 5.7 ms
+[2024-07-03 21:03:32,894]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35782 B 9.2 ms
+[2024-07-03 21:03:47,899]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35787 B 16.8 ms
+[2024-07-03 21:04:02,888]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35801 B 8.6 ms
+[2024-07-03 21:04:17,886]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35788 B 6.9 ms
+[2024-07-03 21:04:28,337]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:04:33,367]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:04:47,890]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 8.2 ms
+[2024-07-03 21:04:52,739]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:04:57,019]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:05:02,907]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14915 B 14.5 ms
+[2024-07-03 21:05:17,874]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 3.2 ms
+[2024-07-03 21:05:32,873]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.3 ms
+[2024-07-03 21:05:47,874]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 2.9 ms
+[2024-07-03 21:06:00,050]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:06:05,245]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:06:13,666]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:06:17,800]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:06:32,884]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 5.3 ms
+[2024-07-03 21:06:47,872]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 5.5 ms
+[2024-07-03 21:07:02,870]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 3.6 ms
+[2024-07-03 21:07:17,877]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 10.6 ms
+[2024-07-03 21:07:32,877]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 10.6 ms
+[2024-07-03 21:07:47,867]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 4.2 ms
+[2024-07-03 21:08:02,880]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 14.3 ms
+[2024-07-03 21:08:17,868]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 3.9 ms
+[2024-07-03 21:08:32,876]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 12.1 ms
+[2024-07-03 21:08:34,146]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33476 B 600.5 ms
+[2024-07-03 21:08:34,493]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 54.5 ms
+[2024-07-03 21:08:35,990]    INFO - Request: 'GET /admin/reviews/review/0188f9d0-2483-4187-8a25-46e8c62423fc/change/ HTTP/1.1' 200 39981 B 178.0 ms
+[2024-07-03 21:08:36,189]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 40.2 ms
+[2024-07-03 21:08:36,662]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 56.0 ms
+[2024-07-03 21:08:47,877]    INFO - Request: 'GET /metrics HTTP/1.1' 200 28085 B 12.2 ms
+[2024-07-03 21:09:02,878]    INFO - Request: 'GET /metrics HTTP/1.1' 200 28117 B 15.4 ms
+[2024-07-03 21:09:17,862]    INFO - Request: 'GET /metrics HTTP/1.1' 200 28115 B 5.9 ms
+[2024-07-03 21:09:22,005]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 401 183 B 48.2 ms
+[2024-07-03 21:09:22,007]    WARNING - Unauthorized: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-03 21:09:32,881]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31400 B 21.8 ms
+[2024-07-03 21:09:42,864]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 401 58 B 1.7 ms
+[2024-07-03 21:09:42,866]    WARNING - Unauthorized: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-03 21:09:47,867]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31399 B 10.9 ms
+[2024-07-03 21:10:02,878]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31412 B 18.8 ms
+[2024-07-03 21:10:06,873]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 405 42 B 28.6 ms
+[2024-07-03 21:10:06,875]    WARNING - Method Not Allowed: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-03 21:10:17,861]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31795 B 6.5 ms
+[2024-07-03 21:10:32,870]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31799 B 14.7 ms
+[2024-07-03 21:10:33,417]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 405 42 B 31.7 ms
+[2024-07-03 21:10:33,421]    WARNING - Method Not Allowed: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-03 21:10:47,884]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31799 B 26.6 ms
+[2024-07-03 21:11:02,858]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31800 B 5.1 ms
+[2024-07-03 21:11:17,863]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31812 B 11.1 ms
+[2024-07-03 21:11:26,854]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 405 42 B 30.6 ms
+[2024-07-03 21:11:26,856]    WARNING - Method Not Allowed: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-03 21:11:32,879]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31800 B 24.5 ms
+[2024-07-03 21:11:41,750]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 405 42 B 32.8 ms
+[2024-07-03 21:11:41,769]    WARNING - Method Not Allowed: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-03 21:11:47,871]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31799 B 20.9 ms
+[2024-07-03 21:11:50,405]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 33476 B 233.6 ms
+[2024-07-03 21:11:52,221]    INFO - Request: 'GET /admin/reviews/review/0188f9d0-2483-4187-8a25-46e8c62423fc/change/ HTTP/1.1' 200 39981 B 98.6 ms
+[2024-07-03 21:11:52,347]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 45.0 ms
+[2024-07-03 21:11:53,576]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 37.9 ms
+[2024-07-03 21:12:00,173]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 405 42 B 30.3 ms
+[2024-07-03 21:12:00,175]    WARNING - Method Not Allowed: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-03 21:12:01,500]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 405 42 B 25.1 ms
+[2024-07-03 21:12:01,503]    WARNING - Method Not Allowed: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-03 21:12:02,854]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31797 B 6.6 ms
+[2024-07-03 21:12:17,853]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31797 B 5.4 ms
+[2024-07-03 21:12:28,170]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/ HTTP/1.1' 200 348 B 56.6 ms
+[2024-07-03 21:12:32,859]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34551 B 11.9 ms
+[2024-07-03 21:12:45,149]    INFO - Request: 'GET /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 405 40 B 31.5 ms
+[2024-07-03 21:12:45,150]    WARNING - Method Not Allowed: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-03 21:12:47,854]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37332 B 7.5 ms
+[2024-07-03 21:13:02,426]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 405 42 B 32.5 ms
+[2024-07-03 21:13:02,444]    WARNING - Method Not Allowed: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-03 21:13:02,857]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37332 B 10.6 ms
+[2024-07-03 21:13:17,853]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37333 B 8.1 ms
+[2024-07-03 21:13:20,648]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:13:29,900]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:13:43,727]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:13:48,282]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:13:55,387]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:14:00,950]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:14:17,853]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 4.8 ms
+[2024-07-03 21:14:32,845]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 3.7 ms
+[2024-07-03 21:14:45,013]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:14:52,063]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:15:02,864]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 4.3 ms
+[2024-07-03 21:15:03,879]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:15:09,876]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:15:15,358]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:15:20,569]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:15:32,870]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 10.0 ms
+[2024-07-03 21:15:37,170]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:15:41,841]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:15:47,873]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 12.7 ms
+[2024-07-03 21:15:52,116]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:15:57,599]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:16:02,844]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 2.4 ms
+[2024-07-03 21:16:07,358]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:16:13,097]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:16:17,854]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14924 B 3.6 ms
+[2024-07-03 21:16:31,218]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 266, in update_or_delete_review
+    if review.user != request.user:
+       ^^^^^^^^^^^
+AttributeError: 'Review' object has no attribute 'user'
+[2024-07-03 21:16:31,229]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 500 95158 B 159.7 ms
+[2024-07-03 21:16:32,840]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22555 B 5.3 ms
+[2024-07-03 21:16:47,851]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22556 B 14.3 ms
+[2024-07-03 21:17:02,839]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22555 B 5.5 ms
+[2024-07-03 21:17:17,837]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22555 B 5.4 ms
+[2024-07-03 21:17:19,860]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:17:24,310]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:17:30,198]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 266, in update_or_delete_review
+    if review.user != request.user:
+       ^^^^^^^^^^^
+AttributeError: 'Review' object has no attribute 'user'
+[2024-07-03 21:17:30,209]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 500 95226 B 194.3 ms
+[2024-07-03 21:17:31,708]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 266, in update_or_delete_review
+    if review.user != request.user:
+       ^^^^^^^^^^^
+AttributeError: 'Review' object has no attribute 'user'
+[2024-07-03 21:17:31,728]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 500 95226 B 320.5 ms
+[2024-07-03 21:17:32,839]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19747 B 5.0 ms
+[2024-07-03 21:17:44,398]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 266, in update_or_delete_review
+    if review.user != request.user:
+       ^^^^^^^^^^^
+AttributeError: 'Review' object has no attribute 'user'
+[2024-07-03 21:17:44,405]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 500 95226 B 147.7 ms
+[2024-07-03 21:17:45,312]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 266, in update_or_delete_review
+    if review.user != request.user:
+       ^^^^^^^^^^^
+AttributeError: 'Review' object has no attribute 'user'
+[2024-07-03 21:17:45,318]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 500 95226 B 104.8 ms
+[2024-07-03 21:17:47,835]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22552 B 5.6 ms
+[2024-07-03 21:18:02,853]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22565 B 17.9 ms
+[2024-07-03 21:18:10,362]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:18:14,753]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:18:17,848]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 12.1 ms
+[2024-07-03 21:18:32,831]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.9 ms
+[2024-07-03 21:18:47,830]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 3.6 ms
+[2024-07-03 21:19:02,830]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 4.7 ms
+[2024-07-03 21:19:05,311]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:19:11,317]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:19:17,841]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 5.9 ms
+[2024-07-03 21:19:28,127]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 200 54 B 323.1 ms
+[2024-07-03 21:19:29,970]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 200 54 B 82.4 ms
+[2024-07-03 21:19:31,213]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 200 54 B 76.7 ms
+[2024-07-03 21:19:32,462]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 200 54 B 64.6 ms
+[2024-07-03 21:19:32,831]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22117 B 6.4 ms
+[2024-07-03 21:19:47,828]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22102 B 5.7 ms
+[2024-07-03 21:20:02,829]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22104 B 6.3 ms
+[2024-07-03 21:20:17,553]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 200 172 B 79.9 ms
+[2024-07-03 21:20:17,827]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22130 B 6.4 ms
+[2024-07-03 21:20:32,827]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22188 B 6.3 ms
+[2024-07-03 21:20:47,824]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22177 B 6.3 ms
+[2024-07-03 21:21:02,823]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22177 B 5.1 ms
+[2024-07-03 21:21:17,808]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22177 B 3.0 ms
+[2024-07-03 21:21:32,808]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22180 B 3.2 ms
+[2024-07-03 21:21:47,819]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22200 B 3.8 ms
+[2024-07-03 21:22:02,821]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22202 B 5.3 ms
+[2024-07-03 21:22:08,357]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:22:14,363]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:22:17,837]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14914 B 7.4 ms
+[2024-07-03 21:22:32,820]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 3.2 ms
+[2024-07-03 21:22:47,815]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18565 B 4.4 ms
+[2024-07-03 21:22:59,132]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:23:05,423]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:23:14,238]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:23:19,000]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:23:26,862]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:23:31,581]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:23:39,924]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:23:46,373]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:24:02,820]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 4.9 ms
+[2024-07-03 21:24:17,810]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 4.2 ms
+[2024-07-03 21:24:32,810]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18546 B 4.0 ms
+[2024-07-03 21:24:47,807]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 3.2 ms
+[2024-07-03 21:25:02,807]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 2.7 ms
+[2024-07-03 21:25:11,082]    INFO - /app/apps/utils/functions.py changed, reloading.
+[2024-07-03 21:25:15,907]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:25:32,815]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 4.8 ms
+[2024-07-03 21:25:36,604]    INFO - /app/apps/utils/functions.py changed, reloading.
+[2024-07-03 21:25:42,050]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:25:47,813]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14926 B 3.0 ms
+[2024-07-03 21:25:54,414]    INFO - /app/apps/utils/functions.py changed, reloading.
+[2024-07-03 21:25:59,383]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:26:02,820]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 6.5 ms
+[2024-07-03 21:26:09,883]    INFO - /app/apps/utils/functions.py changed, reloading.
+[2024-07-03 21:26:13,921]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:26:15,932]    INFO - /app/apps/utils/functions.py changed, reloading.
+[2024-07-03 21:26:19,813]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:26:22,097]    INFO - /app/apps/utils/functions.py changed, reloading.
+[2024-07-03 21:26:26,773]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:26:32,014]    INFO - /app/apps/utils/functions.py changed, reloading.
+[2024-07-03 21:26:35,315]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:34:19,174]    INFO - /app/apps/animes/__init__.py changed, reloading.
+[2024-07-03 21:34:22,182]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:36:37,718]    INFO - /app/apps/animes/__init__.py changed, reloading.
+[2024-07-03 21:36:40,914]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:36:47,772]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 14.7 ms
+[2024-07-03 21:37:02,506]    ERROR - Internal Server Error: /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/animes/viewsets.py", line 267, in update_or_delete_review
+    if review.user != request.user:
+       ^^^^^^^^^^^
+AttributeError: 'Review' object has no attribute 'user'
+[2024-07-03 21:37:02,523]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 500 95152 B 255.3 ms
+[2024-07-03 21:37:02,764]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22556 B 14.1 ms
+[2024-07-03 21:37:17,752]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22558 B 6.2 ms
+[2024-07-03 21:37:32,749]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22558 B 4.6 ms
+[2024-07-03 21:37:46,677]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:37:52,395]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:37:57,066]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 200 147 B 163.9 ms
+[2024-07-03 21:37:59,465]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 200 147 B 82.6 ms
+[2024-07-03 21:38:02,753]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19458 B 4.8 ms
+[2024-07-03 21:38:04,624]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 200 147 B 70.7 ms
+[2024-07-03 21:38:06,266]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 200 147 B 132.0 ms
+[2024-07-03 21:38:07,608]    INFO - Request: 'PATCH /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 200 147 B 91.8 ms
+[2024-07-03 21:38:13,082]    INFO - Request: 'DELETE /api/v1/animes/c051ea9c-b39d-4946-a5cf-2659a295e283/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 204 0 B 78.8 ms
+[2024-07-03 21:38:17,757]    INFO - Request: 'GET /metrics HTTP/1.1' 200 25511 B 17.7 ms
+[2024-07-03 21:38:18,966]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 32755 B 621.3 ms
+[2024-07-03 21:38:19,270]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 44.6 ms
+[2024-07-03 21:38:32,779]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31503 B 34.7 ms
+[2024-07-03 21:38:35,585]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-03 21:38:39,861]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:38:47,758]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 6.9 ms
+[2024-07-03 21:39:02,742]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 4.7 ms
+[2024-07-03 21:39:17,742]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 3.4 ms
+[2024-07-03 21:39:32,736]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 2.2 ms
+[2024-07-03 21:39:47,735]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 3.3 ms
+[2024-07-03 21:40:02,735]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 3.4 ms
+[2024-07-03 21:40:17,745]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 12.1 ms
+[2024-07-03 21:40:32,746]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 11.5 ms
+[2024-07-03 21:40:47,729]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.5 ms
+[2024-07-03 21:41:02,730]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18598 B 3.4 ms
+[2024-07-03 21:41:17,742]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18639 B 13.5 ms
+[2024-07-03 21:41:32,730]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 2.1 ms
+[2024-07-03 21:41:47,730]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 4.4 ms
+[2024-07-03 21:42:02,739]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 12.7 ms
+[2024-07-03 21:42:17,731]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18654 B 6.9 ms
+[2024-07-03 21:42:32,725]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 3.1 ms
+[2024-07-03 21:42:47,726]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 5.2 ms
+[2024-07-03 21:43:02,735]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 11.3 ms
+[2024-07-03 21:43:17,721]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 3.7 ms
+[2024-07-03 21:43:32,732]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18656 B 11.7 ms
+[2024-07-03 21:43:47,722]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 4.2 ms
+[2024-07-03 21:44:02,717]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 2.9 ms
+[2024-07-03 21:44:17,716]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 3.6 ms
+[2024-07-03 21:44:32,717]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 4.2 ms
+[2024-07-03 21:44:47,714]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 4.5 ms
+[2024-07-03 21:45:02,720]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 8.4 ms
+[2024-07-03 21:45:17,711]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 3.2 ms
+[2024-07-03 21:45:32,709]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 2.6 ms
+[2024-07-03 21:45:47,709]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 2.5 ms
+[2024-07-03 21:46:02,709]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 3.1 ms
+[2024-07-03 21:46:17,722]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18656 B 14.6 ms
+[2024-07-03 21:46:32,708]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 4.6 ms
+[2024-07-03 21:46:47,709]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 6.1 ms
+[2024-07-03 21:47:02,705]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 2.6 ms
+[2024-07-03 21:47:17,703]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18654 B 2.3 ms
+[2024-07-03 21:47:32,717]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 13.9 ms
+[2024-07-03 21:47:47,716]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 13.4 ms
+[2024-07-03 21:48:02,700]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 2.1 ms
+[2024-07-03 21:48:17,701]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18656 B 3.9 ms
+[2024-07-03 21:48:24,435]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:48:31,430]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:48:47,713]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14921 B 4.2 ms
+[2024-07-03 21:49:02,699]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 3.7 ms
+[2024-07-03 21:49:17,641]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:49:23,709]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:49:32,708]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 14.4 ms
+[2024-07-03 21:49:36,460]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:49:42,385]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:49:47,721]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 9.7 ms
+[2024-07-03 21:49:50,534]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:49:56,148]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:50:02,713]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 4.1 ms
+[2024-07-03 21:50:17,689]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 2.2 ms
+[2024-07-03 21:50:32,691]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 4.3 ms
+[2024-07-03 21:50:47,690]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 8.5 ms
+[2024-07-03 21:51:02,689]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 5.7 ms
+[2024-07-03 21:51:17,691]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 7.2 ms
+[2024-07-03 21:51:32,685]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 4.1 ms
+[2024-07-03 21:51:35,328]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:51:39,825]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:52:00,966]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:52:05,099]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:52:21,368]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:52:26,514]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:54:12,501]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:54:17,228]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:54:29,229]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:54:33,754]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:54:38,685]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:54:44,412]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:54:53,886]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:54:59,206]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:56:20,631]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:56:29,354]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:56:37,878]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:56:42,588]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:56:55,999]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:57:00,707]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:57:13,625]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:57:18,334]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:57:29,904]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:57:35,196]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:57:55,351]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:57:59,189]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:58:04,264]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:58:10,156]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:58:33,012]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:58:38,209]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:58:59,237]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:59:04,718]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:59:12,171]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:59:17,384]    INFO - Watching for file changes with StatReloader
+[2024-07-03 21:59:50,042]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 21:59:54,532]    INFO - Watching for file changes with StatReloader
+[2024-07-03 22:00:00,738]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-03 22:00:05,126]    INFO - Watching for file changes with StatReloader
