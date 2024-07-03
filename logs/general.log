@@ -12373,3 +12373,462 @@ django.db.utils.DataError: value too long for type character varying(50)
 [2024-07-03 17:37:48,854]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21504 B 2.8 ms
 [2024-07-03 17:38:03,854]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21506 B 3.9 ms
 [2024-07-03 17:38:18,852]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21519 B 4.2 ms
+[2024-07-03 17:38:33,859]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21509 B 10.0 ms
+[2024-07-03 17:38:48,851]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21540 B 3.3 ms
+[2024-07-03 17:39:03,860]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21527 B 10.3 ms
+[2024-07-03 17:39:18,846]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21526 B 3.4 ms
+[2024-07-03 18:14:50,621]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:14:58,319]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:15:03,369]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:15:50,404]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:15:56,580]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:18:24,732]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:18:29,459]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:18:47,723]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:18:52,577]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:20:00,911]    INFO - /app/apps/mangas/__init__.py changed, reloading.
+[2024-07-03 18:20:05,208]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:20:18,698]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 5.0 ms
+[2024-07-03 18:20:33,689]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 4.1 ms
+[2024-07-03 18:20:48,698]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18565 B 11.9 ms
+[2024-07-03 18:21:03,688]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 4.1 ms
+[2024-07-03 18:21:18,685]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 3.8 ms
+[2024-07-03 18:21:33,686]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 4.4 ms
+[2024-07-03 18:21:45,975]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 525 B 83.4 ms
+[2024-07-03 18:21:48,684]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21458 B 3.8 ms
+[2024-07-03 18:21:50,336]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 525 B 7.5 ms
+[2024-07-03 18:22:03,691]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21507 B 9.8 ms
+[2024-07-03 18:22:07,431]    ERROR - Internal Server Error: /api/v1/mangas/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/utils/mixins.py", line 38, in list
+    return super().list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/rest_framework/backends.py", line 74, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 230, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 213, in filter_queryset
+    queryset = self.filters[name].filter(queryset, value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filters.py", line 180, in filter
+    return super().filter(qs, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filters.py", line 159, in filter
+    qs = self.get_method(qs)(**{lookup: value})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'type' into field. Choices are: alternative_names, author_id, author_id_id, background, chapters, character, character_manga, created_at, demographic_id, demographic_id_id, favorites, genres, id, image, is_available, is_recommended, mangalistitem, media_type, members, name, name_jpn, name_rom, news, popularity, published_from, published_to, ranked, score, serialization_id, serialization_id_id, slug, stats, status, synopsis, themes, updated_at, volumes, website
+[2024-07-03 18:22:07,445]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 500 196623 B 403.2 ms
+[2024-07-03 18:22:18,688]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22506 B 10.1 ms
+[2024-07-03 18:22:33,681]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22497 B 3.0 ms
+[2024-07-03 18:22:48,680]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22514 B 4.1 ms
+[2024-07-03 18:22:49,805]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:22:55,145]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:23:03,697]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 6.2 ms
+[2024-07-03 18:23:08,471]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 525 B 14.3 ms
+[2024-07-03 18:23:18,679]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21136 B 4.6 ms
+[2024-07-03 18:23:33,680]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21122 B 5.1 ms
+[2024-07-03 18:23:48,677]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21121 B 3.5 ms
+[2024-07-03 18:23:55,218]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 525 B 4.5 ms
+[2024-07-03 18:24:03,676]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21118 B 4.1 ms
+[2024-07-03 18:24:17,041]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 52 B 70.1 ms
+[2024-07-03 18:24:18,675]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21451 B 2.4 ms
+[2024-07-03 18:24:30,526]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 525 B 6.2 ms
+[2024-07-03 18:24:33,674]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21524 B 3.0 ms
+[2024-07-03 18:24:48,674]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21525 B 4.7 ms
+[2024-07-03 18:25:00,380]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 291 B 48.0 ms
+[2024-07-03 18:25:03,676]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21538 B 4.0 ms
+[2024-07-03 18:25:09,487]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 285 B 43.3 ms
+[2024-07-03 18:25:13,945]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 400 80 B 10.0 ms
+[2024-07-03 18:25:13,947]    WARNING - Bad Request: /api/v1/mangas/
+[2024-07-03 18:25:18,670]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21900 B 3.5 ms
+[2024-07-03 18:25:30,866]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 52 B 191.8 ms
+[2024-07-03 18:25:33,669]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21930 B 2.7 ms
+[2024-07-03 18:25:48,673]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21917 B 5.3 ms
+[2024-07-03 18:26:03,681]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21919 B 6.0 ms
+[2024-07-03 18:26:07,818]    ERROR - Internal Server Error: /api/v1/mangas/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/utils/mixins.py", line 38, in list
+    return super().list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/rest_framework/backends.py", line 74, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 230, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 213, in filter_queryset
+    queryset = self.filters[name].filter(queryset, value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filters.py", line 180, in filter
+    return super().filter(qs, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filters.py", line 159, in filter
+    qs = self.get_method(qs)(**{lookup: value})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'type' into field. Choices are: alternative_names, author_id, author_id_id, background, chapters, character, character_manga, created_at, demographic_id, demographic_id_id, favorites, genres, id, image, is_available, is_recommended, mangalistitem, media_type, members, name, name_jpn, name_rom, news, popularity, published_from, published_to, ranked, score, serialization_id, serialization_id_id, slug, stats, status, synopsis, themes, updated_at, volumes, website
+[2024-07-03 18:26:07,834]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 500 196623 B 170.7 ms
+[2024-07-03 18:26:18,673]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22900 B 7.5 ms
+[2024-07-03 18:26:33,677]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22899 B 10.7 ms
+[2024-07-03 18:26:48,681]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22899 B 15.6 ms
+[2024-07-03 18:27:03,666]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22900 B 5.0 ms
+[2024-07-03 18:27:08,020]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:27:11,779]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:27:18,684]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 6.6 ms
+[2024-07-03 18:27:33,679]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 13.3 ms
+[2024-07-03 18:27:48,662]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 2.4 ms
+[2024-07-03 18:28:03,668]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.1 ms
+[2024-07-03 18:28:04,160]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 525 B 58.8 ms
+[2024-07-03 18:28:08,441]    ERROR - Internal Server Error: /api/v1/mangas/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/drf_spectacular/drainage.py", line 207, in wrapped_method
+    return method(self, request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 188, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 186, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/utils/decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/vary.py", line 31, in _view_wrapper
+    response = func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/utils/mixins.py", line 38, in list
+    return super().list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 150, in filter_queryset
+    queryset = backend().filter_queryset(self.request, queryset, self)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/rest_framework/backends.py", line 74, in filter_queryset
+    return filterset.qs
+           ^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 230, in qs
+    qs = self.filter_queryset(qs)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filterset.py", line 213, in filter_queryset
+    queryset = self.filters[name].filter(queryset, value)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filters.py", line 180, in filter
+    return super().filter(qs, value)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django_filters/filters.py", line 159, in filter
+    qs = self.get_method(qs)(**{lookup: value})
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'type' into field. Choices are: alternative_names, author_id, author_id_id, background, chapters, character, character_manga, created_at, demographic_id, demographic_id_id, favorites, genres, id, image, is_available, is_recommended, mangalistitem, media_type, members, name, name_jpn, name_rom, news, popularity, published_from, published_to, ranked, score, serialization_id, serialization_id_id, slug, stats, status, synopsis, themes, updated_at, volumes, website
+[2024-07-03 18:28:08,458]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 500 196623 B 192.7 ms
+[2024-07-03 18:28:18,664]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22423 B 5.7 ms
+[2024-07-03 18:28:33,679]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22421 B 17.1 ms
+[2024-07-03 18:28:48,662]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22421 B 5.8 ms
+[2024-07-03 18:29:03,663]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22459 B 5.0 ms
+[2024-07-03 18:29:18,673]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22487 B 14.5 ms
+[2024-07-03 18:29:33,662]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22494 B 6.1 ms
+[2024-07-03 18:29:40,649]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:29:46,561]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:29:59,131]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:30:05,391]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:30:11,205]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 525 B 16.3 ms
+[2024-07-03 18:30:13,007]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 525 B 16.2 ms
+[2024-07-03 18:30:18,169]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 525 B 56.7 ms
+[2024-07-03 18:30:18,660]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18792 B 4.7 ms
+[2024-07-03 18:30:23,248]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 200 525 B 10.7 ms
+[2024-07-03 18:30:29,857]    INFO - Request: 'GET /api/v1/mangas/ HTTP/1.1' 400 78 B 8.3 ms
+[2024-07-03 18:30:29,858]    WARNING - Bad Request: /api/v1/mangas/
+[2024-07-03 18:30:33,657]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21828 B 5.4 ms
+[2024-07-03 18:30:48,670]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21829 B 19.1 ms
+[2024-07-03 18:31:03,652]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21828 B 4.2 ms
+[2024-07-03 18:31:18,658]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21864 B 10.6 ms
+[2024-07-03 18:31:33,648]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21901 B 3.7 ms
+[2024-07-03 18:31:37,259]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:31:42,739]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:31:48,654]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 3.1 ms
+[2024-07-03 18:32:03,654]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 6.4 ms
+[2024-07-03 18:32:11,522]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:32:16,608]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:32:26,318]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:32:31,380]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:32:39,250]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:32:45,094]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:32:48,662]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14922 B 6.4 ms
+[2024-07-03 18:33:03,640]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 3.4 ms
+[2024-07-03 18:33:18,641]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 3.7 ms
+[2024-07-03 18:33:33,636]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 2.2 ms
+[2024-07-03 18:33:48,639]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18560 B 3.2 ms
+[2024-07-03 18:34:03,644]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 8.5 ms
+[2024-07-03 18:34:18,634]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.5 ms
+[2024-07-03 18:34:33,630]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 3.6 ms
+[2024-07-03 18:34:46,890]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:34:51,587]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:34:59,910]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:35:04,583]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:35:12,908]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:35:17,882]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:35:33,630]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 2.9 ms
+[2024-07-03 18:35:42,440]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:35:47,120]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:35:59,047]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:36:04,042]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:36:12,875]    INFO - /app/apps/mangas/filters.py changed, reloading.
+[2024-07-03 18:36:18,795]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:36:33,645]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 7.6 ms
+[2024-07-03 18:36:48,620]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.7 ms
+[2024-07-03 18:37:03,621]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18567 B 4.3 ms
+[2024-07-03 18:37:18,617]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.6 ms
+[2024-07-03 18:37:33,616]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18565 B 2.9 ms
+[2024-07-03 18:37:48,617]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 5.3 ms
+[2024-07-03 18:38:03,617]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 5.4 ms
+[2024-07-03 18:38:18,626]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 14.4 ms
+[2024-07-03 18:38:33,612]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.1 ms
+[2024-07-03 18:38:48,620]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18603 B 11.6 ms
+[2024-07-03 18:39:03,608]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18657 B 3.1 ms
+[2024-07-03 18:39:18,605]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 3.3 ms
+[2024-07-03 18:39:33,606]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18658 B 3.3 ms
+[2024-07-03 18:39:48,617]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 14.0 ms
+[2024-07-03 18:40:03,605]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 3.5 ms
+[2024-07-03 18:40:18,612]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 12.0 ms
+[2024-07-03 18:40:33,599]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 2.8 ms
+[2024-07-03 18:40:48,602]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 6.0 ms
+[2024-07-03 18:41:03,600]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 4.9 ms
+[2024-07-03 18:41:18,608]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 11.9 ms
+[2024-07-03 18:41:33,595]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 3.9 ms
+[2024-07-03 18:41:48,592]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 2.1 ms
+[2024-07-03 18:42:03,631]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 33.9 ms
+[2024-07-03 18:42:18,600]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 9.5 ms
+[2024-07-03 18:42:33,609]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 16.3 ms
+[2024-07-03 18:42:48,603]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 13.5 ms
+[2024-07-03 18:43:03,589]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 3.6 ms
+[2024-07-03 18:43:18,600]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 11.8 ms
+[2024-07-03 18:43:33,599]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 11.1 ms
+[2024-07-03 18:43:48,587]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 3.4 ms
+[2024-07-03 18:44:03,586]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 3.0 ms
+[2024-07-03 18:44:18,585]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18658 B 3.6 ms
+[2024-07-03 18:44:32,316]    INFO - /app/apps/clubs/viewsets.py changed, reloading.
+[2024-07-03 18:44:36,351]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:44:48,588]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 3.2 ms
+[2024-07-03 18:45:03,590]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 7.4 ms
+[2024-07-03 18:45:18,582]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 3.0 ms
+[2024-07-03 18:45:33,582]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.5 ms
+[2024-07-03 18:45:48,586]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 8.2 ms
+[2024-07-03 18:46:03,578]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.5 ms
+[2024-07-03 18:46:18,579]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.3 ms
+[2024-07-03 18:46:33,594]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 13.7 ms
+[2024-07-03 18:46:48,577]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 5.4 ms
+[2024-07-03 18:47:03,592]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18590 B 15.4 ms
+[2024-07-03 18:47:18,576]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 6.4 ms
+[2024-07-03 18:47:33,573]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 4.0 ms
+[2024-07-03 18:47:48,570]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18658 B 4.6 ms
+[2024-07-03 18:48:03,570]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 4.1 ms
+[2024-07-03 18:48:18,578]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 9.4 ms
+[2024-07-03 18:48:33,565]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 2.3 ms
+[2024-07-03 18:48:48,569]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 5.5 ms
+[2024-07-03 18:49:03,564]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 2.7 ms
+[2024-07-03 18:49:18,564]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 4.7 ms
+[2024-07-03 18:49:33,565]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 3.9 ms
+[2024-07-03 18:49:48,565]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 6.8 ms
+[2024-07-03 18:50:03,573]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 6.2 ms
+[2024-07-03 18:50:18,572]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 19.2 ms
+[2024-07-03 18:50:33,551]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 4.1 ms
+[2024-07-03 18:50:48,547]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 2.1 ms
+[2024-07-03 18:51:03,550]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 4.6 ms
+[2024-07-03 18:51:18,561]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18660 B 15.7 ms
+[2024-07-03 18:51:33,544]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 2.3 ms
+[2024-07-03 18:51:48,543]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 3.3 ms
+[2024-07-03 18:52:03,561]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 17.5 ms
+[2024-07-03 18:52:18,544]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 2.8 ms
+[2024-07-03 18:52:33,541]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 3.5 ms
+[2024-07-03 18:52:36,011]    INFO - /app/apps/clubs/models.py changed, reloading.
+[2024-07-03 18:52:40,936]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:52:43,094]    INFO - /app/apps/clubs/models.py changed, reloading.
+[2024-07-03 18:52:49,065]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:52:58,014]    INFO - /app/apps/clubs/viewsets.py changed, reloading.
+[2024-07-03 18:53:03,345]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:53:46,759]    INFO - /app/apps/mangas/__init__.py changed, reloading.
+[2024-07-03 18:53:51,183]    INFO - Watching for file changes with StatReloader
+[2024-07-03 18:58:27,785]    INFO - /app/apps/clubs/__init__.py changed, reloading.
+[2024-07-03 18:58:31,158]    INFO - Watching for file changes with StatReloader

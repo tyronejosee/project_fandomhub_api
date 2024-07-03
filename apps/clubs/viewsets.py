@@ -20,6 +20,7 @@ from .serializers import (
     ClubWriteSerializer,
     ClubMemberReadSerializer,
 )
+from .filters import ClubFilter
 from .schemas import club_schemas
 
 
@@ -41,8 +42,7 @@ class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     serializer_class = ClubWriteSerializer
     pagination_class = LargeSetPagination
     search_fields = ["name", "category"]
-    # filterset_class = ClubFilter
-    # TODO: Add filter
+    filterset_class = ClubFilter
 
     def get_queryset(self):
         return Club.objects.get_available()

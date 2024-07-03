@@ -34,7 +34,7 @@ from .serializers import (
     MangaMinimalSerializer,
     MangaStatsReadSerializer,
 )
-from .filters import MagazineFilter
+from .filters import MagazineFilter, MangaFilter
 from .schemas import magazine_schemas, manga_schemas
 
 
@@ -88,8 +88,7 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsContributor]
     serializer_class = MangaWriteSerializer
     search_fields = ["name"]
-    # filterset_class = MangaFilter
-    # TODO: Add filter
+    filterset_class = MangaFilter
 
     def get_queryset(self):
         return Manga.objects.get_available()

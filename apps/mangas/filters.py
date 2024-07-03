@@ -36,6 +36,69 @@ class MagazineFilter(BaseFilter):
         ]
 
 
+class MangaFilter(BaseFilter):
+    """Filter for Manga model."""
+
+    min_score = filters.NumberFilter(
+        field_name="score",
+        lookup_expr="gte",
+        label=_(
+            "Set a minimum score for results, ex `/?min_score=5` or `/?min_score=5.5`"
+        ),
+    )
+    max_score = filters.NumberFilter(
+        field_name="score",
+        lookup_expr="lte",
+        label=_(
+            "Set a maximum score for results, ex `/?max_score=7` or `/?max_score=7.8`"
+        ),
+    )
+    type = filters.ChoiceFilter(
+        field_name="media_type",
+        choices=MediaTypeChoices.choices,
+        label="Available Manga types, , ex `/?type=manga`",
+    )
+    status = filters.ChoiceFilter(
+        choices=StatusChoices.choices,
+        label=_("Available Manga status, ex `/?status=finished`"),
+    )
+    genre = filters.CharFilter(
+        field_name="genres__name",
+        lookup_expr="icontains",
+        label=_("Filter by genre(s), ex `/?genre=gore`"),
+    )
+    theme = filters.CharFilter(
+        field_name="themes__name",
+        lookup_expr="icontains",
+        label=_("Filter by theme(s), ex `/?theme=shounen`"),
+    )
+    start_date = filters.DateFilter(
+        field_name="published_from",
+        lookup_expr="gte",
+        label=_("Filter by starting date, Format: `YYYY-MM-DD`. ex `2005-01-01`"),
+    )
+    end_date = filters.DateFilter(
+        field_name="published_from",
+        lookup_expr="lte",
+        label=_("Filter by ending date, Format: `YYYY-MM-DD`. ex `2005-01-01`"),
+    )
+
+    class Meta:
+        model = Manga
+        fields = [
+            "min_score",
+            "max_score",
+            "type",
+            "status",
+            "genre",
+            "theme",
+            "start_date",
+            "end_date",
+            "sort",
+            "letter",
+        ]
+
+
 class MangaMinimalFilter(filters.FilterSet):
     """Filter for Anime model (Minimal)."""
 
