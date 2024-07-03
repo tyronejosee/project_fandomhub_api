@@ -18,8 +18,12 @@ class SlugMixin(models.Model):
     slug = models.SlugField(_("Slug"), unique=True, blank=True, null=True)
 
     def set_slug(self):
-        if not self.slug or self.slug != self.name:
-            self.slug = slugify(self.name)
+        # if not self.slug or self.slug != self.name:
+        #     self.slug = slugify(self.name)
+        if self.name:
+            new_slug = slugify(self.name)[:50]
+            if self.slug != new_slug:
+                self.slug = new_slug
 
     class Meta:
         abstract = True

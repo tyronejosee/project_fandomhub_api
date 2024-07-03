@@ -103,9 +103,6 @@ class AnimeSeasonFilter(filters.FilterSet):
         label=_("Available Anime types"),
     )
 
-    # sfw (boolean)
-    # unapproved (boolean)
-
     class Meta:
         model = Anime
         fields = [

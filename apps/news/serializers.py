@@ -19,6 +19,7 @@ class NewsReadSerializer(serializers.ModelSerializer):
             "id",
             "author_id",
             "name",
+            "slug",
             "description",
             "content",
             "image",
@@ -68,6 +69,7 @@ class NewsMinimalSerializer(serializers.ModelSerializer):
         fields = [
             "id",
             "name",
+            "slug",
             "description",
             "image",
             "tag",

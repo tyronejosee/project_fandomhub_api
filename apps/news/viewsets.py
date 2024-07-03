@@ -8,6 +8,7 @@ from apps.utils.mixins import ListCacheMixin
 from apps.users.permissions import IsModerator
 from .models import News
 from .serializers import NewsReadSerializer, NewsWriteSerializer, NewsMinimalSerializer
+from .filters import NewsFilter
 from .schemas import news_schemas
 
 
@@ -28,8 +29,7 @@ class NewsViewSet(ListCacheMixin, ModelViewSet):
     permission_classes = [IsModerator]
     serializer_class = NewsWriteSerializer
     search_fields = ["name", "author__username"]
-    # filterset_class = NewsFilter
-    # TODO: Add filter
+    filterset_class = NewsFilter
     ordering = ["-created_at"]
 
     def get_queryset(self):
