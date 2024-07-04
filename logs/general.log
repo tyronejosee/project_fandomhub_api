@@ -15121,3 +15121,138 @@ AttributeError: 'Review' object has no attribute 'user'
 [2024-07-04 17:42:03,492]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 4.4 ms
 [2024-07-04 17:42:18,502]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 13.0 ms
 [2024-07-04 17:42:33,500]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 11.3 ms
+[2024-07-04 17:43:03,495]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 3.2 ms
+[2024-07-04 18:09:33,814]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:09:37,789]    INFO - Request: 'GET /api/schema/swagger/ HTTP/1.1' 200 4441 B 172.8 ms
+[2024-07-04 18:09:39,506]    INFO - Request: 'GET /api/schema/ HTTP/1.1' 200 463550 B 1233.5 ms
+[2024-07-04 18:09:48,401]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21417 B 6.8 ms
+[2024-07-04 18:10:03,393]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24077 B 3.9 ms
+[2024-07-04 18:10:18,393]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24090 B 3.9 ms
+[2024-07-04 18:10:33,394]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24091 B 5.0 ms
+[2024-07-04 18:10:48,391]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24078 B 4.4 ms
+[2024-07-04 18:10:58,618]    INFO - /app/apps/characters/schemas.py changed, reloading.
+[2024-07-04 18:11:05,737]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:11:16,473]    INFO - /app/apps/characters/schemas.py changed, reloading.
+[2024-07-04 18:11:21,735]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:11:33,013]    INFO - /app/apps/characters/schemas.py changed, reloading.
+[2024-07-04 18:11:37,997]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:12:01,528]    INFO - /app/apps/characters/schemas.py changed, reloading.
+[2024-07-04 18:12:09,470]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:12:29,041]    INFO - /app/apps/characters/schemas.py changed, reloading.
+[2024-07-04 18:12:33,407]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:13:08,295]    INFO - /app/apps/characters/schemas.py changed, reloading.
+[2024-07-04 18:13:13,152]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:13:22,222]    INFO - /app/apps/characters/schemas.py changed, reloading.
+[2024-07-04 18:13:27,844]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:13:33,351]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14915 B 3.5 ms
+[2024-07-04 18:13:36,453]    INFO - Request: 'GET /api/schema/swagger/ HTTP/1.1' 200 4441 B 478.4 ms
+[2024-07-04 18:13:38,385]    INFO - Request: 'GET /api/schema/ HTTP/1.1' 200 463994 B 1468.4 ms
+[2024-07-04 18:13:48,345]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24083 B 4.7 ms
+[2024-07-04 18:14:03,374]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24084 B 2.8 ms
+[2024-07-04 18:14:18,368]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24084 B 3.8 ms
+[2024-07-04 18:14:33,369]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24084 B 4.0 ms
+[2024-07-04 18:14:48,376]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24098 B 9.3 ms
+[2024-07-04 18:15:03,374]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24083 B 13.8 ms
+[2024-07-04 18:15:12,835]    INFO - /app/apps/characters/schemas.py changed, reloading.
+[2024-07-04 18:15:16,599]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:15:33,358]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 2.6 ms
+[2024-07-04 18:15:44,943]    INFO - /app/apps/characters/schemas.py changed, reloading.
+[2024-07-04 18:15:49,663]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:15:53,768]    INFO - Request: 'GET /api/schema/swagger/ HTTP/1.1' 200 4441 B 356.6 ms
+[2024-07-04 18:15:55,815]    INFO - Request: 'GET /api/schema/ HTTP/1.1' 200 463994 B 1591.5 ms
+[2024-07-04 18:16:03,363]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21436 B 8.7 ms
+[2024-07-04 18:16:18,352]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24081 B 3.1 ms
+[2024-07-04 18:16:33,360]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24081 B 14.8 ms
+[2024-07-04 18:16:48,356]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24082 B 11.7 ms
+[2024-07-04 18:17:03,363]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24081 B 17.2 ms
+[2024-07-04 18:17:18,346]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24082 B 3.7 ms
+[2024-07-04 18:17:33,354]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24083 B 14.8 ms
+[2024-07-04 18:17:48,343]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24120 B 4.8 ms
+[2024-07-04 18:18:03,355]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24144 B 14.9 ms
+[2024-07-04 18:18:18,342]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24152 B 4.7 ms
+[2024-07-04 18:18:33,338]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24174 B 2.9 ms
+[2024-07-04 18:18:48,337]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24173 B 4.8 ms
+[2024-07-04 18:19:03,338]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24176 B 4.0 ms
+[2024-07-04 18:19:18,338]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24174 B 4.3 ms
+[2024-07-04 18:19:33,336]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24174 B 3.5 ms
+[2024-07-04 18:19:48,342]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24175 B 8.2 ms
+[2024-07-04 18:20:03,346]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24176 B 10.9 ms
+[2024-07-04 18:20:18,337]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24175 B 5.6 ms
+[2024-07-04 18:20:33,351]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24176 B 19.8 ms
+[2024-07-04 18:20:44,793]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:20:50,977]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:21:03,361]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14924 B 8.1 ms
+[2024-07-04 18:21:18,329]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.9 ms
+[2024-07-04 18:21:33,330]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18565 B 2.8 ms
+[2024-07-04 18:21:48,332]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 4.7 ms
+[2024-07-04 18:21:49,324]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:21:55,564]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:22:03,332]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 3.4 ms
+[2024-07-04 18:22:08,269]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:22:15,839]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:22:26,275]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:22:31,274]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:22:41,813]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:22:46,289]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:22:55,893]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:23:00,107]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:23:03,323]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 3.3 ms
+[2024-07-04 18:23:18,319]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 2.3 ms
+[2024-07-04 18:23:33,320]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 5.0 ms
+[2024-07-04 18:23:43,016]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:23:48,629]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:24:03,327]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14926 B 4.2 ms
+[2024-07-04 18:24:18,316]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.4 ms
+[2024-07-04 18:24:33,310]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.2 ms
+[2024-07-04 18:24:48,316]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 2.7 ms
+[2024-07-04 18:25:02,115]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:25:07,969]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:25:18,322]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 6.3 ms
+[2024-07-04 18:25:19,430]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:25:26,270]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:25:33,317]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14915 B 4.9 ms
+[2024-07-04 18:25:44,610]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-07-04 18:25:51,152]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:26:03,313]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 3.6 ms
+[2024-07-04 18:26:18,338]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 27.6 ms
+[2024-07-04 18:26:21,090]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:26:30,175]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:26:33,366]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 5.6 ms
+[2024-07-04 18:26:45,981]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-07-04 18:26:51,103]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:27:03,042]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:27:09,427]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:27:18,320]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 4.4 ms
+[2024-07-04 18:27:19,320]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:27:24,242]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:27:33,305]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 3.1 ms
+[2024-07-04 18:27:40,365]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:27:46,493]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:28:01,820]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:28:08,812]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:28:18,301]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 3.4 ms
+[2024-07-04 18:28:27,662]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:28:34,408]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:28:48,305]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 5.0 ms
+[2024-07-04 18:29:03,310]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 16.3 ms
+[2024-07-04 18:29:09,244]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:29:16,385]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:29:26,139]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:29:31,989]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:29:46,651]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 18:29:52,725]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:30:01,693]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-07-04 18:30:06,989]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:30:15,325]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-07-04 18:30:20,352]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:30:27,971]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-07-04 18:30:34,925]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:30:48,309]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 12.4 ms
+[2024-07-04 18:30:52,760]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-07-04 18:31:00,752]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:31:26,462]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-07-04 18:31:33,630]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:31:42,852]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-07-04 18:31:49,190]    INFO - Watching for file changes with StatReloader
+[2024-07-04 18:32:07,323]    INFO - /app/apps/animes/views.py changed, reloading.
+[2024-07-04 18:32:12,564]    INFO - Watching for file changes with StatReloader

@@ -188,3 +188,59 @@ anime_schemas = {
         auth=[],
     ),
 }
+
+
+schedule_schemas = {
+    "get": extend_schema(
+        summary="Get Schedules",
+        description="Get anime calendar or schedule for the current season.",
+        responses={
+            200: OpenApiResponse(AnimeMinimalSerializer(many=True), description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found"),
+        },
+        auth=[],
+    ),
+}
+
+
+season_anime_schemas = {
+    "get": extend_schema(
+        summary="Get Season Anime",
+        description="Get animes filtered by year and season.",
+        responses={
+            200: OpenApiResponse(AnimeMinimalSerializer(many=True), description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found"),
+        },
+        auth=[],
+    ),
+}
+
+
+current_season_anime_schemas = {
+    "get": extend_schema(
+        summary="Get Current Season Anime",
+        description="Get animes of the current season.",
+        responses={
+            200: OpenApiResponse(AnimeMinimalSerializer(many=True), description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found"),
+        },
+        auth=[],
+    ),
+}
+
+
+upcomming_season_anime_schemas = {
+    "get": extend_schema(
+        summary="Get Upcomming Season Anime",
+        description="Get animes of the upcoming season.",
+        responses={
+            200: OpenApiResponse(AnimeMinimalSerializer(many=True), description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found"),
+        },
+        auth=[],
+    ),
+}

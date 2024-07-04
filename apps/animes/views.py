@@ -7,16 +7,22 @@ from rest_framework import status
 from rest_framework.generics import ListAPIView
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
+from drf_spectacular.utils import extend_schema_view
 
-from .choices import StatusChoices
-from .filters import AnimeSeasonFilter
-from .filters import SchedulesFilter
-from .functions import get_current_season
-from .functions import get_upcoming_season
 from .models import Anime
+from .choices import StatusChoices
 from .serializers import AnimeMinimalSerializer
+from .filters import AnimeSeasonFilter, SchedulesFilter
+from .functions import get_current_season, get_upcoming_season
+from .schemas import (
+    schedule_schemas,
+    season_anime_schemas,
+    current_season_anime_schemas,
+    upcomming_season_anime_schemas,
+)
 
 
+@extend_schema_view(**schedule_schemas)
 class ScheduleView(ListAPIView):
     """
     View with filters for scheduled anime of season.
@@ -39,10 +45,11 @@ class ScheduleView(ListAPIView):
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
+    def get(self, request, *args, **kwargs):
         return super().list(request, *args, **kwargs)
 
 
+@extend_schema_view(**season_anime_schemas)
 class SeasonAnimeView(ListAPIView):
     """
     View to get animes filtered by year and season.
@@ -74,6 +81,7 @@ class SeasonAnimeView(ListAPIView):
         return super().list(request, *args, **kwargs)
 
 
+@extend_schema_view(**current_season_anime_schemas)
 class CurrentSeasonAnimeView(ListAPIView):
     """
     View to get animes of the current season.
@@ -92,7 +100,7 @@ class CurrentSeasonAnimeView(ListAPIView):
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
+    def get(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
         if not queryset.exists():
             return Response(
@@ -102,6 +110,7 @@ class CurrentSeasonAnimeView(ListAPIView):
         return super().list(request, *args, **kwargs)
 
 
+@extend_schema_view(**upcomming_season_anime_schemas)
 class UpcomingSeasonAnimeView(ListAPIView):
     """
     View to get animes of the upcoming season.
@@ -120,7 +129,7 @@ class UpcomingSeasonAnimeView(ListAPIView):
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def list(self, request, *args, **kwargs):
+    def get(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
         if not queryset.exists():
             return Response(

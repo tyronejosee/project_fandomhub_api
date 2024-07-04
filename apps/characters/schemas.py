@@ -2,6 +2,7 @@
 
 from drf_spectacular.utils import extend_schema, OpenApiResponse
 
+from apps.utils.serializers import PictureReadSerializer, PictureWriteSerializer
 from apps.animes.serializers import AnimeMinimalSerializer
 from apps.mangas.serializers import MangaMinimalSerializer
 from apps.persons.serializers import PersonMinimalSerializer
@@ -15,9 +16,9 @@ character_schemas = {
         responses={
             200: OpenApiResponse(CharacterReadSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "create": extend_schema(
         summary="Create Character",
@@ -35,10 +36,9 @@ character_schemas = {
         responses={
             200: OpenApiResponse(CharacterReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
-
+        auth=[],
     ),
     "update": extend_schema(
         summary="Update Character",
@@ -73,16 +73,35 @@ character_schemas = {
             404: OpenApiResponse(description="Not Found"),
         },
     ),
-    # TODO: Add picture_list
+    "get_pictures": extend_schema(
+        summary="Get Character Pictures",
+        description="Get all pictures of an character passed as param (`uuid`).",
+        responses={
+            200: OpenApiResponse(PictureReadSerializer(many=True), description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found"),
+        },
+        auth=[],
+    ),
+    "create_picture": extend_schema(
+        summary="Create Character Picture",
+        description="Create a new picture for character, only for `IsContributor` or `IsAdministrator` users.",
+        responses={
+            201: OpenApiResponse(PictureWriteSerializer, description="Created"),
+            400: OpenApiResponse(description="Bad request"),
+            401: OpenApiResponse(description="Unauthorized"),
+            403: OpenApiResponse(description="Forbidden"),
+        },
+    ),
     "get_voices": extend_schema(
         summary="Get Character Voices",
         description="Get all voices of an character passed as param (`uuid`).",
         responses={
             200: OpenApiResponse(PersonMinimalSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "get_anime": extend_schema(
         summary="Get Character Anime",
@@ -90,9 +109,9 @@ character_schemas = {
         responses={
             200: OpenApiResponse(AnimeMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "get_manga": extend_schema(
         summary="Get Character Manga",
@@ -100,8 +119,8 @@ character_schemas = {
         responses={
             200: OpenApiResponse(MangaMinimalSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
 }

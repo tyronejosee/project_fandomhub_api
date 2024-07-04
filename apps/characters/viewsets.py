@@ -61,7 +61,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
 
     @action(
         detail=True,
-        methods=["get", "post"],
+        methods=["get"],
         permission_classes=[AllowAny],
         url_path="pictures",
     )
@@ -88,7 +88,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
 
     @action(
         detail=True,
-        methods=["get", "post"],
+        methods=["post"],
         permission_classes=[IsContributor],
         url_path="pictures/create",
     )
