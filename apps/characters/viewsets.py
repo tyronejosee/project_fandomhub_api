@@ -21,7 +21,6 @@ from apps.characters.models import CharacterVoice
 from apps.persons.models import Person
 from apps.persons.serializers import PersonMinimalSerializer
 from apps.users.permissions import IsContributor
-from apps.users.choices import RoleChoices
 from .models import Character, CharacterAnime, CharacterManga
 from .serializers import CharacterReadSerializer, CharacterWriteSerializer
 from .filters import CharacterFilter
@@ -68,54 +67,51 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     )
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
-    def picture_list(self, request, pk=None, *args, **kwargs):
+    def get_pictures(self, request, pk=None, *args, **kwargs):
         """
-        Action lists and creates pictures for a character.
+        Action get all pictures for a character.
 
         Endpoints:
         - GET api/v1/characters/{id}/pictures/
-        - POST api/v1/characters/{id}/pictures/
         """
-        if request.method == "GET":
-            # Get all the pictures of a character
+        character = self.get_object()
+        pictures = Picture.objects.get_character_pictures(character)
+
+        if pictures:
+            serializer = PictureReadSerializer(pictures, many=True)
+            return Response(serializer.data)
+
+        return Response(
+            {"detail": _("There is no pictures associated with this character.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
+
+    @action(
+        detail=True,
+        methods=["get", "post"],
+        permission_classes=[IsContributor],
+        url_path="pictures/create",
+    )
+    def create_picture(self, request, pk=None, *args, **kwargs):
+        """
+        Action create picture for a character.
+
+        Endpoints:
+        - POST api/v1/characters/{id}/pictures/create/
+        """
+        serializer = PictureWriteSerializer(data=request.data)
+        if serializer.is_valid():
             character = self.get_object()
-            pictures = Picture.objects.filter(
-                content_type=ContentType.objects.get_for_model(Character),
-                object_id=character.id,
-            )  # TODO: Add manager
-
-            if pictures:
-                serializer = PictureReadSerializer(pictures, many=True)
-                return Response(serializer.data)
-
-            return Response(
-                {"detail": _("There is no pictures associated with this character.")},
-                status=status.HTTP_404_NOT_FOUND,
+            character_model = ContentType.objects.get_for_model(Character)
+            serializer.save(
+                content_type=character_model,
+                object_id=character.pk,
             )
-
-        elif request.method == "POST":
-            # Create a picture for the character
-            if not request.user.role == RoleChoices.CONTRIBUTOR:
-                return Response(
-                    {"detail": _("You do not have permission to create pictures.")},
-                    status=status.HTTP_403_FORBIDDEN,
-                )
-
-            serializer = PictureWriteSerializer(data=request.data)
-
-            if serializer.is_valid():
-                character = self.get_object()
-                character_model = ContentType.objects.get_for_model(Character)
-                serializer.save(
-                    content_type=character_model,
-                    object_id=character.pk,
-                )
-                return Response(
-                    {"detail": _("Picture uploaded successfully.")},
-                    status=status.HTTP_201_CREATED,
-                )
-
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            return Response(
+                {"detail": _("Picture uploaded successfully.")},
+                status=status.HTTP_201_CREATED,
+            )
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     @action(
         detail=True,

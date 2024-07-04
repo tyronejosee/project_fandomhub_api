@@ -14826,3 +14826,298 @@ AttributeError: 'Review' object has no attribute 'user'
 [2024-07-04 16:52:48,760]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.9 ms
 [2024-07-04 16:53:03,759]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 3.1 ms
 [2024-07-04 16:53:47,866]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:54:03,776]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 15.7 ms
+[2024-07-04 16:54:18,756]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 3.7 ms
+[2024-07-04 16:54:33,753]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.6 ms
+[2024-07-04 16:54:48,826]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 73.6 ms
+[2024-07-04 16:55:03,749]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 4.8 ms
+[2024-07-04 16:55:18,753]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 5.1 ms
+[2024-07-04 16:55:33,749]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.5 ms
+[2024-07-04 16:55:48,750]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 6.3 ms
+[2024-07-04 16:56:03,748]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 4.1 ms
+[2024-07-04 16:56:18,745]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18602 B 4.7 ms
+[2024-07-04 16:56:33,752]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18638 B 7.1 ms
+[2024-07-04 16:56:48,739]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 2.5 ms
+[2024-07-04 16:57:03,745]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 5.5 ms
+[2024-07-04 16:57:18,755]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 9.7 ms
+[2024-07-04 16:57:33,749]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 8.4 ms
+[2024-07-04 16:57:48,739]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 3.1 ms
+[2024-07-04 16:58:03,740]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 6.2 ms
+[2024-07-04 16:58:18,751]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 13.9 ms
+[2024-07-04 16:58:33,735]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 3.2 ms
+[2024-07-04 16:58:48,735]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 3.2 ms
+[2024-07-04 16:59:03,740]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 8.1 ms
+[2024-07-04 16:59:18,741]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 7.3 ms
+[2024-07-04 16:59:33,730]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 3.5 ms
+[2024-07-04 16:59:48,732]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 4.2 ms
+[2024-07-04 17:00:03,729]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 3.3 ms
+[2024-07-04 17:00:18,741]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 11.9 ms
+[2024-07-04 17:00:33,723]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 2.4 ms
+[2024-07-04 17:00:48,724]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 2.8 ms
+[2024-07-04 17:01:03,730]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18658 B 10.3 ms
+[2024-07-04 17:01:18,720]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18658 B 2.3 ms
+[2024-07-04 17:01:33,718]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18658 B 3.0 ms
+[2024-07-04 17:01:48,726]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 7.3 ms
+[2024-07-04 17:02:03,714]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 2.5 ms
+[2024-07-04 17:02:18,715]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 3.5 ms
+[2024-07-04 17:02:33,712]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 4.5 ms
+[2024-07-04 17:02:37,702]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:02:43,269]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:02:49,875]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:02:56,060]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:03:09,522]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:03:14,257]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:03:18,862]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:03:24,177]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:03:29,109]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:03:34,709]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:03:43,123]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:03:47,740]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:03:55,500]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:04:01,380]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:04:07,746]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:04:14,030]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:04:24,419]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:04:29,578]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:04:36,324]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:04:39,983]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:04:48,483]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:04:53,597]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:05:05,200]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:05:09,652]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:05:14,250]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:05:19,143]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:05:25,666]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:05:30,068]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:05:35,964]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:05:40,764]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:05:47,464]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:05:52,603]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:05:58,868]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:06:04,769]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:06:13,576]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:06:19,073]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:06:33,710]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14921 B 5.1 ms
+[2024-07-04 17:06:48,682]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 4.0 ms
+[2024-07-04 17:07:03,700]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 19.2 ms
+[2024-07-04 17:07:18,678]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.3 ms
+[2024-07-04 17:07:33,678]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 3.3 ms
+[2024-07-04 17:07:48,676]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.2 ms
+[2024-07-04 17:08:03,672]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 2.5 ms
+[2024-07-04 17:08:18,708]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 32.4 ms
+[2024-07-04 17:08:33,682]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 10.8 ms
+[2024-07-04 17:08:48,672]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18587 B 2.2 ms
+[2024-07-04 17:09:03,668]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18653 B 3.8 ms
+[2024-07-04 17:09:18,680]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 11.8 ms
+[2024-07-04 17:09:33,664]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 2.5 ms
+[2024-07-04 17:09:48,669]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 4.0 ms
+[2024-07-04 17:10:03,675]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 12.6 ms
+[2024-07-04 17:10:18,674]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 13.9 ms
+[2024-07-04 17:10:33,660]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 3.3 ms
+[2024-07-04 17:10:48,661]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18657 B 4.0 ms
+[2024-07-04 17:10:59,818]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:11:04,330]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:11:11,777]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:11:15,249]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:11:17,305]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:11:23,561]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:11:30,286]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:11:34,035]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:11:38,068]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:11:41,651]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:11:45,419]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:11:51,468]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:12:03,658]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14923 B 2.7 ms
+[2024-07-04 17:12:18,661]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 11.4 ms
+[2024-07-04 17:12:33,638]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 5.1 ms
+[2024-07-04 17:12:37,893]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:12:42,452]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:12:46,272]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:12:50,880]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:12:56,283]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:13:01,701]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:13:16,976]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:13:21,931]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:13:33,642]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 5.2 ms
+[2024-07-04 17:13:48,632]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.2 ms
+[2024-07-04 17:14:03,136]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:14:07,623]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:14:14,351]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:14:17,951]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:15:54,552]    INFO - /app/apps/utils/models.py changed, reloading.
+[2024-07-04 17:15:59,660]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:16:03,474]    INFO - /app/apps/utils/models.py changed, reloading.
+[2024-07-04 17:16:07,646]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:19:02,339]    INFO - /app/apps/utils/__init__.py changed, reloading.
+[2024-07-04 17:19:05,153]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:22:49,279]    INFO - /app/apps/utils/__init__.py changed, reloading.
+[2024-07-04 17:22:52,014]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:24:43,793]    INFO - /app/apps/utils/__init__.py changed, reloading.
+[2024-07-04 17:24:47,235]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:25:03,576]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14924 B 3.0 ms
+[2024-07-04 17:25:10,946]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:25:15,981]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:25:33,594]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14927 B 6.5 ms
+[2024-07-04 17:25:48,579]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18565 B 11.4 ms
+[2024-07-04 17:26:03,562]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 2.8 ms
+[2024-07-04 17:26:18,564]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.6 ms
+[2024-07-04 17:26:33,564]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 5.5 ms
+[2024-07-04 17:26:48,572]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 11.6 ms
+[2024-07-04 17:26:54,489]    INFO - Request: 'GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/ HTTP/1.1' 404 23 B 176.2 ms
+[2024-07-04 17:26:54,490]    WARNING - Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/
+[2024-07-04 17:26:58,500]    INFO - Request: 'GET /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/ HTTP/1.1' 404 23 B 26.7 ms
+[2024-07-04 17:26:58,501]    WARNING - Not Found: /api/v1/characters/4cc85b9d-2ebb-40df-a5cd-15b207325acb/pictures/
+[2024-07-04 17:27:03,556]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21890 B 3.8 ms
+[2024-07-04 17:27:17,118]    INFO - Request: 'GET /admin/characters/character/ HTTP/1.1' 200 34894 B 343.8 ms
+[2024-07-04 17:27:17,255]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 58.6 ms
+[2024-07-04 17:27:18,371]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 32.6 ms
+[2024-07-04 17:27:18,576]    INFO - Request: 'GET /metrics HTTP/1.1' 200 28060 B 17.6 ms
+[2024-07-04 17:27:21,335]    INFO - Request: 'GET /admin/characters/character/bb4033aa-3f61-438e-b51f-a489f9a62137/change/ HTTP/1.1' 200 66780 B 704.3 ms
+[2024-07-04 17:27:21,619]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 100.0 ms
+[2024-07-04 17:27:22,127]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 74.0 ms
+[2024-07-04 17:27:33,575]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31566 B 17.7 ms
+[2024-07-04 17:27:48,575]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31581 B 19.2 ms
+[2024-07-04 17:28:03,554]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31586 B 5.9 ms
+[2024-07-04 17:28:18,554]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31587 B 4.5 ms
+[2024-07-04 17:28:33,564]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31585 B 16.4 ms
+[2024-07-04 17:28:48,566]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31586 B 21.1 ms
+[2024-07-04 17:29:02,189]    INFO - Request: 'GET /admin/utils/picture/ HTTP/1.1' 200 33443 B 90.4 ms
+[2024-07-04 17:29:02,323]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 60.4 ms
+[2024-07-04 17:29:02,600]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 51.7 ms
+[2024-07-04 17:29:03,569]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34637 B 21.5 ms
+[2024-07-04 17:29:07,262]    INFO - Request: 'GET /admin/utils/picture/6a8d825a-964f-4d3f-8224-6480fed1f9d7/change/ HTTP/1.1' 200 35047 B 109.3 ms
+[2024-07-04 17:29:07,386]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 34.2 ms
+[2024-07-04 17:29:07,564]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 51.4 ms
+[2024-07-04 17:29:18,550]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37950 B 5.5 ms
+[2024-07-04 17:29:20,655]    INFO - Request: 'GET /api/v1/characters/4256d784-9699-47ad-8515-397f401ba584/pictures/ HTTP/1.1' 404 23 B 35.8 ms
+[2024-07-04 17:29:20,656]    WARNING - Not Found: /api/v1/characters/4256d784-9699-47ad-8515-397f401ba584/pictures/
+[2024-07-04 17:29:33,570]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37949 B 23.9 ms
+[2024-07-04 17:29:48,568]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37947 B 22.0 ms
+[2024-07-04 17:29:55,630]    INFO - Request: 'GET /admin/characters/character/ HTTP/1.1' 200 34894 B 192.3 ms
+[2024-07-04 17:29:55,819]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 81.1 ms
+[2024-07-04 17:29:56,249]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 45.4 ms
+[2024-07-04 17:29:57,277]    INFO - Request: 'GET /admin/characters/character/bb4033aa-3f61-438e-b51f-a489f9a62137/change/ HTTP/1.1' 200 66780 B 190.2 ms
+[2024-07-04 17:29:57,381]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 35.5 ms
+[2024-07-04 17:30:03,578]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37965 B 21.2 ms
+[2024-07-04 17:30:14,968]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 27.1 ms
+[2024-07-04 17:30:14,970]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:30:18,547]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37965 B 8.1 ms
+[2024-07-04 17:30:32,180]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 54.6 ms
+[2024-07-04 17:30:32,190]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:30:32,975]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 22.5 ms
+[2024-07-04 17:30:32,976]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:30:33,546]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37966 B 9.2 ms
+[2024-07-04 17:30:48,539]    INFO - Request: 'GET /metrics HTTP/1.1' 200 37966 B 5.2 ms
+[2024-07-04 17:30:52,717]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:31:02,221]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:31:06,608]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 85.6 ms
+[2024-07-04 17:31:06,610]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:31:18,556]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19092 B 12.9 ms
+[2024-07-04 17:31:33,545]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21901 B 11.1 ms
+[2024-07-04 17:31:48,537]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21887 B 5.1 ms
+[2024-07-04 17:32:03,533]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21888 B 3.7 ms
+[2024-07-04 17:32:10,409]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 77.7 ms
+[2024-07-04 17:32:10,411]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:32:18,539]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21887 B 7.7 ms
+[2024-07-04 17:32:22,061]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:32:28,448]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:32:32,689]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 40.2 ms
+[2024-07-04 17:32:32,691]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:32:33,532]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19077 B 3.6 ms
+[2024-07-04 17:32:48,539]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21885 B 8.5 ms
+[2024-07-04 17:32:53,136]    INFO - Request: 'GET /admin/utils/picture/ HTTP/1.1' 200 33443 B 557.9 ms
+[2024-07-04 17:32:53,341]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 59.8 ms
+[2024-07-04 17:33:03,530]    INFO - Request: 'GET /metrics HTTP/1.1' 200 27815 B 4.4 ms
+[2024-07-04 17:33:14,589]    INFO - Request: 'GET /admin/utils/picture/6a8d825a-964f-4d3f-8224-6480fed1f9d7/change/ HTTP/1.1' 200 35047 B 109.0 ms
+[2024-07-04 17:33:14,713]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 23.4 ms
+[2024-07-04 17:33:18,528]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31127 B 4.5 ms
+[2024-07-04 17:33:19,627]    INFO - Request: 'POST /admin/utils/picture/6a8d825a-964f-4d3f-8224-6480fed1f9d7/change/ HTTP/1.1' 302 0 B 602.5 ms
+[2024-07-04 17:33:19,712]    INFO - Request: 'GET /admin/utils/picture/ HTTP/1.1' 200 33676 B 72.4 ms
+[2024-07-04 17:33:19,810]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 35.2 ms
+[2024-07-04 17:33:28,730]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 41.3 ms
+[2024-07-04 17:33:28,732]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:33:29,889]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 43.0 ms
+[2024-07-04 17:33:29,899]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:33:30,967]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 29.0 ms
+[2024-07-04 17:33:30,968]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:33:31,882]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 47.0 ms
+[2024-07-04 17:33:31,883]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:33:32,732]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 404 65 B 27.5 ms
+[2024-07-04 17:33:32,734]    WARNING - Not Found: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/
+[2024-07-04 17:33:33,530]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34470 B 7.3 ms
+[2024-07-04 17:33:37,832]    INFO - Request: 'GET /admin/utils/picture/6a8d825a-964f-4d3f-8224-6480fed1f9d7/change/ HTTP/1.1' 200 35042 B 62.6 ms
+[2024-07-04 17:33:37,933]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 33.9 ms
+[2024-07-04 17:33:46,574]    INFO - Request: 'POST /admin/utils/picture/6a8d825a-964f-4d3f-8224-6480fed1f9d7/change/ HTTP/1.1' 302 0 B 85.8 ms
+[2024-07-04 17:33:46,663]    INFO - Request: 'GET /admin/utils/picture/ HTTP/1.1' 200 33678 B 76.8 ms
+[2024-07-04 17:33:46,761]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 37.1 ms
+[2024-07-04 17:33:48,541]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34473 B 15.8 ms
+[2024-07-04 17:33:50,462]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 200 116 B 32.1 ms
+[2024-07-04 17:33:52,334]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 200 116 B 5.0 ms
+[2024-07-04 17:33:53,137]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 200 116 B 5.9 ms
+[2024-07-04 17:33:53,815]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 200 116 B 4.0 ms
+[2024-07-04 17:33:54,491]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 200 116 B 4.0 ms
+[2024-07-04 17:33:55,294]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 200 116 B 4.9 ms
+[2024-07-04 17:33:55,936]    INFO - Request: 'GET /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/ HTTP/1.1' 200 116 B 3.8 ms
+[2024-07-04 17:34:03,527]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34756 B 4.8 ms
+[2024-07-04 17:34:06,071]    INFO - /app/apps/utils/managers.py changed, reloading.
+[2024-07-04 17:34:14,069]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:34:18,541]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 5.3 ms
+[2024-07-04 17:34:33,524]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18562 B 4.1 ms
+[2024-07-04 17:34:48,527]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 5.8 ms
+[2024-07-04 17:35:03,519]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.3 ms
+[2024-07-04 17:35:18,532]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 10.9 ms
+[2024-07-04 17:35:33,518]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 2.6 ms
+[2024-07-04 17:35:48,520]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 4.8 ms
+[2024-07-04 17:36:03,515]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 2.8 ms
+[2024-07-04 17:36:18,513]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 2.9 ms
+[2024-07-04 17:36:33,519]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18586 B 6.6 ms
+[2024-07-04 17:36:48,515]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18654 B 4.3 ms
+[2024-07-04 17:37:03,508]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 2.8 ms
+[2024-07-04 17:37:18,523]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 11.6 ms
+[2024-07-04 17:37:22,011]    INFO - Request: 'POST /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/ HTTP/1.1' 401 58 B 1.6 ms
+[2024-07-04 17:37:22,012]    WARNING - Unauthorized: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/
+[2024-07-04 17:37:33,524]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22198 B 14.5 ms
+[2024-07-04 17:37:42,036]    INFO - Request: 'GET /admin/users/user/ HTTP/1.1' 200 33593 B 585.3 ms
+[2024-07-04 17:37:42,183]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 43.6 ms
+[2024-07-04 17:37:44,740]    INFO - Request: 'GET /admin/users/user/7b3cccf5-fdf1-49fd-ac1b-657aa765b803/change/ HTTP/1.1' 200 51539 B 993.6 ms
+[2024-07-04 17:37:44,861]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 41.7 ms
+[2024-07-04 17:37:48,513]    INFO - Request: 'GET /metrics HTTP/1.1' 200 31289 B 6.3 ms
+[2024-07-04 17:37:49,505]    INFO - Request: 'POST /admin/users/user/7b3cccf5-fdf1-49fd-ac1b-657aa765b803/change/ HTTP/1.1' 302 0 B 104.1 ms
+[2024-07-04 17:37:49,683]    INFO - Request: 'GET /admin/users/user/ HTTP/1.1' 200 33825 B 152.5 ms
+[2024-07-04 17:37:49,857]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 56.3 ms
+[2024-07-04 17:37:52,233]    INFO - Request: 'POST /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/ HTTP/1.1' 401 58 B 2.7 ms
+[2024-07-04 17:37:52,234]    WARNING - Unauthorized: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/
+[2024-07-04 17:37:53,809]    INFO - Request: 'POST /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/ HTTP/1.1' 401 58 B 1.0 ms
+[2024-07-04 17:37:53,810]    WARNING - Unauthorized: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/
+[2024-07-04 17:37:56,064]    INFO - Request: 'POST /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/ HTTP/1.1' 401 58 B 1.5 ms
+[2024-07-04 17:37:56,072]    WARNING - Unauthorized: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/
+[2024-07-04 17:37:56,804]    INFO - Request: 'POST /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/ HTTP/1.1' 401 58 B 1.3 ms
+[2024-07-04 17:37:56,806]    WARNING - Unauthorized: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/
+[2024-07-04 17:38:03,510]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34358 B 8.1 ms
+[2024-07-04 17:38:14,235]    INFO - Request: 'POST /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/ HTTP/1.1' 401 58 B 1.2 ms
+[2024-07-04 17:38:14,249]    WARNING - Unauthorized: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/
+[2024-07-04 17:38:16,680]    INFO - Request: 'POST /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/ HTTP/1.1' 400 71 B 66.9 ms
+[2024-07-04 17:38:16,681]    WARNING - Bad Request: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/
+[2024-07-04 17:38:18,511]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34749 B 7.1 ms
+[2024-07-04 17:38:33,507]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34751 B 4.9 ms
+[2024-07-04 17:38:48,507]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34750 B 4.7 ms
+[2024-07-04 17:38:52,847]    INFO - Request: 'POST /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/ HTTP/1.1' 400 41 B 119.8 ms
+[2024-07-04 17:38:52,847]    WARNING - Bad Request: /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/
+[2024-07-04 17:39:03,507]    INFO - Request: 'GET /metrics HTTP/1.1' 200 34766 B 6.7 ms
+[2024-07-04 17:39:08,438]    INFO - Request: 'POST /api/v1/characters/bb4033aa-3f61-438e-b51f-a489f9a62137/pictures/create/ HTTP/1.1' 201 43 B 110.5 ms
+[2024-07-04 17:39:18,507]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35168 B 7.5 ms
+[2024-07-04 17:39:33,515]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35168 B 13.7 ms
+[2024-07-04 17:39:48,508]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35167 B 9.6 ms
+[2024-07-04 17:40:03,504]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35181 B 8.5 ms
+[2024-07-04 17:40:18,501]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35168 B 6.3 ms
+[2024-07-04 17:40:33,529]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35166 B 30.7 ms
+[2024-07-04 17:40:48,499]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35165 B 6.2 ms
+[2024-07-04 17:41:03,501]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35180 B 9.6 ms
+[2024-07-04 17:41:18,499]    INFO - Request: 'GET /metrics HTTP/1.1' 200 35166 B 7.7 ms
+[2024-07-04 17:41:18,696]    INFO - /app/apps/characters/viewsets.py changed, reloading.
+[2024-07-04 17:41:23,965]    INFO - Watching for file changes with StatReloader
+[2024-07-04 17:41:33,498]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 2.9 ms
+[2024-07-04 17:41:48,492]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 2.1 ms
+[2024-07-04 17:42:03,492]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 4.4 ms
+[2024-07-04 17:42:18,502]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 13.0 ms
+[2024-07-04 17:42:33,500]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 11.3 ms

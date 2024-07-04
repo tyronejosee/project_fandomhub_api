@@ -11,3 +11,17 @@ class BaseManager(models.Manager):
 
     def get_unavailable(self):
         return self.filter(is_available=False)
+
+
+class PictureManager(BaseManager):
+    """Manager for Picture model."""
+
+    def get_character_pictures(self, character):
+        return self.filter(
+            content_type__model="character",
+            object_id=character.id,
+        )
+
+
+class VideoManager(BaseManager):
+    """Manager for Video model."""

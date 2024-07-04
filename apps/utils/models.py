@@ -9,6 +9,7 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext as _
 
 from apps.utils.mixins import SlugMixin
+from .managers import PictureManager, VideoManager
 from .validators import FileSizeValidator, ImageSizeValidator
 from .functions import generate_random_code
 from .paths import image_path
@@ -49,6 +50,8 @@ class Picture(BaseModel, SlugMixin):
         ],
     )
 
+    objects = PictureManager()
+
     class Meta:
         ordering = ["pk"]
         verbose_name = _("picture")
@@ -79,6 +82,8 @@ class Video(BaseModel):
     object_id = models.UUIDField()
     content_object = GenericForeignKey("content_type", "object_id")
     video = models.URLField(_("video"))
+
+    objects = VideoManager()
 
     class Meta:
         ordering = ["pk"]
