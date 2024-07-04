@@ -14547,3 +14547,282 @@ AttributeError: 'Review' object has no attribute 'user'
 [2024-07-03 21:59:54,532]    INFO - Watching for file changes with StatReloader
 [2024-07-03 22:00:00,738]    INFO - /app/apps/animes/schemas.py changed, reloading.
 [2024-07-03 22:00:05,126]    INFO - Watching for file changes with StatReloader
+[2024-07-03 22:00:17,660]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 4.1 ms
+[2024-07-03 22:00:19,318]    INFO - Request: 'GET /api/schema/redoc/ HTTP/1.1' 200 727 B 140.0 ms
+[2024-07-03 22:00:22,397]    INFO - Request: 'GET /api/schema/ HTTP/1.1' 200 226278 B 2383.5 ms
+[2024-07-03 22:00:32,658]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24017 B 5.7 ms
+[2024-07-03 22:00:47,658]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24028 B 4.5 ms
+[2024-07-03 22:01:02,686]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24020 B 32.7 ms
+[2024-07-03 22:01:17,650]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24018 B 4.3 ms
+[2024-07-03 22:01:32,651]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24032 B 5.8 ms
+[2024-07-03 22:01:47,651]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24019 B 4.4 ms
+[2024-07-03 22:02:02,667]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24055 B 16.2 ms
+[2024-07-03 22:02:17,647]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24079 B 4.4 ms
+[2024-07-03 22:02:32,646]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24087 B 4.3 ms
+[2024-07-03 22:02:47,642]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24122 B 3.0 ms
+[2024-07-04 16:02:06,249]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:02:34,216]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14914 B 3.1 ms
+[2024-07-04 16:02:49,011]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.6 ms
+[2024-07-04 16:03:04,009]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18567 B 2.6 ms
+[2024-07-04 16:03:19,011]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 2.5 ms
+[2024-07-04 16:03:34,010]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.8 ms
+[2024-07-04 16:03:49,010]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 2.9 ms
+[2024-07-04 16:04:04,009]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18567 B 2.8 ms
+[2024-07-04 16:04:19,024]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 15.3 ms
+[2024-07-04 16:04:34,009]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 4.2 ms
+[2024-07-04 16:04:49,026]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18591 B 17.5 ms
+[2024-07-04 16:05:04,020]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18637 B 14.2 ms
+[2024-07-04 16:05:19,006]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 2.3 ms
+[2024-07-04 16:05:34,015]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 11.7 ms
+[2024-07-04 16:05:49,014]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 9.8 ms
+[2024-07-04 16:06:04,005]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18659 B 3.4 ms
+[2024-07-04 16:06:19,004]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 4.9 ms
+[2024-07-04 16:06:34,003]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 4.8 ms
+[2024-07-04 16:06:49,005]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 4.5 ms
+[2024-07-04 16:07:04,010]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 11.0 ms
+[2024-07-04 16:07:19,000]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 4.8 ms
+[2024-07-04 16:07:33,997]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 2.4 ms
+[2024-07-04 16:07:48,997]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 2.7 ms
+[2024-07-04 16:08:03,995]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18661 B 2.2 ms
+[2024-07-04 16:08:18,998]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 3.2 ms
+[2024-07-04 16:08:33,999]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18662 B 4.2 ms
+[2024-07-04 16:08:48,998]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18649 B 4.3 ms
+[2024-07-04 16:09:03,996]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 3.7 ms
+[2024-07-04 16:09:18,995]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 4.5 ms
+[2024-07-04 16:09:33,996]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 4.7 ms
+[2024-07-04 16:09:48,995]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18661 B 3.6 ms
+[2024-07-04 16:10:04,001]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18649 B 8.9 ms
+[2024-07-04 16:10:19,002]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 7.8 ms
+[2024-07-04 16:10:33,991]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18649 B 3.8 ms
+[2024-07-04 16:10:48,990]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 2.5 ms
+[2024-07-04 16:11:03,991]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 3.2 ms
+[2024-07-04 16:11:19,006]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18649 B 14.6 ms
+[2024-07-04 16:11:33,987]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18649 B 2.5 ms
+[2024-07-04 16:11:48,991]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 5.3 ms
+[2024-07-04 16:12:03,988]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 3.2 ms
+[2024-07-04 16:12:18,988]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18661 B 3.3 ms
+[2024-07-04 16:12:33,987]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18649 B 4.1 ms
+[2024-07-04 16:12:48,986]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 2.2 ms
+[2024-07-04 16:13:03,983]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 3.6 ms
+[2024-07-04 16:13:18,981]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 2.1 ms
+[2024-07-04 16:13:33,983]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 4.3 ms
+[2024-07-04 16:13:48,981]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 2.4 ms
+[2024-07-04 16:14:03,984]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18660 B 4.7 ms
+[2024-07-04 16:14:18,979]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18645 B 2.6 ms
+[2024-07-04 16:14:33,995]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18660 B 13.7 ms
+[2024-07-04 16:14:48,990]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 9.1 ms
+[2024-07-04 16:15:03,978]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18660 B 3.5 ms
+[2024-07-04 16:15:18,980]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 3.3 ms
+[2024-07-04 16:15:33,978]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18647 B 4.4 ms
+[2024-07-04 16:15:48,978]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18646 B 4.3 ms
+[2024-07-04 16:16:03,974]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18651 B 3.6 ms
+[2024-07-04 16:16:18,975]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18649 B 5.4 ms
+[2024-07-04 16:16:33,972]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18651 B 2.5 ms
+[2024-07-04 16:16:48,976]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18664 B 5.7 ms
+[2024-07-04 16:17:03,971]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18664 B 4.3 ms
+[2024-07-04 16:17:18,971]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18648 B 2.8 ms
+[2024-07-04 16:17:33,960]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18664 B 4.8 ms
+[2024-07-04 16:17:48,960]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18650 B 3.4 ms
+[2024-07-04 16:18:03,960]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18651 B 5.9 ms
+[2024-07-04 16:18:18,956]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18651 B 2.7 ms
+[2024-07-04 16:18:33,952]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18663 B 2.2 ms
+[2024-07-04 16:18:48,952]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18651 B 2.3 ms
+[2024-07-04 16:19:03,951]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18651 B 4.0 ms
+[2024-07-04 16:19:18,949]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18652 B 2.2 ms
+[2024-07-04 16:19:33,947]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18664 B 2.2 ms
+[2024-07-04 16:19:48,953]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18665 B 5.3 ms
+[2024-07-04 16:20:03,946]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18664 B 2.9 ms
+[2024-07-04 16:20:18,949]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18652 B 5.0 ms
+[2024-07-04 16:20:33,946]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18665 B 4.5 ms
+[2024-07-04 16:20:48,947]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18664 B 4.2 ms
+[2024-07-04 16:21:03,938]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18665 B 3.3 ms
+[2024-07-04 16:21:18,936]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18651 B 2.6 ms
+[2024-07-04 16:21:33,956]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18652 B 17.0 ms
+[2024-07-04 16:21:48,944]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18651 B 4.3 ms
+[2024-07-04 16:22:03,941]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18652 B 3.1 ms
+[2024-07-04 16:22:18,526]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:22:24,264]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:22:32,602]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:22:40,991]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:22:48,944]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 2.4 ms
+[2024-07-04 16:22:56,287]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:23:00,374]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:23:03,963]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 9.4 ms
+[2024-07-04 16:23:16,344]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:23:20,994]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:23:33,943]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 2.9 ms
+[2024-07-04 16:23:38,322]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:23:44,122]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:23:48,962]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 15.6 ms
+[2024-07-04 16:23:53,075]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:23:56,950]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:24:03,952]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 4.7 ms
+[2024-07-04 16:24:18,945]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18546 B 12.8 ms
+[2024-07-04 16:24:23,305]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:24:27,745]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:24:33,938]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 2.9 ms
+[2024-07-04 16:24:46,380]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:24:51,562]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:25:03,534]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:25:09,519]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:25:18,945]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 4.5 ms
+[2024-07-04 16:25:24,676]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:25:33,186]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:25:42,954]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:25:47,417]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:26:01,441]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:26:06,832]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:26:18,938]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 6.8 ms
+[2024-07-04 16:26:33,916]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.0 ms
+[2024-07-04 16:26:48,919]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18567 B 6.3 ms
+[2024-07-04 16:26:52,280]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:26:56,914]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:27:03,922]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 2.9 ms
+[2024-07-04 16:27:18,914]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 2.9 ms
+[2024-07-04 16:27:22,698]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:27:29,838]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:27:48,919]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 4.0 ms
+[2024-07-04 16:28:03,910]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 3.5 ms
+[2024-07-04 16:28:18,928]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 18.0 ms
+[2024-07-04 16:28:25,919]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:28:32,122]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:28:48,927]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14924 B 14.2 ms
+[2024-07-04 16:29:01,595]    INFO - /app/apps/mangas/viewsets.py changed, reloading.
+[2024-07-04 16:29:09,609]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:29:18,967]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 14.3 ms
+[2024-07-04 16:29:33,925]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 21.8 ms
+[2024-07-04 16:29:48,904]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 5.2 ms
+[2024-07-04 16:30:03,900]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 3.8 ms
+[2024-07-04 16:30:18,900]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 4.7 ms
+[2024-07-04 16:30:33,896]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 3.0 ms
+[2024-07-04 16:30:48,905]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 11.5 ms
+[2024-07-04 16:31:03,889]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 3.0 ms
+[2024-07-04 16:31:18,890]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 2.8 ms
+[2024-07-04 16:31:33,893]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18584 B 6.3 ms
+[2024-07-04 16:31:48,886]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18638 B 3.9 ms
+[2024-07-04 16:32:03,889]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18640 B 4.8 ms
+[2024-07-04 16:32:18,889]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 5.7 ms
+[2024-07-04 16:32:33,884]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18641 B 3.2 ms
+[2024-07-04 16:32:48,898]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18644 B 13.9 ms
+[2024-07-04 16:33:03,893]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 12.9 ms
+[2024-07-04 16:33:18,896]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 14.3 ms
+[2024-07-04 16:33:27,517]    INFO - Request: 'GET /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/ HTTP/1.1' 404 39 B 1764.7 ms
+[2024-07-04 16:33:27,519]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/
+[2024-07-04 16:33:33,882]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21865 B 6.5 ms
+[2024-07-04 16:33:43,162]    INFO - Request: 'GET / HTTP/1.1' 302 0 B 0.3 ms
+[2024-07-04 16:33:44,000]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 35945 B 824.6 ms
+[2024-07-04 16:33:45,079]    INFO - Request: 'GET /favicon.ico HTTP/1.1' 404 8764 B 220.4 ms
+[2024-07-04 16:33:45,082]    WARNING - Not Found: /favicon.ico
+[2024-07-04 16:33:48,896]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30460 B 19.5 ms
+[2024-07-04 16:34:03,880]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30447 B 14.7 ms
+[2024-07-04 16:34:18,870]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30447 B 7.7 ms
+[2024-07-04 16:34:22,175]    INFO - Request: 'POST /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/ HTTP/1.1' 405 41 B 35.9 ms
+[2024-07-04 16:34:22,177]    WARNING - Method Not Allowed: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/
+[2024-07-04 16:34:29,279]    INFO - Request: 'POST /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/create/ HTTP/1.1' 400 76 B 32.4 ms
+[2024-07-04 16:34:29,280]    WARNING - Bad Request: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/create/
+[2024-07-04 16:34:33,879]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36465 B 9.1 ms
+[2024-07-04 16:34:48,880]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36455 B 12.5 ms
+[2024-07-04 16:35:03,877]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36454 B 9.8 ms
+[2024-07-04 16:35:18,880]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36466 B 12.6 ms
+[2024-07-04 16:35:33,866]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36454 B 4.8 ms
+[2024-07-04 16:35:48,891]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36455 B 28.2 ms
+[2024-07-04 16:36:03,865]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36455 B 6.0 ms
+[2024-07-04 16:36:18,864]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36454 B 5.6 ms
+[2024-07-04 16:36:33,858]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36453 B 5.6 ms
+[2024-07-04 16:36:48,860]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36454 B 8.1 ms
+[2024-07-04 16:37:03,871]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36454 B 15.0 ms
+[2024-07-04 16:37:18,861]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36455 B 7.9 ms
+[2024-07-04 16:37:33,873]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36455 B 19.7 ms
+[2024-07-04 16:37:45,471]    INFO - Request: 'POST /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/create/ HTTP/1.1' 201 618 B 127.3 ms
+[2024-07-04 16:37:48,884]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36851 B 34.1 ms
+[2024-07-04 16:37:52,650]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 35945 B 59.4 ms
+[2024-07-04 16:38:03,861]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36856 B 15.1 ms
+[2024-07-04 16:38:11,601]    INFO - Request: 'POST /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/create/ HTTP/1.1' 400 50 B 58.5 ms
+[2024-07-04 16:38:11,602]    WARNING - Bad Request: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/create/
+[2024-07-04 16:38:18,850]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36866 B 6.6 ms
+[2024-07-04 16:38:33,852]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36854 B 9.8 ms
+[2024-07-04 16:38:36,185]    INFO - Request: 'GET /admin/reviews/review/ HTTP/1.1' 200 34049 B 853.7 ms
+[2024-07-04 16:38:36,622]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 356.9 ms
+[2024-07-04 16:38:40,570]    INFO - Request: 'GET /admin/reviews/review/9ae3a267-76be-45cd-8205-839511b889ed/change/ HTTP/1.1' 200 40556 B 509.2 ms
+[2024-07-04 16:38:40,704]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 54.9 ms
+[2024-07-04 16:38:43,369]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 31.8 ms
+[2024-07-04 16:38:43,506]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 21.1 ms
+[2024-07-04 16:38:48,854]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46149 B 12.2 ms
+[2024-07-04 16:39:03,867]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46148 B 24.9 ms
+[2024-07-04 16:39:18,855]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46162 B 13.2 ms
+[2024-07-04 16:39:33,849]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46149 B 17.7 ms
+[2024-07-04 16:39:48,841]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46162 B 10.5 ms
+[2024-07-04 16:40:03,861]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46162 B 33.3 ms
+[2024-07-04 16:40:18,851]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46149 B 21.7 ms
+[2024-07-04 16:40:33,823]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46148 B 7.6 ms
+[2024-07-04 16:40:48,821]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46162 B 6.2 ms
+[2024-07-04 16:41:03,827]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46146 B 6.1 ms
+[2024-07-04 16:41:18,831]    INFO - Request: 'GET /metrics HTTP/1.1' 200 46146 B 10.3 ms
+[2024-07-04 16:41:30,683]    INFO - Request: 'PATCH /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/ HTTP/1.1' 404 23 B 36.1 ms
+[2024-07-04 16:41:30,685]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/0188f9d0-2483-4187-8a25-46e8c62423fc/
+[2024-07-04 16:41:33,831]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49384 B 13.9 ms
+[2024-07-04 16:41:48,828]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49371 B 12.0 ms
+[2024-07-04 16:41:55,287]    INFO - Request: 'PATCH /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/4256d784-9699-47ad-8515-397f401ba584/ HTTP/1.1' 404 23 B 31.9 ms
+[2024-07-04 16:41:55,288]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/4256d784-9699-47ad-8515-397f401ba584/
+[2024-07-04 16:41:58,081]    INFO - Request: 'PATCH /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/4256d784-9699-47ad-8515-397f401ba584/ HTTP/1.1' 404 23 B 38.6 ms
+[2024-07-04 16:41:58,083]    WARNING - Not Found: /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/4256d784-9699-47ad-8515-397f401ba584/
+[2024-07-04 16:42:03,820]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49385 B 7.4 ms
+[2024-07-04 16:42:18,821]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49372 B 7.2 ms
+[2024-07-04 16:42:29,936]    INFO - Request: 'PATCH /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/9ae3a267-76be-45cd-8205-839511b889ed/ HTTP/1.1' 200 618 B 85.0 ms
+[2024-07-04 16:42:33,815]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49661 B 8.3 ms
+[2024-07-04 16:42:48,834]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49648 B 22.7 ms
+[2024-07-04 16:42:54,214]    INFO - Request: 'PATCH /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/9ae3a267-76be-45cd-8205-839511b889ed/ HTTP/1.1' 200 376 B 65.6 ms
+[2024-07-04 16:43:03,833]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49651 B 22.2 ms
+[2024-07-04 16:43:18,817]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49651 B 7.3 ms
+[2024-07-04 16:43:33,811]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49651 B 10.2 ms
+[2024-07-04 16:43:48,811]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49651 B 7.3 ms
+[2024-07-04 16:44:03,813]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49650 B 8.6 ms
+[2024-07-04 16:44:11,940]    INFO - Request: 'PATCH /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/9ae3a267-76be-45cd-8205-839511b889ed/ HTTP/1.1' 200 376 B 70.2 ms
+[2024-07-04 16:44:13,117]    INFO - Request: 'PATCH /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/9ae3a267-76be-45cd-8205-839511b889ed/ HTTP/1.1' 200 376 B 194.9 ms
+[2024-07-04 16:44:14,332]    INFO - Request: 'PATCH /api/v1/mangas/4256d784-9699-47ad-8515-397f401ba584/reviews/9ae3a267-76be-45cd-8205-839511b889ed/ HTTP/1.1' 200 376 B 57.0 ms
+[2024-07-04 16:44:18,810]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49651 B 6.3 ms
+[2024-07-04 16:44:33,817]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49664 B 15.7 ms
+[2024-07-04 16:44:48,828]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49651 B 20.9 ms
+[2024-07-04 16:45:03,844]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49650 B 44.9 ms
+[2024-07-04 16:45:18,819]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49664 B 22.8 ms
+[2024-07-04 16:45:33,800]    INFO - Request: 'GET /metrics HTTP/1.1' 200 49664 B 7.3 ms
+[2024-07-04 16:45:48,562]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:45:53,232]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:46:00,820]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:46:04,163]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:46:11,556]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:46:15,770]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:46:21,951]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:46:26,621]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:46:34,398]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:46:38,425]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:46:48,108]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:46:53,492]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:47:03,281]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:47:07,374]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:48:45,700]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:48:49,433]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:48:54,365]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:48:59,910]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:49:24,028]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:49:30,450]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:49:46,071]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:49:51,004]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:50:13,729]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 16:50:17,215]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:50:26,340]    INFO - /app/apps/mangas/schemas.py changed, reloading.
+[2024-07-04 16:50:31,679]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:50:47,374]    INFO - /app/apps/animes/schemas.py changed, reloading.
+[2024-07-04 16:50:51,520]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:51:03,786]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 13.0 ms
+[2024-07-04 16:51:18,770]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 4.1 ms
+[2024-07-04 16:51:33,763]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 3.8 ms
+[2024-07-04 16:51:48,765]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 3.6 ms
+[2024-07-04 16:52:03,679]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-04 16:52:08,419]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:52:15,702]    INFO - /app/apps/animes/viewsets.py changed, reloading.
+[2024-07-04 16:52:21,604]    INFO - Watching for file changes with StatReloader
+[2024-07-04 16:52:33,768]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 3.5 ms
+[2024-07-04 16:52:48,760]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.9 ms
+[2024-07-04 16:53:03,759]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 3.1 ms
+[2024-07-04 16:53:47,866]    INFO - Watching for file changes with StatReloader

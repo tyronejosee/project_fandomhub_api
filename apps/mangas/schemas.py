@@ -1,10 +1,11 @@
 """Schemas for Mangas App."""
 
-from drf_spectacular.utils import extend_schema, OpenApiResponse
+from drf_spectacular.utils import extend_schema, OpenApiResponse, OpenApiParameter
 
 from apps.utils.serializers import PictureReadSerializer
 from apps.characters.serializers import CharacterMinimalSerializer
 from apps.news.serializers import NewsMinimalSerializer
+from apps.reviews.serializers import ReviewReadSerializer, ReviewWriteSerializer
 from .serializers import (
     MagazineReadSerializer,
     MagazineWriteSerializer,
@@ -22,9 +23,9 @@ magazine_schemas = {
         responses={
             200: OpenApiResponse(MagazineReadSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "create": extend_schema(
         summary="Create Magazine",
@@ -42,10 +43,9 @@ magazine_schemas = {
         responses={
             200: OpenApiResponse(MagazineReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
-
+        auth=[],
     ),
     "update": extend_schema(
         summary="Update Magazine",
@@ -79,7 +79,7 @@ magazine_schemas = {
             403: OpenApiResponse(description="Forbidden"),
             404: OpenApiResponse(description="Not Found"),
         },
-    )
+    ),
 }
 
 
@@ -90,9 +90,9 @@ manga_schemas = {
         responses={
             200: OpenApiResponse(MangaMinimalSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "create": extend_schema(
         summary="Create Manga",
@@ -110,10 +110,9 @@ manga_schemas = {
         responses={
             200: OpenApiResponse(MangaReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
-
+        auth=[],
     ),
     "update": extend_schema(
         summary="Update Manga",
@@ -152,11 +151,13 @@ manga_schemas = {
         summary="Get Manga Characters",
         description="Get all characters of an manga passed as param (`uuid`).",
         responses={
-            200: OpenApiResponse(CharacterMinimalSerializer(many=True), description="OK"),
+            200: OpenApiResponse(
+                CharacterMinimalSerializer(many=True), description="OK"
+            ),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "get_stats": extend_schema(
         summary="Get Manga Stats",
@@ -164,21 +165,53 @@ manga_schemas = {
         responses={
             200: OpenApiResponse(MangaStatsReadSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
-    # TODO: Add schema for review_list, pending refactor
-    # TODO: Add schema for review_detail and review_id param, pending refactor
+    "get_reviews": extend_schema(
+        summary="Get Manga Reviews",
+        description="Get reviews of the manga passed as param (`uuid`).",
+        responses={
+            200: OpenApiResponse(ReviewReadSerializer(many=True), description="OK"),
+            400: OpenApiResponse(description="Bad request"),
+            404: OpenApiResponse(description="Not found"),
+        },
+        auth=[],
+    ),
+    "create_review": extend_schema(
+        summary="Create Manga Review",
+        description="Create a new review for manga, only for `IsMember`",
+        responses={
+            201: OpenApiResponse(ReviewWriteSerializer, description="Created"),
+            400: OpenApiResponse(description="Bad request"),
+            401: OpenApiResponse(description="Unauthorized"),
+            403: OpenApiResponse(description="Forbidden"),
+        },
+    ),
+    "update_or_delete_review": extend_schema(
+        summary="Partial Update or Remove Manga Review",
+        description="Update some fields or delete of a manga, only for `IsMember` or `IsAdministrator` users.",
+        responses={
+            200: OpenApiResponse(ReviewWriteSerializer, description="OK"),
+            204: OpenApiResponse(description="No Content"),
+            400: OpenApiResponse(description="Bad request"),
+            401: OpenApiResponse(description="Unauthorized"),
+            403: OpenApiResponse(description="Forbidden"),
+            404: OpenApiResponse(description="Not Found"),
+        },
+        parameters=[OpenApiParameter("review_id", str, OpenApiParameter.PATH)],
+        methods=["PATCH", "DELETE"],
+    ),
     "get_recommendations": extend_schema(
         summary="Get Manga Recommendations",
         description="Get all recommendations of an manga passed as param (`uuid`).",
         responses={
             200: OpenApiResponse(MangaMinimalSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "get_news": extend_schema(
         summary="Get Manga News",
@@ -186,9 +219,9 @@ manga_schemas = {
         responses={
             200: OpenApiResponse(NewsMinimalSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     # "get_forum": extend_schema(),
     "get_pictures": extend_schema(
@@ -197,8 +230,8 @@ manga_schemas = {
         responses={
             200: OpenApiResponse(PictureReadSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
-    )
+        auth=[],
+    ),
 }

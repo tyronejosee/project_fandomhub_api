@@ -158,7 +158,6 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/stats/
         """
         anime = self.get_object()
-        # stats = AnimeStats.objects.get(anime_id=anime.pk)
         stats = anime.stats  # reverse relationship
         if stats:
             serializer = AnimeStatsReadSerializer(stats)
@@ -234,9 +233,6 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    # @extend_schema(
-    #     parameters=[OpenApiParameter("review_id", str, OpenApiParameter.PATH)]
-    # )
     @action(
         detail=True,
         methods=["patch", "delete"],

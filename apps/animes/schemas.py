@@ -1,6 +1,6 @@
 """Schemas for Animes App."""
 
-from drf_spectacular.utils import extend_schema, OpenApiResponse
+from drf_spectacular.utils import extend_schema, OpenApiResponse, OpenApiParameter
 
 from apps.utils.serializers import PictureReadSerializer, VideoReadSerializer
 from apps.characters.serializers import CharacterMinimalSerializer
@@ -131,7 +131,7 @@ anime_schemas = {
         },
     ),
     "update_or_delete_review": extend_schema(
-        summary="Partial Update or Remove Anime",
+        summary="Partial Update or Remove Anime Review",
         description="Update some fields or delete of a anime, only for `IsMember` or `IsAdministrator` users.",
         responses={
             200: OpenApiResponse(ReviewWriteSerializer, description="OK"),
@@ -141,6 +141,7 @@ anime_schemas = {
             403: OpenApiResponse(description="Forbidden"),
             404: OpenApiResponse(description="Not Found"),
         },
+        parameters=[OpenApiParameter("review_id", str, OpenApiParameter.PATH)],
         methods=["PATCH", "DELETE"],
     ),
     "get_recommendations": extend_schema(
