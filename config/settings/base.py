@@ -29,6 +29,7 @@ PROJECT_APPS = [
     "apps.characters",
     "apps.clubs",
     "apps.genres",
+    "apps.home",
     "apps.mangas",
     "apps.news",
     "apps.persons",
