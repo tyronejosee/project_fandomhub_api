@@ -1,0 +1,381 @@
+// Drop Dash - Database Structure
+
+// Utilities App
+
+Table Base {
+  id uuid [pk]
+  available bool
+  updated_at datetime
+  created_at datetime
+}
+
+// Users App
+
+Table User {
+  id uuid [pk]
+  email varchar
+  username varchar
+  slug slug
+  first_name varchar
+  last_name varchar
+  date_birth date
+  points int
+  is_active bool
+  is_staff bool
+  created_at date
+  updated_at date
+}
+
+// Reviews App
+
+Table Review {
+  id uuid [pk]
+  content_type FK
+  object_id uuid
+  content_object GFG
+  user FK
+  rating int
+  comment text
+  available base
+  updated_at base
+  created_at base
+}
+
+// Restaurants App
+
+Table Restaurant {
+  id uuid [pk]
+  user FK
+  name varchar
+  slug slug
+  image image
+  banner image
+  description text
+  specialty choices
+  address varchar
+  city FK
+  state FK
+  country FK
+  opening_time datetime
+  closing_time datetime
+  phone varchar
+  website url
+  is_open bool
+  is_verified bool
+  banking_certificate file
+  e_rut file
+  legal_rep_email file
+  legal_rep_identity_document file
+  legal_rep_power_of_attorney file
+  available base
+  updated_at base
+  created_at base
+}
+
+Table Category {
+  id uuid [pk]
+  name varchar
+  restaurant FK
+  available base
+  updated_at base
+  created_at base
+}
+
+Table Food {
+  id uuid [pk]
+  name varchar
+  description text
+  price decimal
+  sale_price decimal
+  image image
+  restaurant FK
+  category FK
+  is_vegetarian bool
+  is_gluten_free bool
+  is_spicy bool
+  is_featured bool
+  available base
+  updated_at base
+  created_at base
+}
+
+// Promotions App
+
+Table Promotion {
+  id uuid [pk]
+  creator FK
+  name varchar
+  conditions text
+  start_date date
+  end_date date
+  is_active bool
+  image image
+  available base
+  updated_at base
+  created_at base
+}
+
+Table FixedCoupon {
+  id uuid [pk]
+  name varchar
+  discount_price decimal
+  code varchar
+  start_date date
+  end_date date
+  quantity int
+  is_active bool
+  available base
+  updated_at base
+  created_at base
+}
+
+Table PercentageCoupon {
+  id uuid [pk]
+  name varchar
+  discount_percentage int
+  code varchar
+  start_date date
+  end_date date
+  quantity int
+  is_active bool
+  available base
+  updated_at base
+  created_at base
+}
+
+// Orders App
+
+Table Order {
+  id uuid [pk]
+  user FK
+  shipping_name varchar
+  shipping_phone varchar
+  shipping_time varchar
+  shipping_price decimal
+  transaction varchar
+  address_1 varchar
+  address_2 varchar
+  city FK
+  state FK
+  country FK
+  note text
+  zip_code varchar
+  restaurant FK
+  amount decimal
+  status bool
+  payment_method choices
+  available base
+  updated_at base
+  created_at base
+}
+
+Table OrderItem {
+  id uuid [pk]
+  order FK
+  food FK
+  price decimal
+  subtotal decimal
+  quantity int
+  available base
+  updated_at base
+  created_at base
+}
+
+// Locations App
+
+Table Country {
+  id uuid [pk]
+  name varchar
+  available base
+  updated_at base
+  created_at base
+}
+
+Table State {
+  id uuid [pk]
+  name varchar
+  country FK
+  available base
+  updated_at base
+  created_at base
+}
+
+Table City {
+  id uuid [pk]
+  name varchar
+  state FK
+  available base
+  updated_at base
+  created_at base
+}
+
+// Drivers App
+
+Table Driver {
+  id uuid [pk]
+  user FK
+  phone varchar
+  birth_date varchar
+  driver_license file
+  identification_document file
+  social_security_certificate file
+  address varchar
+  city FK
+  state FK
+  country FK
+  is_verified bool
+  status bool
+  available base
+  updated_at base
+  created_at base
+}
+
+Table Resource {
+  id uuid [pk]
+  driver FK
+  resource_type choices
+  note text
+  status choices
+  available base
+  updated_at base
+  created_at base
+}
+
+
+// Deliveries App
+
+Table Delivery {
+  id uuid [pk]
+  // TODO: Add fields
+  available base
+  updated_at base
+  created_at base
+}
+
+// Jobs App
+
+Table Position {
+  id uuid [pk]
+  position varchar
+  description text
+  available base
+  updated_at base
+  created_at base
+}
+
+Table Worker {
+  id uuid [pk]
+  user FK
+  phone_number varchar
+  address varchar
+  city FK
+  state FK
+  country FK
+  position FK
+  hired_date date
+  termination_date date
+  hourly_rate decimal
+  contract_type choices
+  contract_file file
+  available base
+  updated_at base
+  created_at base
+}
+
+Table Applicant {
+  id uuid [pk]
+  user FK
+  phone_number varchar
+  email email
+  applied_for FK
+  cv file
+  message text
+  submitted_at datetime
+  status choices
+  available base
+  updated_at base
+  created_at base
+}
+
+// Blogs App
+
+Table Tag {
+  id uuid [pk]
+  name varchar
+  slug slug
+  available base
+  updated_at base
+  created_at base
+}
+
+Table Post {
+  id uuid [pk]
+  title varchar
+  slug slug
+  content text
+  tags M2M
+  author FK
+  points int
+  is_featured bool
+  available base
+  updated_at base
+  created_at base
+}
+
+Table PostReport {
+  id uuid [pk]
+  user FK
+  post FK
+  reason text
+  priority choices
+  status bool
+  available base
+  updated_at base
+  created_at base
+}
+
+// Relations
+
+Ref: Review.content_type < Restaurant.id
+Ref: Review.user < User.id
+
+Ref: Restaurant.user < User.id
+Ref: Restaurant.city < City.id
+Ref: Restaurant.state < State.id
+Ref: Restaurant.country < Country.id
+Ref: Category.restaurant < Restaurant.id
+Ref: Food.restaurant < Restaurant.id
+Ref: Food.category < Category.id
+
+Ref: Promotion.creator < User.id
+
+Ref: Order.user < User.id
+Ref: Order.city < City.id
+Ref: Order.state < State.id
+Ref: Order.country < Country.id
+Ref: Order.restaurant < Restaurant.id
+Ref: OrderItem.order < Order.id
+Ref: OrderItem.food < Food.id
+
+Ref: State.country < Country.id
+Ref: City.state < State.id
+
+Ref: Driver.user < User.id
+Ref: Driver.city < City.id
+Ref: Driver.state < State.id
+Ref: Driver.country < Country.id
+
+Ref: Resource.driver < Driver.id
+
+Ref: Worker.user < User.id
+Ref: Worker.city < City.id
+Ref: Worker.state < State.id
+Ref: Worker.country < Country.id
+Ref: Worker.position < Position.id
+Ref: Applicant.user < User.id
+Ref: Applicant.applied_for < Position.id
+
+Ref: Post.tags < Tag.id
+Ref: Post.author < User.id
+Ref: PostReport.user < User.id
+Ref: PostReport.post < Post.id

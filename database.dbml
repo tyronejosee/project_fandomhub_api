@@ -1,0 +1,372 @@
+// FandomHub - Database Structure
+
+// Utils App
+
+Table BaseModel {
+  id uuid [pk]
+  is_available bool
+  updated_at datetime
+  created_at datetime
+}
+
+Table Picture {
+  id uuid [pk]
+  content_type
+  object_id
+  content_object
+  image
+}
+
+Table Video {
+  id uuid [pk]
+  content_type
+  object_id
+  content_object
+  video
+}
+
+// Anime App
+
+Table Broadcast {
+  id uuid [pk]
+  string
+  day
+  time
+  timezone
+}
+
+Table Anime {
+  id uuid [pk]
+  name
+  name_jpn
+  name_rom
+  alternative_names
+  image
+  trailer
+  synopsis
+  background
+  season
+  year
+  broadcast_id
+  media_type
+  source
+  episodes
+  status
+  aired_from
+  aired_to
+  producers
+  licensors_id
+  studio_id
+  genres
+  themes
+  duration
+  rating
+  website
+  is_recommended
+  score
+  ranked
+  popularity
+  members
+  favorites
+}
+
+Table AnimeStats {
+  id uuid [pk]
+  anime_id
+  watching
+  completed
+  on_hold
+  dropped
+  plan_to_watch
+  total
+}
+
+// Characters App
+
+Table Character {
+  id uuid [pk]
+  name
+  name_kanji
+  about
+  role
+  image
+  voices
+  animes
+  mangas
+  favorites
+}
+
+Table CharacterVoice {
+  id uuid [pk]
+  character_id
+  voice_id
+}
+
+Table CharacterAnime {
+  id uuid [pk]
+  character_id
+  anime_id
+}
+
+Table CharacterManga {
+  id uuid [pk]
+  character_id
+  manga_id
+}
+
+// Clubs App
+
+Table Club {
+  id uuid [pk]
+  name
+  description
+  image
+  category
+  members
+  created_by
+  is_public
+}
+
+Table ClubMember {
+  id uuid [pk]
+  club_id
+  user_id
+  joined_at
+}
+
+Table Event {
+  id uuid [pk]
+  club_id
+  name
+  description
+  date
+}
+
+Table Topic {
+  id uuid [pk]
+  name
+  club_id
+  created_by
+}
+
+Table Discussion {
+  id uuid [pk]
+  topic_id
+  content
+  created_by
+}
+
+// Genres App
+
+Table Genre {
+  id uuid [pk]
+  name
+}
+
+Table Theme {
+  id uuid [pk]
+  name
+}
+
+Table Demographic {
+  id uuid [pk]
+  name
+}
+
+// Mangas App
+
+Table Magazine {
+  id uuid [pk]
+  name
+  count
+}
+
+Table Manga {
+  id uuid [pk]
+  name
+  name_jpn
+  name_rom
+  alternative_names
+  image
+  synopsis
+  background
+  media_type
+  chapters
+  volumes
+  status
+  published_from
+  published_to
+  genres
+  themes
+  demographic_id
+  serialization_id
+  author_id
+  website
+  is_recommended
+  score
+  ranked
+  popularity
+  members
+  favorites
+}
+
+Table MangaStats {
+  id uuid [pk]
+  manga_id
+  reading
+  completed
+  on_hold
+  dropped
+  plan_to_read
+  total
+}
+
+// News App
+
+Table News {
+  id uuid [pk]
+  slug
+  name
+  description
+  content
+  image
+  source
+  tag
+  anime_relations
+  manga_relations
+  author_id
+}
+
+// Persons App
+
+Table Person {
+  id uuid [pk]
+  slug
+  name
+  given_name
+  family_name
+  image
+  alternate_names
+  birthday
+  about
+  website
+  language
+  category
+  favorites
+}
+
+Table StaffAnime {
+  id uuid [pk]
+  person_id
+  anime_id
+}
+
+// Playlists App
+
+Table AnimeList {
+  id uuid [pk]
+  user_id
+  banner
+  is_public
+}
+
+Table AnimeListItem {
+  id uuid [pk]
+  animelist_id
+  anime_id
+  status
+  episodes_watched
+  score
+  start_date
+  finish_date
+  tags
+  priority
+  storage
+  times_rewatched
+  notes
+  order
+  is_watched
+  is_favorite
+}
+
+Table MangaList {
+  id uuid [pk]
+  user_id
+  banner
+  is_public
+}
+
+Table MangaListItem {
+  id uuid [pk]
+  mangalist_id
+  manga_id
+  status
+  volumes_read
+  chapters_read
+  score
+  start_date
+  finish_date
+  tags
+  priority
+  storage
+  times_reread
+  notes
+  order
+  is_read
+  is_favorite
+}
+
+// Producers App
+
+Table Producer {
+  id uuid [pk]
+  name
+  name_jpn
+  about
+  established
+  type
+  image
+  favorites
+}
+
+// Profiles App
+
+Table Profile {
+  id uuid [pk]
+  user_id
+  first_name
+  last_name
+  birth_date
+  bio
+  image
+  cover
+}
+
+// Reviews App
+
+Table Review {
+  id uuid [pk]
+  user_id
+  content_type
+  object_id
+  content_object
+  rating
+  comment
+  is_spoiler
+  helpful_count
+  reported_count
+}
+
+// Users App
+
+Table User {
+  id uuid [pk]
+  email
+  username
+  role
+  is_online
+  is_active
+  is_staff
+  created_at
+  updated_at
+}
