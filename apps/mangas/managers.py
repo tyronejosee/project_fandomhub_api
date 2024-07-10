@@ -1,5 +1,7 @@
 """Managers for Mangas App."""
 
+from django.db.models import Q
+
 from apps.utils.managers import BaseManager
 
 
@@ -42,4 +44,13 @@ class MangaManager(BaseManager):
                 "media_type",
                 "status",
             )
+        )
+
+    def get_similar_mangas(self, manga):
+        return (
+            self.filter(
+                Q(genres__in=manga.genres.all()) | Q(themes__in=manga.themes.all())
+            )
+            .exclude(id=manga.id)
+            .distinct()[:25]
         )

@@ -290,14 +290,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/recommendations/
         """
         anime = self.get_object()
-        similar_anime = (
-            Anime.objects.filter(
-                genres__in=anime.genres.all(),
-                themes__in=anime.themes.all(),
-            )
-            .exclude(id=anime.id)
-            .distinct()[:25]
-        )  # TODO: Add manager, add tests
+        similar_anime = Anime.objects.get_similar_animes(anime)
         if similar_anime:
             serializer = AnimeMinimalSerializer(similar_anime, many=True)
             return Response(serializer.data)
@@ -329,7 +322,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/news/
         """
         anime = self.get_object()
-        news = News.objects.get_anime_news(anime)  # TODO: Optimize query 43.5 ms
+        news = News.objects.get_anime_news(anime)  # OPTIMIZE: query 43.5 ms
         if news.exists():
             serializer = NewsMinimalSerializer(news, many=True)
             return Response(serializer.data)
@@ -369,9 +362,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/videos/
         """
         anime = self.get_object()
-        videos = Video.objects.filter(
-            content_type__model="anime", object_id=anime.id
-        )  # TODO: Add manager
+        videos = Video.objects.get_anime_videos(anime)
         if videos.exists():
             serializer = VideoReadSerializer(videos, many=True)
             return Response(serializer.data)
@@ -396,9 +387,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/animes/{id}/pictures/
         """
         anime = self.get_object()
-        pictures = Picture.objects.filter(
-            content_type__model="anime", object_id=anime.id
-        )  # TODO: Add manager
+        pictures = Picture.objects.get_anime_pictures(anime)
         if pictures.exists():
             serializer = PictureReadSerializer(pictures, many=True)
             return Response(serializer.data)

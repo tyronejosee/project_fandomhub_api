@@ -63,11 +63,9 @@ class SeasonAnimeView(ListAPIView):
     filterset_class = AnimeSeasonFilter
 
     def get_queryset(self):
-        year = int(self.kwargs.get("year"))
         season = str(self.kwargs.get("season")).lower()
-        return Anime.objects.filter(year=year, season=season)
-
-    # TODO: Add mamager
+        year = int(self.kwargs.get("year"))
+        return Anime.objects.get_by_year_and_season(season, year)
 
     @method_decorator(cache_page(60 * 60 * 2))
     @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))

@@ -95,7 +95,7 @@ class StaffAnime(BaseModel):
     person_id = models.ForeignKey(
         Person,
         related_name="person_anime",
-        limit_choices_to={"is_available": True},  # TODO: Add type
+        limit_choices_to={"is_available": True},
         on_delete=models.CASCADE,
     )
     anime_id = models.ForeignKey(

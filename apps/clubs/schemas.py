@@ -15,9 +15,9 @@ club_schemas = {
         responses={
             200: OpenApiResponse(ClubReadSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
     "create": extend_schema(
         summary="Create Club",
@@ -35,10 +35,9 @@ club_schemas = {
         responses={
             200: OpenApiResponse(ClubReadSerializer, description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
-
+        auth=[],
     ),
     "update": extend_schema(
         summary="Update Club",
@@ -79,10 +78,8 @@ club_schemas = {
         responses={
             200: OpenApiResponse(ClubMemberReadSerializer(many=True), description="OK"),
             400: OpenApiResponse(description="Bad request"),
-            404: OpenApiResponse(description="Not found")
+            404: OpenApiResponse(description="Not found"),
         },
-        auth=[]
+        auth=[],
     ),
-    # TODO: Add GET clubs/{id}/staff
-    # TODO: Add GET clubs/{id}/relations
 }

@@ -81,6 +81,3 @@ class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             {"detail": _("No members found for this club.")},
             status=status.HTTP_404_NOT_FOUND,
         )
-
-    # TODO: Add GET clubs/{id}/staff
-    # TODO: Add GET clubs/{id}/relations

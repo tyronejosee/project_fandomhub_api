@@ -18,6 +18,7 @@ class RequestLoggingMiddleware:
     def __call__(self, request):
         # Get client IP
         # client_ip = request.META.get("REMOTE_ADDR", "UNKNOWN")
+
         # Get the response time between the request and the response
         start_time = time.time()
         response = self.get_response(request)
@@ -31,9 +32,6 @@ class RequestLoggingMiddleware:
         logger.info(
             f"Request: '{request.method} {request.path} {request.META.get('SERVER_PROTOCOL')}' {response.status_code} {content_length} B {duration_ms:.1f} ms"
         )
-
-        # TODO: Add {client_ip} in production
-
         return response
 
 

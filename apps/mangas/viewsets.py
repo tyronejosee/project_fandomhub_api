@@ -283,14 +283,7 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/mangas/{id}/recommendations/
         """
         manga = self.get_object()
-        similar_manga = (
-            Manga.objects.filter(
-                genres__in=manga.genres.all(),
-                themes__in=manga.themes.all(),
-            )
-            .exclude(id=manga.id)
-            .distinct()[:25]
-        )  # TODO: Add manager, add tests
+        similar_manga = Manga.objects.get_similar_mangas(manga)
         if similar_manga:
             serializer = MangaMinimalSerializer(similar_manga, many=True)
             return Response(serializer.data)
@@ -315,7 +308,7 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/mangas/{id}/news/
         """
         manga = self.get_object()
-        news = News.objects.get_manga_news(manga)  # TODO: Optimize query 43.5 ms
+        news = News.objects.get_manga_news(manga)  # OPTIMIZE: query 43.5 ms
         if news.exists():
             serializer = NewsMinimalSerializer(news, many=True)
             return Response(serializer.data)
@@ -346,9 +339,7 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/mangas/{id}/pictures/
         """
         manga = self.get_object()
-        pictures = Picture.objects.filter(
-            content_type__model="manga", object_id=manga.id
-        )  # TODO: Add manager
+        pictures = Picture.objects.get_manga_pictures(manga)
         if pictures.exists():
             serializer = PictureReadSerializer(pictures, many=True)
             return Response(serializer.data)

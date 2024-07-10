@@ -219,7 +219,6 @@ SPECTACULAR_SETTINGS = {
 
 LOG_DIR = os.path.join(BASE_DIR, "logs")
 
-# TODO: Add external logging service
 LOGGING = {
     "version": 1,
     "disable_existing_loggers": False,

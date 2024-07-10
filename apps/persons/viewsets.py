@@ -122,10 +122,7 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - GET api/v1/persons/{id}/pictures/
         """
         person = self.get_object()
-        pictures = Picture.objects.filter(
-            content_type=ContentType.objects.get_for_model(Person),
-            object_id=person.id,
-        )  # TODO: Add manager
+        pictures = Picture.objects.get_person_pictures(person)
         if pictures:
             serializer = PictureReadSerializer(pictures, many=True)
             return Response(serializer.data)

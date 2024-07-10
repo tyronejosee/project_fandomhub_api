@@ -1,5 +1,7 @@
 """Managers for Animes App."""
 
+from django.db.models import Q
+
 from apps.utils.managers import BaseManager
 
 
@@ -38,7 +40,16 @@ class AnimeManager(BaseManager):
                 "popularity",
                 "members",
             )
-        )  # TODO: Optimize 44.3 ms
+        )  # OPTIMIZE: 44.3 ms
+
+    def get_similar_animes(self, anime):
+        return (
+            self.filter(
+                Q(genres__in=anime.genres.all()) | Q(themes__in=anime.themes.all())
+            )
+            .exclude(id=anime.id)
+            .distinct()[:25]
+        )
 
     def get_by_year_and_season(self, season, year):
         return self.filter(season=season, year=year)

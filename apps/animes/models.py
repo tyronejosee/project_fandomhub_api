@@ -139,6 +139,7 @@ class Anime(SlugMixin, BaseModel):
         },
         related_name="produced_animes",
         verbose_name=_("producers"),
+        help_text=_("DISTRIBUTOR tag")
     )
     licensors_id = models.ForeignKey(
         Producer,
@@ -151,6 +152,7 @@ class Anime(SlugMixin, BaseModel):
         },
         related_name="licensed_animes",
         verbose_name=_("licensors"),
+        help_text=_("LICENSOR tag")
     )
     studio_id = models.ForeignKey(
         Producer,
