@@ -44,3 +44,7 @@ class Producer(BaseModel, SlugMixin):
 
     def __str__(self):
         return str(self.name)
+
+    def save(self, *args, **kwargs):
+        self.set_slug()
+        super().save(*args, **kwargs)

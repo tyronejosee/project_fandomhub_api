@@ -16889,3 +16889,4 @@ AttributeError: 'PictureManager' object has no attribute 'get_anime_pictures'. D
 [2024-07-10 17:47:03,834]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 13.0 ms
 [2024-07-10 17:47:18,819]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18565 B 3.9 ms
 [2024-07-10 17:47:33,816]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.1 ms
+[2024-07-10 21:42:20,507]    INFO - Watching for file changes with StatReloader
