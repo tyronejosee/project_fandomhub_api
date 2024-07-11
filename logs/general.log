@@ -17482,3 +17482,1115 @@ AttributeError: 'PictureManager' object has no attribute 'get_anime_pictures'. D
 [2024-07-11 17:21:48,463]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18758 B 12.5 ms
 [2024-07-11 17:22:03,451]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18746 B 2.4 ms
 [2024-07-11 17:22:18,449]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18744 B 2.4 ms
+[2024-07-11 17:58:11,811]    INFO - Watching for file changes with StatReloader
+[2024-07-11 17:59:36,863]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 17:59:41,458]    INFO - Watching for file changes with StatReloader
+[2024-07-11 17:59:48,275]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 3.0 ms
+[2024-07-11 18:00:03,269]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 3.4 ms
+[2024-07-11 18:00:18,261]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18561 B 2.9 ms
+[2024-07-11 18:00:33,262]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 3.0 ms
+[2024-07-11 18:00:48,262]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 2.5 ms
+[2024-07-11 18:00:53,910]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:00:57,916]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:01:03,274]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 3.5 ms
+[2024-07-11 18:01:09,913]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:01:15,012]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:01:18,276]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14906 B 5.7 ms
+[2024-07-11 18:01:22,519]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:01:27,114]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:01:33,270]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 4.2 ms
+[2024-07-11 18:01:34,752]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:01:38,841]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:01:48,287]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14926 B 6.3 ms
+[2024-07-11 18:02:03,262]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.0 ms
+[2024-07-11 18:02:03,971]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:02:08,384]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:02:18,279]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14914 B 2.4 ms
+[2024-07-11 18:02:21,092]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:02:26,038]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:02:33,266]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 2.3 ms
+[2024-07-11 18:02:35,054]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:02:40,380]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:02:48,279]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14924 B 6.7 ms
+[2024-07-11 18:03:01,656]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:03:05,211]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:03:12,565]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:03:17,488]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:03:33,307]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 17.5 ms
+[2024-07-11 18:03:48,281]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 23.6 ms
+[2024-07-11 18:03:50,732]    INFO - /app/apps/users/urls.py changed, reloading.
+[2024-07-11 18:03:54,750]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:04:03,279]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 8.0 ms
+[2024-07-11 18:04:18,255]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18550 B 2.5 ms
+[2024-07-11 18:04:33,268]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 12.5 ms
+[2024-07-11 18:04:48,272]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18546 B 17.5 ms
+[2024-07-11 18:05:03,269]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 14.1 ms
+[2024-07-11 18:05:18,248]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18559 B 2.3 ms
+[2024-07-11 18:05:23,612]    INFO - /app/apps/users/urls.py changed, reloading.
+[2024-07-11 18:05:28,603]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:05:33,271]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 7.4 ms
+[2024-07-11 18:05:35,449]    INFO - /app/apps/users/urls.py changed, reloading.
+[2024-07-11 18:05:41,078]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:05:48,252]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14915 B 2.3 ms
+[2024-07-11 18:06:03,247]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18568 B 2.2 ms
+[2024-07-11 18:06:18,268]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 21.8 ms
+[2024-07-11 18:06:19,280]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:06:23,807]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:06:33,248]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 2.1 ms
+[2024-07-11 18:06:42,623]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:06:46,453]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:06:56,471]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:07:00,661]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:07:10,911]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:07:15,563]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:07:20,386]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:07:25,362]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:07:33,251]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 5.3 ms
+[2024-07-11 18:07:33,520]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:07:38,989]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:07:46,556]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:07:51,870]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:08:03,279]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14929 B 3.9 ms
+[2024-07-11 18:08:18,238]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18556 B 4.7 ms
+[2024-07-11 18:08:33,235]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18556 B 2.6 ms
+[2024-07-11 18:08:40,393]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:08:45,257]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:08:54,910]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:09:03,763]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:09:18,232]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14909 B 2.4 ms
+[2024-07-11 18:09:33,227]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 2.9 ms
+[2024-07-11 18:09:48,238]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 13.3 ms
+[2024-07-11 18:09:57,779]    INFO - Request: 'GET /api/v1/users/josreyes//about/ HTTP/1.1' 404 49336 B 190.5 ms
+[2024-07-11 18:09:57,782]    WARNING - Not Found: /api/v1/users/josreyes//about/
+[2024-07-11 18:10:03,227]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21111 B 4.8 ms
+[2024-07-11 18:10:06,442]    INFO - Request: 'GET /api/v1/users/josreyes/about/ HTTP/1.1' 401 183 B 967.1 ms
+[2024-07-11 18:10:06,443]    WARNING - Unauthorized: /api/v1/users/josreyes/about/
+[2024-07-11 18:10:18,225]    INFO - Request: 'GET /metrics HTTP/1.1' 200 24637 B 5.0 ms
+[2024-07-11 18:10:27,389]    INFO - Request: 'POST /api/v1/tokens/jwt/create/ HTTP/1.1' 200 582 B 3762.4 ms
+[2024-07-11 18:10:33,225]    INFO - Request: 'GET /metrics HTTP/1.1' 200 27390 B 5.1 ms
+[2024-07-11 18:10:48,237]    INFO - Request: 'GET /metrics HTTP/1.1' 200 27405 B 8.1 ms
+[2024-07-11 18:10:58,132]    ERROR - Internal Server Error: /api/v1/users/josreyes/about/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 83, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/users/views.py", line 41, in get_queryset
+    return Profile.objects.filter(user_id=user)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 158, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/lookups.py", line 358, in get_prep_lookup
+    raise ValueError(
+ValueError: The QuerySet value for an exact lookup must be limited to one result using slicing.
+[2024-07-11 18:10:58,147]    INFO - Request: 'GET /api/v1/users/josreyes/about/ HTTP/1.1' 500 157362 B 464.9 ms
+[2024-07-11 18:11:03,224]    INFO - Request: 'GET /metrics HTTP/1.1' 200 28487 B 5.9 ms
+[2024-07-11 18:11:18,223]    INFO - Request: 'GET /metrics HTTP/1.1' 200 28491 B 7.2 ms
+[2024-07-11 18:11:33,235]    INFO - Request: 'GET /metrics HTTP/1.1' 200 28494 B 14.9 ms
+[2024-07-11 18:11:48,219]    INFO - Request: 'GET /metrics HTTP/1.1' 200 28516 B 5.4 ms
+[2024-07-11 18:12:03,221]    INFO - Request: 'GET /metrics HTTP/1.1' 200 28516 B 7.4 ms
+[2024-07-11 18:12:04,574]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:12:10,472]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:12:15,577]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:12:20,618]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:12:33,237]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 4.4 ms
+[2024-07-11 18:12:48,213]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 2.9 ms
+[2024-07-11 18:12:58,850]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:13:04,266]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:13:12,340]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:13:18,419]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:13:33,243]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14919 B 7.4 ms
+[2024-07-11 18:13:48,213]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18830 B 6.2 ms
+[2024-07-11 18:13:48,356]    ERROR - Internal Server Error: /api/v1/users/josreyes/about/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 83, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/users/views.py", line 40, in get_queryset
+    username = str(self.kwargs.get("username")).lower()
+           ^^^^^^^^^^^^^^^^^
+NameError: name 'get_object_or_404' is not defined
+[2024-07-11 18:13:48,376]    INFO - Request: 'GET /api/v1/users/josreyes/about/ HTTP/1.1' 500 102696 B 195.0 ms
+[2024-07-11 18:14:03,227]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22371 B 17.9 ms
+[2024-07-11 18:14:18,225]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22384 B 16.5 ms
+[2024-07-11 18:14:33,212]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22371 B 8.4 ms
+[2024-07-11 18:14:43,709]    INFO - /app/apps/users/__init__.py changed, reloading.
+[2024-07-11 18:14:47,904]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:14:53,978]    INFO - Request: 'GET /api/v1/users/josreyes/about/ HTTP/1.1' 404 23 B 142.9 ms
+[2024-07-11 18:14:53,984]    WARNING - Not Found: /api/v1/users/josreyes/about/
+[2024-07-11 18:15:03,209]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19272 B 3.5 ms
+[2024-07-11 18:15:08,565]    INFO - Request: 'GET / HTTP/1.1' 302 0 B 0.3 ms
+[2024-07-11 18:15:10,023]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 35906 B 1445.5 ms
+[2024-07-11 18:15:11,139]    INFO - Request: 'GET /favicon.ico HTTP/1.1' 404 9110 B 63.0 ms
+[2024-07-11 18:15:11,152]    WARNING - Not Found: /favicon.ico
+[2024-07-11 18:15:15,511]    INFO - Request: 'GET /admin/profiles/profile/ HTTP/1.1' 200 32410 B 596.1 ms
+[2024-07-11 18:15:15,918]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 283.5 ms
+[2024-07-11 18:15:17,208]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 52.6 ms
+[2024-07-11 18:15:18,223]    INFO - Request: 'GET /metrics HTTP/1.1' 200 36995 B 23.6 ms
+[2024-07-11 18:15:18,455]    INFO - Request: 'GET /admin/profiles/profile/52ca70a4-c5c8-4375-abda-b008fee116a8/change/ HTTP/1.1' 200 36795 B 240.0 ms
+[2024-07-11 18:15:18,618]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 65.9 ms
+[2024-07-11 18:15:19,374]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 49.9 ms
+[2024-07-11 18:15:28,971]    INFO - Request: 'POST /admin/profiles/profile/52ca70a4-c5c8-4375-abda-b008fee116a8/change/ HTTP/1.1' 302 0 B 192.8 ms
+[2024-07-11 18:15:29,120]    INFO - Request: 'GET /admin/profiles/profile/ HTTP/1.1' 200 32651 B 95.7 ms
+[2024-07-11 18:15:29,210]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 25.9 ms
+[2024-07-11 18:15:29,367]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 34.5 ms
+[2024-07-11 18:15:33,207]    INFO - Request: 'GET /metrics HTTP/1.1' 200 43346 B 6.6 ms
+[2024-07-11 18:15:41,966]    ERROR - Internal Server Error: /api/v1/users/josereyes/about/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 88, in get_object
+    assert lookup_url_kwarg in self.kwargs, (
+AssertionError: Expected view UserAboutView to be called with a URL keyword argument named "pk". Fix your URL conf, or set the `.lookup_field` attribute on the view correctly.
+[2024-07-11 18:15:41,972]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 500 100041 B 129.7 ms
+[2024-07-11 18:15:48,201]    INFO - Request: 'GET /metrics HTTP/1.1' 200 44414 B 5.7 ms
+[2024-07-11 18:16:03,219]    INFO - Request: 'GET /metrics HTTP/1.1' 200 44416 B 10.1 ms
+[2024-07-11 18:16:18,233]    INFO - Request: 'GET /metrics HTTP/1.1' 200 44403 B 34.3 ms
+[2024-07-11 18:16:22,874]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:16:27,263]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:16:33,231]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 9.0 ms
+[2024-07-11 18:16:40,867]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 404 23 B 146.0 ms
+[2024-07-11 18:16:40,868]    WARNING - Not Found: /api/v1/users/josereyes/about/
+[2024-07-11 18:16:43,700]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 404 23 B 32.2 ms
+[2024-07-11 18:16:43,701]    WARNING - Not Found: /api/v1/users/josereyes/about/
+[2024-07-11 18:16:45,846]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 404 23 B 22.1 ms
+[2024-07-11 18:16:45,847]    WARNING - Not Found: /api/v1/users/josereyes/about/
+[2024-07-11 18:16:47,146]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 404 23 B 38.0 ms
+[2024-07-11 18:16:47,149]    WARNING - Not Found: /api/v1/users/josereyes/about/
+[2024-07-11 18:16:48,207]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22088 B 12.0 ms
+[2024-07-11 18:17:03,196]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22090 B 3.7 ms
+[2024-07-11 18:17:14,346]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:17:19,233]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:17:29,770]    ERROR - Internal Server Error: /api/v1/users/josereyes/about/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'username' into field. Choices are: bio, birth_date, cover, created_at, first_name, id, image, is_available, last_name, updated_at, user_id, user_id_id
+[2024-07-11 18:17:29,777]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 500 153304 B 296.9 ms
+[2024-07-11 18:17:33,195]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19571 B 3.7 ms
+[2024-07-11 18:17:48,190]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22378 B 3.3 ms
+[2024-07-11 18:18:03,193]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22379 B 4.7 ms
+[2024-07-11 18:18:14,852]    INFO - /app/apps/profiles/serializers.py changed, reloading.
+[2024-07-11 18:18:19,138]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:18:33,204]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 12.1 ms
+[2024-07-11 18:18:35,638]    INFO - /app/apps/profiles/serializers.py changed, reloading.
+[2024-07-11 18:18:40,315]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:18:48,200]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 8.4 ms
+[2024-07-11 18:18:52,873]    INFO - /app/apps/profiles/serializers.py changed, reloading.
+[2024-07-11 18:18:58,046]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:19:03,199]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 5.1 ms
+[2024-07-11 18:19:08,713]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:19:14,406]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:19:18,227]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 11.2 ms
+[2024-07-11 18:19:19,009]    ERROR - Internal Server Error: /api/v1/users/josereyes/about/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'username' into field. Choices are: bio, birth_date, cover, created_at, first_name, id, image, is_available, last_name, updated_at, user_id, user_id_id
+[2024-07-11 18:19:19,019]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 500 153304 B 503.8 ms
+[2024-07-11 18:19:33,206]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22378 B 17.5 ms
+[2024-07-11 18:19:33,916]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:19:40,414]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:19:48,204]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 13.0 ms
+[2024-07-11 18:19:52,183]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:20:00,351]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:20:07,911]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:20:12,549]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:20:18,189]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 2.4 ms
+[2024-07-11 18:20:20,235]    ERROR - Internal Server Error: /api/v1/users/josereyes/about/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'username' into field. Choices are: bio, birth_date, cover, created_at, first_name, id, image, is_available, last_name, updated_at, user_id, user_id_id
+[2024-07-11 18:20:20,242]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 500 153484 B 292.1 ms
+[2024-07-11 18:20:33,189]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22381 B 6.4 ms
+[2024-07-11 18:20:48,224]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22380 B 41.2 ms
+[2024-07-11 18:20:58,092]    INFO - /app/apps/profiles/serializers.py changed, reloading.
+[2024-07-11 18:21:02,519]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:21:18,208]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14927 B 9.7 ms
+[2024-07-11 18:21:33,182]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18553 B 3.8 ms
+[2024-07-11 18:21:35,245]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:21:39,921]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:21:48,199]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 5.3 ms
+[2024-07-11 18:21:50,357]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:21:56,208]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:22:03,197]    INFO - Request: 'GET /metrics HTTP/1.1' 200 15210 B 19.5 ms
+[2024-07-11 18:22:03,589]    ERROR - Internal Server Error: /api/v1/users/josereyes/about/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 83, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/users/views.py", line 43, in get_queryset
+    return Profile.objects.filter(username=username).values("bio")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'username' into field. Choices are: bio, birth_date, cover, created_at, first_name, id, image, is_available, last_name, updated_at, user_id, user_id_id
+[2024-07-11 18:22:03,605]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 500 148210 B 531.8 ms
+[2024-07-11 18:22:18,181]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22377 B 5.1 ms
+[2024-07-11 18:22:32,198]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:22:37,081]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:22:48,183]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 2.4 ms
+[2024-07-11 18:22:51,696]    ERROR - Internal Server Error: /api/v1/users/josereyes/about/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'username' into field. Choices are: bio, birth_date, cover, created_at, first_name, id, image, is_available, last_name, updated_at, user_id, user_id_id
+[2024-07-11 18:22:51,704]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 500 153484 B 671.7 ms
+[2024-07-11 18:23:03,178]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22376 B 6.1 ms
+[2024-07-11 18:23:13,573]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:23:18,158]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:23:25,825]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 153.0 ms
+[2024-07-11 18:23:29,155]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 32.7 ms
+[2024-07-11 18:23:30,823]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 50.4 ms
+[2024-07-11 18:23:33,174]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19268 B 3.4 ms
+[2024-07-11 18:23:37,934]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:23:44,012]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:24:03,177]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 2.3 ms
+[2024-07-11 18:24:18,171]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 2.2 ms
+[2024-07-11 18:24:33,174]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 3.6 ms
+[2024-07-11 18:24:41,190]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:24:45,998]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:25:01,104]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:25:06,802]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:25:16,137]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:25:20,617]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:25:33,112]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 193.3 ms
+[2024-07-11 18:25:33,187]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19269 B 10.1 ms
+[2024-07-11 18:25:35,516]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 37.1 ms
+[2024-07-11 18:25:36,858]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 31.8 ms
+[2024-07-11 18:25:37,895]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 27.1 ms
+[2024-07-11 18:25:39,124]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 24.7 ms
+[2024-07-11 18:25:40,164]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 37.3 ms
+[2024-07-11 18:25:41,563]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 26.5 ms
+[2024-07-11 18:25:42,728]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 26.3 ms
+[2024-07-11 18:25:44,013]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 34.5 ms
+[2024-07-11 18:25:44,817]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 29.5 ms
+[2024-07-11 18:25:45,954]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 41.6 ms
+[2024-07-11 18:25:47,015]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 25.1 ms
+[2024-07-11 18:25:48,168]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22032 B 4.8 ms
+[2024-07-11 18:25:48,429]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 24.6 ms
+[2024-07-11 18:25:56,528]    INFO - Request: 'GET /api/v1/users/tyrone/about/ HTTP/1.1' 404 23 B 23.0 ms
+[2024-07-11 18:25:56,529]    WARNING - Not Found: /api/v1/users/tyrone/about/
+[2024-07-11 18:26:03,167]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22448 B 3.5 ms
+[2024-07-11 18:26:04,486]    INFO - Request: 'GET /api/v1/users/tyronejose/about/ HTTP/1.1' 200 10 B 48.2 ms
+[2024-07-11 18:26:18,166]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22448 B 3.1 ms
+[2024-07-11 18:26:33,168]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22447 B 4.3 ms
+[2024-07-11 18:26:35,407]    INFO - Request: 'GET /api/v1/users/tyronejxczxose/about/ HTTP/1.1' 404 23 B 39.8 ms
+[2024-07-11 18:26:35,408]    WARNING - Not Found: /api/v1/users/tyronejxczxose/about/
+[2024-07-11 18:26:48,167]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22446 B 5.4 ms
+[2024-07-11 18:26:55,427]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:26:59,812]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:27:03,186]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 7.3 ms
+[2024-07-11 18:27:18,165]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 4.2 ms
+[2024-07-11 18:27:33,165]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.6 ms
+[2024-07-11 18:27:48,163]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.1 ms
+[2024-07-11 18:28:03,162]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 2.6 ms
+[2024-07-11 18:28:18,176]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18565 B 14.8 ms
+[2024-07-11 18:28:33,161]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 4.0 ms
+[2024-07-11 18:28:35,964]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:28:39,854]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:28:48,163]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 3.2 ms
+[2024-07-11 18:28:49,289]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:28:54,495]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:28:59,505]    ERROR - Internal Server Error: /api/v1/users/tyronejxczxose/about/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/apps/users/views.py", line 46, in get_object
+    queryset = self.get_queryset()
+               ^^^^^^^^^^^^^^^^^^^
+TypeError: UserAboutView.get_queryset() missing 1 required positional argument: 'username'
+[2024-07-11 18:28:59,518]    INFO - Request: 'GET /api/v1/users/tyronejxczxose/about/ HTTP/1.1' 500 99087 B 242.9 ms
+[2024-07-11 18:29:03,173]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19568 B 15.4 ms
+[2024-07-11 18:29:09,916]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:29:14,230]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:29:18,163]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 6.0 ms
+[2024-07-11 18:29:22,802]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:29:28,023]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:29:32,873]    ERROR - Internal Server Error: /api/v1/users/tyronejxczxose/about/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 208, in get
+    return self.retrieve(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/apps/users/views.py", line 46, in get_object
+    queryset = self.get_queryset()
+               ^^^^^^^^^^^^^^^^^^^
+TypeError: UserAboutView.get_queryset() missing 1 required positional argument: 'username'
+[2024-07-11 18:29:32,898]    INFO - Request: 'GET /api/v1/users/tyronejxczxose/about/ HTTP/1.1' 500 99085 B 272.6 ms
+[2024-07-11 18:29:33,156]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19568 B 5.6 ms
+[2024-07-11 18:29:41,536]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:29:46,031]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:30:03,200]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 4.8 ms
+[2024-07-11 18:30:18,151]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 4.1 ms
+[2024-07-11 18:30:33,152]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.4 ms
+[2024-07-11 18:30:48,159]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18563 B 11.4 ms
+[2024-07-11 18:31:03,160]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 13.0 ms
+[2024-07-11 18:31:18,165]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 18.9 ms
+[2024-07-11 18:31:33,144]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 3.0 ms
+[2024-07-11 18:31:48,144]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 3.6 ms
+[2024-07-11 18:32:03,154]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18551 B 9.9 ms
+[2024-07-11 18:32:18,139]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18588 B 2.5 ms
+[2024-07-11 18:32:33,150]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 10.5 ms
+[2024-07-11 18:32:48,151]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18642 B 12.1 ms
+[2024-07-11 18:33:03,139]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18655 B 3.3 ms
+[2024-07-11 18:33:18,150]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 13.8 ms
+[2024-07-11 18:33:33,149]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18656 B 10.7 ms
+[2024-07-11 18:33:48,133]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18643 B 2.4 ms
+[2024-07-11 18:34:03,133]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18654 B 2.6 ms
+[2024-07-11 18:34:03,598]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:34:07,475]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:34:18,139]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 3.2 ms
+[2024-07-11 18:34:33,133]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 3.0 ms
+[2024-07-11 18:34:48,152]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 17.1 ms
+[2024-07-11 18:34:53,258]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:34:57,252]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:35:03,139]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 3.1 ms
+[2024-07-11 18:35:18,129]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 3.2 ms
+[2024-07-11 18:35:33,142]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18567 B 12.8 ms
+[2024-07-11 18:35:47,185]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:35:52,601]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:36:01,715]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:36:07,958]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:36:18,141]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 7.7 ms
+[2024-07-11 18:36:18,670]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:36:23,544]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:36:33,149]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14912 B 6.5 ms
+[2024-07-11 18:36:48,126]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18564 B 5.3 ms
+[2024-07-11 18:36:50,652]    INFO - /app/apps/animes/routers.py changed, reloading.
+[2024-07-11 18:36:55,590]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:37:03,130]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14921 B 2.9 ms
+[2024-07-11 18:37:18,124]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 3.9 ms
+[2024-07-11 18:37:28,340]    INFO - /app/apps/users/urls.py changed, reloading.
+[2024-07-11 18:37:33,104]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:37:42,174]    INFO - /app/apps/users/urls.py changed, reloading.
+[2024-07-11 18:37:48,788]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:38:03,124]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 2.9 ms
+[2024-07-11 18:38:12,826]    INFO - Request: 'GET /api/v1/users/josereyes/about/ HTTP/1.1' 200 25 B 86.1 ms
+[2024-07-11 18:38:18,119]    INFO - Request: 'GET /metrics HTTP/1.1' 200 21936 B 6.0 ms
+[2024-07-11 18:38:29,264]    ERROR - Internal Server Error: /api/v1/users/josereyes/favorites/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/pagination.py", line 395, in paginate_queryset
+    return list(queryset[self.offset:self.offset + self.limit])
+                ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: slice(0, 25, None)
+[2024-07-11 18:38:29,267]    INFO - Request: 'GET /api/v1/users/josereyes/favorites/ HTTP/1.1' 500 104248 B 567.0 ms
+[2024-07-11 18:38:33,128]    INFO - Request: 'GET /metrics HTTP/1.1' 200 25863 B 14.6 ms
+[2024-07-11 18:38:48,116]    INFO - Request: 'GET /metrics HTTP/1.1' 200 25862 B 6.9 ms
+[2024-07-11 18:39:03,135]    INFO - Request: 'GET /metrics HTTP/1.1' 200 25863 B 12.6 ms
+[2024-07-11 18:39:05,201]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:39:09,218]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:39:18,117]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14910 B 2.7 ms
+[2024-07-11 18:39:28,011]    ERROR - Internal Server Error: /api/v1/users/josereyes/favorites/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/pagination.py", line 395, in paginate_queryset
+    return list(queryset[self.offset:self.offset + self.limit])
+                ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: slice(0, 25, None)
+[2024-07-11 18:39:28,021]    INFO - Request: 'GET /api/v1/users/josereyes/favorites/ HTTP/1.1' 500 104248 B 220.4 ms
+[2024-07-11 18:39:33,116]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22489 B 6.4 ms
+[2024-07-11 18:39:48,109]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22478 B 3.9 ms
+[2024-07-11 18:40:03,110]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22491 B 4.6 ms
+[2024-07-11 18:40:15,760]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:40:22,714]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:40:33,114]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14914 B 5.1 ms
+[2024-07-11 18:40:48,103]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18554 B 2.6 ms
+[2024-07-11 18:40:53,446]    ERROR - Internal Server Error: /api/v1/users/josereyes/favorites/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/pagination.py", line 395, in paginate_queryset
+    return list(queryset[self.offset:self.offset + self.limit])
+                ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: slice(0, 25, None)
+[2024-07-11 18:40:53,449]    INFO - Request: 'GET /api/v1/users/josereyes/favorites/ HTTP/1.1' 500 104248 B 248.0 ms
+[2024-07-11 18:41:03,133]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22483 B 27.3 ms
+[2024-07-11 18:41:18,106]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22483 B 6.7 ms
+[2024-07-11 18:41:33,109]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22481 B 8.2 ms
+[2024-07-11 18:41:48,098]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22482 B 4.3 ms
+[2024-07-11 18:41:48,220]    INFO - /app/config/settings/base.py changed, reloading.
+[2024-07-11 18:41:52,537]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:41:57,350]    ERROR - Internal Server Error: /api/v1/users/josereyes/favorites/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/pagination.py", line 395, in paginate_queryset
+    return list(queryset[self.offset:self.offset + self.limit])
+                ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: slice(0, 25, None)
+[2024-07-11 18:41:57,357]    INFO - Request: 'GET /api/v1/users/josereyes/favorites/ HTTP/1.1' 500 104220 B 233.2 ms
+[2024-07-11 18:42:03,101]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19688 B 3.1 ms
+[2024-07-11 18:42:18,093]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22479 B 2.7 ms
+[2024-07-11 18:42:32,983]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:42:37,689]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:42:44,712]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:42:49,821]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:42:58,786]    ERROR - Internal Server Error: /api/v1/users/josereyes/favorites/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 40, in list
+    page = self.paginate_queryset(queryset)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 171, in paginate_queryset
+    return self.paginator.paginate_queryset(queryset, self.request, view=self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/pagination.py", line 395, in paginate_queryset
+    return list(queryset[self.offset:self.offset + self.limit])
+                ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: slice(0, 25, None)
+[2024-07-11 18:42:58,789]    INFO - Request: 'GET /api/v1/users/josereyes/favorites/ HTTP/1.1' 500 104220 B 176.8 ms
+[2024-07-11 18:43:03,095]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19675 B 3.0 ms
+[2024-07-11 18:43:18,098]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22493 B 10.0 ms
+[2024-07-11 18:43:28,459]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:43:32,737]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:43:38,741]    ERROR - Internal Server Error: /api/v1/users/josereyes/favorites/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/mixins.py", line 45, in list
+    serializer = self.get_serializer(queryset, many=True)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/apps/users/views.py", line 139, in get_serializer
+    return super().get_serializer(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 108, in get_serializer
+    serializer_class = self.get_serializer_class()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/generics.py", line 122, in get_serializer_class
+    assert self.serializer_class is not None, (
+AssertionError: 'UserFavoritesView' should either include a `serializer_class` attribute, or override the `get_serializer_class()` method.
+[2024-07-11 18:43:38,753]    INFO - Request: 'GET /api/v1/users/josereyes/favorites/ HTTP/1.1' 500 108744 B 335.3 ms
+[2024-07-11 18:43:48,092]    INFO - Request: 'GET /metrics HTTP/1.1' 200 19699 B 5.1 ms
+[2024-07-11 18:44:03,092]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22503 B 8.1 ms
+[2024-07-11 18:44:18,080]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22489 B 3.3 ms
+[2024-07-11 18:44:33,096]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22490 B 16.0 ms
+[2024-07-11 18:44:48,076]    INFO - Request: 'GET /metrics HTTP/1.1' 200 22488 B 2.5 ms
+[2024-07-11 18:45:02,900]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:45:06,485]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:45:15,246]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:45:20,914]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:45:33,130]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14908 B 24.2 ms
+[2024-07-11 18:45:36,510]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:45:42,889]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:45:49,352]    INFO - /app/apps/users/views.py changed, reloading.
+[2024-07-11 18:45:53,622]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:48:27,706]    INFO - /app/config/settings/base.py changed, reloading.
+[2024-07-11 18:48:32,086]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:48:44,536]    INFO - /app/apps/users/urls.py changed, reloading.
+[2024-07-11 18:48:48,907]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:49:03,071]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14913 B 2.9 ms
+[2024-07-11 18:49:18,064]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18566 B 4.3 ms
+[2024-07-11 18:49:33,074]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18552 B 11.8 ms
+[2024-07-11 18:50:04,470]    INFO - Watching for file changes with StatReloader
+[2024-07-11 18:50:18,115]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14925 B 5.0 ms

@@ -1,13 +1,17 @@
 """Views for Users App."""
 
+from django.shortcuts import get_object_or_404
 from django.utils.translation import gettext as _
 from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework.permissions import AllowAny
 from rest_framework.exceptions import NotFound
 
 from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer
-from .permissions import IsMember
+from apps.profiles.models import Profile
+from apps.profiles.serializers import ProfileAboutSerializer
 from .models import User
+from .permissions import IsMember
 
 
 class UserDetailView(RetrieveAPIView):
@@ -23,46 +27,24 @@ class UserDetailView(RetrieveAPIView):
 
 class UserAboutView(RetrieveAPIView):
     """
-    View for retrieving the about section of a user.
+    View for retrieving the about section or bio of a user.
 
     Endpoints:
     - GET api/v1/users/{username}/about/
     """
 
-    pass  # TODO: Pending for implementation
+    permission_classes = [AllowAny]
+    serializer_class = ProfileAboutSerializer
+    lookup_field = "username"
+    lookup_url_kwarg = "username"
 
+    def get_queryset(self):
+        username = self.kwargs.get("username").lower()
+        return Profile.objects.filter(user_id__username=username).select_related("user")
 
-class UserHistoryView(RetrieveAPIView):
-    """
-    View for retrieving the history of a user.
-
-    Endpoints:
-    - GET api/v1/users/{username}/history/
-    """
-
-    pass  # TODO: Pending for implementation
-
-
-class UserStatsView(RetrieveAPIView):
-    """
-    View for retrieving the statistics of a user.
-
-    Endpoints:
-    - GET api/v1/users/{username}/stats/
-    """
-
-    pass  # TODO: Pending for implementation
-
-
-class UserFriendsView(ListAPIView):
-    """
-    View for retrieving the friends of a user.
-
-    Endpoints:
-    - GET api/v1/users/{username}/friends/
-    """
-
-    pass  # TODO: Pending for implementation
+    def get_object(self):
+        queryset = self.get_queryset()
+        return get_object_or_404(queryset.values("bio"))
 
 
 class UserReviewsView(ListAPIView):
@@ -83,36 +65,3 @@ class UserReviewsView(ListAPIView):
         except User.DoesNotExist:
             raise NotFound(_("User not found."))
         return Review.objects.filter(user_id=user)
-
-
-class UserFavoritesView(ListAPIView):
-    """
-    View for retrieving the favorite items of a user.
-
-    Endpoints:
-    - GET api/v1/users/{username}/favorites/
-    """
-
-    pass  # TODO: Pending for implementation
-
-
-class UserRecommendationsView(ListAPIView):
-    """
-    View for retrieving the recommendations for a user.
-
-    Endpoints:
-    - GET api/v1/users/{username}/recommendations/
-    """
-
-    pass  # TODO: Pending for implementation
-
-
-class UserClubsView(ListAPIView):
-    """
-    View for retrieving the clubs a user is a member of.
-
-    Endpoints:
-    - GET api/v1/users/{username}/clubs/
-    """
-
-    pass  # TODO: Pending for implementation

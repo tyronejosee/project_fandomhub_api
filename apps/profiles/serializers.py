@@ -68,3 +68,13 @@ class ProfileMinimalSerializer(serializers.ModelSerializer):
         representation = super().to_representation(instance)
         representation["image"] = representation.get("image", "") or ""
         return representation
+
+
+class ProfileAboutSerializer(serializers.ModelSerializer):
+    """Serializer for Profile model (Bio only)."""
+
+    class Meta:
+        model = Profile
+        fields = [
+            "bio",
+        ]

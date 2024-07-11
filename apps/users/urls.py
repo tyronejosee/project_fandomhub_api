@@ -2,10 +2,14 @@
 
 from django.urls import path, include
 
-from .views import UserReviewsView
+from .views import UserAboutView, UserReviewsView
 
 
 urlpatterns = [
+    path(
+        "api/v1/users/<str:username>/about/",
+        UserAboutView.as_view(),
+    ),
     path(
         "api/v1/users/<str:username>/reviews/",
         UserReviewsView.as_view(),
