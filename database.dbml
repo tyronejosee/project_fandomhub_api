@@ -11,362 +11,415 @@ Table BaseModel {
 
 Table Picture {
   id uuid [pk]
-  content_type
-  object_id
-  content_object
-  image
+  content_type FK
+  object_id uuid
+  content_object GFK
+  image image
 }
 
 Table Video {
   id uuid [pk]
-  content_type
-  object_id
-  content_object
-  video
+  content_type FK
+  object_id uuid
+  content_object GFK
+  video url
 }
 
 // Anime App
 
 Table Broadcast {
   id uuid [pk]
-  string
-  day
-  time
-  timezone
+  string varchar
+  day varchar
+  time time
+  timezone varchar
 }
 
 Table Anime {
   id uuid [pk]
-  name
-  name_jpn
-  name_rom
-  alternative_names
-  image
-  trailer
-  synopsis
-  background
-  season
-  year
-  broadcast_id
-  media_type
-  source
-  episodes
-  status
-  aired_from
-  aired_to
-  producers
-  licensors_id
-  studio_id
-  genres
-  themes
-  duration
-  rating
-  website
-  is_recommended
-  score
-  ranked
-  popularity
-  members
-  favorites
+  slug slug
+  name varchar
+  name_jpn varchar
+  name_rom varchar
+  alternative_names json
+  image image
+  trailer url
+  synopsis text
+  background text
+  season varchar
+  year int
+  broadcast_id FK
+  media_type varchar
+  source varchar
+  episodes int
+  status varchar
+  aired_from date
+  aired_to date
+  producers M2M
+  licensors_id FK
+  studio_id FK
+  genres M2M
+  themes M2M
+  duration time
+  rating varchar
+  website url
+  is_recommended bool
+  score float
+  ranked int
+  popularity int
+  members int
+  favorites int
 }
 
 Table AnimeStats {
   id uuid [pk]
-  anime_id
-  watching
-  completed
-  on_hold
-  dropped
-  plan_to_watch
-  total
+  anime_id O2O
+  watching int
+  completed int
+  on_hold int
+  dropped int
+  plan_to_watch int
+  total int
 }
 
 // Characters App
 
 Table Character {
   id uuid [pk]
-  name
-  name_kanji
-  about
-  role
-  image
-  voices
-  animes
-  mangas
-  favorites
+  slug slug
+  name varchar
+  name_kanji varchar
+  about text
+  role varchar
+  image image
+  voices M2M
+  animes M2M
+  mangas M2M
+  favorites int
 }
 
 Table CharacterVoice {
   id uuid [pk]
-  character_id
-  voice_id
+  character_id FK
+  voice_id FK
 }
 
 Table CharacterAnime {
   id uuid [pk]
-  character_id
-  anime_id
+  character_id FK
+  anime_id FK
 }
 
 Table CharacterManga {
   id uuid [pk]
-  character_id
-  manga_id
+  character_id FK
+  manga_id FK
 }
 
 // Clubs App
 
 Table Club {
   id uuid [pk]
-  name
-  description
-  image
-  category
-  members
-  created_by
-  is_public
+  name varchar
+  description text
+  image image
+  category varchar
+  members int
+  created_by O2O
+  is_public bool
 }
 
 Table ClubMember {
   id uuid [pk]
-  club_id
-  user_id
-  joined_at
+  club_id FK
+  user_id FK
+  joined_at datetime
 }
 
 Table Event {
   id uuid [pk]
-  club_id
-  name
-  description
-  date
+  club_id FK
+  name varchar
+  description text
+  date datetime
 }
 
 Table Topic {
   id uuid [pk]
-  name
-  club_id
-  created_by
+  name varchar
+  club_id FK
+  created_by FK
 }
 
 Table Discussion {
   id uuid [pk]
-  topic_id
-  content
-  created_by
+  topic_id FK
+  content text
+  created_by FK
 }
 
 // Genres App
 
 Table Genre {
   id uuid [pk]
-  name
+  name varchar
 }
 
 Table Theme {
   id uuid [pk]
-  name
+  name varchar
 }
 
 Table Demographic {
   id uuid [pk]
-  name
+  name varchar
 }
 
 // Mangas App
 
 Table Magazine {
   id uuid [pk]
-  name
-  count
+  name varchar
+  count int
 }
 
 Table Manga {
   id uuid [pk]
-  name
-  name_jpn
-  name_rom
-  alternative_names
-  image
-  synopsis
-  background
-  media_type
-  chapters
-  volumes
-  status
-  published_from
-  published_to
-  genres
-  themes
-  demographic_id
-  serialization_id
-  author_id
-  website
-  is_recommended
-  score
-  ranked
-  popularity
-  members
-  favorites
+  slug slug
+  name varchar
+  name_jpn varchar
+  name_rom varchar
+  alternative_names json
+  image image
+  synopsis text
+  background text
+  media_type varchar
+  chapters int
+  volumes int
+  status varchar
+  published_from date
+  published_to date
+  genres M2M
+  themes M2M
+  demographic_id FK
+  serialization_id FK
+  author_id FK
+  website url
+  is_recommended bool
+  score float
+  ranked int
+  popularity int
+  members int
+  favorites int
 }
 
 Table MangaStats {
   id uuid [pk]
-  manga_id
-  reading
-  completed
-  on_hold
-  dropped
-  plan_to_read
-  total
+  manga_id O2O
+  reading int
+  completed int
+  on_hold int
+  dropped int
+  plan_to_read int
+  total int
 }
 
 // News App
 
 Table News {
   id uuid [pk]
-  slug
-  name
-  description
-  content
-  image
-  source
-  tag
-  anime_relations
-  manga_relations
-  author_id
+  slug slug
+  name varchar
+  description text
+  content text
+  image image
+  source url
+  tag varchar
+  anime_relations M2M
+  manga_relations M2M
+  author_id FK
 }
 
 // Persons App
 
 Table Person {
   id uuid [pk]
-  slug
-  name
-  given_name
-  family_name
-  image
-  alternate_names
-  birthday
-  about
-  website
-  language
-  category
-  favorites
+  slug slug
+  name varchar
+  given_name varchar
+  family_name varchar
+  image image
+  alternate_names json
+  birthday date
+  about text
+  website url
+  language varchar
+  category varchar
+  favorites int
 }
 
 Table StaffAnime {
   id uuid [pk]
-  person_id
-  anime_id
+  person_id FK
+  anime_id FK
 }
 
 // Playlists App
 
 Table AnimeList {
   id uuid [pk]
-  user_id
-  banner
-  is_public
+  user_id FK
+  banner image
+  is_public bool
 }
 
 Table AnimeListItem {
   id uuid [pk]
-  animelist_id
-  anime_id
-  status
-  episodes_watched
-  score
-  start_date
-  finish_date
-  tags
-  priority
-  storage
-  times_rewatched
-  notes
-  order
-  is_watched
-  is_favorite
+  animelist_id FK
+  anime_id FK
+  status varchar
+  episodes_watched int
+  score int
+  start_date date
+  finish_date date
+  tags json
+  priority varchar
+  storage varchar
+  times_rewatched int
+  notes text
+  order int
+  is_watched bool
+  is_favorite bool
 }
 
 Table MangaList {
   id uuid [pk]
-  user_id
-  banner
-  is_public
+  user_id FK
+  banner image
+  is_public bool
 }
 
 Table MangaListItem {
   id uuid [pk]
-  mangalist_id
-  manga_id
-  status
-  volumes_read
-  chapters_read
-  score
-  start_date
-  finish_date
-  tags
-  priority
-  storage
-  times_reread
-  notes
-  order
-  is_read
-  is_favorite
+  mangalist_id FK
+  manga_id FK
+  status varchar
+  volumes_read int
+  chapters_read int
+  score int
+  start_date date
+  finish_date date
+  tags json
+  priority varchar
+  storage varchar
+  times_reread int
+  notes text
+  order int
+  is_read bool
+  is_favorite bool
 }
 
 // Producers App
 
 Table Producer {
   id uuid [pk]
-  name
-  name_jpn
-  about
-  established
-  type
-  image
-  favorites
+  name varchar
+  name_jpn varchar
+  about text
+  established varchar
+  type varchar
+  image image
+  favorites int
 }
 
 // Profiles App
 
 Table Profile {
   id uuid [pk]
-  user_id
-  first_name
-  last_name
-  birth_date
-  bio
-  image
-  cover
+  user_id O2O
+  first_name varchar
+  last_name varchar
+  birth_date date
+  bio text
+  image image
+  cover image
 }
 
 // Reviews App
 
 Table Review {
   id uuid [pk]
-  user_id
-  content_type
-  object_id
-  content_object
-  rating
-  comment
-  is_spoiler
-  helpful_count
-  reported_count
+  user_id FK
+  content_type FK
+  object_id uuid
+  content_object GFK
+  rating int
+  comment text
+  is_spoiler bool
+  helpful_count int
+  reported_count int
 }
 
 // Users App
 
 Table User {
   id uuid [pk]
-  email
-  username
-  role
-  is_online
-  is_active
-  is_staff
-  created_at
-  updated_at
+  email email
+  username varchar
+  role varchar
+  is_online bool
+  is_active bool
+  is_staff bool
+  created_at datetime
+  updated_at datetime
 }
+
+// Relations
+
+Ref: Anime.broadcast_id < Broadcast.id
+Ref: Anime.licensors_id < Producer.id
+Ref: Anime.studio_id < Producer.id
+
+Ref: AnimeStats.anime_id < Anime.id
+
+Ref: CharacterVoice.character_id < Character.id
+Ref: CharacterVoice.voice_id < Person.id
+
+Ref: CharacterManga.character_id < Character.id
+Ref: CharacterManga.manga_id < Manga.id
+
+Ref: Club.created_by < User.id
+
+Ref: ClubMember.club_id < Club.id
+Ref: ClubMember.user_id < User.id
+
+Ref: Event.club_id < Club.id
+
+Ref: Topic.club_id < Club.id
+Ref: Topic.created_by < User.id
+
+Ref: Discussion.topic_id < Topic.id
+Ref: Discussion.created_by < User.id
+
+Ref: Manga.demographic_id < Demographic.id
+Ref: Manga.serialization_id < Producer.id
+Ref: Manga.author_id < Person.id
+
+Ref: MangaStats.manga_id < Manga.id
+
+Ref: News.author_id < User.id
+
+Ref: StaffAnime.person_id < Person.id
+Ref: StaffAnime.anime_id < Anime.id
+
+Ref: AnimeList.user_id < User.id
+
+Ref: AnimeListItem.animelist_id < AnimeList.id
+Ref: AnimeListItem.anime_id < Anime.id
+
+Ref: MangaList.user_id < User.id
+
+Ref: MangaListItem.mangalist_id < MangaList.id
+Ref: MangaListItem.manga_id < Manga.id
+
+Ref: Profile.user_id < User.id
