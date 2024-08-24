@@ -139,7 +139,7 @@ class Anime(SlugMixin, BaseModel):
         },
         related_name="produced_animes",
         verbose_name=_("producers"),
-        help_text=_("DISTRIBUTOR tag")
+        help_text=_("DISTRIBUTOR tag"),
     )
     licensors_id = models.ForeignKey(
         Producer,
@@ -152,7 +152,7 @@ class Anime(SlugMixin, BaseModel):
         },
         related_name="licensed_animes",
         verbose_name=_("licensors"),
-        help_text=_("LICENSOR tag")
+        help_text=_("LICENSOR tag"),
     )
     studio_id = models.ForeignKey(
         Producer,
@@ -200,6 +200,18 @@ class Anime(SlugMixin, BaseModel):
         self.set_name_rom()
         self.set_slug()
         super().save(*args, **kwargs)
+
+    @property
+    def is_airing(self):
+        return self.status == StatusChoices.AIRING
+
+    @property
+    def is_finished(self):
+        return self.status == StatusChoices.FINISHED
+
+    @property
+    def is_upcoming(self):
+        return self.status == StatusChoices.UPCOMING
 
     def set_name_rom(self):
         if not self.name_rom:

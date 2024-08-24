@@ -1,4 +1,4 @@
-
+# Project
 *.pyc
 __pycache__
 .git
@@ -14,9 +14,9 @@ __pycache__
 env
 .envs/
 .idea
-
 desktop.ini
+database.dbml
+CONTRIBUTORS.txt
 LICENCE
 PLANNING.md
 README.md
-docs

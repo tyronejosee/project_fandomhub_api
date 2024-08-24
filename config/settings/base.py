@@ -1,6 +1,7 @@
 """Settings for config project (Base)."""
 
 import os
+import sys
 from datetime import timedelta
 from pathlib import Path
 
@@ -9,11 +10,25 @@ import environ
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 env = environ.Env()
-environ.Env.read_env(".env.dev")
+environ.Env.read_env(".env")
+
+DEBUG = env("DEBUG")
+
+SECRET_KEY = env("SECRET_KEY")
 
 ADMINS = [
     (env("ADMIN_NAME"), env("ADMIN_EMAIL")),
 ]
+
+
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
+
+CORS_ORIGIN_WHITELIST = env.list("CORS_ORIGIN_WHITELIST")
+
+CSRF_TRUSTED_ORIGINS = env.list("CSRF_TRUSTED_ORIGINS")
+
+INTERNAL_IPS = env.list("INTERNAL_IPS")
+
 
 BASE_APPS = [
     "django.contrib.admin",
@@ -122,6 +137,38 @@ USE_I18N = True
 
 USE_TZ = True
 
+
+if "test" in sys.argv:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": BASE_DIR / "db.sqlite3",
+        }
+    }
+else:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql",
+            "NAME": env("DATABASE_NAME"),
+            "USER": env("DATABASE_USER"),
+            "PASSWORD": env("DATABASE_PASSWORD"),
+            "HOST": "db",
+            "PORT": "5432",
+        }
+    }
+
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": env("CACHE_LOCATION"),
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        },
+    },
+}
+
+
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [
         "rest_framework_simplejwt.authentication.JWTAuthentication",
@@ -205,10 +252,13 @@ SPECTACULAR_SETTINGS = {
     "VERSION": "v1",
     "DESCRIPTION": "The FandomHub API provides access to data about animes and manga.",
     "LICENSE": {
-        "name": "Apache Licence 2.0",
-        "url": "https://github.com/tyronejosee/project_fandomhub_api/blob/main/LICENSE",
+        "name": env("LICENCE_NAME"),
+        "url": env("LICENCE_URL"),
     },
-    "CONTACT": {"name": "Developer", "url": "https://github.com/tyronejosee"},
+    "CONTACT": {
+        "name": env("CONTACT_NAME"),
+        "url": env("CONTACT_URL"),
+    },
     "SCHEMA_PATH_PREFIX": r"^/api/v\d+",
     "SCHEMA_PATH_PREFIX_TRIM": True,
     "SERVE_INCLUDE_SCHEMA": False,

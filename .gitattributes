@@ -12,6 +12,5 @@
 *.yaml text
 *.html text
 *.csv text
-
 *.xls binary
 *.xlsx binary

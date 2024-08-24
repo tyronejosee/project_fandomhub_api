@@ -1,23 +1,9 @@
 """Settings for config project (Production)."""
 
 import os
-import environ
 from .base import *
 
-
-env = environ.Env()
-environ.Env.read_env("config/.env")
-
-DEBUG = False
-
-ALLOWED_HOSTS = ["example.com", "www.example.com"]
-
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
+# TODO: Refactor middleware configs
 
 MIDDLEWARE = [
     "social_django.middleware.SocialAuthExceptionMiddleware",
@@ -55,10 +41,7 @@ SECURE_HSTS_SECONDS = 31536000  # 1 year
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_BROWSER_XSS_FILTER = True
 
-CORS_ALLOWED_ORIGINS = [
-    "https://example.com",
-    "https://subdomain.example.com",
-]
+CORS_ALLOWED_ORIGINS = env.list("CORS_ALLOWED_ORIGINS")
 
 # CORS_ALLOW_ALL_ORIGINS = True
 
