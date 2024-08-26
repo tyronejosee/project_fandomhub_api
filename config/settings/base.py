@@ -250,7 +250,10 @@ AUTH_USER_MODEL = "users.User"
 SPECTACULAR_SETTINGS = {
     "TITLE": "FandomHub (API)",
     "VERSION": "v1",
-    "DESCRIPTION": "The FandomHub API provides access to data about animes and manga.",
+    "DESCRIPTION": (
+        "The FandomHub API provides access to data about animes and manga."
+        "\nAccess the API documentation at `/docs` or `/redoc`."
+    ),
     "LICENSE": {
         "name": env("LICENCE_NAME"),
         "url": env("LICENCE_URL"),
@@ -259,12 +262,60 @@ SPECTACULAR_SETTINGS = {
         "name": env("CONTACT_NAME"),
         "url": env("CONTACT_URL"),
     },
-    "SCHEMA_PATH_PREFIX": r"^/api/v\d+",
-    "SCHEMA_PATH_PREFIX_TRIM": True,
     "SERVE_INCLUDE_SCHEMA": False,
     "SWAGGER_UI_DIST": "SIDECAR",
     "SWAGGER_UI_FAVICON_HREF": "SIDECAR",
     "REDOC_DIST": "SIDECAR",
+    "TAGS": [
+        {
+            "name": "schedules",
+            "description": "Operations related to schedules",
+        },
+        {
+            "name": "animes",
+            "description": "Operations related to animes",
+        },
+        {
+            "name": "mangas",
+            "description": "Operations related to mangas",
+        },
+        {
+            "name": "genres",
+            "description": "Operations related to genres",
+        },
+        {
+            "name": "themes",
+            "description": "Operations related to themes",
+        },
+        {
+            "name": "demographics",
+            "description": "Operations related to demographics",
+        },
+        {
+            "name": "seasons",
+            "description": "Operations related to seasons",
+        },
+        {
+            "name": "characters",
+            "description": "Operations related to characters",
+        },
+        {
+            "name": "persons",
+            "description": "Operations related to persons",
+        },
+        {
+            "name": "magazines",
+            "description": "Operations related to magazines",
+        },
+        {
+            "name": "news",
+            "description": "Operations related to news",
+        },
+        {
+            "name": "clubs",
+            "description": "Operations related to clubs",
+        },
+    ],
 }
 
 LOG_DIR = os.path.join(BASE_DIR, "logs")
