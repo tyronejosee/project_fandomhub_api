@@ -304,6 +304,10 @@ SPECTACULAR_SETTINGS = {
             "description": "Operations related to persons",
         },
         {
+            "name": "producers",
+            "description": "Operations related to producers",
+        },
+        {
             "name": "magazines",
             "description": "Operations related to magazines",
         },
@@ -312,8 +316,44 @@ SPECTACULAR_SETTINGS = {
             "description": "Operations related to news",
         },
         {
+            "name": "randoms",
+            "description": "Operations related to randoms",
+        },
+        {
+            "name": "recommendations",
+            "description": "Operations related to recommendations",
+        },
+        {
+            "name": "tops",
+            "description": "Operations related to tops",
+        },
+        {
             "name": "clubs",
             "description": "Operations related to clubs",
+        },
+        {
+            "name": "animelists",
+            "description": "Operations related to animelists",
+        },
+        {
+            "name": "mangalists",
+            "description": "Operations related to mangalists",
+        },
+        {
+            "name": "profiles",
+            "description": "Operations related to profiles",
+        },
+        {
+            "name": "users",
+            "description": "Operations related to users",
+        },
+        {
+            "name": "tokens",
+            "description": "Operations related to tokens",
+        },
+        {
+            "name": "socials",
+            "description": "Operations related to socials",
         },
     ],
 }

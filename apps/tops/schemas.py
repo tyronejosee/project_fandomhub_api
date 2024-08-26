@@ -15,9 +15,10 @@ top_anime_schemas = {
         description="Get a list of top animes.",
         responses={
             200: OpenApiResponse(AnimeMinimalSerializer(many=True), description="OK"),
-            404: OpenApiResponse(description="Not found"),
+            404: OpenApiResponse(description="Not Found"),
         },
         auth=[],
+        tags=["tops"],
     ),
 }
 
@@ -28,9 +29,10 @@ top_manga_schemas = {
         description="Get a list of top mangas.",
         responses={
             200: OpenApiResponse(MangaMinimalSerializer(many=True), description="OK"),
-            404: OpenApiResponse(description="Not found"),
+            404: OpenApiResponse(description="Not Found"),
         },
         auth=[],
+        tags=["tops"],
     ),
 }
 
@@ -43,9 +45,10 @@ top_character_schemas = {
             200: OpenApiResponse(
                 CharacterMinimalSerializer(many=True), description="OK"
             ),
-            404: OpenApiResponse(description="Not found"),
+            404: OpenApiResponse(description="Not Found"),
         },
         auth=[],
+        tags=["tops"],
     ),
 }
 
@@ -56,9 +59,10 @@ top_artist_schemas = {
         description="Get a list of top artists.",
         responses={
             200: OpenApiResponse(PersonMinimalSerializer(many=True), description="OK"),
-            404: OpenApiResponse(description="Not found"),
+            404: OpenApiResponse(description="Not Found"),
         },
         auth=[],
+        tags=["tops"],
     ),
 }
 
@@ -69,8 +73,9 @@ top_review_schemas = {
         description="Get a list of top reviews.",
         responses={
             200: OpenApiResponse(ReviewReadSerializer(many=True), description="OK"),
-            404: OpenApiResponse(description="Not found"),
+            404: OpenApiResponse(description="Not Found"),
         },
         auth=[],
+        tags=["tops"],
     ),
 }

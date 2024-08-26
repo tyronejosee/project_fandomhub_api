@@ -21,15 +21,18 @@ animelist_schemas = {
         responses={
             200: OpenApiResponse(AnimeListReadSerializer, description="OK"),
         },
+        tags=["animelists"],
     ),
     "patch": extend_schema(
         summary="Update Animelist",
         description="Update some fields of a animelist, only for `IsMember` users.",
+        request=AnimeListWriteSerializer,
         responses={
             200: OpenApiResponse(AnimeListWriteSerializer, description="OK"),
-            400: OpenApiResponse(description="Bad request"),
-            500: OpenApiResponse(description="Internal server error"),
+            400: OpenApiResponse(description="Bad Request"),
+            500: OpenApiResponse(description="Internal Server Error"),
         },
+        tags=["animelists"],
     ),
 }
 
@@ -42,15 +45,18 @@ animelist_item_schemas = {
             200: OpenApiResponse(AnimeListItemReadSerializer, description="OK"),
             204: OpenApiResponse(description="No Content"),
         },
+        tags=["animelists"],
     ),
     "post": extend_schema(
         summary="Create Anime in Animelist",
         description="Create an anime in the animelist, only creator (`IsMember`).",
+        request=AnimeListItemWriteSerializer,
         responses={
             201: OpenApiResponse(AnimeListItemWriteSerializer, description="Created"),
-            400: OpenApiResponse(description="Bad request"),
-            500: OpenApiResponse(description="Internal server error"),
+            400: OpenApiResponse(description="Bad Request"),
+            500: OpenApiResponse(description="Internal Server Error"),
         },
+        tags=["animelists"],
     ),
 }
 
@@ -62,19 +68,25 @@ animelist_item_detail_schemas = {
         responses={
             200: OpenApiResponse(AnimeListItemReadSerializer, description="OK"),
         },
+        tags=["animelists"],
     ),
     "patch": extend_schema(
         summary="Update Anime from Animelist",
         description="Update specific fields of an anime in the animelist, only creator (`IsMember`).",
+        request=AnimeListItemWriteSerializer,
         responses={
             200: OpenApiResponse(AnimeListItemWriteSerializer, description="OK"),
-            400: OpenApiResponse(description="Bad request"),
+            400: OpenApiResponse(description="Bad Request"),
         },
+        tags=["animelists"],
     ),
     "delete": extend_schema(
         summary="Remove Anime from Animelist",
         description="Remove an anime from the animelist, only creator (`IsMember`).",
-        responses={204: OpenApiResponse(description="No Content")},
+        responses={
+            204: OpenApiResponse(description="No Content"),
+        },
+        tags=["animelists"],
     ),
 }
 
@@ -86,15 +98,18 @@ mangalist_schemas = {
         responses={
             200: OpenApiResponse(MangaListReadSerializer, description="OK"),
         },
+        tags=["mangalists"],
     ),
     "patch": extend_schema(
         summary="Update Mangalist",
         description="Update some fields of a mangalist, only for `IsMember` users.",
+        request=MangaListWriteSerializer,
         responses={
             200: OpenApiResponse(MangaListWriteSerializer, description="OK"),
-            400: OpenApiResponse(description="Bad request"),
-            500: OpenApiResponse(description="Internal server error"),
+            400: OpenApiResponse(description="Bad Request"),
+            500: OpenApiResponse(description="Internal Server Error"),
         },
+        tags=["mangalists"],
     ),
 }
 
@@ -107,15 +122,18 @@ mangalist_item_schemas = {
             200: OpenApiResponse(MangaListItemReadSerializer, description="OK"),
             204: OpenApiResponse(description="No Content"),
         },
+        tags=["mangalists"],
     ),
     "post": extend_schema(
         summary="Create Manga in Mangalist",
         description="Create an manga in the mangalist, only creator (`IsMember`).",
+        request=MangaListItemWriteSerializer,
         responses={
             201: OpenApiResponse(MangaListItemWriteSerializer, description="Created"),
-            400: OpenApiResponse(description="Bad request"),
-            500: OpenApiResponse(description="Internal server error"),
+            400: OpenApiResponse(description="Bad Request"),
+            500: OpenApiResponse(description="Internal Server Error"),
         },
+        tags=["mangalists"],
     ),
 }
 
@@ -127,18 +145,24 @@ mangalist_item_detail_schemas = {
         responses={
             200: OpenApiResponse(MangaListItemReadSerializer, description="OK"),
         },
+        tags=["mangalists"],
     ),
     "patch": extend_schema(
         summary="Update Manga from Mangalist",
         description="Update specific fields of an manga in the mangalist, only creator (`IsMember`).",
+        request=MangaListItemWriteSerializer,
         responses={
             200: OpenApiResponse(MangaListItemWriteSerializer, description="OK"),
-            400: OpenApiResponse(description="Bad request"),
+            400: OpenApiResponse(description="Bad Request"),
         },
+        tags=["mangalists"],
     ),
     "delete": extend_schema(
         summary="Remove Maga from Mangalist",
         description="Remove an manga from the mangalist, only creator (`IsMember`).",
-        responses={204: OpenApiResponse(description="No Content")},
+        responses={
+            204: OpenApiResponse(description="No Content"),
+        },
+        tags=["mangalists"],
     ),
 }

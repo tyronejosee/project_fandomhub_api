@@ -14,9 +14,10 @@ random_anime_schemas = {
         description="Retrieve a random anime from the entire available catalog.",
         responses={
             200: OpenApiResponse(AnimeMinimalSerializer, description="OK"),
-            400: OpenApiResponse(description="Bad request"),
+            400: OpenApiResponse(description="Bad Request"),
         },
         auth=[],
+        tags=["randoms"],
     ),
 }
 
@@ -27,9 +28,10 @@ random_manga_schemas = {
         description="Retrieve a random manga from the entire available catalog.",
         responses={
             200: OpenApiResponse(MangaMinimalSerializer, description="OK"),
-            400: OpenApiResponse(description="Bad request"),
+            400: OpenApiResponse(description="Bad Request"),
         },
         auth=[],
+        tags=["randoms"],
     ),
 }
 
@@ -40,9 +42,10 @@ random_character_schemas = {
         description="Retrieve a random character from the entire available catalog.",
         responses={
             200: OpenApiResponse(CharacterReadSerializer, description="OK"),
-            400: OpenApiResponse(description="Bad request"),
+            400: OpenApiResponse(description="Bad Request"),
         },
         auth=[],
+        tags=["randoms"],
     ),
 }
 
@@ -53,8 +56,9 @@ random_person_schemas = {
         description="Retrieve a random person from the entire available catalog.",
         responses={
             200: OpenApiResponse(PersonReadSerializer, description="OK"),
-            400: OpenApiResponse(description="Bad request"),
+            400: OpenApiResponse(description="Bad Request"),
         },
         auth=[],
+        tags=["randoms"],
     ),
 }
