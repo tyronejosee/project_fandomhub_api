@@ -180,6 +180,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoints:
         - GET /api/v1/animes/{id}/reviews/
         """
+        # ! TODO: Add service layer
         anime = self.get_object()
         content_type = ContentType.objects.get_for_model(Anime)
 
@@ -214,6 +215,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoint:
         - POST /api/v1/animes/{id}/reviews/create/
         """
+        # ! TODO: Add service layer
         anime = self.get_object()
         anime_model = ContentType.objects.get_for_model(Anime)
 
@@ -249,6 +251,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         - PATCH /api/v1/animes/{id}/reviews/{review_id}/
         - DELETE /api/v1/animes/{id}/reviews/{review_id}/
         """
+        # ! TODO: Add service layer
         anime = self.get_object()
         anime_model = ContentType.objects.get_for_model(Anime)
 

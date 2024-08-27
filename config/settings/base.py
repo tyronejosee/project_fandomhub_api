@@ -271,17 +271,13 @@ SPECTACULAR_SETTINGS = {
     "REDOC_UI_SETTINGS": {
         "hideHostname": True,
         "theme": {
-            "colors": {
-                "primary": {"main": "#FF135B"},
-                "secondary": {"main": "#00000"},
-            }
+            "colors": {"primary": {"main": "#FF135B"}},
         },
     },
     "EXTENSIONS_INFO": {
         "x-logo": {
-            "url": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1724775927/Drop%20Dash%20API/fb9ai97yagzqsimsdg4q.png",
+            "url": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1724788246/Drop%20Dash%20API/pyqqdznrcqofiuxd4l4e.png",
             "altText": "API Logo",
-            "width": "200px",
         },
     },
     "TAGS": [

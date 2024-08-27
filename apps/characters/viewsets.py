@@ -99,6 +99,7 @@ class CharacterViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Endpoints:
         - POST api/v1/characters/{id}/pictures/create/
         """
+        # ! TODO: Add service layer
         serializer = PictureWriteSerializer(data=request.data)
         if serializer.is_valid():
             character = self.get_object()
