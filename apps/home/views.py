@@ -4,6 +4,7 @@ from django.core.cache import cache
 from rest_framework.views import APIView
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
+from drf_spectacular.utils import extend_schema_view
 
 from apps.animes.models import Anime
 from apps.animes.choices import StatusChoices
@@ -11,8 +12,10 @@ from apps.animes.serializers import AnimeMinimalSerializer
 from apps.animes.functions import get_current_season
 from apps.reviews.models import Review
 from apps.reviews.serializers import ReviewReadSerializer
+from .schemas import home_schemas
 
 
+@extend_schema_view(**home_schemas)
 class HomePageView(APIView):
     """View get all data for home page."""
 
@@ -20,7 +23,6 @@ class HomePageView(APIView):
     cache_key = "home_data"
 
     def get(self, request, *args, **kwargs):
-        # TODO: Add schemas
         cached_data = cache.get(self.cache_key)
         current_season, current_year = get_current_season()
 
