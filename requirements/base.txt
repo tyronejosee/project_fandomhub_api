@@ -29,6 +29,9 @@ redis==5.0.2
 # Monitoring
 django-prometheus==2.3.1
 
+# Cron
+django-crontab==0.7.1
+
 # Utilities
 pillow==10.2.0
 django-import-export==4.0.7

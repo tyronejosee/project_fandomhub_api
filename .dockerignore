@@ -11,12 +11,12 @@ __pycache__
 .editorconfig
 .pre-commit-config.yaml
 .readthedocs.yml
-env
+env/
 .envs/
 .idea
 desktop.ini
-database.dbml
-CONTRIBUTORS.txt
 LICENCE
 PLANNING.md
 README.md
+database.dbml
+CONTRIBUTORS.txt

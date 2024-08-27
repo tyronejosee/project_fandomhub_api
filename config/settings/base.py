@@ -69,6 +69,7 @@ THIRD_APPS = [
     "social_django",
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
+    "django_crontab",
     "drf_spectacular",
     "drf_spectacular_sidecar",
 ]
@@ -267,6 +268,22 @@ SPECTACULAR_SETTINGS = {
     "SWAGGER_UI_FAVICON_HREF": "SIDECAR",
     "SWAGGER_UI_FAVICON_HREF": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1724775927/Drop%20Dash%20API/fb9ai97yagzqsimsdg4q.png",
     "REDOC_DIST": "SIDECAR",
+    "REDOC_UI_SETTINGS": {
+        "hideHostname": True,
+        "theme": {
+            "colors": {
+                "primary": {"main": "#FF135B"},
+                "secondary": {"main": "#00000"},
+            }
+        },
+    },
+    "EXTENSIONS_INFO": {
+        "x-logo": {
+            "url": "https://res.cloudinary.com/dwyvfa5dj/image/upload/v1724775927/Drop%20Dash%20API/fb9ai97yagzqsimsdg4q.png",
+            "altText": "API Logo",
+            "width": "200px",
+        },
+    },
     "TAGS": [
         {
             "name": "home",
@@ -362,6 +379,20 @@ SPECTACULAR_SETTINGS = {
         },
     ],
 }
+
+CRONJOBS = [
+    ("*/5 * * * *", "apps.utils.jobs.test"),
+]
+
+# CRONTAB_LOCK_JOBS = True
+# CRONTAB_EXECUTABLE = '/usr/bin/crontab'
+# CRONTAB_DJANGO_PROJECT_NAME = 'app'
+# CRONTAB_DJANGO_MANAGE_PATH = '/app/manage.py'
+# CRONTAB_DJANGO_SETTINGS_MODULE = 'config.settings'
+# CRONTAB_PYTHON_EXECUTABLE = '/usr/local/bin/python'
+# CRONTAB_COMMAND_PREFIX = ''
+# CRONTAB_COMMAND_SUFFIX = '2>&1'
+# CRONTAB_COMMENT = 'django-crontabs for ' + CRONTAB_DJANGO_PROJECT_NAME
 
 LOG_DIR = os.path.join(BASE_DIR, "logs")
 
