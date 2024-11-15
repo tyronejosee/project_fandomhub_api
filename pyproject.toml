@@ -1,7 +1,7 @@
 # ==== pytest ====
 [tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "config.settings.local"
 minversion = "6.0"
-addopts = "--ds=config.settings.test --reuse-db"
 python_files = [
     "tests.py",
     "test_*.py",

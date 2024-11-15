@@ -2038,3 +2038,5 @@
 [2024-11-15 20:29:24,377]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 144.0 ms
 [2024-11-15 20:29:25,407]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 87.8 ms
 [2024-11-15 20:29:26,658]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 31944 B 90.7 ms
+[2024-11-15 17:42:54,435]    INFO - Request: 'GET /protected-endpoint/ HTTP/1.1' 404 179 B 305.1 ms
+[2024-11-15 17:42:54,435]    WARNING - Not Found: /protected-endpoint/
