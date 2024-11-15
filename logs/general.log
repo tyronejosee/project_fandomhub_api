@@ -2004,3 +2004,37 @@
 [2024-10-01 21:17:07,694]    INFO - Watching for file changes with StatReloader
 [2024-10-02 14:33:55,342]    INFO - Watching for file changes with StatReloader
 [2024-10-03 14:39:54,114]    INFO - Watching for file changes with StatReloader
+[2024-11-15 20:05:26,972]    INFO - Watching for file changes with StatReloader
+[2024-11-15 20:08:42,286]    INFO - Watching for file changes with StatReloader
+[2024-11-15 20:10:53,684]    INFO - /app/config/settings/base.py changed, reloading.
+[2024-11-15 20:11:00,488]    INFO - Watching for file changes with StatReloader
+[2024-11-15 20:21:20,727]    INFO - Watching for file changes with StatReloader
+[2024-11-15 20:21:37,100]    INFO - Request: 'GET /metrics HTTP/1.1' 200 14911 B 8.2 ms
+[2024-11-15 20:21:52,891]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18549 B 8.8 ms
+[2024-11-15 20:22:07,811]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18548 B 4.3 ms
+[2024-11-15 20:22:22,762]    INFO - Request: 'GET /metrics HTTP/1.1' 200 18547 B 10.6 ms
+[2024-11-15 20:22:25,029]    INFO - Request: 'GET / HTTP/1.1' 302 0 B 0.5 ms
+[2024-11-15 20:22:25,296]    INFO - Request: 'GET /admin/ HTTP/1.1' 302 0 B 257.9 ms
+[2024-11-15 20:22:26,251]    INFO - Request: 'GET /admin/login/ HTTP/1.1' 200 11434 B 892.4 ms
+[2024-11-15 20:22:26,924]    INFO - Request: 'GET /favicon.ico HTTP/1.1' 404 9580 B 64.7 ms
+[2024-11-15 20:22:26,928]    WARNING - Not Found: /favicon.ico
+[2024-11-15 20:22:37,765]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30063 B 15.6 ms
+[2024-11-15 20:22:52,720]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30087 B 11.9 ms
+[2024-11-15 20:23:07,726]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30129 B 19.9 ms
+[2024-11-15 20:23:22,727]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30131 B 7.1 ms
+[2024-11-15 20:23:37,731]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30115 B 10.5 ms
+[2024-11-15 20:23:52,693]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30120 B 8.2 ms
+[2024-11-15 20:24:07,709]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30136 B 24.3 ms
+[2024-11-15 20:24:22,668]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30141 B 21.0 ms
+[2024-11-15 20:24:37,664]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30154 B 21.1 ms
+[2024-11-15 20:24:52,621]    INFO - Request: 'GET /metrics HTTP/1.1' 200 30140 B 16.0 ms
+[2024-11-15 20:26:40,483]    INFO - Watching for file changes with StatReloader
+[2024-11-15 20:27:08,521]    INFO - Request: 'GET / HTTP/1.1' 302 0 B 0.4 ms
+[2024-11-15 20:27:09,936]    INFO - Request: 'GET /admin/ HTTP/1.1' 302 0 B 1363.4 ms
+[2024-11-15 20:27:13,057]    INFO - Request: 'GET /admin/login/ HTTP/1.1' 200 11434 B 3089.9 ms
+[2024-11-15 20:29:21,258]    INFO - Request: 'POST /admin/login/ HTTP/1.1' 302 0 B 592.2 ms
+[2024-11-15 20:29:21,465]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 31944 B 155.7 ms
+[2024-11-15 20:29:24,151]    INFO - Request: 'GET /admin/genres/genre/ HTTP/1.1' 200 29723 B 323.2 ms
+[2024-11-15 20:29:24,377]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 144.0 ms
+[2024-11-15 20:29:25,407]    INFO - Request: 'GET /admin/jsi18n/ HTTP/1.1' 200 8691 B 87.8 ms
+[2024-11-15 20:29:26,658]    INFO - Request: 'GET /admin/ HTTP/1.1' 200 31944 B 90.7 ms
