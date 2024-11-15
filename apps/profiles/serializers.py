@@ -2,14 +2,14 @@
 
 from rest_framework import serializers
 
-from apps.users.serializers import UserMinimumSerializer
+from apps.users.serializers import UserMinimalSerializer
 from .models import Profile
 
 
 class ProfileReadSerializer(serializers.ModelSerializer):
     """Serializer for Profile model (List/retrieve)."""
 
-    user_id = UserMinimumSerializer()
+    user_id = UserMinimalSerializer()
 
     class Meta:
         model = Profile
@@ -52,7 +52,7 @@ class ProfileWriteSerializer(serializers.ModelSerializer):
 class ProfileMinimalSerializer(serializers.ModelSerializer):
     """Serializer for Profile model (Minimal)."""
 
-    user_id = UserMinimumSerializer()
+    user_id = UserMinimalSerializer()
 
     class Meta:
         model = Profile

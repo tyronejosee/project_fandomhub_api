@@ -57,3 +57,12 @@ class LogicalDeleteMixin:
             return Response(
                 {"detail": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
+
+
+class ReadOnlyFieldsMixin:
+    """Mixin to make all serializer fields read-only."""
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for field in self.fields:
+            self.fields[field].read_only = True

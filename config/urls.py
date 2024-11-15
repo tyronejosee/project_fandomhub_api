@@ -43,15 +43,14 @@ urlpatterns = [
     path("", include("apps.persons.routers")),
     path("", include("apps.profiles.routers")),
     path("", include("apps.producers.routers")),
+    path("", include("apps.users.routers")),
     # Apps urls (URLs)
-    path("", include("apps.users.urls")),
     path("", include("apps.home.urls")),
     path("", include("apps.playlists.urls")),
     path("", include("apps.randoms.urls")),
     path("", include("apps.recommendations.urls")),
     path("", include("apps.tops.urls")),
-    # path("", include("apps.reviews.urls")),
-    # path("", include("apps.utils.urls")),
+    # External urls
     path("", include("django_prometheus.urls")),
 ]
 

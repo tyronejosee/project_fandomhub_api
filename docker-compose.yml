@@ -28,6 +28,7 @@ services:
     depends_on:
       - db
       - redis
+    restart: always
 
   grafana:
     container_name: fandomhub_grafana

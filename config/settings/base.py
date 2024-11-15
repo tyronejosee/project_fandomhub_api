@@ -7,10 +7,11 @@ from pathlib import Path
 
 import environ
 
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
-
 env = environ.Env()
 environ.Env.read_env(".env")
+
+
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 DEBUG = env("DEBUG")
 
@@ -19,7 +20,6 @@ SECRET_KEY = env("SECRET_KEY")
 ADMINS = [
     (env("ADMIN_NAME"), env("ADMIN_EMAIL")),
 ]
-
 
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
@@ -77,6 +77,26 @@ THIRD_APPS = [
 INSTALLED_APPS = BASE_APPS + PROJECT_APPS + THIRD_APPS
 
 ROOT_URLCONF = "config.urls"
+
+MIDDLEWARE = [
+    "django_prometheus.middleware.PrometheusBeforeMiddleware",
+    "social_django.middleware.SocialAuthExceptionMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
+    "django_prometheus.middleware.PrometheusAfterMiddleware",
+    # "whitenoise.middleware.WhiteNoiseMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    # "django.middleware.cache.UpdateCacheMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    # "django.middleware.cache.FetchFromCacheMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
+    "apps.utils.middlewares.RequestLoggingMiddleware",
+    # "apps.utils.middlewares.CensorshipMiddleware"
+]
 
 TEMPLATES = [
     {
@@ -239,9 +259,9 @@ DJOSER = {
         "http://localhost:8000/facebook",
     ],
     "SERIALIZERS": {
-        "user_create": "apps.users.serializers.UserSerializer",
-        "user": "apps.users.serializers.UserCreateSerializer",
-        "current_user": "apps.users.serializers.UserSerializer",
+        "user_create": "apps.users.serializers.UserWriteSerializer",
+        "user": "apps.users.serializers.UserWriteSerializer",
+        "current_user": "apps.users.serializers.UserWriteSerializer",
         "user_delete": "djoser.serializers.UserDeleteSerializer",
     },
 }
@@ -360,6 +380,14 @@ SPECTACULAR_SETTINGS = {
         {
             "name": "profiles",
             "description": "Operations related to profiles",
+        },
+        {
+            "name": "socials",
+            "description": "Operations related to socials",
+        },
+        {
+            "name": "tokens",
+            "description": "Operations related to tokens",
         },
         {
             "name": "users",

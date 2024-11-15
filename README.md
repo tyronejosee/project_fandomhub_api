@@ -203,9 +203,28 @@ docker compose exec web python manage.py loaddata
 
 ## 🟥 Redis
 
+Access the Redis console.
+
 ```bash
 docker compose exec redis redis-cli
-keys *
+```
+
+Retrieve all keys.
+
+```bash
+KEYS *
+```
+
+Delete a key from cache.
+
+```bash
+DEL <key_name>
+```
+
+Delete all keys.
+
+```bash
+FLUSHALL
 ```
 
 ## 🌍 Internationalization
