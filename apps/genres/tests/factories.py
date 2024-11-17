@@ -1,13 +1,29 @@
-"""Factories for Genres Tests."""
+"""Factories for Genres App."""
 
-import factory
+from factory import Faker, django
 
-from ..models import Genre
+from ..models import Genre, Theme, Demographic
 
 
-class GenreFactory(factory.django.DjangoModelFactory):
+class GenreFactory(django.DjangoModelFactory):
 
     class Meta:
         model = Genre
 
-    name = "Anime Genre"
+    name = Faker("name")
+
+
+class ThemeFactory(django.DjangoModelFactory):
+
+    class Meta:
+        model = Theme
+
+    name = Faker("name")
+
+
+class DemographicFactory(django.DjangoModelFactory):
+
+    class Meta:
+        model = Demographic
+
+    name = Faker("name")

@@ -23,6 +23,10 @@ class Genre(BaseModel, SlugMixin):
     def __str__(self):
         return str(self.name)
 
+    def save(self, *args, **kwargs):
+        self.set_slug()
+        super().save(*args, **kwargs)
+
 
 class Theme(BaseModel, SlugMixin):
     """Model definition for Theme."""
@@ -39,6 +43,10 @@ class Theme(BaseModel, SlugMixin):
     def __str__(self):
         return str(self.name)
 
+    def save(self, *args, **kwargs):
+        self.set_slug()
+        super().save(*args, **kwargs)
+
 
 class Demographic(BaseModel, SlugMixin):
     """Model definition for Demographic."""
@@ -54,3 +62,7 @@ class Demographic(BaseModel, SlugMixin):
 
     def __str__(self):
         return str(self.name)
+
+    def save(self, *args, **kwargs):
+        self.set_slug()
+        super().save(*args, **kwargs)
