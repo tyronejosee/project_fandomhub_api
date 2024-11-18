@@ -33,7 +33,7 @@ class TestGenreSerializers:
         assert serializer.validated_data["name"] == "Action"
 
     def test_genre_write_serializer_invalid_data(self):
-        data = {"name": ""}  # Nombre vacío no debería ser válido
+        data = {"name": ""}
         serializer = GenreWriteSerializer(data=data)
         assert not serializer.is_valid()
         assert "name" in serializer.errors
