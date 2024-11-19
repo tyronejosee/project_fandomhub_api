@@ -3154,3 +3154,290 @@ c2d1dd/ HTTP/1.1' 200 145 B 17.6 ms
 [2024-11-18 18:20:22,061]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 189 B 120.4 ms
 [2024-11-18 18:20:22,142]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 198 B 247.7 ms
 [2024-11-18 18:20:22,390]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1049 B 49.9 ms
+[2024-11-18 19:32:33,478]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 197 B 132.3 ms
+43349/ HTTP/1.1' 200 24 B 17.6 ms
+[2024-11-18 19:32:33,636]    INFO - Request: 'GET /api/v1/genres/aad07e63-8fda-4190-9adc-ab8da8d9cda1/ HTTP/1.1' 200 141 B 6.5 ms
+[2024-11-18 19:32:33,655]    INFO - Request: 'GET /api/v1/themes/1072b5fc-d99b-44a5-8820-e003d5fe5fd4/ HTTP/1.1' 200 141 B 5.5 ms
+[2024-11-18 19:32:33,786]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 195 B 11.6 ms
+[2024-11-18 19:32:34,681]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 3.0 ms
+[2024-11-18 19:32:34,682]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 19:32:34,711]    INFO - Request: 'PUT /api/v1/genres/619bc7f4-d785-43dd-b175-9c3b900d52bf/ HTTP/1.1' 200 34 B 6.1 ms
+[2024-11-18 19:32:34,736]    INFO - Request: 'GET /api/v1/demographics/35b116f4-cb6f-4740-b177-52f0ee9ced82/ HTTP/1.1' 200 139 B 5.5 ms
+[2024-11-18 19:32:34,908]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 1.7 ms
+[2024-11-18 19:32:34,909]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 19:32:35,134]    INFO - Request: 'DELETE /api/v1/genres/d11413e5-f4fb-4ff3-860a-dd2539de0d6b/ HTTP/1.1' 204 0 B 5.0 ms
+[2024-11-18 19:32:35,163]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 195 B 15.5 ms
+[2024-11-18 19:32:36,838]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 506 B 37.7 ms
+[2024-11-18 19:32:36,976]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 199 B 24.8 ms
+[2024-11-18 19:32:37,372]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1054 B 80.9 ms
+[2024-11-18 19:32:38,182]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 251 B 91.5 ms
+[2024-11-18 19:32:38,376]    INFO - Request: 'GET /api/v1/animes/a1b2446f-705b-42b5-a28c-8397c14cc54d/ HTTP/1.1' 200 958 B 51.9 ms
+[2024-11-18 19:34:32,306]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 252 B 37.5 ms
+[2024-11-18 19:34:32,390]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 197 B 65.9 ms
+[2024-11-18 19:34:32,411]    INFO - Request: 'GET /api/v1/genres/326a2da1-a218-4b3e-be28-1e7af73b8398/ HTTP/1.1' 200 143 B 6.8 ms
+[2024-11-18 19:34:32,420]    INFO - Request: 'GET /api/v1/animes/72784089-e8c9-46a2-ac35-1df067a42b77/ HTTP/1.1' 200 1028 B 32.0 ms
+[2024-11-18 19:34:32,433]    INFO - Request: 'GET /api/v1/themes/8abcdccd-9aa8-488a-ae03-d08cfa470003/ HTTP/1.1' 200 145 B 5.0 ms
+[2024-11-18 19:34:32,470]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 187 B 20.5 ms
+[2024-11-18 19:34:32,512]    INFO - Request: 'GET /api/v1/demographics/3fa0fd31-ad93-45e4-838a-3140782312f0/ HTTP/1.1' 200 145 B 11.9 ms
+[2024-11-18 19:34:32,750]    INFO - Request: 'PUT /api/v1/genres/9b12ce84-d5f8-4fc7-a834-2a2bb1983de0/ HTTP/1.1' 200 24 B 87.4 ms
+[2024-11-18 19:34:33,110]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 29.6 ms
+[2024-11-18 19:34:33,184]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 434 B 45.8 ms
+[2024-11-18 19:34:33,187]    INFO - Request: 'DELETE /api/v1/genres/d3a7d73a-2997-4a16-889b-9fa8cb6ac65e/ HTTP/1.1' 204 0 B 42.3 ms
+[2024-11-18 19:34:33,234]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 199 B 16.0 ms
+[2024-11-18 19:34:33,360]    INFO - Request: 'PUT /api/v1/genres/fbb89f3a-9fa2-4284-a2e6-05e418f4d2d6/ HTTP/1.1' 200 34 B 19.2 ms
+[2024-11-18 19:34:33,381]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 200 B 47.7 ms
+[2024-11-18 19:34:33,472]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 2.0 ms
+[2024-11-18 19:34:33,473]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 19:34:33,483]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 1.5 ms
+[2024-11-18 19:34:33,484]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 19:34:34,098]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1052 B 69.1 ms
+[2024-11-18 19:35:05,063]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 250 B 17.1 ms
+[2024-11-18 19:35:05,161]    INFO - Request: 'GET /api/v1/animes/ebfcdb96-a262-4e77-a099-695913e812d4/ HTTP/1.1' 200 1044 B 58.8 ms
+[2024-11-18 19:35:05,228]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 191 B 50.6 ms
+[2024-11-18 19:35:05,269]    INFO - Request: 'GET /api/v1/genres/8b874986-348b-4062-b9ba-9153f7e7827a/ HTTP/1.1' 200 143 B 5.8 ms
+[2024-11-18 19:35:05,480]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 4.0 ms
+[2024-11-18 19:35:05,642]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 1.6 ms
+[2024-11-18 19:35:05,643]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 19:35:05,653]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 2.0 ms
+[2024-11-18 19:35:05,653]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 19:35:05,861]    INFO - Request: 'PUT /api/v1/genres/99dbeca8-56f6-4697-a1aa-d8608e167394/ HTTP/1.1' 200 24 B 5.0 ms
+[2024-11-18 19:35:06,049]    INFO - Request: 'PUT /api/v1/genres/22f72abd-35be-42e5-a403-7bdb30ebd908/ HTTP/1.1' 200 34 B 6.5 ms
+[2024-11-18 19:35:06,306]    INFO - Request: 'DELETE /api/v1/genres/bd4222ef-f468-4fd6-b372-16eb08fb34c5/ HTTP/1.1' 204 0 B 10.6 ms
+[2024-11-18 19:35:06,330]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 195 B 9.5 ms
+[2024-11-18 19:35:06,369]    INFO - Request: 'GET /api/v1/themes/8b937ecc-a819-43f8-8c68-93f0c6d1e61e/ HTTP/1.1' 200 143 B 23.1 ms
+[2024-11-18 19:35:06,429]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 195 B 12.5 ms
+[2024-11-18 19:35:06,456]    INFO - Request: 'GET /api/v1/demographics/caf2029b-0adf-488f-a363-0e57de0287b0/ HTTP/1.1' 200 141 B 10.5 ms
+[2024-11-18 19:35:07,062]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 474 B 35.3 ms
+[2024-11-18 19:35:07,218]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 196 B 30.5 ms
+[2024-11-18 19:35:07,598]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1051 B 24.8 ms
+[2024-11-18 19:41:48,901]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 252 B 15.6 ms
+[2024-11-18 19:41:49,008]    INFO - Request: 'GET /api/v1/animes/6aded3a2-cdfd-4d44-ae11-3919240762a2/ HTTP/1.1' 200 994 B 28.0 ms
+[2024-11-18 19:41:49,052]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 187 B 27.3 ms
+[2024-11-18 19:41:49,084]    INFO - Request: 'GET /api/v1/genres/9b71613f-a0bd-4a61-8b09-457b1c064bec/ HTTP/1.1' 200 151 B 5.0 ms
+[2024-11-18 19:41:49,336]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 3.0 ms
+[2024-11-18 19:41:49,526]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 7.1 ms
+[2024-11-18 19:41:49,527]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 19:41:49,536]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 1.0 ms
+[2024-11-18 19:41:49,537]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 19:41:49,799]    INFO - Request: 'PUT /api/v1/genres/d60dd4b2-7653-4c87-a9b8-a679907618e4/ HTTP/1.1' 200 24 B 5.5 ms
+[2024-11-18 19:41:50,025]    INFO - Request: 'PUT /api/v1/genres/e0339914-f0b9-4632-9a76-cfd43f7fcc2c/ HTTP/1.1' 200 34 B 4.0 ms
+[2024-11-18 19:41:50,302]    INFO - Request: 'DELETE /api/v1/genres/18ec0d2d-0a7a-4252-a86d-db465ce4b15a/ HTTP/1.1' 204 0 B 4.5 ms
+[2024-11-18 19:41:50,334]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 193 B 10.5 ms
+[2024-11-18 19:41:50,382]    INFO - Request: 'GET /api/v1/themes/51a57321-266b-4425-ba43-712723ea2907/ HTTP/1.1' 200 143 B 5.5 ms
+[2024-11-18 19:41:50,435]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 197 B 32.8 ms
+[2024-11-18 19:41:50,528]    INFO - Request: 'GET /api/v1/demographics/ce9d95bc-dd14-4103-84a4-bd6e74b1fdf9/ HTTP/1.1' 200 149 B 9.5 ms
+[2024-11-18 19:41:50,937]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 603 B 27.3 ms
+[2024-11-18 19:41:51,987]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 197 B 15.1 ms
+[2024-11-18 19:41:52,323]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1053 B 23.6 ms
+[2024-11-18 19:42:59,661]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 249 B 20.1 ms
+[2024-11-18 19:42:59,754]    INFO - Request: 'GET /api/v1/animes/b3f033ad-710c-44d0-880e-412b19ae476a/ HTTP/1.1' 200 1062 B 17.1 ms
+[2024-11-18 19:42:59,779]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 193 B 13.7 ms
+[2024-11-18 19:42:59,794]    INFO - Request: 'GET /api/v1/genres/3857daa2-dfb5-4a8a-9014-1dfb34c3b2f4/ HTTP/1.1' 200 145 B 5.5 ms
+[2024-11-18 19:43:00,106]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 4.0 ms
+[2024-11-18 19:43:00,310]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 2.0 ms
+[2024-11-18 19:43:00,313]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 19:43:00,323]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 2.0 ms
+[2024-11-18 19:43:00,324]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 19:43:00,544]    INFO - Request: 'PUT /api/v1/genres/22231885-f741-4881-aca8-50edf19e259e/ HTTP/1.1' 200 24 B 6.4 ms
+[2024-11-18 19:43:00,781]    INFO - Request: 'PUT /api/v1/genres/e837de6d-9ed5-4518-9803-391aab0e984c/ HTTP/1.1' 200 34 B 4.5 ms
+[2024-11-18 19:43:01,112]    INFO - Request: 'DELETE /api/v1/genres/586d07ee-970f-41ee-8cc7-c6ccfe75ea9a/ HTTP/1.1' 204 0 B 10.5 ms
+[2024-11-18 19:43:01,166]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 191 B 18.1 ms
+[2024-11-18 19:43:01,266]    INFO - Request: 'GET /api/v1/themes/473a4164-534c-4fa9-87e2-49e2d915b199/ HTTP/1.1' 200 155 B 7.1 ms
+[2024-11-18 19:43:01,293]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 209 B 13.1 ms
+[2024-11-18 19:43:01,313]    INFO - Request: 'GET /api/v1/demographics/aeafaf64-7988-478f-9105-0df4060a61de/ HTTP/1.1' 200 143 B 8.6 ms
+[2024-11-18 19:43:01,717]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 511 B 23.2 ms
+[2024-11-18 19:43:01,841]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 203 B 17.0 ms
+[2024-11-18 19:43:02,509]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1060 B 69.4 ms
+[2024-11-18 19:45:00,811]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 250 B 15.7 ms
+[2024-11-18 19:45:00,927]    INFO - Request: 'GET /api/v1/animes/1c1264be-6d90-4a41-8ee6-920090d4fa8c/ HTTP/1.1' 200 1022 B 23.1 ms
+[2024-11-18 19:45:00,953]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 201 B 15.1 ms
+[2024-11-18 19:45:00,967]    INFO - Request: 'GET /api/v1/genres/98aa51bf-119c-4bcd-b9d2-340b945da5d7/ HTTP/1.1' 200 143 B 5.0 ms
+[2024-11-18 19:45:01,261]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 6.7 ms
+[2024-11-18 19:45:01,465]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 1.0 ms
+[2024-11-18 19:45:01,466]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 19:45:01,475]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 1.0 ms
+[2024-11-18 19:45:01,476]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 19:45:01,658]    INFO - Request: 'PUT /api/v1/genres/e2ed5614-5f09-46b6-a6d1-cb6ea5f02150/ HTTP/1.1' 200 24 B 6.0 ms
+[2024-11-18 19:45:01,842]    INFO - Request: 'PUT /api/v1/genres/49c3f4f7-5adb-405c-8f58-29050c0dd166/ HTTP/1.1' 200 34 B 4.5 ms
+[2024-11-18 19:45:02,023]    INFO - Request: 'DELETE /api/v1/genres/1530c7f7-6956-4a66-8357-71b915e13b4e/ HTTP/1.1' 204 0 B 3.5 ms
+[2024-11-18 19:45:02,044]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 205 B 7.5 ms
+[2024-11-18 19:45:02,058]    INFO - Request: 'GET /api/v1/themes/53f70769-644c-4c1e-9b05-7431dcafca95/ HTTP/1.1' 200 141 B 4.0 ms
+[2024-11-18 19:45:02,082]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 201 B 11.6 ms
+[2024-11-18 19:45:02,122]    INFO - Request: 'GET /api/v1/demographics/f880debd-772e-4729-a257-b2ff26723946/ HTTP/1.1' 200 145 B 8.5 ms
+[2024-11-18 19:45:02,408]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 435 B 36.0 ms
+[2024-11-18 19:45:02,420]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 435 B 2.5 ms
+[2024-11-18 19:45:03,292]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 198 B 16.1 ms
+[2024-11-18 19:45:03,698]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1052 B 19.2 ms
+[2024-11-18 19:47:49,335]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 252 B 32.4 ms
+[2024-11-18 19:47:49,450]    INFO - Request: 'GET /api/v1/animes/394d0a48-0903-43e9-bb61-30f102ad9f89/ HTTP/1.1' 200 1016 B 28.7 ms
+[2024-11-18 19:47:49,485]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 193 B 20.8 ms
+[2024-11-18 19:47:49,507]    INFO - Request: 'GET /api/v1/genres/ba1b8ac1-4115-4517-a719-ce3d98ea6054/ HTTP/1.1' 200 139 B 8.6 ms
+[2024-11-18 19:47:49,755]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 3.0 ms
+[2024-11-18 19:47:49,943]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 1.0 ms
+[2024-11-18 19:47:49,944]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 19:47:49,955]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 1.0 ms
+[2024-11-18 19:47:49,956]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 19:47:50,172]    INFO - Request: 'PUT /api/v1/genres/6a2a31e5-aea8-42a8-bae6-c3a66b7df46b/ HTTP/1.1' 200 24 B 4.5 ms
+[2024-11-18 19:47:50,357]    INFO - Request: 'PUT /api/v1/genres/2e1a4a9e-5a04-44b6-96a9-53da0bbfaa17/ HTTP/1.1' 200 34 B 3.0 ms
+[2024-11-18 19:47:50,573]    INFO - Request: 'DELETE /api/v1/genres/e0ebd430-1bdd-481f-9e01-14b808ed3487/ HTTP/1.1' 204 0 B 9.5 ms
+[2024-11-18 19:47:50,642]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 193 B 25.7 ms
+[2024-11-18 19:47:50,681]    INFO - Request: 'GET /api/v1/themes/c399ca9b-4d2a-46c2-beaf-99111e24a8c9/ HTTP/1.1' 200 141 B 11.6 ms
+[2024-11-18 19:47:50,738]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 193 B 18.0 ms
+[2024-11-18 19:47:50,773]    INFO - Request: 'GET /api/v1/demographics/1b25def0-ba7a-4697-91b1-59bdc1cd8bca/ HTTP/1.1' 200 149 B 4.5 ms
+[2024-11-18 19:47:51,400]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 517 B 56.2 ms
+[2024-11-18 19:47:51,416]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 517 B 4.0 ms
+[2024-11-18 19:47:52,132]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 199 B 12.9 ms
+[2024-11-18 19:47:52,384]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1062 B 24.4 ms
+[2024-11-18 19:48:35,856]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 249 B 13.5 ms
+[2024-11-18 19:48:35,934]    INFO - Request: 'GET /api/v1/animes/8cb9051b-5380-4c09-93b5-47a4c4e11034/ HTTP/1.1' 200 1030 B 24.0 ms
+[2024-11-18 19:48:35,957]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 195 B 12.5 ms
+[2024-11-18 19:48:35,983]    INFO - Request: 'GET /api/v1/genres/22f3e3c2-c1f4-45df-b647-b39e6cfa0475/ HTTP/1.1' 200 147 B 15.3 ms
+[2024-11-18 19:48:36,205]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 5.0 ms
+[2024-11-18 19:48:36,422]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 2.5 ms
+[2024-11-18 19:48:36,422]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 19:48:36,431]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 0.0 ms
+[2024-11-18 19:48:36,431]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 19:48:36,634]    INFO - Request: 'PUT /api/v1/genres/abb51938-e02f-490f-a370-4d2c2181a6ce/ HTTP/1.1' 200 24 B 5.5 ms
+[2024-11-18 19:48:36,876]    INFO - Request: 'PUT /api/v1/genres/290ba6e6-eb42-4280-a3c9-20eb1e0c249e/ HTTP/1.1' 200 34 B 4.9 ms
+[2024-11-18 19:48:37,218]    INFO - Request: 'DELETE /api/v1/genres/5162d809-9e28-4c3e-9170-ce977825348a/ HTTP/1.1' 204 0 B 9.6 ms
+[2024-11-18 19:48:37,245]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 191 B 9.5 ms
+[2024-11-18 19:48:37,273]    INFO - Request: 'GET /api/v1/themes/c89e0c02-0118-4f84-81fe-10a64ee71055/ HTTP/1.1' 200 145 B 9.5 ms
+[2024-11-18 19:48:37,323]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 195 B 11.5 ms
+[2024-11-18 19:48:37,364]    INFO - Request: 'GET /api/v1/demographics/4b706a77-3457-4639-9772-aa0178309748/ HTTP/1.1' 200 141 B 16.5 ms
+[2024-11-18 19:48:37,810]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 542 B 33.3 ms
+[2024-11-18 19:48:37,832]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 542 B 2.2 ms
+[2024-11-18 19:48:38,524]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 199 B 28.6 ms
+[2024-11-18 19:48:38,832]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1045 B 26.3 ms
+[2024-11-18 19:50:44,457]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 252 B 23.1 ms
+[2024-11-18 19:50:44,583]    INFO - Request: 'GET /api/v1/animes/dccbb0fa-7171-490b-aef9-20c74a8e0df0/ HTTP/1.1' 200 952 B 28.6 ms
+[2024-11-18 19:50:44,637]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 197 B 38.7 ms
+[2024-11-18 19:50:44,716]    INFO - Request: 'GET /api/v1/genres/73fcba62-24fb-42b9-b873-261e400b563a/ HTTP/1.1' 200 147 B 55.7 ms
+[2024-11-18 19:50:45,467]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 12.5 ms
+[2024-11-18 19:50:46,216]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 50.1 ms
+[2024-11-18 19:50:46,217]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 19:50:46,237]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 3.0 ms
+[2024-11-18 19:50:46,245]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 19:50:46,558]    INFO - Request: 'PUT /api/v1/genres/4996160f-e9a8-426b-b166-4c42067f1176/ HTTP/1.1' 200 24 B 6.0 ms
+[2024-11-18 19:50:47,467]    INFO - Request: 'PUT /api/v1/genres/58586945-7e7b-4d94-bc92-0eda71333271/ HTTP/1.1' 200 34 B 46.9 ms
+[2024-11-18 19:50:48,118]    INFO - Request: 'DELETE /api/v1/genres/3cb5b191-731d-4ff6-a00c-4318f8fbd05f/ HTTP/1.1' 204 0 B 4.0 ms
+[2024-11-18 19:50:48,209]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 195 B 68.4 ms
+[2024-11-18 19:50:48,290]    INFO - Request: 'GET /api/v1/themes/e80be365-59a2-465f-be56-995062a924f2/ HTTP/1.1' 200 151 B 32.6 ms
+[2024-11-18 19:50:48,372]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 195 B 29.3 ms
+[2024-11-18 19:50:48,392]    INFO - Request: 'GET /api/v1/demographics/be629320-bc57-4330-91cc-cf5fc0d01184/ HTTP/1.1' 200 143 B 4.5 ms
+[2024-11-18 19:50:48,913]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 532 B 93.4 ms
+[2024-11-18 19:50:49,071]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 198 B 27.7 ms
+[2024-11-18 19:50:49,898]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1060 B 65.7 ms
+[2024-11-18 20:25:04,643]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 249 B 35.1 ms
+[2024-11-18 20:25:04,801]    INFO - Request: 'GET /api/v1/animes/e197a96c-b196-4dd5-97b2-c5ce978483a3/ HTTP/1.1' 200 1036 B 22.7 ms
+[2024-11-18 20:25:04,830]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 204 B 14.5 ms
+[2024-11-18 20:25:04,859]    INFO - Request: 'GET /api/v1/genres/68d88a67-104f-450f-b257-fc00ca30d0ae/ HTTP/1.1' 200 147 B 14.6 ms
+[2024-11-18 20:25:05,156]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 4.0 ms
+[2024-11-18 20:25:05,376]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 7.5 ms
+[2024-11-18 20:25:05,378]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 20:25:05,392]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 2.0 ms
+[2024-11-18 20:25:05,392]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 20:25:05,743]    INFO - Request: 'PUT /api/v1/genres/93ccaeec-8e66-4ab2-874b-271bc1b38cda/ HTTP/1.1' 200 24 B 36.2 ms
+[2024-11-18 20:25:06,040]    INFO - Request: 'PUT /api/v1/genres/0e5424aa-f909-4605-9561-4f435266588d/ HTTP/1.1' 200 34 B 16.5 ms
+[2024-11-18 20:25:06,463]    INFO - Request: 'DELETE /api/v1/genres/45a13873-cc22-4c0f-99eb-ef5627ef40d9/ HTTP/1.1' 204 0 B 3.5 ms
+[2024-11-18 20:25:06,485]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 193 B 9.5 ms
+[2024-11-18 20:25:06,531]    INFO - Request: 'GET /api/v1/themes/e7b8029a-5592-4d21-a6f6-76132ff54150/ HTTP/1.1' 200 147 B 5.0 ms
+[2024-11-18 20:25:06,593]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 197 B 27.2 ms
+[2024-11-18 20:25:06,620]    INFO - Request: 'GET /api/v1/demographics/e849769c-2682-491b-b047-7c832f28a5b2/ HTTP/1.1' 200 141 B 6.0 ms
+[2024-11-18 20:25:07,087]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 551 B 43.7 ms
+[2024-11-18 20:25:07,189]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 199 B 20.2 ms
+[2024-11-18 20:25:07,529]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1049 B 43.7 ms
+[2024-11-18 20:26:30,736]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 251 B 34.3 ms
+[2024-11-18 20:26:30,840]    INFO - Request: 'GET /api/v1/animes/5e1587a0-e654-4b03-89c0-8383fbcf2960/ HTTP/1.1' 200 1026 B 30.7 ms
+[2024-11-18 20:26:30,898]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 197 B 43.2 ms
+[2024-11-18 20:26:30,915]    INFO - Request: 'GET /api/v1/genres/6090b4e5-0edb-495d-9c29-f4bf2178a4c7/ HTTP/1.1' 200 147 B 5.5 ms
+[2024-11-18 20:26:32,844]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 16.8 ms
+[2024-11-18 20:26:33,396]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 5.5 ms
+[2024-11-18 20:26:33,397]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 20:26:33,413]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 2.0 ms
+[2024-11-18 20:26:33,424]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 20:26:35,465]    INFO - Request: 'PUT /api/v1/genres/57675bf9-a890-4ac3-a843-afc5fd5e441a/ HTTP/1.1' 200 24 B 20.6 ms
+[2024-11-18 20:26:35,888]    INFO - Request: 'PUT /api/v1/genres/57b2626c-2282-4b38-b509-57a41dff62f0/ HTTP/1.1' 200 34 B 7.9 ms
+[2024-11-18 20:26:36,308]    INFO - Request: 'DELETE /api/v1/genres/63729035-b0c6-4732-84d4-8b1007475941/ HTTP/1.1' 204 0 B 5.0 ms
+[2024-11-18 20:26:36,339]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 191 B 10.5 ms
+[2024-11-18 20:26:36,359]    INFO - Request: 'GET /api/v1/themes/b32885f0-8089-4cdc-b67e-654d749a8e02/ HTTP/1.1' 200 137 B 4.0 ms
+[2024-11-18 20:26:36,410]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 193 B 13.5 ms
+[2024-11-18 20:26:36,441]    INFO - Request: 'GET /api/v1/demographics/d4d99130-4452-4501-8d59-e3f652992421/ HTTP/1.1' 200 143 B 4.0 ms
+[2024-11-18 20:26:36,863]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 500 B 39.2 ms
+[2024-11-18 20:26:37,015]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 200 B 19.1 ms
+[2024-11-18 20:26:37,357]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1050 B 23.8 ms
+[2024-11-18 20:29:39,142]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 251 B 36.7 ms
+[2024-11-18 20:29:39,273]    INFO - Request: 'GET /api/v1/animes/a9adac82-e925-4d25-bce8-6c021b60b3d5/ HTTP/1.1' 200 1049 B 49.4 ms
+[2024-11-18 20:29:39,319]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 191 B 28.9 ms
+[2024-11-18 20:29:39,389]    INFO - Request: 'GET /api/v1/genres/aca49f4d-6d32-4468-bdb6-d0e4ad7a3f9a/ HTTP/1.1' 200 141 B 40.8 ms
+[2024-11-18 20:29:39,653]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 3.5 ms
+[2024-11-18 20:29:39,884]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 6.6 ms
+[2024-11-18 20:29:39,885]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 20:29:39,894]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 1.0 ms
+[2024-11-18 20:29:39,896]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 20:29:40,166]    INFO - Request: 'PUT /api/v1/genres/7a23cb6d-444a-4236-b46f-97802cf91a84/ HTTP/1.1' 200 24 B 13.7 ms
+[2024-11-18 20:29:40,559]    INFO - Request: 'PUT /api/v1/genres/a282c79a-675d-4b9b-b7e1-3783636d1b4f/ HTTP/1.1' 200 34 B 6.8 ms
+[2024-11-18 20:29:40,882]    INFO - Request: 'DELETE /api/v1/genres/a50e7d34-39fd-407c-b163-5d29bf57ceb7/ HTTP/1.1' 204 0 B 4.2 ms
+[2024-11-18 20:29:40,904]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 191 B 7.5 ms
+[2024-11-18 20:29:40,939]    INFO - Request: 'GET /api/v1/themes/b9a4765a-cdbd-4fb9-8641-7c725d2ee0bb/ HTTP/1.1' 200 152 B 6.7 ms
+[2024-11-18 20:29:40,979]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 191 B 9.6 ms
+[2024-11-18 20:29:41,011]    INFO - Request: 'GET /api/v1/demographics/fc9113d9-ad1f-411c-a52f-bc3dd68b1e1e/ HTTP/1.1' 200 141 B 5.0 ms
+[2024-11-18 20:29:41,726]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 500 B 51.3 ms
+[2024-11-18 20:29:41,868]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 199 B 25.0 ms
+[2024-11-18 20:29:42,434]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1058 B 38.2 ms
+[2024-11-18 20:32:12,499]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 247 B 14.4 ms
+[2024-11-18 20:32:12,576]    INFO - Request: 'GET /api/v1/animes/ce180233-c66e-4457-b9a8-c820ddaf7d57/ HTTP/1.1' 200 1055 B 23.3 ms
+[2024-11-18 20:32:12,601]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 203 B 15.0 ms
+[2024-11-18 20:32:12,615]    INFO - Request: 'GET /api/v1/genres/15c1a584-e346-42db-b04b-d6d815b3b859/ HTTP/1.1' 200 147 B 5.0 ms
+[2024-11-18 20:32:12,876]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 2.2 ms
+[2024-11-18 20:32:13,145]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 3.3 ms
+[2024-11-18 20:32:13,157]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 20:32:13,166]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 1.3 ms
+[2024-11-18 20:32:13,167]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 20:32:13,379]    INFO - Request: 'PUT /api/v1/genres/2dac8588-f5fe-4a6a-9a96-547206795994/ HTTP/1.1' 200 24 B 5.2 ms
+[2024-11-18 20:32:13,564]    INFO - Request: 'PUT /api/v1/genres/9921b78c-110d-46eb-8a38-062899701e6f/ HTTP/1.1' 200 34 B 3.4 ms
+[2024-11-18 20:32:13,782]    INFO - Request: 'DELETE /api/v1/genres/e42081e1-1654-4f01-bc69-481b8e7a05aa/ HTTP/1.1' 204 0 B 6.2 ms
+[2024-11-18 20:32:13,820]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 195 B 15.2 ms
+[2024-11-18 20:32:13,881]    INFO - Request: 'GET /api/v1/themes/f5cc41de-0753-4ad6-a67f-f927785db53f/ HTTP/1.1' 200 150 B 16.0 ms
+[2024-11-18 20:32:13,923]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 199 B 22.3 ms
+[2024-11-18 20:32:13,995]    INFO - Request: 'GET /api/v1/demographics/e6511e40-c1e6-4d00-8ee0-65bd85d17435/ HTTP/1.1' 200 149 B 12.4 ms
+[2024-11-18 20:32:14,439]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 497 B 31.4 ms
+[2024-11-18 20:32:14,538]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 198 B 15.0 ms
+[2024-11-18 20:32:14,746]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1053 B 19.5 ms
+[2024-11-18 20:56:09,921]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 253 B 17.7 ms
+[2024-11-18 20:56:10,086]    INFO - Request: 'GET /api/v1/animes/fcd6b20c-6899-4744-81b7-43a66de317ed/ HTTP/1.1' 200 1066 B 80.5 ms
+[2024-11-18 20:56:10,226]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 191 B 49.3 ms
+[2024-11-18 20:56:10,243]    INFO - Request: 'GET /api/v1/genres/1adaf110-e115-4456-882e-ba18581c2932/ HTTP/1.1' 200 141 B 3.0 ms
+[2024-11-18 20:56:10,589]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 14.1 ms
+[2024-11-18 20:56:10,803]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 13.8 ms
+[2024-11-18 20:56:10,804]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 20:56:10,824]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 4.2 ms
+[2024-11-18 20:56:10,831]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 20:56:11,052]    INFO - Request: 'PUT /api/v1/genres/8063937c-92d5-48bb-b8ad-1d4de93e9b40/ HTTP/1.1' 200 24 B 5.0 ms
+[2024-11-18 20:56:11,393]    INFO - Request: 'PUT /api/v1/genres/d8ca0a87-cecf-4902-a42d-1e448491f0e3/ HTTP/1.1' 200 34 B 24.1 ms
+[2024-11-18 20:56:12,043]    INFO - Request: 'DELETE /api/v1/genres/e50b2bd0-e0ba-470b-af1f-323e7b0c901d/ HTTP/1.1' 204 0 B 6.0 ms
+[2024-11-18 20:56:12,199]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 195 B 41.1 ms
+[2024-11-18 20:56:12,246]    INFO - Request: 'GET /api/v1/themes/aa55f6aa-e86b-44dd-a71e-6b05995dec49/ HTTP/1.1' 200 145 B 8.5 ms
+[2024-11-18 20:56:12,272]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 197 B 8.1 ms
+[2024-11-18 20:56:12,306]    INFO - Request: 'GET /api/v1/demographics/2763b04d-a625-4a72-a938-abadb36b0daa/ HTTP/1.1' 200 143 B 5.5 ms
+[2024-11-18 20:56:12,590]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 502 B 24.1 ms
+[2024-11-18 20:56:12,683]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 200 B 20.7 ms
+[2024-11-18 20:56:13,481]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1056 B 66.9 ms
+[2024-11-18 20:58:56,134]    INFO - Request: 'GET /api/v1/animes/ HTTP/1.1' 200 253 B 15.5 ms
+[2024-11-18 20:58:56,168]    INFO - Request: 'GET /api/v1/animes/e43430ae-a63b-4ea5-a4bd-21e9e616a982/ HTTP/1.1' 200 1011 B 12.7 ms
+[2024-11-18 20:58:56,218]    INFO - Request: 'GET /api/v1/genres/ HTTP/1.1' 200 197 B 26.2 ms
+[2024-11-18 20:58:56,239]    INFO - Request: 'GET /api/v1/genres/ae048196-47d7-4b10-8806-24c85ff3bf71/ HTTP/1.1' 200 147 B 2.5 ms
+[2024-11-18 20:58:56,466]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 201 20 B 3.3 ms
+[2024-11-18 20:58:56,640]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 403 63 B 2.0 ms
+[2024-11-18 20:58:56,640]    WARNING - Forbidden: /api/v1/genres/
+[2024-11-18 20:58:56,648]    INFO - Request: 'POST /api/v1/genres/ HTTP/1.1' 401 58 B 2.5 ms
+[2024-11-18 20:58:56,650]    WARNING - Unauthorized: /api/v1/genres/
+[2024-11-18 20:58:56,857]    INFO - Request: 'PUT /api/v1/genres/5582f996-3aca-4537-a1f1-4539eba40e49/ HTTP/1.1' 200 24 B 5.0 ms
+[2024-11-18 20:58:57,094]    INFO - Request: 'PUT /api/v1/genres/88ab999b-f486-4e10-9723-62314ca79065/ HTTP/1.1' 200 34 B 5.0 ms
+[2024-11-18 20:58:57,355]    INFO - Request: 'DELETE /api/v1/genres/07c67b57-d536-4fc8-8d08-7d6f479df548/ HTTP/1.1' 204 0 B 3.0 ms
+[2024-11-18 20:58:57,383]    INFO - Request: 'GET /api/v1/themes/ HTTP/1.1' 200 195 B 8.6 ms
+[2024-11-18 20:58:57,415]    INFO - Request: 'GET /api/v1/themes/d58b46cb-8302-460d-bdd2-a3e5ea2df762/ HTTP/1.1' 200 135 B 6.6 ms
+[2024-11-18 20:58:57,438]    INFO - Request: 'GET /api/v1/demographics/ HTTP/1.1' 200 195 B 12.0 ms
+[2024-11-18 20:58:57,505]    INFO - Request: 'GET /api/v1/demographics/c1522500-8330-417a-8c3b-29f5e127f7fc/ HTTP/1.1' 200 145 B 3.6 ms
+[2024-11-18 20:58:57,837]    INFO - Request: 'GET /api/v1/producers/ HTTP/1.1' 200 493 B 30.7 ms
+[2024-11-18 20:58:57,896]    INFO - Request: 'GET /api/v1/random/anime/ HTTP/1.1' 200 199 B 34.7 ms
+[2024-11-18 20:58:58,046]    INFO - Request: 'GET /api/v1/top/animes/ HTTP/1.1' 200 1054 B 18.5 ms

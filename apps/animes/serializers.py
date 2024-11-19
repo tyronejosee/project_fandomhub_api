@@ -104,6 +104,7 @@ class AnimeMinimalSerializer(serializers.ModelSerializer):
             "duration",
             "score",
             "members",
+            "favorites",
         ]
 
 

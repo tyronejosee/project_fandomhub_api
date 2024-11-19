@@ -4,6 +4,7 @@ from django.contrib.auth import get_user_model
 
 from apps.animes.tests.factories import BroadcastFactory, AnimeFactory
 from apps.genres.tests.factories import GenreFactory, ThemeFactory, DemographicFactory
+from apps.producers.tests.factories import ProducerFactory
 from apps.users.tests.factories import (
     MemberFactory,
     PremiumFactory,
@@ -83,3 +84,8 @@ def broadcast():
 @pytest.fixture
 def anime():
     return AnimeFactory.create()
+
+
+@pytest.fixture()
+def producer():
+    return ProducerFactory.create()

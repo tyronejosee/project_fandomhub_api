@@ -182,10 +182,6 @@ class Anime(SlugMixin, BaseModel):
     members = models.PositiveIntegerField(_("members"), default=0)
     favorites = models.PositiveIntegerField(_("favorites"), default=0)
 
-    # is_publishing = models.BooleanField(_("is_publishing"), default=False)
-    # premiered = season + year
-    # aired = aired_from / aired_to
-
     objects = AnimeManager()
 
     class Meta:
