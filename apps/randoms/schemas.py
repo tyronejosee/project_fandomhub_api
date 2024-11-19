@@ -1,4 +1,4 @@
-"""Schemas for Profiles App."""
+"""Schemas for Randoms App."""
 
 from drf_spectacular.utils import extend_schema, OpenApiResponse
 
