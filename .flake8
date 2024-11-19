@@ -18,4 +18,5 @@ exclude =
     config/settings/base.py,
     config/settings/local.py,
     config/settings/production.py
+    config/settings/testing.py
 ignore = E501,W503

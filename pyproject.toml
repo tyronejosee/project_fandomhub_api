@@ -1,51 +1,66 @@
 # ==== pytest ====
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "config.settings.testing"
+addopts = [
+  "--cov=apps",
+  "--cov-report=term",
+  "--cov-report=html",
+  "--cov-report=xml",
+]
+django_find_project = true
 minversion = "6.0"
 python_files = [
-    "tests.py",
-    "test_*.py",
+  "tests.py",
+  "test_*.py",
 ]
 
 # ==== Coverage ====
 [tool.coverage.run]
-include = ["project/**"]
 omit = ["*/migrations/*", "*/tests/*"]
 plugins = ["django_coverage_plugin"]
+source = ["apps"]
 
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+
+# ==== Ruff ====
 [tool.ruff]
-# Exclude a variety of commonly ignored directories.
 exclude = [
-    ".bzr",
-    ".direnv",
-    ".eggs",
-    ".git",
-    ".git-rewrite",
-    ".hg",
-    ".mypy_cache",
-    ".nox",
-    ".pants.d",
-    ".pytype",
-    ".ruff_cache",
-    ".svn",
-    ".tox",
-    ".venv",
-    "__pypackages__",
-    "_build",
-    "buck-out",
-    "build",
-    "dist",
-    "node_modules",
-    "venv",
-    "*/migrations/*.py",
-    "staticfiles/*"
+  ".bzr",
+  ".direnv",
+  ".eggs",
+  ".git",
+  ".git-rewrite",
+  ".hg",
+  ".mypy_cache",
+  ".nox",
+  ".pants.d",
+  ".pytype",
+  ".ruff_cache",
+  ".svn",
+  ".tox",
+  ".venv",
+  "__pypackages__",
+  "_build",
+  "buck-out",
+  "build",
+  "dist",
+  "node_modules",
+  "venv",
+  "*/migrations/*.py",
+  "staticfiles/*",
 ]
-# Same as Django: https://github.com/cookiecutter/cookiecutter-django/issues/4792.
-line-length = 88
 indent-width = 4
+line-length = 88
 target-version = "py311"
 
 [tool.ruff.lint]
+ignore = [
+  "S101",
+  "RUF012",
+  "SIM102",
+]
 select = [
   "F",
   "E",
@@ -55,7 +70,6 @@ select = [
   "N",
   "UP",
   "YTT",
-  # "ANN", # flake8-annotations: we should support this in the future but 100+ errors atm
   "ASYNC",
   "S",
   "BLE",
@@ -87,7 +101,6 @@ select = [
   "TID",
   "TCH",
   "INT",
-  # "ARG", # Unused function argument
   "PTH",
   "ERA",
   "PD",
@@ -95,17 +108,8 @@ select = [
   "PL",
   "TRY",
   "FLY",
-  # "NPY",
-  # "AIR",
   "PERF",
-  # "FURB",
-  # "LOG",
-  "RUF"
-]
-ignore = [
-  "S101", # Use of assert detected https://docs.astral.sh/ruff/rules/assert/
-  "RUF012", # Mutable class attributes should be annotated with `typing.ClassVar`
-  "SIM102" # sometimes it's better to nest
+  "RUF",
 ]
 # Allow fix for all enabled rules (when `--fix`) is provided.
 fixable = ["ALL"]
@@ -114,10 +118,10 @@ unfixable = []
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 
 [tool.ruff.format]
-quote-style = "double"
 indent-style = "space"
-skip-magic-trailing-comma = false
 line-ending = "auto"
+quote-style = "double"
+skip-magic-trailing-comma = false
 
 [tool.ruff.lint.isort]
 force-single-line = true

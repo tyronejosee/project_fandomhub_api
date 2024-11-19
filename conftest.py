@@ -3,8 +3,17 @@ from rest_framework.test import APIClient
 from django.contrib.auth import get_user_model
 
 from apps.animes.tests.factories import BroadcastFactory, AnimeFactory
+from apps.characters.tests.factories import (
+    CharacterFactory,
+    CharacterVoiceFactory,
+    CharacterAnimeFactory,
+    CharacterMangaFactory,
+)
 from apps.genres.tests.factories import GenreFactory, ThemeFactory, DemographicFactory
+from apps.mangas.tests.factories import MagazineFactory, MangaFactory
 from apps.producers.tests.factories import ProducerFactory
+from apps.persons.tests.factories import PersonFactory, StaffAnimeFactory
+from apps.reviews.tests.factories import ReviewFactory
 from apps.users.tests.factories import (
     MemberFactory,
     PremiumFactory,
@@ -77,6 +86,16 @@ def demographic():
 
 
 @pytest.fixture
+def magazine():
+    return MagazineFactory.create()
+
+
+@pytest.fixture
+def manga():
+    return MangaFactory.create()
+
+
+@pytest.fixture
 def broadcast():
     return BroadcastFactory.create()
 
@@ -86,6 +105,41 @@ def anime():
     return AnimeFactory.create()
 
 
+@pytest.fixture
+def character():
+    return CharacterFactory.create()
+
+
+@pytest.fixture
+def character_voice():
+    return CharacterVoiceFactory.create()
+
+
+@pytest.fixture
+def character_anime():
+    return CharacterAnimeFactory.create()
+
+
+@pytest.fixture
+def character_manga():
+    return CharacterMangaFactory.create()
+
+
 @pytest.fixture()
 def producer():
     return ProducerFactory.create()
+
+
+@pytest.fixture()
+def review():
+    return ReviewFactory.create()
+
+
+@pytest.fixture
+def person():
+    return PersonFactory.create()
+
+
+@pytest.fixture
+def staff_anime():
+    return StaffAnimeFactory.create()
