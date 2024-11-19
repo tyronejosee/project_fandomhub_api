@@ -6,6 +6,7 @@ from ..models import Genre, Theme, Demographic
 
 
 class GenreFactory(django.DjangoModelFactory):
+    """Factory for Genre model."""
 
     class Meta:
         model = Genre
@@ -14,6 +15,7 @@ class GenreFactory(django.DjangoModelFactory):
 
 
 class ThemeFactory(django.DjangoModelFactory):
+    """Factory for Theme model."""
 
     class Meta:
         model = Theme
@@ -22,6 +24,7 @@ class ThemeFactory(django.DjangoModelFactory):
 
 
 class DemographicFactory(django.DjangoModelFactory):
+    """Factory for Demographic model."""
 
     class Meta:
         model = Demographic
