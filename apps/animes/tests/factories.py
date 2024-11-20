@@ -63,16 +63,28 @@ class AnimeFactory(factory.django.DjangoModelFactory):
         ProducerFactory,
         type="studio",
     )
-    genres = factory.RelatedFactoryList(
-        GenreFactory,
-        size=2,
-    )
-    themes = factory.RelatedFactoryList(
-        ThemeFactory,
-        size=2,
-    )
     duration = timedelta(hours=1, minutes=45, seconds=30)
     website = factory.Faker("url")
     is_recommended = factory.Faker("boolean")
     members = factory.Faker("random_int", min=0, max=10000)
     favorites = factory.Faker("random_int", min=0, max=10000)
+
+    @factory.post_generation
+    def genres(self, create, extracted, **kwargs):
+        if not create:
+            return
+        if extracted:
+            self.genres.set(extracted)
+        else:
+            default_genre = GenreFactory.create()
+            self.genres.add(default_genre)
+
+    @factory.post_generation
+    def themes(self, create, extracted, **kwargs):
+        if not create:
+            return
+        if extracted:
+            self.themes.set(extracted)
+        else:
+            default_genre = ThemeFactory.create()
+            self.themes.add(default_genre)

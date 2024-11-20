@@ -52,5 +52,23 @@ class MangaFactory(factory.django.DjangoModelFactory):
     author_id = factory.SubFactory(PersonFactory)
     demographic_id = factory.SubFactory(DemographicFactory)
     serialization_id = factory.SubFactory(MagazineFactory)
-    genres = factory.RelatedFactoryList(GenreFactory, "manga", size=2)
-    themes = factory.RelatedFactoryList(ThemeFactory, "manga", size=2)
+
+    @factory.post_generation
+    def genres(self, create, extracted, **kwargs):
+        if not create:
+            return
+        if extracted:
+            self.genres.set(extracted)
+        else:
+            default_genre = GenreFactory.create()
+            self.genres.add(default_genre)
+
+    @factory.post_generation
+    def themes(self, create, extracted, **kwargs):
+        if not create:
+            return
+        if extracted:
+            self.themes.set(extracted)
+        else:
+            default_genre = ThemeFactory.create()
+            self.themes.add(default_genre)

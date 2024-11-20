@@ -24,7 +24,6 @@ class NewsFactory(factory.django.DjangoModelFactory):
     # )
     source = factory.Faker("url")
     tag = factory.Iterator(TagChoices.values)
-
     anime_relations = factory.RelatedFactoryList(
         AnimeFactory,
         "news",

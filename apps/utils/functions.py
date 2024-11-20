@@ -3,7 +3,10 @@
 import time
 import random
 import string
+from django.core.files.uploadedfile import SimpleUploadedFile
 from functools import wraps
+from io import BytesIO
+from PIL import Image
 
 
 def generate_random_code(length=10):
@@ -23,3 +26,17 @@ def execution_time(func):
         return result
 
     return wrapper
+
+
+def generate_test_image(name="test_image.jpg", size=(1000, 1000), format="JPEG"):
+    """
+    Generates a valid image for tests.
+    """
+    storage = BytesIO()
+    img = Image.new("RGB", size, color=(255, 0, 0))  # Red image
+    img.save(storage, format)
+    storage.seek(0)
+
+    return SimpleUploadedFile(
+        name=name, content=storage.getvalue(), content_type=f"image/{format.lower()}"
+    )
