@@ -51,10 +51,6 @@ class AnimeFactory(factory.django.DjangoModelFactory):
     status = factory.Iterator(StatusChoices.values)
     aired_from = timezone.now().date()
     aired_to = timezone.now().date()
-    producers = factory.RelatedFactoryList(
-        ProducerFactory,
-        size=2,
-    )
     licensors_id = factory.SubFactory(
         ProducerFactory,
         type="licensor",
@@ -65,7 +61,6 @@ class AnimeFactory(factory.django.DjangoModelFactory):
     )
     duration = timedelta(hours=1, minutes=45, seconds=30)
     website = factory.Faker("url")
-    is_recommended = factory.Faker("boolean")
     members = factory.Faker("random_int", min=0, max=10000)
     favorites = factory.Faker("random_int", min=0, max=10000)
 
@@ -86,5 +81,15 @@ class AnimeFactory(factory.django.DjangoModelFactory):
         if extracted:
             self.themes.set(extracted)
         else:
-            default_genre = ThemeFactory.create()
-            self.themes.add(default_genre)
+            default_theme = ThemeFactory.create()
+            self.themes.add(default_theme)
+
+    @factory.post_generation
+    def producers(self, create, extracted, **kwargs):
+        if not create:
+            return
+        if extracted:
+            self.producers.set(extracted)
+        else:
+            default_producer = ProducerFactory.create()
+            self.producers.add(default_producer)
