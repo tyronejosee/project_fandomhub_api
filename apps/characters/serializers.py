@@ -53,6 +53,7 @@ class CharacterMinimalSerializer(serializers.ModelSerializer):
             "role",
             "image",
             "created_at",
+            "favorites",
         ]
 
 

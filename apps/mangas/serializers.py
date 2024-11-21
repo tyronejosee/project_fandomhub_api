@@ -122,6 +122,7 @@ class MangaMinimalSerializer(serializers.ModelSerializer):
             "published_to",
             "media_type",
             "status",
+            "favorites",
         ]
 
 

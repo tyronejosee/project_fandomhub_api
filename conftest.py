@@ -1,6 +1,7 @@
 import pytest
 from rest_framework.test import APIClient
 from django.contrib.auth import get_user_model
+from django.core.cache import cache
 
 from apps.animes.tests.factories import BroadcastFactory, AnimeFactory
 from apps.characters.tests.factories import (
@@ -23,6 +24,11 @@ from apps.users.tests.factories import (
 )
 
 User = get_user_model()
+
+
+@pytest.fixture(autouse=True)
+def clear_cache():
+    cache.clear()
 
 
 @pytest.fixture

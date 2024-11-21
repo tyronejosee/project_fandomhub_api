@@ -45,13 +45,16 @@ class HomePageView(APIView):
 
             # Data serialized
             current_season_serialized = AnimeMinimalSerializer(
-                current_season, many=True
+                current_season,
+                many=True,
             )
             anime_reviews_serialized = ReviewReadSerializer(
-                latest_anime_reviews, many=True
+                latest_anime_reviews,
+                many=True,
             )
             anime_recommendations_serialized = AnimeMinimalSerializer(
-                latest_anime_recommendations, many=True
+                latest_anime_recommendations,
+                many=True,
             )
 
             # JSON data

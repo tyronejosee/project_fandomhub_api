@@ -66,6 +66,7 @@ class PersonMinimalSerializer(serializers.ModelSerializer):
             "name",
             "image",
             "language",
+            "favorites",
         ]
 
 

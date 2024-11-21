@@ -18,6 +18,7 @@ class ReviewReadSerializer(serializers.ModelSerializer):
             "rating",
             "comment",
             "is_spoiler",
+            "helpful_count",
             "created_at",
             "updated_at",
         ]
