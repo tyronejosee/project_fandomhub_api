@@ -8,6 +8,8 @@ from apps.genres.models import Genre, Theme, Demographic
 
 @pytest.mark.django_db
 class TestGenreModel:
+    """Model tests for Genre model."""
+
     def test_genre_creation(self):
         genre = Genre.objects.create(name="Action")
         assert genre.name == "Action"
@@ -32,6 +34,8 @@ class TestGenreModel:
 
 @pytest.mark.django_db
 class TestThemeModel:
+    """Model tests for Theme model."""
+
     def test_theme_creation(self):
         theme = Theme.objects.create(name="Gore")
         assert theme.name == "Gore"
@@ -49,6 +53,8 @@ class TestThemeModel:
 
 @pytest.mark.django_db
 class TestDemographicModel:
+    """Model tests for Demographic model."""
+
     def test_demographic_creation(self):
         demographic = Demographic.objects.create(name="Shounen")
         assert demographic.name == "Shounen"

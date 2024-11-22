@@ -2,6 +2,7 @@
 
 import factory
 
+from apps.utils.functions import generate_test_image
 from ..models import Producer
 from ..choices import TypeChoices
 
@@ -17,7 +18,5 @@ class ProducerFactory(factory.django.DjangoModelFactory):
     about = factory.Faker("text")
     established = factory.Faker("year")
     type = factory.Iterator(TypeChoices.values)
-    # image = factory.django.ImageField(
-    #     color="blue", format="jpeg", width=600, height=600
-    # )
+    image = factory.LazyAttribute(lambda _: generate_test_image(size=(600, 600)))
     favorites = factory.Faker("random_int", min=0, max=1000)

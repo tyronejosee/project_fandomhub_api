@@ -10,6 +10,7 @@ from apps.characters.tests.factories import (
     CharacterAnimeFactory,
     CharacterMangaFactory,
 )
+from apps.clubs.tests.factories import ClubFactory, ClubMemberFactory
 from apps.genres.tests.factories import GenreFactory, ThemeFactory, DemographicFactory
 from apps.mangas.tests.factories import MagazineFactory, MangaFactory
 from apps.producers.tests.factories import ProducerFactory
@@ -129,6 +130,16 @@ def character_anime():
 @pytest.fixture
 def character_manga():
     return CharacterMangaFactory.create()
+
+
+@pytest.fixture
+def club():
+    return ClubFactory.create()
+
+
+@pytest.fixture
+def club_member():
+    return ClubMemberFactory.create()
 
 
 @pytest.fixture()

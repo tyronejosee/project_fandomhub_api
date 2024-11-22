@@ -3,6 +3,7 @@
 import factory
 from django.utils import timezone
 
+from apps.utils.functions import generate_test_image
 from apps.users.tests.factories import MemberFactory
 from ..models import Club, ClubMember, Event, Topic, Discussion
 from ..choices import CategoryChoices
@@ -16,9 +17,7 @@ class ClubFactory(factory.django.DjangoModelFactory):
 
     name = factory.Faker("company")
     description = factory.Faker("text")
-    # image = factory.django.ImageField(
-    #     color="blue", format="jpg", width=600, height=600
-    # )
+    image = factory.LazyAttribute(lambda _: generate_test_image(size=(600, 600)))
     category = factory.Iterator(CategoryChoices.values)
     members = factory.Faker("random_number", digits=2)
     created_by = factory.SubFactory(MemberFactory)

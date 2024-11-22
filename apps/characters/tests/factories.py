@@ -2,6 +2,7 @@
 
 import factory
 
+from apps.utils.functions import generate_test_image
 from apps.animes.tests.factories import AnimeFactory
 from apps.mangas.tests.factories import MangaFactory
 from apps.persons.tests.factories import PersonFactory
@@ -20,9 +21,7 @@ class CharacterFactory(factory.django.DjangoModelFactory):
     name_kanji = factory.Faker("name", locale="ja-JP")
     about = factory.Faker("text")
     role = factory.Iterator(RoleChoices.values)
-    # image = factory.django.ImageField(
-    #     color="blue", format="jpeg", width=600, height=600
-    # )
+    image = factory.LazyAttribute(lambda _: generate_test_image(size=(600, 600)))
     favorites = factory.Faker("random_int", min=0, max=10000)
 
     voices = factory.RelatedFactory(PersonFactory, "character")

@@ -41,7 +41,7 @@ class ClubViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     permission_classes = [IsMember]
     serializer_class = ClubWriteSerializer
     pagination_class = LargeSetPagination
-    search_fields = ["name", "category"]
+    search_fields = ["name"]
     filterset_class = ClubFilter
 
     def get_queryset(self):

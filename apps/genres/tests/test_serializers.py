@@ -15,6 +15,8 @@ from ..serializers import (
 
 @pytest.mark.django_db
 class TestGenreSerializers:
+    """Serializer tests for Genre model."""
+
     def test_genre_read_serializer(self, genre):
         serializer = GenreReadSerializer(genre)
         expected_data = {
@@ -33,7 +35,7 @@ class TestGenreSerializers:
         assert serializer.validated_data["name"] == "Action"
 
     def test_genre_write_serializer_invalid_data(self):
-        data = {"name": ""}
+        data = {}
         serializer = GenreWriteSerializer(data=data)
         assert not serializer.is_valid()
         assert "name" in serializer.errors
@@ -49,6 +51,8 @@ class TestGenreSerializers:
 
 @pytest.mark.django_db
 class TestThemeSerializers:
+    """Serializer tests for Theme model."""
+
     def test_theme_read_serializer(self, theme):
         serializer = ThemeReadSerializer(theme)
         expected_data = {
@@ -67,7 +71,7 @@ class TestThemeSerializers:
         assert serializer.validated_data["name"] == "Fantasy"
 
     def test_theme_write_serializer_invalid_data(self):
-        data = {"name": ""}
+        data = {}
         serializer = ThemeWriteSerializer(data=data)
         assert not serializer.is_valid()
         assert "name" in serializer.errors
@@ -75,6 +79,8 @@ class TestThemeSerializers:
 
 @pytest.mark.django_db
 class TestDemographicSerializers:
+    """Serializer tests for Demographic model."""
+
     def test_demographic_read_serializer(self, demographic):
         serializer = DemographicReadSerializer(demographic)
         expected_data = {
@@ -93,7 +99,7 @@ class TestDemographicSerializers:
         assert serializer.validated_data["name"] == "Shounen"
 
     def test_demographic_write_serializer_invalid_data(self):
-        data = {"name": ""}
+        data = {}
         serializer = DemographicWriteSerializer(data=data)
         assert not serializer.is_valid()
         assert "name" in serializer.errors

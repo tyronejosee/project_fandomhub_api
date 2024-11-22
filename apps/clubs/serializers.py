@@ -36,6 +36,7 @@ class ClubWriteSerializer(serializers.ModelSerializer):
             "description",
             "image",
             "category",
+            "created_by",
             "is_public",
         ]
 
