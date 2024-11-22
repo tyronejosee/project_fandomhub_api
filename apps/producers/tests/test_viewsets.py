@@ -5,6 +5,7 @@ import pytest
 from rest_framework import status
 
 from apps.utils.functions import generate_test_image
+from apps.animes.tests.factories import AnimeFactory
 from .factories import ProducerFactory
 from ..models import Producer
 from ..choices import TypeChoices
@@ -12,11 +13,12 @@ from ..choices import TypeChoices
 
 @pytest.mark.django_db
 class TestProducerViewSet:
+    """Tests for Producer Viewset."""
 
     def test_list_producers(self, anonymous_user, producer):
         response = anonymous_user.get("/api/v1/producers/")
 
-        assert response.status_code == 200
+        assert response.status_code == status.HTTP_200_OK
         assert len(response.json()) > 0
 
     def test_retrieve_producer(self, anonymous_user, producer):
@@ -32,6 +34,7 @@ class TestProducerViewSet:
             "/api/v1/producers/989423d1-d6c0-431a-8f62-d805b8a5f321/"
         )
         assert response.status_code == status.HTTP_404_NOT_FOUND
+        assert response.data["detail"] == "Not found."
 
     def test_create_producer(self, contributor_user):
         image = generate_test_image(size=(600, 600))
@@ -85,14 +88,13 @@ class TestProducerViewSet:
         assert not Producer.objects.filter(name="Unauthorized Producer").exists()
 
     def test_update_producer(self, contributor_user, producer):
-        image = generate_test_image(size=(600, 600))
         data = {
             "name": "Updated Producer",
             "name_jpn": producer.name_jpn,
             "about": producer.about,
             "established": producer.established,
             "type": producer.type,
-            "image": image,
+            "image": producer.image,
         }
         response = contributor_user.put(
             f"/api/v1/producers/{producer.id}/",
@@ -149,3 +151,37 @@ class TestProducerViewSet:
         data_no_results = response_no_results.json()
         assert response_no_results.status_code == status.HTTP_200_OK
         assert len(data_no_results["results"]) == 0
+
+    def test_filter_order_by(self, member_user):
+        ProducerFactory(name="A", favorites=900)
+        ProducerFactory(name="J", favorites=500)
+        ProducerFactory(name="Z", favorites=100)
+
+        response = member_user.get("/api/v1/producers/", {"order_by": "favorites"})
+        assert response.status_code == status.HTTP_200_OK
+        assert len(response.data["results"]) == 3
+        assert [producer["favorites"] for producer in response.data["results"]] == [
+            100,
+            500,
+            900,
+        ]
+
+    def test_action_get_animes_ok(self, member_user):
+        producer = ProducerFactory.create(type=TypeChoices.STUDIO)
+        AnimeFactory.create(studio_id=producer)
+        AnimeFactory.create(studio_id=producer)
+
+        response = member_user.get(f"/api/v1/producers/{producer.id}/animes/")
+
+        assert response.status_code == status.HTTP_200_OK
+        assert "results" in response.data
+        assert len(response.data["results"]) == 2
+        assert response.data["count"] == 2
+
+    def test_action_get_animes_not_found(self, member_user):
+        producer = ProducerFactory.create(type=TypeChoices.STUDIO)
+
+        response = member_user.get(f"/api/v1/producers/{producer.id}/animes/")
+
+        assert response.status_code == status.HTTP_404_NOT_FOUND
+        assert response.data["detail"] == "No animes found for this studio."
