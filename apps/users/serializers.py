@@ -35,7 +35,6 @@ class UserWriteSerializer(UserCreateSerializer):
     class Meta(UserCreateSerializer.Meta):
         model = User
         fields = [
-            "id",
             "email",
             "username",
             "role",
