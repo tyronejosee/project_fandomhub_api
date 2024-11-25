@@ -132,7 +132,7 @@ class TestClubViewSet:
         assert len(response.data["results"]) == 1
         assert response.data["results"][0]["name"] == "First Club"
 
-    def test_action_get_members_ok(self, anonymous_user, club_member):
+    def test_action_get_members_success(self, anonymous_user, club_member):
         response = anonymous_user.get(
             f"/api/v1/clubs/{club_member.club_id.id}/members/"
         )

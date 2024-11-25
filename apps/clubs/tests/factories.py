@@ -32,7 +32,7 @@ class ClubMemberFactory(factory.django.DjangoModelFactory):
 
     club_id = factory.SubFactory(ClubFactory)
     user_id = factory.SubFactory(MemberFactory)
-    joined_at = timezone.now()
+    joined_at = factory.LazyFunction(timezone.now)
 
 
 class EventFactory(factory.django.DjangoModelFactory):

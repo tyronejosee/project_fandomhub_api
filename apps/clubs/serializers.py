@@ -10,6 +10,8 @@ from .models import Club, ClubMember
 class ClubReadSerializer(serializers.ModelSerializer):
     """Serializer for Club model (List/retrieve)."""
 
+    created_by = serializers.CharField(source="created_by.username")
+
     class Meta:
         model = Club
         fields = [
@@ -45,7 +47,6 @@ class ClubMemberReadSerializer(serializers.ModelSerializer):
     """Serializer for ClubMember model (List/retrieve)."""
 
     user_id = serializers.StringRelatedField()
-    joined_at = serializers.DateTimeField(format="%Y-%m-%d %H:%M:%S")
 
     class Meta:
         model = ClubMember
