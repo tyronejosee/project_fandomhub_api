@@ -17,6 +17,7 @@ from apps.producers.tests.factories import ProducerFactory
 from apps.persons.tests.factories import PersonFactory, StaffAnimeFactory
 from apps.reviews.tests.factories import ReviewFactory
 from apps.users.tests.factories import (
+    UserBaseFactory,
     MemberFactory,
     PremiumFactory,
     ContributorFactory,
@@ -40,6 +41,11 @@ def api_client():
 @pytest.fixture
 def anonymous_user(api_client):
     return api_client
+
+
+@pytest.fixture
+def user():
+    return UserBaseFactory.create()
 
 
 @pytest.fixture
