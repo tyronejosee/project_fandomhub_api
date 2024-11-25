@@ -10,7 +10,7 @@ from rest_framework.decorators import action
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework import status
-from drf_spectacular.utils import extend_schema_view, extend_schema
+from drf_spectacular.utils import extend_schema_view
 
 from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.utils.models import Picture
@@ -65,10 +65,6 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             return PersonReadSerializer
         return super().get_serializer_class()
 
-    @extend_schema(
-        summary="Get Mangas for Author",
-        description="Retrieve a list of mangas for author.",
-    )
     @action(
         detail=True,
         methods=["get"],
@@ -106,14 +102,14 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
             status=status.HTTP_404_NOT_FOUND,
         )
 
-    @method_decorator(cache_page(60 * 60 * 2))
-    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     @action(
         detail=True,
         methods=["get"],
         permission_classes=[AllowAny],
         url_path="pictures",
     )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def get_pictures(self, request, *args, **kwargs):
         """
         Action retrieve pictures associated with a person.

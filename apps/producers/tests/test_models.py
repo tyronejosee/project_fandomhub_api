@@ -44,6 +44,6 @@ class TestProducerModel:
         )
         assert producer.slug == "wit-studio"
 
-    def test_get_available_manager(self, producer):
+    def test_manager_get_available(self, producer):
         results = Producer.objects.get_available()
         assert results.count() == 1

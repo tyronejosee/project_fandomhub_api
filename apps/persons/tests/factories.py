@@ -2,6 +2,7 @@
 
 import factory
 
+from apps.utils.functions import generate_test_image
 from apps.animes.tests.factories import AnimeFactory
 from ..models import Person, StaffAnime
 from ..choices import LanguageChoices, CategoryChoices
@@ -16,9 +17,7 @@ class PersonFactory(factory.django.DjangoModelFactory):
     name = factory.Faker("name")
     given_name = factory.Faker("first_name")
     family_name = factory.Faker("last_name")
-    # image = factory.django.ImageField(
-    #     color="blue", format="jpeg", width=500, height=500
-    # )
+    image = factory.LazyAttribute(lambda _: generate_test_image(size=(600, 600)))
     alternate_names = factory.Faker("sentences", nb=3)
     birthday = factory.Faker("date_of_birth")
     about = factory.Faker("text")
