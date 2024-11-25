@@ -124,7 +124,7 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Action retrieve staff associated with a anime.
 
         Endpoints:
-        - GET api/v1/animes/{id}/characters/
+        - GET api/v1/animes/{id}/staff/
         """
         anime = self.get_object()
         relations = StaffAnime.objects.filter(anime_id=anime)

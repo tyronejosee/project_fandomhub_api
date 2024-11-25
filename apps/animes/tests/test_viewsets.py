@@ -7,6 +7,11 @@ from rest_framework import status
 
 
 from apps.utils.functions import generate_test_image
+from apps.characters.tests.factories import CharacterAnimeFactory
+from apps.characters.serializers import CharacterMinimalSerializer
+from apps.persons.tests.factories import PersonFactory, StaffAnimeFactory
+from apps.persons.models import Person, StaffAnime
+from apps.persons.serializers import StaffMinimalSerializer
 from apps.producers.tests.factories import ProducerFactory
 from apps.producers.choices import TypeChoices
 from ..models import Anime
@@ -119,5 +124,44 @@ class TestAnimeViewSet:
         assert response.status_code == status.HTTP_204_NO_CONTENT
         assert Anime.objects.filter(id=anime.id).exists()
         assert not anime.is_available
+
+    def test_action_get_characters_success(self, anonymous_user, anime, character):
+        CharacterAnimeFactory(character_id=character, anime_id=anime)
+
+        response = anonymous_user.get(f"/api/v1/animes/{anime.id}/characters/")
+
+        assert response.status_code == status.HTTP_200_OK
+        expected_data = CharacterMinimalSerializer([character], many=True).data
+        assert response.json() == expected_data
+
+    def test_get_characters_no_relations(self, anonymous_user, anime):
+        response = anonymous_user.get(f"/api/v1/animes/{anime.id}/characters/")
+
+        assert response.status_code == status.HTTP_404_NOT_FOUND
+        assert response.data["detail"] == "No characters found for this anime."
+
+    def test_action_get_staff_success(self, anonymous_user, anime):
+        staff_one = PersonFactory()
+        staff_two = PersonFactory()
+        StaffAnimeFactory(person_id=staff_one, anime_id=anime)
+        StaffAnimeFactory(person_id=staff_two, anime_id=anime)
+
+        response = anonymous_user.get(f"/api/v1/animes/{anime.id}/staff/")
+
+        assert response.status_code == status.HTTP_200_OK
+
+        staff_ids = StaffAnime.objects.filter(anime_id=anime.id).values_list(
+            "person_id", flat=True
+        )
+        staff = Person.objects.filter(id__in=staff_ids)
+        serializer = StaffMinimalSerializer(staff, many=True)
+
+        assert response.data == serializer.data
+
+    def test_get_staff_no_relations(self, anonymous_user, anime):
+        response = anonymous_user.get(f"/api/v1/animes/{anime.id}/staff/")
+
+        assert response.status_code == status.HTTP_404_NOT_FOUND
+        assert response.data["detail"] == "No staff found for this anime."
 
     # ! TODO: Add tests for actions
