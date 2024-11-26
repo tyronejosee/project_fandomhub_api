@@ -12,3 +12,6 @@ django-coverage-plugin==3.1.0
 pytest-cov==6.0.0
 pytest-xdist==3.6.1
 factory-boy==3.3.0
+
+# Tools
+ipdb==0.13.13

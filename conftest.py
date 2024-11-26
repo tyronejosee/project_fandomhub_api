@@ -15,7 +15,9 @@ from apps.genres.tests.factories import GenreFactory, ThemeFactory, DemographicF
 from apps.mangas.tests.factories import MagazineFactory, MangaFactory
 from apps.producers.tests.factories import ProducerFactory
 from apps.persons.tests.factories import PersonFactory, StaffAnimeFactory
+from apps.news.tests.factories import NewsFactory
 from apps.reviews.tests.factories import ReviewFactory
+from apps.profiles.tests.factories import ProfileFactory
 from apps.users.tests.factories import (
     UserBaseFactory,
     MemberFactory,
@@ -109,6 +111,11 @@ def manga():
 
 
 @pytest.fixture
+def news():
+    return NewsFactory.create()
+
+
+@pytest.fixture
 def broadcast():
     return BroadcastFactory.create()
 
@@ -166,3 +173,8 @@ def person():
 @pytest.fixture
 def staff_anime():
     return StaffAnimeFactory.create()
+
+
+@pytest.fixture
+def profile():
+    return ProfileFactory.create()

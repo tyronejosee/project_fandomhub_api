@@ -3,15 +3,30 @@
 from rest_framework import serializers
 
 from apps.producers.serializers import ProducerReadSerializer
-from apps.genres.serializers import GenreReadSerializer, GenreMinimalSerializer
-from .models import Anime, AnimeStats
+from apps.genres.serializers import GenreMinimalSerializer, ThemeReadSerializer
+from .models import Broadcast, Anime, AnimeStats
+
+
+class BroadcastMinimalSerializer(serializers.ModelSerializer):
+    """Serializer for Anime model (Minimal)."""
+
+    class Meta:
+        model = Broadcast
+        fields = [
+            "string",
+            "day",
+            "time",
+            "timezone",
+        ]
 
 
 class AnimeReadSerializer(serializers.ModelSerializer):
     """Serializer for Anime model."""
 
     studio_id = ProducerReadSerializer()
-    genres = GenreReadSerializer(many=True)
+    broadcast_id = BroadcastMinimalSerializer()
+    genres = GenreMinimalSerializer(many=True)
+    themes = ThemeReadSerializer(many=True)
     status = serializers.CharField(source="get_status_display")
 
     class Meta:

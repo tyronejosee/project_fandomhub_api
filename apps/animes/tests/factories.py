@@ -4,6 +4,7 @@ import factory
 from datetime import timedelta
 from django.utils import timezone
 
+from apps.utils.functions import generate_test_image
 from apps.producers.tests.factories import ProducerFactory
 from apps.genres.tests.factories import GenreFactory, ThemeFactory
 from ..models import Broadcast, Anime
@@ -36,9 +37,7 @@ class AnimeFactory(factory.django.DjangoModelFactory):
 
     name = factory.Faker("sentence")
     name_jpn = factory.Faker("sentence", locale="ja-JP")
-    # image = factory.django.ImageField(
-    #     color="blue", format="jpeg", width=600, height=600
-    # )
+    image = factory.LazyAttribute(lambda _: generate_test_image(size=(600, 600)))
     trailer = factory.Faker("url")
     synopsis = factory.Faker("text")
     background = factory.Faker("text")
@@ -49,8 +48,8 @@ class AnimeFactory(factory.django.DjangoModelFactory):
     source = factory.Iterator(SourceChoices.values)
     episodes = factory.Faker("random_int", min=1, max=1500)
     status = factory.Iterator(StatusChoices.values)
-    aired_from = timezone.now().date()
-    aired_to = timezone.now().date()
+    aired_from = factory.Faker("date")
+    aired_to = factory.Faker("date")
     licensors_id = factory.SubFactory(
         ProducerFactory,
         type="licensor",
