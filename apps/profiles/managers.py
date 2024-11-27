@@ -7,4 +7,4 @@ class ProfileManager(BaseManager):
     """Manager for Profile model."""
 
     def get_by_user(self, user):
-        return self.get_available().get(user=user)
+        return self.get_available().get(user_id=user)
