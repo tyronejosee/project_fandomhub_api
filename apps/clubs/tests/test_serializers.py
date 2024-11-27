@@ -7,7 +7,7 @@ from ..serializers import (
     ClubReadSerializer,
     ClubWriteSerializer,
     ClubMemberReadSerializer,
-    # ClubMemberWriteSerializer,
+    ClubMemberWriteSerializer,
 )
 
 
@@ -72,4 +72,10 @@ class TestClubMemberSerializers:
 
         assert serializer.data == expected_data
 
-    # ! TODO: Add ClubMemberWriteSerializer test
+    def test_club_member_write_serializer_valid_data(self):
+        user = MemberFactory()
+        data = {"user_id": user.id}
+        serializer = ClubMemberWriteSerializer(data=data)
+
+        assert serializer.is_valid(), serializer.errors
+        assert serializer.validated_data["user_id"] == user

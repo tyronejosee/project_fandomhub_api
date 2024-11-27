@@ -49,5 +49,5 @@ class ModeratorFactory(UserBaseFactory):
 
 class AdministratorFactory(UserBaseFactory):
 
-    role = RoleChoices.MEMBER
+    role = RoleChoices.ADMINISTRATOR
     is_staff = True
