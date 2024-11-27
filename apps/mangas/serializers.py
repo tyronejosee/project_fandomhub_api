@@ -2,7 +2,7 @@
 
 from rest_framework import serializers
 
-from apps.genres.serializers import GenreReadSerializer, DemographicReadSerializer
+from apps.genres.serializers import GenreReadSerializer, ThemeReadSerializer, DemographicReadSerializer
 from .models import Magazine, Manga, MangaStats
 
 
@@ -34,9 +34,11 @@ class MagazineWriteSerializer(serializers.ModelSerializer):
 class MangaReadSerializer(serializers.ModelSerializer):
     """Serializer for Manga model (Retrieve)."""
 
-    author_id = serializers.CharField(source="author.name")
+    author_id = serializers.CharField(source="author_id.name")
     demographic_id = DemographicReadSerializer()
+    serialization_id = MagazineReadSerializer()
     genres = GenreReadSerializer(many=True)
+    themes = ThemeReadSerializer(many=True)
     media_type = serializers.CharField(source="get_media_type_display")
     status = serializers.CharField(source="get_status_display")
 

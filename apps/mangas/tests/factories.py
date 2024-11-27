@@ -2,6 +2,7 @@
 
 import factory
 
+from apps.utils.functions import generate_test_image
 from apps.genres.tests.factories import GenreFactory, ThemeFactory, DemographicFactory
 from apps.persons.tests.factories import PersonFactory
 from ..models import Magazine, Manga
@@ -29,9 +30,7 @@ class MangaFactory(factory.django.DjangoModelFactory):
     name_jpn = factory.Faker("sentence", locale="ja-JP")
     name_rom = factory.Faker("sentence")
     alternative_names = factory.Faker("sentence")
-    # image = factory.django.ImageField(
-    #     color="blue", format="jpeg", width=909, height=1280
-    # )
+    image = factory.LazyAttribute(lambda _: generate_test_image(size=(909, 1280)))
     synopsis = factory.Faker("text")
     background = factory.Faker("text")
     media_type = factory.Iterator(MediaTypeChoices.values)
