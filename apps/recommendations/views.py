@@ -18,7 +18,7 @@ class AnimeRecommendationView(ListCacheMixin, ListAPIView):
     View for retrieving recommended anime.
 
     Endpoints:
-    - GET /api/v1/recomendations/anime/
+    - GET /api/v1/recommendations/anime/
     """
 
     permission_classes = [AllowAny]
@@ -35,7 +35,7 @@ class MangaRecommendationView(ListCacheMixin, ListAPIView):
     View for retrieving recommended manga.
 
     Endpoints:
-    - GET /api/v1/recomendations/manga/
+    - GET /api/v1/recommendations/manga/
     """
 
     permission_classes = [AllowAny]
