@@ -19,7 +19,7 @@ class TestReviewSerializers:
             "id": str(user.id),
             "email": user.email,
             "username": user.username,
-            "role": user.role.capitalize(),
+            "role": user.get_role_display(),
             "is_online": user.is_online,
             "is_active": user.is_active,
             "is_staff": user.is_staff,
@@ -57,7 +57,7 @@ class TestReviewSerializers:
         expected_data = {
             "id": str(user.id),
             "username": user.username,
-            "role": user.role.capitalize(),
+            "role": user.get_role_display(),
             "is_online": user.is_online,
         }
         assert serializer.data == expected_data

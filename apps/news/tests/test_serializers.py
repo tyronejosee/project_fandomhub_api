@@ -20,7 +20,7 @@ class TestNewsSerializers:
             "content": news.content,
             "image": news.image.url,
             "source": news.source,
-            "tag": news.tag.capitalize(),
+            "tag": news.get_tag_display(),
             "anime_relations": [str(anime.id) for anime in news.anime_relations.all()],
             "manga_relations": [str(manga.id) for manga in news.manga_relations.all()],
             "created_at": news.created_at.isoformat(),

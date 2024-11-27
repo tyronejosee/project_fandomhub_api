@@ -59,7 +59,7 @@ class TestCharacterSerializers:
         expected_data = {
             "id": str(character.id),
             "name": character.name,
-            "role": character.role.capitalize(),
+            "role": character.get_role_display(),
             "image": character.image.url,
             "created_at": character.created_at.isoformat(),
             "favorites": character.favorites,
@@ -79,7 +79,7 @@ class TestCharacterVoiceSerializers:
             "character_id": {
                 "id": str(character_voice.character_id.id),
                 "name": character_voice.character_id.name,
-                "role": character_voice.character_id.role.capitalize(),
+                "role": character_voice.character_id.get_role_display(),
                 "image": character_voice.character_id.image.url,
                 "created_at": character_voice.character_id.created_at.isoformat(),
                 "favorites": character_voice.character_id.favorites,

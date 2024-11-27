@@ -60,10 +60,10 @@ class TestMangaSerializers:
             "image": manga.image.url,
             "synopsis": manga.synopsis,
             "background": manga.background,
-            "media_type": manga.media_type.capitalize(),
+            "media_type": manga.get_media_type_display(),
             "volumes": manga.volumes,
             "chapters": manga.chapters,
-            "status": manga.status.capitalize(),
+            "status": manga.get_status_display(),
             "published_from": str(manga.published_from),
             "published_to": str(manga.published_to),
             "genres": [

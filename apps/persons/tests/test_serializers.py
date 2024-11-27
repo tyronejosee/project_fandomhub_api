@@ -27,8 +27,8 @@ class TestPersonSerializers:
             "birthday": person.birthday.isoformat(),
             "about": person.about,
             "website": person.website,
-            "language": person.language.capitalize(),
-            "category": person.category.capitalize(),
+            "language": person.get_language_display(),
+            "category": person.get_category_display(),
             "favorites": person.favorites,
             "created_at": person.created_at.isoformat(),
             "updated_at": person.updated_at.isoformat(),
@@ -66,7 +66,7 @@ class TestPersonSerializers:
             "id": str(person.id),
             "name": person.name,
             "image": person.image.url,
-            "language": person.language.capitalize(),
+            "language": person.get_language_display(),
             "favorites": person.favorites,
         }
         assert serializer.data == expected_data
@@ -77,6 +77,6 @@ class TestPersonSerializers:
             "id": str(person.id),
             "name": person.name,
             "image": person.image.url,
-            "category": person.category.capitalize(),
+            "category": person.get_category_display(),
         }
         assert serializer.data == expected_data
