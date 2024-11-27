@@ -104,7 +104,7 @@ class AnimeWriteSerializer(serializers.ModelSerializer):
 class AnimeMinimalSerializer(serializers.ModelSerializer):
     """Serializer for Anime model (Minimal)."""
 
-    genres = GenreMinimalSerializer(many=True)
+    genres = GenreMinimalSerializer(many=True, read_only=True)
 
     class Meta:
         model = Anime

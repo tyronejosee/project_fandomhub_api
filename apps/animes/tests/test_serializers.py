@@ -23,6 +23,7 @@ class TestBroadcastSerializers:
             "time": broadcast.time.isoformat(),
             "timezone": broadcast.timezone,
         }
+
         assert serializer.data == expected_data
 
 
@@ -54,7 +55,7 @@ class TestAnimeSerializers:
             "broadcast_id": serializer.data["broadcast_id"],
             "media_type": anime.media_type,
             "episodes": anime.episodes,
-            "status": anime.status.capitalize(),
+            "status": anime.get_status_display(),
             "aired_from": anime.aired_from,
             "aired_to": anime.aired_to,
             "studio_id": {
@@ -98,8 +99,6 @@ class TestAnimeSerializers:
             "members": anime.members,
             "favorites": anime.favorites,
         }
-        print(serializer.data)
-        print(expected_data)
 
         assert serializer.data == expected_data
 
