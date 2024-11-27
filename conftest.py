@@ -15,6 +15,12 @@ from apps.genres.tests.factories import GenreFactory, ThemeFactory, DemographicF
 from apps.mangas.tests.factories import MagazineFactory, MangaFactory
 from apps.producers.tests.factories import ProducerFactory
 from apps.persons.tests.factories import PersonFactory, StaffAnimeFactory
+from apps.playlists.tests.factories import (
+    AnimeListFactory,
+    MangaListFactory,
+    AnimeListItemFactory,
+    MangaListItemFactory,
+)
 from apps.news.tests.factories import NewsFactory
 from apps.reviews.tests.factories import ReviewFactory
 from apps.profiles.tests.factories import ProfileFactory
@@ -178,3 +184,23 @@ def staff_anime():
 @pytest.fixture
 def profile():
     return ProfileFactory.create()
+
+
+@pytest.fixture
+def anime_list():
+    return AnimeListFactory.create()
+
+
+@pytest.fixture
+def manga_list():
+    return MangaListFactory.create()
+
+
+@pytest.fixture
+def anime_list_item():
+    return AnimeListItemFactory.create()
+
+
+@pytest.fixture
+def manga_list_item():
+    return MangaListItemFactory.create()

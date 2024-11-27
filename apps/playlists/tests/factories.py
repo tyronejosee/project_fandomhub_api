@@ -2,6 +2,7 @@
 
 import factory
 
+from apps.utils.functions import generate_test_image
 from apps.animes.tests.factories import AnimeFactory
 from apps.mangas.tests.factories import MangaFactory
 from apps.users.tests.factories import MemberFactory
@@ -22,9 +23,7 @@ class AnimeListFactory(factory.django.DjangoModelFactory):
         model = AnimeList
 
     user = factory.SubFactory(MemberFactory)
-    # banner = factory.django.ImageField(
-    #     color="blue", format="jpg", width=500, height=1500
-    # )
+    banner = factory.LazyAttribute(lambda _: generate_test_image(size=(500, 1500)))
     is_public = True
 
 
@@ -35,9 +34,7 @@ class MangaListFactory(factory.django.DjangoModelFactory):
         model = MangaList
 
     user = factory.SubFactory(MemberFactory)
-    # banner = factory.django.ImageField(
-    #     color="blue", format="jpg", width=500, height=1500
-    # )
+    banner = factory.LazyAttribute(lambda _: generate_test_image(size=(500, 1500)))
     is_public = True
 
 
