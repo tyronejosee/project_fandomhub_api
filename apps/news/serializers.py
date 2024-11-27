@@ -3,7 +3,6 @@
 from rest_framework import serializers
 from drf_spectacular.utils import extend_schema_field
 
-from apps.users.serializers import UserMinimalSerializer
 from .models import News
 
 
@@ -61,8 +60,8 @@ class NewsWriteSerializer(serializers.ModelSerializer):
 class NewsMinimalSerializer(serializers.ModelSerializer):
     """Serializer for News model (Minimal)."""
 
-    tag = serializers.CharField(source="get_tag_display")
-    author_id = UserMinimalSerializer()
+    author_id = serializers.SerializerMethodField()
+    tag = serializers.CharField(source="get_tag_display", read_only=True)
 
     class Meta:
         model = News
@@ -75,6 +74,10 @@ class NewsMinimalSerializer(serializers.ModelSerializer):
             "tag",
             "author_id",
         ]
+
+    @extend_schema_field(str)
+    def get_author_id(self, obj) -> str:
+        return obj.author_id.username
 
     def to_representation(self, instance):
         representation = super().to_representation(instance)

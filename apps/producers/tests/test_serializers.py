@@ -24,6 +24,7 @@ class TestProducerSerializers:
             "created_at": producer.created_at.isoformat(),
             "updated_at": producer.updated_at.isoformat(),
         }
+
         assert serializer.data == expected_data
 
     def test_producer_write_serializer_valid_data(self, producer):
@@ -36,6 +37,7 @@ class TestProducerSerializers:
             "image": producer.image,
         }
         serializer = ProducerWriteSerializer(data=data)
+
         assert serializer.is_valid()
         assert serializer.validated_data["name"] == "Wit Studio"
         assert serializer.validated_data["name_jpn"] == "ウィットスタジオ"
@@ -43,6 +45,7 @@ class TestProducerSerializers:
     def test_producer_write_serializer_invalid_data(self):
         data = {}
         serializer = ProducerWriteSerializer(data=data)
+
         assert not serializer.is_valid()
         assert "name" in serializer.errors
         assert "name_jpn" in serializer.errors

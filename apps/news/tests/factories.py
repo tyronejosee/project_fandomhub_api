@@ -2,6 +2,7 @@
 
 import factory
 
+from apps.utils.functions import generate_test_image
 from apps.animes.tests.factories import AnimeFactory
 from apps.mangas.tests.factories import MangaFactory
 from apps.users.tests.factories import MemberFactory
@@ -19,9 +20,7 @@ class NewsFactory(factory.django.DjangoModelFactory):
     name = factory.Faker("sentence")
     description = factory.Faker("sentence", nb_words=10)
     content = factory.Faker("text")
-    # image = factory.django.ImageField(
-    #     color="blue", format="jpeg", width=909, height=1280
-    # )
+    image = factory.LazyAttribute(lambda _: generate_test_image(size=(600, 600)))
     source = factory.Faker("url")
     tag = factory.Iterator(TagChoices.values)
     anime_relations = factory.RelatedFactoryList(
