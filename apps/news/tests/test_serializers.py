@@ -37,6 +37,7 @@ class TestNewsSerializers:
             "image": news.image,
             "source": news.source,
             "tag": news.tag,
+            "author_id": str(news.author_id.id),
             "anime_relations": [str(anime.id) for anime in news.anime_relations.all()],
             "manga_relations": [str(manga.id) for manga in news.manga_relations.all()],
         }

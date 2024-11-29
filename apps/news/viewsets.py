@@ -4,7 +4,7 @@ from rest_framework.viewsets import ModelViewSet
 from rest_framework.permissions import AllowAny
 from drf_spectacular.utils import extend_schema_view
 
-from apps.utils.mixins import ListCacheMixin
+from apps.utils.mixins import ListCacheMixin, LogicalDeleteMixin
 from apps.users.permissions import IsModerator
 from .models import News
 from .serializers import NewsReadSerializer, NewsWriteSerializer, NewsMinimalSerializer
@@ -13,7 +13,7 @@ from .schemas import news_schemas
 
 
 @extend_schema_view(**news_schemas)
-class NewsViewSet(ListCacheMixin, ModelViewSet):
+class NewsViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
     """
     ViewSet for managing News instances.
 

@@ -52,6 +52,7 @@ class NewsWriteSerializer(serializers.ModelSerializer):
             "image",
             "source",
             "tag",
+            "author_id",
             "anime_relations",
             "manga_relations",
         ]
