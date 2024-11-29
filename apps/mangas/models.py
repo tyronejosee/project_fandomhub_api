@@ -15,7 +15,7 @@ from .managers import MangaManager, MagazineManager
 from .choices import StatusChoices, MediaTypeChoices
 
 
-class Magazine(BaseModel, SlugMixin):
+class Magazine(SlugMixin, BaseModel):
     """Model definition for Magazine."""
 
     name = models.CharField(_("name"), max_length=255)
@@ -30,6 +30,10 @@ class Magazine(BaseModel, SlugMixin):
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs):
+        self.set_slug()
+        super().save(*args, **kwargs)
 
 
 class Manga(SlugMixin, BaseModel):

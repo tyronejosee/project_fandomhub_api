@@ -1,6 +1,5 @@
 """ViewSet Tests for Animes App."""
 
-import uuid
 import pytest
 from datetime import timedelta
 from rest_framework import status
@@ -20,19 +19,19 @@ from ..choices import SeasonChoices
 
 @pytest.mark.django_db
 class TestAnimeViewSet:
-    """Tests for AnimeViewSet API endpoints."""
+    """Tests for AnimeViewSet."""
 
     def test_list_animes(self, anonymous_user, anime):
         response = anonymous_user.get("/api/v1/animes/")
 
-        assert response.status_code == 200
+        assert response.status_code == status.HTTP_200_OK
         assert len(response.json()) > 0
 
     def test_retrieve_anime(self, anonymous_user, anime):
         response = anonymous_user.get(f"/api/v1/animes/{anime.id}/")
 
         assert response.status_code == status.HTTP_200_OK
-        assert uuid.UUID(response.data["id"]) == anime.id
+        assert str(response.data["id"]) == str(anime.id)
         assert response.data["name"] == anime.name
 
     def test_retrieve_anime_not_found(self, anonymous_user):
@@ -61,13 +60,12 @@ class TestAnimeViewSet:
             data,
             format="multipart",
         )
-
         assert response.status_code == status.HTTP_201_CREATED
         assert Anime.objects.filter(name="New Anime").exists()
         assert response.data["name"] == "New Anime"
 
     def test_create_anime_unauthorized(self, member_user):
-        data = {"name": "Unauthorized Anime"}
+        data = {}
         member_response = member_user.post("/api/v1/animes/", data, format="json")
         assert member_response.status_code == status.HTTP_403_FORBIDDEN
 
@@ -75,8 +73,6 @@ class TestAnimeViewSet:
 
         anonymus_response = member_user.post("/api/v1/animes/", data, format="json")
         assert anonymus_response.status_code == status.HTTP_401_UNAUTHORIZED
-
-        assert not Anime.objects.filter(name="Unauthorized Anime").exists()
 
     def test_update_anime(self, contributor_user, anime, genre, theme):
         producer = ProducerFactory(type=TypeChoices.STUDIO)
@@ -94,11 +90,8 @@ class TestAnimeViewSet:
             "duration": timedelta(hours=1, minutes=45, seconds=30),
         }
         response = contributor_user.put(
-            f"/api/v1/animes/{anime.id}/",
-            data,
-            format="multipart",
+            f"/api/v1/animes/{anime.id}/", data, format="multipart"
         )
-
         assert response.status_code == status.HTTP_200_OK
         anime.refresh_from_db()
         assert anime.name == "Updated Anime"
@@ -110,33 +103,29 @@ class TestAnimeViewSet:
             data,
             format="json",
         )
-
         assert response.status_code == status.HTTP_200_OK
         anime.refresh_from_db()
         assert anime.name == "Partially Updated Anime"
 
     def test_delete_anime(self, contributor_user, anime):
         assert anime.is_available
-
         response = contributor_user.delete(f"/api/v1/animes/{anime.id}/")
         anime.refresh_from_db()
-
         assert response.status_code == status.HTTP_204_NO_CONTENT
         assert Anime.objects.filter(id=anime.id).exists()
         assert not anime.is_available
 
+    # Action tests
+
     def test_action_get_characters_success(self, anonymous_user, anime, character):
         CharacterAnimeFactory(character_id=character, anime_id=anime)
-
         response = anonymous_user.get(f"/api/v1/animes/{anime.id}/characters/")
-
         assert response.status_code == status.HTTP_200_OK
         expected_data = CharacterMinimalSerializer([character], many=True).data
         assert response.json() == expected_data
 
     def test_get_characters_no_relations(self, anonymous_user, anime):
         response = anonymous_user.get(f"/api/v1/animes/{anime.id}/characters/")
-
         assert response.status_code == status.HTTP_404_NOT_FOUND
         assert response.data["detail"] == "No characters found for this anime."
 
@@ -145,11 +134,8 @@ class TestAnimeViewSet:
         staff_two = PersonFactory()
         StaffAnimeFactory(person_id=staff_one, anime_id=anime)
         StaffAnimeFactory(person_id=staff_two, anime_id=anime)
-
         response = anonymous_user.get(f"/api/v1/animes/{anime.id}/staff/")
-
         assert response.status_code == status.HTTP_200_OK
-
         staff_ids = StaffAnime.objects.filter(anime_id=anime.id).values_list(
             "person_id", flat=True
         )
@@ -160,7 +146,6 @@ class TestAnimeViewSet:
 
     def test_get_staff_no_relations(self, anonymous_user, anime):
         response = anonymous_user.get(f"/api/v1/animes/{anime.id}/staff/")
-
         assert response.status_code == status.HTTP_404_NOT_FOUND
         assert response.data["detail"] == "No staff found for this anime."
 

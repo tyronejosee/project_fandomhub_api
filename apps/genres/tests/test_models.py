@@ -3,12 +3,12 @@
 import pytest
 from django.db import IntegrityError
 
-from apps.genres.models import Genre, Theme, Demographic
+from ..models import Genre, Theme, Demographic
 
 
 @pytest.mark.django_db
 class TestGenreModel:
-    """Model tests for Genre model."""
+    """Tests for Genre model."""
 
     def test_genre_creation(self):
         genre = Genre.objects.create(name="Action")
