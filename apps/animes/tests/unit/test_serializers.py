@@ -3,7 +3,7 @@
 import pytest
 
 from apps.genres.tests.factories import GenreFactory, ThemeFactory
-from ..serializers import (
+from ...serializers import (
     BroadcastMinimalSerializer,
     AnimeReadSerializer,
     AnimeWriteSerializer,

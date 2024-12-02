@@ -7,7 +7,7 @@ from django.utils import timezone
 from apps.utils.functions import generate_test_image
 from apps.producers.tests.factories import ProducerFactory
 from apps.genres.tests.factories import GenreFactory, ThemeFactory
-from ..models import Broadcast, Anime
+from ..models import Broadcast, Anime, AnimeStats
 from ..choices import (
     TimezoneChoices,
     SeasonChoices,
@@ -92,3 +92,26 @@ class AnimeFactory(factory.django.DjangoModelFactory):
         else:
             default_producer = ProducerFactory.create()
             self.producers.add(default_producer)
+
+
+class AnimeStatsFactory(factory.django.DjangoModelFactory):
+    """Factory for AnimeStats model."""
+
+    class Meta:
+        model = AnimeStats
+
+    anime_id = factory.SubFactory(AnimeFactory)
+    watching = factory.Faker("random_int", min=0, max=500)
+    completed = factory.Faker("random_int", min=0, max=500)
+    on_hold = factory.Faker("random_int", min=0, max=500)
+    dropped = factory.Faker("random_int", min=0, max=500)
+    plan_to_watch = factory.Faker("random_int", min=0, max=500)
+
+    @factory.post_generation
+    def set_total(obj, create, extracted, **kwargs):
+        """
+        Ensures the total field is recalculated after the instance is created.
+        This step is useful because the total is computed in the `save` method.
+        """
+        if create:
+            obj.save()
