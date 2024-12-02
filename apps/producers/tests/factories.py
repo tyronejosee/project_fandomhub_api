@@ -13,8 +13,8 @@ class ProducerFactory(factory.django.DjangoModelFactory):
     class Meta:
         model = Producer
 
-    name = factory.Faker("company")
-    name_jpn = factory.Faker("company")
+    name = factory.Faker("name")
+    name_jpn = factory.Faker("name")
     about = factory.Faker("text")
     established = factory.Faker("year")
     type = factory.Iterator(TypeChoices.values)
