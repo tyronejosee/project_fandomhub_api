@@ -32,6 +32,7 @@ from apps.users.tests.factories import (
     ModeratorFactory,
     AdministratorFactory,
 )
+from apps.utils.tests.factories import PictureFactory
 
 User = get_user_model()
 
@@ -204,3 +205,8 @@ def anime_list_item():
 @pytest.fixture
 def manga_list_item():
     return MangaListItemFactory.create()
+
+
+@pytest.fixture
+def picture():
+    return PictureFactory.create()
