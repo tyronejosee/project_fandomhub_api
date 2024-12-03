@@ -2,7 +2,7 @@
 
 import pytest
 
-from ..serializers import (
+from ...serializers import (
     MagazineReadSerializer,
     MagazineWriteSerializer,
     MangaReadSerializer,

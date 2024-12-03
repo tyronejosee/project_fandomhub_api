@@ -5,7 +5,7 @@ from django.db import IntegrityError
 from django.core.exceptions import ValidationError
 
 from apps.utils.functions import generate_test_image
-from ..models import Magazine, Manga
+from ...models import Magazine, Manga
 
 
 @pytest.mark.django_db

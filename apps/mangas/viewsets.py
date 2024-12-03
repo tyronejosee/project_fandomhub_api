@@ -312,7 +312,10 @@ class MangaViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         if news.exists():
             serializer = NewsMinimalSerializer(news, many=True)
             return Response(serializer.data)
-        return Response({"detail": _("No news found for this manga.")})
+        return Response(
+            {"detail": _("No news found for this manga.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     # @action(
     #     detail=True,
