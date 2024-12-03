@@ -138,7 +138,7 @@ class PersonViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         Action create a picture for the person.
 
         Endpoints:
-        - POST api/v1/persons/{id}/pictures/
+        - POST api/v1/persons/{id}/create-picture/
         """
         serializer = PictureWriteSerializer(data=request.data)
         if serializer.is_valid():

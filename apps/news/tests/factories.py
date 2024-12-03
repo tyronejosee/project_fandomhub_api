@@ -23,14 +23,24 @@ class NewsFactory(factory.django.DjangoModelFactory):
     image = factory.LazyAttribute(lambda _: generate_test_image(size=(600, 600)))
     source = factory.Faker("url")
     tag = factory.Iterator(TagChoices.values)
-    anime_relations = factory.RelatedFactoryList(
-        AnimeFactory,
-        "news",
-        size=2,
-    )
-    manga_relations = factory.RelatedFactoryList(
-        MangaFactory,
-        "news",
-        size=2,
-    )
     author_id = factory.SubFactory(MemberFactory)
+
+    @factory.post_generation
+    def anime_relations(self, create, extracted, **kwargs):
+        if not create:
+            return
+        if extracted:
+            self.anime_relations.set(extracted)
+        else:
+            default_anime = AnimeFactory.create()
+            self.anime_relations.add(default_anime)
+
+    @factory.post_generation
+    def manga_relations(self, create, extracted, **kwargs):
+        if not create:
+            return
+        if extracted:
+            self.manga_relations.set(extracted)
+        else:
+            default_manga = MangaFactory.create()
+            self.manga_relations.add(default_manga)

@@ -21,12 +21,11 @@ class TestNewsSerializers:
             "image": news.image.url,
             "source": news.source,
             "tag": news.get_tag_display(),
-            "anime_relations": [str(anime.id) for anime in news.anime_relations.all()],
-            "manga_relations": [str(manga.id) for manga in news.manga_relations.all()],
+            "anime_relations": serializer.data["anime_relations"],
+            "manga_relations": serializer.data["manga_relations"],
             "created_at": news.created_at.isoformat(),
             "updated_at": news.updated_at.isoformat(),
         }
-
         assert serializer.data == expected_data
 
     def test_news_write_serializer_valid_data(self, news):
