@@ -4,8 +4,8 @@ from datetime import date
 import pytest
 from django.db import IntegrityError
 
-from .factories import PersonFactory
-from ..models import Person
+from ..factories import PersonFactory
+from ...models import Person
 
 
 @pytest.mark.django_db
@@ -61,14 +61,12 @@ class TestPersonModel:
     def test_property_age(self):
         birth_date = date(1990, 5, 10)
         person = PersonFactory(birthday=birth_date)
-
         today = date.today()
         expected_age = (
             today.year
             - birth_date.year
             - ((today.month, today.day) < (birth_date.month, birth_date.day))
         )
-
         assert person.age == expected_age
 
     def test_manager_get_available(self, person):
