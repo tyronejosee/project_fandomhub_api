@@ -1,7 +1,6 @@
 """Endpoint Tests for Animes App."""
 
 import pytest
-from django.contrib.contenttypes.models import ContentType
 from rest_framework import status
 
 from apps.animes.tests.factories import AnimeFactory
@@ -113,7 +112,7 @@ def test_delete_character(contributor_user, character):
 @pytest.mark.django_db
 def test_list_pictures_by_character(anonymous_user, character):
     picture = PictureFactory(
-        content_type=ContentType.objects.get_for_model(Character),
+        content_object=character,
         object_id=character.id,
     )
     response = anonymous_user.get(f"/api/v1/characters/{character.id}/pictures/")

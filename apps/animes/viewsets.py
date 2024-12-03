@@ -173,6 +173,8 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         permission_classes=[AllowAny],
         url_path="reviews",
     )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def get_reviews(self, request, *args, **kwargs):
         """
         Action get all reviews for an anime.
@@ -317,6 +319,8 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         permission_classes=[AllowAny],
         url_path="news",
     )
+    @method_decorator(cache_page(60 * 60 * 2))
+    @method_decorator(vary_on_headers("User-Agent", "Accept-Language"))
     def get_news(self, request, *args, **kwargs):
         """
         Action retrieve news associated with a anime.
@@ -329,7 +333,10 @@ class AnimeViewSet(ListCacheMixin, LogicalDeleteMixin, ModelViewSet):
         if news.exists():
             serializer = NewsMinimalSerializer(news, many=True)
             return Response(serializer.data)
-        return Response({"detail": _("No news found for this anime.")})
+        return Response(
+            {"detail": _("No news found for this anime.")},
+            status=status.HTTP_404_NOT_FOUND,
+        )
 
     # @action(
     #     detail=True,
