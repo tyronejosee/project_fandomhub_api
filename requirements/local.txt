@@ -15,3 +15,4 @@ factory-boy==3.3.0
 
 # Tools
 ipdb==0.13.13
+freezegun==1.5.1
