@@ -3,7 +3,7 @@
 import pytest
 
 from apps.users.tests.factories import MemberFactory
-from ..serializers import (
+from ...serializers import (
     ClubReadSerializer,
     ClubWriteSerializer,
     ClubMemberReadSerializer,
@@ -29,7 +29,6 @@ class TestClubSerializers:
             "created_at": club.created_at.isoformat(),
             "updated_at": club.updated_at.isoformat(),
         }
-
         assert serializer.data == expected_data
 
     def test_club_write_serializer_valid_data(self, club):
@@ -43,14 +42,12 @@ class TestClubSerializers:
             "is_public": club.is_public,
         }
         serializer = ClubWriteSerializer(data=data)
-
         assert serializer.is_valid(), serializer.errors
         assert serializer.validated_data["name"] == "Ikebana Club"
 
     def test_club_write_serializer_invalid_data(self):
         data = {}
         serializer = ClubWriteSerializer(data=data)
-
         assert not serializer.is_valid()
         assert "name" in serializer.errors
         assert "description" in serializer.errors
@@ -69,13 +66,11 @@ class TestClubMemberSerializers:
             "user_id": str(club_member.user_id),
             "joined_at": club_member.joined_at.isoformat().replace("+00:00", "Z"),
         }
-
         assert serializer.data == expected_data
 
     def test_club_member_write_serializer_valid_data(self):
         user = MemberFactory()
         data = {"user_id": user.id}
         serializer = ClubMemberWriteSerializer(data=data)
-
         assert serializer.is_valid(), serializer.errors
         assert serializer.validated_data["user_id"] == user

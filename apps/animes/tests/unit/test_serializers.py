@@ -23,7 +23,6 @@ class TestBroadcastSerializers:
             "time": broadcast.time.isoformat(),
             "timezone": broadcast.timezone,
         }
-
         assert serializer.data == expected_data
 
 
@@ -99,7 +98,6 @@ class TestAnimeSerializers:
             "members": anime.members,
             "favorites": anime.favorites,
         }
-
         assert serializer.data == expected_data
 
     def test_anime_write_serializer_valid_data(self, anime):
@@ -131,7 +129,6 @@ class TestAnimeSerializers:
             "website": anime.website,
         }
         serializer = AnimeWriteSerializer(data=data)
-
         assert serializer.is_valid(), serializer.errors
         assert serializer.validated_data["name"] == "Chainsaw Man"
         assert serializer.validated_data["name_jpn"] == "チェンソーマン"
@@ -140,7 +137,6 @@ class TestAnimeSerializers:
     def test_anime_write_serializer_invalid_data(self):
         data = {}
         serializer = AnimeWriteSerializer(data=data)
-
         assert not serializer.is_valid()
         assert "name" in serializer.errors
         assert "name_jpn" in serializer.errors
@@ -169,7 +165,6 @@ class TestAnimeSerializers:
             "members": anime.members,
             "favorites": anime.favorites,
         }
-
         assert serializer.data == expected_data
 
     # TODO: Add AnimeStatsReadSerializer test

@@ -4,7 +4,6 @@ import pytest
 from django.db import IntegrityError
 from django.core.exceptions import ValidationError
 
-# from apps.utils.functions import generate_test_image
 from ...choices import DayChoices
 from ..factories import BroadcastFactory, AnimeFactory
 
@@ -52,6 +51,3 @@ class TestAnimeModel:
         anime = AnimeFactory.create(name="a" * 256)  # Max 255
         with pytest.raises(ValidationError):
             anime.full_clean()
-
-    # def test_field_invalid_dimensions_image(self, anime):
-    #     pass
