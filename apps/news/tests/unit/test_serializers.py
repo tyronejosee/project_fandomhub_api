@@ -2,7 +2,11 @@
 
 import pytest
 
-from ..serializers import NewsReadSerializer, NewsWriteSerializer, NewsMinimalSerializer
+from ...serializers import (
+    NewsReadSerializer,
+    NewsWriteSerializer,
+    NewsMinimalSerializer,
+)
 
 
 @pytest.mark.django_db
@@ -41,7 +45,6 @@ class TestNewsSerializers:
             "manga_relations": [str(manga.id) for manga in news.manga_relations.all()],
         }
         serializer = NewsWriteSerializer(data=data)
-
         assert serializer.is_valid(), serializer.errors
         assert serializer.validated_data["name"] == "Lorem ipsum"
         assert serializer.validated_data["image"]
@@ -49,7 +52,6 @@ class TestNewsSerializers:
     def test_news_write_serializer_invalid_data(self):
         data = {}
         serializer = NewsWriteSerializer(data=data)
-
         assert not serializer.is_valid()
         assert "name" in serializer.errors
         assert "description" in serializer.errors
@@ -68,5 +70,4 @@ class TestNewsSerializers:
             "tag": news.get_tag_display(),
             "author_id": news.author_id.username,
         }
-
         assert serializer.data == expected_data

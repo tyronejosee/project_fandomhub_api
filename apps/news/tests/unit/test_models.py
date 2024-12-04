@@ -3,8 +3,8 @@
 import pytest
 from django.core.exceptions import ValidationError
 
-from ..models import News
-from .factories import NewsFactory
+from ...models import News
+from ..factories import NewsFactory
 
 
 @pytest.mark.django_db
