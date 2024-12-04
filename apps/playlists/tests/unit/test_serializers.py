@@ -2,7 +2,7 @@
 
 import pytest
 
-from ..serializers import (
+from ...serializers import (
     AnimeListReadSerializer,
     AnimeListWriteSerializer,
     AnimeListItemReadSerializer,
@@ -27,7 +27,6 @@ class TestAnimeListSerializers:
             "created_at": anime_list.created_at.isoformat(),
             "updated_at": anime_list.updated_at.isoformat(),
         }
-
         assert serializer.data == expected_data
 
     def test_anime_list_write_serializer_valid_data(self, anime_list):
@@ -36,14 +35,12 @@ class TestAnimeListSerializers:
             "is_public": anime_list.is_public,
         }
         serializer = AnimeListWriteSerializer(data=data)
-
         assert serializer.is_valid(), serializer.errors
         assert serializer.validated_data["banner"]
 
     def test_anime_list_write_serializer_invalid_data(self):
         data = {}
         serializer = AnimeListWriteSerializer(data=data)
-
         assert not serializer.is_valid()
         assert "banner" in serializer.errors
 
@@ -93,7 +90,6 @@ class TestAnimeListItemSerializers:
             "created_at": anime_list_item.created_at.isoformat(),
             "updated_at": anime_list_item.updated_at.isoformat(),
         }
-
         assert serializer.data == expected_data
 
         # TODO: Add AnimeListItemWriteSerializer test
@@ -112,7 +108,6 @@ class TestMangaListSerializers:
             "created_at": manga_list.created_at.isoformat(),
             "updated_at": manga_list.updated_at.isoformat(),
         }
-
         assert serializer.data == expected_data
 
     def test_manga_list_write_serializer_valid_data(self, manga_list):
@@ -121,14 +116,12 @@ class TestMangaListSerializers:
             "is_public": manga_list.is_public,
         }
         serializer = MangaListWriteSerializer(data=data)
-
         assert serializer.is_valid(), serializer.errors
         assert serializer.validated_data["banner"]
 
     def test_manga_list_write_serializer_invalid_data(self):
         data = {}
         serializer = MangaListWriteSerializer(data=data)
-
         assert not serializer.is_valid()
         assert "banner" in serializer.errors
 
@@ -161,7 +154,6 @@ class TestMangaListItemSerializers:
             "created_at": manga_list_item.created_at.isoformat(),
             "updated_at": manga_list_item.updated_at.isoformat(),
         }
-
         assert serializer.data == expected_data
 
         # TODO: Add MangaListItemWriteSerializer test

@@ -3,7 +3,7 @@
 import pytest
 from django.db import IntegrityError
 
-from ..models import Producer
+from ...models import Producer
 
 
 @pytest.mark.django_db
