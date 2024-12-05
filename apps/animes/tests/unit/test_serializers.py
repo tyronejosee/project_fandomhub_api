@@ -8,6 +8,7 @@ from ...serializers import (
     AnimeReadSerializer,
     AnimeWriteSerializer,
     AnimeMinimalSerializer,
+    AnimeStatsReadSerializer,
 )
 
 
@@ -167,4 +168,22 @@ class TestAnimeSerializers:
         }
         assert serializer.data == expected_data
 
-    # TODO: Add AnimeStatsReadSerializer test
+
+@pytest.mark.django_db
+class TestMangaStatsSerializers:
+    """Tests for MangaStats serializers."""
+
+    def test_anime_stats_read_serializer(self, anime):
+        anime_stats = anime.stats  # Inverse relationship created by the signal
+        serializer = AnimeStatsReadSerializer(anime_stats)
+        expected_data = {
+            "id": str(anime_stats.id),
+            "watching": anime_stats.watching,
+            "completed": anime_stats.completed,
+            "on_hold": anime_stats.on_hold,
+            "dropped": anime_stats.dropped,
+            "plan_to_watch": anime_stats.plan_to_watch,
+            "total": anime_stats.total,
+            "updated_at": anime_stats.updated_at.isoformat(),
+        }
+        assert serializer.data == expected_data
