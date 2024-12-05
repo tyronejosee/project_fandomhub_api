@@ -87,7 +87,13 @@ class AnimeListItemView(APIView):
     permission_classes = [IsMember]
 
     def get_queryset(self):
-        return AnimeList.objects.get(user=self.request.user)
+        # return AnimeList.objects.get(user=self.request.user)
+        try:
+            return AnimeList.objects.get(user=self.request.user)
+        except AnimeList.DoesNotExist:
+            return AnimeList.objects.create(user=self.request.user)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
     def get(self, request, *args, **kwargs):
         # Retrieve all animes from the animelist

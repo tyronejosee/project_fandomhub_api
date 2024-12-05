@@ -51,7 +51,7 @@ class AnimeListItemFactory(factory.django.DjangoModelFactory):
     score = factory.Iterator(ScoreChoices.values)
     start_date = factory.Faker("date_between", start_date="-2y", end_date="today")
     finish_date = factory.Faker("date_between", start_date="today", end_date="+1y")
-    tags = factory.Faker("words", nb=3)
+    tags = factory.LazyFunction(lambda: ["tag1", "tag2", "tag3"])
     priority = factory.Iterator(PriorityChoices.values)
     storage = factory.Iterator(StorageChoices.values)
     times_rewatched = factory.Faker("random_int", min=0, max=5)

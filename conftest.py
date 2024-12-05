@@ -58,6 +58,13 @@ def user():
 
 
 @pytest.fixture
+def api_client_with_member_user(api_client):
+    user = MemberFactory()
+    api_client.force_authenticate(user=user)
+    return api_client, user
+
+
+@pytest.fixture
 def member_user(api_client):
     user = MemberFactory()
     api_client.force_authenticate(user=user)
