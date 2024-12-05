@@ -2,7 +2,7 @@
 
 import pytest
 
-from ..serializers import (
+from ...serializers import (
     ProfileReadSerializer,
     ProfileWriteSerializer,
     ProfileMinimalSerializer,
@@ -31,7 +31,6 @@ class TestProfileSerializers:
             "image": profile.image.url,
             "cover": serializer.data["cover"],  # TODO: Fix
         }
-
         assert serializer.data == expected_data
 
     def test_profile_write_serializer_valid_data(self, profile):
@@ -44,7 +43,6 @@ class TestProfileSerializers:
             "cover": profile.cover,
         }
         serializer = ProfileWriteSerializer(data=data)
-
         assert serializer.is_valid(), serializer.errors
         assert serializer.validated_data["first_name"] == "First Name"
         assert serializer.validated_data["last_name"] == "Last Name"
@@ -52,7 +50,6 @@ class TestProfileSerializers:
     def test_profile_write_serializer_invalid_data(self):
         data = {}
         serializer = ProfileWriteSerializer(data=data)
-
         assert not serializer.is_valid()
         assert "image" in serializer.errors
 
@@ -70,7 +67,6 @@ class TestProfileSerializers:
             "last_name": profile.last_name,
             "image": profile.image.url,
         }
-
         assert serializer.data == expected_data
 
     def test_profile_about_serializer(self, profile):
@@ -78,5 +74,4 @@ class TestProfileSerializers:
         expected_data = {
             "bio": profile.bio,
         }
-
         assert serializer.data == expected_data

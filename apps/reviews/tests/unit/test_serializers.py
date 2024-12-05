@@ -2,7 +2,7 @@
 
 import pytest
 
-from ..serializers import ReviewReadSerializer, ReviewWriteSerializer
+from ...serializers import ReviewReadSerializer, ReviewWriteSerializer
 
 
 @pytest.mark.django_db
