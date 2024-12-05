@@ -1,4 +1,4 @@
-# """Model tests for Utils App."""
+"""Model tests for Utils App."""
 
 import pytest
 from django.core.exceptions import ValidationError

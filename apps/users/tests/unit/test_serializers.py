@@ -2,7 +2,7 @@
 
 import pytest
 
-from ..serializers import (
+from ...serializers import (
     UserReadSerializer,
     UserWriteSerializer,
     UserMinimalSerializer,
@@ -40,14 +40,12 @@ class TestReviewSerializers:
     #         "is_staff": user.is_staff,
     #     }
     #     serializer = UserWriteSerializer(data=data)
-
     #     assert serializer.is_valid(), serializer.errors
     #     assert serializer.validated_data["email"] == "test_user@test.com"
 
     def test_user_write_serializer_invalid_data(self):
         data = {}
         serializer = UserWriteSerializer(data=data)
-
         assert not serializer.is_valid()
         assert "email" in serializer.errors
         assert "username" in serializer.errors
