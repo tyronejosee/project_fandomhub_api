@@ -245,7 +245,12 @@ class MangaListItemView(APIView):
     permission_classes = [IsMember]
 
     def get_queryset(self):
-        return MangaList.objects.get(user=self.request.user)
+        try:
+            return MangaList.objects.get(user=self.request.user)
+        except MangaList.DoesNotExist:
+            return MangaList.objects.create(user=self.request.user)
+        except Exception as e:
+            return Response({"detail": str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
     def get(self, request, *args, **kwargs):
         # Retrieve all mangas from the mangalist

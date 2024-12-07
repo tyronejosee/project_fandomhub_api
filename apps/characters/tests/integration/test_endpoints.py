@@ -2,6 +2,7 @@
 
 import pytest
 from rest_framework import status
+from rest_framework.test import APIClient
 
 from apps.animes.tests.factories import AnimeFactory
 from apps.animes.serializers import AnimeMinimalSerializer
@@ -22,8 +23,8 @@ from ..factories import (
 
 
 @pytest.mark.django_db
-def test_list_character(anonymous_user, character):
-    endpoint = "/api/v1/characters/"
+def test_list_character(anonymous_user: APIClient, character: Character) -> None:
+    endpoint: str = "/api/v1/characters/"
     response = anonymous_user.get(endpoint)
     assert response.status_code == status.HTTP_200_OK
     assert response.reason_phrase == "OK"
@@ -32,8 +33,8 @@ def test_list_character(anonymous_user, character):
 
 
 @pytest.mark.django_db
-def test_retrieve_character(anonymous_user, character):
-    endpoint = f"/api/v1/characters/{character.id}/"
+def test_retrieve_character(anonymous_user: APIClient, character: Character) -> None:
+    endpoint: str = f"/api/v1/characters/{character.id}/"
     response = anonymous_user.get(endpoint)
     assert response.status_code == status.HTTP_200_OK
     assert response.reason_phrase == "OK"
@@ -42,8 +43,8 @@ def test_retrieve_character(anonymous_user, character):
 
 
 @pytest.mark.django_db
-def test_retrieve_character_errors(anonymous_user):
-    endpoint = "/api/v1/characters/989423d1-d6c0-431a-8f62-d805b8a5f321/"
+def test_retrieve_character_errors(anonymous_user: APIClient) -> None:
+    endpoint: str = "/api/v1/characters/989423d1-d6c0-431a-8f62-d805b8a5f321/"
     response = anonymous_user.get(endpoint)
     assert response.status_code == status.HTTP_404_NOT_FOUND
     assert response.reason_phrase == "Not Found"
@@ -51,9 +52,9 @@ def test_retrieve_character_errors(anonymous_user):
 
 
 @pytest.mark.django_db
-def test_create_character(contributor_user, character):
-    endpoint = "/api/v1/characters/"
-    data = {
+def test_create_character(contributor_user: APIClient, character: Character) -> None:
+    endpoint: str = "/api/v1/characters/"
+    data: dict[str, str] = {
         "name": "Makoto",
         "name_kanji": character.name_kanji,
         "about": character.about,
@@ -68,9 +69,9 @@ def test_create_character(contributor_user, character):
 
 
 @pytest.mark.django_db
-def test_create_character_unauthorized(member_user):
-    endpoint = "/api/v1/characters/"
-    data = {}
+def test_create_character_unauthorized(member_user: APIClient) -> None:
+    endpoint: str = "/api/v1/characters/"
+    data: dict = {}
     member_response = member_user.post(endpoint, data, format="json")
     assert member_response.status_code == status.HTTP_403_FORBIDDEN
     assert member_response.reason_phrase == "Forbidden"
@@ -81,9 +82,9 @@ def test_create_character_unauthorized(member_user):
 
 
 @pytest.mark.django_db
-def test_update_character(contributor_user, character):
-    endpoint = f"/api/v1/characters/{character.id}/"
-    data = {
+def test_update_character(contributor_user: APIClient, character: Character) -> None:
+    endpoint: str = f"/api/v1/characters/{character.id}/"
+    data: dict[str, str] = {
         "name": "Updated Character",
         "name_kanji": character.name_kanji,
         "about": character.about,
@@ -98,9 +99,11 @@ def test_update_character(contributor_user, character):
 
 
 @pytest.mark.django_db
-def test_partial_update_character(contributor_user, character):
-    endpoint = f"/api/v1/characters/{character.id}/"
-    data = {"name": "Partially Updated Character"}
+def test_partial_update_character(
+    contributor_user: APIClient, character: Character
+) -> None:
+    endpoint: str = f"/api/v1/characters/{character.id}/"
+    data: dict[str, str] = {"name": "Partially Updated Character"}
     response = contributor_user.patch(endpoint, data, format="json")
     assert response.status_code == status.HTTP_200_OK
     assert response.reason_phrase == "OK"
@@ -109,9 +112,9 @@ def test_partial_update_character(contributor_user, character):
 
 
 @pytest.mark.django_db
-def test_delete_character(contributor_user, character):
+def test_delete_character(contributor_user: APIClient, character: Character) -> None:
     assert character.is_available
-    endpoint = f"/api/v1/characters/{character.id}/"
+    endpoint: str = f"/api/v1/characters/{character.id}/"
     response = contributor_user.delete(endpoint)
     character.refresh_from_db()
     assert response.status_code == status.HTTP_204_NO_CONTENT
@@ -121,12 +124,14 @@ def test_delete_character(contributor_user, character):
 
 
 @pytest.mark.django_db
-def test_list_pictures_by_character(anonymous_user, character):
+def test_list_pictures_by_character(
+    anonymous_user: APIClient, character: Character
+) -> None:
     picture = PictureFactory(
         content_object=character,
         object_id=character.id,
     )
-    endpoint = f"/api/v1/characters/{character.id}/pictures/"
+    endpoint: str = f"/api/v1/characters/{character.id}/pictures/"
     response = anonymous_user.get(endpoint)
     expected_data = PictureReadSerializer([picture], many=True).data
     assert response.status_code == status.HTTP_200_OK
@@ -135,8 +140,10 @@ def test_list_pictures_by_character(anonymous_user, character):
 
 
 @pytest.mark.django_db
-def test_list_pictures_by_character_errors(anonymous_user, character):
-    endpoint = f"/api/v1/characters/{character.id}/pictures/"
+def test_list_pictures_by_character_errors(
+    anonymous_user: APIClient, character: Character
+) -> None:
+    endpoint: str = f"/api/v1/characters/{character.id}/pictures/"
     response = anonymous_user.get(endpoint)
     assert response.status_code == status.HTTP_404_NOT_FOUND
     assert response.reason_phrase == "Not Found"
@@ -147,9 +154,11 @@ def test_list_pictures_by_character_errors(anonymous_user, character):
 
 
 @pytest.mark.django_db
-def test_create_picture_by_character(contributor_user, character):
-    endpoint = f"/api/v1/characters/{character.id}/pictures/create/"
-    data = {
+def test_create_picture_by_character(
+    contributor_user: APIClient, character: Character
+) -> None:
+    endpoint: str = f"/api/v1/characters/{character.id}/pictures/create/"
+    data: dict[str, str] = {
         "name": "Momo Ayase",
         "image": character.image,
     }
@@ -161,12 +170,15 @@ def test_create_picture_by_character(contributor_user, character):
 
 
 @pytest.mark.django_db
-def test_list_voices_by_character(anonymous_user, character):
+def test_list_voices_by_character(
+    anonymous_user: APIClient,
+    character: Character,
+) -> None:
     staff_one = PersonFactory()
     staff_two = PersonFactory()
     CharacterVoiceFactory(voice_id=staff_one, character_id=character)
     CharacterVoiceFactory(voice_id=staff_two, character_id=character)
-    endpoint = f"/api/v1/characters/{character.id}/voices/"
+    endpoint: int = f"/api/v1/characters/{character.id}/voices/"
     response = anonymous_user.get(endpoint)
     voices_ids = CharacterVoice.objects.filter(character_id=character.id).values_list(
         "voice_id", flat=True
@@ -179,7 +191,10 @@ def test_list_voices_by_character(anonymous_user, character):
 
 
 @pytest.mark.django_db
-def test_retrieve_anime_by_character(anonymous_user, character):
+def test_retrieve_anime_by_character(
+    anonymous_user: APIClient,
+    character: Character,
+) -> None:
     anime = AnimeFactory()
     CharacterAnimeFactory(character_id=character, anime_id=anime)
     endpoint = f"/api/v1/characters/{character.id}/anime/"
@@ -191,7 +206,9 @@ def test_retrieve_anime_by_character(anonymous_user, character):
 
 
 @pytest.mark.django_db
-def test_retrieve_anime_by_character_not_found(anonymous_user, character):
+def test_retrieve_anime_by_character_not_found(
+    anonymous_user: APIClient, character: Character
+):
     endpoint = f"/api/v1/characters/{character.id}/anime/"
     response = anonymous_user.get(endpoint)
     assert response.status_code == status.HTTP_404_NOT_FOUND
@@ -200,10 +217,13 @@ def test_retrieve_anime_by_character_not_found(anonymous_user, character):
 
 
 @pytest.mark.django_db
-def test_retrieve_manga_by_character(anonymous_user, character):
+def test_retrieve_manga_by_character(
+    anonymous_user: APIClient,
+    character: Character,
+) -> None:
     manga = MangaFactory()
     CharacterMangaFactory(character_id=character, manga_id=manga)
-    endpoint = f"/api/v1/characters/{character.id}/manga/"
+    endpoint: str = f"/api/v1/characters/{character.id}/manga/"
     response = anonymous_user.get(endpoint)
     expected_data = MangaMinimalSerializer(manga).data
     assert response.status_code == status.HTTP_200_OK
@@ -212,8 +232,11 @@ def test_retrieve_manga_by_character(anonymous_user, character):
 
 
 @pytest.mark.django_db
-def test_retrieve_manga_by_character_not_found(anonymous_user, character):
-    endpoint = f"/api/v1/characters/{character.id}/manga/"
+def test_retrieve_manga_by_character_not_found(
+    anonymous_user: APIClient,
+    character: Character,
+) -> None:
+    endpoint: str = f"/api/v1/characters/{character.id}/manga/"
     response = anonymous_user.get(endpoint)
     assert response.status_code == status.HTTP_404_NOT_FOUND
     assert response.reason_phrase == "Not Found"

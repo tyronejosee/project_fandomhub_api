@@ -34,5 +34,10 @@
     "statusBarItem.remoteBackground": "#FF135B",
     "extensionButton.prominentBackground": "#FF135B",
     "debugConsoleInputIcon.foreground": "#FF135B",
-  }
+  },
+  "python.testing.pytestArgs": [
+    "."
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
 }
