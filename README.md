@@ -8,7 +8,11 @@
 </div>
 <div align="center">
   <h1><strong>FandomHub - API</strong></h1>
-  <a href="https://project-fandomhub-docs.pages.dev/"><strong>📚 Documentation</strong></a>
+  <a href="https://project-fandomhub-docs.pages.dev/"><strong>Docs</strong></a>
+  🔸
+  <a href="https://tyronejoseedocs.vercel.app/fandomhub/swagger/"><strong>Swagger UI</strong></a>
+  🔸
+  <a href="https://tyronejoseedocs.vercel.app/fandomhub/redoc/"><strong>Redoc</strong></a>
 </div>
 <br>
 <p align="center">
@@ -25,6 +29,9 @@ An API inspired by MyAnimeList, designed for retrieving detailed information abo
   <img src="https://img.shields.io/badge/drf-3.14.0-red" alt="django-version">
   </a>
 </p>
+
+![Swagger UI](./.github/main-swagger.webp)
+![Redoc](./.github/main-redoc.webp)
 
 ## ⚙️ Installation
 
@@ -149,14 +156,14 @@ python manage.py createsuperuser
 Log in to `admin`:
 
 ```bash
-http://127.0.0.1:8000/admin/
+http://127.0.0.1:8010/admin/
 ```
 
 Access Swagger or Redoc.
 
 ```bash
-http://127.0.0.1:8000/api/schema/swagger/
-http://127.0.0.1:8000/api/schema/redoc/
+http://127.0.0.1:8010/api/schema/swagger/
+http://127.0.0.1:8010/api/schema/redoc/
 ```
 
 ## 🚨 Important Notes
